@@ -1,1 +1,1 @@
-# Cucurbit_lncRNAs_landscape
+# Cucurbit lncRNAs landscape
