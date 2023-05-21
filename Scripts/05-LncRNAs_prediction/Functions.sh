@@ -1054,43 +1054,6 @@ task_LncRNAs_prediction_STEP-FINAL(){
 	rm POTENTIAL_LNCRNAS_pred_x_u_filtered_mod.tsv
 }
 
-task_LncRNAs_prediction_STEP-FINAL_circos(){
-	
-	####### VARIABLES
-	P7=$1/STEP-FINAL
-	
-	####### DIRECTORY
-	mkdir -p $P7/Figures
-	mkdir -p $P7/Figures/Circos
-	mkdir -p $P7/Figures/Circos/r
-	mkdir -p $P7/Figures/Circos/nr
-
-	####### PIPELINE
-	cd $P7/Figures/Circos
-
-	## Get chromosome sizes.
-	echo -e "\nGet chromosome sizes..."
-	cp $2/Genome/$4.fa ./
-	samtools faidx $4.fa
-	cut -f1,2 $4.fa.fai > sizes_genome_temp.txt
-	awk '{print $1"\t"0"\t"$2"\t"$1"\t"$1}' sizes_genome_temp.txt > sizes_genome.txt
-	rm sizes_genome_temp.txt $4.fa $4.fa.fai
-
-	## REDUNDANT: Visualize the lncRNAs distribution.
-	echo -e "\nREDUNDANT: Visualize the lncRNAs distribution..."
-	cp sizes_genome.txt ./r/
-	LncRNAs_tab="$P7/Database/Database_LncRNAs.tsv"
-	Genes_tab="$P7/Files/Genes/ORIGINAL_GENES.tsv"
-	Rscript $3/Genome-wide_distribution.R $4 $LncRNAs_tab $Genes_tab $P7/Figures/Circos/r $2
-
-	## NON-REDUNDANT: Visualize the lncRNAs distribution.
-	echo -e "\nNON-REDUNDANT: Visualize the lncRNAs distribution..."
-	cp sizes_genome.txt ./nr/
-	LncRNAs_tab="$P7/Database/Database_LncRNAs_NR.tsv"
-	Genes_tab="$P7/Files/Genes/ORIGINAL_GENES.tsv"
-	Rscript $3/Genome-wide_distribution.R $4 $LncRNAs_tab $Genes_tab $P7/Figures/Circos/nr $2
-}
-
 "$@"
 
 

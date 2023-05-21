@@ -9,9 +9,6 @@
 #SBATCH --mem-per-cpu=1gb				# Job memory request.
 
 
-# exit when any command fails
-set -e
-
 ####### MODULES
 module load anaconda/anaconda3_2021.07
 module load R/4.1.2
@@ -31,11 +28,9 @@ evalue=1e-5
 WD1_spe=$WD1"/"$specie
 WD2_spe=$WD2"/"$specie
 
-
 ####### ADDITIONAL SCRIPTS
 export ASPATH=$AS
 export PATH=$PATH:${ASPATH}
-
 
 ####### SOFTWARES PREDICTION
 ### CPC2
@@ -104,11 +99,10 @@ export AGATPATH=$SP/AGAT-0.9.2
 export PATH=$PATH:${AGATPATH}
 export PATH=$PATH:${AGATPATH}/bin
 
-
 ####### DIRECTORY
 mkdir -p $WD
 mkdir -p $WD2_spe
-mkdir -p $WD2_spe/LOGS
+mkdir -p $WD2_spe/Outputs
 mkdir -p $WD2_spe/STEP1
 mkdir -p $WD2_spe/STEP2
 mkdir -p $WD2_spe/STEP3
@@ -116,6 +110,7 @@ mkdir -p $WD2_spe/STEP4
 mkdir -p $WD2_spe/STEP5
 mkdir -p $WD2_spe/STEP6
 mkdir -p $WD2_spe/STEP-FINAL
+
 
 ####### PIPELINE: STEP 7
 
@@ -129,7 +124,7 @@ mkdir -p $WD2_spe/STEP-FINAL
 
 echo -e "STEP (1/7): PIPELINE...\n"
 g=50
-srun -N1 -n1 -c1 -o $WD2_spe/LOGS/stdout_STEP1.log --quiet --exclusive $F task_LncRNAs_prediction_STEP1 $WD1_spe $WD2_spe $AI $specie $g
+srun -N1 -n1 -c1 --output $WD2_spe/Outputs/stdout_STEP1.log --quiet --exclusive $F task_LncRNAs_prediction_STEP1 $WD1_spe $WD2_spe $AI $specie $g
 
 ### STEP2: Predict the coding potential of the potential lncRNAs using three 
 ### tools:
@@ -138,7 +133,7 @@ srun -N1 -n1 -c1 -o $WD2_spe/LOGS/stdout_STEP1.log --quiet --exclusive $F task_L
 ### 	- CPAT (https://github.com/liguowang/cpat; v.3.0.2)
 
 echo -e "STEP (2/7): PIPELINE...\n"
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK -o $WD2_spe/LOGS/stdout_STEP2.log --quiet --exclusive $F task_LncRNAs_prediction_STEP2 $WD2_spe $SP $SLURM_CPUS_PER_TASK &
+srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP2.log --quiet --exclusive $F task_LncRNAs_prediction_STEP2 $WD2_spe $SP $SLURM_CPUS_PER_TASK &
 
 ### STEP3: Predict the coding potential of the potential lncRNAs using two 
 ### protein databases:
@@ -148,19 +143,19 @@ srun -N1 -n1 -c$SLURM_CPUS_PER_TASK -o $WD2_spe/LOGS/stdout_STEP2.log --quiet --
 ### 	31/05/2022)
 
 echo -e "STEP (3/7): PIPELINE...\n"
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK -o $WD2_spe/LOGS/stdout_STEP3.log --quiet --exclusive $F task_LncRNAs_prediction_STEP3 $WD2_spe $SP $evalue $SLURM_CPUS_PER_TASK &
+srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP3.log --quiet --exclusive $F task_LncRNAs_prediction_STEP3 $WD2_spe $SP $evalue $SLURM_CPUS_PER_TASK &
 
 ### STEP4: Predict if it exits any ORF with length greater than 80, 100 or 
 ### 120 aa
 
 echo -e "STEP (4/7): PIPELINE...\n"
-srun -N1 -n1 -c1 -o $WD2_spe/LOGS/stdout_STEP4.log --quiet --exclusive $F task_LncRNAs_prediction_STEP4 $WD2_spe &
+srun -N1 -n1 -c1 --output $WD2_spe/Outputs/stdout_STEP4.log --quiet --exclusive $F task_LncRNAs_prediction_STEP4 $WD2_spe &
 
 ### STEP5: Annotate the potential lncRNAs using RNAcentral (rRNA, tRNA, snRNA, 
 ### snoRNA) and miRBase and PmiREN (miRNAs and miRNA-Precursors).
 
 echo -e "STEP (5/7): PIPELINE...\n"
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK -o $WD2_spe/LOGS/stdout_STEP5.log --quiet --exclusive $F task_LncRNAs_prediction_STEP5 $WD2_spe $AI $evalue $SLURM_CPUS_PER_TASK &
+srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP5.log --quiet --exclusive $F task_LncRNAs_prediction_STEP5 $WD2_spe $AI $evalue $SLURM_CPUS_PER_TASK &
 
 ### STEP6: Annotate the potential lncRNAs using three lncRNAs databases:
 ### 	- CANTATAdb (http://cantata.amu.edu.pl/)
@@ -168,13 +163,12 @@ srun -N1 -n1 -c$SLURM_CPUS_PER_TASK -o $WD2_spe/LOGS/stdout_STEP5.log --quiet --
 ### 	- GreeNC (http://greenc.sequentiabiotech.com/wiki2/Main_Page)
 
 echo -e "STEP (6/7): PIPELINE...\n"
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK -o $WD2_spe/LOGS/stdout_STEP6.log --quiet --exclusive $F task_LncRNAs_prediction_STEP6 $WD2_spe $AI $evalue $SLURM_CPUS_PER_TASK &
+srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP6.log --quiet --exclusive $F task_LncRNAs_prediction_STEP6 $WD2_spe $AI $evalue $SLURM_CPUS_PER_TASK &
 wait
 
 ### STEP-FINAL: Database creation: LncRNA classification and redundancy remove.
 
 echo -e "STEP-FINAL (7/7): PIPELINE...\n"
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK -o $WD2_spe/LOGS/stdout_STEP7.log --quiet --exclusive $F task_LncRNAs_prediction_STEP-FINAL $WD2_spe $AI $AS $SP $specie $SLURM_CPUS_PER_TASK
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK -o $WD2_spe/LOGS/stdout_STEP7_circos.log --quiet --exclusive $F task_LncRNAs_prediction_STEP-FINAL_circos $WD2_spe $AI $AS $specie
+srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP7.log --quiet --exclusive $F task_LncRNAs_prediction_STEP-FINAL $WD2_spe $AI $AS $SP $specie $SLURM_CPUS_PER_TASK
 
 
