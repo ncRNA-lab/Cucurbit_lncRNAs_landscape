@@ -1,0 +1,11 @@
+Specie	Sample	Filter_1	Filter_2	Depth	Mapping_rate	Strandedness
+C. argyrosperma	SRR5682055	passes the trimming step	used for transcript reconstruction	8160487/8160487	72.1372%	ISF
+C. argyrosperma	SRR5682056	passes the trimming step	used for transcript reconstruction	6335744/6335744	64.5312%	ISR
+C. argyrosperma	SRR5682060	passes the trimming step	used for transcript reconstruction	4651682/4651682	63.4178%	ISF
+C. argyrosperma	SRR5682071	passes the trimming step	used for transcript reconstruction	3921442/3921442	72.5451%	ISR
+C. argyrosperma	SRR5682072	passes the trimming step	used for transcript reconstruction	3849320/3849320	67.7674%	ISR
+C. argyrosperma	SRR7685400	passes the trimming step	used for transcript reconstruction	50847153/50847153	40.5144%	ISF
+C. argyrosperma	SRR7685404	passes the trimming step	used for transcript reconstruction	32701159/32701159	53.7649%	ISF
+C. argyrosperma	SRR7685405	passes the trimming step	used for transcript reconstruction	26037276/26037276	36.9914%	ISR
+C. argyrosperma	SRR7685406	passes the trimming step	not used for transcript reconstruction	27531000/27531000	44.774%	IU
+C. argyrosperma	SRR7685407	passes the trimming step	used for transcript reconstruction	46328904/46328904	52.4768%	ISF

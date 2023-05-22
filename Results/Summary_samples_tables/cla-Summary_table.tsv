@@ -1,0 +1,718 @@
+Specie	Sample	Filter_1	Filter_2	Depth	Mapping_rate	Strandedness
+C. lanatus	SRR1001435	passes the trimming step	not used for transcript reconstruction	10048946	53.0003%	U
+C. lanatus	SRR1001436	passes the trimming step	not used for transcript reconstruction	3194388	58.3321%	U
+C. lanatus	SRR1001437	passes the trimming step	not used for transcript reconstruction	7604070	69.6338%	U
+C. lanatus	SRR1001438	passes the trimming step	not used for transcript reconstruction	9289246	71.0344%	U
+C. lanatus	SRR1001439	passes the trimming step	not used for transcript reconstruction	7186111	63.1937%	U
+C. lanatus	SRR1001440	passes the trimming step	not used for transcript reconstruction	6155691	65.7779%	U
+C. lanatus	SRR1001441	passes the trimming step	not used for transcript reconstruction	5402777	66.0023%	U
+C. lanatus	SRR1001442	passes the trimming step	not used for transcript reconstruction	10044239	63.4663%	U
+C. lanatus	SRR10071350	passes the trimming step	not used for transcript reconstruction	56860282/56860282	62.5404%	IU
+C. lanatus	SRR10071351	passes the trimming step	not used for transcript reconstruction	49488926/49488926	61.69%	IU
+C. lanatus	SRR10071352	passes the trimming step	not used for transcript reconstruction	47356953/47356953	58.5443%	IU
+C. lanatus	SRR10071353	passes the trimming step	not used for transcript reconstruction	41973998/41973998	63.12%	IU
+C. lanatus	SRR10071354	passes the trimming step	not used for transcript reconstruction	53678342/53678342	63.0391%	IU
+C. lanatus	SRR10071355	passes the trimming step	not used for transcript reconstruction	41246388/41246388	61.841%	IU
+C. lanatus	SRR10078179	passes the trimming step	not used for transcript reconstruction	13378484/13378484	61.0285%	IU
+C. lanatus	SRR10078180	passes the trimming step	not used for transcript reconstruction	17679647/17679647	54.0742%	IU
+C. lanatus	SRR10078181	passes the trimming step	not used for transcript reconstruction	17987316/17987316	59.4253%	IU
+C. lanatus	SRR10078182	passes the trimming step	not used for transcript reconstruction	20769973/20769973	58.6767%	IU
+C. lanatus	SRR10078183	passes the trimming step	not used for transcript reconstruction	17785870/17785870	60.9356%	IU
+C. lanatus	SRR10078184	passes the trimming step	not used for transcript reconstruction	11024546/11024546	50.6163%	IU
+C. lanatus	SRR10251170	passes the trimming step	not used for transcript reconstruction	16038503/16038503	63.6965%	IU
+C. lanatus	SRR10251171	passes the trimming step	not used for transcript reconstruction	16683400/16683400	50.444%	IU
+C. lanatus	SRR10251172	passes the trimming step	not used for transcript reconstruction	20310693/20310693	73.0073%	IU
+C. lanatus	SRR10251173	passes the trimming step	not used for transcript reconstruction	25037314/25037314	73.9367%	IU
+C. lanatus	SRR10251175	passes the trimming step	not used for transcript reconstruction	23311592/23311592	69.9012%	IU
+C. lanatus	SRR10251182	passes the trimming step	not used for transcript reconstruction	20524795/20524795	69.2374%	IU
+C. lanatus	SRR10251183	passes the trimming step	not used for transcript reconstruction	13331368/13331368	59.7744%	IU
+C. lanatus	SRR10251184	passes the trimming step	not used for transcript reconstruction	23134325/23134325	69.7415%	IU
+C. lanatus	SRR10389406	passes the trimming step	not used for transcript reconstruction	22141288/22141288	63.7428%	IU
+C. lanatus	SRR10389407	passes the trimming step	not used for transcript reconstruction	21868447/21868447	57.952%	IU
+C. lanatus	SRR10389408	passes the trimming step	not used for transcript reconstruction	22542833/22542833	58.4577%	IU
+C. lanatus	SRR10389409	passes the trimming step	not used for transcript reconstruction	23152618/23152618	60.6225%	IU
+C. lanatus	SRR10389410	passes the trimming step	not used for transcript reconstruction	22339057/22339057	63.8554%	IU
+C. lanatus	SRR10389411	passes the trimming step	not used for transcript reconstruction	22223946/22223946	63.7833%	IU
+C. lanatus	SRR10389412	passes the trimming step	not used for transcript reconstruction	23431266/23431266	64.1998%	IU
+C. lanatus	SRR10389413	passes the trimming step	not used for transcript reconstruction	24098319/24098319	67.7182%	IU
+C. lanatus	SRR10389414	passes the trimming step	not used for transcript reconstruction	23179348/23179348	63.4916%	IU
+C. lanatus	SRR10389415	passes the trimming step	not used for transcript reconstruction	23290042/23290042	64.809%	IU
+C. lanatus	SRR10389416	passes the trimming step	not used for transcript reconstruction	25145008/25145008	62.5981%	IU
+C. lanatus	SRR10389417	passes the trimming step	not used for transcript reconstruction	23629133/23629133	63.1704%	IU
+C. lanatus	SRR10389418	passes the trimming step	not used for transcript reconstruction	26102315/26102315	64.8451%	IU
+C. lanatus	SRR10389419	passes the trimming step	not used for transcript reconstruction	24098051/24098051	64.8494%	IU
+C. lanatus	SRR10389420	passes the trimming step	not used for transcript reconstruction	24512726/24512726	63.9162%	IU
+C. lanatus	SRR10389421	passes the trimming step	not used for transcript reconstruction	23120390/23120390	62.6594%	IU
+C. lanatus	SRR10389422	passes the trimming step	not used for transcript reconstruction	25509333/25509333	67.1064%	IU
+C. lanatus	SRR10389423	passes the trimming step	not used for transcript reconstruction	26171219/26171219	65.7316%	IU
+C. lanatus	SRR10765554	passes the trimming step	used for transcript reconstruction	41243953/41243953	67.6368%	ISR
+C. lanatus	SRR10765556	passes the trimming step	used for transcript reconstruction	37121824/37121824	67.0372%	ISR
+C. lanatus	SRR10765558	passes the trimming step	used for transcript reconstruction	32030948/32030948	67.7122%	ISR
+C. lanatus	SRR10765560	passes the trimming step	used for transcript reconstruction	35281363/35281363	66.6673%	ISR
+C. lanatus	SRR10803494	passes the trimming step	not used for transcript reconstruction	20187000/20187000	64.3112%	IU
+C. lanatus	SRR10803495	passes the trimming step	not used for transcript reconstruction	21627740/21627740	62.5458%	IU
+C. lanatus	SRR10803496	passes the trimming step	not used for transcript reconstruction	25945353/25945353	64.7609%	IU
+C. lanatus	SRR10803497	passes the trimming step	not used for transcript reconstruction	21435675/21435675	64.7396%	IU
+C. lanatus	SRR10803498	passes the trimming step	not used for transcript reconstruction	26704873/26704873	64.4329%	IU
+C. lanatus	SRR10803499	passes the trimming step	not used for transcript reconstruction	22034597/22034597	64.6161%	IU
+C. lanatus	SRR11040540	passes the trimming step	not used for transcript reconstruction	23437553/23437553	68.0202%	IU
+C. lanatus	SRR11040541	passes the trimming step	not used for transcript reconstruction	19862710/19862710	64.6385%	IU
+C. lanatus	SRR11040542	passes the trimming step	not used for transcript reconstruction	23953977/23953977	70.1607%	IU
+C. lanatus	SRR11040543	passes the trimming step	not used for transcript reconstruction	24542255/24542255	68.4517%	IU
+C. lanatus	SRR11040544	passes the trimming step	not used for transcript reconstruction	24898034/24898034	66.7704%	IU
+C. lanatus	SRR11040545	passes the trimming step	not used for transcript reconstruction	23233833/23233833	68.4709%	IU
+C. lanatus	SRR11196689	passes the trimming step	not used for transcript reconstruction	22929591/22929591	68.5041%	IU
+C. lanatus	SRR11196690	passes the trimming step	not used for transcript reconstruction	23420531/23420531	68.047%	IU
+C. lanatus	SRR11196691	passes the trimming step	not used for transcript reconstruction	20738283/20738283	67.98%	IU
+C. lanatus	SRR11196692	passes the trimming step	not used for transcript reconstruction	21728590/21728590	66.1101%	IU
+C. lanatus	SRR11196693	passes the trimming step	not used for transcript reconstruction	22993714/22993714	61.6163%	IU
+C. lanatus	SRR11196694	passes the trimming step	not used for transcript reconstruction	23591709/23591709	64.2227%	IU
+C. lanatus	SRR12079410	passes the trimming step	not used for transcript reconstruction	20445591/20445591	65.8593%	IU
+C. lanatus	SRR12079411	passes the trimming step	not used for transcript reconstruction	21546205/21546205	63.9636%	IU
+C. lanatus	SRR12079412	passes the trimming step	not used for transcript reconstruction	22150466/22150466	60.3631%	IU
+C. lanatus	SRR12079413	passes the trimming step	not used for transcript reconstruction	27003789/27003789	60.6375%	IU
+C. lanatus	SRR12079414	passes the trimming step	not used for transcript reconstruction	28074527/28074527	56.1404%	IU
+C. lanatus	SRR12079415	passes the trimming step	not used for transcript reconstruction	26894085/26894085	45.898%	IU
+C. lanatus	SRR12160875	passes the trimming step	not used for transcript reconstruction	23661211/23661211	61.8524%	IU
+C. lanatus	SRR12160876	passes the trimming step	not used for transcript reconstruction	26000518/26000518	52.4811%	IU
+C. lanatus	SRR12160877	passes the trimming step	not used for transcript reconstruction	26164132/26164132	49.2867%	IU
+C. lanatus	SRR12160878	passes the trimming step	not used for transcript reconstruction	28693248/28693248	46.4684%	IU
+C. lanatus	SRR12160879	passes the trimming step	not used for transcript reconstruction	27425044/27425044	58.5798%	IU
+C. lanatus	SRR12160880	passes the trimming step	not used for transcript reconstruction	24738535/24738535	47.7193%	IU
+C. lanatus	SRR12160881	passes the trimming step	not used for transcript reconstruction	18764260/18764260	50.0657%	IU
+C. lanatus	SRR12160882	passes the trimming step	not used for transcript reconstruction	25266308/25266308	41.9365%	IU
+C. lanatus	SRR12160883	passes the trimming step	not used for transcript reconstruction	29103260/29103260	54.4507%	IU
+C. lanatus	SRR12160884	passes the trimming step	not used for transcript reconstruction	25023784/25023784	53.2137%	IU
+C. lanatus	SRR12160885	passes the trimming step	not used for transcript reconstruction	26628279/26628279	57.111%	IU
+C. lanatus	SRR12160886	passes the trimming step	not used for transcript reconstruction	24296250/24296250	55.4875%	IU
+C. lanatus	SRR12160887	passes the trimming step	not used for transcript reconstruction	25167844/25167844	64.3341%	IU
+C. lanatus	SRR12160888	passes the trimming step	not used for transcript reconstruction	28063828/28063828	64.3079%	IU
+C. lanatus	SRR12160889	passes the trimming step	not used for transcript reconstruction	24984055/24984055	62.2554%	IU
+C. lanatus	SRR12160890	passes the trimming step	not used for transcript reconstruction	25425333/25425333	32.7523%	IU
+C. lanatus	SRR12160891	passes the trimming step	not used for transcript reconstruction	23877255/23877255	38.534%	IU
+C. lanatus	SRR12160892	passes the trimming step	not used for transcript reconstruction	21905519/21905519	41.3967%	IU
+C. lanatus	SRR12160893	passes the trimming step	not used for transcript reconstruction	26583209/26583209	50.9329%	IU
+C. lanatus	SRR12160894	passes the trimming step	not used for transcript reconstruction	28132703/28132703	53.9475%	IU
+C. lanatus	SRR12160895	passes the trimming step	not used for transcript reconstruction	25267693/25267693	49.5213%	IU
+C. lanatus	SRR12160896	passes the trimming step	not used for transcript reconstruction	28074970/28074970	55.923%	IU
+C. lanatus	SRR12160897	passes the trimming step	not used for transcript reconstruction	22717552/22717552	44.436%	IU
+C. lanatus	SRR12160898	passes the trimming step	not used for transcript reconstruction	22040101/22040101	64.0205%	IU
+C. lanatus	SRR12160899	passes the trimming step	not used for transcript reconstruction	24780382/24780382	64.3369%	IU
+C. lanatus	SRR12160900	passes the trimming step	not used for transcript reconstruction	28615912/28615912	47.7823%	IU
+C. lanatus	SRR12160901	passes the trimming step	not used for transcript reconstruction	20880242/20880242	50.091%	IU
+C. lanatus	SRR12160902	passes the trimming step	not used for transcript reconstruction	26456802/26456802	47.253%	IU
+C. lanatus	SRR12160903	passes the trimming step	not used for transcript reconstruction	22017395/22017395	51.4728%	IU
+C. lanatus	SRR12160904	passes the trimming step	not used for transcript reconstruction	19830266/19830266	58.9524%	IU
+C. lanatus	SRR12160905	passes the trimming step	not used for transcript reconstruction	23244566/23244566	60.9519%	IU
+C. lanatus	SRR12160906	passes the trimming step	not used for transcript reconstruction	24025427/24025427	64.5243%	IU
+C. lanatus	SRR12160907	passes the trimming step	not used for transcript reconstruction	23671843/23671843	58.2431%	IU
+C. lanatus	SRR12160908	passes the trimming step	not used for transcript reconstruction	25543245/25543245	62.4897%	IU
+C. lanatus	SRR12160909	passes the trimming step	not used for transcript reconstruction	22943807/22943807	59.5627%	IU
+C. lanatus	SRR12160910	passes the trimming step	not used for transcript reconstruction	25169477/25169477	45.5616%	IU
+C. lanatus	SRR12160911	passes the trimming step	not used for transcript reconstruction	19904105/19904105	50.9565%	IU
+C. lanatus	SRR12160912	passes the trimming step	not used for transcript reconstruction	24075558/24075558	41.4553%	IU
+C. lanatus	SRR12160913	passes the trimming step	not used for transcript reconstruction	22268835/22268835	58.0847%	IU
+C. lanatus	SRR12160914	passes the trimming step	not used for transcript reconstruction	18803087/18803087	60.3383%	IU
+C. lanatus	SRR12160915	passes the trimming step	not used for transcript reconstruction	26559756/26559756	53.9161%	IU
+C. lanatus	SRR12160916	passes the trimming step	not used for transcript reconstruction	22884245/22884245	59.909%	IU
+C. lanatus	SRR12160917	passes the trimming step	not used for transcript reconstruction	22371226/22371226	64.242%	IU
+C. lanatus	SRR12160918	passes the trimming step	not used for transcript reconstruction	22887846/22887846	56.8183%	IU
+C. lanatus	SRR12160919	passes the trimming step	not used for transcript reconstruction	26374199/26374199	64.1922%	IU
+C. lanatus	SRR12474483	passes the trimming step	used for transcript reconstruction	93361252/93361252	70.5836%	ISR
+C. lanatus	SRR12474484	passes the trimming step	used for transcript reconstruction	82659811/82659811	70.3151%	ISR
+C. lanatus	SRR12481057	passes the trimming step	used for transcript reconstruction	80859134/80859134	65.0595%	ISR
+C. lanatus	SRR12481058	passes the trimming step	used for transcript reconstruction	72255658/72255658	69.8569%	ISR
+C. lanatus	SRR12481059	passes the trimming step	used for transcript reconstruction	88091784/88091784	69.962%	ISR
+C. lanatus	SRR12595445	passes the trimming step	used for transcript reconstruction	27096962/27096962	70.6771%	ISR
+C. lanatus	SRR12595446	passes the trimming step	used for transcript reconstruction	26249260/26249260	71.5373%	ISR
+C. lanatus	SRR12595447	passes the trimming step	used for transcript reconstruction	24466487/24466487	72.1159%	ISR
+C. lanatus	SRR12595448	passes the trimming step	used for transcript reconstruction	25852559/25852559	70.9885%	ISR
+C. lanatus	SRR12595449	passes the trimming step	used for transcript reconstruction	25938963/25938963	71.3968%	ISR
+C. lanatus	SRR12595450	passes the trimming step	used for transcript reconstruction	23741087/23741087	70.062%	ISR
+C. lanatus	SRR13039979	passes the trimming step	used for transcript reconstruction	25340653/25340653	66.6954%	ISR
+C. lanatus	SRR13039980	passes the trimming step	used for transcript reconstruction	34608223/34608223	67.2676%	ISR
+C. lanatus	SRR13039981	passes the trimming step	used for transcript reconstruction	28699162/28699162	64.2367%	ISR
+C. lanatus	SRR13039982	passes the trimming step	used for transcript reconstruction	29347330/29347330	54.4885%	ISR
+C. lanatus	SRR13039983	passes the trimming step	used for transcript reconstruction	35467218/35467218	65.0936%	ISR
+C. lanatus	SRR13039984	passes the trimming step	used for transcript reconstruction	38161209/38161209	68.3917%	ISR
+C. lanatus	SRR13039985	passes the trimming step	used for transcript reconstruction	34530471/34530471	66.0333%	ISR
+C. lanatus	SRR13039986	passes the trimming step	used for transcript reconstruction	42012166/42012166	67.3272%	ISR
+C. lanatus	SRR13039987	passes the trimming step	used for transcript reconstruction	33883531/33883531	64.4428%	ISR
+C. lanatus	SRR13039988	passes the trimming step	used for transcript reconstruction	32813775/32813775	64.0338%	ISR
+C. lanatus	SRR13039989	passes the trimming step	used for transcript reconstruction	31428315/31428315	64.6962%	ISR
+C. lanatus	SRR13039990	passes the trimming step	used for transcript reconstruction	26175481/26175481	63.2719%	ISR
+C. lanatus	SRR13039991	passes the trimming step	used for transcript reconstruction	30781165/30781165	64.9174%	ISR
+C. lanatus	SRR13222075	passes the trimming step	not used for transcript reconstruction	33359699/33359699	49.4978%	IU
+C. lanatus	SRR13222076	passes the trimming step	not used for transcript reconstruction	20238584/20238584	59.7496%	IU
+C. lanatus	SRR13222077	passes the trimming step	not used for transcript reconstruction	22750817/22750817	59.0037%	IU
+C. lanatus	SRR13222078	passes the trimming step	not used for transcript reconstruction	24312709/24312709	56.5116%	IU
+C. lanatus	SRR13222079	passes the trimming step	not used for transcript reconstruction	24056546/24056546	54.5443%	IU
+C. lanatus	SRR13222080	passes the trimming step	not used for transcript reconstruction	22659272/22659272	57.5333%	IU
+C. lanatus	SRR13222081	passes the trimming step	not used for transcript reconstruction	23431958/23431958	55.2645%	IU
+C. lanatus	SRR13222082	passes the trimming step	not used for transcript reconstruction	25652020/25652020	62.2476%	IU
+C. lanatus	SRR13222083	passes the trimming step	not used for transcript reconstruction	27494817/27494817	62.4196%	IU
+C. lanatus	SRR13222084	passes the trimming step	not used for transcript reconstruction	27509093/27509093	63.408%	IU
+C. lanatus	SRR13222085	passes the trimming step	not used for transcript reconstruction	27837364/27837364	58.4013%	IU
+C. lanatus	SRR13222086	passes the trimming step	not used for transcript reconstruction	22722158/22722158	59.4885%	IU
+C. lanatus	SRR13222087	passes the trimming step	not used for transcript reconstruction	23293249/23293249	59.9799%	IU
+C. lanatus	SRR13222088	passes the trimming step	not used for transcript reconstruction	23014914/23014914	60.3672%	IU
+C. lanatus	SRR13222089	passes the trimming step	not used for transcript reconstruction	24282882/24282882	62.9482%	IU
+C. lanatus	SRR13222090	passes the trimming step	not used for transcript reconstruction	21641550/21641550	61.6789%	IU
+C. lanatus	SRR13222091	passes the trimming step	not used for transcript reconstruction	24636932/24636932	62.5835%	IU
+C. lanatus	SRR13222092	passes the trimming step	not used for transcript reconstruction	27186719/27186719	60.9897%	IU
+C. lanatus	SRR13222093	passes the trimming step	not used for transcript reconstruction	25838738/25838738	61.4564%	IU
+C. lanatus	SRR13222094	passes the trimming step	not used for transcript reconstruction	23911606/23911606	60.117%	IU
+C. lanatus	SRR13222095	passes the trimming step	not used for transcript reconstruction	30178102/30178102	54.7451%	IU
+C. lanatus	SRR13222096	passes the trimming step	not used for transcript reconstruction	28377359/28377359	58.4636%	IU
+C. lanatus	SRR13222097	passes the trimming step	not used for transcript reconstruction	21289791/21289791	60.0562%	IU
+C. lanatus	SRR13222098	passes the trimming step	not used for transcript reconstruction	22007053/22007053	57.622%	IU
+C. lanatus	SRR13517444	passes the trimming step	not used for transcript reconstruction	21025514/21025514	67.0673%	IU
+C. lanatus	SRR13517445	passes the trimming step	not used for transcript reconstruction	21073715/21073715	67.5288%	IU
+C. lanatus	SRR13517446	passes the trimming step	not used for transcript reconstruction	20408687/20408687	67.7941%	IU
+C. lanatus	SRR13517447	passes the trimming step	not used for transcript reconstruction	20281459/20281459	67.9605%	IU
+C. lanatus	SRR13517448	passes the trimming step	not used for transcript reconstruction	20245251/20245251	67.2322%	IU
+C. lanatus	SRR13517449	passes the trimming step	not used for transcript reconstruction	20457159/20457159	66.7976%	IU
+C. lanatus	SRR13517450	passes the trimming step	not used for transcript reconstruction	21010480/21010480	64.977%	IU
+C. lanatus	SRR13517451	passes the trimming step	not used for transcript reconstruction	20035614/20035614	66.5942%	IU
+C. lanatus	SRR13517452	passes the trimming step	not used for transcript reconstruction	19917622/19917622	62.5507%	IU
+C. lanatus	SRR13517453	passes the trimming step	not used for transcript reconstruction	20380513/20380513	66.0749%	IU
+C. lanatus	SRR13517454	passes the trimming step	not used for transcript reconstruction	20105739/20105739	67.0491%	IU
+C. lanatus	SRR13517455	passes the trimming step	not used for transcript reconstruction	19104393/19104393	66.3111%	IU
+C. lanatus	SRR13517456	passes the trimming step	not used for transcript reconstruction	20276439/20276439	67.3218%	IU
+C. lanatus	SRR13517457	passes the trimming step	not used for transcript reconstruction	20100775/20100775	65.2255%	IU
+C. lanatus	SRR13517458	passes the trimming step	not used for transcript reconstruction	20225938/20225938	64.9864%	IU
+C. lanatus	SRR13517459	passes the trimming step	not used for transcript reconstruction	19485118/19485118	66.3115%	IU
+C. lanatus	SRR13517460	passes the trimming step	not used for transcript reconstruction	20476156/20476156	65.2548%	IU
+C. lanatus	SRR13517461	passes the trimming step	not used for transcript reconstruction	19495192/19495192	65.609%	IU
+C. lanatus	SRR13517462	passes the trimming step	not used for transcript reconstruction	20162772/20162772	62.9082%	IU
+C. lanatus	SRR13517463	passes the trimming step	not used for transcript reconstruction	19938230/19938230	64.6553%	IU
+C. lanatus	SRR13517464	passes the trimming step	not used for transcript reconstruction	21280343/21280343	65.4522%	IU
+C. lanatus	SRR13517465	passes the trimming step	not used for transcript reconstruction	21229075/21229075	67.0298%	IU
+C. lanatus	SRR13517466	passes the trimming step	not used for transcript reconstruction	20281093/20281093	65.7913%	IU
+C. lanatus	SRR13517467	passes the trimming step	not used for transcript reconstruction	20154012/20154012	65.2366%	IU
+C. lanatus	SRR13517468	passes the trimming step	not used for transcript reconstruction	20186299/20186299	65.9027%	IU
+C. lanatus	SRR13517469	passes the trimming step	not used for transcript reconstruction	20025641/20025641	65.9663%	IU
+C. lanatus	SRR13517470	passes the trimming step	not used for transcript reconstruction	21054044/21054044	67.8908%	IU
+C. lanatus	SRR13517471	passes the trimming step	not used for transcript reconstruction	22110961/22110961	66.866%	IU
+C. lanatus	SRR13517472	passes the trimming step	not used for transcript reconstruction	21162003/21162003	65.5521%	IU
+C. lanatus	SRR13517473	passes the trimming step	not used for transcript reconstruction	20103283/20103283	64.9792%	IU
+C. lanatus	SRR13517474	passes the trimming step	not used for transcript reconstruction	20896930/20896930	66.7328%	IU
+C. lanatus	SRR13517475	passes the trimming step	not used for transcript reconstruction	21647461/21647461	61.9789%	IU
+C. lanatus	SRR13517476	passes the trimming step	not used for transcript reconstruction	21945254/21945254	67.2928%	IU
+C. lanatus	SRR13517477	passes the trimming step	not used for transcript reconstruction	22336928/22336928	67.306%	IU
+C. lanatus	SRR13517478	passes the trimming step	not used for transcript reconstruction	19317348/19317348	68.6629%	IU
+C. lanatus	SRR13517479	passes the trimming step	not used for transcript reconstruction	20155674/20155674	68.7353%	IU
+C. lanatus	SRR13759167	passes the trimming step	not used for transcript reconstruction	24464494/24464494	63.6656%	IU
+C. lanatus	SRR13759168	passes the trimming step	not used for transcript reconstruction	23572338/23572338	62.518%	IU
+C. lanatus	SRR13759169	passes the trimming step	not used for transcript reconstruction	26691057/26691057	62.8705%	IU
+C. lanatus	SRR13759170	passes the trimming step	not used for transcript reconstruction	25674819/25674819	62.1357%	IU
+C. lanatus	SRR13759171	passes the trimming step	not used for transcript reconstruction	25864722/25864722	62.4104%	IU
+C. lanatus	SRR13759172	passes the trimming step	not used for transcript reconstruction	29223356/29223356	61.2434%	IU
+C. lanatus	SRR13759173	passes the trimming step	not used for transcript reconstruction	26458601/26458601	61.5954%	IU
+C. lanatus	SRR13759174	passes the trimming step	not used for transcript reconstruction	30213226/30213226	61.5688%	IU
+C. lanatus	SRR13759175	passes the trimming step	not used for transcript reconstruction	20726552/20726552	62.5531%	IU
+C. lanatus	SRR13759176	passes the trimming step	not used for transcript reconstruction	26552401/26552401	62.7967%	IU
+C. lanatus	SRR13759177	passes the trimming step	not used for transcript reconstruction	23681075/23681075	59.7716%	IU
+C. lanatus	SRR13759178	passes the trimming step	not used for transcript reconstruction	29610483/29610483	62.4353%	IU
+C. lanatus	SRR14226634	passes the trimming step	not used for transcript reconstruction	8604420/8604420	64.7474%	IU
+C. lanatus	SRR14226635	passes the trimming step	not used for transcript reconstruction	17835867/17835867	67.8588%	IU
+C. lanatus	SRR14226636	passes the trimming step	not used for transcript reconstruction	19003270/19003270	67.8436%	IU
+C. lanatus	SRR14226637	passes the trimming step	not used for transcript reconstruction	21054100/21054100	47.8134%	IU
+C. lanatus	SRR14226642	passes the trimming step	not used for transcript reconstruction	7304230/7304230	63.7342%	IU
+C. lanatus	SRR14226643	passes the trimming step	not used for transcript reconstruction	14792335/14792335	59.8248%	IU
+C. lanatus	SRR14226644	passes the trimming step	not used for transcript reconstruction	15194754/15194754	58.3199%	IU
+C. lanatus	SRR14226645	passes the trimming step	not used for transcript reconstruction	16829569/16829569	54.5447%	IU
+C. lanatus	SRR14226646	passes the trimming step	not used for transcript reconstruction	11692440/11692440	66.6839%	IU
+C. lanatus	SRR14410981	passes the trimming step	used for transcript reconstruction	18442031/18442031	56.2489%	ISF
+C. lanatus	SRR14410982	passes the trimming step	used for transcript reconstruction	15476841/15476841	56.5812%	ISF
+C. lanatus	SRR14410983	passes the trimming step	used for transcript reconstruction	17304096/17304096	56.5766%	ISF
+C. lanatus	SRR14410984	passes the trimming step	used for transcript reconstruction	17258520/17258520	56.3289%	ISF
+C. lanatus	SRR14410985	passes the trimming step	used for transcript reconstruction	17691676/17691676	58.3508%	ISF
+C. lanatus	SRR14410986	passes the trimming step	used for transcript reconstruction	16130023/16130023	57.5712%	ISF
+C. lanatus	SRR14692540	passes the trimming step	not used for transcript reconstruction	71539622/71539622	61.6082%	IU
+C. lanatus	SRR14692541	passes the trimming step	not used for transcript reconstruction	53915775/53915775	65.1266%	IU
+C. lanatus	SRR14692542	passes the trimming step	not used for transcript reconstruction	70261578/70261578	62.1871%	IU
+C. lanatus	SRR16280132	passes the trimming step	not used for transcript reconstruction	21874608/21874608	67.0488%	IU
+C. lanatus	SRR16280133	passes the trimming step	not used for transcript reconstruction	22558915/22558915	67.7117%	IU
+C. lanatus	SRR16280134	passes the trimming step	not used for transcript reconstruction	21986989/21986989	68.1413%	IU
+C. lanatus	SRR16280135	passes the trimming step	not used for transcript reconstruction	19808954/19808954	68.3955%	IU
+C. lanatus	SRR16280136	passes the trimming step	not used for transcript reconstruction	20940540/20940540	68.0916%	IU
+C. lanatus	SRR16280137	passes the trimming step	not used for transcript reconstruction	21970726/21970726	67.0686%	IU
+C. lanatus	SRR16280138	passes the trimming step	not used for transcript reconstruction	22201070/22201070	68.4346%	IU
+C. lanatus	SRR16280139	passes the trimming step	not used for transcript reconstruction	19848542/19848542	67.7822%	IU
+C. lanatus	SRR16280140	passes the trimming step	not used for transcript reconstruction	21530319/21530319	67.1307%	IU
+C. lanatus	SRR16290672	passes the trimming step	not used for transcript reconstruction	23400922/23400922	54.8718%	IU
+C. lanatus	SRR16290673	passes the trimming step	not used for transcript reconstruction	24506891/24506891	57.3162%	IU
+C. lanatus	SRR16290674	passes the trimming step	not used for transcript reconstruction	23347754/23347754	52.486%	IU
+C. lanatus	SRR16464287	passes the trimming step	not used for transcript reconstruction	25947111/25947111	51.1795%	IU
+C. lanatus	SRR16464288	passes the trimming step	not used for transcript reconstruction	22457268/22457268	54.3811%	IU
+C. lanatus	SRR16464289	passes the trimming step	not used for transcript reconstruction	21277850/21277850	51.2363%	IU
+C. lanatus	SRR16465757	passes the trimming step	not used for transcript reconstruction	24795917/24795917	60.6379%	IU
+C. lanatus	SRR16465758	passes the trimming step	not used for transcript reconstruction	25997232/25997232	55.4017%	IU
+C. lanatus	SRR16465759	passes the trimming step	not used for transcript reconstruction	22594663/22594663	55.5139%	IU
+C. lanatus	SRR17043510	passes the trimming step	used for transcript reconstruction	23357126/23357126	64.0047%	ISR
+C. lanatus	SRR17043511	passes the trimming step	used for transcript reconstruction	24642333/24642333	63.0235%	ISR
+C. lanatus	SRR17043512	passes the trimming step	used for transcript reconstruction	24153612/24153612	64.0551%	ISR
+C. lanatus	SRR17043513	passes the trimming step	used for transcript reconstruction	24241297/24241297	64.9025%	ISR
+C. lanatus	SRR17043514	passes the trimming step	used for transcript reconstruction	23112875/23112875	66.3923%	ISR
+C. lanatus	SRR17043515	passes the trimming step	used for transcript reconstruction	23085881/23085881	59.7783%	ISR
+C. lanatus	SRR17043516	passes the trimming step	used for transcript reconstruction	23835333/23835333	59.254%	ISR
+C. lanatus	SRR17043517	passes the trimming step	used for transcript reconstruction	23484913/23484913	61.3235%	ISR
+C. lanatus	SRR17043518	passes the trimming step	used for transcript reconstruction	24882507/24882507	63.7977%	ISR
+C. lanatus	SRR17043519	passes the trimming step	used for transcript reconstruction	24622736/24622736	64.7292%	ISR
+C. lanatus	SRR17043520	passes the trimming step	used for transcript reconstruction	23526637/23526637	64.9902%	ISR
+C. lanatus	SRR17043521	passes the trimming step	used for transcript reconstruction	24543000/24543000	65.2112%	ISR
+C. lanatus	SRR17043522	passes the trimming step	used for transcript reconstruction	23585812/23585812	65.6001%	ISR
+C. lanatus	SRR17043523	passes the trimming step	used for transcript reconstruction	24049131/24049131	64.9376%	ISR
+C. lanatus	SRR17043524	passes the trimming step	used for transcript reconstruction	24232623/24232623	62.6954%	ISR
+C. lanatus	SRR17043525	passes the trimming step	used for transcript reconstruction	24226552/24226552	64.9549%	ISR
+C. lanatus	SRR17043526	passes the trimming step	used for transcript reconstruction	23693513/23693513	63.0286%	ISR
+C. lanatus	SRR17043527	passes the trimming step	used for transcript reconstruction	22893676/22893676	61.3457%	ISR
+C. lanatus	SRR17043528	passes the trimming step	used for transcript reconstruction	24196467/24196467	64.7466%	ISR
+C. lanatus	SRR17043529	passes the trimming step	used for transcript reconstruction	23694813/23694813	64.8706%	ISR
+C. lanatus	SRR17043530	passes the trimming step	used for transcript reconstruction	23820809/23820809	65.1431%	ISR
+C. lanatus	SRR17043531	passes the trimming step	used for transcript reconstruction	24016597/24016597	65.4017%	ISR
+C. lanatus	SRR17043532	passes the trimming step	used for transcript reconstruction	23302620/23302620	65.6985%	ISR
+C. lanatus	SRR17043533	passes the trimming step	used for transcript reconstruction	23838690/23838690	65.7716%	ISR
+C. lanatus	SRR1724899	passes the trimming step	used for transcript reconstruction	39257448	65.3618%	SR
+C. lanatus	SRR1724900	passes the trimming step	used for transcript reconstruction	34949188	64.8964%	SR
+C. lanatus	SRR1724901	passes the trimming step	used for transcript reconstruction	46504223	67.5562%	SR
+C. lanatus	SRR1724902	passes the trimming step	used for transcript reconstruction	22835450	57.2398%	SR
+C. lanatus	SRR1724903	passes the trimming step	used for transcript reconstruction	28438988	52.6975%	SR
+C. lanatus	SRR1724943	passes the trimming step	used for transcript reconstruction	32524256	59.6345%	SR
+C. lanatus	SRR17434161	passes the trimming step	not used for transcript reconstruction	21845221/21845221	57.6253%	IU
+C. lanatus	SRR17434162	passes the trimming step	not used for transcript reconstruction	24120691/24120691	58.7114%	IU
+C. lanatus	SRR17434163	passes the trimming step	not used for transcript reconstruction	20692527/20692527	59.3704%	IU
+C. lanatus	SRR17434164	passes the trimming step	not used for transcript reconstruction	22525103/22525103	51.5012%	IU
+C. lanatus	SRR17434165	passes the trimming step	not used for transcript reconstruction	20442023/20442023	49.1179%	IU
+C. lanatus	SRR17434166	passes the trimming step	not used for transcript reconstruction	20505785/20505785	46.0543%	IU
+C. lanatus	SRR2033940	passes the trimming step	used for transcript reconstruction	9063616/9063616	45.2167%	ISR
+C. lanatus	SRR2033941	passes the trimming step	used for transcript reconstruction	10600036/10600036	42.4665%	ISR
+C. lanatus	SRR2033942	passes the trimming step	used for transcript reconstruction	9475023/9475023	43.031%	ISR
+C. lanatus	SRR2033943	passes the trimming step	used for transcript reconstruction	9514697/9514697	37.3995%	ISR
+C. lanatus	SRR3156477	passes the trimming step	used for transcript reconstruction	91423157/91423157	63.0709%	ISR
+C. lanatus	SRR3156478	passes the trimming step	used for transcript reconstruction	106615047/106615047	64.383%	ISR
+C. lanatus	SRR3156479	passes the trimming step	used for transcript reconstruction	82058417/82058417	43.7487%	ISR
+C. lanatus	SRR3156480	passes the trimming step	used for transcript reconstruction	81321908/81321908	59.4393%	ISR
+C. lanatus	SRR3156481	passes the trimming step	used for transcript reconstruction	113083089/113083089	63.9797%	ISR
+C. lanatus	SRR3156482	passes the trimming step	used for transcript reconstruction	65209801/65209801	42.9738%	ISR
+C. lanatus	SRR3156483	passes the trimming step	used for transcript reconstruction	87682344/87682344	61.9865%	ISR
+C. lanatus	SRR3156484	passes the trimming step	used for transcript reconstruction	93147440/93147440	65.1135%	ISR
+C. lanatus	SRR3156485	passes the trimming step	used for transcript reconstruction	67183187/67183187	40.1045%	ISR
+C. lanatus	SRR3156486	passes the trimming step	used for transcript reconstruction	81216069/81216069	59.6124%	ISR
+C. lanatus	SRR3156487	passes the trimming step	used for transcript reconstruction	75782389/75782389	65.4392%	ISR
+C. lanatus	SRR3156488	passes the trimming step	used for transcript reconstruction	66360318/66360318	53.1187%	ISR
+C. lanatus	SRR3156501	passes the trimming step	used for transcript reconstruction	84183877/84183877	59.0082%	ISR
+C. lanatus	SRR3156502	passes the trimming step	used for transcript reconstruction	56464486/56464486	59.5679%	ISR
+C. lanatus	SRR3156503	passes the trimming step	used for transcript reconstruction	78922455/78922455	41.6707%	ISR
+C. lanatus	SRR3156504	passes the trimming step	used for transcript reconstruction	81312688/81312688	62.099%	ISR
+C. lanatus	SRR3156505	passes the trimming step	used for transcript reconstruction	89597771/89597771	60.53%	ISR
+C. lanatus	SRR3156506	passes the trimming step	used for transcript reconstruction	58183107/58183107	41.5751%	ISR
+C. lanatus	SRR3156549	passes the trimming step	used for transcript reconstruction	20870300/20870300	59.695%	ISR
+C. lanatus	SRR3156550	passes the trimming step	used for transcript reconstruction	18559838/18559838	61.6043%	ISR
+C. lanatus	SRR3156551	passes the trimming step	used for transcript reconstruction	20441575/20441575	61.7255%	ISR
+C. lanatus	SRR3156552	passes the trimming step	used for transcript reconstruction	19401423/19401423	59.9597%	ISR
+C. lanatus	SRR3156553	passes the trimming step	used for transcript reconstruction	15964312/15964312	55.6234%	ISR
+C. lanatus	SRR3156554	passes the trimming step	used for transcript reconstruction	16515550/16515550	54.6008%	ISR
+C. lanatus	SRR3156555	passes the trimming step	used for transcript reconstruction	17839927/17839927	52.2058%	ISR
+C. lanatus	SRR3156556	passes the trimming step	used for transcript reconstruction	14310409/14310409	49.4295%	ISR
+C. lanatus	SRR3156557	passes the trimming step	used for transcript reconstruction	18699767/18699767	58.903%	ISR
+C. lanatus	SRR3156558	passes the trimming step	used for transcript reconstruction	18100149/18100149	62.0551%	ISR
+C. lanatus	SRR3156559	passes the trimming step	used for transcript reconstruction	21114624/21114624	60.766%	ISR
+C. lanatus	SRR3156560	passes the trimming step	used for transcript reconstruction	19123242/19123242	60.3253%	ISR
+C. lanatus	SRR3156561	passes the trimming step	used for transcript reconstruction	20180894/20180894	62.2182%	ISR
+C. lanatus	SRR3156562	passes the trimming step	used for transcript reconstruction	16326887/16326887	63.2952%	ISR
+C. lanatus	SRR3156563	passes the trimming step	used for transcript reconstruction	19121926/19121926	63.0583%	ISR
+C. lanatus	SRR3156564	passes the trimming step	used for transcript reconstruction	18242350/18242350	60.7675%	ISR
+C. lanatus	SRR3156565	passes the trimming step	used for transcript reconstruction	17301205/17301205	47.0741%	ISR
+C. lanatus	SRR3156566	passes the trimming step	used for transcript reconstruction	16685522/16685522	51.3898%	ISR
+C. lanatus	SRR3156567	passes the trimming step	used for transcript reconstruction	16359076/16359076	55.3935%	ISR
+C. lanatus	SRR3156568	passes the trimming step	used for transcript reconstruction	15343746/15343746	58.2709%	ISR
+C. lanatus	SRR3156569	passes the trimming step	used for transcript reconstruction	21568077/21568077	61.832%	ISR
+C. lanatus	SRR3156570	passes the trimming step	used for transcript reconstruction	20099599/20099599	59.5309%	ISR
+C. lanatus	SRR3156571	passes the trimming step	used for transcript reconstruction	20596858/20596858	61.5153%	ISR
+C. lanatus	SRR3156572	passes the trimming step	used for transcript reconstruction	15682241/15682241	61.2999%	ISR
+C. lanatus	SRR3535158	passes the trimming step	not used for transcript reconstruction	10614406	69.4563%	U
+C. lanatus	SRR3535159	passes the trimming step	not used for transcript reconstruction	12273360	68.9096%	U
+C. lanatus	SRR3535161	passes the trimming step	not used for transcript reconstruction	12218694	70.0273%	U
+C. lanatus	SRR3535162	passes the trimming step	not used for transcript reconstruction	12782866	79.3356%	U
+C. lanatus	SRR3535164	passes the trimming step	not used for transcript reconstruction	8992179	78.8342%	U
+C. lanatus	SRR3535165	passes the trimming step	not used for transcript reconstruction	11982798	71.3901%	U
+C. lanatus	SRR3535166	passes the trimming step	not used for transcript reconstruction	12282787	71.3596%	U
+C. lanatus	SRR3535167	passes the trimming step	not used for transcript reconstruction	12667572	69.428%	U
+C. lanatus	SRR3535170	passes the trimming step	not used for transcript reconstruction	13475206	70.8056%	U
+C. lanatus	SRR357407	doesn't pass the trimming step	NA	0	NA	NA
+C. lanatus	SRR357408	doesn't pass the trimming step	NA	0	NA	NA
+C. lanatus	SRR357409	doesn't pass the trimming step	NA	0	NA	NA
+C. lanatus	SRR3706796	passes the trimming step	not used for transcript reconstruction	20174054/20174054	63.2286%	IU
+C. lanatus	SRR3707378	passes the trimming step	not used for transcript reconstruction	17896163/17896163	62.9443%	IU
+C. lanatus	SRR3707379	passes the trimming step	not used for transcript reconstruction	19739020/19739020	59.4499%	IU
+C. lanatus	SRR3707383	passes the trimming step	not used for transcript reconstruction	18257022/18257022	60.2065%	IU
+C. lanatus	SRR3707384	passes the trimming step	not used for transcript reconstruction	21128669/21128669	61.3075%	IU
+C. lanatus	SRR3707410	passes the trimming step	not used for transcript reconstruction	20074120/20074120	61.4401%	IU
+C. lanatus	SRR3822369	passes the trimming step	not used for transcript reconstruction	17947340/17947340	65.9682%	IU
+C. lanatus	SRR3822370	passes the trimming step	not used for transcript reconstruction	16674105/16674105	63.2859%	IU
+C. lanatus	SRR3822371	passes the trimming step	not used for transcript reconstruction	16672070/16672070	62.9667%	IU
+C. lanatus	SRR3822372	passes the trimming step	not used for transcript reconstruction	16108225/16108225	66.4167%	IU
+C. lanatus	SRR3822373	passes the trimming step	not used for transcript reconstruction	16194164/16194164	69.7172%	IU
+C. lanatus	SRR3822374	passes the trimming step	not used for transcript reconstruction	16073473/16073473	61.5138%	IU
+C. lanatus	SRR3822375	passes the trimming step	not used for transcript reconstruction	14703347/14703347	66.4432%	IU
+C. lanatus	SRR3822376	passes the trimming step	not used for transcript reconstruction	13839843/13839843	68.3938%	IU
+C. lanatus	SRR4046301	passes the trimming step	not used for transcript reconstruction	18969990/18969990	64.6691%	IU
+C. lanatus	SRR4046302	passes the trimming step	not used for transcript reconstruction	18605768/18605768	63.9748%	IU
+C. lanatus	SRR4046311	passes the trimming step	not used for transcript reconstruction	15775189/15775189	63.4028%	IU
+C. lanatus	SRR4046313	passes the trimming step	not used for transcript reconstruction	17283287/17283287	58.7166%	IU
+C. lanatus	SRR4046317	passes the trimming step	not used for transcript reconstruction	14297667/14297667	63.3386%	IU
+C. lanatus	SRR4046325	passes the trimming step	not used for transcript reconstruction	23327559/23327559	62.5861%	IU
+C. lanatus	SRR4046339	passes the trimming step	not used for transcript reconstruction	17663518/17663518	62.904%	IU
+C. lanatus	SRR4046345	passes the trimming step	not used for transcript reconstruction	17813890/17813890	64.1551%	IU
+C. lanatus	SRR4046372	passes the trimming step	not used for transcript reconstruction	20611172/20611172	57.8583%	IU
+C. lanatus	SRR4046392	passes the trimming step	not used for transcript reconstruction	18958948/18958948	63.9975%	IU
+C. lanatus	SRR4046409	passes the trimming step	not used for transcript reconstruction	17198868/17198868	63.5062%	IU
+C. lanatus	SRR4046416	passes the trimming step	not used for transcript reconstruction	16233461/16233461	63.4767%	IU
+C. lanatus	SRR4046425	passes the trimming step	not used for transcript reconstruction	16758832/16758832	63.6561%	IU
+C. lanatus	SRR4046438	passes the trimming step	not used for transcript reconstruction	15319712/15319712	62.3421%	IU
+C. lanatus	SRR4046441	passes the trimming step	not used for transcript reconstruction	26520245/26520245	62.4339%	IU
+C. lanatus	SRR4046451	passes the trimming step	not used for transcript reconstruction	17375377/17375377	64.1959%	IU
+C. lanatus	SRR4046458	passes the trimming step	not used for transcript reconstruction	16485653/16485653	47.2506%	IU
+C. lanatus	SRR4046464	passes the trimming step	not used for transcript reconstruction	18955500/18955500	62.6543%	IU
+C. lanatus	SRR4046466	passes the trimming step	not used for transcript reconstruction	19748578/19748578	61.044%	IU
+C. lanatus	SRR4046482	passes the trimming step	not used for transcript reconstruction	19072066/19072066	62.818%	IU
+C. lanatus	SRR494406	passes the trimming step	used for transcript reconstruction	9197627	52.7794%	SR
+C. lanatus	SRR494407	passes the trimming step	used for transcript reconstruction	9742777	65.9655%	SR
+C. lanatus	SRR494408	passes the trimming step	used for transcript reconstruction	17232151	61.9707%	SR
+C. lanatus	SRR494409	passes the trimming step	used for transcript reconstruction	10959783	58.7297%	SR
+C. lanatus	SRR494410	passes the trimming step	used for transcript reconstruction	12317570	70.007%	SR
+C. lanatus	SRR494411	passes the trimming step	used for transcript reconstruction	11246896	42.9741%	SR
+C. lanatus	SRR494412	passes the trimming step	used for transcript reconstruction	8877196	47.8208%	SR
+C. lanatus	SRR494413	passes the trimming step	used for transcript reconstruction	10471356	54.4231%	SR
+C. lanatus	SRR494414	passes the trimming step	used for transcript reconstruction	9409010	27.196%	SR
+C. lanatus	SRR494415	passes the trimming step	used for transcript reconstruction	7391193	51.1337%	SR
+C. lanatus	SRR494416	passes the trimming step	used for transcript reconstruction	7836650	51.7843%	SR
+C. lanatus	SRR494417	passes the trimming step	used for transcript reconstruction	7685086	72.7566%	SR
+C. lanatus	SRR494418	passes the trimming step	used for transcript reconstruction	9237440	45.9441%	SR
+C. lanatus	SRR494419	passes the trimming step	used for transcript reconstruction	11672008	48.7418%	SR
+C. lanatus	SRR494420	passes the trimming step	used for transcript reconstruction	9833895	58.4883%	SR
+C. lanatus	SRR494421	passes the trimming step	used for transcript reconstruction	10639746	67.326%	SR
+C. lanatus	SRR494474	passes the trimming step	used for transcript reconstruction	9673539/9673539	56.5753%	ISR
+C. lanatus	SRR494479	passes the trimming step	used for transcript reconstruction	7809174/7809174	70.8047%	ISR
+C. lanatus	SRR5100272	passes the trimming step	not used for transcript reconstruction	17925069/17925069	71.8181%	IU
+C. lanatus	SRR5100273	passes the trimming step	not used for transcript reconstruction	19763917/19763917	71.907%	IU
+C. lanatus	SRR518989	doesn't pass the trimming step	NA	0/0	NA	NA
+C. lanatus	SRR518992	doesn't pass the trimming step	NA	0/0	NA	NA
+C. lanatus	SRR518993	doesn't pass the trimming step	NA	0/0	NA	NA
+C. lanatus	SRR5405076	passes the trimming step	not used for transcript reconstruction	11264343/11264343	66.4501%	IU
+C. lanatus	SRR5405077	passes the trimming step	not used for transcript reconstruction	5404472/5404472	65.163%	IU
+C. lanatus	SRR5644040	passes the trimming step	not used for transcript reconstruction	22287196/22287196	54.8117%	IU
+C. lanatus	SRR5644048	passes the trimming step	not used for transcript reconstruction	23422006/23422006	61.6668%	IU
+C. lanatus	SRR5644056	passes the trimming step	not used for transcript reconstruction	22492605/22492605	20.7987%	IU
+C. lanatus	SRR5644060	passes the trimming step	not used for transcript reconstruction	21992720/21992720	58.3572%	IU
+C. lanatus	SRR5821650	passes the trimming step	not used for transcript reconstruction	162371617/162371617	63.1346%	IU
+C. lanatus	SRR6239927	passes the trimming step	not used for transcript reconstruction	9160860/9160860	65.0845%	IU
+C. lanatus	SRR6239928	passes the trimming step	not used for transcript reconstruction	10617707/10617707	66.6721%	IU
+C. lanatus	SRR6239929	passes the trimming step	not used for transcript reconstruction	13908363/13908363	66.682%	IU
+C. lanatus	SRR6239930	passes the trimming step	not used for transcript reconstruction	11946504/11946504	67.3963%	IU
+C. lanatus	SRR6239931	passes the trimming step	not used for transcript reconstruction	10954139/10954139	67.7204%	IU
+C. lanatus	SRR6239932	passes the trimming step	not used for transcript reconstruction	10249378/10249378	67.4222%	IU
+C. lanatus	SRR6239933	passes the trimming step	not used for transcript reconstruction	11549757/11549757	67.6891%	IU
+C. lanatus	SRR6239934	passes the trimming step	not used for transcript reconstruction	11260883/11260883	68.1138%	IU
+C. lanatus	SRR6239935	passes the trimming step	not used for transcript reconstruction	15243081/15243081	67.1395%	IU
+C. lanatus	SRR6239936	passes the trimming step	not used for transcript reconstruction	12167441/12167441	67.8653%	IU
+C. lanatus	SRR6239937	passes the trimming step	not used for transcript reconstruction	10129204/10129204	67.6463%	IU
+C. lanatus	SRR6239938	passes the trimming step	not used for transcript reconstruction	13658753/13658753	67.5197%	IU
+C. lanatus	SRR6239939	passes the trimming step	not used for transcript reconstruction	13811996/13811996	67.332%	IU
+C. lanatus	SRR6239940	passes the trimming step	not used for transcript reconstruction	11014265/11014265	67.7992%	IU
+C. lanatus	SRR6239941	passes the trimming step	not used for transcript reconstruction	11123822/11123822	67.3207%	IU
+C. lanatus	SRR6239942	passes the trimming step	not used for transcript reconstruction	13766584/13766584	66.9559%	IU
+C. lanatus	SRR6239943	passes the trimming step	not used for transcript reconstruction	11682670/11682670	66.9027%	IU
+C. lanatus	SRR6239944	passes the trimming step	not used for transcript reconstruction	12742484/12742484	67.1101%	IU
+C. lanatus	SRR6239945	passes the trimming step	not used for transcript reconstruction	12625733/12625733	65.9891%	IU
+C. lanatus	SRR6239946	passes the trimming step	not used for transcript reconstruction	13655692/13655692	65.8048%	IU
+C. lanatus	SRR6239947	passes the trimming step	not used for transcript reconstruction	11406504/11406504	68.0905%	IU
+C. lanatus	SRR6239948	passes the trimming step	not used for transcript reconstruction	12303382/12303382	67.2981%	IU
+C. lanatus	SRR6239949	passes the trimming step	not used for transcript reconstruction	12063886/12063886	65.6102%	IU
+C. lanatus	SRR6239950	passes the trimming step	not used for transcript reconstruction	12752522/12752522	67.1004%	IU
+C. lanatus	SRR6320481	passes the trimming step	not used for transcript reconstruction	2308071/2308071	70.6663%	IU
+C. lanatus	SRR6320482	passes the trimming step	not used for transcript reconstruction	3160563/3160563	67.6988%	IU
+C. lanatus	SRR6389278	passes the trimming step	not used for transcript reconstruction	23596646/23596646	62.4755%	IU
+C. lanatus	SRR6389279	passes the trimming step	not used for transcript reconstruction	27538556/27538556	62.1351%	IU
+C. lanatus	SRR6389280	passes the trimming step	not used for transcript reconstruction	22170306/22170306	54.2964%	IU
+C. lanatus	SRR6389281	passes the trimming step	not used for transcript reconstruction	23012358/23012358	58.5163%	IU
+C. lanatus	SRR6389282	passes the trimming step	not used for transcript reconstruction	25572827/25572827	62.4767%	IU
+C. lanatus	SRR6389283	passes the trimming step	not used for transcript reconstruction	23815508/23815508	61.2123%	IU
+C. lanatus	SRR6389284	passes the trimming step	not used for transcript reconstruction	22504647/22504647	59.1312%	IU
+C. lanatus	SRR6389285	passes the trimming step	not used for transcript reconstruction	24407085/24407085	59.6846%	IU
+C. lanatus	SRR6389286	passes the trimming step	not used for transcript reconstruction	24024707/24024707	62.6687%	IU
+C. lanatus	SRR6389287	passes the trimming step	not used for transcript reconstruction	23384455/23384455	58.9228%	IU
+C. lanatus	SRR6389288	passes the trimming step	not used for transcript reconstruction	24814557/24814557	57.1888%	IU
+C. lanatus	SRR6389289	passes the trimming step	not used for transcript reconstruction	21038325/21038325	61.9534%	IU
+C. lanatus	SRR7075814	passes the trimming step	not used for transcript reconstruction	10514585	64.9942%	U
+C. lanatus	SRR7075815	passes the trimming step	not used for transcript reconstruction	9436200	69.1749%	U
+C. lanatus	SRR7075816	passes the trimming step	not used for transcript reconstruction	9704237	73.0601%	U
+C. lanatus	SRR7075817	passes the trimming step	not used for transcript reconstruction	10159118	73.4371%	U
+C. lanatus	SRR7075818	passes the trimming step	not used for transcript reconstruction	9939989	72.9615%	U
+C. lanatus	SRR7075819	passes the trimming step	not used for transcript reconstruction	10086254	73.2805%	U
+C. lanatus	SRR7075820	passes the trimming step	not used for transcript reconstruction	9934319	67.4417%	U
+C. lanatus	SRR7075821	passes the trimming step	not used for transcript reconstruction	9743122	67.0809%	U
+C. lanatus	SRR7075822	passes the trimming step	not used for transcript reconstruction	9762977	68.9829%	U
+C. lanatus	SRR7075823	passes the trimming step	not used for transcript reconstruction	9488645	66.5103%	U
+C. lanatus	SRR7075824	passes the trimming step	not used for transcript reconstruction	12610945	71.144%	U
+C. lanatus	SRR7075825	passes the trimming step	not used for transcript reconstruction	11660464	71.1488%	U
+C. lanatus	SRR7075826	passes the trimming step	not used for transcript reconstruction	11002860	64.6028%	U
+C. lanatus	SRR7075827	passes the trimming step	not used for transcript reconstruction	10685956	65.4557%	U
+C. lanatus	SRR7075828	passes the trimming step	not used for transcript reconstruction	11303991	72.3902%	U
+C. lanatus	SRR7075829	passes the trimming step	not used for transcript reconstruction	10979811	64.7171%	U
+C. lanatus	SRR7361584	passes the trimming step	not used for transcript reconstruction	23113933/23113933	63.2038%	IU
+C. lanatus	SRR7361585	passes the trimming step	not used for transcript reconstruction	20598676/20598676	60.9375%	IU
+C. lanatus	SRR7361586	passes the trimming step	not used for transcript reconstruction	19257800/19257800	58.8118%	IU
+C. lanatus	SRR7361587	passes the trimming step	not used for transcript reconstruction	18104374/18104374	52.8368%	IU
+C. lanatus	SRR7361588	passes the trimming step	not used for transcript reconstruction	19655745/19655745	63.2787%	IU
+C. lanatus	SRR7361589	passes the trimming step	not used for transcript reconstruction	19151731/19151731	54.1143%	IU
+C. lanatus	SRR7361590	passes the trimming step	not used for transcript reconstruction	20717156/20717156	57.1602%	IU
+C. lanatus	SRR7361591	passes the trimming step	not used for transcript reconstruction	20381839/20381839	61.6823%	IU
+C. lanatus	SRR7361592	passes the trimming step	not used for transcript reconstruction	21242654/21242654	53.119%	IU
+C. lanatus	SRR7361593	passes the trimming step	not used for transcript reconstruction	19238144/19238144	59.8355%	IU
+C. lanatus	SRR7361594	passes the trimming step	not used for transcript reconstruction	22206861/22206861	61.0228%	IU
+C. lanatus	SRR7361595	passes the trimming step	not used for transcript reconstruction	18581481/18581481	62.1128%	IU
+C. lanatus	SRR7361596	passes the trimming step	not used for transcript reconstruction	20608544/20608544	61.8778%	IU
+C. lanatus	SRR7361597	passes the trimming step	not used for transcript reconstruction	21788710/21788710	62.0221%	IU
+C. lanatus	SRR7361598	passes the trimming step	not used for transcript reconstruction	19681927/19681927	54.9523%	IU
+C. lanatus	SRR7361599	passes the trimming step	not used for transcript reconstruction	20152046/20152046	57.655%	IU
+C. lanatus	SRR7361600	passes the trimming step	not used for transcript reconstruction	20843127/20843127	61.4161%	IU
+C. lanatus	SRR7361601	passes the trimming step	not used for transcript reconstruction	22409721/22409721	59.6729%	IU
+C. lanatus	SRR7361602	passes the trimming step	not used for transcript reconstruction	17531238/17531238	32.2603%	IU
+C. lanatus	SRR7361603	passes the trimming step	not used for transcript reconstruction	18641045/18641045	56.729%	IU
+C. lanatus	SRR7361604	passes the trimming step	not used for transcript reconstruction	20321343/20321343	59.7012%	IU
+C. lanatus	SRR7361605	passes the trimming step	not used for transcript reconstruction	21178226/21178226	61.057%	IU
+C. lanatus	SRR7361606	passes the trimming step	not used for transcript reconstruction	20587238/20587238	61.9046%	IU
+C. lanatus	SRR7361607	passes the trimming step	not used for transcript reconstruction	19780869/19780869	55.5418%	IU
+C. lanatus	SRR7361608	passes the trimming step	not used for transcript reconstruction	22284752/22284752	59.0603%	IU
+C. lanatus	SRR7361609	passes the trimming step	not used for transcript reconstruction	25134377/25134377	61.6987%	IU
+C. lanatus	SRR7361610	passes the trimming step	not used for transcript reconstruction	19669667/19669667	54.7405%	IU
+C. lanatus	SRR7408296	passes the trimming step	not used for transcript reconstruction	19146744/19146744	57.7767%	IU
+C. lanatus	SRR7408297	passes the trimming step	not used for transcript reconstruction	22269423/22269423	60.4477%	IU
+C. lanatus	SRR7408298	passes the trimming step	not used for transcript reconstruction	22951619/22951619	59.5689%	IU
+C. lanatus	SRR7408299	passes the trimming step	not used for transcript reconstruction	19091758/19091758	59.0183%	IU
+C. lanatus	SRR7408300	passes the trimming step	not used for transcript reconstruction	20926253/20926253	57.9546%	IU
+C. lanatus	SRR7408301	passes the trimming step	not used for transcript reconstruction	21419901/21419901	56.7172%	IU
+C. lanatus	SRR7408302	passes the trimming step	not used for transcript reconstruction	21277056/21277056	58.1693%	IU
+C. lanatus	SRR7408303	passes the trimming step	not used for transcript reconstruction	19596425/19596425	52.1627%	IU
+C. lanatus	SRR7408304	passes the trimming step	not used for transcript reconstruction	19433838/19433838	54.7245%	IU
+C. lanatus	SRR7408305	passes the trimming step	not used for transcript reconstruction	22223904/22223904	63.2932%	IU
+C. lanatus	SRR7408306	passes the trimming step	not used for transcript reconstruction	22636648/22636648	59.3101%	IU
+C. lanatus	SRR7408307	passes the trimming step	not used for transcript reconstruction	21894504/21894504	64.4215%	IU
+C. lanatus	SRR7408308	passes the trimming step	not used for transcript reconstruction	21379620/21379620	62.1717%	IU
+C. lanatus	SRR7408309	passes the trimming step	not used for transcript reconstruction	23024934/23024934	65.0048%	IU
+C. lanatus	SRR7408310	passes the trimming step	not used for transcript reconstruction	21834687/21834687	64.8065%	IU
+C. lanatus	SRR7408311	passes the trimming step	not used for transcript reconstruction	29257449/29257449	61.891%	IU
+C. lanatus	SRR7408312	passes the trimming step	not used for transcript reconstruction	27546702/27546702	62.8065%	IU
+C. lanatus	SRR7408313	passes the trimming step	not used for transcript reconstruction	20664663/20664663	63.4967%	IU
+C. lanatus	SRR7408314	passes the trimming step	not used for transcript reconstruction	22168567/22168567	55.2217%	IU
+C. lanatus	SRR7408315	passes the trimming step	not used for transcript reconstruction	20623080/20623080	54.214%	IU
+C. lanatus	SRR7408316	passes the trimming step	not used for transcript reconstruction	21329527/21329527	54.3515%	IU
+C. lanatus	SRR7408317	passes the trimming step	not used for transcript reconstruction	19178205/19178205	52.7312%	IU
+C. lanatus	SRR7408318	passes the trimming step	not used for transcript reconstruction	20493393/20493393	59.2488%	IU
+C. lanatus	SRR7408319	passes the trimming step	not used for transcript reconstruction	20832690/20832690	53.0434%	IU
+C. lanatus	SRR7408320	passes the trimming step	not used for transcript reconstruction	19145956/19145956	59.8667%	IU
+C. lanatus	SRR7408321	passes the trimming step	not used for transcript reconstruction	20924797/20924797	55.3286%	IU
+C. lanatus	SRR7408322	passes the trimming step	not used for transcript reconstruction	20999858/20999858	52.7505%	IU
+C. lanatus	SRR7408323	passes the trimming step	not used for transcript reconstruction	21227198/21227198	53.2557%	IU
+C. lanatus	SRR7408324	passes the trimming step	not used for transcript reconstruction	19799608/19799608	56.4264%	IU
+C. lanatus	SRR7760044	passes the trimming step	not used for transcript reconstruction	29139398/29139398	69.0058%	IU
+C. lanatus	SRR7760045	passes the trimming step	not used for transcript reconstruction	29041955/29041955	69.9688%	IU
+C. lanatus	SRR7760046	passes the trimming step	not used for transcript reconstruction	27245155/27245155	68.9831%	IU
+C. lanatus	SRR7760047	passes the trimming step	not used for transcript reconstruction	21840905/21840905	68.983%	IU
+C. lanatus	SRR7760048	passes the trimming step	not used for transcript reconstruction	22215246/22215246	61.6092%	IU
+C. lanatus	SRR7760049	passes the trimming step	not used for transcript reconstruction	22951952/22951952	68.6983%	IU
+C. lanatus	SRR7760050	passes the trimming step	not used for transcript reconstruction	26375791/26375791	64.4014%	IU
+C. lanatus	SRR7760051	passes the trimming step	not used for transcript reconstruction	24080271/24080271	51.7598%	IU
+C. lanatus	SRR7760052	passes the trimming step	not used for transcript reconstruction	28245834/28245834	67.5012%	IU
+C. lanatus	SRR8177409	passes the trimming step	not used for transcript reconstruction	22723768/22723768	64.2492%	IU
+C. lanatus	SRR8177410	passes the trimming step	not used for transcript reconstruction	21259037/21259037	63.9869%	IU
+C. lanatus	SRR8177411	passes the trimming step	not used for transcript reconstruction	19995134/19995134	64.6667%	IU
+C. lanatus	SRR8177412	passes the trimming step	not used for transcript reconstruction	18858305/18858305	63.7998%	IU
+C. lanatus	SRR8177413	passes the trimming step	not used for transcript reconstruction	21846872/21846872	62.9528%	IU
+C. lanatus	SRR8177414	passes the trimming step	not used for transcript reconstruction	22742252/22742252	63.3788%	IU
+C. lanatus	SRR8177415	passes the trimming step	not used for transcript reconstruction	19028616/19028616	61.8131%	IU
+C. lanatus	SRR8177416	passes the trimming step	not used for transcript reconstruction	20788886/20788886	63.1261%	IU
+C. lanatus	SRR8177417	passes the trimming step	not used for transcript reconstruction	21090432/21090432	61.9456%	IU
+C. lanatus	SRR8177418	passes the trimming step	not used for transcript reconstruction	22264736/22264736	60.1652%	IU
+C. lanatus	SRR8177419	passes the trimming step	not used for transcript reconstruction	17989767/17989767	64.3488%	IU
+C. lanatus	SRR8177420	passes the trimming step	not used for transcript reconstruction	19353065/19353065	64.1382%	IU
+C. lanatus	SRR8177421	passes the trimming step	not used for transcript reconstruction	21277901/21277901	63.718%	IU
+C. lanatus	SRR8177422	passes the trimming step	not used for transcript reconstruction	19195293/19195293	63.0062%	IU
+C. lanatus	SRR8177423	passes the trimming step	not used for transcript reconstruction	21198752/21198752	64.1141%	IU
+C. lanatus	SRR8177424	passes the trimming step	not used for transcript reconstruction	19320892/19320892	63.8166%	IU
+C. lanatus	SRR8177425	passes the trimming step	not used for transcript reconstruction	20088769/20088769	64.1944%	IU
+C. lanatus	SRR8177426	passes the trimming step	not used for transcript reconstruction	18084390/18084390	64.6235%	IU
+C. lanatus	SRR8797148	passes the trimming step	used for transcript reconstruction	38116285/38116285	39.2441%	ISR
+C. lanatus	SRR8797419	passes the trimming step	used for transcript reconstruction	34758630/34758630	39.21%	ISR
+C. lanatus	SRR8946530	passes the trimming step	used for transcript reconstruction	47353300/47353300	41.2053%	ISR
+C. lanatus	SRR8946531	passes the trimming step	used for transcript reconstruction	47108520/47108520	39.3825%	ISR
+C. lanatus	SRR8946532	passes the trimming step	used for transcript reconstruction	45112145/45112145	1.92618%	ISR
+C. lanatus	SRR8947090	passes the trimming step	used for transcript reconstruction	11240745	43.6745%	SR
+C. lanatus	SRR8947091	passes the trimming step	used for transcript reconstruction	12295237	32.9136%	SR
+C. lanatus	SRR8947092	passes the trimming step	used for transcript reconstruction	10033092	40.3038%	SR
+C. lanatus	SRR8947093	passes the trimming step	used for transcript reconstruction	7836385	78.7979%	SR
+C. lanatus	SRR8947094	passes the trimming step	used for transcript reconstruction	11442015	57.0765%	SR
+C. lanatus	SRR8947095	passes the trimming step	used for transcript reconstruction	9811961	75.8507%	SR
+C. lanatus	SRR8947096	passes the trimming step	used for transcript reconstruction	13332377	63.8011%	SR
+C. lanatus	SRR8947097	passes the trimming step	used for transcript reconstruction	11231230	77.1922%	SR
+C. lanatus	SRR8947098	passes the trimming step	used for transcript reconstruction	10179132	45.8894%	SR
+C. lanatus	SRR8947099	passes the trimming step	used for transcript reconstruction	13746197	51.988%	SR
+C. lanatus	SRR8947100	passes the trimming step	used for transcript reconstruction	13219516	61.2179%	SR
+C. lanatus	SRR8947101	passes the trimming step	used for transcript reconstruction	17899448	44.2577%	SR
+C. lanatus	SRR8947102	passes the trimming step	used for transcript reconstruction	9605240	75.6245%	SR
+C. lanatus	SRR8947103	passes the trimming step	used for transcript reconstruction	12880545	74.4144%	SR
+C. lanatus	SRR8947104	passes the trimming step	used for transcript reconstruction	9303574	78.3074%	SR
+C. lanatus	SRR8947105	passes the trimming step	used for transcript reconstruction	7844829	79.2161%	SR
+C. lanatus	SRR8947106	passes the trimming step	used for transcript reconstruction	9505930	75.4523%	SR
+C. lanatus	SRR8947107	passes the trimming step	used for transcript reconstruction	7664526	76.7019%	SR
+C. lanatus	SRR8947108	passes the trimming step	used for transcript reconstruction	10747368	76.5685%	SR
+C. lanatus	SRR8947109	passes the trimming step	used for transcript reconstruction	9697279	76.3924%	SR
+C. lanatus	SRR8947110	passes the trimming step	used for transcript reconstruction	10952515	59.241%	SR
+C. lanatus	SRR8947111	passes the trimming step	used for transcript reconstruction	11459758	50.4367%	SR
+C. lanatus	SRR8947112	passes the trimming step	used for transcript reconstruction	6090131	71.767%	SR
+C. lanatus	SRR8947113	passes the trimming step	used for transcript reconstruction	7883261	72.9022%	SR
+C. lanatus	SRR8947114	passes the trimming step	used for transcript reconstruction	12805649	50.5702%	SR
+C. lanatus	SRR8947115	passes the trimming step	used for transcript reconstruction	12451244	60.9736%	SR
+C. lanatus	SRR8947116	passes the trimming step	used for transcript reconstruction	10808428	43.8829%	SR
+C. lanatus	SRR8947117	passes the trimming step	used for transcript reconstruction	12536295	57.9305%	SR
+C. lanatus	SRR8947118	passes the trimming step	used for transcript reconstruction	12355177	49.7221%	SR
+C. lanatus	SRR8947119	passes the trimming step	used for transcript reconstruction	11633915	53.9843%	SR
+C. lanatus	SRR8947120	passes the trimming step	used for transcript reconstruction	11767522	58.5653%	SR
+C. lanatus	SRR8947121	passes the trimming step	used for transcript reconstruction	14418569	57.0648%	SR
+C. lanatus	SRR8947122	passes the trimming step	used for transcript reconstruction	8817075	75.1743%	SR
+C. lanatus	SRR8947123	passes the trimming step	used for transcript reconstruction	14162517	74.0629%	SR
+C. lanatus	SRR8947124	passes the trimming step	used for transcript reconstruction	12397639	42.9745%	SR
+C. lanatus	SRR8947125	passes the trimming step	used for transcript reconstruction	9441896	74.7048%	SR
+C. lanatus	SRR8947126	passes the trimming step	used for transcript reconstruction	9125316	76.6837%	SR
+C. lanatus	SRR8947127	passes the trimming step	used for transcript reconstruction	12798096	75.4814%	SR
+C. lanatus	SRR8947128	passes the trimming step	used for transcript reconstruction	11089138	75.1602%	SR
+C. lanatus	SRR8947129	passes the trimming step	used for transcript reconstruction	16713436	77.4017%	SR
+C. lanatus	SRR8947130	passes the trimming step	used for transcript reconstruction	8995724	77.2063%	SR
+C. lanatus	SRR8947131	passes the trimming step	used for transcript reconstruction	13085538	54.9369%	SR
+C. lanatus	SRR8947132	passes the trimming step	used for transcript reconstruction	15856590	79.805%	SR
+C. lanatus	SRR8947133	passes the trimming step	used for transcript reconstruction	7324635	77.5411%	SR
+C. lanatus	SRR8947134	passes the trimming step	used for transcript reconstruction	9715026	77.1903%	SR
+C. lanatus	SRR8947135	passes the trimming step	used for transcript reconstruction	8372618	76.4343%	SR
+C. lanatus	SRR8947136	passes the trimming step	used for transcript reconstruction	9840907	56.1616%	SR
+C. lanatus	SRR8947137	passes the trimming step	used for transcript reconstruction	9925248	76.1582%	SR
+C. lanatus	SRR8947138	passes the trimming step	used for transcript reconstruction	10428494	77.4345%	SR
+C. lanatus	SRR8947139	passes the trimming step	used for transcript reconstruction	9806821	47.9559%	SR
+C. lanatus	SRR8947140	passes the trimming step	used for transcript reconstruction	29777930	46.6581%	SR
+C. lanatus	SRR8947141	passes the trimming step	used for transcript reconstruction	10900189	76.6266%	SR
+C. lanatus	SRR8947142	passes the trimming step	used for transcript reconstruction	10334330	72.8685%	SR
+C. lanatus	SRR8947143	passes the trimming step	used for transcript reconstruction	8344762	69.3135%	SR
+C. lanatus	SRR8947144	passes the trimming step	used for transcript reconstruction	8644476	72.8782%	SR
+C. lanatus	SRR8947145	passes the trimming step	used for transcript reconstruction	8523925	72.8946%	SR
+C. lanatus	SRR8947146	passes the trimming step	used for transcript reconstruction	9291268	77.4922%	SR
+C. lanatus	SRR8947147	passes the trimming step	used for transcript reconstruction	9506151	77.689%	SR
+C. lanatus	SRR8947148	passes the trimming step	used for transcript reconstruction	10980440	76.8081%	SR
+C. lanatus	SRR8947149	passes the trimming step	used for transcript reconstruction	14670310	77.4806%	SR
+C. lanatus	SRR8947150	passes the trimming step	used for transcript reconstruction	12293670	56.5194%	SR
+C. lanatus	SRR8947151	passes the trimming step	used for transcript reconstruction	13423109	61.2625%	SR
+C. lanatus	SRR8947152	passes the trimming step	used for transcript reconstruction	12655231	53.9242%	SR
+C. lanatus	SRR8947153	passes the trimming step	used for transcript reconstruction	11284514	62.8171%	SR
+C. lanatus	SRR8947154	passes the trimming step	used for transcript reconstruction	11949876	22.8687%	SR
+C. lanatus	SRR8947155	passes the trimming step	used for transcript reconstruction	31023699	57.1987%	SR
+C. lanatus	SRR8947156	passes the trimming step	used for transcript reconstruction	12773388	51.0371%	SR
+C. lanatus	SRR8947157	passes the trimming step	used for transcript reconstruction	10836696	49.198%	SR
+C. lanatus	SRR8947158	passes the trimming step	used for transcript reconstruction	12189231	53.9064%	SR
+C. lanatus	SRR8947159	passes the trimming step	used for transcript reconstruction	12682450	49.866%	SR
+C. lanatus	SRR8947160	passes the trimming step	used for transcript reconstruction	10863743	61.5843%	SR
+C. lanatus	SRR8947161	passes the trimming step	used for transcript reconstruction	12042885	55.655%	SR
+C. lanatus	SRR9117586	passes the trimming step	not used for transcript reconstruction	26413723/26413723	59.282%	IU
+C. lanatus	SRR9117587	passes the trimming step	not used for transcript reconstruction	25319018/25319018	60.7298%	IU
+C. lanatus	SRR9117588	passes the trimming step	not used for transcript reconstruction	26150129/26150129	60.7997%	IU
+C. lanatus	SRR9117589	passes the trimming step	not used for transcript reconstruction	25717468/25717468	60.7497%	IU
+C. lanatus	SRR9117590	passes the trimming step	not used for transcript reconstruction	29398543/29398543	60.6719%	IU
+C. lanatus	SRR9117591	passes the trimming step	not used for transcript reconstruction	23505941/23505941	59.6222%	IU
+C. lanatus	SRR9117592	passes the trimming step	not used for transcript reconstruction	26252740/26252740	61.3071%	IU
+C. lanatus	SRR9117593	passes the trimming step	not used for transcript reconstruction	24994045/24994045	60.8785%	IU
+C. lanatus	SRR9117594	passes the trimming step	not used for transcript reconstruction	24588848/24588848	60.5753%	IU
+C. lanatus	SRR9117595	passes the trimming step	not used for transcript reconstruction	26475369/26475369	61.5876%	IU
+C. lanatus	SRR9117596	passes the trimming step	not used for transcript reconstruction	24683330/24683330	62.7649%	IU
+C. lanatus	SRR9117597	passes the trimming step	not used for transcript reconstruction	23692327/23692327	62.1476%	IU
+C. lanatus	SRR9117598	passes the trimming step	not used for transcript reconstruction	23926168/23926168	61.3074%	IU
+C. lanatus	SRR9117599	passes the trimming step	not used for transcript reconstruction	26062236/26062236	56.8739%	IU
+C. lanatus	SRR9117600	passes the trimming step	not used for transcript reconstruction	27809191/27809191	59.7399%	IU
+C. lanatus	SRR9117601	passes the trimming step	not used for transcript reconstruction	22836842/22836842	60.5522%	IU
+C. lanatus	SRR9117602	passes the trimming step	not used for transcript reconstruction	33178224/33178224	62.6322%	IU
+C. lanatus	SRR9117603	passes the trimming step	not used for transcript reconstruction	24410709/24410709	62.3475%	IU
+C. lanatus	SRR9117604	passes the trimming step	not used for transcript reconstruction	24873104/24873104	61.7561%	IU
+C. lanatus	SRR9117605	passes the trimming step	not used for transcript reconstruction	20332555/20332555	60.7966%	IU
+C. lanatus	SRR9117606	passes the trimming step	not used for transcript reconstruction	20686975/20686975	62.1216%	IU
+C. lanatus	SRR9117607	passes the trimming step	not used for transcript reconstruction	24331333/24331333	58.743%	IU
+C. lanatus	SRR9117608	passes the trimming step	not used for transcript reconstruction	23018670/23018670	59.7356%	IU
+C. lanatus	SRR9117609	passes the trimming step	not used for transcript reconstruction	23689855/23689855	59.4999%	IU
+C. lanatus	SRR915982	passes the trimming step	not used for transcript reconstruction	6726329	64.5296%	U
+C. lanatus	SRR916132	passes the trimming step	not used for transcript reconstruction	6938177	70.3498%	U
+C. lanatus	SRR916133	passes the trimming step	not used for transcript reconstruction	6994354	70.0501%	U
+C. lanatus	SRR916135	passes the trimming step	not used for transcript reconstruction	6587253	70.4062%	U
+C. lanatus	SRR916156	passes the trimming step	not used for transcript reconstruction	6736351	64.4418%	U
+C. lanatus	SRR916184	passes the trimming step	not used for transcript reconstruction	6805302	65.5076%	U
+C. lanatus	SRR916185	passes the trimming step	not used for transcript reconstruction	7033217	64.5306%	U
+C. lanatus	SRR916186	passes the trimming step	not used for transcript reconstruction	6807087	65.547%	U
+C. lanatus	SRR9306351	passes the trimming step	used for transcript reconstruction	13408181	76.9501%	SR
+C. lanatus	SRR9306352	passes the trimming step	used for transcript reconstruction	14620054	79.0789%	SR
+C. lanatus	SRR9306353	passes the trimming step	used for transcript reconstruction	20339475	77.9447%	SR
+C. lanatus	SRR9306354	passes the trimming step	used for transcript reconstruction	14341186	79.8157%	SR
+C. lanatus	SRR9306355	passes the trimming step	used for transcript reconstruction	53788773	79.9503%	SR
+C. lanatus	SRR9306356	passes the trimming step	used for transcript reconstruction	57810715	78.3112%	SR
+C. lanatus	SRR9306357	passes the trimming step	used for transcript reconstruction	13139712	79.5962%	SR
+C. lanatus	SRR9306358	passes the trimming step	used for transcript reconstruction	15898255	78.5663%	SR
+C. lanatus	SRR9306359	passes the trimming step	used for transcript reconstruction	13967443	79.5688%	SR
+C. lanatus	SRR9306360	passes the trimming step	used for transcript reconstruction	14749711	78.6162%	SR
+C. lanatus	SRR9306361	passes the trimming step	used for transcript reconstruction	12557567	79.2428%	SR
+C. lanatus	SRR9306362	passes the trimming step	used for transcript reconstruction	14350324	78.8624%	SR
+C. lanatus	SRR9306363	passes the trimming step	used for transcript reconstruction	14661547	78.9005%	SR
+C. lanatus	SRR9306364	passes the trimming step	used for transcript reconstruction	14350296	79.1759%	SR
+C. lanatus	SRR9308815	passes the trimming step	used for transcript reconstruction	9825297	75.8425%	SR
+C. lanatus	SRR9308816	passes the trimming step	used for transcript reconstruction	12169751	73.5892%	SR
+C. lanatus	SRR9308817	passes the trimming step	used for transcript reconstruction	10556165	76.5512%	SR
+C. lanatus	SRR9308818	passes the trimming step	used for transcript reconstruction	9881780	75.7118%	SR
+C. lanatus	SRR9308819	passes the trimming step	used for transcript reconstruction	12809646	76.1685%	SR
+C. lanatus	SRR9308820	passes the trimming step	used for transcript reconstruction	11233762	74.6295%	SR
+C. lanatus	SRR9317453	passes the trimming step	used for transcript reconstruction	24709573	69.662%	SR
+C. lanatus	SRR9317454	passes the trimming step	used for transcript reconstruction	21840621	61.3895%	SR
+C. lanatus	SRR9317455	passes the trimming step	used for transcript reconstruction	18450393	62.0866%	SR
+C. lanatus	SRR9317456	passes the trimming step	used for transcript reconstruction	18855440	58.479%	SR
+C. lanatus	SRR9317457	passes the trimming step	used for transcript reconstruction	13154751	50.3569%	SR
+C. lanatus	SRR9317458	passes the trimming step	used for transcript reconstruction	17971496	41.6074%	SR
+C. lanatus	SRR9593734	passes the trimming step	not used for transcript reconstruction	24273175	70.0515%	U
+C. lanatus	SRR9593735	passes the trimming step	not used for transcript reconstruction	24184982	70.1686%	U
+C. lanatus	SRR9593736	passes the trimming step	not used for transcript reconstruction	23331663	70.5208%	U
+C. lanatus	SRR9593737	passes the trimming step	not used for transcript reconstruction	23246132	70.6297%	U
+C. lanatus	SRR9593738	passes the trimming step	not used for transcript reconstruction	23258998	70.9243%	U
+C. lanatus	SRR9593739	passes the trimming step	not used for transcript reconstruction	23202741	70.9829%	U
+C. lanatus	SRR9593740	passes the trimming step	not used for transcript reconstruction	22949112	70.8915%	U
+C. lanatus	SRR9593741	passes the trimming step	not used for transcript reconstruction	22831204	70.9965%	U
+C. lanatus	SRR9593742	passes the trimming step	not used for transcript reconstruction	23801000	57.9228%	U
+C. lanatus	SRR9593743	passes the trimming step	not used for transcript reconstruction	23711786	58.0542%	U
+C. lanatus	SRR9593744	passes the trimming step	not used for transcript reconstruction	22474768	69.8574%	U
+C. lanatus	SRR9593745	passes the trimming step	not used for transcript reconstruction	22524600	69.6875%	U
+C. lanatus	SRR9593746	passes the trimming step	not used for transcript reconstruction	20501721	54.6338%	U
+C. lanatus	SRR9593747	passes the trimming step	not used for transcript reconstruction	20558950	54.7115%	U
+C. lanatus	SRR9593748	passes the trimming step	not used for transcript reconstruction	19538330	51.385%	U
+C. lanatus	SRR9593749	passes the trimming step	not used for transcript reconstruction	19612294	51.4281%	U
+C. lanatus	SRR9593750	passes the trimming step	not used for transcript reconstruction	22995145	63.1031%	U
+C. lanatus	SRR9593751	passes the trimming step	not used for transcript reconstruction	23063684	63.0879%	U
+C. lanatus	SRR9593752	passes the trimming step	not used for transcript reconstruction	22124977	63.4569%	U
+C. lanatus	SRR9593753	passes the trimming step	not used for transcript reconstruction	22169039	63.4843%	U
+C. lanatus	SRR9593754	passes the trimming step	not used for transcript reconstruction	20346250	71.6419%	U
+C. lanatus	SRR9593755	passes the trimming step	not used for transcript reconstruction	20323655	71.5814%	U
+C. lanatus	SRR9593756	passes the trimming step	not used for transcript reconstruction	23604644	71.1614%	U
+C. lanatus	SRR9593757	passes the trimming step	not used for transcript reconstruction	23679924	71.0728%	U
+C. lanatus	SRR9593758	passes the trimming step	not used for transcript reconstruction	20756993	69.6738%	U
+C. lanatus	SRR9593759	passes the trimming step	not used for transcript reconstruction	20798893	69.5358%	U
+C. lanatus	SRR9593760	passes the trimming step	not used for transcript reconstruction	22234858	71.4519%	U
+C. lanatus	SRR9593761	passes the trimming step	not used for transcript reconstruction	22231824	71.3561%	U
+C. lanatus	SRR9593762	passes the trimming step	not used for transcript reconstruction	25191289	70.9735%	U
+C. lanatus	SRR9593763	passes the trimming step	not used for transcript reconstruction	25254172	70.8465%	U
+C. lanatus	SRR9593764	passes the trimming step	not used for transcript reconstruction	26263935	69.5623%	U
+C. lanatus	SRR9593765	passes the trimming step	not used for transcript reconstruction	26355344	69.4865%	U
+C. lanatus	SRR9593766	passes the trimming step	not used for transcript reconstruction	22976384	65.9142%	U
+C. lanatus	SRR9593767	passes the trimming step	not used for transcript reconstruction	23051969	65.849%	U
+C. lanatus	SRR9593768	passes the trimming step	not used for transcript reconstruction	23967424	62.3581%	U
+C. lanatus	SRR9593769	passes the trimming step	not used for transcript reconstruction	23942570	62.4315%	U

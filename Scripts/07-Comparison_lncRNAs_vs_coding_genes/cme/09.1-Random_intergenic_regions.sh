@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmeIR			# Job name.
-#SBATCH --output=cme_IR.log			# Standard output and error log.
-#SBATCH --qos=short				# Partition (queue)
-#SBATCH --ntasks=1				# Run on one mode. Don't change unless you know what you are doing.
-#SBATCH --cpus-per-task=2			# Number of tasks = cpus. It depends on the number of process of your parallelization.
-#SBATCH --time=0-01:00:00			# Time limit days-hrs:min:sec.
-#SBATCH --mem=15gb				# Job memory request.
+#SBATCH --job-name=cmeS9.1						# Job name.
+#SBATCH --output=cme_STEP9_1.log					# Standard output and error log.
+#SBATCH --qos=short							# Partition (queue)
+#SBATCH --ntasks=1							# Run on one mode.
+#SBATCH --cpus-per-task=2						# Number of tasks = cpus.
+#SBATCH --time=0-01:00:00						# Time limit days-hrs:min:sec.
+#SBATCH --mem-per-cpu=5gb						# Job memory request.
 
 
 ####### MODULES
@@ -14,24 +14,26 @@ module load biotools
 
 ####### VARIABLES
 specie="cme"
-WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
+WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
+WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/07-Comparison_lncRNAs_vs_coding_genes"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 
 ####### NEW AND OTHER VARIABLES
-WD1=$WD/05-predict_lncRNAs/$specie
-WD2=$WD/07-comparison_lncRNAs_vs_coding_genes/$specie
+WD1_spe=$WD1/$specie
+WD2_spe=$WD2/$specie
 
 ####### DIRECTORY
-mkdir -p $WD/07-comparison_lncRNAs_vs_coding_genes
-mkdir -p $WD/07-comparison_lncRNAs_vs_coding_genes/$specie
+mkdir -p $WD2
+mkdir -p $WD2_spe
+
 
 ####### PIPELINE
-cd $WD2
+cd $WD2_spe
 
 ## Convert the LncRNAs GTF file to BED file.
-cat $WD1/STEP1/Potential_lncRNAs/POTENTIAL_LNCRNAS.gtf | convert2bed -i gtf --attribute-key=transcript_id | awk '$8 == "transcript" {print $0}' > LncRNAs.bed
+cat $WD1_spe/STEP1/Potential_lncRNAs/POTENTIAL_LNCRNAS.gtf | convert2bed -i gtf --attribute-key=transcript_id | awk '$8 == "transcript" {print $0}' > LncRNAs.bed
 ## Convert the Genes GTF file to BED file.
-cat $WD1/STEP1/Original_genes/ORIGINAL_GENES.gtf | convert2bed -i gtf --attribute-key=transcript_id | awk '$8 == "transcript" {print $0}' > Genes.bed
+cat $WD1_spe/STEP1/Original_genes/ORIGINAL_GENES.gtf | convert2bed -i gtf --attribute-key=transcript_id | awk '$8 == "transcript" {print $0}' > Genes.bed
 ## Get the chromosomes sizes.
 cp $AI/Genome/$specie.fa $specie.fa
 samtools faidx $specie.fa

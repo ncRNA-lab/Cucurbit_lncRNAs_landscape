@@ -140,16 +140,16 @@ task_Summary_table_trimming(){
 		num_sequences_2=$(($total_lines_2/4))
 		## Check if the libraries are empty files.
 		echo -e "\nCheck if the libraries are empty files..."
-		if [ $num_sequences_1 -ge 1000000 ] && [ $num_sequences_2 -ge 1000000 ]; then
-			echo -e $1" passes the trimmomatic step."
-			echo -e $1"\tpasses the trimmomatic step\tYES\t$num_sequences_1/$num_sequences_2" >> $2/$1.tsv
+		if [ $num_sequences_1 -ge 750000 ] && [ $num_sequences_2 -ge 750000 ]; then
+			echo -e $1" passes the trimming step."
+			echo -e $1"\t$num_sequences_1/$num_sequences_2\tpasses the trimming step" >> $2/$1.tsv
 			echo $1 >> $3/$1.txt
-		elif [ $num_sequences_1 -ge 1000000 ] || [ $num_sequences_2 -ge 1000000 ]; then
-			echo -e $1" passes the filter only forward or reverse)."
-			echo -e $1"\tpasses the filter only forward or reverse\tNO\t$num_sequences_1/$num_sequences_2" >> $2/$1.tsv
+		elif [ $num_sequences_1 -ge 750000 ] || [ $num_sequences_2 -ge 750000 ]; then
+			echo -e $1" passes the trimming step only forward or reverse)."
+			echo -e $1"\t$num_sequences_1/$num_sequences_2\tpasses the trimming step only forward or reverse" >> $2/$1.tsv
 		else
-			echo -e $1" doesn't pass the trimmomatic step."
-			echo -e $1"\tdoesn't pass the trimmomatic step\tNO\t$num_sequences_1/$num_sequences_2" >> $2/$1.tsv
+			echo -e $1" doesn't pass the trimming step."
+			echo -e $1"\t$num_sequences_1/$num_sequences_2\tdoesn't pass the trimming step" >> $2/$1.tsv
 		fi
 	elif [ -e $1"_tr.fastq.gz" ]; then
 		## Calculate the library depth.
@@ -158,13 +158,13 @@ task_Summary_table_trimming(){
 		num_sequences=$(($total_lines/4))
 		## Check if the library is an empty file.
 		echo -e "\nCheck if the library is an empty file..."
-		if [ $num_sequences -ge 1000000 ]; then
-			echo -e $1" passes the trimmomatic step."
-			echo -e $1"\tpasses the trimmomatic step\tYES\t$num_sequences" >> $2/$1.tsv
+		if [ $num_sequences -ge 750000 ]; then
+			echo -e $1" passes the trimming step."
+			echo -e $1"\t$num_sequences\tpasses the trimming step" >> $2/$1.tsv
 			echo $1 >> $3/$1.txt
 		else
-			echo -e $1" doesn't pass the trimmomatic step."
-			echo -e $1"\tdoesn't pass the trimmomatic step\tNO\t$num_sequences" >> $2/$1.tsv
+			echo -e $1" doesn't pass the trimming step."
+			echo -e $1"\t$num_sequences\tdoesn't pass the trimming step" >> $2/$1.tsv
 		fi
 	else
 		echo -e "\n$1 doesn't exist. Check it."

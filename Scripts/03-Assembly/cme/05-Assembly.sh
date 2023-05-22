@@ -12,10 +12,10 @@
 ####### VARIABLES
 specie="cme"
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/01-Sample_processing_and_selection"
-WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/02-Mapping_on_transcriptome"
+WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/02-Mapping"
 WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/03-Assembly"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/03-Assembly/Functions.sh"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/03-Assembly/Functions.sh"
 
 ####### NEW VARIABLES
 WD1_spe=$WD1"/"$specie

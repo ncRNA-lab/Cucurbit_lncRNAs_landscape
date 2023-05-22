@@ -1,0 +1,128 @@
+Specie	Sample	Filter_1	Filter_2	Depth	Mapping_rate	Strandedness
+C. moschata	SRR11573109	passes the trimming step	used for transcript reconstruction	23380763/23380763	82.2119%	ISR
+C. moschata	SRR11659065	passes the trimming step	not used for transcript reconstruction	14317056/14317056	81.7723%	IU
+C. moschata	SRR11659066	passes the trimming step	not used for transcript reconstruction	16099485/16099485	81.6598%	IU
+C. moschata	SRR11659067	passes the trimming step	not used for transcript reconstruction	14387532/14387532	81.5684%	IU
+C. moschata	SRR11659068	passes the trimming step	not used for transcript reconstruction	14726530/14726530	81.7589%	IU
+C. moschata	SRR11659069	passes the trimming step	not used for transcript reconstruction	15868920/15868920	83.0154%	IU
+C. moschata	SRR11659070	passes the trimming step	not used for transcript reconstruction	13764144/13764144	79.6681%	IU
+C. moschata	SRR11659071	passes the trimming step	not used for transcript reconstruction	13724564/13724564	80.2111%	IU
+C. moschata	SRR11659072	passes the trimming step	not used for transcript reconstruction	13486270/13486270	78.789%	IU
+C. moschata	SRR11659073	passes the trimming step	not used for transcript reconstruction	16172784/16172784	80.7109%	IU
+C. moschata	SRR11659074	passes the trimming step	not used for transcript reconstruction	14365873/14365873	83.6315%	IU
+C. moschata	SRR1182474	doesn't pass the trimming step	NA	0	NA	NA
+C. moschata	SRR13963253	passes the trimming step	used for transcript reconstruction	22817134/22817134	77.4453%	ISR
+C. moschata	SRR13963254	passes the trimming step	used for transcript reconstruction	22800803/22800803	78.1502%	ISR
+C. moschata	SRR13963255	passes the trimming step	used for transcript reconstruction	22782346/22782346	78.0282%	ISR
+C. moschata	SRR13963256	passes the trimming step	used for transcript reconstruction	22884047/22884047	82.2956%	ISR
+C. moschata	SRR13963257	passes the trimming step	used for transcript reconstruction	22434175/22434175	82.1102%	ISR
+C. moschata	SRR13963258	passes the trimming step	used for transcript reconstruction	23030376/23030376	82.0557%	ISR
+C. moschata	SRR14333476	passes the trimming step	used for transcript reconstruction	20531169/20531169	70.6042%	ISR
+C. moschata	SRR14333477	passes the trimming step	used for transcript reconstruction	18769117/18769117	75.4432%	ISR
+C. moschata	SRR14333478	passes the trimming step	used for transcript reconstruction	24200958/24200958	75.2999%	ISR
+C. moschata	SRR14333479	passes the trimming step	used for transcript reconstruction	22819048/22819048	74.5507%	ISR
+C. moschata	SRR14333480	passes the trimming step	used for transcript reconstruction	25097144/25097144	76.4139%	ISR
+C. moschata	SRR14333481	passes the trimming step	used for transcript reconstruction	23520179/23520179	75.1472%	ISR
+C. moschata	SRR14550821	passes the trimming step	not used for transcript reconstruction	21776657/21776657	76.3152%	IU
+C. moschata	SRR14550822	passes the trimming step	not used for transcript reconstruction	21987616/21987616	76.3019%	IU
+C. moschata	SRR14550823	passes the trimming step	not used for transcript reconstruction	22416293/22416293	72.9693%	IU
+C. moschata	SRR14550824	passes the trimming step	not used for transcript reconstruction	20867458/20867458	77.029%	IU
+C. moschata	SRR14550825	passes the trimming step	not used for transcript reconstruction	21687048/21687048	77.1721%	IU
+C. moschata	SRR14550826	passes the trimming step	not used for transcript reconstruction	21920121/21920121	76.3718%	IU
+C. moschata	SRR14550827	passes the trimming step	not used for transcript reconstruction	22536000/22536000	76.6119%	IU
+C. moschata	SRR14550828	passes the trimming step	not used for transcript reconstruction	22677278/22677278	75.6813%	IU
+C. moschata	SRR14550829	passes the trimming step	not used for transcript reconstruction	22047905/22047905	76.4206%	IU
+C. moschata	SRR14763517	passes the trimming step	not used for transcript reconstruction	21860800/21860800	80.2494%	IU
+C. moschata	SRR14763518	passes the trimming step	not used for transcript reconstruction	22261936/22261936	80.777%	IU
+C. moschata	SRR14763519	passes the trimming step	not used for transcript reconstruction	20621391/20621391	80.9314%	IU
+C. moschata	SRR14763520	passes the trimming step	not used for transcript reconstruction	23329030/23329030	80.9944%	IU
+C. moschata	SRR14763521	passes the trimming step	not used for transcript reconstruction	19867182/19867182	80.3448%	IU
+C. moschata	SRR14763522	passes the trimming step	not used for transcript reconstruction	22607701/22607701	79.6734%	IU
+C. moschata	SRR1635033	passes the trimming step	not used for transcript reconstruction	23519431	80.56%	U
+C. moschata	SRR17223121	passes the trimming step	not used for transcript reconstruction	20934059/20934059	75.4434%	IU
+C. moschata	SRR17223122	passes the trimming step	not used for transcript reconstruction	20440679/20440679	74.82%	IU
+C. moschata	SRR17223123	passes the trimming step	not used for transcript reconstruction	21391567/21391567	75.494%	IU
+C. moschata	SRR17223124	passes the trimming step	not used for transcript reconstruction	20277605/20277605	75.9708%	IU
+C. moschata	SRR17223125	passes the trimming step	not used for transcript reconstruction	21112037/21112037	77.5445%	IU
+C. moschata	SRR17223126	passes the trimming step	not used for transcript reconstruction	20073652/20073652	76.1765%	IU
+C. moschata	SRR17223127	passes the trimming step	not used for transcript reconstruction	19509082/19509082	75.1274%	IU
+C. moschata	SRR17223128	passes the trimming step	not used for transcript reconstruction	20149970/20149970	71.7196%	IU
+C. moschata	SRR17223129	passes the trimming step	not used for transcript reconstruction	20728691/20728691	75.9232%	IU
+C. moschata	SRR17223130	passes the trimming step	not used for transcript reconstruction	21709272/21709272	74.7844%	IU
+C. moschata	SRR17223131	passes the trimming step	not used for transcript reconstruction	18857902/18857902	76.1307%	IU
+C. moschata	SRR17223132	passes the trimming step	not used for transcript reconstruction	21020210/21020210	75.1044%	IU
+C. moschata	SRR17223133	passes the trimming step	not used for transcript reconstruction	19701355/19701355	74.9994%	IU
+C. moschata	SRR17223134	passes the trimming step	not used for transcript reconstruction	20774624/20774624	75.7148%	IU
+C. moschata	SRR17223135	passes the trimming step	not used for transcript reconstruction	21673706/21673706	76.5007%	IU
+C. moschata	SRR17223136	passes the trimming step	not used for transcript reconstruction	21057712/21057712	74.1711%	IU
+C. moschata	SRR17223137	passes the trimming step	not used for transcript reconstruction	19043768/19043768	76.7604%	IU
+C. moschata	SRR17223138	passes the trimming step	not used for transcript reconstruction	21935976/21935976	77.6576%	IU
+C. moschata	SRR17223139	passes the trimming step	not used for transcript reconstruction	20671877/20671877	75.8051%	IU
+C. moschata	SRR17223140	passes the trimming step	not used for transcript reconstruction	18921644/18921644	75.6945%	IU
+C. moschata	SRR17223141	passes the trimming step	not used for transcript reconstruction	22066727/22066727	74.2401%	IU
+C. moschata	SRR17223142	passes the trimming step	not used for transcript reconstruction	20784112/20784112	75.4732%	IU
+C. moschata	SRR17223143	passes the trimming step	not used for transcript reconstruction	19303187/19303187	75.7354%	IU
+C. moschata	SRR17223144	passes the trimming step	not used for transcript reconstruction	20944613/20944613	71.9126%	IU
+C. moschata	SRR17223145	passes the trimming step	not used for transcript reconstruction	19838170/19838170	76.2549%	IU
+C. moschata	SRR17223146	passes the trimming step	not used for transcript reconstruction	20813583/20813583	75.42%	IU
+C. moschata	SRR17223147	passes the trimming step	not used for transcript reconstruction	19892524/19892524	74.7015%	IU
+C. moschata	SRR17223148	passes the trimming step	not used for transcript reconstruction	19331698/19331698	71.1398%	IU
+C. moschata	SRR17223149	passes the trimming step	not used for transcript reconstruction	19789968/19789968	74.8197%	IU
+C. moschata	SRR17223150	passes the trimming step	not used for transcript reconstruction	20280443/20280443	74.4611%	IU
+C. moschata	SRR17223151	passes the trimming step	not used for transcript reconstruction	20182164/20182164	75.3482%	IU
+C. moschata	SRR17223152	passes the trimming step	not used for transcript reconstruction	19461093/19461093	75.8854%	IU
+C. moschata	SRR17223153	passes the trimming step	not used for transcript reconstruction	20401430/20401430	76.8671%	IU
+C. moschata	SRR17223154	passes the trimming step	not used for transcript reconstruction	20482088/20482088	75.2675%	IU
+C. moschata	SRR17223155	passes the trimming step	not used for transcript reconstruction	20605196/20605196	76.8927%	IU
+C. moschata	SRR17223156	passes the trimming step	not used for transcript reconstruction	26759041/26759041	72.3862%	IU
+C. moschata	SRR2917887	passes the trimming step	not used for transcript reconstruction	7027004	80.0119%	U
+C. moschata	SRR2917889	passes the trimming step	not used for transcript reconstruction	6523044	81.6857%	U
+C. moschata	SRR5369792	passes the trimming step	not used for transcript reconstruction	35053243/35053243	73.1313%	IU
+C. moschata	SRR5504342	passes the trimming step	used for transcript reconstruction	12925816	72.948%	SR
+C. moschata	SRR5504343	passes the trimming step	used for transcript reconstruction	10488944	71.564%	SR
+C. moschata	SRR5504344	passes the trimming step	used for transcript reconstruction	12993015	72.9739%	SR
+C. moschata	SRR5504345	passes the trimming step	used for transcript reconstruction	14959179	81.7971%	SR
+C. moschata	SRR5504346	passes the trimming step	used for transcript reconstruction	13426962	81.8863%	SR
+C. moschata	SRR5504347	passes the trimming step	used for transcript reconstruction	15265818	82.0741%	SR
+C. moschata	SRR5504348	passes the trimming step	used for transcript reconstruction	12659649	81.9667%	SR
+C. moschata	SRR5504349	passes the trimming step	used for transcript reconstruction	11320656	81.472%	SR
+C. moschata	SRR5504350	passes the trimming step	used for transcript reconstruction	12864651	78.8919%	SR
+C. moschata	SRR5504351	passes the trimming step	used for transcript reconstruction	11260215	79.126%	SR
+C. moschata	SRR5504352	passes the trimming step	used for transcript reconstruction	6865812	74.0324%	SR
+C. moschata	SRR5682038	passes the trimming step	used for transcript reconstruction	3681620/3681620	78.9757%	ISR
+C. moschata	SRR5682045	passes the trimming step	used for transcript reconstruction	4065556/4065556	65.6952%	ISR
+C. moschata	SRR5682067	passes the trimming step	used for transcript reconstruction	2956594/2956594	78.4706%	ISF
+C. moschata	SRR6821832	passes the trimming step	not used for transcript reconstruction	23331822/23331822	66.2465%	IU
+C. moschata	SRR6821833	passes the trimming step	not used for transcript reconstruction	26286870/26286870	71.0773%	IU
+C. moschata	SRR6821834	passes the trimming step	not used for transcript reconstruction	23470376/23470376	68.331%	IU
+C. moschata	SRR6821838	passes the trimming step	not used for transcript reconstruction	25047093/25047093	75.4777%	IU
+C. moschata	SRR6821839	passes the trimming step	not used for transcript reconstruction	24610425/24610425	76.019%	IU
+C. moschata	SRR6821840	passes the trimming step	not used for transcript reconstruction	29567747/29567747	77.1634%	IU
+C. moschata	SRR7138072	passes the trimming step	not used for transcript reconstruction	32710159/32710159	81.2046%	IU
+C. moschata	SRR7138073	passes the trimming step	not used for transcript reconstruction	29256492/29256492	81.125%	IU
+C. moschata	SRR7138074	passes the trimming step	not used for transcript reconstruction	25692992/25692992	79.8771%	IU
+C. moschata	SRR7138075	passes the trimming step	not used for transcript reconstruction	33641914/33641914	80.9095%	IU
+C. moschata	SRR7138076	passes the trimming step	not used for transcript reconstruction	31098015/31098015	80.9861%	IU
+C. moschata	SRR7138077	passes the trimming step	not used for transcript reconstruction	28788508/28788508	81.5476%	IU
+C. moschata	SRR7138078	passes the trimming step	not used for transcript reconstruction	27248218/27248218	81.0715%	IU
+C. moschata	SRR7138079	passes the trimming step	not used for transcript reconstruction	23431935/23431935	81.0549%	IU
+C. moschata	SRR7138080	passes the trimming step	not used for transcript reconstruction	31862581/31862581	80.7482%	IU
+C. moschata	SRR7138081	passes the trimming step	not used for transcript reconstruction	31410321/31410321	81.54%	IU
+C. moschata	SRR7138088	passes the trimming step	not used for transcript reconstruction	31683893/31683893	80.0322%	IU
+C. moschata	SRR7138089	passes the trimming step	not used for transcript reconstruction	21353205/21353205	80.9789%	IU
+C. moschata	SRR9648343	passes the trimming step	used for transcript reconstruction	24823361/24823361	79.8045%	ISR
+C. moschata	SRR9648344	passes the trimming step	used for transcript reconstruction	27668697/27668697	79.266%	ISR
+C. moschata	SRR9648345	passes the trimming step	used for transcript reconstruction	30984386/30984386	81.7537%	ISR
+C. moschata	SRR9648346	passes the trimming step	used for transcript reconstruction	31446399/31446399	80.9809%	ISR
+C. moschata	SRR9648347	passes the trimming step	used for transcript reconstruction	26661606/26661606	79.1905%	ISR
+C. moschata	SRR9648350	passes the trimming step	used for transcript reconstruction	29011183/29011183	62.6919%	ISR
+C. moschata	SRR9648351	passes the trimming step	used for transcript reconstruction	27683038/27683038	78.5155%	ISR
+C. moschata	SRR9648358	passes the trimming step	used for transcript reconstruction	32372941/32372941	77.2811%	ISR
+C. moschata	SRR9648359	passes the trimming step	used for transcript reconstruction	24857778/24857778	66.4944%	ISR
+C. moschata	SRR9648361	passes the trimming step	used for transcript reconstruction	30702733/30702733	80.0488%	ISR
+C. moschata	SRR9648362	passes the trimming step	used for transcript reconstruction	31227907/31227907	80.672%	ISR
+C. moschata	SRR9648363	passes the trimming step	used for transcript reconstruction	32012373/32012373	79.1264%	ISR
+C. moschata	SRR9691130	passes the trimming step	not used for transcript reconstruction	27032453/27032453	80.0815%	IU
+C. moschata	SRR9691131	passes the trimming step	not used for transcript reconstruction	31307400/31307400	80.0119%	IU
+C. moschata	SRR9691132	passes the trimming step	not used for transcript reconstruction	27051735/27051735	80.1707%	IU
+C. moschata	SRR9691133	passes the trimming step	not used for transcript reconstruction	26589588/26589588	80.2962%	IU

@@ -16,12 +16,12 @@ module load biotools
 
 ####### VARIABLES
 specie="cme"
-WD1="/storage/ncRNA/Projects/lncRNAs/Cme_stress/Results/04-Transcript_annotation"
-WD2="/storage/ncRNA/Projects/lncRNAs/Cme_stress/Results/05-LncRNAs_prediction"
-AI="/storage/ncRNA/Projects/lncRNAs/Cme_stress/Additional_info"
-AS="/storage/ncRNA/Projects/lncRNAs/Cme_stress/Scripts/05-LncRNAs_prediction/Additional_scripts"
-F="/storage/ncRNA/Projects/lncRNAs/Cme_stress/Scripts/05-LncRNAs_prediction/Functions.sh"
-SP="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/05-LncRNAs_prediction/Softwares_prediction"
+WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/04-Transcript_annotation"
+WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
+AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/05-LncRNAs_prediction/Additional_scripts"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/05-LncRNAs_prediction/Functions.sh"
+SP="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/05-LncRNAs_prediction/Softwares_prediction"
 evalue=1e-5
 
 ####### NEW AND OTHER VARIABLES

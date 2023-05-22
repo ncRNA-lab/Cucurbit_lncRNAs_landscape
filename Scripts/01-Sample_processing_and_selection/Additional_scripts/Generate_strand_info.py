@@ -77,7 +77,7 @@ def main():
         
     for sample in samples:
         sample = sample.rstrip()
-        log_file = open(path + "/03-Strand_detection/03-Pseudomapping/outputs/stdout_Pseudomapping_" + sample + ".log", "r+")
+        log_file = open(path + "/03-Strand_detection/03-Pseudomapping/Outputs/stdout_Pseudomapping_" + sample + ".log", "r+")
         
         Lib_info = 0
         mapping_info = 0

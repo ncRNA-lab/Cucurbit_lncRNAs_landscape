@@ -14,7 +14,7 @@ specie="cme"
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/01-Sample_processing_and_selection"
 WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/02-Mapping"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/02-Mapping/Functions.sh"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/02-Mapping/Functions.sh"
 
 ####### NEW VARIABLES
 WD1_spe=$WD1"/"$specie

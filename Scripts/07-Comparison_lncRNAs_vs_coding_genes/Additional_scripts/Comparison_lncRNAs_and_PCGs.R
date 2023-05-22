@@ -49,16 +49,24 @@ if (length(args) < 3) {
   pred = args[1]
   quant = args[2]
   comp = args[3]
+  flag = args[4]
 }
 
 # pred = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/car"
 # quant = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/06-quantification/car"
 # comp = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/07-comparison_lncRNAs_vs_coding_genes/car"
+# flag = "nr"
+
+if (flag == "nr") {
+  DB_path = paste0(pred, "/STEP-FINAL/Database/Database_LncRNAs_NR.tsv")
+}
+if (flag == "r") {
+  DB_path = paste0(pred, "/STEP-FINAL/Database/Database_LncRNAs.tsv")
+}
 
 Genes_tab = paste0(pred, "/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv")
-LncRNAs_tab = paste0(pred, "/STEP-FINAL/Files/LncRNAs/r/POTENTIAL_LNCRNAS_pred.tsv")
-DB_path = paste0(pred, "/STEP-FINAL/Database/Database_LncRNAs.tsv")
-Quant_tab = paste0(quant, "/Salmon/ALL/r/04-Table/TPMs_summary.tsv")
+LncRNAs_tab = paste0(pred, "/STEP-FINAL/Files/LncRNAs/", flag, "/POTENTIAL_LNCRNAS_pred.tsv")
+Quant_tab = paste0(quant, "/Salmon/ALL/", flag, "/04-Table/TPMs_summary.tsv")
 IR_tab = paste0(comp, "/Random_IR.bed")
 IR_fasta = paste0(comp, "/Random_IR.fasta")
 
@@ -123,12 +131,12 @@ rm(list = c("TAB_IR", "FASTA_IR", "id", "seq", "tab"))
 # Joined: LncRNAs and Genes
 TAB_FINAL_JOIN_1 = rbind(TAB_G_FINAL, TAB_L_FINAL)
 TAB_FINAL_JOIN_1$Type = factor(TAB_FINAL_JOIN_1$Type, levels = c("Genes", "LncRNAs low", "LncRNAs medium", "LncRNAs high"))
-write.table(TAB_FINAL_JOIN_1, paste0(comp, "/TAB_FINAL_JOIN_1_R.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+write.table(TAB_FINAL_JOIN_1, paste0(comp, "/TAB_FINAL_JOIN_1_NR.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
 
 # Joined: LncRNAs, Genes and IR
 TAB_FINAL_JOIN_2 = rbind(TAB_FINAL_JOIN_1[,c("Chr", "Start", "End", "Strand", "Origin", "ID_transcript", "Length", "GC", "Type")], TAB_IR_FINAL)
 TAB_FINAL_JOIN_2$Type = factor(TAB_FINAL_JOIN_2$Type, levels = c("Genes", "LncRNAs low", "LncRNAs medium", "LncRNAs high", "Intergenic Regions"))
-write.table(TAB_FINAL_JOIN_2, paste0(comp, "/TAB_FINAL_JOIN_2_R.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+write.table(TAB_FINAL_JOIN_2, paste0(comp, "/TAB_FINAL_JOIN_2_NR.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
 
 rm(list = c("Genes_tab", "LncRNAs_tab", "DB", "IR_fasta", "IR_tab", "DB_path", "pred", "quant", "Quant_tab", "TPMs"))
 
@@ -149,7 +157,7 @@ gg = ggplot(TAB_FINAL_JOIN_2, aes(x = Type, y = GC, fill = Type)) +
   theme(axis.text.x = element_text(vjust = 0.5, hjust=0.5)) + 
   theme(legend.position = "none")
 
-ggsave(paste0(comp, "/GC_content_by_type_R.png"), height = 7, width = 8, dpi = 600)
+ggsave(paste0(comp, "/GC_content_by_type_", toupper(flag), ".png"), height = 7, width = 8, dpi = 600)
 
 gg = ggplot(TAB_L_FINAL, aes(x = Class_code, y = GC, fill = Type)) + 
   geom_boxplot(outlier.shape = NA) + 
@@ -164,7 +172,7 @@ gg = ggplot(TAB_L_FINAL, aes(x = Class_code, y = GC, fill = Type)) +
   theme(axis.text.x = element_text(vjust = 0.5, hjust = 0.5)) + 
   theme(legend.position = "none")
 
-ggsave(paste0(comp, "/GC_content_by_type_facet_and_class_code_R.png"), height = 7, width = 10, dpi = 600)
+ggsave(paste0(comp, "/GC_content_by_type_facet_and_class_code_", toupper(flag), ".png"), height = 7, width = 10, dpi = 600)
 
 rm(list = c("gg"))
 
@@ -184,7 +192,7 @@ gg = ggplot(TAB_FINAL_JOIN_1, aes(x = Length, y = ..density.., fill = Type)) +
   theme(axis.text.x = element_text(vjust = 0.5, hjust=0.5)) + 
   theme(legend.position = "top")
 
-ggsave(paste0(comp, "/Length_by_type_R.png"), height = 7, width = 10, dpi = 600)
+ggsave(paste0(comp, "/Length_by_type_", toupper(flag), ".png"), height = 7, width = 10, dpi = 600)
 
 
 gg = ggplot(TAB_FINAL_JOIN_1, aes(x = Length, y = ..density.., fill = Type)) + 
@@ -199,7 +207,7 @@ gg = ggplot(TAB_FINAL_JOIN_1, aes(x = Length, y = ..density.., fill = Type)) +
   theme(axis.text.x = element_text(vjust = 0.5, hjust=0.5)) + 
   theme(legend.position = "top")
 
-ggsave(paste0(comp, "/Length_by_type_facet_R.png"), height = 7, width = 15, dpi = 600)
+ggsave(paste0(comp, "/Length_by_type_facet_", toupper(flag), ".png"), height = 7, width = 15, dpi = 600)
 
 rm(list = c("gg"))
 
@@ -219,7 +227,7 @@ gg = ggplot(TAB_FINAL_JOIN_1, aes(x = Exons, y = ..density.., fill = Type)) +
   theme(axis.text.x = element_text(vjust = 0.5, hjust=0.5)) + 
   theme(legend.position = "top")
 
-ggsave(paste0(comp, "/Exons_by_type_facet_R.png"), height = 7, width = 15, dpi = 600)
+ggsave(paste0(comp, "/Exons_by_type_facet_", toupper(flag), ".png"), height = 7, width = 15, dpi = 600)
 
 rm(list = c("gg"))
 
@@ -240,7 +248,7 @@ gg = ggplot(TAB_FINAL_JOIN_1, aes(x = Type, y = TPMs.mean, fill = Type)) +
   theme(axis.text.x = element_text(vjust = 0.5, hjust=0.5)) + 
   theme(legend.position = "none")
 
-ggsave(paste0(comp, "/TPMs_by_type_R.png"), height = 7, width = 8, dpi = 600)
+ggsave(paste0(comp, "/TPMs_by_type_", toupper(flag), ".png"), height = 7, width = 8, dpi = 600)
 
 rm(list = c("gg"))
 

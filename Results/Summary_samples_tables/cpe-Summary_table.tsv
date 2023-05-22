@@ -1,0 +1,144 @@
+Specie	Sample	Filter_1	Filter_2	Depth	Mapping_rate	Strandedness
+C. pepo	SRR1013690	passes the trimming step	not used for transcript reconstruction	23436644/23436644	75.3691%	IU
+C. pepo	SRR11573106	passes the trimming step	used for transcript reconstruction	33709642/33709642	76.112%	ISR
+C. pepo	SRR11573107	passes the trimming step	used for transcript reconstruction	28175961/28175961	75.554%	ISR
+C. pepo	SRR1182473	doesn't pass the trimming step	NA	0	NA	NA
+C. pepo	SRR1182476	passes the trimming step	not used for transcript reconstruction	31943011/31943011	44.3588%	IU
+C. pepo	SRR12828719	passes the trimming step	used for transcript reconstruction	17783195/17783195	68.4756%	ISR
+C. pepo	SRR12828720	passes the trimming step	used for transcript reconstruction	36615042/36615042	71.6666%	ISR
+C. pepo	SRR12828721	passes the trimming step	used for transcript reconstruction	16731446/16731446	71.7575%	ISR
+C. pepo	SRR12828722	passes the trimming step	used for transcript reconstruction	19223990/19223990	57.124%	ISR
+C. pepo	SRR12828723	passes the trimming step	used for transcript reconstruction	15610526/15610526	55.032%	ISR
+C. pepo	SRR12828724	passes the trimming step	used for transcript reconstruction	16148387/16148387	47.5855%	ISR
+C. pepo	SRR14385738	passes the trimming step	used for transcript reconstruction	21103695	74.1559%	SR
+C. pepo	SRR14385739	passes the trimming step	used for transcript reconstruction	22674240	75.5614%	SR
+C. pepo	SRR14385740	passes the trimming step	used for transcript reconstruction	23282398	74.677%	SR
+C. pepo	SRR14385741	passes the trimming step	used for transcript reconstruction	19222222	76.0211%	SR
+C. pepo	SRR14385742	passes the trimming step	used for transcript reconstruction	18986689	72.4369%	SR
+C. pepo	SRR14385743	passes the trimming step	used for transcript reconstruction	18883171	72.6569%	SR
+C. pepo	SRR14385744	passes the trimming step	used for transcript reconstruction	19559823	74.5999%	SR
+C. pepo	SRR14385745	passes the trimming step	used for transcript reconstruction	20022822	74.834%	SR
+C. pepo	SRR14385746	passes the trimming step	used for transcript reconstruction	19446884	52.8074%	SR
+C. pepo	SRR14385747	passes the trimming step	used for transcript reconstruction	18816150	56.2328%	SR
+C. pepo	SRR14385748	passes the trimming step	used for transcript reconstruction	18526190	55.1226%	SR
+C. pepo	SRR14385749	passes the trimming step	used for transcript reconstruction	20873003	57.0295%	SR
+C. pepo	SRR3056882	passes the trimming step	used for transcript reconstruction	8224797/8224797	53.0074%	ISR
+C. pepo	SRR3056883	passes the trimming step	used for transcript reconstruction	6703061/6703061	47.7959%	ISR
+C. pepo	SRR4048763	passes the trimming step	not used for transcript reconstruction	3818055/3818055	79.1129%	IU
+C. pepo	SRR4048764	passes the trimming step	not used for transcript reconstruction	3495708/3495708	79.4943%	IU
+C. pepo	SRR4048765	passes the trimming step	not used for transcript reconstruction	10092723/10092723	80.2677%	IU
+C. pepo	SRR4048766	passes the trimming step	not used for transcript reconstruction	6586938/6586938	80.5621%	IU
+C. pepo	SRR4048767	passes the trimming step	not used for transcript reconstruction	4126954/4126954	78.6175%	IU
+C. pepo	SRR4048768	passes the trimming step	not used for transcript reconstruction	5869956/5869956	78.512%	IU
+C. pepo	SRR4048769	passes the trimming step	not used for transcript reconstruction	6110730/6110730	78.7458%	IU
+C. pepo	SRR4048770	passes the trimming step	not used for transcript reconstruction	7955316/7955316	79.3494%	IU
+C. pepo	SRR4048771	passes the trimming step	not used for transcript reconstruction	3209810/3209810	80.2442%	IU
+C. pepo	SRR4048772	passes the trimming step	not used for transcript reconstruction	4569968/4569968	80.2376%	IU
+C. pepo	SRR4048773	passes the trimming step	not used for transcript reconstruction	3743062/3743062	78.2878%	IU
+C. pepo	SRR4048774	passes the trimming step	not used for transcript reconstruction	2814738/2814738	78.2002%	IU
+C. pepo	SRR4048775	passes the trimming step	not used for transcript reconstruction	10787614/10787614	79.5433%	IU
+C. pepo	SRR4048776	passes the trimming step	not used for transcript reconstruction	3496685/3496685	78.4295%	IU
+C. pepo	SRR4048777	passes the trimming step	not used for transcript reconstruction	4975135/4975135	79.6434%	IU
+C. pepo	SRR4048778	passes the trimming step	not used for transcript reconstruction	4413002/4413002	79.4949%	IU
+C. pepo	SRR4048779	passes the trimming step	not used for transcript reconstruction	8243939/8243939	79.6685%	IU
+C. pepo	SRR4048780	passes the trimming step	not used for transcript reconstruction	3093183/3093183	78.2222%	IU
+C. pepo	SRR4048781	passes the trimming step	not used for transcript reconstruction	9381475/9381475	77.9555%	IU
+C. pepo	SRR4048782	passes the trimming step	not used for transcript reconstruction	2682505/2682505	59.8162%	IU
+C. pepo	SRR4048783	passes the trimming step	not used for transcript reconstruction	2973880/2973880	78.017%	IU
+C. pepo	SRR4048784	passes the trimming step	not used for transcript reconstruction	2854152/2854152	78.066%	IU
+C. pepo	SRR4048785	passes the trimming step	not used for transcript reconstruction	3189888/3189888	78.1891%	IU
+C. pepo	SRR4048786	passes the trimming step	not used for transcript reconstruction	4887861/4887861	80.467%	IU
+C. pepo	SRR4048787	passes the trimming step	not used for transcript reconstruction	3933479/3933479	79.1263%	IU
+C. pepo	SRR4048788	passes the trimming step	not used for transcript reconstruction	3740772/3740772	78.6916%	IU
+C. pepo	SRR4048789	passes the trimming step	not used for transcript reconstruction	5954131/5954131	78.1429%	IU
+C. pepo	SRR4048790	passes the trimming step	not used for transcript reconstruction	4060709/4060709	79.9677%	IU
+C. pepo	SRR4048791	passes the trimming step	not used for transcript reconstruction	5663302/5663302	80.9356%	IU
+C. pepo	SRR4048792	passes the trimming step	not used for transcript reconstruction	7524586/7524586	80.6841%	IU
+C. pepo	SRR4048793	passes the trimming step	not used for transcript reconstruction	5689193/5689193	75.4713%	IU
+C. pepo	SRR4048794	passes the trimming step	not used for transcript reconstruction	7690335/7690335	76.2474%	IU
+C. pepo	SRR4048795	passes the trimming step	not used for transcript reconstruction	7256918/7256918	77.4705%	IU
+C. pepo	SRR4048796	passes the trimming step	not used for transcript reconstruction	18445820/18445820	78.6775%	IU
+C. pepo	SRR4048797	passes the trimming step	not used for transcript reconstruction	4697443/4697443	80.8278%	IU
+C. pepo	SRR4048798	passes the trimming step	not used for transcript reconstruction	3837942/3837942	79.0499%	IU
+C. pepo	SRR4048799	passes the trimming step	not used for transcript reconstruction	5014646/5014646	79.7184%	IU
+C. pepo	SRR4048800	passes the trimming step	not used for transcript reconstruction	8240742/8240742	73.5517%	IU
+C. pepo	SRR4048801	passes the trimming step	not used for transcript reconstruction	33523098/33523098	76.4711%	IU
+C. pepo	SRR4048802	passes the trimming step	not used for transcript reconstruction	7421337/7421337	75.7681%	IU
+C. pepo	SRR4048803	passes the trimming step	not used for transcript reconstruction	3582224/3582224	67.0018%	IU
+C. pepo	SRR4048804	passes the trimming step	not used for transcript reconstruction	4284707/4284707	70.4833%	IU
+C. pepo	SRR4048805	passes the trimming step	not used for transcript reconstruction	4231637/4231637	70.9642%	IU
+C. pepo	SRR4048806	passes the trimming step	not used for transcript reconstruction	2879376/2879376	78.0542%	IU
+C. pepo	SRR4048807	passes the trimming step	not used for transcript reconstruction	2160074/2160074	76.9734%	IU
+C. pepo	SRR4048808	passes the trimming step	not used for transcript reconstruction	8810634/8810634	80.3488%	IU
+C. pepo	SRR4048809	passes the trimming step	not used for transcript reconstruction	2148924/2148924	77.0442%	IU
+C. pepo	SRR4048810	passes the trimming step	not used for transcript reconstruction	7776006/7776006	66.7588%	IU
+C. pepo	SRR4048811	passes the trimming step	not used for transcript reconstruction	3499248/3499248	66.2588%	IU
+C. pepo	SRR4048812	passes the trimming step	not used for transcript reconstruction	4233416/4233416	67.6956%	IU
+C. pepo	SRR4048813	passes the trimming step	not used for transcript reconstruction	2695895/2695895	77.9493%	IU
+C. pepo	SRR4048814	passes the trimming step	not used for transcript reconstruction	3995096/3995096	76.7733%	IU
+C. pepo	SRR4048815	passes the trimming step	not used for transcript reconstruction	1777111/1777111	76.3755%	IU
+C. pepo	SRR4048816	passes the trimming step	not used for transcript reconstruction	2886561/2886561	77.2944%	IU
+C. pepo	SRR4048817	passes the trimming step	not used for transcript reconstruction	2575559/2575559	78.6463%	IU
+C. pepo	SRR4048818	passes the trimming step	not used for transcript reconstruction	2751425/2751425	78.4996%	IU
+C. pepo	SRR4048819	passes the trimming step	not used for transcript reconstruction	7729737/7729737	78.5449%	IU
+C. pepo	SRR4048820	passes the trimming step	not used for transcript reconstruction	9726744/9726744	78.3692%	IU
+C. pepo	SRR4048821	passes the trimming step	not used for transcript reconstruction	3369417/3369417	78.4379%	IU
+C. pepo	SRR4048822	passes the trimming step	not used for transcript reconstruction	6423627/6423627	80.4539%	IU
+C. pepo	SRR5682041	passes the trimming step	used for transcript reconstruction	869170/869170	73.423%	ISR
+C. pepo	SRR5682043	passes the trimming step	used for transcript reconstruction	1799103/1799103	77.9271%	ISR
+C. pepo	SRR5682044	passes the trimming step	used for transcript reconstruction	4188300/4188300	66.8736%	ISR
+C. pepo	SRR5682047	passes the trimming step	used for transcript reconstruction	3882450/3882450	69.6596%	ISR
+C. pepo	SRR5682050	passes the trimming step	used for transcript reconstruction	3353394/3353394	77.2129%	ISR
+C. pepo	SRR5682073	passes the trimming step	used for transcript reconstruction	6490341/6490341	70.5197%	ISR
+C. pepo	SRR5682076	passes the trimming step	used for transcript reconstruction	5087967/5087967	68.4124%	ISR
+C. pepo	SRR5883139	passes the trimming step	used for transcript reconstruction	16828115/16828115	77.5495%	ISF
+C. pepo	SRR5883140	passes the trimming step	used for transcript reconstruction	16317273/16317273	78.9058%	ISR
+C. pepo	SRR5883141	passes the trimming step	used for transcript reconstruction	14821068/14821068	79.3441%	ISF
+C. pepo	SRR6825636	passes the trimming step	not used for transcript reconstruction	10555206/10555206	86.4839%	IU
+C. pepo	SRR6825637	passes the trimming step	not used for transcript reconstruction	9868010/9868010	86.6913%	IU
+C. pepo	SRR6825638	passes the trimming step	not used for transcript reconstruction	8723291/8723291	84.2788%	IU
+C. pepo	SRR6825639	passes the trimming step	not used for transcript reconstruction	8915260/8915260	81.9525%	IU
+C. pepo	SRR6825640	passes the trimming step	not used for transcript reconstruction	10802570/10802570	83.6265%	IU
+C. pepo	SRR6825641	passes the trimming step	not used for transcript reconstruction	9682163/9682163	81.5438%	IU
+C. pepo	SRR6825642	passes the trimming step	not used for transcript reconstruction	10548308/10548308	82.6014%	IU
+C. pepo	SRR6825643	passes the trimming step	not used for transcript reconstruction	9270211/9270211	81.8054%	IU
+C. pepo	SRR6825644	passes the trimming step	not used for transcript reconstruction	10711339/10711339	76.5745%	IU
+C. pepo	SRR6825645	passes the trimming step	not used for transcript reconstruction	9569971/9569971	61.3831%	IU
+C. pepo	SRR6825646	passes the trimming step	not used for transcript reconstruction	11823505/11823505	69.5514%	IU
+C. pepo	SRR6825647	passes the trimming step	not used for transcript reconstruction	10456554/10456554	83.6305%	IU
+C. pepo	SRR6825648	passes the trimming step	not used for transcript reconstruction	10279120/10279120	82.1096%	IU
+C. pepo	SRR6825649	passes the trimming step	not used for transcript reconstruction	8106453/8106453	83.3256%	IU
+C. pepo	SRR6825650	passes the trimming step	not used for transcript reconstruction	9275571/9275571	80.0884%	IU
+C. pepo	SRR6825651	passes the trimming step	not used for transcript reconstruction	8815627/8815627	83.4329%	IU
+C. pepo	SRR6825652	passes the trimming step	not used for transcript reconstruction	8134930/8134930	84.5244%	IU
+C. pepo	SRR6825653	passes the trimming step	not used for transcript reconstruction	9250633/9250633	81.6688%	IU
+C. pepo	SRR6825654	passes the trimming step	not used for transcript reconstruction	9519191/9519191	82.3893%	IU
+C. pepo	SRR6825655	passes the trimming step	not used for transcript reconstruction	9671436/9671436	80.9738%	IU
+C. pepo	SRR6825656	passes the trimming step	not used for transcript reconstruction	8593537/8593537	80.3895%	IU
+C. pepo	SRR6825657	passes the trimming step	not used for transcript reconstruction	10601946/10601946	83.6648%	IU
+C. pepo	SRR6825658	passes the trimming step	not used for transcript reconstruction	10946877/10946877	84.0703%	IU
+C. pepo	SRR6868816	passes the trimming step	used for transcript reconstruction	25038731/25038731	82.9211%	ISR
+C. pepo	SRR6868817	passes the trimming step	used for transcript reconstruction	32233678/32233678	83.0866%	ISR
+C. pepo	SRR6868818	passes the trimming step	used for transcript reconstruction	29798788/29798788	82.5869%	ISR
+C. pepo	SRR6868819	passes the trimming step	used for transcript reconstruction	31299591/31299591	83.1661%	ISR
+C. pepo	SRR6868820	passes the trimming step	used for transcript reconstruction	29549840/29549840	80.6158%	ISR
+C. pepo	SRR6868821	passes the trimming step	used for transcript reconstruction	33981569/33981569	81.9423%	ISR
+C. pepo	SRR6868822	passes the trimming step	used for transcript reconstruction	25006677/25006677	78.8534%	ISR
+C. pepo	SRR6868823	passes the trimming step	used for transcript reconstruction	31767040/31767040	83.1089%	ISR
+C. pepo	SRR6868824	passes the trimming step	used for transcript reconstruction	26515327/26515327	82.6793%	ISR
+C. pepo	SRR6868825	passes the trimming step	used for transcript reconstruction	29023693/29023693	82.8483%	ISR
+C. pepo	SRR6868826	passes the trimming step	used for transcript reconstruction	32504868/32504868	82.4606%	ISR
+C. pepo	SRR6868827	passes the trimming step	used for transcript reconstruction	31518974/31518974	81.7625%	ISR
+C. pepo	SRR6868828	passes the trimming step	used for transcript reconstruction	29769558/29769558	81.7687%	ISR
+C. pepo	SRR6868829	passes the trimming step	used for transcript reconstruction	29533965/29533965	82.0697%	ISR
+C. pepo	SRR6868830	passes the trimming step	used for transcript reconstruction	27635884/27635884	80.966%	ISR
+C. pepo	SRR6868831	passes the trimming step	used for transcript reconstruction	32706258/32706258	82.8051%	ISR
+C. pepo	SRR6868832	passes the trimming step	used for transcript reconstruction	33027842/33027842	82.4132%	ISR
+C. pepo	SRR6868833	passes the trimming step	used for transcript reconstruction	29912886/29912886	82.9571%	ISR
+C. pepo	SRR747922	passes the trimming step	not used for transcript reconstruction	57911562/57911562	76.4627%	IU
+C. pepo	SRR8132885	passes the trimming step	not used for transcript reconstruction	81320668	81.1379%	U
+C. pepo	SRR8132886	passes the trimming step	not used for transcript reconstruction	77401820	79.446%	U
+C. pepo	SRR8132887	passes the trimming step	not used for transcript reconstruction	64087795	80.4733%	U
+C. pepo	SRR8132888	passes the trimming step	not used for transcript reconstruction	61975514	80.5654%	U
+C. pepo	SRR8132889	passes the trimming step	not used for transcript reconstruction	64330068	80.8305%	U
+C. pepo	SRR8132890	passes the trimming step	not used for transcript reconstruction	41150161	81.4655%	U

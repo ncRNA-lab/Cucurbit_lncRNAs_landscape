@@ -1,0 +1,51 @@
+Specie	Sample	Filter_1	Filter_2	Depth	Mapping_rate	Strandedness
+C. maxima	SRR13364283	passes the trimming step	used for transcript reconstruction	22857146/22857146	82.2475%	ISR
+C. maxima	SRR13364284	passes the trimming step	used for transcript reconstruction	22800509/22800509	82.4068%	ISR
+C. maxima	SRR13364285	passes the trimming step	used for transcript reconstruction	22605977/22605977	81.8538%	ISR
+C. maxima	SRR13364286	passes the trimming step	used for transcript reconstruction	22861411/22861411	84.2093%	ISR
+C. maxima	SRR13364287	passes the trimming step	used for transcript reconstruction	22706315/22706315	83.472%	ISR
+C. maxima	SRR13364288	passes the trimming step	used for transcript reconstruction	22526329/22526329	84.4076%	ISR
+C. maxima	SRR14226638	passes the trimming step	not used for transcript reconstruction	9362693/9362693	76.1389%	IU
+C. maxima	SRR14226639	passes the trimming step	not used for transcript reconstruction	14420658/14420658	76.1484%	IU
+C. maxima	SRR14226640	passes the trimming step	not used for transcript reconstruction	12382277/12382277	76.3435%	IU
+C. maxima	SRR14226641	passes the trimming step	not used for transcript reconstruction	9536141/9536141	77.4757%	IU
+C. maxima	SRR14226647	passes the trimming step	not used for transcript reconstruction	12327180/12327180	77.2338%	IU
+C. maxima	SRR14226648	passes the trimming step	not used for transcript reconstruction	8338061/8338061	76.7142%	IU
+C. maxima	SRR15882915	passes the trimming step	not used for transcript reconstruction	23567012/23567012	21.3431%	IU
+C. maxima	SRR1635032	passes the trimming step	not used for transcript reconstruction	24103081	81.3636%	U
+C. maxima	SRR16767245	passes the trimming step	not used for transcript reconstruction	29417468/29417468	19.9724%	IU
+C. maxima	SRR2917883	passes the trimming step	not used for transcript reconstruction	6725531	82.2588%	U
+C. maxima	SRR2917886	passes the trimming step	not used for transcript reconstruction	6567685	84.5465%	U
+C. maxima	SRR494476	passes the trimming step	used for transcript reconstruction	12352681/12352681	77.6588%	ISR
+C. maxima	SRR494477	passes the trimming step	used for transcript reconstruction	14142136/14142136	76.9357%	ISR
+C. maxima	SRR494478	passes the trimming step	used for transcript reconstruction	14062843/14062843	68.354%	ISR
+C. maxima	SRR494481	passes the trimming step	used for transcript reconstruction	12624003/12624003	82.4791%	ISR
+C. maxima	SRR494482	passes the trimming step	used for transcript reconstruction	14974135/14974135	81.5602%	ISR
+C. maxima	SRR494483	passes the trimming step	used for transcript reconstruction	10881682/10881682	79.5237%	ISR
+C. maxima	SRR5504353	passes the trimming step	used for transcript reconstruction	13917447	82.6523%	SR
+C. maxima	SRR5504354	passes the trimming step	used for transcript reconstruction	11665620	83.9087%	SR
+C. maxima	SRR5504355	passes the trimming step	used for transcript reconstruction	7212841	83.6892%	SR
+C. maxima	SRR5504356	passes the trimming step	used for transcript reconstruction	11788172	82.6318%	SR
+C. maxima	SRR5504357	passes the trimming step	used for transcript reconstruction	12433537	82.7099%	SR
+C. maxima	SRR5504358	passes the trimming step	used for transcript reconstruction	11788713	84.7306%	SR
+C. maxima	SRR5504359	passes the trimming step	used for transcript reconstruction	9518322	84.5914%	SR
+C. maxima	SRR5504360	passes the trimming step	used for transcript reconstruction	12346219	83.6935%	SR
+C. maxima	SRR5504361	passes the trimming step	used for transcript reconstruction	15087895	82.855%	SR
+C. maxima	SRR5504362	passes the trimming step	used for transcript reconstruction	17839898	82.4882%	SR
+C. maxima	SRR5504363	passes the trimming step	used for transcript reconstruction	17063699	81.5507%	SR
+C. maxima	SRR5682042	passes the trimming step	used for transcript reconstruction	3592874/3592874	79.0983%	ISR
+C. maxima	SRR5682052	passes the trimming step	used for transcript reconstruction	5167048/5167048	81.6365%	ISF
+C. maxima	SRR5682053	passes the trimming step	used for transcript reconstruction	3220113/3220113	78.1504%	ISF
+C. maxima	SRR5682068	passes the trimming step	used for transcript reconstruction	4227441/4227441	74.35%	ISF
+C. maxima	SRR7138068	passes the trimming step	not used for transcript reconstruction	22822811/22822811	84.8933%	IU
+C. maxima	SRR7138069	passes the trimming step	not used for transcript reconstruction	26374785/26374785	83.3509%	IU
+C. maxima	SRR7138070	passes the trimming step	not used for transcript reconstruction	20029707/20029707	83.2491%	IU
+C. maxima	SRR7138071	passes the trimming step	not used for transcript reconstruction	30520371/30520371	83.5211%	IU
+C. maxima	SRR7138082	passes the trimming step	not used for transcript reconstruction	26244928/26244928	83.8765%	IU
+C. maxima	SRR7138083	passes the trimming step	not used for transcript reconstruction	28427947/28427947	85.3968%	IU
+C. maxima	SRR7138084	passes the trimming step	not used for transcript reconstruction	20587003/20587003	84.3204%	IU
+C. maxima	SRR7138085	passes the trimming step	not used for transcript reconstruction	24102272/24102272	84.816%	IU
+C. maxima	SRR7138086	passes the trimming step	not used for transcript reconstruction	24680416/24680416	84.4357%	IU
+C. maxima	SRR7138087	passes the trimming step	not used for transcript reconstruction	25123390/25123390	83.6533%	IU
+C. maxima	SRR7138090	passes the trimming step	not used for transcript reconstruction	24847750/24847750	86.1187%	IU
+C. maxima	SRR7138091	passes the trimming step	not used for transcript reconstruction	28100413/28100413	82.8936%	IU

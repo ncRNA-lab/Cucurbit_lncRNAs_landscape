@@ -1,0 +1,1386 @@
+Specie	Sample	Filter_1	Filter_2	Depth	Mapping_rate	Strandedness
+C. sativus	ERR1352895	passes the trimming step	not used for transcript reconstruction	3176162	NA	NA
+C. sativus	ERR662024	passes the trimming step	used for transcript reconstruction	10295196	39.6839%	SR
+C. sativus	ERR662025	passes the trimming step	used for transcript reconstruction	14565194	37.4501%	SR
+C. sativus	ERR662026	doesn't pass the trimming step	NA	33076	NA	NA
+C. sativus	ERR662027	passes the trimming step	used for transcript reconstruction	13954578	36.3477%	SR
+C. sativus	ERR662028	passes the trimming step	used for transcript reconstruction	14074278	33.3772%	SR
+C. sativus	ERR662029	passes the trimming step	used for transcript reconstruction	13276931	41.8947%	SR
+C. sativus	ERR662030	passes the trimming step	used for transcript reconstruction	12932612	51.7882%	SR
+C. sativus	SRR10053801	passes the trimming step	not used for transcript reconstruction	24147852/24147852	87.5749%	IU
+C. sativus	SRR10053802	passes the trimming step	not used for transcript reconstruction	24249065/24249065	85.5616%	IU
+C. sativus	SRR10053803	passes the trimming step	not used for transcript reconstruction	24027401/24027401	85.7883%	IU
+C. sativus	SRR10053804	passes the trimming step	not used for transcript reconstruction	24633930/24633930	84.8022%	IU
+C. sativus	SRR10053805	passes the trimming step	not used for transcript reconstruction	23296499/23296499	86.6537%	IU
+C. sativus	SRR10053806	passes the trimming step	not used for transcript reconstruction	22886049/22886049	87.2161%	IU
+C. sativus	SRR10053807	passes the trimming step	not used for transcript reconstruction	22325581/22325581	80.9921%	IU
+C. sativus	SRR10053808	passes the trimming step	not used for transcript reconstruction	24369140/24369140	86.883%	IU
+C. sativus	SRR10053809	passes the trimming step	not used for transcript reconstruction	20235874/20235874	87.795%	IU
+C. sativus	SRR10053810	passes the trimming step	not used for transcript reconstruction	24184929/24184929	81.3888%	IU
+C. sativus	SRR10053811	passes the trimming step	not used for transcript reconstruction	24454025/24454025	83.9683%	IU
+C. sativus	SRR10053812	passes the trimming step	not used for transcript reconstruction	24322738/24322738	86.5174%	IU
+C. sativus	SRR10053813	passes the trimming step	not used for transcript reconstruction	20086200/20086200	80.8275%	IU
+C. sativus	SRR10053814	passes the trimming step	not used for transcript reconstruction	19497458/19497458	84.5789%	IU
+C. sativus	SRR10053815	passes the trimming step	not used for transcript reconstruction	22298862/22298862	82.8881%	IU
+C. sativus	SRR10053816	passes the trimming step	not used for transcript reconstruction	26458033/26458033	80.4434%	IU
+C. sativus	SRR10053817	passes the trimming step	not used for transcript reconstruction	23523586/23523586	84.3152%	IU
+C. sativus	SRR10053818	passes the trimming step	not used for transcript reconstruction	20917898/20917898	81.6972%	IU
+C. sativus	SRR10053819	passes the trimming step	not used for transcript reconstruction	27036505/27036505	81.7551%	IU
+C. sativus	SRR10053820	passes the trimming step	not used for transcript reconstruction	22328179/22328179	86.5126%	IU
+C. sativus	SRR10053821	passes the trimming step	not used for transcript reconstruction	24825644/24825644	86.109%	IU
+C. sativus	SRR10053822	passes the trimming step	not used for transcript reconstruction	22202142/22202142	84.5977%	IU
+C. sativus	SRR10053823	passes the trimming step	not used for transcript reconstruction	22828904/22828904	85.58%	IU
+C. sativus	SRR10057891	passes the trimming step	not used for transcript reconstruction	16938881/16938881	87.0322%	IU
+C. sativus	SRR10057892	passes the trimming step	not used for transcript reconstruction	17402699/17402699	86.6137%	IU
+C. sativus	SRR10057893	passes the trimming step	not used for transcript reconstruction	17595625/17595625	87.1837%	IU
+C. sativus	SRR10057894	passes the trimming step	not used for transcript reconstruction	20173628/20173628	86.1326%	IU
+C. sativus	SRR10057895	passes the trimming step	not used for transcript reconstruction	16924289/16924289	85.7233%	IU
+C. sativus	SRR10057896	passes the trimming step	not used for transcript reconstruction	18085510/18085510	86.75%	IU
+C. sativus	SRR10057897	passes the trimming step	not used for transcript reconstruction	15938145/15938145	85.8104%	IU
+C. sativus	SRR10057898	passes the trimming step	not used for transcript reconstruction	17845849/17845849	83.6175%	IU
+C. sativus	SRR10057899	passes the trimming step	not used for transcript reconstruction	16447984/16447984	83.7153%	IU
+C. sativus	SRR10098736	passes the trimming step	used for transcript reconstruction	42856394/42856394	84.5231%	ISR
+C. sativus	SRR10098737	passes the trimming step	used for transcript reconstruction	36561526/36561526	86.9027%	ISR
+C. sativus	SRR10098738	passes the trimming step	used for transcript reconstruction	37912020/37912020	87.9155%	ISR
+C. sativus	SRR10098739	passes the trimming step	used for transcript reconstruction	44692590/44692590	87.2349%	ISR
+C. sativus	SRR10098740	passes the trimming step	used for transcript reconstruction	39393021/39393021	87.0608%	ISR
+C. sativus	SRR10098741	passes the trimming step	used for transcript reconstruction	38025094/38025094	86.5875%	ISR
+C. sativus	SRR10098742	passes the trimming step	used for transcript reconstruction	37119602/37119602	86.8168%	ISR
+C. sativus	SRR10098743	passes the trimming step	used for transcript reconstruction	38085231/38085231	85.6718%	ISR
+C. sativus	SRR10098744	passes the trimming step	used for transcript reconstruction	42272864/42272864	87.3348%	ISR
+C. sativus	SRR10098745	passes the trimming step	used for transcript reconstruction	37155609/37155609	87.9681%	ISR
+C. sativus	SRR10098746	passes the trimming step	used for transcript reconstruction	43167644/43167644	86.3218%	ISR
+C. sativus	SRR10098747	passes the trimming step	used for transcript reconstruction	38839257/38839257	85.092%	ISR
+C. sativus	SRR10113569	passes the trimming step	not used for transcript reconstruction	18933912	89.6829%	U
+C. sativus	SRR10113570	passes the trimming step	not used for transcript reconstruction	22161553/22161553	87.8975%	IU
+C. sativus	SRR10113591	passes the trimming step	not used for transcript reconstruction	16172446/16172446	88.6927%	IU
+C. sativus	SRR10113592	passes the trimming step	not used for transcript reconstruction	15843855	90.7573%	U
+C. sativus	SRR10113593	passes the trimming step	not used for transcript reconstruction	15274990/15274990	87.1727%	IU
+C. sativus	SRR10113594	passes the trimming step	not used for transcript reconstruction	18842855	87.876%	U
+C. sativus	SRR10198443	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR10198444	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR10198445	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR10198446	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR10231471	passes the trimming step	used for transcript reconstruction	20904384	73.9439%	SR
+C. sativus	SRR10231472	passes the trimming step	used for transcript reconstruction	33428015	86.8985%	SR
+C. sativus	SRR10231473	passes the trimming step	used for transcript reconstruction	24870908	87.1792%	SR
+C. sativus	SRR10231484	passes the trimming step	used for transcript reconstruction	15340359	81.67%	SR
+C. sativus	SRR10231495	passes the trimming step	used for transcript reconstruction	24617223	85.7054%	SR
+C. sativus	SRR10231506	passes the trimming step	used for transcript reconstruction	21396743	86.2362%	SR
+C. sativus	SRR10231517	passes the trimming step	used for transcript reconstruction	21651672	86.474%	SR
+C. sativus	SRR10231528	passes the trimming step	used for transcript reconstruction	21129437	86.2895%	SR
+C. sativus	SRR10231539	passes the trimming step	used for transcript reconstruction	20222728	83.8071%	SR
+C. sativus	SRR10231550	passes the trimming step	used for transcript reconstruction	26568517	84.5703%	SR
+C. sativus	SRR10231557	passes the trimming step	used for transcript reconstruction	24911188	81.0612%	SR
+C. sativus	SRR10231558	passes the trimming step	used for transcript reconstruction	24518360	84.038%	SR
+C. sativus	SRR10231559	passes the trimming step	used for transcript reconstruction	24003493	83.7313%	SR
+C. sativus	SRR10231560	passes the trimming step	used for transcript reconstruction	23483734	83.9802%	SR
+C. sativus	SRR10231561	passes the trimming step	used for transcript reconstruction	23307262	87.1755%	SR
+C. sativus	SRR10231562	passes the trimming step	used for transcript reconstruction	21735947	84.0399%	SR
+C. sativus	SRR10231563	passes the trimming step	used for transcript reconstruction	18977289	84.1357%	SR
+C. sativus	SRR10231564	passes the trimming step	used for transcript reconstruction	24840110	86.3177%	SR
+C. sativus	SRR10231565	passes the trimming step	used for transcript reconstruction	21583128	86.033%	SR
+C. sativus	SRR10231566	passes the trimming step	used for transcript reconstruction	21778987	86.3027%	SR
+C. sativus	SRR10231567	passes the trimming step	used for transcript reconstruction	26872833	83.9918%	SR
+C. sativus	SRR10231568	passes the trimming step	used for transcript reconstruction	26544708	85.0389%	SR
+C. sativus	SRR10231569	passes the trimming step	used for transcript reconstruction	24738789	85.3825%	SR
+C. sativus	SRR10231570	passes the trimming step	used for transcript reconstruction	22735601	85.1519%	SR
+C. sativus	SRR10307133	passes the trimming step	used for transcript reconstruction	41110771/41110771	89.7425%	ISR
+C. sativus	SRR10307134	passes the trimming step	used for transcript reconstruction	44668787/44668787	89.4111%	ISR
+C. sativus	SRR10307135	passes the trimming step	used for transcript reconstruction	40177158/40177158	88.492%	ISR
+C. sativus	SRR10315753	passes the trimming step	used for transcript reconstruction	37972426/37972426	87.4432%	ISR
+C. sativus	SRR10315754	passes the trimming step	used for transcript reconstruction	41431636/41431636	88.6578%	ISR
+C. sativus	SRR10315755	passes the trimming step	used for transcript reconstruction	47419879/47419879	90.2208%	ISR
+C. sativus	SRR10315756	passes the trimming step	used for transcript reconstruction	44128799/44128799	90.2165%	ISR
+C. sativus	SRR10315757	passes the trimming step	used for transcript reconstruction	43246587/43246587	90.4285%	ISR
+C. sativus	SRR10315758	passes the trimming step	used for transcript reconstruction	52547644/52547644	88.2055%	ISR
+C. sativus	SRR10322060	passes the trimming step	used for transcript reconstruction	41713719/41713719	89.5534%	ISR
+C. sativus	SRR10322061	passes the trimming step	used for transcript reconstruction	43149199/43149199	89.7196%	ISR
+C. sativus	SRR10322062	passes the trimming step	used for transcript reconstruction	42984452/42984452	88.5682%	ISR
+C. sativus	SRR10322063	passes the trimming step	used for transcript reconstruction	41660706/41660706	89.0397%	ISR
+C. sativus	SRR10322064	passes the trimming step	used for transcript reconstruction	41375019/41375019	88.5982%	ISR
+C. sativus	SRR10322065	passes the trimming step	used for transcript reconstruction	41035111/41035111	90.4529%	ISR
+C. sativus	SRR10322066	passes the trimming step	used for transcript reconstruction	47060812/47060812	88.5012%	ISR
+C. sativus	SRR10322067	passes the trimming step	used for transcript reconstruction	43893120/43893120	88.8254%	ISR
+C. sativus	SRR10322068	passes the trimming step	used for transcript reconstruction	40440952/40440952	88.2696%	ISR
+C. sativus	SRR10493290	passes the trimming step	not used for transcript reconstruction	24968600/24968600	85.4758%	IU
+C. sativus	SRR10493291	passes the trimming step	not used for transcript reconstruction	24234132/24234132	85.0132%	IU
+C. sativus	SRR10493292	passes the trimming step	not used for transcript reconstruction	23466731/23466731	85.7186%	IU
+C. sativus	SRR10493293	passes the trimming step	not used for transcript reconstruction	23973418/23973418	85.307%	IU
+C. sativus	SRR10493294	passes the trimming step	not used for transcript reconstruction	21121512/21121512	85.3676%	IU
+C. sativus	SRR10493295	passes the trimming step	not used for transcript reconstruction	28312100/28312100	85.3926%	IU
+C. sativus	SRR10493296	passes the trimming step	not used for transcript reconstruction	24796666/24796666	85.8425%	IU
+C. sativus	SRR10493297	passes the trimming step	not used for transcript reconstruction	25826380/25826380	85.1409%	IU
+C. sativus	SRR10493298	passes the trimming step	not used for transcript reconstruction	25994904/25994904	85.7646%	IU
+C. sativus	SRR10584618	passes the trimming step	not used for transcript reconstruction	29693009/29693009	85.3771%	IU
+C. sativus	SRR10584619	passes the trimming step	not used for transcript reconstruction	24793776/24793776	86.2748%	IU
+C. sativus	SRR10584620	passes the trimming step	not used for transcript reconstruction	22606209/22606209	86.2157%	IU
+C. sativus	SRR10584621	passes the trimming step	not used for transcript reconstruction	24287435/24287435	86.0004%	IU
+C. sativus	SRR10584622	passes the trimming step	not used for transcript reconstruction	28450866/28450866	86.4423%	IU
+C. sativus	SRR10584623	passes the trimming step	not used for transcript reconstruction	30769072/30769072	85.8923%	IU
+C. sativus	SRR10584624	passes the trimming step	not used for transcript reconstruction	21393514/21393514	86.3533%	IU
+C. sativus	SRR10584625	passes the trimming step	not used for transcript reconstruction	26652922/26652922	86.0761%	IU
+C. sativus	SRR10584626	passes the trimming step	not used for transcript reconstruction	25391625/25391625	85.5892%	IU
+C. sativus	SRR10584627	passes the trimming step	not used for transcript reconstruction	26634083/26634083	84.2633%	IU
+C. sativus	SRR10584628	passes the trimming step	not used for transcript reconstruction	27013877/27013877	86.4216%	IU
+C. sativus	SRR10584629	passes the trimming step	not used for transcript reconstruction	26541795/26541795	85.9721%	IU
+C. sativus	SRR1104901	passes the trimming step	used for transcript reconstruction	14528565	71.8541%	SR
+C. sativus	SRR1104920	passes the trimming step	used for transcript reconstruction	13591009	85.9851%	SR
+C. sativus	SRR1104921	passes the trimming step	used for transcript reconstruction	13211368	82.3761%	SR
+C. sativus	SRR1104922	passes the trimming step	used for transcript reconstruction	16392798	77.8703%	SR
+C. sativus	SRR1104923	passes the trimming step	used for transcript reconstruction	18548326	78.2237%	SR
+C. sativus	SRR1104924	passes the trimming step	used for transcript reconstruction	17166968	85.5741%	SR
+C. sativus	SRR1105618	passes the trimming step	used for transcript reconstruction	16174454	76.5095%	SR
+C. sativus	SRR1105619	passes the trimming step	used for transcript reconstruction	15605112	61.0478%	SR
+C. sativus	SRR1105620	passes the trimming step	used for transcript reconstruction	11658240	79.2426%	SR
+C. sativus	SRR1105621	passes the trimming step	used for transcript reconstruction	14958156	75.9041%	SR
+C. sativus	SRR1105622	passes the trimming step	used for transcript reconstruction	17095602	85.9217%	SR
+C. sativus	SRR1105623	passes the trimming step	used for transcript reconstruction	13880404	64.1147%	SR
+C. sativus	SRR11268418	passes the trimming step	used for transcript reconstruction	44968473/44968473	86.2324%	ISR
+C. sativus	SRR11268419	passes the trimming step	used for transcript reconstruction	41968766/41968766	88.1598%	ISR
+C. sativus	SRR11268420	passes the trimming step	used for transcript reconstruction	49319137/49319137	90.2539%	ISR
+C. sativus	SRR11268421	passes the trimming step	used for transcript reconstruction	57037152/57037152	82.1968%	ISR
+C. sativus	SRR11268422	passes the trimming step	used for transcript reconstruction	43702449/43702449	90.2673%	ISR
+C. sativus	SRR11268423	passes the trimming step	used for transcript reconstruction	37702011/37702011	88.2144%	ISR
+C. sativus	SRR11268424	passes the trimming step	used for transcript reconstruction	47725800/47725800	90.1838%	ISR
+C. sativus	SRR11268425	passes the trimming step	used for transcript reconstruction	48951638/48951638	90.434%	ISR
+C. sativus	SRR11268426	passes the trimming step	used for transcript reconstruction	45733299/45733299	89.8794%	ISR
+C. sativus	SRR11306864	passes the trimming step	not used for transcript reconstruction	19986344/19986344	85.985%	IU
+C. sativus	SRR11306865	passes the trimming step	not used for transcript reconstruction	18339104/18339104	82.9919%	IU
+C. sativus	SRR11306866	passes the trimming step	not used for transcript reconstruction	19439086/19439086	86.2313%	IU
+C. sativus	SRR11306867	passes the trimming step	not used for transcript reconstruction	20389791/20389791	86.109%	IU
+C. sativus	SRR11306868	passes the trimming step	not used for transcript reconstruction	20110282/20110282	87.1093%	IU
+C. sativus	SRR11306869	passes the trimming step	not used for transcript reconstruction	20955511/20955511	86.9173%	IU
+C. sativus	SRR11358251	passes the trimming step	used for transcript reconstruction	19113087/19113087	80.4981%	ISR
+C. sativus	SRR11358252	passes the trimming step	used for transcript reconstruction	19474799/19474799	80.528%	ISR
+C. sativus	SRR11358253	passes the trimming step	not used for transcript reconstruction	35980875/35980875	83.7997%	IU
+C. sativus	SRR11358254	passes the trimming step	used for transcript reconstruction	20990791/20990791	77.7716%	ISR
+C. sativus	SRR11358255	passes the trimming step	used for transcript reconstruction	19212515/19212515	58.3064%	ISR
+C. sativus	SRR11358256	passes the trimming step	not used for transcript reconstruction	28995349/28995349	81.748%	IU
+C. sativus	SRR11358257	passes the trimming step	used for transcript reconstruction	20983890/20983890	58.5813%	ISR
+C. sativus	SRR11358258	passes the trimming step	used for transcript reconstruction	19993733/19993733	80.092%	ISR
+C. sativus	SRR11358259	passes the trimming step	not used for transcript reconstruction	33824809/33824809	83.8418%	IU
+C. sativus	SRR11358260	passes the trimming step	used for transcript reconstruction	21746996/21746996	64.887%	ISR
+C. sativus	SRR11358261	passes the trimming step	used for transcript reconstruction	20485706/20485706	80.279%	ISR
+C. sativus	SRR11358262	passes the trimming step	not used for transcript reconstruction	38882881/38882881	84.0446%	IU
+C. sativus	SRR11358263	passes the trimming step	used for transcript reconstruction	19351828/19351828	74.5621%	ISR
+C. sativus	SRR11358264	passes the trimming step	used for transcript reconstruction	18498307/18498307	76.8682%	ISR
+C. sativus	SRR11358265	passes the trimming step	not used for transcript reconstruction	40897758/40897758	84.7009%	IU
+C. sativus	SRR11358266	passes the trimming step	used for transcript reconstruction	20987389/20987389	84.1945%	ISR
+C. sativus	SRR11358267	passes the trimming step	used for transcript reconstruction	20513806/20513806	82.8523%	ISR
+C. sativus	SRR11358268	passes the trimming step	not used for transcript reconstruction	40435144/40435144	86.9572%	IU
+C. sativus	SRR11573113	passes the trimming step	used for transcript reconstruction	11848848/11848848	86.3475%	ISR
+C. sativus	SRR11573115	passes the trimming step	used for transcript reconstruction	30172598/30172598	38.5929%	ISR
+C. sativus	SRR11831473	passes the trimming step	not used for transcript reconstruction	21838685/21838685	84.8505%	IU
+C. sativus	SRR11831474	passes the trimming step	not used for transcript reconstruction	21794013/21794013	84.3185%	IU
+C. sativus	SRR11831475	passes the trimming step	not used for transcript reconstruction	21341485/21341485	84.5197%	IU
+C. sativus	SRR11831476	passes the trimming step	not used for transcript reconstruction	24980373/24980373	83.0795%	IU
+C. sativus	SRR11831477	passes the trimming step	not used for transcript reconstruction	25981449/25981449	81.8605%	IU
+C. sativus	SRR11831478	passes the trimming step	not used for transcript reconstruction	21535193/21535193	82.1568%	IU
+C. sativus	SRR11831479	passes the trimming step	not used for transcript reconstruction	21323366/21323366	83.7375%	IU
+C. sativus	SRR11831480	passes the trimming step	not used for transcript reconstruction	26192241/26192241	80.0223%	IU
+C. sativus	SRR11831481	passes the trimming step	not used for transcript reconstruction	22209727/22209727	81.778%	IU
+C. sativus	SRR11850235	passes the trimming step	used for transcript reconstruction	25103658/25103658	83.3358%	ISR
+C. sativus	SRR11850236	passes the trimming step	used for transcript reconstruction	23352958/23352958	83.5066%	ISR
+C. sativus	SRR11850237	passes the trimming step	used for transcript reconstruction	25039324/25039324	83.7708%	ISR
+C. sativus	SRR11850238	passes the trimming step	used for transcript reconstruction	24283491/24283491	85.1791%	ISR
+C. sativus	SRR11850239	passes the trimming step	used for transcript reconstruction	20133056/20133056	85.1871%	ISR
+C. sativus	SRR11850240	passes the trimming step	used for transcript reconstruction	23042183/23042183	85.394%	ISR
+C. sativus	SRR12235021	passes the trimming step	used for transcript reconstruction	38798139/38798139	88.341%	ISR
+C. sativus	SRR12235022	passes the trimming step	used for transcript reconstruction	47211201/47211201	90.8187%	ISR
+C. sativus	SRR12235023	passes the trimming step	used for transcript reconstruction	47592374/47592374	86.6043%	ISR
+C. sativus	SRR12235024	passes the trimming step	used for transcript reconstruction	44956196/44956196	82.7191%	ISR
+C. sativus	SRR12278678	passes the trimming step	used for transcript reconstruction	19668089/19668089	82.8088%	ISR
+C. sativus	SRR12278679	passes the trimming step	used for transcript reconstruction	22839014/22839014	84.3015%	ISR
+C. sativus	SRR12278680	passes the trimming step	used for transcript reconstruction	22380034/22380034	84.3939%	ISR
+C. sativus	SRR12278681	passes the trimming step	used for transcript reconstruction	22342449/22342449	85.1792%	ISR
+C. sativus	SRR12278682	passes the trimming step	used for transcript reconstruction	22493421/22493421	85.5479%	ISR
+C. sativus	SRR12278683	passes the trimming step	used for transcript reconstruction	21118583/21118583	85.6606%	ISR
+C. sativus	SRR12494877	passes the trimming step	not used for transcript reconstruction	24091289/24091289	85.9169%	IU
+C. sativus	SRR12494878	passes the trimming step	not used for transcript reconstruction	24111866/24111866	86.0315%	IU
+C. sativus	SRR12494886	passes the trimming step	not used for transcript reconstruction	24580377/24580377	85.9724%	IU
+C. sativus	SRR12574573	passes the trimming step	not used for transcript reconstruction	21163217/21163217	84.9092%	IU
+C. sativus	SRR12574574	passes the trimming step	not used for transcript reconstruction	21451772/21451772	87.664%	IU
+C. sativus	SRR12574575	passes the trimming step	not used for transcript reconstruction	22614940/22614940	88.5615%	IU
+C. sativus	SRR12574576	passes the trimming step	not used for transcript reconstruction	24797450/24797450	88.0592%	IU
+C. sativus	SRR12574577	passes the trimming step	not used for transcript reconstruction	19629763/19629763	87.8752%	IU
+C. sativus	SRR12574578	passes the trimming step	not used for transcript reconstruction	18911383/18911383	88.1995%	IU
+C. sativus	SRR12574579	passes the trimming step	not used for transcript reconstruction	23524911/23524911	88.2073%	IU
+C. sativus	SRR12574580	passes the trimming step	not used for transcript reconstruction	22385762/22385762	87.3388%	IU
+C. sativus	SRR12574581	passes the trimming step	not used for transcript reconstruction	24169740/24169740	86.8905%	IU
+C. sativus	SRR12574582	passes the trimming step	not used for transcript reconstruction	23813438/23813438	87.9138%	IU
+C. sativus	SRR12574583	passes the trimming step	not used for transcript reconstruction	23409252/23409252	88.0985%	IU
+C. sativus	SRR12574584	passes the trimming step	not used for transcript reconstruction	19992091/19992091	87.8877%	IU
+C. sativus	SRR12574585	passes the trimming step	not used for transcript reconstruction	22660628/22660628	87.6729%	IU
+C. sativus	SRR12574586	passes the trimming step	not used for transcript reconstruction	20860137/20860137	87.6147%	IU
+C. sativus	SRR12574587	passes the trimming step	not used for transcript reconstruction	33374202/33374202	86.1366%	IU
+C. sativus	SRR12574588	passes the trimming step	not used for transcript reconstruction	18752119/18752119	87.8863%	IU
+C. sativus	SRR12574589	passes the trimming step	not used for transcript reconstruction	24875055/24875055	87.3891%	IU
+C. sativus	SRR12574590	passes the trimming step	not used for transcript reconstruction	18654499/18654499	85.7571%	IU
+C. sativus	SRR12778025	passes the trimming step	not used for transcript reconstruction	26198758/26198758	89.0567%	IU
+C. sativus	SRR12778026	passes the trimming step	not used for transcript reconstruction	21230016/21230016	88.4775%	IU
+C. sativus	SRR12778027	passes the trimming step	not used for transcript reconstruction	21753850/21753850	88.6296%	IU
+C. sativus	SRR12778028	passes the trimming step	not used for transcript reconstruction	27420280/27420280	89.615%	IU
+C. sativus	SRR12778029	passes the trimming step	not used for transcript reconstruction	21372416/21372416	89.1151%	IU
+C. sativus	SRR12778030	passes the trimming step	not used for transcript reconstruction	24138890/24138890	89.4482%	IU
+C. sativus	SRR12778031	passes the trimming step	not used for transcript reconstruction	24218156/24218156	88.8954%	IU
+C. sativus	SRR12778032	passes the trimming step	not used for transcript reconstruction	26219844/26219844	89.3899%	IU
+C. sativus	SRR12778033	passes the trimming step	not used for transcript reconstruction	21435202/21435202	89.001%	IU
+C. sativus	SRR12778034	passes the trimming step	not used for transcript reconstruction	25883754/25883754	88.6426%	IU
+C. sativus	SRR12778035	passes the trimming step	not used for transcript reconstruction	24871583/24871583	87.9044%	IU
+C. sativus	SRR12778036	passes the trimming step	not used for transcript reconstruction	26629569/26629569	88.1859%	IU
+C. sativus	SRR12778037	passes the trimming step	not used for transcript reconstruction	23837862/23837862	88.7456%	IU
+C. sativus	SRR12778038	passes the trimming step	not used for transcript reconstruction	21027802/21027802	88.0128%	IU
+C. sativus	SRR12778039	passes the trimming step	not used for transcript reconstruction	24277136/24277136	89.0437%	IU
+C. sativus	SRR12778040	passes the trimming step	not used for transcript reconstruction	25944038/25944038	89.0938%	IU
+C. sativus	SRR12778041	passes the trimming step	not used for transcript reconstruction	25517088/25517088	89.3292%	IU
+C. sativus	SRR12832821	passes the trimming step	not used for transcript reconstruction	24712028/24712028	79.4014%	IU
+C. sativus	SRR12832822	passes the trimming step	not used for transcript reconstruction	26854367/26854367	79.5334%	IU
+C. sativus	SRR12832823	passes the trimming step	not used for transcript reconstruction	22962535/22962535	79.2781%	IU
+C. sativus	SRR12832824	passes the trimming step	not used for transcript reconstruction	23648257/23648257	80.0794%	IU
+C. sativus	SRR12832825	passes the trimming step	not used for transcript reconstruction	27061273/27061273	83.0914%	IU
+C. sativus	SRR12832826	passes the trimming step	not used for transcript reconstruction	27533297/27533297	79.788%	IU
+C. sativus	SRR12919474	passes the trimming step	used for transcript reconstruction	24904043/24904043	89.6115%	ISR
+C. sativus	SRR12919475	passes the trimming step	used for transcript reconstruction	24390760/24390760	84.3554%	ISR
+C. sativus	SRR12919476	passes the trimming step	used for transcript reconstruction	21589854/21589854	85.8743%	ISR
+C. sativus	SRR12919477	passes the trimming step	used for transcript reconstruction	24842599/24842599	85.9303%	ISR
+C. sativus	SRR12919478	passes the trimming step	used for transcript reconstruction	24762712/24762712	89.1536%	ISR
+C. sativus	SRR12919479	passes the trimming step	used for transcript reconstruction	24394620/24394620	88.5727%	ISR
+C. sativus	SRR12919480	passes the trimming step	used for transcript reconstruction	24749588/24749588	88.6432%	ISR
+C. sativus	SRR12919481	passes the trimming step	used for transcript reconstruction	23610950/23610950	88.6132%	ISR
+C. sativus	SRR12919482	passes the trimming step	used for transcript reconstruction	24094799/24094799	81.6243%	ISR
+C. sativus	SRR12919483	passes the trimming step	used for transcript reconstruction	24612719/24612719	84.486%	ISR
+C. sativus	SRR12919484	passes the trimming step	used for transcript reconstruction	25478263/25478263	84.5062%	ISR
+C. sativus	SRR12919485	passes the trimming step	used for transcript reconstruction	24890256/24890256	88.9487%	ISR
+C. sativus	SRR12919486	passes the trimming step	used for transcript reconstruction	24878825/24878825	88.8029%	ISR
+C. sativus	SRR12919487	passes the trimming step	used for transcript reconstruction	24619520/24619520	89.196%	ISR
+C. sativus	SRR12919488	passes the trimming step	used for transcript reconstruction	25184211/25184211	89.3769%	ISR
+C. sativus	SRR12919489	passes the trimming step	used for transcript reconstruction	22936669/22936669	89.9179%	ISR
+C. sativus	SRR12919490	passes the trimming step	used for transcript reconstruction	22545593/22545593	89.8216%	ISR
+C. sativus	SRR12919491	passes the trimming step	used for transcript reconstruction	24732513/24732513	89.0139%	ISR
+C. sativus	SRR12970020	passes the trimming step	not used for transcript reconstruction	17906499/17906499	86.605%	IU
+C. sativus	SRR12970021	passes the trimming step	not used for transcript reconstruction	18689336/18689336	86.3896%	IU
+C. sativus	SRR12970022	passes the trimming step	not used for transcript reconstruction	17803431/17803431	85.947%	IU
+C. sativus	SRR12970023	passes the trimming step	not used for transcript reconstruction	17538285/17538285	86.6532%	IU
+C. sativus	SRR12970024	passes the trimming step	not used for transcript reconstruction	19576833/19576833	87.0602%	IU
+C. sativus	SRR12970025	passes the trimming step	not used for transcript reconstruction	17282409/17282409	87.0048%	IU
+C. sativus	SRR13020915	passes the trimming step	not used for transcript reconstruction	25553309/25553309	82.3498%	IU
+C. sativus	SRR13020916	passes the trimming step	not used for transcript reconstruction	20988066/20988066	85.1389%	IU
+C. sativus	SRR13020917	passes the trimming step	not used for transcript reconstruction	21062413/21062413	83.8612%	IU
+C. sativus	SRR13020918	passes the trimming step	not used for transcript reconstruction	20433556/20433556	84.9042%	IU
+C. sativus	SRR13020919	passes the trimming step	not used for transcript reconstruction	21030654/21030654	84.5891%	IU
+C. sativus	SRR13020920	passes the trimming step	not used for transcript reconstruction	21274166/21274166	84.8527%	IU
+C. sativus	SRR13020921	passes the trimming step	not used for transcript reconstruction	20792169/20792169	83.1117%	IU
+C. sativus	SRR13020922	passes the trimming step	not used for transcript reconstruction	20496811/20496811	80.9479%	IU
+C. sativus	SRR13020923	passes the trimming step	not used for transcript reconstruction	22037876/22037876	83.733%	IU
+C. sativus	SRR13065838	passes the trimming step	used for transcript reconstruction	37084603/37084603	66.9754%	ISR
+C. sativus	SRR13065839	passes the trimming step	used for transcript reconstruction	36807703/36807703	68.1777%	ISR
+C. sativus	SRR13065840	passes the trimming step	used for transcript reconstruction	37387134/37387134	69.2329%	ISR
+C. sativus	SRR13065841	passes the trimming step	used for transcript reconstruction	37765820/37765820	66.7835%	ISR
+C. sativus	SRR13065842	passes the trimming step	used for transcript reconstruction	37162692/37162692	64.8694%	ISR
+C. sativus	SRR13065843	passes the trimming step	used for transcript reconstruction	37153373/37153373	65.2948%	ISR
+C. sativus	SRR13065844	passes the trimming step	used for transcript reconstruction	37488405/37488405	67.5519%	ISR
+C. sativus	SRR13065845	passes the trimming step	used for transcript reconstruction	37366219/37366219	62.7813%	ISR
+C. sativus	SRR13065846	passes the trimming step	used for transcript reconstruction	36858855/36858855	66.1858%	ISR
+C. sativus	SRR13065847	passes the trimming step	used for transcript reconstruction	36657850/36657850	67.5543%	ISR
+C. sativus	SRR13065848	passes the trimming step	used for transcript reconstruction	37064379/37064379	65.8735%	ISR
+C. sativus	SRR13065849	passes the trimming step	used for transcript reconstruction	37094474/37094474	66.3955%	ISR
+C. sativus	SRR13083584	passes the trimming step	not used for transcript reconstruction	10153091/10153091	83.7496%	IU
+C. sativus	SRR13083585	passes the trimming step	not used for transcript reconstruction	9879914/9879914	87.3044%	IU
+C. sativus	SRR13083586	passes the trimming step	used for transcript reconstruction	13962814/13962814	85.046%	ISR
+C. sativus	SRR13083587	passes the trimming step	not used for transcript reconstruction	13318886/13318886	86.9159%	IU
+C. sativus	SRR13083588	passes the trimming step	used for transcript reconstruction	12893526/12893526	81.61%	ISR
+C. sativus	SRR13083589	passes the trimming step	used for transcript reconstruction	15719488/15719488	79.7236%	ISR
+C. sativus	SRR13083590	passes the trimming step	used for transcript reconstruction	15107462/15107462	79.0947%	ISR
+C. sativus	SRR13083591	passes the trimming step	used for transcript reconstruction	13309139/13309139	75.0269%	ISR
+C. sativus	SRR13083592	passes the trimming step	used for transcript reconstruction	12184140/12184140	76.7228%	ISR
+C. sativus	SRR13083593	passes the trimming step	used for transcript reconstruction	14008824/14008824	75.572%	ISR
+C. sativus	SRR13083594	passes the trimming step	used for transcript reconstruction	13934337/13934337	85.9502%	ISR
+C. sativus	SRR13083595	passes the trimming step	used for transcript reconstruction	11417576/11417576	84.4735%	ISR
+C. sativus	SRR13083596	passes the trimming step	used for transcript reconstruction	14008934/14008934	85.6288%	ISR
+C. sativus	SRR13083597	passes the trimming step	used for transcript reconstruction	11731152/11731152	86.0265%	ISR
+C. sativus	SRR13083598	passes the trimming step	used for transcript reconstruction	10590248/10590248	63.9861%	ISR
+C. sativus	SRR13083599	passes the trimming step	used for transcript reconstruction	12651152/12651152	61.3488%	ISR
+C. sativus	SRR13083600	passes the trimming step	used for transcript reconstruction	10864881/10864881	78.716%	ISR
+C. sativus	SRR13083601	passes the trimming step	used for transcript reconstruction	9602212/9602212	83.3955%	ISR
+C. sativus	SRR13083602	passes the trimming step	used for transcript reconstruction	10116008/10116008	84.8245%	ISR
+C. sativus	SRR13083603	passes the trimming step	used for transcript reconstruction	11952944/11952944	85.6999%	ISR
+C. sativus	SRR13083604	passes the trimming step	used for transcript reconstruction	10547672/10547672	77.7647%	ISR
+C. sativus	SRR13083605	passes the trimming step	used for transcript reconstruction	10351017/10351017	75.7581%	ISR
+C. sativus	SRR13083606	passes the trimming step	not used for transcript reconstruction	12064581/12064581	86.5329%	IU
+C. sativus	SRR13083607	passes the trimming step	used for transcript reconstruction	13389159/13389159	85.1579%	ISR
+C. sativus	SRR13279999	passes the trimming step	used for transcript reconstruction	17093194	82.3217%	SF
+C. sativus	SRR13280000	passes the trimming step	used for transcript reconstruction	17024818	65.6189%	SF
+C. sativus	SRR13280001	passes the trimming step	used for transcript reconstruction	15399520	79.3805%	SF
+C. sativus	SRR13280002	passes the trimming step	used for transcript reconstruction	14340058	78.2614%	SF
+C. sativus	SRR13284784	passes the trimming step	not used for transcript reconstruction	60303464/60303464	85.8955%	IU
+C. sativus	SRR13284785	passes the trimming step	not used for transcript reconstruction	58444105/58444105	85.5041%	IU
+C. sativus	SRR13626338	passes the trimming step	not used for transcript reconstruction	23817875/23817875	82.1565%	IU
+C. sativus	SRR13626339	doesn't pass the trimming step	NA	0/0	NA	NA
+C. sativus	SRR13626340	passes the trimming step	not used for transcript reconstruction	24534352/24534352	85.5836%	IU
+C. sativus	SRR13626341	passes the trimming step	not used for transcript reconstruction	27887917/27887917	85.0769%	IU
+C. sativus	SRR13626342	passes the trimming step	not used for transcript reconstruction	27356682/27356682	86.1395%	IU
+C. sativus	SRR13626343	passes the trimming step	not used for transcript reconstruction	26685529/26685529	84.3864%	IU
+C. sativus	SRR13645178	passes the trimming step	not used for transcript reconstruction	26300703/26300703	85.2736%	IU
+C. sativus	SRR13645179	passes the trimming step	not used for transcript reconstruction	23962750/23962750	84.9725%	IU
+C. sativus	SRR13645180	passes the trimming step	not used for transcript reconstruction	24056692/24056692	83.6261%	IU
+C. sativus	SRR13645181	passes the trimming step	not used for transcript reconstruction	26604165/26604165	84.5054%	IU
+C. sativus	SRR13645182	passes the trimming step	not used for transcript reconstruction	22766306/22766306	84.9087%	IU
+C. sativus	SRR13645183	passes the trimming step	not used for transcript reconstruction	21694819/21694819	84.7051%	IU
+C. sativus	SRR13674618	passes the trimming step	not used for transcript reconstruction	24009690/24009690	84.9277%	IU
+C. sativus	SRR13674619	passes the trimming step	not used for transcript reconstruction	23918136/23918136	83.1063%	IU
+C. sativus	SRR13674620	passes the trimming step	not used for transcript reconstruction	24137257/24137257	84.4092%	IU
+C. sativus	SRR13674621	passes the trimming step	not used for transcript reconstruction	22721476/22721476	83.7689%	IU
+C. sativus	SRR13674622	passes the trimming step	not used for transcript reconstruction	24797965/24797965	83.7408%	IU
+C. sativus	SRR13674623	passes the trimming step	not used for transcript reconstruction	23830935/23830935	86.6255%	IU
+C. sativus	SRR13674624	passes the trimming step	not used for transcript reconstruction	24003515/24003515	84.4394%	IU
+C. sativus	SRR13674625	passes the trimming step	not used for transcript reconstruction	23200214/23200214	85.0553%	IU
+C. sativus	SRR13674626	passes the trimming step	not used for transcript reconstruction	22877230/22877230	84.3083%	IU
+C. sativus	SRR13674627	passes the trimming step	not used for transcript reconstruction	23970178/23970178	82.1284%	IU
+C. sativus	SRR13674628	passes the trimming step	not used for transcript reconstruction	21997748/21997748	86.2128%	IU
+C. sativus	SRR13674629	passes the trimming step	not used for transcript reconstruction	22574788/22574788	84.8862%	IU
+C. sativus	SRR13787461	passes the trimming step	not used for transcript reconstruction	21099494/21099494	86.5196%	IU
+C. sativus	SRR13787462	passes the trimming step	not used for transcript reconstruction	21088992/21088992	88.0598%	IU
+C. sativus	SRR13787463	passes the trimming step	not used for transcript reconstruction	21344563/21344563	88.1439%	IU
+C. sativus	SRR13787464	passes the trimming step	not used for transcript reconstruction	21129101/21129101	86.2772%	IU
+C. sativus	SRR13787465	passes the trimming step	not used for transcript reconstruction	21257425/21257425	87.2784%	IU
+C. sativus	SRR13787466	passes the trimming step	not used for transcript reconstruction	21237011/21237011	87.3097%	IU
+C. sativus	SRR13799563	passes the trimming step	not used for transcript reconstruction	21807796/21807796	81.0861%	IU
+C. sativus	SRR13799564	passes the trimming step	not used for transcript reconstruction	21619430/21619430	82.0243%	IU
+C. sativus	SRR13799565	passes the trimming step	not used for transcript reconstruction	19737607/19737607	82.0236%	IU
+C. sativus	SRR13799566	passes the trimming step	not used for transcript reconstruction	21023359/21023359	83.0474%	IU
+C. sativus	SRR13799567	passes the trimming step	not used for transcript reconstruction	21811708/21811708	82.7836%	IU
+C. sativus	SRR13799568	passes the trimming step	not used for transcript reconstruction	22255690/22255690	82.8315%	IU
+C. sativus	SRR13838636	passes the trimming step	not used for transcript reconstruction	22955976/22955976	86.6472%	IU
+C. sativus	SRR13853674	passes the trimming step	not used for transcript reconstruction	23156996/23156996	86.9124%	IU
+C. sativus	SRR13853680	passes the trimming step	not used for transcript reconstruction	23574313/23574313	83.158%	IU
+C. sativus	SRR13853681	passes the trimming step	not used for transcript reconstruction	23553652/23553652	86.5854%	IU
+C. sativus	SRR13853682	passes the trimming step	not used for transcript reconstruction	23623431/23623431	87.8903%	IU
+C. sativus	SRR13854554	passes the trimming step	not used for transcript reconstruction	23249694/23249694	86.2797%	IU
+C. sativus	SRR13931726	passes the trimming step	not used for transcript reconstruction	27196918/27196918	85.949%	IU
+C. sativus	SRR13931727	passes the trimming step	not used for transcript reconstruction	24392675/24392675	84.834%	IU
+C. sativus	SRR13931728	passes the trimming step	not used for transcript reconstruction	27893866/27893866	83.7354%	IU
+C. sativus	SRR13931729	passes the trimming step	not used for transcript reconstruction	27168827/27168827	83.7162%	IU
+C. sativus	SRR13931730	passes the trimming step	not used for transcript reconstruction	32630640/32630640	76.3103%	IU
+C. sativus	SRR13931731	passes the trimming step	not used for transcript reconstruction	26793604/26793604	76.2035%	IU
+C. sativus	SRR13931732	passes the trimming step	not used for transcript reconstruction	23528402/23528402	75.6736%	IU
+C. sativus	SRR13931733	passes the trimming step	not used for transcript reconstruction	28332733/28332733	76.3026%	IU
+C. sativus	SRR13931734	passes the trimming step	not used for transcript reconstruction	25998054/25998054	84.3628%	IU
+C. sativus	SRR13931735	passes the trimming step	not used for transcript reconstruction	23399407/23399407	84.5988%	IU
+C. sativus	SRR13931736	passes the trimming step	not used for transcript reconstruction	22862143/22862143	76.2074%	IU
+C. sativus	SRR13931737	passes the trimming step	not used for transcript reconstruction	31168114/31168114	78.2361%	IU
+C. sativus	SRR14126825	passes the trimming step	not used for transcript reconstruction	21734260/21734260	82.9082%	IU
+C. sativus	SRR14126826	passes the trimming step	not used for transcript reconstruction	20776893/20776893	86.3144%	IU
+C. sativus	SRR14126827	passes the trimming step	not used for transcript reconstruction	21182195/21182195	86.331%	IU
+C. sativus	SRR14126828	passes the trimming step	not used for transcript reconstruction	19150755/19150755	86.4759%	IU
+C. sativus	SRR14126829	passes the trimming step	not used for transcript reconstruction	21121044/21121044	86.844%	IU
+C. sativus	SRR14126830	passes the trimming step	not used for transcript reconstruction	21303313/21303313	86.4221%	IU
+C. sativus	SRR14126831	passes the trimming step	not used for transcript reconstruction	22195400/22195400	86.3609%	IU
+C. sativus	SRR14126832	passes the trimming step	not used for transcript reconstruction	20887697/20887697	86.1807%	IU
+C. sativus	SRR14126833	passes the trimming step	not used for transcript reconstruction	21994673/21994673	86.3387%	IU
+C. sativus	SRR14126834	passes the trimming step	not used for transcript reconstruction	20864319/20864319	86.2028%	IU
+C. sativus	SRR14126835	passes the trimming step	not used for transcript reconstruction	20480617/20480617	86.8114%	IU
+C. sativus	SRR14126836	passes the trimming step	not used for transcript reconstruction	20763797/20763797	85.92%	IU
+C. sativus	SRR14521443	passes the trimming step	not used for transcript reconstruction	16290196	82.6238%	U
+C. sativus	SRR14521444	passes the trimming step	not used for transcript reconstruction	13171044	77.8025%	U
+C. sativus	SRR14521445	passes the trimming step	not used for transcript reconstruction	14813331	87.4635%	U
+C. sativus	SRR14521446	passes the trimming step	not used for transcript reconstruction	13499153	81.941%	U
+C. sativus	SRR14521447	passes the trimming step	not used for transcript reconstruction	15296905	86.4322%	U
+C. sativus	SRR14521448	passes the trimming step	not used for transcript reconstruction	13209060	62.2997%	U
+C. sativus	SRR14521449	passes the trimming step	not used for transcript reconstruction	13756456	84.4869%	U
+C. sativus	SRR14521450	passes the trimming step	not used for transcript reconstruction	13523869	70.0565%	U
+C. sativus	SRR14521451	passes the trimming step	not used for transcript reconstruction	17007213	83.8597%	U
+C. sativus	SRR14521452	passes the trimming step	not used for transcript reconstruction	15954857	84.0807%	U
+C. sativus	SRR15275997	passes the trimming step	not used for transcript reconstruction	20653983/20653983	84.4503%	IU
+C. sativus	SRR15275998	passes the trimming step	not used for transcript reconstruction	20674205/20674205	84.4103%	IU
+C. sativus	SRR15275999	passes the trimming step	not used for transcript reconstruction	20643970/20643970	84.1978%	IU
+C. sativus	SRR15276000	passes the trimming step	not used for transcript reconstruction	21101754/21101754	84.26%	IU
+C. sativus	SRR15276001	passes the trimming step	not used for transcript reconstruction	21307002/21307002	84.1059%	IU
+C. sativus	SRR15276002	passes the trimming step	not used for transcript reconstruction	20044543/20044543	84.3246%	IU
+C. sativus	SRR15276003	passes the trimming step	not used for transcript reconstruction	22548486/22548486	83.525%	IU
+C. sativus	SRR15276004	passes the trimming step	not used for transcript reconstruction	22641068/22641068	84.0509%	IU
+C. sativus	SRR15276005	passes the trimming step	not used for transcript reconstruction	19933788/19933788	85.0395%	IU
+C. sativus	SRR15276006	passes the trimming step	not used for transcript reconstruction	21288552/21288552	84.9823%	IU
+C. sativus	SRR15276007	passes the trimming step	not used for transcript reconstruction	20271909/20271909	84.0239%	IU
+C. sativus	SRR15276008	passes the trimming step	not used for transcript reconstruction	20952978/20952978	83.9376%	IU
+C. sativus	SRR15276009	passes the trimming step	not used for transcript reconstruction	24411047/24411047	84.528%	IU
+C. sativus	SRR15276010	passes the trimming step	not used for transcript reconstruction	21500670/21500670	83.7529%	IU
+C. sativus	SRR15276011	passes the trimming step	not used for transcript reconstruction	22169149/22169149	83.9168%	IU
+C. sativus	SRR15276012	passes the trimming step	not used for transcript reconstruction	21190446/21190446	83.9748%	IU
+C. sativus	SRR15276013	passes the trimming step	not used for transcript reconstruction	20887877/20887877	84.3581%	IU
+C. sativus	SRR15276014	passes the trimming step	not used for transcript reconstruction	21388915/21388915	84.8248%	IU
+C. sativus	SRR15276015	passes the trimming step	not used for transcript reconstruction	20604693/20604693	83.8304%	IU
+C. sativus	SRR15276016	passes the trimming step	not used for transcript reconstruction	20620660/20620660	84.282%	IU
+C. sativus	SRR15276017	passes the trimming step	not used for transcript reconstruction	20909065/20909065	82.9719%	IU
+C. sativus	SRR15276018	passes the trimming step	not used for transcript reconstruction	20541463/20541463	84.0254%	IU
+C. sativus	SRR15276019	passes the trimming step	not used for transcript reconstruction	20198721/20198721	83.6376%	IU
+C. sativus	SRR15276020	passes the trimming step	not used for transcript reconstruction	22428379/22428379	83.8305%	IU
+C. sativus	SRR15371782	passes the trimming step	not used for transcript reconstruction	22242489/22242489	81.9031%	IU
+C. sativus	SRR15371783	passes the trimming step	not used for transcript reconstruction	22167606/22167606	85.4117%	IU
+C. sativus	SRR15371784	passes the trimming step	not used for transcript reconstruction	22229421/22229421	85.2182%	IU
+C. sativus	SRR15371785	passes the trimming step	not used for transcript reconstruction	22811586/22811586	86.0142%	IU
+C. sativus	SRR15371786	passes the trimming step	not used for transcript reconstruction	21936456/21936456	80.77%	IU
+C. sativus	SRR15371787	passes the trimming step	not used for transcript reconstruction	21643846/21643846	80.345%	IU
+C. sativus	SRR15371788	passes the trimming step	not used for transcript reconstruction	22681710/22681710	79.7807%	IU
+C. sativus	SRR15371789	passes the trimming step	not used for transcript reconstruction	22064630/22064630	85.2194%	IU
+C. sativus	SRR15371790	passes the trimming step	not used for transcript reconstruction	22675370/22675370	82.7087%	IU
+C. sativus	SRR15371791	passes the trimming step	not used for transcript reconstruction	21845788/21845788	84.015%	IU
+C. sativus	SRR15371792	passes the trimming step	not used for transcript reconstruction	22660732/22660732	86.0324%	IU
+C. sativus	SRR15371793	passes the trimming step	not used for transcript reconstruction	21267010/21267010	85.1215%	IU
+C. sativus	SRR1548495	passes the trimming step	not used for transcript reconstruction	5688161/5688161	83.4908%	IU
+C. sativus	SRR1548496	passes the trimming step	not used for transcript reconstruction	7969844/7969844	81.1488%	IU
+C. sativus	SRR1548497	passes the trimming step	not used for transcript reconstruction	20492948	86.3546%	U
+C. sativus	SRR1548498	passes the trimming step	not used for transcript reconstruction	24094818	88.1268%	U
+C. sativus	SRR1548499	passes the trimming step	not used for transcript reconstruction	21959300	87.1341%	U
+C. sativus	SRR1548500	passes the trimming step	not used for transcript reconstruction	23054134	88.2072%	U
+C. sativus	SRR1548540	passes the trimming step	not used for transcript reconstruction	13978572	87.3081%	U
+C. sativus	SRR1548541	passes the trimming step	not used for transcript reconstruction	15361014	87.9098%	U
+C. sativus	SRR1548542	passes the trimming step	not used for transcript reconstruction	15432685	86.4216%	U
+C. sativus	SRR1548543	passes the trimming step	not used for transcript reconstruction	13885403	85.5268%	U
+C. sativus	SRR16002480	passes the trimming step	not used for transcript reconstruction	25455620/25455620	81.9698%	IU
+C. sativus	SRR16002481	passes the trimming step	not used for transcript reconstruction	23535964/23535964	81.0521%	IU
+C. sativus	SRR16002482	passes the trimming step	not used for transcript reconstruction	9408469/9408469	81.2064%	IU
+C. sativus	SRR16002483	passes the trimming step	not used for transcript reconstruction	19318589/19318589	81.2247%	IU
+C. sativus	SRR16002484	passes the trimming step	not used for transcript reconstruction	23318476/23318476	80.9807%	IU
+C. sativus	SRR16002485	passes the trimming step	not used for transcript reconstruction	20516534/20516534	81.7435%	IU
+C. sativus	SRR16002486	passes the trimming step	not used for transcript reconstruction	22820063/22820063	82.2284%	IU
+C. sativus	SRR16002487	passes the trimming step	not used for transcript reconstruction	21677457/21677457	82.536%	IU
+C. sativus	SRR16002488	passes the trimming step	not used for transcript reconstruction	22078049/22078049	82.3656%	IU
+C. sativus	SRR16002489	passes the trimming step	not used for transcript reconstruction	19795196/19795196	80.7771%	IU
+C. sativus	SRR16002490	passes the trimming step	not used for transcript reconstruction	22898662/22898662	82.5714%	IU
+C. sativus	SRR16002491	passes the trimming step	not used for transcript reconstruction	20762541/20762541	82.6856%	IU
+C. sativus	SRR16002492	passes the trimming step	not used for transcript reconstruction	20944564/20944564	82.1333%	IU
+C. sativus	SRR16002493	passes the trimming step	not used for transcript reconstruction	19750053/19750053	81.9143%	IU
+C. sativus	SRR16002494	passes the trimming step	not used for transcript reconstruction	19138946/19138946	82.041%	IU
+C. sativus	SRR16002495	passes the trimming step	not used for transcript reconstruction	20125095/20125095	82.3643%	IU
+C. sativus	SRR16002496	passes the trimming step	not used for transcript reconstruction	22190932/22190932	81.2102%	IU
+C. sativus	SRR16002497	passes the trimming step	not used for transcript reconstruction	20976025/20976025	81.6313%	IU
+C. sativus	SRR16002498	passes the trimming step	not used for transcript reconstruction	24516987/24516987	81.2427%	IU
+C. sativus	SRR16002499	passes the trimming step	not used for transcript reconstruction	25514992/25514992	81.007%	IU
+C. sativus	SRR16002500	passes the trimming step	not used for transcript reconstruction	23399623/23399623	81.3645%	IU
+C. sativus	SRR16002501	passes the trimming step	not used for transcript reconstruction	21398486/21398486	81.1985%	IU
+C. sativus	SRR16002502	passes the trimming step	not used for transcript reconstruction	22251037/22251037	81.3849%	IU
+C. sativus	SRR16002503	passes the trimming step	not used for transcript reconstruction	22548053/22548053	79.535%	IU
+C. sativus	SRR16074103	passes the trimming step	used for transcript reconstruction	70148760/70148760	86.6647%	ISR
+C. sativus	SRR16074104	passes the trimming step	used for transcript reconstruction	69781658/69781658	85.7001%	ISR
+C. sativus	SRR16074105	passes the trimming step	used for transcript reconstruction	70715809/70715809	86.7494%	ISR
+C. sativus	SRR16074106	passes the trimming step	used for transcript reconstruction	64342204/64342204	86.6838%	ISR
+C. sativus	SRR16074107	passes the trimming step	used for transcript reconstruction	71912532/71912532	79.3194%	ISR
+C. sativus	SRR16074108	passes the trimming step	used for transcript reconstruction	66211544/66211544	71.1599%	ISR
+C. sativus	SRR16074109	passes the trimming step	used for transcript reconstruction	71159171/71159171	77.4998%	ISR
+C. sativus	SRR16074110	passes the trimming step	used for transcript reconstruction	68014222/68014222	77.0512%	ISR
+C. sativus	SRR16121310	passes the trimming step	not used for transcript reconstruction	20993030/20993030	79.9838%	IU
+C. sativus	SRR16121311	passes the trimming step	not used for transcript reconstruction	22579849/22579849	82.243%	IU
+C. sativus	SRR16121312	passes the trimming step	not used for transcript reconstruction	24186254/24186254	83.3846%	IU
+C. sativus	SRR16121313	passes the trimming step	not used for transcript reconstruction	21032164/21032164	84.115%	IU
+C. sativus	SRR16121314	passes the trimming step	not used for transcript reconstruction	21855496/21855496	83.6401%	IU
+C. sativus	SRR16121315	passes the trimming step	not used for transcript reconstruction	26261664/26261664	83.2327%	IU
+C. sativus	SRR1612525	passes the trimming step	not used for transcript reconstruction	35085628/35085628	78.73%	IU
+C. sativus	SRR1612526	passes the trimming step	not used for transcript reconstruction	24664987/24664987	78.7565%	IU
+C. sativus	SRR1612527	passes the trimming step	not used for transcript reconstruction	33987088/33987088	78.6478%	IU
+C. sativus	SRR1612528	passes the trimming step	not used for transcript reconstruction	36753432/36753432	81.0952%	IU
+C. sativus	SRR1612529	passes the trimming step	not used for transcript reconstruction	26839012/26839012	77.672%	IU
+C. sativus	SRR1612530	passes the trimming step	not used for transcript reconstruction	30618874/30618874	77.952%	IU
+C. sativus	SRR16759754	passes the trimming step	not used for transcript reconstruction	9573065/9573065	85.1823%	IU
+C. sativus	SRR16759755	passes the trimming step	not used for transcript reconstruction	10906677/10906677	88.162%	IU
+C. sativus	SRR16759756	passes the trimming step	not used for transcript reconstruction	10400204/10400204	85.5406%	IU
+C. sativus	SRR16759757	passes the trimming step	not used for transcript reconstruction	36689631/36689631	84.7989%	IU
+C. sativus	SRR16759758	passes the trimming step	not used for transcript reconstruction	33857419/33857419	84.8612%	IU
+C. sativus	SRR16759759	passes the trimming step	not used for transcript reconstruction	34494992/34494992	85.2575%	IU
+C. sativus	SRR16759760	passes the trimming step	not used for transcript reconstruction	30591506/30591506	85.9749%	IU
+C. sativus	SRR16759761	passes the trimming step	not used for transcript reconstruction	32950862/32950862	86.0628%	IU
+C. sativus	SRR16759762	passes the trimming step	not used for transcript reconstruction	9973262/9973262	84.4576%	IU
+C. sativus	SRR16759763	passes the trimming step	not used for transcript reconstruction	8786432/8786432	88.009%	IU
+C. sativus	SRR16759764	passes the trimming step	not used for transcript reconstruction	7969035/7969035	87.0611%	IU
+C. sativus	SRR16759765	passes the trimming step	not used for transcript reconstruction	11792642/11792642	87.2826%	IU
+C. sativus	SRR16759766	passes the trimming step	not used for transcript reconstruction	9875135/9875135	87.9659%	IU
+C. sativus	SRR16759767	passes the trimming step	not used for transcript reconstruction	10873258/10873258	88.6398%	IU
+C. sativus	SRR16759768	passes the trimming step	not used for transcript reconstruction	33247977/33247977	87.3675%	IU
+C. sativus	SRR16759769	passes the trimming step	not used for transcript reconstruction	12088799/12088799	85.7342%	IU
+C. sativus	SRR16936999	passes the trimming step	not used for transcript reconstruction	17900354/17900354	70.1366%	IU
+C. sativus	SRR16937000	passes the trimming step	not used for transcript reconstruction	17875417/17875417	70.1941%	IU
+C. sativus	SRR16937001	passes the trimming step	not used for transcript reconstruction	20438357/20438357	81.5222%	IU
+C. sativus	SRR16937002	passes the trimming step	not used for transcript reconstruction	18870004/18870004	74.5886%	IU
+C. sativus	SRR16937003	passes the trimming step	not used for transcript reconstruction	17552537/17552537	69.8464%	IU
+C. sativus	SRR16937004	passes the trimming step	not used for transcript reconstruction	15982047/15982047	82.1152%	IU
+C. sativus	SRR16937005	passes the trimming step	not used for transcript reconstruction	16465103/16465103	85.2331%	IU
+C. sativus	SRR16937006	passes the trimming step	not used for transcript reconstruction	15608393/15608393	80.6257%	IU
+C. sativus	SRR16937007	passes the trimming step	not used for transcript reconstruction	17247762/17247762	84.2496%	IU
+C. sativus	SRR16937008	passes the trimming step	not used for transcript reconstruction	15182933/15182933	84.5458%	IU
+C. sativus	SRR16937009	passes the trimming step	not used for transcript reconstruction	19222501/19222501	85.5763%	IU
+C. sativus	SRR16937010	passes the trimming step	not used for transcript reconstruction	16665413/16665413	79.3406%	IU
+C. sativus	SRR16937011	passes the trimming step	not used for transcript reconstruction	18691302/18691302	82.0631%	IU
+C. sativus	SRR16937012	passes the trimming step	not used for transcript reconstruction	17128010/17128010	82.5642%	IU
+C. sativus	SRR16937013	passes the trimming step	not used for transcript reconstruction	17761497/17761497	76.2024%	IU
+C. sativus	SRR16937014	passes the trimming step	not used for transcript reconstruction	18349592/18349592	43.1334%	IU
+C. sativus	SRR16937015	passes the trimming step	not used for transcript reconstruction	15472665/15472665	57.7378%	IU
+C. sativus	SRR16937016	passes the trimming step	not used for transcript reconstruction	19064692/19064692	81.2028%	IU
+C. sativus	SRR16937017	passes the trimming step	not used for transcript reconstruction	17698674/17698674	76.1866%	IU
+C. sativus	SRR16937018	passes the trimming step	not used for transcript reconstruction	20129148/20129148	73.2771%	IU
+C. sativus	SRR16937019	passes the trimming step	not used for transcript reconstruction	15626255/15626255	76.8473%	IU
+C. sativus	SRR16937020	passes the trimming step	not used for transcript reconstruction	14878163/14878163	79.1104%	IU
+C. sativus	SRR16937021	passes the trimming step	not used for transcript reconstruction	15171118/15171118	77.2071%	IU
+C. sativus	SRR16937022	passes the trimming step	not used for transcript reconstruction	16449741/16449741	73.3856%	IU
+C. sativus	SRR16937023	passes the trimming step	not used for transcript reconstruction	15624571/15624571	83.7807%	IU
+C. sativus	SRR16937024	passes the trimming step	not used for transcript reconstruction	15958064/15958064	74.1807%	IU
+C. sativus	SRR16937025	passes the trimming step	not used for transcript reconstruction	17757961/17757961	72.7703%	IU
+C. sativus	SRR16937026	passes the trimming step	not used for transcript reconstruction	14745467/14745467	77.2773%	IU
+C. sativus	SRR16937027	passes the trimming step	not used for transcript reconstruction	16274139/16274139	77.5067%	IU
+C. sativus	SRR16937028	passes the trimming step	not used for transcript reconstruction	16910291/16910291	74.2474%	IU
+C. sativus	SRR16937029	passes the trimming step	not used for transcript reconstruction	16445001/16445001	78.6322%	IU
+C. sativus	SRR16937030	passes the trimming step	not used for transcript reconstruction	16174348/16174348	76.024%	IU
+C. sativus	SRR16937031	passes the trimming step	not used for transcript reconstruction	17031229/17031229	79.6548%	IU
+C. sativus	SRR16937032	passes the trimming step	not used for transcript reconstruction	16209040/16209040	77.5298%	IU
+C. sativus	SRR16937033	passes the trimming step	not used for transcript reconstruction	16647583/16647583	74.7823%	IU
+C. sativus	SRR16937034	passes the trimming step	not used for transcript reconstruction	19979530/19979530	77.0441%	IU
+C. sativus	SRR16937035	passes the trimming step	not used for transcript reconstruction	18557727/18557727	75.8309%	IU
+C. sativus	SRR16937036	passes the trimming step	not used for transcript reconstruction	16759497/16759497	76.6842%	IU
+C. sativus	SRR17000706	passes the trimming step	not used for transcript reconstruction	22136735/22136735	84.2786%	IU
+C. sativus	SRR17000707	passes the trimming step	not used for transcript reconstruction	22004747/22004747	81.9147%	IU
+C. sativus	SRR17000708	passes the trimming step	not used for transcript reconstruction	23270671/23270671	82.5733%	IU
+C. sativus	SRR17000709	passes the trimming step	not used for transcript reconstruction	22013516/22013516	82.0384%	IU
+C. sativus	SRR17000710	passes the trimming step	not used for transcript reconstruction	26110759/26110759	83.1863%	IU
+C. sativus	SRR17000711	passes the trimming step	not used for transcript reconstruction	20002677/20002677	82.7212%	IU
+C. sativus	SRR17042216	passes the trimming step	not used for transcript reconstruction	26289695/26289695	90.5942%	IU
+C. sativus	SRR17042217	passes the trimming step	not used for transcript reconstruction	19200792/19200792	88.6114%	IU
+C. sativus	SRR17042218	passes the trimming step	not used for transcript reconstruction	18666429/18666429	90.4417%	IU
+C. sativus	SRR17042219	passes the trimming step	not used for transcript reconstruction	31378446/31378446	89.6018%	IU
+C. sativus	SRR17042220	passes the trimming step	not used for transcript reconstruction	21506183/21506183	88.0631%	IU
+C. sativus	SRR17042221	passes the trimming step	not used for transcript reconstruction	23020118/23020118	88.8711%	IU
+C. sativus	SRR17042222	passes the trimming step	not used for transcript reconstruction	22298361/22298361	87.2034%	IU
+C. sativus	SRR17042223	passes the trimming step	not used for transcript reconstruction	30547210/30547210	86.43%	IU
+C. sativus	SRR17042224	passes the trimming step	not used for transcript reconstruction	17756829/17756829	90.8026%	IU
+C. sativus	SRR17042225	passes the trimming step	not used for transcript reconstruction	19941324/19941324	90.8563%	IU
+C. sativus	SRR17042226	passes the trimming step	not used for transcript reconstruction	23007392/23007392	91.2204%	IU
+C. sativus	SRR17042227	passes the trimming step	not used for transcript reconstruction	23708410/23708410	91.1246%	IU
+C. sativus	SRR17042228	passes the trimming step	not used for transcript reconstruction	19399636/19399636	91.1682%	IU
+C. sativus	SRR17042229	passes the trimming step	not used for transcript reconstruction	22973895/22973895	90.8675%	IU
+C. sativus	SRR17042230	passes the trimming step	not used for transcript reconstruction	23495983/23495983	90.0494%	IU
+C. sativus	SRR17042231	passes the trimming step	not used for transcript reconstruction	21610515/21610515	88.6823%	IU
+C. sativus	SRR17042232	passes the trimming step	not used for transcript reconstruction	18567046/18567046	89.9512%	IU
+C. sativus	SRR17042233	passes the trimming step	not used for transcript reconstruction	21565409/21565409	85.1293%	IU
+C. sativus	SRR17042234	passes the trimming step	not used for transcript reconstruction	26454811/26454811	85.876%	IU
+C. sativus	SRR17276281	passes the trimming step	not used for transcript reconstruction	21526701/21526701	79.3523%	IU
+C. sativus	SRR17276282	passes the trimming step	not used for transcript reconstruction	21633137/21633137	86.1471%	IU
+C. sativus	SRR17276283	passes the trimming step	not used for transcript reconstruction	21855165/21855165	85.9603%	IU
+C. sativus	SRR17276284	passes the trimming step	not used for transcript reconstruction	22571880/22571880	85.3982%	IU
+C. sativus	SRR17276285	passes the trimming step	not used for transcript reconstruction	22890231/22890231	85.8005%	IU
+C. sativus	SRR17276286	passes the trimming step	not used for transcript reconstruction	22353826/22353826	85.7267%	IU
+C. sativus	SRR17344467	passes the trimming step	not used for transcript reconstruction	19846582/19846582	87.6364%	IU
+C. sativus	SRR17344468	passes the trimming step	not used for transcript reconstruction	20505925/20505925	84.888%	IU
+C. sativus	SRR17344469	passes the trimming step	not used for transcript reconstruction	19923957/19923957	84.5289%	IU
+C. sativus	SRR17344470	passes the trimming step	not used for transcript reconstruction	23818722/23818722	84.8358%	IU
+C. sativus	SRR17344471	passes the trimming step	not used for transcript reconstruction	22606708/22606708	83.3842%	IU
+C. sativus	SRR17344472	passes the trimming step	not used for transcript reconstruction	20723186/20723186	83.9961%	IU
+C. sativus	SRR17344473	passes the trimming step	not used for transcript reconstruction	20562804/20562804	84.6097%	IU
+C. sativus	SRR17344474	passes the trimming step	not used for transcript reconstruction	21510988/21510988	84.7298%	IU
+C. sativus	SRR17344475	passes the trimming step	not used for transcript reconstruction	20445767/20445767	85.0132%	IU
+C. sativus	SRR17344476	passes the trimming step	not used for transcript reconstruction	24649111/24649111	84.6531%	IU
+C. sativus	SRR17344477	passes the trimming step	not used for transcript reconstruction	22284035/22284035	85.1963%	IU
+C. sativus	SRR17344478	passes the trimming step	not used for transcript reconstruction	22611266/22611266	82.9056%	IU
+C. sativus	SRR17344479	passes the trimming step	not used for transcript reconstruction	22071198/22071198	82.5925%	IU
+C. sativus	SRR17344480	passes the trimming step	not used for transcript reconstruction	23167785/23167785	83.3939%	IU
+C. sativus	SRR17344481	passes the trimming step	not used for transcript reconstruction	19889118/19889118	82.8995%	IU
+C. sativus	SRR17344482	passes the trimming step	not used for transcript reconstruction	20748485/20748485	85.3344%	IU
+C. sativus	SRR17344483	passes the trimming step	not used for transcript reconstruction	23390456/23390456	84.6115%	IU
+C. sativus	SRR17344484	passes the trimming step	not used for transcript reconstruction	23260129/23260129	85.8573%	IU
+C. sativus	SRR17344485	passes the trimming step	not used for transcript reconstruction	22380091/22380091	84.674%	IU
+C. sativus	SRR17344486	passes the trimming step	not used for transcript reconstruction	21843002/21843002	86.0024%	IU
+C. sativus	SRR17344487	passes the trimming step	not used for transcript reconstruction	22049031/22049031	85.3783%	IU
+C. sativus	SRR17344488	passes the trimming step	not used for transcript reconstruction	21618757/21618757	82.0923%	IU
+C. sativus	SRR17344489	passes the trimming step	not used for transcript reconstruction	21561931/21561931	84.0879%	IU
+C. sativus	SRR17344490	passes the trimming step	not used for transcript reconstruction	23485178/23485178	84.1575%	IU
+C. sativus	SRR17344491	passes the trimming step	not used for transcript reconstruction	23626684/23626684	84.9654%	IU
+C. sativus	SRR17344492	passes the trimming step	not used for transcript reconstruction	21331944/21331944	81.1766%	IU
+C. sativus	SRR17344493	passes the trimming step	not used for transcript reconstruction	21229305/21229305	83.6941%	IU
+C. sativus	SRR17344494	passes the trimming step	not used for transcript reconstruction	22162739/22162739	83.1776%	IU
+C. sativus	SRR17344495	passes the trimming step	not used for transcript reconstruction	23755979/23755979	83.7361%	IU
+C. sativus	SRR17344496	passes the trimming step	not used for transcript reconstruction	22776602/22776602	81.9429%	IU
+C. sativus	SRR17344497	passes the trimming step	not used for transcript reconstruction	23795603/23795603	83.1374%	IU
+C. sativus	SRR17344498	passes the trimming step	not used for transcript reconstruction	22904016/22904016	85.2818%	IU
+C. sativus	SRR17344499	passes the trimming step	not used for transcript reconstruction	20398119/20398119	83.2804%	IU
+C. sativus	SRR17344500	passes the trimming step	not used for transcript reconstruction	21270862/21270862	80.9234%	IU
+C. sativus	SRR17344501	passes the trimming step	not used for transcript reconstruction	22206336/22206336	83.3617%	IU
+C. sativus	SRR17344502	passes the trimming step	not used for transcript reconstruction	22552467/22552467	81.4047%	IU
+C. sativus	SRR17344503	passes the trimming step	not used for transcript reconstruction	20626052/20626052	84.9813%	IU
+C. sativus	SRR17344504	passes the trimming step	not used for transcript reconstruction	21746913/21746913	83.3242%	IU
+C. sativus	SRR17344505	passes the trimming step	not used for transcript reconstruction	20182723/20182723	82.431%	IU
+C. sativus	SRR17344506	passes the trimming step	not used for transcript reconstruction	20707248/20707248	84.8658%	IU
+C. sativus	SRR17344507	passes the trimming step	not used for transcript reconstruction	20909911/20909911	83.2833%	IU
+C. sativus	SRR17344508	passes the trimming step	not used for transcript reconstruction	22232402/22232402	85.8115%	IU
+C. sativus	SRR17344509	passes the trimming step	not used for transcript reconstruction	21039025/21039025	86.1635%	IU
+C. sativus	SRR17344510	passes the trimming step	not used for transcript reconstruction	22699935/22699935	85.9858%	IU
+C. sativus	SRR17344511	passes the trimming step	not used for transcript reconstruction	21683893/21683893	87.7169%	IU
+C. sativus	SRR17344512	passes the trimming step	not used for transcript reconstruction	19722974/19722974	87.3898%	IU
+C. sativus	SRR17344513	passes the trimming step	not used for transcript reconstruction	21975247/21975247	79.735%	IU
+C. sativus	SRR17344514	passes the trimming step	not used for transcript reconstruction	19809439/19809439	84.1708%	IU
+C. sativus	SRR1744068	passes the trimming step	not used for transcript reconstruction	51431424/51431424	85.1678%	IU
+C. sativus	SRR1744069	passes the trimming step	not used for transcript reconstruction	49914539/49914539	84.3309%	IU
+C. sativus	SRR1822672	passes the trimming step	not used for transcript reconstruction	20076954/20076954	89.1251%	IU
+C. sativus	SRR2042472	passes the trimming step	used for transcript reconstruction	35482891	81.0255%	SR
+C. sativus	SRR2044698	passes the trimming step	used for transcript reconstruction	29946566	80.952%	SR
+C. sativus	SRR2044699	passes the trimming step	used for transcript reconstruction	39065282	82.6579%	SR
+C. sativus	SRR2044702	passes the trimming step	used for transcript reconstruction	29489446	83.4715%	SR
+C. sativus	SRR2044845	passes the trimming step	used for transcript reconstruction	29211140	84.5055%	SR
+C. sativus	SRR2044847	passes the trimming step	used for transcript reconstruction	21961875	84.268%	SR
+C. sativus	SRR2044887	passes the trimming step	used for transcript reconstruction	26800000	82.143%	SR
+C. sativus	SRR2044890	passes the trimming step	used for transcript reconstruction	31775962	80.4399%	SR
+C. sativus	SRR2044893	passes the trimming step	used for transcript reconstruction	20734597	79.8274%	SR
+C. sativus	SRR2044894	passes the trimming step	used for transcript reconstruction	32752318	79.3776%	SR
+C. sativus	SRR2044922	passes the trimming step	used for transcript reconstruction	26944973	81.9911%	SR
+C. sativus	SRR2044954	passes the trimming step	used for transcript reconstruction	35774441	80.6232%	SR
+C. sativus	SRR2045117	passes the trimming step	used for transcript reconstruction	29006352	82.5202%	SR
+C. sativus	SRR2045118	passes the trimming step	used for transcript reconstruction	34049345	82.0276%	SR
+C. sativus	SRR2045119	passes the trimming step	used for transcript reconstruction	53029571	41.6608%	SR
+C. sativus	SRR2045120	passes the trimming step	used for transcript reconstruction	32453242	82.9664%	SR
+C. sativus	SRR2045148	passes the trimming step	used for transcript reconstruction	29357337	74.3055%	SR
+C. sativus	SRR2045180	passes the trimming step	used for transcript reconstruction	29482195	83.5713%	SR
+C. sativus	SRR2045242	passes the trimming step	used for transcript reconstruction	19587872	85.0774%	SR
+C. sativus	SRR2045243	passes the trimming step	used for transcript reconstruction	22163287	84.8653%	SR
+C. sativus	SRR2045276	passes the trimming step	used for transcript reconstruction	19170231	84.3037%	SR
+C. sativus	SRR2045278	passes the trimming step	used for transcript reconstruction	35514942	84.6751%	SR
+C. sativus	SRR2045581	passes the trimming step	used for transcript reconstruction	25324587	83.8126%	SR
+C. sativus	SRR2045899	passes the trimming step	used for transcript reconstruction	36215706	83.6493%	SR
+C. sativus	SRR2157744	passes the trimming step	not used for transcript reconstruction	7854129/7854129	78.144%	IU
+C. sativus	SRR2157745	passes the trimming step	not used for transcript reconstruction	7534916/7534916	75.6883%	IU
+C. sativus	SRR2157746	passes the trimming step	not used for transcript reconstruction	7861973/7861973	78.1914%	IU
+C. sativus	SRR2157747	passes the trimming step	not used for transcript reconstruction	8132190/8132190	82.5191%	IU
+C. sativus	SRR2157748	passes the trimming step	not used for transcript reconstruction	8352630/8352630	76.9561%	IU
+C. sativus	SRR2157749	passes the trimming step	not used for transcript reconstruction	6785103/6785103	69.9111%	IU
+C. sativus	SRR2157750	passes the trimming step	not used for transcript reconstruction	7732169/7732169	79.3186%	IU
+C. sativus	SRR2157751	passes the trimming step	not used for transcript reconstruction	8567073/8567073	85.3574%	IU
+C. sativus	SRR2157752	passes the trimming step	not used for transcript reconstruction	8582727/8582727	83.8573%	IU
+C. sativus	SRR2157753	passes the trimming step	not used for transcript reconstruction	8115128/8115128	87.1237%	IU
+C. sativus	SRR2174492	passes the trimming step	not used for transcript reconstruction	28664472/28664472	86.0151%	IU
+C. sativus	SRR2174494	passes the trimming step	not used for transcript reconstruction	51463194/51463194	81.8378%	IU
+C. sativus	SRR3057232	passes the trimming step	not used for transcript reconstruction	19173821/19173821	84.3102%	IU
+C. sativus	SRR3057233	passes the trimming step	not used for transcript reconstruction	23155759/23155759	84.0636%	IU
+C. sativus	SRR3057234	passes the trimming step	not used for transcript reconstruction	17594888/17594888	83.2389%	IU
+C. sativus	SRR3057235	passes the trimming step	not used for transcript reconstruction	19532185/19532185	85.4938%	IU
+C. sativus	SRR3057236	passes the trimming step	not used for transcript reconstruction	21160801/21160801	86.3776%	IU
+C. sativus	SRR3057237	passes the trimming step	not used for transcript reconstruction	18229574/18229574	85.314%	IU
+C. sativus	SRR3057238	passes the trimming step	not used for transcript reconstruction	18714426/18714426	82.5577%	IU
+C. sativus	SRR3057239	passes the trimming step	not used for transcript reconstruction	18812973/18812973	84.6038%	IU
+C. sativus	SRR3057240	passes the trimming step	not used for transcript reconstruction	19850182/19850182	83.4694%	IU
+C. sativus	SRR3057241	passes the trimming step	not used for transcript reconstruction	21123002/21123002	85.1337%	IU
+C. sativus	SRR3057242	passes the trimming step	not used for transcript reconstruction	23756375/23756375	84.601%	IU
+C. sativus	SRR3057243	passes the trimming step	not used for transcript reconstruction	18881756/18881756	84.351%	IU
+C. sativus	SRR3057244	passes the trimming step	not used for transcript reconstruction	20345198/20345198	85.0753%	IU
+C. sativus	SRR3057245	passes the trimming step	not used for transcript reconstruction	20959403/20959403	85.1122%	IU
+C. sativus	SRR3057246	passes the trimming step	not used for transcript reconstruction	20160847/20160847	83.2455%	IU
+C. sativus	SRR3057247	passes the trimming step	not used for transcript reconstruction	20697060/20697060	83.2451%	IU
+C. sativus	SRR3057248	passes the trimming step	not used for transcript reconstruction	17819004/17819004	83.3091%	IU
+C. sativus	SRR3057249	passes the trimming step	not used for transcript reconstruction	21427297/21427297	80.8646%	IU
+C. sativus	SRR3057250	passes the trimming step	not used for transcript reconstruction	21239864/21239864	84.4232%	IU
+C. sativus	SRR3057251	passes the trimming step	not used for transcript reconstruction	21224701/21224701	84.3498%	IU
+C. sativus	SRR3057252	passes the trimming step	not used for transcript reconstruction	17971955/17971955	80.8536%	IU
+C. sativus	SRR3057253	passes the trimming step	not used for transcript reconstruction	19194060/19194060	84.2273%	IU
+C. sativus	SRR3057254	passes the trimming step	not used for transcript reconstruction	18261532/18261532	83.9691%	IU
+C. sativus	SRR3057255	passes the trimming step	not used for transcript reconstruction	18486840/18486840	84.6702%	IU
+C. sativus	SRR3057256	passes the trimming step	not used for transcript reconstruction	17720409/17720409	83.4309%	IU
+C. sativus	SRR3057257	passes the trimming step	not used for transcript reconstruction	20649246/20649246	84.3502%	IU
+C. sativus	SRR3057258	passes the trimming step	not used for transcript reconstruction	19540855/19540855	84.7386%	IU
+C. sativus	SRR3057259	passes the trimming step	not used for transcript reconstruction	16951773/16951773	83.9875%	IU
+C. sativus	SRR3057260	passes the trimming step	not used for transcript reconstruction	19168095/19168095	84.0144%	IU
+C. sativus	SRR3057261	passes the trimming step	not used for transcript reconstruction	21379688/21379688	82.0323%	IU
+C. sativus	SRR3057262	passes the trimming step	not used for transcript reconstruction	16764667/16764667	83.0452%	IU
+C. sativus	SRR3057263	passes the trimming step	not used for transcript reconstruction	21804667/21804667	82.9602%	IU
+C. sativus	SRR3057264	passes the trimming step	not used for transcript reconstruction	17412424/17412424	83.0507%	IU
+C. sativus	SRR3156393	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156394	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156395	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156396	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156397	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156398	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156399	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156400	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156401	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156402	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156403	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156404	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156405	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156406	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156407	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156408	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156409	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156410	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156411	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156412	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156413	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156414	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156415	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156416	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156417	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156418	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156419	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156420	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156421	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156422	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156423	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156424	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156425	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156426	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156427	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156428	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156429	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156430	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156431	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156432	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156433	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156434	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3156489	passes the trimming step	used for transcript reconstruction	35586640/35586640	83.4212%	ISR
+C. sativus	SRR3156490	passes the trimming step	used for transcript reconstruction	28541034/28541034	83.203%	ISR
+C. sativus	SRR3156491	passes the trimming step	used for transcript reconstruction	24972749/24972749	82.5444%	ISR
+C. sativus	SRR3156492	passes the trimming step	used for transcript reconstruction	40279484/40279484	84.5627%	ISR
+C. sativus	SRR3156493	passes the trimming step	used for transcript reconstruction	32076646/32076646	83.4327%	ISR
+C. sativus	SRR3156494	passes the trimming step	used for transcript reconstruction	25169836/25169836	84.7959%	ISR
+C. sativus	SRR3156495	passes the trimming step	used for transcript reconstruction	31994836/31994836	84.7806%	ISR
+C. sativus	SRR3156496	passes the trimming step	used for transcript reconstruction	29707761/29707761	83.6317%	ISR
+C. sativus	SRR3156497	passes the trimming step	used for transcript reconstruction	24063761/24063761	84.3572%	ISR
+C. sativus	SRR3156498	passes the trimming step	used for transcript reconstruction	40099262/40099262	85.0401%	ISR
+C. sativus	SRR3156499	passes the trimming step	used for transcript reconstruction	30956562/30956562	84.0186%	ISR
+C. sativus	SRR3156500	passes the trimming step	used for transcript reconstruction	27493629/27493629	84.9206%	ISR
+C. sativus	SRR3156507	passes the trimming step	used for transcript reconstruction	33324522/33324522	85.0941%	ISR
+C. sativus	SRR3156508	passes the trimming step	used for transcript reconstruction	26658889/26658889	82.3083%	ISR
+C. sativus	SRR3156509	passes the trimming step	used for transcript reconstruction	25203581/25203581	80.0128%	ISR
+C. sativus	SRR3156510	passes the trimming step	used for transcript reconstruction	32308882/32308882	84.9143%	ISR
+C. sativus	SRR3156511	passes the trimming step	used for transcript reconstruction	21431449/21431449	84.3956%	ISR
+C. sativus	SRR3156512	passes the trimming step	used for transcript reconstruction	25578781/25578781	80.5293%	ISR
+C. sativus	SRR3156513	passes the trimming step	used for transcript reconstruction	32142257/32142257	81.9963%	ISR
+C. sativus	SRR3156514	passes the trimming step	used for transcript reconstruction	33862695/33862695	83.1621%	ISR
+C. sativus	SRR3156515	passes the trimming step	used for transcript reconstruction	27646788/27646788	78.3058%	ISR
+C. sativus	SRR3156516	passes the trimming step	used for transcript reconstruction	31675557/31675557	79.7538%	ISR
+C. sativus	SRR3156517	passes the trimming step	used for transcript reconstruction	23830932/23830932	81.9308%	ISR
+C. sativus	SRR3156518	passes the trimming step	used for transcript reconstruction	26652441/26652441	79.5356%	ISR
+C. sativus	SRR3156519	passes the trimming step	used for transcript reconstruction	31922093/31922093	82.8406%	ISR
+C. sativus	SRR3156520	passes the trimming step	used for transcript reconstruction	34786114/34786114	83.8569%	ISR
+C. sativus	SRR3156521	passes the trimming step	used for transcript reconstruction	27258667/27258667	85.8297%	ISR
+C. sativus	SRR3156522	passes the trimming step	used for transcript reconstruction	31924173/31924173	82.7777%	ISR
+C. sativus	SRR3156523	passes the trimming step	used for transcript reconstruction	32126188/32126188	83.9293%	ISR
+C. sativus	SRR3156524	passes the trimming step	used for transcript reconstruction	22245253/22245253	80.1966%	ISR
+C. sativus	SRR3156525	passes the trimming step	used for transcript reconstruction	29533712/29533712	80.9228%	ISR
+C. sativus	SRR3156526	passes the trimming step	used for transcript reconstruction	26168954/26168954	81.1197%	ISR
+C. sativus	SRR3156527	passes the trimming step	used for transcript reconstruction	21072182/21072182	80.0382%	ISR
+C. sativus	SRR3156528	passes the trimming step	used for transcript reconstruction	31400657/31400657	82.8802%	ISR
+C. sativus	SRR3156529	passes the trimming step	used for transcript reconstruction	32530943/32530943	83.7891%	ISR
+C. sativus	SRR3156530	passes the trimming step	used for transcript reconstruction	25429687/25429687	85.6229%	ISR
+C. sativus	SRR3156531	passes the trimming step	used for transcript reconstruction	28462366/28462366	81.8088%	ISR
+C. sativus	SRR3156532	passes the trimming step	used for transcript reconstruction	29413560/29413560	84.6465%	ISR
+C. sativus	SRR3156533	passes the trimming step	not used for transcript reconstruction	21977941/21977941	84.9607%	IU
+C. sativus	SRR3156534	passes the trimming step	used for transcript reconstruction	21063178/21063178	83.8011%	ISR
+C. sativus	SRR3156535	passes the trimming step	used for transcript reconstruction	23074925/23074925	81.6058%	ISR
+C. sativus	SRR3156536	passes the trimming step	not used for transcript reconstruction	22187976/22187976	76.6217%	IU
+C. sativus	SRR3156537	passes the trimming step	used for transcript reconstruction	28624032/28624032	83.6872%	ISR
+C. sativus	SRR3156538	passes the trimming step	used for transcript reconstruction	32315244/32315244	83.3947%	ISR
+C. sativus	SRR3156539	passes the trimming step	not used for transcript reconstruction	21039048/21039048	85.714%	IU
+C. sativus	SRR3156540	passes the trimming step	used for transcript reconstruction	31502595/31502595	83.003%	ISR
+C. sativus	SRR3156541	passes the trimming step	used for transcript reconstruction	35866841/35866841	84.1648%	ISR
+C. sativus	SRR3156542	passes the trimming step	not used for transcript reconstruction	20967397/20967397	85.4006%	IU
+C. sativus	SRR3156543	passes the trimming step	used for transcript reconstruction	24934196/24934196	81.4516%	ISR
+C. sativus	SRR3156544	passes the trimming step	used for transcript reconstruction	21954484/21954484	80.8882%	ISR
+C. sativus	SRR3156545	passes the trimming step	used for transcript reconstruction	24290479/24290479	51.8961%	ISR
+C. sativus	SRR3156546	passes the trimming step	used for transcript reconstruction	29314359/29314359	81.5039%	ISR
+C. sativus	SRR3156547	passes the trimming step	used for transcript reconstruction	33208512/33208512	83.4536%	ISR
+C. sativus	SRR3156548	passes the trimming step	not used for transcript reconstruction	23439225/23439225	86.0944%	IU
+C. sativus	SRR3207658	passes the trimming step	not used for transcript reconstruction	10645253/10645253	79.9923%	IU
+C. sativus	SRR3207659	passes the trimming step	not used for transcript reconstruction	11214769/11214769	81.6343%	IU
+C. sativus	SRR3207660	passes the trimming step	not used for transcript reconstruction	15767456/15767456	78.675%	IU
+C. sativus	SRR3207661	passes the trimming step	not used for transcript reconstruction	9963222/9963222	79.2623%	IU
+C. sativus	SRR3207662	passes the trimming step	not used for transcript reconstruction	10224517/10224517	77.2064%	IU
+C. sativus	SRR3207663	passes the trimming step	not used for transcript reconstruction	10264326/10264326	71.314%	IU
+C. sativus	SRR3207664	passes the trimming step	not used for transcript reconstruction	10327316/10327316	81.3503%	IU
+C. sativus	SRR3207665	passes the trimming step	not used for transcript reconstruction	11619462/11619462	74.945%	IU
+C. sativus	SRR3207666	passes the trimming step	not used for transcript reconstruction	10301096/10301096	79.1891%	IU
+C. sativus	SRR3207667	passes the trimming step	not used for transcript reconstruction	3476775/3476775	77.0785%	IU
+C. sativus	SRR3207668	passes the trimming step	not used for transcript reconstruction	11020261/11020261	75.0906%	IU
+C. sativus	SRR3207669	passes the trimming step	not used for transcript reconstruction	11280960/11280960	80.6563%	IU
+C. sativus	SRR3207670	passes the trimming step	not used for transcript reconstruction	11544402/11544402	78.5294%	IU
+C. sativus	SRR3207671	passes the trimming step	not used for transcript reconstruction	11577040/11577040	81.0683%	IU
+C. sativus	SRR3207672	passes the trimming step	not used for transcript reconstruction	11173003/11173003	51.3693%	IU
+C. sativus	SRR3207673	passes the trimming step	not used for transcript reconstruction	12424655/12424655	77.4869%	IU
+C. sativus	SRR3207674	passes the trimming step	not used for transcript reconstruction	8455379/8455379	80.1871%	IU
+C. sativus	SRR3207675	passes the trimming step	not used for transcript reconstruction	10167872/10167872	77.958%	IU
+C. sativus	SRR3207676	passes the trimming step	not used for transcript reconstruction	12465697/12465697	62.5789%	IU
+C. sativus	SRR3207677	passes the trimming step	not used for transcript reconstruction	12597370/12597370	76.0197%	IU
+C. sativus	SRR3207678	passes the trimming step	not used for transcript reconstruction	11279795/11279795	70.7188%	IU
+C. sativus	SRR3207679	passes the trimming step	not used for transcript reconstruction	11247297/11247297	83.3146%	IU
+C. sativus	SRR3207680	passes the trimming step	not used for transcript reconstruction	11039139/11039139	62.5194%	IU
+C. sativus	SRR3286344	passes the trimming step	used for transcript reconstruction	6029924	73.0969%	SR
+C. sativus	SRR3286345	passes the trimming step	used for transcript reconstruction	5967856	73.328%	SR
+C. sativus	SRR3286346	passes the trimming step	used for transcript reconstruction	6116288	73.0515%	SR
+C. sativus	SRR3286347	passes the trimming step	used for transcript reconstruction	6091563	73.345%	SR
+C. sativus	SRR3310308	passes the trimming step	not used for transcript reconstruction	31554428/31554428	81.8125%	IU
+C. sativus	SRR3310309	passes the trimming step	not used for transcript reconstruction	28084780/28084780	80.849%	IU
+C. sativus	SRR3310310	passes the trimming step	not used for transcript reconstruction	34421795/34421795	78.8096%	IU
+C. sativus	SRR3310311	passes the trimming step	not used for transcript reconstruction	34592626/34592626	81.5685%	IU
+C. sativus	SRR3316492	passes the trimming step	not used for transcript reconstruction	11835299	0.00380219%	NA
+C. sativus	SRR3316493	passes the trimming step	not used for transcript reconstruction	12543003	0.000143506%	NA
+C. sativus	SRR3488589	passes the trimming step	used for transcript reconstruction	22495762/22495762	81.0047%	ISR
+C. sativus	SRR3488590	passes the trimming step	used for transcript reconstruction	21346396/21346396	77.9315%	ISR
+C. sativus	SRR3488591	passes the trimming step	used for transcript reconstruction	23727841/23727841	76.5993%	ISR
+C. sativus	SRR3488592	passes the trimming step	used for transcript reconstruction	21117554/21117554	83.4119%	ISR
+C. sativus	SRR3488593	passes the trimming step	used for transcript reconstruction	21518531/21518531	84.0836%	ISR
+C. sativus	SRR3488594	passes the trimming step	used for transcript reconstruction	23872954/23872954	82.6133%	ISR
+C. sativus	SRR3488595	passes the trimming step	used for transcript reconstruction	23087985/23087985	84.3862%	ISR
+C. sativus	SRR3488596	passes the trimming step	used for transcript reconstruction	22109107/22109107	84.9835%	ISR
+C. sativus	SRR3488597	passes the trimming step	used for transcript reconstruction	24787198/24787198	75.8324%	ISR
+C. sativus	SRR3488598	passes the trimming step	used for transcript reconstruction	24131696/24131696	79.9944%	ISR
+C. sativus	SRR3488599	passes the trimming step	used for transcript reconstruction	19999966/19999966	81.4924%	ISR
+C. sativus	SRR3488600	passes the trimming step	used for transcript reconstruction	28822734/28822734	86.0488%	ISR
+C. sativus	SRR351476	passes the trimming step	not used for transcript reconstruction	6419961/6419961	90.0353%	IU
+C. sativus	SRR351489	passes the trimming step	not used for transcript reconstruction	7445649/7445649	89.484%	IU
+C. sativus	SRR351495	passes the trimming step	not used for transcript reconstruction	6595670/6595670	88.7753%	IU
+C. sativus	SRR351499	passes the trimming step	not used for transcript reconstruction	6562896/6562896	90.184%	IU
+C. sativus	SRR351905	passes the trimming step	not used for transcript reconstruction	12373009/12373009	92.0818%	IU
+C. sativus	SRR351906	passes the trimming step	not used for transcript reconstruction	14429084/14429084	89.4184%	IU
+C. sativus	SRR351908	passes the trimming step	not used for transcript reconstruction	14437686/14437686	90.1623%	IU
+C. sativus	SRR351910	passes the trimming step	not used for transcript reconstruction	8735138/8735138	91.4291%	IU
+C. sativus	SRR351911	passes the trimming step	not used for transcript reconstruction	8853997/8853997	91.264%	IU
+C. sativus	SRR351912	passes the trimming step	not used for transcript reconstruction	12548048/12548048	89.4768%	IU
+C. sativus	SRR3535145	passes the trimming step	not used for transcript reconstruction	15629192	84.9983%	U
+C. sativus	SRR3535146	passes the trimming step	not used for transcript reconstruction	16231068	84.9605%	U
+C. sativus	SRR3535147	passes the trimming step	not used for transcript reconstruction	15890046	85.2591%	U
+C. sativus	SRR3535148	passes the trimming step	not used for transcript reconstruction	15914571	85.1616%	U
+C. sativus	SRR3535150	passes the trimming step	not used for transcript reconstruction	15179612	85.1657%	U
+C. sativus	SRR3535151	passes the trimming step	not used for transcript reconstruction	15309354	85.8864%	U
+C. sativus	SRR3535152	passes the trimming step	not used for transcript reconstruction	15369897	83.9958%	U
+C. sativus	SRR3535153	passes the trimming step	not used for transcript reconstruction	16389365	83.9559%	U
+C. sativus	SRR3535154	passes the trimming step	not used for transcript reconstruction	16066621	85.3383%	U
+C. sativus	SRR3535156	passes the trimming step	not used for transcript reconstruction	15425756	86.1193%	U
+C. sativus	SRR3535157	passes the trimming step	not used for transcript reconstruction	16394716	84.7421%	U
+C. sativus	SRR364991	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR3872490	passes the trimming step	not used for transcript reconstruction	15564002	19.4114%	U
+C. sativus	SRR3872492	passes the trimming step	not used for transcript reconstruction	21923935	19.3778%	U
+C. sativus	SRR3872493	passes the trimming step	not used for transcript reconstruction	17652870	18.3865%	U
+C. sativus	SRR3872494	passes the trimming step	not used for transcript reconstruction	20425171	17.4073%	U
+C. sativus	SRR3872495	passes the trimming step	not used for transcript reconstruction	16544409	19.25%	U
+C. sativus	SRR3872496	passes the trimming step	not used for transcript reconstruction	18445561	18.217%	U
+C. sativus	SRR3872498	passes the trimming step	not used for transcript reconstruction	16958894	17.59%	U
+C. sativus	SRR3872501	passes the trimming step	not used for transcript reconstruction	17390767	18.1263%	U
+C. sativus	SRR3872503	passes the trimming step	not used for transcript reconstruction	19590628	15.4211%	U
+C. sativus	SRR3872505	passes the trimming step	not used for transcript reconstruction	19840969	19.3153%	U
+C. sativus	SRR3872507	passes the trimming step	not used for transcript reconstruction	13285803	18.9581%	U
+C. sativus	SRR3872508	passes the trimming step	not used for transcript reconstruction	16915774	18.773%	U
+C. sativus	SRR3954457	passes the trimming step	not used for transcript reconstruction	11167766	89.1252%	U
+C. sativus	SRR3954458	passes the trimming step	not used for transcript reconstruction	11188047	90.3417%	U
+C. sativus	SRR3954459	passes the trimming step	not used for transcript reconstruction	11593225	85.1993%	U
+C. sativus	SRR3954460	passes the trimming step	not used for transcript reconstruction	11762086	90.498%	U
+C. sativus	SRR3954461	passes the trimming step	not used for transcript reconstruction	11259650	68.6156%	U
+C. sativus	SRR4183468	passes the trimming step	not used for transcript reconstruction	20320757/20320757	84.857%	IU
+C. sativus	SRR4183469	passes the trimming step	not used for transcript reconstruction	24268273/24268273	84.8392%	IU
+C. sativus	SRR4183470	passes the trimming step	not used for transcript reconstruction	24385593/24385593	85.2216%	IU
+C. sativus	SRR4183471	passes the trimming step	not used for transcript reconstruction	25544004/25544004	85.6004%	IU
+C. sativus	SRR4183472	passes the trimming step	not used for transcript reconstruction	20243761/20243761	85.9062%	IU
+C. sativus	SRR4183473	passes the trimming step	not used for transcript reconstruction	20635985/20635985	85.9411%	IU
+C. sativus	SRR4183474	passes the trimming step	not used for transcript reconstruction	19459025/19459025	86.8136%	IU
+C. sativus	SRR4183475	passes the trimming step	not used for transcript reconstruction	22490650/22490650	85.8795%	IU
+C. sativus	SRR4372751	passes the trimming step	used for transcript reconstruction	29895767	56.6613%	SR
+C. sativus	SRR4372826	passes the trimming step	used for transcript reconstruction	28562203	78.1093%	SR
+C. sativus	SRR4372903	passes the trimming step	used for transcript reconstruction	23788674	74.3013%	SR
+C. sativus	SRR4372904	passes the trimming step	used for transcript reconstruction	24721104	74.3695%	SR
+C. sativus	SRR4372905	passes the trimming step	used for transcript reconstruction	21481820	77.8366%	SR
+C. sativus	SRR4372923	passes the trimming step	used for transcript reconstruction	22064539	74.1667%	SR
+C. sativus	SRR4372935	passes the trimming step	used for transcript reconstruction	24573248	76.6953%	SR
+C. sativus	SRR4373018	passes the trimming step	used for transcript reconstruction	26790436	80.4348%	SR
+C. sativus	SRR4373056	passes the trimming step	used for transcript reconstruction	32113293	85.0141%	SR
+C. sativus	SRR4373069	passes the trimming step	used for transcript reconstruction	27381001	82.2656%	SR
+C. sativus	SRR4373118	passes the trimming step	used for transcript reconstruction	24277872	79.1451%	SR
+C. sativus	SRR4373169	passes the trimming step	used for transcript reconstruction	24027352	72.5297%	SR
+C. sativus	SRR494475	passes the trimming step	used for transcript reconstruction	8793948/8793948	75.3167%	ISR
+C. sativus	SRR494480	passes the trimming step	used for transcript reconstruction	4337174/4337174	86.4349%	ISR
+C. sativus	SRR5092104	passes the trimming step	used for transcript reconstruction	3135017	81.5306%	SF
+C. sativus	SRR5092105	passes the trimming step	used for transcript reconstruction	12095012/12095012	82.003%	ISF
+C. sativus	SRR5092106	passes the trimming step	used for transcript reconstruction	4237358	76.1013%	SF
+C. sativus	SRR5092107	passes the trimming step	used for transcript reconstruction	7118794/7118794	76.5131%	ISF
+C. sativus	SRR5150481	passes the trimming step	not used for transcript reconstruction	21807804/21807804	80.7617%	IU
+C. sativus	SRR5150492	passes the trimming step	not used for transcript reconstruction	174231931/174231931	84.2641%	IU
+C. sativus	SRR5152977	passes the trimming step	not used for transcript reconstruction	21960858/21960858	87.1302%	IU
+C. sativus	SRR518991	doesn't pass the trimming step	NA	0/0	NA	NA
+C. sativus	SRR518994	doesn't pass the trimming step	NA	0/0	NA	NA
+C. sativus	SRR518995	doesn't pass the trimming step	NA	0/0	NA	NA
+C. sativus	SRR5238818	passes the trimming step	not used for transcript reconstruction	44836112	90.5218%	U
+C. sativus	SRR5238819	passes the trimming step	not used for transcript reconstruction	50014517	90.2666%	U
+C. sativus	SRR5238820	passes the trimming step	not used for transcript reconstruction	51324439	90.2103%	U
+C. sativus	SRR5273768	passes the trimming step	used for transcript reconstruction	23672596/23672596	61.1592%	ISR
+C. sativus	SRR5273769	passes the trimming step	used for transcript reconstruction	20072031/20072031	61.9186%	ISR
+C. sativus	SRR5273770	passes the trimming step	used for transcript reconstruction	26640431/26640431	61.944%	ISR
+C. sativus	SRR5273771	passes the trimming step	used for transcript reconstruction	27449436/27449436	62.233%	ISR
+C. sativus	SRR5273772	passes the trimming step	used for transcript reconstruction	25858635/25858635	61.3785%	ISR
+C. sativus	SRR5273773	passes the trimming step	used for transcript reconstruction	23369416/23369416	61.1627%	ISR
+C. sativus	SRR5312605	passes the trimming step	not used for transcript reconstruction	17302158/17302158	93.3602%	IU
+C. sativus	SRR5312606	passes the trimming step	not used for transcript reconstruction	2358365/2358365	90.2711%	IU
+C. sativus	SRR5312607	passes the trimming step	not used for transcript reconstruction	5464944/5464944	88.9014%	IU
+C. sativus	SRR5312608	passes the trimming step	not used for transcript reconstruction	3326172/3326172	89.3606%	IU
+C. sativus	SRR5312609	passes the trimming step	not used for transcript reconstruction	20481932/20481932	89.9528%	IU
+C. sativus	SRR5312610	passes the trimming step	not used for transcript reconstruction	9854048/9854048	84.3388%	IU
+C. sativus	SRR5312611	passes the trimming step	not used for transcript reconstruction	71317540/71317540	84.3897%	IU
+C. sativus	SRR5312612	passes the trimming step	not used for transcript reconstruction	73277422/73277422	93.2478%	IU
+C. sativus	SRR5312613	passes the trimming step	not used for transcript reconstruction	73298504/73298504	93.2861%	IU
+C. sativus	SRR5312614	passes the trimming step	not used for transcript reconstruction	25327079/25327079	92.2584%	IU
+C. sativus	SRR5405122	passes the trimming step	used for transcript reconstruction	4988358/4988358	88.5717%	ISF
+C. sativus	SRR5405123	passes the trimming step	used for transcript reconstruction	4632488/4632488	88.4824%	ISF
+C. sativus	SRR5405124	passes the trimming step	used for transcript reconstruction	7180044/7180044	62.6968%	ISF
+C. sativus	SRR5405125	passes the trimming step	used for transcript reconstruction	4439695/4439695	64.1112%	ISF
+C. sativus	SRR5405126	passes the trimming step	not used for transcript reconstruction	7413414/7413414	81.1609%	IU
+C. sativus	SRR5405127	passes the trimming step	not used for transcript reconstruction	7207128/7207128	80.8443%	IU
+C. sativus	SRR5405128	passes the trimming step	used for transcript reconstruction	3342792/3342792	87.516%	ISF
+C. sativus	SRR5405129	passes the trimming step	used for transcript reconstruction	2583231/2583231	87.1343%	ISF
+C. sativus	SRR5460672	passes the trimming step	not used for transcript reconstruction	38215843	72.0481%	U
+C. sativus	SRR5460673	passes the trimming step	not used for transcript reconstruction	37612397	63.3907%	U
+C. sativus	SRR5460674	passes the trimming step	not used for transcript reconstruction	51328043	76.1395%	U
+C. sativus	SRR5460675	passes the trimming step	not used for transcript reconstruction	44747510	67.5192%	U
+C. sativus	SRR5460676	passes the trimming step	not used for transcript reconstruction	6023485/6023485	80.8209%	IU
+C. sativus	SRR5460677	passes the trimming step	not used for transcript reconstruction	5937654/5937654	82.9212%	IU
+C. sativus	SRR5460678	passes the trimming step	not used for transcript reconstruction	5901768/5901768	82.4169%	IU
+C. sativus	SRR5460679	passes the trimming step	not used for transcript reconstruction	5886037/5886037	83.7408%	IU
+C. sativus	SRR5460680	passes the trimming step	not used for transcript reconstruction	6380929/6380929	81.6252%	IU
+C. sativus	SRR5460681	passes the trimming step	not used for transcript reconstruction	6164854/6164854	80.0496%	IU
+C. sativus	SRR5460682	passes the trimming step	not used for transcript reconstruction	6234221/6234221	81.5034%	IU
+C. sativus	SRR5460683	passes the trimming step	not used for transcript reconstruction	6342676/6342676	84.6972%	IU
+C. sativus	SRR5460753	passes the trimming step	not used for transcript reconstruction	11941840/11941840	88.923%	IU
+C. sativus	SRR5461296	passes the trimming step	not used for transcript reconstruction	12358856/12358856	87.9768%	IU
+C. sativus	SRR5461309	passes the trimming step	not used for transcript reconstruction	12456100/12456100	89.1407%	IU
+C. sativus	SRR5462513	passes the trimming step	not used for transcript reconstruction	11937090/11937090	88.013%	IU
+C. sativus	SRR5462516	passes the trimming step	not used for transcript reconstruction	12433771/12433771	89.2472%	IU
+C. sativus	SRR5462554	passes the trimming step	not used for transcript reconstruction	12433813/12433813	89.3644%	IU
+C. sativus	SRR5647662	passes the trimming step	not used for transcript reconstruction	11245208/11245208	85.9114%	IU
+C. sativus	SRR5647663	passes the trimming step	not used for transcript reconstruction	11365866/11365866	86.1055%	IU
+C. sativus	SRR5647664	passes the trimming step	not used for transcript reconstruction	11735952/11735952	85.2667%	IU
+C. sativus	SRR5647665	passes the trimming step	not used for transcript reconstruction	11433034/11433034	85.3769%	IU
+C. sativus	SRR5647666	passes the trimming step	not used for transcript reconstruction	11490558/11490558	85.1787%	IU
+C. sativus	SRR5647667	passes the trimming step	not used for transcript reconstruction	11414582/11414582	85.9942%	IU
+C. sativus	SRR5759406	passes the trimming step	not used for transcript reconstruction	4538948	NA	NA
+C. sativus	SRR5759440	passes the trimming step	not used for transcript reconstruction	4647161	NA	NA
+C. sativus	SRR5826107	passes the trimming step	used for transcript reconstruction	11160395	81.5809%	SF
+C. sativus	SRR5826111	passes the trimming step	used for transcript reconstruction	10949883	81.1343%	SR
+C. sativus	SRR5826117	passes the trimming step	used for transcript reconstruction	5689140	82.1731%	SF
+C. sativus	SRR5997737	passes the trimming step	not used for transcript reconstruction	22016275/22016275	83.5702%	IU
+C. sativus	SRR5997738	passes the trimming step	not used for transcript reconstruction	24364849/24364849	83.281%	IU
+C. sativus	SRR5997739	passes the trimming step	not used for transcript reconstruction	20453928/20453928	83.3464%	IU
+C. sativus	SRR5997740	passes the trimming step	not used for transcript reconstruction	22783413/22783413	83.1325%	IU
+C. sativus	SRR5997741	passes the trimming step	not used for transcript reconstruction	20631944/20631944	83.5927%	IU
+C. sativus	SRR5997742	passes the trimming step	not used for transcript reconstruction	23725410/23725410	83.205%	IU
+C. sativus	SRR5997743	passes the trimming step	not used for transcript reconstruction	29882616/29882616	83.089%	IU
+C. sativus	SRR5997744	passes the trimming step	not used for transcript reconstruction	19666355/19666355	83.4441%	IU
+C. sativus	SRR5997745	passes the trimming step	not used for transcript reconstruction	31433658/31433658	83.3165%	IU
+C. sativus	SRR6014022	passes the trimming step	used for transcript reconstruction	17943339/17943339	81.734%	ISR
+C. sativus	SRR6014023	passes the trimming step	used for transcript reconstruction	17487613/17487613	81.988%	ISR
+C. sativus	SRR6014024	passes the trimming step	used for transcript reconstruction	21176230/21176230	83.5773%	ISR
+C. sativus	SRR6014025	passes the trimming step	used for transcript reconstruction	18238343/18238343	82.5708%	ISR
+C. sativus	SRR6026277	passes the trimming step	used for transcript reconstruction	11918065/11918065	77.9804%	ISR
+C. sativus	SRR6026278	passes the trimming step	used for transcript reconstruction	13454002/13454002	85.3454%	ISR
+C. sativus	SRR6026279	passes the trimming step	used for transcript reconstruction	14478660/14478660	74.2083%	ISR
+C. sativus	SRR620030	passes the trimming step	not used for transcript reconstruction	5645792	NA	NA
+C. sativus	SRR6320532	passes the trimming step	not used for transcript reconstruction	2882441/2882441	85.838%	IU
+C. sativus	SRR6320533	passes the trimming step	not used for transcript reconstruction	4024002/4024002	86.8223%	IU
+C. sativus	SRR6320534	passes the trimming step	not used for transcript reconstruction	7515193/7515193	89.1713%	IU
+C. sativus	SRR6320535	passes the trimming step	not used for transcript reconstruction	7492745/7492745	87.9529%	IU
+C. sativus	SRR6324157	passes the trimming step	not used for transcript reconstruction	23467680/23467680	83.6977%	IU
+C. sativus	SRR6324158	passes the trimming step	not used for transcript reconstruction	23544311/23544311	84.5078%	IU
+C. sativus	SRR6324159	passes the trimming step	not used for transcript reconstruction	22825005/22825005	84.7763%	IU
+C. sativus	SRR6324160	passes the trimming step	not used for transcript reconstruction	23336631/23336631	85.5743%	IU
+C. sativus	SRR6324161	passes the trimming step	not used for transcript reconstruction	23268060/23268060	85.0138%	IU
+C. sativus	SRR6324162	passes the trimming step	not used for transcript reconstruction	23081467/23081467	84.9909%	IU
+C. sativus	SRR6324163	passes the trimming step	not used for transcript reconstruction	20725549/20725549	83.9376%	IU
+C. sativus	SRR6324164	passes the trimming step	not used for transcript reconstruction	22811555/22811555	83.4952%	IU
+C. sativus	SRR6324165	passes the trimming step	not used for transcript reconstruction	21888125/21888125	85.5986%	IU
+C. sativus	SRR6324166	passes the trimming step	not used for transcript reconstruction	23290755/23290755	85.2315%	IU
+C. sativus	SRR6324167	passes the trimming step	not used for transcript reconstruction	21764056/21764056	83.4657%	IU
+C. sativus	SRR6324168	passes the trimming step	not used for transcript reconstruction	23345294/23345294	83.5209%	IU
+C. sativus	SRR6324169	passes the trimming step	not used for transcript reconstruction	23628611/23628611	84.6546%	IU
+C. sativus	SRR6324170	passes the trimming step	not used for transcript reconstruction	23331486/23331486	85.7448%	IU
+C. sativus	SRR6324171	passes the trimming step	not used for transcript reconstruction	23150208/23150208	84.993%	IU
+C. sativus	SRR6324172	passes the trimming step	not used for transcript reconstruction	23458844/23458844	83.7999%	IU
+C. sativus	SRR6324173	passes the trimming step	not used for transcript reconstruction	23335706/23335706	83.8659%	IU
+C. sativus	SRR6324174	passes the trimming step	not used for transcript reconstruction	23250025/23250025	83.8791%	IU
+C. sativus	SRR6324175	passes the trimming step	not used for transcript reconstruction	23734606/23734606	83.9984%	IU
+C. sativus	SRR6324176	passes the trimming step	not used for transcript reconstruction	23459032/23459032	83.9706%	IU
+C. sativus	SRR6324177	passes the trimming step	not used for transcript reconstruction	23337277/23337277	84.2026%	IU
+C. sativus	SRR6324178	passes the trimming step	not used for transcript reconstruction	22943041/22943041	83.789%	IU
+C. sativus	SRR6324179	passes the trimming step	not used for transcript reconstruction	23568944/23568944	83.6978%	IU
+C. sativus	SRR6324180	passes the trimming step	not used for transcript reconstruction	23250285/23250285	83.8779%	IU
+C. sativus	SRR6418021	passes the trimming step	not used for transcript reconstruction	14182549/14182549	77.7062%	IU
+C. sativus	SRR6418022	passes the trimming step	not used for transcript reconstruction	18673976/18673976	78.619%	IU
+C. sativus	SRR6436059	passes the trimming step	not used for transcript reconstruction	15448749/15448749	85.3507%	IU
+C. sativus	SRR6436060	passes the trimming step	not used for transcript reconstruction	15290138/15290138	86.1357%	IU
+C. sativus	SRR6436061	passes the trimming step	not used for transcript reconstruction	15120311/15120311	84.5158%	IU
+C. sativus	SRR6436062	passes the trimming step	not used for transcript reconstruction	14191597/14191597	78.3071%	IU
+C. sativus	SRR6436063	passes the trimming step	not used for transcript reconstruction	14607036/14607036	84.7953%	IU
+C. sativus	SRR6436064	passes the trimming step	not used for transcript reconstruction	17059930/17059930	77.6902%	IU
+C. sativus	SRR6436065	passes the trimming step	not used for transcript reconstruction	12975873/12975873	84.3094%	IU
+C. sativus	SRR6436066	passes the trimming step	not used for transcript reconstruction	15352115/15352115	85.0396%	IU
+C. sativus	SRR6436067	passes the trimming step	not used for transcript reconstruction	14921334/14921334	80.2297%	IU
+C. sativus	SRR6436068	passes the trimming step	not used for transcript reconstruction	14497117/14497117	84.6821%	IU
+C. sativus	SRR6436069	passes the trimming step	not used for transcript reconstruction	13831977/13831977	74.4762%	IU
+C. sativus	SRR6449855	passes the trimming step	not used for transcript reconstruction	20764011/20764011	83.005%	IU
+C. sativus	SRR6449856	passes the trimming step	not used for transcript reconstruction	20092041/20092041	84.6281%	IU
+C. sativus	SRR6449857	passes the trimming step	not used for transcript reconstruction	20991404/20991404	84.9312%	IU
+C. sativus	SRR6449858	passes the trimming step	not used for transcript reconstruction	20776998/20776998	84.3418%	IU
+C. sativus	SRR6649416	passes the trimming step	not used for transcript reconstruction	31393157/31393157	87.4748%	IU
+C. sativus	SRR6649417	passes the trimming step	not used for transcript reconstruction	23472459/23472459	84.6152%	IU
+C. sativus	SRR6649418	passes the trimming step	not used for transcript reconstruction	21901537/21901537	83.849%	IU
+C. sativus	SRR6649419	passes the trimming step	not used for transcript reconstruction	30370453/30370453	86.9827%	IU
+C. sativus	SRR6649420	passes the trimming step	not used for transcript reconstruction	22857870/22857870	85.3896%	IU
+C. sativus	SRR6649421	passes the trimming step	not used for transcript reconstruction	22257183/22257183	85.5943%	IU
+C. sativus	SRR6650082	passes the trimming step	not used for transcript reconstruction	22039607/22039607	84.1084%	IU
+C. sativus	SRR6650083	passes the trimming step	not used for transcript reconstruction	19211646/19211646	83.312%	IU
+C. sativus	SRR6650084	passes the trimming step	not used for transcript reconstruction	18230733/18230733	84.0738%	IU
+C. sativus	SRR6650085	passes the trimming step	not used for transcript reconstruction	17392187/17392187	84.2823%	IU
+C. sativus	SRR6650086	passes the trimming step	not used for transcript reconstruction	18589765/18589765	84.2761%	IU
+C. sativus	SRR6650087	passes the trimming step	not used for transcript reconstruction	16226903/16226903	84.4336%	IU
+C. sativus	SRR6650088	passes the trimming step	not used for transcript reconstruction	19708533/19708533	83.8472%	IU
+C. sativus	SRR6650089	passes the trimming step	not used for transcript reconstruction	18213909/18213909	84.0996%	IU
+C. sativus	SRR6650090	passes the trimming step	not used for transcript reconstruction	23229686/23229686	83.5982%	IU
+C. sativus	SRR6650091	passes the trimming step	not used for transcript reconstruction	17619411/17619411	84.1526%	IU
+C. sativus	SRR6650092	passes the trimming step	not used for transcript reconstruction	17452719/17452719	83.6269%	IU
+C. sativus	SRR6650093	passes the trimming step	not used for transcript reconstruction	17489203/17489203	83.5676%	IU
+C. sativus	SRR6821835	passes the trimming step	not used for transcript reconstruction	31753222/31753222	68.3377%	IU
+C. sativus	SRR6821836	passes the trimming step	not used for transcript reconstruction	28670170/28670170	71.321%	IU
+C. sativus	SRR6821837	passes the trimming step	not used for transcript reconstruction	28502128/28502128	68.0963%	IU
+C. sativus	SRR6821841	passes the trimming step	not used for transcript reconstruction	19715829/19715829	85.7371%	IU
+C. sativus	SRR6821842	passes the trimming step	not used for transcript reconstruction	27657438/27657438	85.0701%	IU
+C. sativus	SRR6821843	passes the trimming step	not used for transcript reconstruction	25328918/25328918	83.7204%	IU
+C. sativus	SRR6837824	passes the trimming step	not used for transcript reconstruction	11913581/11913581	86.2738%	IU
+C. sativus	SRR6837841	passes the trimming step	not used for transcript reconstruction	12387051/12387051	88.0812%	IU
+C. sativus	SRR6837842	passes the trimming step	not used for transcript reconstruction	12436218/12436218	89.2122%	IU
+C. sativus	SRR6837906	passes the trimming step	not used for transcript reconstruction	11925462/11925462	88.68%	IU
+C. sativus	SRR6837907	passes the trimming step	not used for transcript reconstruction	12437523/12437523	89.0178%	IU
+C. sativus	SRR6837908	passes the trimming step	not used for transcript reconstruction	12385848/12385848	89.6148%	IU
+C. sativus	SRR6854681	passes the trimming step	not used for transcript reconstruction	21964168	88.8423%	U
+C. sativus	SRR6854682	passes the trimming step	not used for transcript reconstruction	21258751	88.6464%	U
+C. sativus	SRR6854683	passes the trimming step	not used for transcript reconstruction	21713457	88.9298%	U
+C. sativus	SRR6854684	passes the trimming step	not used for transcript reconstruction	20939628	88.7621%	U
+C. sativus	SRR6854686	passes the trimming step	not used for transcript reconstruction	23446705	87.8912%	U
+C. sativus	SRR6854687	passes the trimming step	not used for transcript reconstruction	23758965	89.0137%	U
+C. sativus	SRR6854688	passes the trimming step	not used for transcript reconstruction	23255875	88.8423%	U
+C. sativus	SRR6854689	passes the trimming step	not used for transcript reconstruction	23258735	88.7165%	U
+C. sativus	SRR6854690	passes the trimming step	not used for transcript reconstruction	22526110	88.5575%	U
+C. sativus	SRR6854691	passes the trimming step	not used for transcript reconstruction	22575209	88.9668%	U
+C. sativus	SRR6854692	passes the trimming step	not used for transcript reconstruction	22029911	88.8087%	U
+C. sativus	SRR6854693	passes the trimming step	not used for transcript reconstruction	21844279	88.3096%	U
+C. sativus	SRR6854694	passes the trimming step	not used for transcript reconstruction	21351432	88.1068%	U
+C. sativus	SRR6854695	passes the trimming step	not used for transcript reconstruction	19785376	87.986%	U
+C. sativus	SRR6854696	passes the trimming step	not used for transcript reconstruction	19303863	87.7581%	U
+C. sativus	SRR6854698	passes the trimming step	not used for transcript reconstruction	21479610	88.3454%	U
+C. sativus	SRR6854699	passes the trimming step	not used for transcript reconstruction	19241586	87.6152%	U
+C. sativus	SRR6854700	passes the trimming step	not used for transcript reconstruction	18993940	87.4348%	U
+C. sativus	SRR6854702	passes the trimming step	not used for transcript reconstruction	22781769	87.5183%	U
+C. sativus	SRR6854703	passes the trimming step	not used for transcript reconstruction	22648415	87.7061%	U
+C. sativus	SRR6854704	passes the trimming step	not used for transcript reconstruction	22087863	87.5042%	U
+C. sativus	SRR6895190	passes the trimming step	not used for transcript reconstruction	23472459/23472459	84.6152%	IU
+C. sativus	SRR6895191	passes the trimming step	not used for transcript reconstruction	31393157/31393157	87.4748%	IU
+C. sativus	SRR6895192	passes the trimming step	not used for transcript reconstruction	30370453/30370453	86.9827%	IU
+C. sativus	SRR6895193	passes the trimming step	not used for transcript reconstruction	24314341/24314341	85.5131%	IU
+C. sativus	SRR6895194	passes the trimming step	not used for transcript reconstruction	42250669/42250669	86.7592%	IU
+C. sativus	SRR6895195	passes the trimming step	not used for transcript reconstruction	32476747/32476747	84.6706%	IU
+C. sativus	SRR6936846	passes the trimming step	used for transcript reconstruction	26333844/26333844	85.274%	ISR
+C. sativus	SRR6936847	passes the trimming step	used for transcript reconstruction	29410722/29410722	85.201%	ISR
+C. sativus	SRR6936848	passes the trimming step	used for transcript reconstruction	24501102/24501102	83.2447%	ISR
+C. sativus	SRR6936849	passes the trimming step	used for transcript reconstruction	28500725/28500725	86.7764%	ISR
+C. sativus	SRR6936850	passes the trimming step	used for transcript reconstruction	19851746/19851746	81.3509%	ISR
+C. sativus	SRR6936851	passes the trimming step	used for transcript reconstruction	24572661/24572661	82.7318%	ISR
+C. sativus	SRR6957092	passes the trimming step	used for transcript reconstruction	49473819/49473819	24.1287%	ISR
+C. sativus	SRR6957093	passes the trimming step	used for transcript reconstruction	48294498/48294498	25.2455%	ISR
+C. sativus	SRR6957094	passes the trimming step	used for transcript reconstruction	46365575/46365575	15.9609%	ISR
+C. sativus	SRR6957095	passes the trimming step	used for transcript reconstruction	54395085/54395085	13.1475%	ISR
+C. sativus	SRR7187360	passes the trimming step	not used for transcript reconstruction	16936355/16936355	81.5849%	IU
+C. sativus	SRR7187361	passes the trimming step	not used for transcript reconstruction	19792776/19792776	77.0337%	IU
+C. sativus	SRR7187362	passes the trimming step	not used for transcript reconstruction	19860829/19860829	78.8767%	IU
+C. sativus	SRR7187363	passes the trimming step	not used for transcript reconstruction	15753717/15753717	82.6626%	IU
+C. sativus	SRR7187364	passes the trimming step	not used for transcript reconstruction	16696905/16696905	81.9628%	IU
+C. sativus	SRR7187365	passes the trimming step	not used for transcript reconstruction	17894187/17894187	80.1075%	IU
+C. sativus	SRR7187366	passes the trimming step	not used for transcript reconstruction	17165794/17165794	79.7024%	IU
+C. sativus	SRR7187367	passes the trimming step	not used for transcript reconstruction	16685543/16685543	79.7961%	IU
+C. sativus	SRR7187368	passes the trimming step	not used for transcript reconstruction	15877702/15877702	80.4863%	IU
+C. sativus	SRR7187369	passes the trimming step	not used for transcript reconstruction	16953946/16953946	80.8492%	IU
+C. sativus	SRR7187370	passes the trimming step	not used for transcript reconstruction	17420680/17420680	82.6769%	IU
+C. sativus	SRR7187371	passes the trimming step	not used for transcript reconstruction	19246311/19246311	77.4904%	IU
+C. sativus	SRR7187372	passes the trimming step	not used for transcript reconstruction	16668700/16668700	81.6358%	IU
+C. sativus	SRR7187373	passes the trimming step	not used for transcript reconstruction	19140020/19140020	78.1015%	IU
+C. sativus	SRR7187374	passes the trimming step	not used for transcript reconstruction	17633186/17633186	80.3561%	IU
+C. sativus	SRR7345614	passes the trimming step	not used for transcript reconstruction	11596175/11596175	89.0982%	IU
+C. sativus	SRR7345615	passes the trimming step	not used for transcript reconstruction	10958117/10958117	89.6825%	IU
+C. sativus	SRR7345616	passes the trimming step	not used for transcript reconstruction	10518720/10518720	88.9052%	IU
+C. sativus	SRR7345617	passes the trimming step	not used for transcript reconstruction	11338159/11338159	89.7632%	IU
+C. sativus	SRR7345618	passes the trimming step	not used for transcript reconstruction	10327840/10327840	89.3729%	IU
+C. sativus	SRR7345619	passes the trimming step	not used for transcript reconstruction	10182764/10182764	89.7556%	IU
+C. sativus	SRR7345620	passes the trimming step	not used for transcript reconstruction	10808428/10808428	87.4593%	IU
+C. sativus	SRR7345621	passes the trimming step	not used for transcript reconstruction	10563554/10563554	87.7357%	IU
+C. sativus	SRR7345622	passes the trimming step	not used for transcript reconstruction	13090958/13090958	89.0437%	IU
+C. sativus	SRR7345623	passes the trimming step	not used for transcript reconstruction	11830256/11830256	89.5468%	IU
+C. sativus	SRR7345624	passes the trimming step	not used for transcript reconstruction	17372024/17372024	88.7584%	IU
+C. sativus	SRR7345625	passes the trimming step	not used for transcript reconstruction	11681016/11681016	89.3074%	IU
+C. sativus	SRR7415469	passes the trimming step	not used for transcript reconstruction	33761817/33761817	84.7525%	IU
+C. sativus	SRR7415470	passes the trimming step	not used for transcript reconstruction	29397636/29397636	85.0959%	IU
+C. sativus	SRR7415471	passes the trimming step	not used for transcript reconstruction	27478241/27478241	85.682%	IU
+C. sativus	SRR7415472	passes the trimming step	not used for transcript reconstruction	31978372/31978372	88.3904%	IU
+C. sativus	SRR7415473	passes the trimming step	not used for transcript reconstruction	29808608/29808608	88.6035%	IU
+C. sativus	SRR7415474	passes the trimming step	not used for transcript reconstruction	31695642/31695642	88.9973%	IU
+C. sativus	SRR7415475	passes the trimming step	not used for transcript reconstruction	25866604/25866604	84.277%	IU
+C. sativus	SRR7415476	passes the trimming step	not used for transcript reconstruction	35096234/35096234	87.9879%	IU
+C. sativus	SRR7415477	passes the trimming step	not used for transcript reconstruction	29984429/29984429	88.8484%	IU
+C. sativus	SRR7415478	passes the trimming step	not used for transcript reconstruction	28603992/28603992	86.1601%	IU
+C. sativus	SRR7415479	passes the trimming step	not used for transcript reconstruction	28938283/28938283	87.5407%	IU
+C. sativus	SRR7415480	passes the trimming step	not used for transcript reconstruction	29630320/29630320	88.6129%	IU
+C. sativus	SRR7415481	passes the trimming step	not used for transcript reconstruction	31283326/31283326	85.6158%	IU
+C. sativus	SRR7415482	passes the trimming step	not used for transcript reconstruction	31684014/31684014	84.562%	IU
+C. sativus	SRR7415483	passes the trimming step	not used for transcript reconstruction	32426530/32426530	88.0199%	IU
+C. sativus	SRR7415484	passes the trimming step	not used for transcript reconstruction	31206600/31206600	88.1163%	IU
+C. sativus	SRR7415485	passes the trimming step	not used for transcript reconstruction	28725406/28725406	85.4973%	IU
+C. sativus	SRR7415486	passes the trimming step	not used for transcript reconstruction	28460774/28460774	85.1627%	IU
+C. sativus	SRR7429308	passes the trimming step	not used for transcript reconstruction	10116104/10116104	80.637%	IU
+C. sativus	SRR7429309	passes the trimming step	not used for transcript reconstruction	10411884/10411884	80.3609%	IU
+C. sativus	SRR7429310	passes the trimming step	not used for transcript reconstruction	10652443/10652443	77.551%	IU
+C. sativus	SRR7429311	passes the trimming step	not used for transcript reconstruction	10246846/10246846	78.1868%	IU
+C. sativus	SRR7429312	passes the trimming step	not used for transcript reconstruction	8767847/8767847	78.8345%	IU
+C. sativus	SRR7429313	passes the trimming step	not used for transcript reconstruction	10601492/10601492	79.9733%	IU
+C. sativus	SRR7429314	passes the trimming step	not used for transcript reconstruction	10176300/10176300	75.1485%	IU
+C. sativus	SRR7429315	passes the trimming step	not used for transcript reconstruction	10875369/10875369	78.9271%	IU
+C. sativus	SRR7429316	passes the trimming step	not used for transcript reconstruction	9674891/9674891	78.9088%	IU
+C. sativus	SRR7429317	passes the trimming step	not used for transcript reconstruction	9926179/9926179	78.0758%	IU
+C. sativus	SRR7429318	passes the trimming step	not used for transcript reconstruction	10981349/10981349	85.2351%	IU
+C. sativus	SRR7609886	passes the trimming step	not used for transcript reconstruction	19600769/19600769	81.6781%	IU
+C. sativus	SRR7609887	passes the trimming step	not used for transcript reconstruction	18258180/18258180	84.1885%	IU
+C. sativus	SRR7609888	passes the trimming step	not used for transcript reconstruction	26986967/26986967	84.4612%	IU
+C. sativus	SRR7609889	passes the trimming step	not used for transcript reconstruction	23453108/23453108	85.079%	IU
+C. sativus	SRR7609890	passes the trimming step	not used for transcript reconstruction	20690608/20690608	84.319%	IU
+C. sativus	SRR7609891	passes the trimming step	not used for transcript reconstruction	22117171/22117171	84.2546%	IU
+C. sativus	SRR7609892	passes the trimming step	not used for transcript reconstruction	20403352/20403352	85.6294%	IU
+C. sativus	SRR7609893	passes the trimming step	not used for transcript reconstruction	24166755/24166755	84.6336%	IU
+C. sativus	SRR7609894	passes the trimming step	not used for transcript reconstruction	19514231/19514231	83.548%	IU
+C. sativus	SRR7609895	passes the trimming step	not used for transcript reconstruction	19510952/19510952	86.4198%	IU
+C. sativus	SRR7609896	passes the trimming step	not used for transcript reconstruction	24914549/24914549	84.066%	IU
+C. sativus	SRR7609897	passes the trimming step	not used for transcript reconstruction	19532178/19532178	86.233%	IU
+C. sativus	SRR7609898	passes the trimming step	not used for transcript reconstruction	24535295/24535295	82.227%	IU
+C. sativus	SRR7609899	passes the trimming step	not used for transcript reconstruction	22705898/22705898	81.0655%	IU
+C. sativus	SRR7609900	passes the trimming step	not used for transcript reconstruction	38582580/38582580	3.29773%	IU
+C. sativus	SRR7609901	passes the trimming step	not used for transcript reconstruction	21466053/21466053	85.9051%	IU
+C. sativus	SRR7609902	passes the trimming step	not used for transcript reconstruction	20582327/20582327	82.7805%	IU
+C. sativus	SRR7609903	passes the trimming step	not used for transcript reconstruction	23441319/23441319	83.2095%	IU
+C. sativus	SRR7620935	passes the trimming step	not used for transcript reconstruction	11937090/11937090	88.013%	IU
+C. sativus	SRR7620936	passes the trimming step	not used for transcript reconstruction	12433771/12433771	89.2472%	IU
+C. sativus	SRR7620937	passes the trimming step	not used for transcript reconstruction	12433813/12433813	89.3644%	IU
+C. sativus	SRR7637113	passes the trimming step	not used for transcript reconstruction	23857817/23857817	83.2105%	IU
+C. sativus	SRR7637114	passes the trimming step	not used for transcript reconstruction	26072518/26072518	85.4942%	IU
+C. sativus	SRR7637115	passes the trimming step	not used for transcript reconstruction	23892037/23892037	84.3315%	IU
+C. sativus	SRR7637116	passes the trimming step	not used for transcript reconstruction	23705020/23705020	79.8422%	IU
+C. sativus	SRR7637117	passes the trimming step	not used for transcript reconstruction	18360439/18360439	79.8492%	IU
+C. sativus	SRR7637118	passes the trimming step	not used for transcript reconstruction	24659145/24659145	83.0734%	IU
+C. sativus	SRR7637119	passes the trimming step	not used for transcript reconstruction	18834930/18834930	83.3783%	IU
+C. sativus	SRR7637120	passes the trimming step	not used for transcript reconstruction	17493958/17493958	84.0803%	IU
+C. sativus	SRR7637121	passes the trimming step	not used for transcript reconstruction	30201945/30201945	84.2358%	IU
+C. sativus	SRR7637122	passes the trimming step	not used for transcript reconstruction	21504660/21504660	82.6295%	IU
+C. sativus	SRR7637123	passes the trimming step	not used for transcript reconstruction	26417924/26417924	83.7602%	IU
+C. sativus	SRR7637124	passes the trimming step	not used for transcript reconstruction	29475974/29475974	85.2225%	IU
+C. sativus	SRR8146467	passes the trimming step	not used for transcript reconstruction	24077974	16.1675%	U
+C. sativus	SRR8325819	passes the trimming step	not used for transcript reconstruction	29203730/29203730	0.794275%	NA
+C. sativus	SRR8325820	passes the trimming step	not used for transcript reconstruction	30156186/30156186	0.761054%	NA
+C. sativus	SRR8325821	passes the trimming step	not used for transcript reconstruction	28601013/28601013	0.812454%	NA
+C. sativus	SRR8325822	passes the trimming step	not used for transcript reconstruction	27148328/27148328	0.756013%	NA
+C. sativus	SRR8329514	passes the trimming step	not used for transcript reconstruction	18795653/18795653	85.5619%	IU
+C. sativus	SRR8329515	passes the trimming step	not used for transcript reconstruction	15957996/15957996	83.5782%	IU
+C. sativus	SRR8329517	passes the trimming step	not used for transcript reconstruction	16895899/16895899	84.4074%	IU
+C. sativus	SRR8329518	passes the trimming step	not used for transcript reconstruction	18326989/18326989	84.707%	IU
+C. sativus	SRR8372181	passes the trimming step	not used for transcript reconstruction	12203383/12203383	84.1702%	IU
+C. sativus	SRR8372182	passes the trimming step	not used for transcript reconstruction	11031405/11031405	78.36%	IU
+C. sativus	SRR8372183	passes the trimming step	not used for transcript reconstruction	10150537/10150537	75.6083%	IU
+C. sativus	SRR8372184	passes the trimming step	not used for transcript reconstruction	10295705/10295705	82.58%	IU
+C. sativus	SRR8372185	passes the trimming step	not used for transcript reconstruction	11169874/11169874	82.6266%	IU
+C. sativus	SRR8372186	passes the trimming step	not used for transcript reconstruction	10067706/10067706	77.3382%	IU
+C. sativus	SRR847030	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR847031	doesn't pass the trimming step	NA	0	NA	NA
+C. sativus	SRR847032	passes the trimming step	not used for transcript reconstruction	3431456	NA	NA
+C. sativus	SRR847033	passes the trimming step	not used for transcript reconstruction	3179240	NA	NA
+C. sativus	SRR8662466	passes the trimming step	not used for transcript reconstruction	18537427/18537427	82.7701%	IU
+C. sativus	SRR8662467	passes the trimming step	not used for transcript reconstruction	16911276/16911276	85.9019%	IU
+C. sativus	SRR8662468	passes the trimming step	not used for transcript reconstruction	16191002/16191002	84.4804%	IU
+C. sativus	SRR8662469	passes the trimming step	not used for transcript reconstruction	18019208/18019208	85.3592%	IU
+C. sativus	SRR8662470	passes the trimming step	not used for transcript reconstruction	15844531/15844531	82.0196%	IU
+C. sativus	SRR8662471	passes the trimming step	not used for transcript reconstruction	17450217/17450217	82.6686%	IU
+C. sativus	SRR8662472	passes the trimming step	not used for transcript reconstruction	16112466/16112466	82.4562%	IU
+C. sativus	SRR8662473	passes the trimming step	not used for transcript reconstruction	18069749/18069749	84.1287%	IU
+C. sativus	SRR8662474	passes the trimming step	not used for transcript reconstruction	18551140/18551140	83.986%	IU
+C. sativus	SRR8662475	passes the trimming step	not used for transcript reconstruction	20306413/20306413	81.4135%	IU
+C. sativus	SRR8662476	passes the trimming step	not used for transcript reconstruction	17331908/17331908	83.2453%	IU
+C. sativus	SRR8662477	passes the trimming step	not used for transcript reconstruction	17852399/17852399	82.1218%	IU
+C. sativus	SRR8662478	passes the trimming step	not used for transcript reconstruction	17973022/17973022	81.5806%	IU
+C. sativus	SRR8662479	passes the trimming step	not used for transcript reconstruction	17194501/17194501	82.5012%	IU
+C. sativus	SRR8662480	passes the trimming step	not used for transcript reconstruction	17631908/17631908	88.2319%	IU
+C. sativus	SRR8662481	passes the trimming step	not used for transcript reconstruction	18914539/18914539	83.4883%	IU
+C. sativus	SRR8662482	passes the trimming step	not used for transcript reconstruction	20007687/20007687	83.1643%	IU
+C. sativus	SRR8662483	passes the trimming step	not used for transcript reconstruction	23390428/23390428	82.8933%	IU
+C. sativus	SRR8662484	passes the trimming step	not used for transcript reconstruction	17175403/17175403	79.4176%	IU
+C. sativus	SRR8662485	passes the trimming step	not used for transcript reconstruction	17832269/17832269	77.3066%	IU
+C. sativus	SRR8662486	passes the trimming step	not used for transcript reconstruction	19193624/19193624	85.7946%	IU
+C. sativus	SRR8662487	passes the trimming step	not used for transcript reconstruction	14523188/14523188	80.7837%	IU
+C. sativus	SRR8662488	passes the trimming step	not used for transcript reconstruction	17592313/17592313	81.1931%	IU
+C. sativus	SRR8662489	passes the trimming step	not used for transcript reconstruction	15900887/15900887	77.2201%	IU
+C. sativus	SRR8662490	passes the trimming step	not used for transcript reconstruction	16857489/16857489	81.9434%	IU
+C. sativus	SRR8662491	passes the trimming step	not used for transcript reconstruction	21472930/21472930	81.137%	IU
+C. sativus	SRR8662492	passes the trimming step	not used for transcript reconstruction	17297219/17297219	82.3104%	IU
+C. sativus	SRR8662493	passes the trimming step	not used for transcript reconstruction	24597397/24597397	88.6676%	IU
+C. sativus	SRR8662494	passes the trimming step	not used for transcript reconstruction	24796458/24796458	88.0557%	IU
+C. sativus	SRR8662495	passes the trimming step	not used for transcript reconstruction	23092118/23092118	87.1457%	IU
+C. sativus	SRR8662496	passes the trimming step	not used for transcript reconstruction	28442013/28442013	88.5907%	IU
+C. sativus	SRR8662497	passes the trimming step	not used for transcript reconstruction	21862257/21862257	88.7885%	IU
+C. sativus	SRR8662498	passes the trimming step	not used for transcript reconstruction	21226176/21226176	87.4908%	IU
+C. sativus	SRR8662499	passes the trimming step	not used for transcript reconstruction	23778880/23778880	88.0944%	IU
+C. sativus	SRR8662500	passes the trimming step	not used for transcript reconstruction	24868422/24868422	88.0176%	IU
+C. sativus	SRR8662501	passes the trimming step	not used for transcript reconstruction	26523146/26523146	88.5066%	IU
+C. sativus	SRR8662502	passes the trimming step	not used for transcript reconstruction	19866430/19866430	88.6346%	IU
+C. sativus	SRR8662503	passes the trimming step	not used for transcript reconstruction	19666462/19666462	88.6711%	IU
+C. sativus	SRR8662504	passes the trimming step	not used for transcript reconstruction	17364786/17364786	89.2227%	IU
+C. sativus	SRR8662505	passes the trimming step	not used for transcript reconstruction	19401726/19401726	89.6126%	IU
+C. sativus	SRR8662506	passes the trimming step	not used for transcript reconstruction	19689018/19689018	88.6088%	IU
+C. sativus	SRR8662507	passes the trimming step	not used for transcript reconstruction	21056706/21056706	88.7686%	IU
+C. sativus	SRR8662508	passes the trimming step	not used for transcript reconstruction	21154036/21154036	88.7275%	IU
+C. sativus	SRR8662509	passes the trimming step	not used for transcript reconstruction	18653644/18653644	88.9616%	IU
+C. sativus	SRR8662510	passes the trimming step	not used for transcript reconstruction	20501228/20501228	88.8901%	IU
+C. sativus	SRR8662511	passes the trimming step	not used for transcript reconstruction	22471766/22471766	86.8673%	IU
+C. sativus	SRR8662512	passes the trimming step	not used for transcript reconstruction	18636730/18636730	88.7662%	IU
+C. sativus	SRR8662513	passes the trimming step	not used for transcript reconstruction	20622470/20622470	83.2876%	IU
+C. sativus	SRR8669725	passes the trimming step	not used for transcript reconstruction	15027953/15027953	85.1249%	IU
+C. sativus	SRR8669727	passes the trimming step	not used for transcript reconstruction	19623100/19623100	85.5046%	IU
+C. sativus	SRR8669728	passes the trimming step	not used for transcript reconstruction	17971741/17971741	83.8117%	IU
+C. sativus	SRR8669729	passes the trimming step	not used for transcript reconstruction	18133149/18133149	84.4529%	IU
+C. sativus	SRR8669730	passes the trimming step	not used for transcript reconstruction	17617931/17617931	84.0953%	IU
+C. sativus	SRR8669732	passes the trimming step	not used for transcript reconstruction	18546184/18546184	83.4962%	IU
+C. sativus	SRR8669733	passes the trimming step	not used for transcript reconstruction	19691630/19691630	86.1631%	IU
+C. sativus	SRR8669737	passes the trimming step	not used for transcript reconstruction	18866517/18866517	83.0097%	IU
+C. sativus	SRR8669738	passes the trimming step	not used for transcript reconstruction	20871304/20871304	85.2611%	IU
+C. sativus	SRR8669739	passes the trimming step	not used for transcript reconstruction	21713294/21713294	84.5959%	IU
+C. sativus	SRR8669740	passes the trimming step	not used for transcript reconstruction	20722873/20722873	87.4744%	IU
+C. sativus	SRR8669741	passes the trimming step	not used for transcript reconstruction	19973314/19973314	87.8112%	IU
+C. sativus	SRR8669742	passes the trimming step	not used for transcript reconstruction	16691769/16691769	85.9047%	IU
+C. sativus	SRR8669743	passes the trimming step	not used for transcript reconstruction	20541501/20541501	85.4796%	IU
+C. sativus	SRR8669744	passes the trimming step	not used for transcript reconstruction	17228802/17228802	81.4483%	IU
+C. sativus	SRR8669745	passes the trimming step	not used for transcript reconstruction	15627060/15627060	85.3652%	IU
+C. sativus	SRR8669746	passes the trimming step	not used for transcript reconstruction	19851751/19851751	85.0977%	IU
+C. sativus	SRR8669747	passes the trimming step	not used for transcript reconstruction	16529338/16529338	84.2327%	IU
+C. sativus	SRR8669748	passes the trimming step	not used for transcript reconstruction	18591296/18591296	85.7774%	IU
+C. sativus	SRR8669749	passes the trimming step	not used for transcript reconstruction	17213548/17213548	84.5276%	IU
+C. sativus	SRR8669750	passes the trimming step	not used for transcript reconstruction	19946300/19946300	86.638%	IU
+C. sativus	SRR8669751	passes the trimming step	not used for transcript reconstruction	16777321/16777321	85.8831%	IU
+C. sativus	SRR8669752	passes the trimming step	not used for transcript reconstruction	21469435/21469435	81.0995%	IU
+C. sativus	SRR8669755	passes the trimming step	not used for transcript reconstruction	16184963/16184963	87.466%	IU
+C. sativus	SRR8669756	passes the trimming step	not used for transcript reconstruction	19029113/19029113	86.5469%	IU
+C. sativus	SRR8669757	passes the trimming step	not used for transcript reconstruction	17207655/17207655	86.764%	IU
+C. sativus	SRR8669758	passes the trimming step	not used for transcript reconstruction	18165877/18165877	85.0912%	IU
+C. sativus	SRR8669759	passes the trimming step	not used for transcript reconstruction	17502937/17502937	84.6228%	IU
+C. sativus	SRR8669760	passes the trimming step	not used for transcript reconstruction	16767413/16767413	85.6064%	IU
+C. sativus	SRR8669761	passes the trimming step	not used for transcript reconstruction	17248041/17248041	87.5312%	IU
+C. sativus	SRR8669762	passes the trimming step	not used for transcript reconstruction	21222331/21222331	86.2117%	IU
+C. sativus	SRR8669770	passes the trimming step	not used for transcript reconstruction	19165842/19165842	84.6852%	IU
+C. sativus	SRR8669771	passes the trimming step	not used for transcript reconstruction	18876160/18876160	85.913%	IU
+C. sativus	SRR8669772	passes the trimming step	not used for transcript reconstruction	19223354/19223354	85.6285%	IU
+C. sativus	SRR8669773	passes the trimming step	not used for transcript reconstruction	17730095/17730095	83.3232%	IU
+C. sativus	SRR8669774	passes the trimming step	not used for transcript reconstruction	16616083/16616083	84.0366%	IU
+C. sativus	SRR8669775	passes the trimming step	not used for transcript reconstruction	17589498/17589498	85.6095%	IU
+C. sativus	SRR8669776	passes the trimming step	not used for transcript reconstruction	18093306/18093306	86.647%	IU
+C. sativus	SRR8669777	passes the trimming step	not used for transcript reconstruction	16884852/16884852	87.6821%	IU
+C. sativus	SRR8669788	passes the trimming step	not used for transcript reconstruction	17049094/17049094	86.8391%	IU
+C. sativus	SRR8669789	passes the trimming step	not used for transcript reconstruction	16710028/16710028	85.8336%	IU
+C. sativus	SRR8669790	passes the trimming step	not used for transcript reconstruction	16455985/16455985	84.4441%	IU
+C. sativus	SRR8669791	passes the trimming step	not used for transcript reconstruction	18052072/18052072	86.4737%	IU
+C. sativus	SRR8669792	passes the trimming step	not used for transcript reconstruction	17038160/17038160	84.794%	IU
+C. sativus	SRR8669793	passes the trimming step	not used for transcript reconstruction	17285075/17285075	86.0224%	IU
+C. sativus	SRR8669796	passes the trimming step	not used for transcript reconstruction	19296659/19296659	87.6315%	IU
+C. sativus	SRR8669798	passes the trimming step	not used for transcript reconstruction	15010243/15010243	87.7642%	IU
+C. sativus	SRR8669799	passes the trimming step	not used for transcript reconstruction	16723240/16723240	82.6522%	IU
+C. sativus	SRR8669800	passes the trimming step	not used for transcript reconstruction	16456035/16456035	87.7123%	IU
+C. sativus	SRR8669801	passes the trimming step	not used for transcript reconstruction	18023473/18023473	87.593%	IU
+C. sativus	SRR8669804	passes the trimming step	not used for transcript reconstruction	17817931/17817931	85.3995%	IU
+C. sativus	SRR8669806	passes the trimming step	not used for transcript reconstruction	17053127/17053127	84.1965%	IU
+C. sativus	SRR8669807	passes the trimming step	not used for transcript reconstruction	20092189/20092189	84.4012%	IU
+C. sativus	SRR8669818	passes the trimming step	not used for transcript reconstruction	13251105/13251105	85.2664%	IU
+C. sativus	SRR8669819	passes the trimming step	not used for transcript reconstruction	17456569/17456569	88.7106%	IU
+C. sativus	SRR8669820	passes the trimming step	not used for transcript reconstruction	19209789/19209789	85.6498%	IU
+C. sativus	SRR8669821	passes the trimming step	not used for transcript reconstruction	19514363/19514363	86.4891%	IU
+C. sativus	SRR8669822	passes the trimming step	not used for transcript reconstruction	18640521/18640521	88.488%	IU
+C. sativus	SRR8669823	passes the trimming step	not used for transcript reconstruction	15654626/15654626	80.6001%	IU
+C. sativus	SRR8669827	passes the trimming step	not used for transcript reconstruction	16388364/16388364	83.6456%	IU
+C. sativus	SRR8703827	passes the trimming step	used for transcript reconstruction	23393526/23393526	81.5256%	ISR
+C. sativus	SRR8703828	passes the trimming step	used for transcript reconstruction	23364702/23364702	87.0559%	ISR
+C. sativus	SRR8703829	passes the trimming step	used for transcript reconstruction	23531409/23531409	86.046%	ISR
+C. sativus	SRR8703830	passes the trimming step	used for transcript reconstruction	23448013/23448013	82.3062%	ISR
+C. sativus	SRR8703831	passes the trimming step	used for transcript reconstruction	23358299/23358299	86.1032%	ISR
+C. sativus	SRR8703832	passes the trimming step	used for transcript reconstruction	23356512/23356512	86.0026%	ISR
+C. sativus	SRR8703833	passes the trimming step	used for transcript reconstruction	23011562/23011562	82.854%	ISR
+C. sativus	SRR8703834	passes the trimming step	used for transcript reconstruction	23208992/23208992	86.7104%	ISR
+C. sativus	SRR8703835	passes the trimming step	used for transcript reconstruction	23423733/23423733	84.4187%	ISR
+C. sativus	SRR8703836	passes the trimming step	used for transcript reconstruction	23008126/23008126	86.9352%	ISR
+C. sativus	SRR8703837	passes the trimming step	used for transcript reconstruction	23417131/23417131	86.79%	ISR
+C. sativus	SRR8703838	passes the trimming step	used for transcript reconstruction	23204198/23204198	86.9365%	ISR
+C. sativus	SRR8703839	passes the trimming step	used for transcript reconstruction	23338919/23338919	84.1119%	ISR
+C. sativus	SRR8703840	passes the trimming step	used for transcript reconstruction	23471745/23471745	77.9841%	ISR
+C. sativus	SRR8703841	passes the trimming step	used for transcript reconstruction	22994665/22994665	84.5617%	ISR
+C. sativus	SRR8703842	passes the trimming step	used for transcript reconstruction	23085634/23085634	84.2479%	ISR
+C. sativus	SRR8703843	passes the trimming step	used for transcript reconstruction	23251812/23251812	82.3815%	ISR
+C. sativus	SRR8703844	passes the trimming step	used for transcript reconstruction	23251877/23251877	84.0321%	ISR
+C. sativus	SRR8873514	passes the trimming step	not used for transcript reconstruction	26529433/26529433	84.0122%	IU
+C. sativus	SRR8873515	passes the trimming step	not used for transcript reconstruction	25902090/25902090	83.3928%	IU
+C. sativus	SRR8873516	passes the trimming step	not used for transcript reconstruction	7702970/7702970	88.6286%	IU
+C. sativus	SRR8873517	passes the trimming step	not used for transcript reconstruction	6773133/6773133	88.533%	IU
+C. sativus	SRR8873518	passes the trimming step	not used for transcript reconstruction	9183496/9183496	86.4902%	IU
+C. sativus	SRR8873519	passes the trimming step	not used for transcript reconstruction	6637503/6637503	86.8%	IU
+C. sativus	SRR8873520	passes the trimming step	not used for transcript reconstruction	32911651/32911651	86.5724%	IU
+C. sativus	SRR8873521	passes the trimming step	not used for transcript reconstruction	27020111/27020111	86.9354%	IU
+C. sativus	SRR8873522	passes the trimming step	not used for transcript reconstruction	22452703/22452703	85.4207%	IU
+C. sativus	SRR8873523	passes the trimming step	not used for transcript reconstruction	17664071/17664071	84.8194%	IU
+C. sativus	SRR8991380	passes the trimming step	not used for transcript reconstruction	8280782/8280782	85.8084%	IU
+C. sativus	SRR8991381	passes the trimming step	not used for transcript reconstruction	7502516/7502516	84.9286%	IU
+C. sativus	SRR8991384	passes the trimming step	not used for transcript reconstruction	7282335/7282335	85.2141%	IU
+C. sativus	SRR8991385	passes the trimming step	not used for transcript reconstruction	6783308/6783308	84.2751%	IU
+C. sativus	SRR9030938	passes the trimming step	used for transcript reconstruction	24896760/24896760	74.7846%	ISR
+C. sativus	SRR9030939	passes the trimming step	used for transcript reconstruction	25162643/25162643	79.8105%	ISR
+C. sativus	SRR9030940	passes the trimming step	used for transcript reconstruction	24179794/24179794	87.6107%	ISR
+C. sativus	SRR9030941	passes the trimming step	used for transcript reconstruction	25264395/25264395	87.2712%	ISR
+C. sativus	SRR9030942	passes the trimming step	used for transcript reconstruction	25366530/25366530	86.892%	ISR
+C. sativus	SRR9030943	passes the trimming step	used for transcript reconstruction	24819679/24819679	86.4994%	ISR
+C. sativus	SRR9205170	passes the trimming step	not used for transcript reconstruction	10239393/10239393	81.8851%	IU
+C. sativus	SRR9205171	passes the trimming step	not used for transcript reconstruction	11738266/11738266	37.3627%	IU
+C. sativus	SRR9205172	passes the trimming step	not used for transcript reconstruction	10510594/10510594	36.7213%	IU
+C. sativus	SRR9205173	passes the trimming step	not used for transcript reconstruction	12030667/12030667	33.4331%	IU
+C. sativus	SRR9205174	passes the trimming step	not used for transcript reconstruction	9312675/9312675	81.949%	IU
+C. sativus	SRR9205175	passes the trimming step	not used for transcript reconstruction	10249997/10249997	75.0357%	IU
+C. sativus	SRR948726	passes the trimming step	not used for transcript reconstruction	6801330	NA	NA
+C. sativus	SRR948727	passes the trimming step	not used for transcript reconstruction	7189288	NA	NA
+C. sativus	SRR948728	passes the trimming step	not used for transcript reconstruction	6658810	NA	NA
+C. sativus	SRR948729	passes the trimming step	not used for transcript reconstruction	6720174	NA	NA
+C. sativus	SRR948730	passes the trimming step	not used for transcript reconstruction	6749203	NA	NA
+C. sativus	SRR948731	passes the trimming step	not used for transcript reconstruction	7131004	NA	NA
+C. sativus	SRR948732	passes the trimming step	not used for transcript reconstruction	6855853	NA	NA
+C. sativus	SRR948733	passes the trimming step	not used for transcript reconstruction	6718501	NA	NA
+C. sativus	SRR9640899	passes the trimming step	not used for transcript reconstruction	22751904/22751904	84.7598%	IU
+C. sativus	SRR9640900	passes the trimming step	not used for transcript reconstruction	21487217/21487217	84.5347%	IU
+C. sativus	SRR9640901	passes the trimming step	not used for transcript reconstruction	23668702/23668702	84.8616%	IU
+C. sativus	SRR9640902	passes the trimming step	not used for transcript reconstruction	23332565/23332565	85.7919%	IU
+C. sativus	SRR9640903	passes the trimming step	not used for transcript reconstruction	22495865/22495865	86.0151%	IU
+C. sativus	SRR9640904	passes the trimming step	not used for transcript reconstruction	20696283/20696283	85.0856%	IU
+C. sativus	SRR9640905	passes the trimming step	not used for transcript reconstruction	23218871/23218871	85.8493%	IU
+C. sativus	SRR9640906	passes the trimming step	not used for transcript reconstruction	21216181/21216181	84.3773%	IU
+C. sativus	SRR9640907	passes the trimming step	not used for transcript reconstruction	20149047/20149047	87.3484%	IU
+C. sativus	SRR9648340	passes the trimming step	used for transcript reconstruction	24619787/24619787	85.8792%	ISR
+C. sativus	SRR9648341	passes the trimming step	used for transcript reconstruction	32849289/32849289	83.979%	ISR
+C. sativus	SRR9648342	passes the trimming step	used for transcript reconstruction	28780612/28780612	87.3502%	ISR
+C. sativus	SRR9648348	passes the trimming step	used for transcript reconstruction	30603136/30603136	88.9299%	ISR
+C. sativus	SRR9648349	passes the trimming step	used for transcript reconstruction	29219659/29219659	86.2947%	ISR
+C. sativus	SRR9648352	passes the trimming step	used for transcript reconstruction	27148250/27148250	89.0067%	ISR
+C. sativus	SRR9648353	passes the trimming step	used for transcript reconstruction	31559831/31559831	87.6889%	ISR
+C. sativus	SRR9648354	passes the trimming step	used for transcript reconstruction	31327566/31327566	86.3209%	ISR
+C. sativus	SRR9648355	passes the trimming step	used for transcript reconstruction	32320394/32320394	86.9653%	ISR
+C. sativus	SRR9648356	passes the trimming step	used for transcript reconstruction	32184017/32184017	86.8358%	ISR
+C. sativus	SRR9648357	passes the trimming step	used for transcript reconstruction	26285687/26285687	85.6464%	ISR
+C. sativus	SRR9648360	passes the trimming step	used for transcript reconstruction	24138157/24138157	89.0471%	ISR
+C. sativus	SRR9914334	passes the trimming step	used for transcript reconstruction	19499725	85.703%	SR
+C. sativus	SRR9914335	passes the trimming step	used for transcript reconstruction	22224862	84.8471%	SR
+C. sativus	SRR9914336	passes the trimming step	used for transcript reconstruction	23484524	85.567%	SR
+C. sativus	SRR9914337	passes the trimming step	used for transcript reconstruction	21621358	85.4053%	SR
+C. sativus	SRR9914338	passes the trimming step	used for transcript reconstruction	21164457	85.4996%	SR
+C. sativus	SRR9914342	passes the trimming step	used for transcript reconstruction	24870908	87.1792%	SR
+C. sativus	SRR9914343	passes the trimming step	used for transcript reconstruction	19108071	85.2462%	SR
+C. sativus	SRR9914344	passes the trimming step	used for transcript reconstruction	26872833	83.9918%	SR
+C. sativus	SRR9914345	passes the trimming step	used for transcript reconstruction	23307262	87.1755%	SR
+C. sativus	SRR9914346	passes the trimming step	used for transcript reconstruction	33428015	86.8985%	SR
+C. sativus	SRR9914347	passes the trimming step	used for transcript reconstruction	26544708	85.0388%	SR
+C. sativus	SRR9914348	passes the trimming step	used for transcript reconstruction	24738789	85.3825%	SR

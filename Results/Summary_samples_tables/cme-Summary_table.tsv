@@ -1,0 +1,803 @@
+Specie	Sample	Filter_1	Filter_2	Depth	Mapping_rate	Strandedness
+C. melo	ERR1662989	passes the trimming step	not used for transcript reconstruction	14574704	68.9887%	U
+C. melo	ERR1662990	passes the trimming step	not used for transcript reconstruction	14609413	83.4004%	U
+C. melo	ERR1662991	passes the trimming step	not used for transcript reconstruction	15426113	86.2578%	U
+C. melo	ERR1662992	passes the trimming step	not used for transcript reconstruction	20519959	85.9696%	U
+C. melo	ERR1662993	passes the trimming step	not used for transcript reconstruction	12556303	83.5404%	U
+C. melo	ERR1662994	passes the trimming step	not used for transcript reconstruction	15329992	85.4457%	U
+C. melo	ERR1662995	passes the trimming step	not used for transcript reconstruction	11071555	70.2112%	U
+C. melo	ERR1662996	passes the trimming step	not used for transcript reconstruction	15050227	82.9649%	U
+C. melo	ERR1662997	passes the trimming step	not used for transcript reconstruction	16988462	84.7684%	U
+C. melo	ERR1662998	passes the trimming step	not used for transcript reconstruction	18253442	85.5995%	U
+C. melo	ERR1662999	passes the trimming step	not used for transcript reconstruction	17182964	85.8419%	U
+C. melo	ERR1663000	passes the trimming step	not used for transcript reconstruction	14313677	84.2621%	U
+C. melo	ERR1663001	passes the trimming step	not used for transcript reconstruction	19460378	79.6609%	U
+C. melo	ERR1663002	passes the trimming step	not used for transcript reconstruction	17905345	81.1435%	U
+C. melo	ERR1663003	passes the trimming step	not used for transcript reconstruction	18502374	82.9501%	U
+C. melo	ERR1663004	passes the trimming step	not used for transcript reconstruction	22927963	81.8957%	U
+C. melo	SRR10053300	passes the trimming step	not used for transcript reconstruction	12848710/12848710	84.1354%	IU
+C. melo	SRR10053301	passes the trimming step	not used for transcript reconstruction	15512146/15512146	84.4733%	IU
+C. melo	SRR10053302	passes the trimming step	not used for transcript reconstruction	15786407/15786407	84.5483%	IU
+C. melo	SRR10053303	passes the trimming step	not used for transcript reconstruction	14667024/14667024	85.2384%	IU
+C. melo	SRR10053304	passes the trimming step	not used for transcript reconstruction	11637908/11637908	83.7793%	IU
+C. melo	SRR10053305	passes the trimming step	not used for transcript reconstruction	14217963/14217963	84.2645%	IU
+C. melo	SRR10466859	passes the trimming step	not used for transcript reconstruction	25216645/25216645	79.4164%	IU
+C. melo	SRR10466860	passes the trimming step	not used for transcript reconstruction	24113402/24113402	78.8504%	IU
+C. melo	SRR10466861	passes the trimming step	not used for transcript reconstruction	29713567/29713567	80.4897%	IU
+C. melo	SRR10466862	passes the trimming step	not used for transcript reconstruction	25801214/25801214	79.9491%	IU
+C. melo	SRR10966111	passes the trimming step	used for transcript reconstruction	13890333/13890333	87.3552%	ISR
+C. melo	SRR10966112	passes the trimming step	used for transcript reconstruction	11739936/11739936	87.3737%	ISR
+C. melo	SRR10966113	passes the trimming step	used for transcript reconstruction	18564304/18564304	75.9258%	ISR
+C. melo	SRR10966114	passes the trimming step	used for transcript reconstruction	13657459/13657459	77.4319%	ISR
+C. melo	SRR10966115	passes the trimming step	used for transcript reconstruction	15046217/15046217	75.8037%	ISR
+C. melo	SRR10966116	passes the trimming step	used for transcript reconstruction	16490842/16490842	77.1952%	ISR
+C. melo	SRR10966117	passes the trimming step	used for transcript reconstruction	19938470/19938470	80.5587%	ISR
+C. melo	SRR10966118	passes the trimming step	used for transcript reconstruction	14283050/14283050	87.7194%	ISR
+C. melo	SRR10966119	passes the trimming step	used for transcript reconstruction	16576792/16576792	77.4595%	ISR
+C. melo	SRR10966120	passes the trimming step	used for transcript reconstruction	18247809/18247809	78.1009%	ISR
+C. melo	SRR10966121	passes the trimming step	used for transcript reconstruction	16583527/16583527	78.2021%	ISR
+C. melo	SRR10966122	passes the trimming step	used for transcript reconstruction	16087005/16087005	73.1706%	ISR
+C. melo	SRR10966123	passes the trimming step	used for transcript reconstruction	14290815/14290815	77.4864%	ISR
+C. melo	SRR10966124	passes the trimming step	used for transcript reconstruction	19736476/19736476	72.4721%	ISR
+C. melo	SRR10966125	passes the trimming step	used for transcript reconstruction	16054274/16054274	71.2565%	ISR
+C. melo	SRR10966126	passes the trimming step	used for transcript reconstruction	18336489/18336489	73.5257%	ISR
+C. melo	SRR10966127	passes the trimming step	used for transcript reconstruction	16442466/16442466	74.4701%	ISR
+C. melo	SRR10966128	passes the trimming step	used for transcript reconstruction	14624897/14624897	81.0076%	ISR
+C. melo	SRR10966129	passes the trimming step	used for transcript reconstruction	16569589/16569589	88.2896%	ISR
+C. melo	SRR10966130	passes the trimming step	used for transcript reconstruction	13356516/13356516	79.1352%	ISR
+C. melo	SRR10966131	passes the trimming step	used for transcript reconstruction	17369785/17369785	75.8881%	ISR
+C. melo	SRR10966132	passes the trimming step	used for transcript reconstruction	22035265/22035265	78.162%	ISR
+C. melo	SRR10966133	passes the trimming step	used for transcript reconstruction	17473158/17473158	78.0087%	ISR
+C. melo	SRR10966134	passes the trimming step	used for transcript reconstruction	18260253/18260253	80.6584%	ISR
+C. melo	SRR10966135	passes the trimming step	used for transcript reconstruction	17981413/17981413	80.2625%	ISR
+C. melo	SRR10966136	passes the trimming step	used for transcript reconstruction	17250495/17250495	73.2333%	ISR
+C. melo	SRR10966137	passes the trimming step	used for transcript reconstruction	18878758/18878758	74.4649%	ISR
+C. melo	SRR10966138	passes the trimming step	used for transcript reconstruction	17146193/17146193	75.1701%	ISR
+C. melo	SRR10966139	passes the trimming step	used for transcript reconstruction	18045724/18045724	72.485%	ISR
+C. melo	SRR10966140	passes the trimming step	used for transcript reconstruction	14122781/14122781	86.7718%	ISR
+C. melo	SRR10966141	passes the trimming step	used for transcript reconstruction	14108015/14108015	86.3854%	ISR
+C. melo	SRR10966142	passes the trimming step	used for transcript reconstruction	16154988/16154988	86.2413%	ISR
+C. melo	SRR10966143	passes the trimming step	used for transcript reconstruction	17230083/17230083	85.9026%	ISR
+C. melo	SRR10966144	passes the trimming step	used for transcript reconstruction	13206232/13206232	85.446%	ISR
+C. melo	SRR10966145	passes the trimming step	used for transcript reconstruction	12830409/12830409	85.6295%	ISR
+C. melo	SRR10966146	passes the trimming step	used for transcript reconstruction	14366453/14366453	84.7911%	ISR
+C. melo	SRR10966147	passes the trimming step	used for transcript reconstruction	16558805/16558805	86.6403%	ISR
+C. melo	SRR10966148	passes the trimming step	used for transcript reconstruction	16206312/16206312	86.384%	ISR
+C. melo	SRR10966149	passes the trimming step	used for transcript reconstruction	14324807/14324807	85.926%	ISR
+C. melo	SRR10966150	passes the trimming step	used for transcript reconstruction	12908903/12908903	86.0766%	ISR
+C. melo	SRR10966151	passes the trimming step	used for transcript reconstruction	16311912/16311912	85.2301%	ISR
+C. melo	SRR10966152	passes the trimming step	used for transcript reconstruction	13695915/13695915	84.889%	ISR
+C. melo	SRR10966153	passes the trimming step	used for transcript reconstruction	10953503/10953503	86.0082%	ISR
+C. melo	SRR10966154	passes the trimming step	used for transcript reconstruction	14754666/14754666	85.0171%	ISR
+C. melo	SRR10966155	passes the trimming step	used for transcript reconstruction	16751771/16751771	85.0648%	ISR
+C. melo	SRR10966156	passes the trimming step	used for transcript reconstruction	13765105/13765105	83.3345%	ISR
+C. melo	SRR10966157	passes the trimming step	used for transcript reconstruction	13512115/13512115	85.6331%	ISR
+C. melo	SRR10966158	passes the trimming step	used for transcript reconstruction	13707202/13707202	84.8149%	ISR
+C. melo	SRR10966159	passes the trimming step	used for transcript reconstruction	13895304/13895304	85.9419%	ISR
+C. melo	SRR10966160	passes the trimming step	used for transcript reconstruction	13698974/13698974	86.5475%	ISR
+C. melo	SRR10966161	passes the trimming step	used for transcript reconstruction	15712109/15712109	85.8451%	ISR
+C. melo	SRR10966162	passes the trimming step	used for transcript reconstruction	12965379/12965379	85.4417%	ISR
+C. melo	SRR10966163	passes the trimming step	used for transcript reconstruction	14726663/14726663	86.6891%	ISR
+C. melo	SRR10966164	passes the trimming step	used for transcript reconstruction	15750897/15750897	86.4596%	ISR
+C. melo	SRR10966165	passes the trimming step	used for transcript reconstruction	16605517/16605517	86.2619%	ISR
+C. melo	SRR10966166	passes the trimming step	used for transcript reconstruction	16018269/16018269	86.3284%	ISR
+C. melo	SRR10966167	passes the trimming step	used for transcript reconstruction	15661179/15661179	86.8924%	ISR
+C. melo	SRR10966168	passes the trimming step	used for transcript reconstruction	15919812/15919812	86.4353%	ISR
+C. melo	SRR10966169	passes the trimming step	used for transcript reconstruction	14205062/14205062	84.5652%	ISR
+C. melo	SRR10966170	passes the trimming step	used for transcript reconstruction	14289887/14289887	85.7189%	ISR
+C. melo	SRR10966171	passes the trimming step	used for transcript reconstruction	13906888/13906888	85.7655%	ISR
+C. melo	SRR10966172	passes the trimming step	used for transcript reconstruction	15951111/15951111	85.1909%	ISR
+C. melo	SRR10966173	passes the trimming step	used for transcript reconstruction	14618748/14618748	84.1332%	ISR
+C. melo	SRR10966174	passes the trimming step	used for transcript reconstruction	14095720/14095720	83.6543%	ISR
+C. melo	SRR10966175	passes the trimming step	used for transcript reconstruction	14597849/14597849	84.8808%	ISR
+C. melo	SRR10966176	passes the trimming step	used for transcript reconstruction	12579606/12579606	86.1293%	ISR
+C. melo	SRR10966177	passes the trimming step	used for transcript reconstruction	13305162/13305162	84.5601%	ISR
+C. melo	SRR10966178	passes the trimming step	used for transcript reconstruction	13756654/13756654	85.4668%	ISR
+C. melo	SRR10966179	passes the trimming step	used for transcript reconstruction	15319414/15319414	85.2364%	ISR
+C. melo	SRR10966180	passes the trimming step	used for transcript reconstruction	14210739/14210739	85.9449%	ISR
+C. melo	SRR10966181	passes the trimming step	used for transcript reconstruction	15257545/15257545	85.2062%	ISR
+C. melo	SRR10966182	passes the trimming step	used for transcript reconstruction	14097048/14097048	87.715%	ISR
+C. melo	SRR10966183	passes the trimming step	used for transcript reconstruction	13084198/13084198	87.1676%	ISR
+C. melo	SRR10966184	passes the trimming step	used for transcript reconstruction	13931896/13931896	85.8595%	ISR
+C. melo	SRR10966185	passes the trimming step	used for transcript reconstruction	15472631/15472631	85.7571%	ISR
+C. melo	SRR10966354	passes the trimming step	not used for transcript reconstruction	9468627/9468627	85.0131%	IU
+C. melo	SRR10966355	passes the trimming step	used for transcript reconstruction	25829883/25829883	80.2154%	ISR
+C. melo	SRR10966356	passes the trimming step	used for transcript reconstruction	30585096/30585096	85.0352%	ISR
+C. melo	SRR10966357	passes the trimming step	not used for transcript reconstruction	10124139/10124139	84.7956%	IU
+C. melo	SRR10966358	passes the trimming step	not used for transcript reconstruction	10038639/10038639	84.8299%	IU
+C. melo	SRR10966359	passes the trimming step	not used for transcript reconstruction	9173618/9173618	84.5129%	IU
+C. melo	SRR10966360	passes the trimming step	not used for transcript reconstruction	9737682/9737682	86.7637%	IU
+C. melo	SRR10966361	passes the trimming step	not used for transcript reconstruction	10494628/10494628	88.6476%	IU
+C. melo	SRR10966362	passes the trimming step	used for transcript reconstruction	24170475/24170475	85.3158%	ISR
+C. melo	SRR10966363	passes the trimming step	used for transcript reconstruction	29861292/29861292	86.1221%	ISR
+C. melo	SRR10966364	passes the trimming step	used for transcript reconstruction	29164013/29164013	83.1637%	ISR
+C. melo	SRR10966365	passes the trimming step	used for transcript reconstruction	25147815/25147815	83.7655%	ISR
+C. melo	SRR10966366	passes the trimming step	not used for transcript reconstruction	9726249/9726249	86.0303%	IU
+C. melo	SRR10966367	passes the trimming step	used for transcript reconstruction	25345703/25345703	84.8742%	ISR
+C. melo	SRR10966368	passes the trimming step	used for transcript reconstruction	26545411/26545411	84.2891%	ISR
+C. melo	SRR11149079	passes the trimming step	not used for transcript reconstruction	57614932/57614932	73.57%	IU
+C. melo	SRR11149080	passes the trimming step	not used for transcript reconstruction	51662366/51662366	83.2994%	IU
+C. melo	SRR11149081	passes the trimming step	not used for transcript reconstruction	56727000/56727000	80.2623%	IU
+C. melo	SRR11149082	passes the trimming step	not used for transcript reconstruction	61901944/61901944	84.0184%	IU
+C. melo	SRR11149083	passes the trimming step	not used for transcript reconstruction	20794437/20794437	84.8879%	IU
+C. melo	SRR11149084	passes the trimming step	not used for transcript reconstruction	22404213/22404213	84.0528%	IU
+C. melo	SRR11149085	passes the trimming step	not used for transcript reconstruction	24658646/24658646	84.528%	IU
+C. melo	SRR11149086	passes the trimming step	not used for transcript reconstruction	24261247/24261247	83.629%	IU
+C. melo	SRR11149087	passes the trimming step	not used for transcript reconstruction	20623744/20623744	84.5674%	IU
+C. melo	SRR11149088	passes the trimming step	not used for transcript reconstruction	19990288/19990288	84.5669%	IU
+C. melo	SRR11526728	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR11573116	passes the trimming step	used for transcript reconstruction	19838190/19838190	81.0694%	ISR
+C. melo	SRR11592938	passes the trimming step	not used for transcript reconstruction	27235937/27235937	87.1277%	IU
+C. melo	SRR11592939	passes the trimming step	not used for transcript reconstruction	33795045/33795045	88.3236%	IU
+C. melo	SRR11592940	passes the trimming step	not used for transcript reconstruction	29475801/29475801	87.0259%	IU
+C. melo	SRR11592941	passes the trimming step	not used for transcript reconstruction	29872392/29872392	86.9367%	IU
+C. melo	SRR11592942	passes the trimming step	not used for transcript reconstruction	25842217/25842217	87.3438%	IU
+C. melo	SRR11592943	passes the trimming step	not used for transcript reconstruction	31371591/31371591	88.9037%	IU
+C. melo	SRR11592944	passes the trimming step	not used for transcript reconstruction	28911928/28911928	88.8339%	IU
+C. melo	SRR11592945	passes the trimming step	not used for transcript reconstruction	32139644/32139644	89.0395%	IU
+C. melo	SRR11592946	passes the trimming step	not used for transcript reconstruction	28195209/28195209	88.9%	IU
+C. melo	SRR11592947	passes the trimming step	not used for transcript reconstruction	26066417/26066417	87.7407%	IU
+C. melo	SRR11592948	passes the trimming step	not used for transcript reconstruction	29310829/29310829	88.3689%	IU
+C. melo	SRR11592949	passes the trimming step	not used for transcript reconstruction	29902776/29902776	88.7494%	IU
+C. melo	SRR11592950	passes the trimming step	not used for transcript reconstruction	27944672/27944672	87.0645%	IU
+C. melo	SRR11592951	passes the trimming step	not used for transcript reconstruction	30279776/30279776	86.0763%	IU
+C. melo	SRR11592952	passes the trimming step	not used for transcript reconstruction	24827529/24827529	88.4246%	IU
+C. melo	SRR12391141	passes the trimming step	not used for transcript reconstruction	58538044/58538044	53.7621%	IU
+C. melo	SRR12391142	passes the trimming step	not used for transcript reconstruction	77756579/77756579	81.1847%	IU
+C. melo	SRR12391143	passes the trimming step	not used for transcript reconstruction	65358485/65358485	56.808%	IU
+C. melo	SRR12391144	passes the trimming step	not used for transcript reconstruction	58770302/58770302	81.5264%	IU
+C. melo	SRR12391145	passes the trimming step	not used for transcript reconstruction	57407233/57407233	70.3904%	IU
+C. melo	SRR12391146	passes the trimming step	not used for transcript reconstruction	68790379/68790379	79.6521%	IU
+C. melo	SRR12391157	passes the trimming step	not used for transcript reconstruction	64057226/64057226	61.6649%	IU
+C. melo	SRR12391158	passes the trimming step	not used for transcript reconstruction	57124155/57124155	78.9447%	IU
+C. melo	SRR12405268	passes the trimming step	not used for transcript reconstruction	28038072/28038072	44.8964%	IU
+C. melo	SRR12405269	passes the trimming step	not used for transcript reconstruction	20643920/20643920	45.8799%	IU
+C. melo	SRR12405270	passes the trimming step	not used for transcript reconstruction	21231213/21231213	47.082%	IU
+C. melo	SRR12405271	passes the trimming step	not used for transcript reconstruction	23823760/23823760	43.9104%	IU
+C. melo	SRR12405272	passes the trimming step	not used for transcript reconstruction	21738236/21738236	41.6587%	IU
+C. melo	SRR12405273	passes the trimming step	not used for transcript reconstruction	22125589/22125589	42.9399%	IU
+C. melo	SRR12405274	passes the trimming step	not used for transcript reconstruction	21768820/21768820	35.1734%	IU
+C. melo	SRR12405275	passes the trimming step	not used for transcript reconstruction	22963853/22963853	33.9482%	IU
+C. melo	SRR12405276	passes the trimming step	not used for transcript reconstruction	18937344/18937344	33.7483%	IU
+C. melo	SRR12470628	passes the trimming step	not used for transcript reconstruction	77985066/77985066	82.9303%	IU
+C. melo	SRR12470629	passes the trimming step	not used for transcript reconstruction	75292988/75292988	84.1943%	IU
+C. melo	SRR12470630	passes the trimming step	not used for transcript reconstruction	78569648/78569648	83.1064%	IU
+C. melo	SRR12470631	passes the trimming step	not used for transcript reconstruction	84302467/84302467	84.0177%	IU
+C. melo	SRR1278761	passes the trimming step	not used for transcript reconstruction	25529470/25529470	81.8713%	IU
+C. melo	SRR1282421	passes the trimming step	not used for transcript reconstruction	32846047/32846047	84.3764%	IU
+C. melo	SRR1284225	passes the trimming step	not used for transcript reconstruction	36417013/36417013	79.2844%	IU
+C. melo	SRR1284226	passes the trimming step	not used for transcript reconstruction	40647485/40647485	80.784%	IU
+C. melo	SRR1284227	passes the trimming step	not used for transcript reconstruction	30754128/30754128	82.2297%	IU
+C. melo	SRR1284228	passes the trimming step	not used for transcript reconstruction	34916657/34916657	78.7134%	IU
+C. melo	SRR13180975	passes the trimming step	used for transcript reconstruction	44543874/44543874	41.8004%	ISR
+C. melo	SRR13180976	passes the trimming step	used for transcript reconstruction	65803737/65803737	55.3109%	ISR
+C. melo	SRR13180977	passes the trimming step	used for transcript reconstruction	39468829/39468829	51.1212%	ISR
+C. melo	SRR13180978	passes the trimming step	used for transcript reconstruction	34924919/34924919	47.7668%	ISR
+C. melo	SRR13180979	passes the trimming step	used for transcript reconstruction	42736386/42736386	53.7461%	ISR
+C. melo	SRR13180980	passes the trimming step	used for transcript reconstruction	59602361/59602361	55.1746%	ISR
+C. melo	SRR13180981	passes the trimming step	used for transcript reconstruction	41508749/41508749	53.7889%	ISR
+C. melo	SRR13180982	passes the trimming step	used for transcript reconstruction	52813431/52813431	47.1603%	ISR
+C. melo	SRR13180983	passes the trimming step	used for transcript reconstruction	63144213/63144213	52.955%	ISR
+C. melo	SRR13180984	passes the trimming step	used for transcript reconstruction	73086507/73086507	48.4045%	ISR
+C. melo	SRR13180985	passes the trimming step	used for transcript reconstruction	42045198/42045198	48.0142%	ISR
+C. melo	SRR13180986	passes the trimming step	used for transcript reconstruction	39638652/39638652	52.3137%	ISR
+C. melo	SRR1334838	passes the trimming step	not used for transcript reconstruction	25529470/25529470	81.8713%	IU
+C. melo	SRR1334843	passes the trimming step	not used for transcript reconstruction	25247904/25247904	83.9265%	IU
+C. melo	SRR1334844	passes the trimming step	not used for transcript reconstruction	29187774/29187774	83.9213%	IU
+C. melo	SRR1334911	passes the trimming step	not used for transcript reconstruction	33708045/33708045	84.5837%	IU
+C. melo	SRR1334912	passes the trimming step	not used for transcript reconstruction	32155666/32155666	84.1824%	IU
+C. melo	SRR1334916	passes the trimming step	not used for transcript reconstruction	35077229/35077229	83.2641%	IU
+C. melo	SRR1334917	passes the trimming step	not used for transcript reconstruction	39246288/39246288	83.0727%	IU
+C. melo	SRR1334918	passes the trimming step	not used for transcript reconstruction	24267855/24267855	83.9069%	IU
+C. melo	SRR1335731	passes the trimming step	not used for transcript reconstruction	22580135/22580135	82.9151%	IU
+C. melo	SRR1335732	passes the trimming step	not used for transcript reconstruction	22780410/22780410	83.9959%	IU
+C. melo	SRR1335733	passes the trimming step	not used for transcript reconstruction	44364028/44364028	84.6228%	IU
+C. melo	SRR13380185	passes the trimming step	not used for transcript reconstruction	16435101	78.7944%	U
+C. melo	SRR13380186	passes the trimming step	not used for transcript reconstruction	14404617	81.6512%	U
+C. melo	SRR13380187	passes the trimming step	not used for transcript reconstruction	13351234	82.9338%	U
+C. melo	SRR13380188	passes the trimming step	not used for transcript reconstruction	17164684	80.0645%	U
+C. melo	SRR13380189	passes the trimming step	not used for transcript reconstruction	14385141	82.8467%	U
+C. melo	SRR13380190	passes the trimming step	not used for transcript reconstruction	16308032	80.6294%	U
+C. melo	SRR13380191	passes the trimming step	not used for transcript reconstruction	9880368	68.6562%	U
+C. melo	SRR13380192	passes the trimming step	not used for transcript reconstruction	9773744	71.5352%	U
+C. melo	SRR13380193	passes the trimming step	not used for transcript reconstruction	12575904	82.4334%	U
+C. melo	SRR13380194	passes the trimming step	not used for transcript reconstruction	11640716	80.7281%	U
+C. melo	SRR13380195	passes the trimming step	not used for transcript reconstruction	10387902	64.6099%	U
+C. melo	SRR13380196	passes the trimming step	not used for transcript reconstruction	16689244	55.4326%	U
+C. melo	SRR13380197	passes the trimming step	not used for transcript reconstruction	9123401	44.7546%	U
+C. melo	SRR13380198	passes the trimming step	not used for transcript reconstruction	17836158	47.658%	U
+C. melo	SRR13380199	passes the trimming step	not used for transcript reconstruction	9949424	84.1165%	U
+C. melo	SRR13380200	passes the trimming step	not used for transcript reconstruction	21539172	83.327%	U
+C. melo	SRR1342450	passes the trimming step	not used for transcript reconstruction	32364236/32364236	84.5932%	IU
+C. melo	SRR1342451	passes the trimming step	not used for transcript reconstruction	43574372/43574372	84.7499%	IU
+C. melo	SRR1342452	passes the trimming step	not used for transcript reconstruction	34728398/34728398	83.5278%	IU
+C. melo	SRR1342454	passes the trimming step	not used for transcript reconstruction	33503784/33503784	83.4582%	IU
+C. melo	SRR1342455	passes the trimming step	not used for transcript reconstruction	27745644/27745644	83.8437%	IU
+C. melo	SRR1342457	passes the trimming step	not used for transcript reconstruction	16268681/16268681	83.9505%	IU
+C. melo	SRR1346109	passes the trimming step	not used for transcript reconstruction	13079385/13079385	83.2213%	IU
+C. melo	SRR1346110	passes the trimming step	not used for transcript reconstruction	20207361/20207361	83.0861%	IU
+C. melo	SRR1346111	passes the trimming step	not used for transcript reconstruction	9824338/9824338	82.4262%	IU
+C. melo	SRR1346112	passes the trimming step	not used for transcript reconstruction	9101896/9101896	81.2722%	IU
+C. melo	SRR1346114	passes the trimming step	not used for transcript reconstruction	13640125/13640125	81.802%	IU
+C. melo	SRR1346115	passes the trimming step	not used for transcript reconstruction	15357967/15357967	83.1008%	IU
+C. melo	SRR1346116	passes the trimming step	not used for transcript reconstruction	13611804/13611804	83.5566%	IU
+C. melo	SRR1346117	passes the trimming step	not used for transcript reconstruction	13571825/13571825	81.4318%	IU
+C. melo	SRR1346118	passes the trimming step	not used for transcript reconstruction	14167680/14167680	81.4262%	IU
+C. melo	SRR1346119	passes the trimming step	not used for transcript reconstruction	12807265/12807265	81.4913%	IU
+C. melo	SRR1346212	passes the trimming step	not used for transcript reconstruction	12762243/12762243	82.3573%	IU
+C. melo	SRR1346213	passes the trimming step	not used for transcript reconstruction	13100584/13100584	80.5113%	IU
+C. melo	SRR14366649	passes the trimming step	not used for transcript reconstruction	28975978/28975978	81.7607%	IU
+C. melo	SRR14366650	passes the trimming step	not used for transcript reconstruction	17776953/17776953	81.161%	IU
+C. melo	SRR14366651	passes the trimming step	not used for transcript reconstruction	17034050/17034050	80.8439%	IU
+C. melo	SRR14366652	passes the trimming step	not used for transcript reconstruction	19138791/19138791	80.5235%	IU
+C. melo	SRR14366653	passes the trimming step	not used for transcript reconstruction	19719815/19719815	81.1182%	IU
+C. melo	SRR14366654	passes the trimming step	not used for transcript reconstruction	16771524/16771524	82.5845%	IU
+C. melo	SRR14366655	passes the trimming step	not used for transcript reconstruction	20585562/20585562	83.0461%	IU
+C. melo	SRR14366656	passes the trimming step	not used for transcript reconstruction	20941481/20941481	82.7753%	IU
+C. melo	SRR14366657	passes the trimming step	not used for transcript reconstruction	20710710/20710710	82.1204%	IU
+C. melo	SRR14366658	passes the trimming step	not used for transcript reconstruction	23650457/23650457	82.0568%	IU
+C. melo	SRR14803590	passes the trimming step	used for transcript reconstruction	16144463/16144463	91.1531%	ISF
+C. melo	SRR14803591	passes the trimming step	used for transcript reconstruction	22479971/22479971	91.8345%	ISF
+C. melo	SRR14803592	passes the trimming step	used for transcript reconstruction	35647580/35647580	91.4639%	ISF
+C. melo	SRR14803593	passes the trimming step	used for transcript reconstruction	18317183/18317183	80.2306%	ISF
+C. melo	SRR14803594	passes the trimming step	used for transcript reconstruction	26106887/26106887	71.1735%	ISF
+C. melo	SRR14803595	passes the trimming step	used for transcript reconstruction	15211383/15211383	62.5651%	ISF
+C. melo	SRR14803596	passes the trimming step	used for transcript reconstruction	25701765/25701765	72.5055%	ISF
+C. melo	SRR14803597	passes the trimming step	used for transcript reconstruction	20473252/20473252	84.9641%	ISF
+C. melo	SRR14803598	passes the trimming step	used for transcript reconstruction	20477999/20477999	85.2217%	ISF
+C. melo	SRR14803599	passes the trimming step	used for transcript reconstruction	17053056/17053056	46.1525%	ISF
+C. melo	SRR14803600	passes the trimming step	used for transcript reconstruction	20990293/20990293	29.9656%	ISF
+C. melo	SRR14803601	passes the trimming step	used for transcript reconstruction	18710377/18710377	53.1375%	ISF
+C. melo	SRR14803602	passes the trimming step	used for transcript reconstruction	18988206/18988206	85.328%	ISF
+C. melo	SRR14803603	passes the trimming step	used for transcript reconstruction	14209341/14209341	83.8073%	ISF
+C. melo	SRR14803604	passes the trimming step	used for transcript reconstruction	16129096/16129096	84.8909%	ISF
+C. melo	SRR14803605	passes the trimming step	used for transcript reconstruction	17039274/17039274	83.781%	ISF
+C. melo	SRR14803606	passes the trimming step	used for transcript reconstruction	24620617/24620617	71.0985%	ISF
+C. melo	SRR14803607	passes the trimming step	used for transcript reconstruction	17033393/17033393	57.1936%	ISF
+C. melo	SRR14803608	passes the trimming step	used for transcript reconstruction	19715201/19715201	49.3165%	ISF
+C. melo	SRR14803609	passes the trimming step	used for transcript reconstruction	20780656/20780656	85.3361%	ISF
+C. melo	SRR14803610	passes the trimming step	used for transcript reconstruction	22857592/22857592	57.4337%	ISF
+C. melo	SRR14803611	passes the trimming step	used for transcript reconstruction	13456643/13456643	65.4843%	ISF
+C. melo	SRR14803612	passes the trimming step	used for transcript reconstruction	8149047/8149047	85.0681%	ISF
+C. melo	SRR14803613	passes the trimming step	used for transcript reconstruction	14064372/14064372	77.8684%	ISF
+C. melo	SRR14803614	passes the trimming step	used for transcript reconstruction	13705924/13705924	59.3656%	ISF
+C. melo	SRR14803615	passes the trimming step	used for transcript reconstruction	10326606/10326606	73.3676%	ISF
+C. melo	SRR14803616	passes the trimming step	used for transcript reconstruction	14633089/14633089	80.6939%	ISF
+C. melo	SRR16952091	passes the trimming step	used for transcript reconstruction	56647501	87.0424%	SR
+C. melo	SRR16952092	passes the trimming step	used for transcript reconstruction	89835646	88.5245%	SR
+C. melo	SRR16952093	passes the trimming step	used for transcript reconstruction	83589980	88.5828%	SR
+C. melo	SRR16952094	passes the trimming step	used for transcript reconstruction	90348387	89.4855%	SR
+C. melo	SRR16952095	passes the trimming step	used for transcript reconstruction	89901716	89.0078%	SR
+C. melo	SRR16952096	passes the trimming step	used for transcript reconstruction	85821401	87.6496%	SR
+C. melo	SRR16952097	passes the trimming step	used for transcript reconstruction	83787304	76.168%	SR
+C. melo	SRR16952098	passes the trimming step	used for transcript reconstruction	85456468	87.8013%	SR
+C. melo	SRR16952099	passes the trimming step	used for transcript reconstruction	89768204	85.4463%	SR
+C. melo	SRR16952100	passes the trimming step	used for transcript reconstruction	85077566	54.1322%	SR
+C. melo	SRR16952101	passes the trimming step	used for transcript reconstruction	91531428	88.4179%	SR
+C. melo	SRR16952102	passes the trimming step	used for transcript reconstruction	84401353	88.2472%	SR
+C. melo	SRR16952103	passes the trimming step	used for transcript reconstruction	85023117	88.6464%	SR
+C. melo	SRR16952104	passes the trimming step	used for transcript reconstruction	91124184	89.167%	SR
+C. melo	SRR16952105	passes the trimming step	used for transcript reconstruction	90600752	87.9419%	SR
+C. melo	SRR16952106	passes the trimming step	used for transcript reconstruction	90005268	87.8293%	SR
+C. melo	SRR16952107	passes the trimming step	used for transcript reconstruction	84426488	88.3891%	SR
+C. melo	SRR16952108	passes the trimming step	used for transcript reconstruction	90728194	88.7164%	SR
+C. melo	SRR16952109	passes the trimming step	used for transcript reconstruction	84374499	87.0559%	SR
+C. melo	SRR16952110	passes the trimming step	used for transcript reconstruction	90237961	88.3025%	SR
+C. melo	SRR16952111	passes the trimming step	used for transcript reconstruction	90494152	88.2474%	SR
+C. melo	SRR16952112	passes the trimming step	used for transcript reconstruction	87850120	87.518%	SR
+C. melo	SRR16952113	passes the trimming step	used for transcript reconstruction	90910690	87.7381%	SR
+C. melo	SRR16952114	passes the trimming step	used for transcript reconstruction	83731483	88.4132%	SR
+C. melo	SRR16952115	passes the trimming step	used for transcript reconstruction	85981162	88.1608%	SR
+C. melo	SRR16952116	passes the trimming step	used for transcript reconstruction	91167827	88.0904%	SR
+C. melo	SRR16952117	passes the trimming step	used for transcript reconstruction	84650051	88.669%	SR
+C. melo	SRR16952118	passes the trimming step	used for transcript reconstruction	94708289	85.4414%	SR
+C. melo	SRR17149635	passes the trimming step	not used for transcript reconstruction	20116782/20116782	83.5927%	IU
+C. melo	SRR17149636	passes the trimming step	not used for transcript reconstruction	23308007/23308007	82.106%	IU
+C. melo	SRR17149637	passes the trimming step	not used for transcript reconstruction	20576956/20576956	83.6184%	IU
+C. melo	SRR17149638	passes the trimming step	not used for transcript reconstruction	20562897/20562897	81.5575%	IU
+C. melo	SRR17149639	passes the trimming step	not used for transcript reconstruction	22710732/22710732	83.4018%	IU
+C. melo	SRR17149640	passes the trimming step	not used for transcript reconstruction	22407849/22407849	82.1311%	IU
+C. melo	SRR17200224	passes the trimming step	used for transcript reconstruction	20718537/20718537	85.9475%	ISR
+C. melo	SRR17200225	passes the trimming step	used for transcript reconstruction	18501966/18501966	85.9314%	ISR
+C. melo	SRR17200226	passes the trimming step	used for transcript reconstruction	19337984/19337984	85.5324%	ISR
+C. melo	SRR17200227	passes the trimming step	used for transcript reconstruction	22721236/22721236	86.8318%	ISR
+C. melo	SRR17200228	passes the trimming step	used for transcript reconstruction	24144022/24144022	86.6634%	ISR
+C. melo	SRR17200229	passes the trimming step	used for transcript reconstruction	19926942/19926942	87.279%	ISR
+C. melo	SRR17319283	passes the trimming step	not used for transcript reconstruction	20744221/20744221	85.3882%	IU
+C. melo	SRR17319284	passes the trimming step	not used for transcript reconstruction	25266335/25266335	84.3292%	IU
+C. melo	SRR17319285	passes the trimming step	not used for transcript reconstruction	18793591/18793591	85.1288%	IU
+C. melo	SRR17319286	passes the trimming step	not used for transcript reconstruction	25667834/25667834	85.348%	IU
+C. melo	SRR17319287	passes the trimming step	not used for transcript reconstruction	19820486/19820486	84.4979%	IU
+C. melo	SRR17319288	passes the trimming step	not used for transcript reconstruction	18747233/18747233	85.2034%	IU
+C. melo	SRR17319289	passes the trimming step	not used for transcript reconstruction	22033432/22033432	84.8239%	IU
+C. melo	SRR17319290	passes the trimming step	not used for transcript reconstruction	29013194/29013194	85.7536%	IU
+C. melo	SRR17319291	passes the trimming step	not used for transcript reconstruction	25226115/25226115	85.8146%	IU
+C. melo	SRR17319292	passes the trimming step	not used for transcript reconstruction	24168957/24168957	85.7041%	IU
+C. melo	SRR17319293	passes the trimming step	not used for transcript reconstruction	20690155/20690155	84.5593%	IU
+C. melo	SRR17319294	passes the trimming step	not used for transcript reconstruction	27184345/27184345	84.5612%	IU
+C. melo	SRR17319295	passes the trimming step	not used for transcript reconstruction	22613912/22613912	84.6288%	IU
+C. melo	SRR17319296	passes the trimming step	not used for transcript reconstruction	25786498/25786498	85.7123%	IU
+C. melo	SRR17319297	passes the trimming step	not used for transcript reconstruction	28188201/28188201	85.2354%	IU
+C. melo	SRR17319298	passes the trimming step	not used for transcript reconstruction	26138357/26138357	85.8173%	IU
+C. melo	SRR17319299	passes the trimming step	not used for transcript reconstruction	28854695/28854695	85.8212%	IU
+C. melo	SRR17319300	passes the trimming step	not used for transcript reconstruction	27711254/27711254	84.2282%	IU
+C. melo	SRR17319301	passes the trimming step	not used for transcript reconstruction	24798231/24798231	84.0407%	IU
+C. melo	SRR17319302	passes the trimming step	not used for transcript reconstruction	29850421/29850421	86.2799%	IU
+C. melo	SRR17319303	passes the trimming step	not used for transcript reconstruction	19579169/19579169	85.1606%	IU
+C. melo	SRR17319304	passes the trimming step	not used for transcript reconstruction	21926360/21926360	83.175%	IU
+C. melo	SRR17319305	passes the trimming step	not used for transcript reconstruction	23374566/23374566	83.5246%	IU
+C. melo	SRR17319306	passes the trimming step	not used for transcript reconstruction	23072540/23072540	85.62%	IU
+C. melo	SRR17319307	passes the trimming step	not used for transcript reconstruction	23532700/23532700	85.1002%	IU
+C. melo	SRR17319308	passes the trimming step	not used for transcript reconstruction	24951113/24951113	85.0844%	IU
+C. melo	SRR17319309	passes the trimming step	not used for transcript reconstruction	25938182/25938182	85.3165%	IU
+C. melo	SRR17319310	passes the trimming step	not used for transcript reconstruction	24984054/24984054	85.4248%	IU
+C. melo	SRR17319311	passes the trimming step	not used for transcript reconstruction	28784876/28784876	84.7088%	IU
+C. melo	SRR17319312	passes the trimming step	not used for transcript reconstruction	24782696/24782696	85.028%	IU
+C. melo	SRR17541320	passes the trimming step	not used for transcript reconstruction	24463066/24463066	80.547%	IU
+C. melo	SRR17541321	passes the trimming step	not used for transcript reconstruction	20664609/20664609	80.5353%	IU
+C. melo	SRR17541322	passes the trimming step	not used for transcript reconstruction	20118889/20118889	79.2964%	IU
+C. melo	SRR17541323	passes the trimming step	not used for transcript reconstruction	19345863/19345863	81.7758%	IU
+C. melo	SRR17541324	passes the trimming step	not used for transcript reconstruction	22630796/22630796	81.6351%	IU
+C. melo	SRR17541325	passes the trimming step	not used for transcript reconstruction	21688701/21688701	81.831%	IU
+C. melo	SRR17541326	passes the trimming step	not used for transcript reconstruction	21464939/21464939	78.8427%	IU
+C. melo	SRR17541327	passes the trimming step	not used for transcript reconstruction	22631542/22631542	78.9898%	IU
+C. melo	SRR17541328	passes the trimming step	not used for transcript reconstruction	23192623/23192623	79.1261%	IU
+C. melo	SRR17541329	passes the trimming step	not used for transcript reconstruction	22499372/22499372	78.0667%	IU
+C. melo	SRR17541330	passes the trimming step	not used for transcript reconstruction	22668137/22668137	80.4358%	IU
+C. melo	SRR17541331	passes the trimming step	not used for transcript reconstruction	20461561/20461561	78.9813%	IU
+C. melo	SRR17541332	passes the trimming step	not used for transcript reconstruction	21354086/21354086	81.733%	IU
+C. melo	SRR17541333	passes the trimming step	not used for transcript reconstruction	23649118/23649118	81.1915%	IU
+C. melo	SRR17541334	passes the trimming step	not used for transcript reconstruction	20888287/20888287	82.7184%	IU
+C. melo	SRR17541335	passes the trimming step	not used for transcript reconstruction	19338646/19338646	81.4992%	IU
+C. melo	SRR17541336	passes the trimming step	not used for transcript reconstruction	21370605/21370605	81.6297%	IU
+C. melo	SRR17541337	passes the trimming step	not used for transcript reconstruction	21674240/21674240	81.4477%	IU
+C. melo	SRR17541338	passes the trimming step	not used for transcript reconstruction	21121182/21121182	75.994%	IU
+C. melo	SRR17541339	passes the trimming step	not used for transcript reconstruction	20712836/20712836	81.7225%	IU
+C. melo	SRR17541340	passes the trimming step	not used for transcript reconstruction	20414331/20414331	81.7439%	IU
+C. melo	SRR17541341	passes the trimming step	not used for transcript reconstruction	23760324/23760324	83.5885%	IU
+C. melo	SRR17541342	passes the trimming step	not used for transcript reconstruction	24818921/24818921	82.7116%	IU
+C. melo	SRR17541343	passes the trimming step	not used for transcript reconstruction	22396922/22396922	83.486%	IU
+C. melo	SRR17541344	passes the trimming step	not used for transcript reconstruction	24351377/24351377	81.0214%	IU
+C. melo	SRR17541345	passes the trimming step	not used for transcript reconstruction	25729260/25729260	81.234%	IU
+C. melo	SRR17541346	passes the trimming step	not used for transcript reconstruction	21787791/21787791	82.3422%	IU
+C. melo	SRR17541347	passes the trimming step	not used for transcript reconstruction	19179383/19179383	82.6576%	IU
+C. melo	SRR17541348	passes the trimming step	not used for transcript reconstruction	20872534/20872534	82.5665%	IU
+C. melo	SRR17541349	passes the trimming step	not used for transcript reconstruction	19666774/19666774	82.4205%	IU
+C. melo	SRR1777736	passes the trimming step	used for transcript reconstruction	4036574	76.9698%	SR
+C. melo	SRR1777737	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1777879	passes the trimming step	not used for transcript reconstruction	41914899	81.8394%	U
+C. melo	SRR1777886	passes the trimming step	not used for transcript reconstruction	38486661	74.3412%	U
+C. melo	SRR1777894	passes the trimming step	not used for transcript reconstruction	57530641	84.0446%	U
+C. melo	SRR1778703	passes the trimming step	not used for transcript reconstruction	52185246	72.5838%	U
+C. melo	SRR1778704	passes the trimming step	used for transcript reconstruction	17939408	86.5001%	SR
+C. melo	SRR1778705	passes the trimming step	not used for transcript reconstruction	18467045	87.2271%	U
+C. melo	SRR1778706	passes the trimming step	used for transcript reconstruction	8596912	86.0202%	SR
+C. melo	SRR1778707	passes the trimming step	used for transcript reconstruction	7995215	85.8951%	SR
+C. melo	SRR1778804	passes the trimming step	used for transcript reconstruction	8641719	86.8756%	SR
+C. melo	SRR1778805	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1778824	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1778868	passes the trimming step	used for transcript reconstruction	8753826	84.1603%	SR
+C. melo	SRR1779159	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779166	passes the trimming step	not used for transcript reconstruction	20839404	83.7218%	U
+C. melo	SRR1779173	passes the trimming step	used for transcript reconstruction	8342233	67.7041%	SR
+C. melo	SRR1779178	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779182	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779184	passes the trimming step	used for transcript reconstruction	8373739	78.3988%	SR
+C. melo	SRR1779188	passes the trimming step	used for transcript reconstruction	11065299	80.8066%	SR
+C. melo	SRR1779194	passes the trimming step	used for transcript reconstruction	9249957	82.9232%	SR
+C. melo	SRR1779199	passes the trimming step	used for transcript reconstruction	6058273	78.4797%	SR
+C. melo	SRR1779217	passes the trimming step	used for transcript reconstruction	11194342	79.3642%	SR
+C. melo	SRR1779225	passes the trimming step	used for transcript reconstruction	10964656	85.189%	SR
+C. melo	SRR1779232	passes the trimming step	not used for transcript reconstruction	14262345	84.5915%	U
+C. melo	SRR1779279	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779284	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779291	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779296	passes the trimming step	used for transcript reconstruction	4868859	83.5633%	SR
+C. melo	SRR1779300	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779305	passes the trimming step	not used for transcript reconstruction	18943162	83.9977%	U
+C. melo	SRR1779312	passes the trimming step	not used for transcript reconstruction	20882907	73.7034%	U
+C. melo	SRR1779317	passes the trimming step	not used for transcript reconstruction	15142955	83.5904%	U
+C. melo	SRR1779320	passes the trimming step	used for transcript reconstruction	19404179	86.669%	SR
+C. melo	SRR1779321	passes the trimming step	not used for transcript reconstruction	21186123	76.1837%	U
+C. melo	SRR1779322	passes the trimming step	not used for transcript reconstruction	19275360	84.973%	U
+C. melo	SRR1779323	passes the trimming step	not used for transcript reconstruction	15663387	87.0122%	U
+C. melo	SRR1779324	passes the trimming step	not used for transcript reconstruction	19183985	87.039%	U
+C. melo	SRR1779325	passes the trimming step	not used for transcript reconstruction	16193175	81.8023%	U
+C. melo	SRR1779326	passes the trimming step	not used for transcript reconstruction	15088464	84.9884%	U
+C. melo	SRR1779327	passes the trimming step	used for transcript reconstruction	8108852	78.6975%	SR
+C. melo	SRR1779328	passes the trimming step	used for transcript reconstruction	8623749	85.8564%	SR
+C. melo	SRR1779337	passes the trimming step	used for transcript reconstruction	9410459	77.5893%	SR
+C. melo	SRR1779343	passes the trimming step	used for transcript reconstruction	19920455	86.9644%	SR
+C. melo	SRR1779344	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779346	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779349	passes the trimming step	used for transcript reconstruction	8995460	87.826%	SR
+C. melo	SRR1779351	passes the trimming step	used for transcript reconstruction	7241484	86.1722%	SR
+C. melo	SRR1779352	passes the trimming step	used for transcript reconstruction	7474938	86.6062%	SR
+C. melo	SRR1779354	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779355	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779356	passes the trimming step	used for transcript reconstruction	6785305	87.2003%	SR
+C. melo	SRR1779358	passes the trimming step	used for transcript reconstruction	8818406	87.4021%	SR
+C. melo	SRR1779359	passes the trimming step	used for transcript reconstruction	6581502	86.6783%	SR
+C. melo	SRR1779361	passes the trimming step	used for transcript reconstruction	6237404	88.074%	SR
+C. melo	SRR1779365	passes the trimming step	used for transcript reconstruction	5437229	85.5878%	SR
+C. melo	SRR1779366	passes the trimming step	used for transcript reconstruction	7619016	85.1379%	SR
+C. melo	SRR1779368	passes the trimming step	used for transcript reconstruction	5815274	85.7701%	SR
+C. melo	SRR1779372	passes the trimming step	used for transcript reconstruction	3188358	83.893%	SR
+C. melo	SRR1779375	passes the trimming step	used for transcript reconstruction	7309728	86.0434%	SR
+C. melo	SRR1779377	passes the trimming step	used for transcript reconstruction	6166084	88.0223%	SR
+C. melo	SRR1779430	passes the trimming step	used for transcript reconstruction	4789538	87.2649%	SR
+C. melo	SRR1779431	passes the trimming step	used for transcript reconstruction	6253812	86.5582%	SR
+C. melo	SRR1779432	passes the trimming step	not used for transcript reconstruction	16356153	86.0065%	U
+C. melo	SRR1779433	passes the trimming step	used for transcript reconstruction	5295215	85.0609%	SR
+C. melo	SRR1779438	passes the trimming step	used for transcript reconstruction	5211068	86.2409%	SR
+C. melo	SRR1779441	passes the trimming step	used for transcript reconstruction	6328759	86.4884%	SR
+C. melo	SRR1779442	passes the trimming step	used for transcript reconstruction	7220900	87.6877%	SR
+C. melo	SRR1779444	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779445	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779448	passes the trimming step	used for transcript reconstruction	3043572	83.1585%	SR
+C. melo	SRR1779449	passes the trimming step	not used for transcript reconstruction	17016729	84.2831%	U
+C. melo	SRR1779451	passes the trimming step	used for transcript reconstruction	4279741	87.1224%	SR
+C. melo	SRR1779452	passes the trimming step	used for transcript reconstruction	6650004	65.2481%	SR
+C. melo	SRR1779453	passes the trimming step	used for transcript reconstruction	5975624	86.0249%	SR
+C. melo	SRR1779462	passes the trimming step	used for transcript reconstruction	5610123	84.2249%	SR
+C. melo	SRR1779464	passes the trimming step	used for transcript reconstruction	6471301	81.634%	SR
+C. melo	SRR1779466	passes the trimming step	used for transcript reconstruction	6888206	80.8617%	SR
+C. melo	SRR1779485	passes the trimming step	used for transcript reconstruction	8327750	86.45%	SR
+C. melo	SRR1779486	passes the trimming step	not used for transcript reconstruction	18685934	86.7108%	U
+C. melo	SRR1779487	passes the trimming step	used for transcript reconstruction	8108001	86.9785%	SR
+C. melo	SRR1779489	passes the trimming step	used for transcript reconstruction	7475679	80.8237%	SR
+C. melo	SRR1779490	passes the trimming step	used for transcript reconstruction	7372261	86.8263%	SR
+C. melo	SRR1779491	passes the trimming step	used for transcript reconstruction	6622926	84.7703%	SR
+C. melo	SRR1779496	passes the trimming step	used for transcript reconstruction	6274442	77.9979%	SR
+C. melo	SRR1779498	passes the trimming step	used for transcript reconstruction	8426786	84.3239%	SR
+C. melo	SRR1779499	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779501	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779503	passes the trimming step	used for transcript reconstruction	6180118	86.821%	SR
+C. melo	SRR1779504	passes the trimming step	used for transcript reconstruction	5076764	84.2207%	SR
+C. melo	SRR1779505	passes the trimming step	used for transcript reconstruction	6304397	87.4451%	SR
+C. melo	SRR1779508	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779509	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779510	passes the trimming step	used for transcript reconstruction	7633177	86.4816%	SR
+C. melo	SRR1779517	passes the trimming step	used for transcript reconstruction	5304456	78.0162%	SR
+C. melo	SRR1779522	passes the trimming step	used for transcript reconstruction	4633066	87.0732%	SR
+C. melo	SRR1779523	passes the trimming step	used for transcript reconstruction	4777177	85.1565%	SR
+C. melo	SRR1779526	passes the trimming step	used for transcript reconstruction	4247073	77.7387%	SR
+C. melo	SRR1779528	passes the trimming step	used for transcript reconstruction	7197968	86.7368%	SR
+C. melo	SRR1779529	passes the trimming step	not used for transcript reconstruction	21841373	85.0657%	U
+C. melo	SRR1779530	passes the trimming step	used for transcript reconstruction	10387628	86.0815%	SR
+C. melo	SRR1779533	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779534	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779579	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1779580	passes the trimming step	used for transcript reconstruction	9193533	85.9543%	SR
+C. melo	SRR1779585	passes the trimming step	used for transcript reconstruction	8556343	83.7774%	SR
+C. melo	SRR1779586	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1781507	doesn't pass the trimming step	NA	0	NA	NA
+C. melo	SRR1781509	passes the trimming step	used for transcript reconstruction	9356234	87.2083%	SR
+C. melo	SRR1781510	passes the trimming step	used for transcript reconstruction	9329018	84.2063%	SR
+C. melo	SRR2056459	passes the trimming step	used for transcript reconstruction	3287510	62.8619%	SR
+C. melo	SRR2056465	passes the trimming step	used for transcript reconstruction	5011236	68.3289%	SR
+C. melo	SRR2056476	passes the trimming step	used for transcript reconstruction	3969465	78.1749%	SR
+C. melo	SRR2056479	passes the trimming step	used for transcript reconstruction	4740660	77.298%	SR
+C. melo	SRR2056481	passes the trimming step	used for transcript reconstruction	4040661	56.7683%	SR
+C. melo	SRR2056482	passes the trimming step	used for transcript reconstruction	3008271	77.6646%	SR
+C. melo	SRR2056484	passes the trimming step	used for transcript reconstruction	4922522	36.3915%	SR
+C. melo	SRR2056485	passes the trimming step	used for transcript reconstruction	4326650	33.1816%	SR
+C. melo	SRR2056487	passes the trimming step	used for transcript reconstruction	5114249	13.6958%	SR
+C. melo	SRR2056488	passes the trimming step	used for transcript reconstruction	7130323	84.9146%	SR
+C. melo	SRR2056490	passes the trimming step	used for transcript reconstruction	5906155	84.367%	SR
+C. melo	SRR2056491	passes the trimming step	used for transcript reconstruction	6612527	85.186%	SR
+C. melo	SRR2056493	passes the trimming step	used for transcript reconstruction	4462888	69.7971%	SR
+C. melo	SRR2056495	passes the trimming step	used for transcript reconstruction	5440832	66.3877%	SR
+C. melo	SRR2056496	passes the trimming step	used for transcript reconstruction	4022882	71.4335%	SR
+C. melo	SRR2056498	passes the trimming step	used for transcript reconstruction	3200268	80.071%	SR
+C. melo	SRR2056499	passes the trimming step	used for transcript reconstruction	6297418	79.7935%	SR
+C. melo	SRR2056501	passes the trimming step	used for transcript reconstruction	5941917	83.9296%	SR
+C. melo	SRR2056502	passes the trimming step	used for transcript reconstruction	3216148	21.898%	SR
+C. melo	SRR2056504	passes the trimming step	used for transcript reconstruction	3435600	28.7101%	SR
+C. melo	SRR2056506	passes the trimming step	used for transcript reconstruction	6387974	38.8322%	SR
+C. melo	SRR2056507	passes the trimming step	used for transcript reconstruction	7325738	80.9629%	SR
+C. melo	SRR2056509	passes the trimming step	used for transcript reconstruction	7592445	84.4917%	SR
+C. melo	SRR2056510	passes the trimming step	used for transcript reconstruction	5134342	84.0371%	SR
+C. melo	SRR2082790	passes the trimming step	not used for transcript reconstruction	19917140	86.9291%	U
+C. melo	SRR2082791	passes the trimming step	not used for transcript reconstruction	19259692	86.5904%	U
+C. melo	SRR2082796	passes the trimming step	not used for transcript reconstruction	19241274	84.9502%	U
+C. melo	SRR2082813	passes the trimming step	not used for transcript reconstruction	21450374	83.669%	U
+C. melo	SRR2082831	passes the trimming step	not used for transcript reconstruction	21550911	82.8288%	U
+C. melo	SRR2082832	passes the trimming step	not used for transcript reconstruction	21094371	81.335%	U
+C. melo	SRR2082865	passes the trimming step	not used for transcript reconstruction	18244006	45.9756%	U
+C. melo	SRR2082935	passes the trimming step	not used for transcript reconstruction	22189914	86.5085%	U
+C. melo	SRR2082943	passes the trimming step	not used for transcript reconstruction	21609189	82.3664%	U
+C. melo	SRR2082953	passes the trimming step	not used for transcript reconstruction	21577787	82.1617%	U
+C. melo	SRR2082958	passes the trimming step	not used for transcript reconstruction	21367534	83.0346%	U
+C. melo	SRR2082965	passes the trimming step	not used for transcript reconstruction	19431974	80.9694%	U
+C. melo	SRR2508879	passes the trimming step	not used for transcript reconstruction	5635631/5635631	55.6753%	IU
+C. melo	SRR2508880	passes the trimming step	not used for transcript reconstruction	4389370/4389370	67.6998%	IU
+C. melo	SRR2508881	passes the trimming step	not used for transcript reconstruction	12285746/12285746	63.6227%	IU
+C. melo	SRR2508882	passes the trimming step	not used for transcript reconstruction	13015764/13015764	61.6131%	IU
+C. melo	SRR2962681	passes the trimming step	not used for transcript reconstruction	25331243/25331243	83.3924%	IU
+C. melo	SRR2962683	passes the trimming step	not used for transcript reconstruction	34708079/34708079	81.7438%	IU
+C. melo	SRR2962684	passes the trimming step	not used for transcript reconstruction	25333286/25333286	80.8476%	IU
+C. melo	SRR2962686	passes the trimming step	not used for transcript reconstruction	27049192/27049192	76.9266%	IU
+C. melo	SRR2962687	passes the trimming step	not used for transcript reconstruction	18800792/18800792	82.7715%	IU
+C. melo	SRR2962688	passes the trimming step	not used for transcript reconstruction	20201058/20201058	77.3016%	IU
+C. melo	SRR2962689	passes the trimming step	not used for transcript reconstruction	30353466/30353466	78.4548%	IU
+C. melo	SRR2962690	passes the trimming step	not used for transcript reconstruction	37009759/37009759	84.0989%	IU
+C. melo	SRR2962691	passes the trimming step	not used for transcript reconstruction	34385999/34385999	81.4177%	IU
+C. melo	SRR3199616	passes the trimming step	used for transcript reconstruction	7212815	82.3741%	SR
+C. melo	SRR3199617	passes the trimming step	used for transcript reconstruction	5027660	82.2211%	SR
+C. melo	SRR3199618	passes the trimming step	used for transcript reconstruction	5296457	83.324%	SR
+C. melo	SRR3199619	passes the trimming step	used for transcript reconstruction	4987962	81.9495%	SR
+C. melo	SRR3199620	passes the trimming step	used for transcript reconstruction	4603508	82.9029%	SR
+C. melo	SRR3199621	passes the trimming step	used for transcript reconstruction	5003802	83.1454%	SR
+C. melo	SRR3199622	passes the trimming step	used for transcript reconstruction	3930639	79.0493%	SR
+C. melo	SRR3199623	passes the trimming step	used for transcript reconstruction	5922285	81.9763%	SR
+C. melo	SRR3199624	passes the trimming step	used for transcript reconstruction	8193653	83.5187%	SR
+C. melo	SRR3199625	passes the trimming step	used for transcript reconstruction	10827628	81.2772%	SR
+C. melo	SRR3199626	passes the trimming step	used for transcript reconstruction	7700259	74.8763%	SR
+C. melo	SRR3199627	passes the trimming step	used for transcript reconstruction	5390798	63.6092%	SR
+C. melo	SRR3199628	passes the trimming step	used for transcript reconstruction	5755675	74.6278%	SR
+C. melo	SRR3199629	passes the trimming step	used for transcript reconstruction	7578712	80.5145%	SR
+C. melo	SRR3199630	passes the trimming step	used for transcript reconstruction	4976336	61.6138%	SR
+C. melo	SRR3199631	passes the trimming step	used for transcript reconstruction	5692629	77.6465%	SR
+C. melo	SRR3199632	passes the trimming step	used for transcript reconstruction	7509116	64.6351%	SR
+C. melo	SRR3199633	passes the trimming step	used for transcript reconstruction	6644127	79.4474%	SR
+C. melo	SRR3199635	passes the trimming step	used for transcript reconstruction	7057616	78.692%	SR
+C. melo	SRR3199656	passes the trimming step	used for transcript reconstruction	8227806	78.264%	SR
+C. melo	SRR3199657	passes the trimming step	used for transcript reconstruction	7811721	82.7785%	SR
+C. melo	SRR3199658	passes the trimming step	used for transcript reconstruction	8370238	83.2157%	SR
+C. melo	SRR3199659	passes the trimming step	used for transcript reconstruction	4841494	82.0042%	SR
+C. melo	SRR3199660	passes the trimming step	used for transcript reconstruction	6335534	83.308%	SR
+C. melo	SRR4279681	passes the trimming step	not used for transcript reconstruction	24066402/24066402	86.3294%	IU
+C. melo	SRR4279682	passes the trimming step	not used for transcript reconstruction	21661267/21661267	83.3194%	IU
+C. melo	SRR4279683	passes the trimming step	not used for transcript reconstruction	21447961/21447961	83.0495%	IU
+C. melo	SRR4279684	passes the trimming step	not used for transcript reconstruction	19609474/19609474	86.6%	IU
+C. melo	SRR5127921	passes the trimming step	not used for transcript reconstruction	19634994/19634994	83.574%	IU
+C. melo	SRR5127926	passes the trimming step	not used for transcript reconstruction	17211321/17211321	79.2432%	IU
+C. melo	SRR5128010	passes the trimming step	not used for transcript reconstruction	15942096/15942096	80.9385%	IU
+C. melo	SRR5128011	passes the trimming step	not used for transcript reconstruction	18362324/18362324	82.8623%	IU
+C. melo	SRR5309817	passes the trimming step	not used for transcript reconstruction	14891729	84.7931%	U
+C. melo	SRR5309818	passes the trimming step	not used for transcript reconstruction	21829279	84.0923%	U
+C. melo	SRR5309819	passes the trimming step	not used for transcript reconstruction	16784865	82.2012%	U
+C. melo	SRR5309820	passes the trimming step	not used for transcript reconstruction	17563132	83.7928%	U
+C. melo	SRR5309821	passes the trimming step	not used for transcript reconstruction	16948511	83.364%	U
+C. melo	SRR5309822	passes the trimming step	not used for transcript reconstruction	9414368	83.0216%	U
+C. melo	SRR5309823	passes the trimming step	not used for transcript reconstruction	18478657	85.3483%	U
+C. melo	SRR5309824	passes the trimming step	not used for transcript reconstruction	13784510	85.2185%	U
+C. melo	SRR5309825	passes the trimming step	not used for transcript reconstruction	16415781	85.0925%	U
+C. melo	SRR5309826	passes the trimming step	not used for transcript reconstruction	16004183	85.5676%	U
+C. melo	SRR5309827	passes the trimming step	not used for transcript reconstruction	16962664	85.8123%	U
+C. melo	SRR5309828	passes the trimming step	not used for transcript reconstruction	13166273	85.2838%	U
+C. melo	SRR5309829	passes the trimming step	not used for transcript reconstruction	17348626	84.8347%	U
+C. melo	SRR5309830	passes the trimming step	not used for transcript reconstruction	14597499	83.8941%	U
+C. melo	SRR5309831	passes the trimming step	not used for transcript reconstruction	18321790	83.796%	U
+C. melo	SRR5309832	passes the trimming step	not used for transcript reconstruction	13798614	85.4377%	U
+C. melo	SRR5309833	passes the trimming step	not used for transcript reconstruction	15598511	85.4694%	U
+C. melo	SRR5309834	passes the trimming step	not used for transcript reconstruction	13373658	85.394%	U
+C. melo	SRR5309835	passes the trimming step	not used for transcript reconstruction	17459862	85.3765%	U
+C. melo	SRR5309836	passes the trimming step	not used for transcript reconstruction	14570935	85.3018%	U
+C. melo	SRR5309837	passes the trimming step	not used for transcript reconstruction	14834173	84.3212%	U
+C. melo	SRR5309838	passes the trimming step	not used for transcript reconstruction	16889793	85.7139%	U
+C. melo	SRR5309839	passes the trimming step	not used for transcript reconstruction	13024464	85.6893%	U
+C. melo	SRR5309840	passes the trimming step	not used for transcript reconstruction	15188283	85.8221%	U
+C. melo	SRR5405098	passes the trimming step	not used for transcript reconstruction	3377057/3377057	76.2958%	IU
+C. melo	SRR5405099	passes the trimming step	not used for transcript reconstruction	6247563/6247563	84.5163%	IU
+C. melo	SRR5405100	passes the trimming step	used for transcript reconstruction	22619542/22619542	86.8085%	ISF
+C. melo	SRR5405101	passes the trimming step	used for transcript reconstruction	19665246/19665246	85.0991%	ISF
+C. melo	SRR5405102	passes the trimming step	used for transcript reconstruction	16237054/16237054	86.923%	ISF
+C. melo	SRR5405103	passes the trimming step	used for transcript reconstruction	22213756/22213756	90.4136%	ISF
+C. melo	SRR5405104	passes the trimming step	not used for transcript reconstruction	6412796/6412796	83.7729%	IU
+C. melo	SRR5405105	passes the trimming step	not used for transcript reconstruction	4303268/4303268	82.8162%	IU
+C. melo	SRR5405106	passes the trimming step	used for transcript reconstruction	7329290/7329290	48.5995%	ISF
+C. melo	SRR5405107	passes the trimming step	used for transcript reconstruction	4422241/4422241	49.1306%	ISF
+C. melo	SRR5405108	passes the trimming step	not used for transcript reconstruction	11064847/11064847	52.1765%	IU
+C. melo	SRR5405109	passes the trimming step	not used for transcript reconstruction	8460962/8460962	68.058%	IU
+C. melo	SRR5405110	passes the trimming step	used for transcript reconstruction	3730012/3730012	85.8776%	ISF
+C. melo	SRR5405111	passes the trimming step	used for transcript reconstruction	6507647/6507647	43.5409%	ISF
+C. melo	SRR5405112	passes the trimming step	used for transcript reconstruction	3501339/3501339	44.617%	ISF
+C. melo	SRR5405113	passes the trimming step	used for transcript reconstruction	7943769/7943769	58.3025%	ISF
+C. melo	SRR5405114	passes the trimming step	used for transcript reconstruction	4516500/4516500	59.6066%	ISF
+C. melo	SRR5405115	passes the trimming step	used for transcript reconstruction	3810972/3810972	74.4514%	ISF
+C. melo	SRR5405116	passes the trimming step	used for transcript reconstruction	6551095/6551095	38.3591%	ISF
+C. melo	SRR5405117	passes the trimming step	used for transcript reconstruction	4907573/4907573	40.9183%	ISF
+C. melo	SRR5465679	passes the trimming step	used for transcript reconstruction	37934661	81.8551%	SR
+C. melo	SRR5465681	passes the trimming step	used for transcript reconstruction	37302683	83.0079%	SR
+C. melo	SRR5465682	passes the trimming step	used for transcript reconstruction	42668646	78.3724%	SR
+C. melo	SRR5465684	passes the trimming step	used for transcript reconstruction	45919968	80.3611%	SR
+C. melo	SRR5465686	passes the trimming step	used for transcript reconstruction	44385734/44385734	69.198%	ISR
+C. melo	SRR5465688	passes the trimming step	used for transcript reconstruction	25472594/25472594	14.1224%	ISR
+C. melo	SRR5465690	passes the trimming step	used for transcript reconstruction	35036551/35036551	12.8983%	ISR
+C. melo	SRR5465692	passes the trimming step	used for transcript reconstruction	34328077/34328077	73.061%	ISR
+C. melo	SRR5465694	passes the trimming step	used for transcript reconstruction	27384610/27384610	74.2223%	ISR
+C. melo	SRR5465696	passes the trimming step	used for transcript reconstruction	24575429/24575429	72.1313%	ISR
+C. melo	SRR6023127	passes the trimming step	not used for transcript reconstruction	16255367/16255367	80.898%	IU
+C. melo	SRR6023128	passes the trimming step	not used for transcript reconstruction	15679571/15679571	81.977%	IU
+C. melo	SRR6023129	passes the trimming step	not used for transcript reconstruction	16205987/16205987	86.0095%	IU
+C. melo	SRR6023130	passes the trimming step	not used for transcript reconstruction	18777938/18777938	84.2079%	IU
+C. melo	SRR6023131	passes the trimming step	not used for transcript reconstruction	19421249/19421249	84.9046%	IU
+C. melo	SRR6023132	passes the trimming step	not used for transcript reconstruction	21489631/21489631	84.5415%	IU
+C. melo	SRR6023163	passes the trimming step	not used for transcript reconstruction	23717237/23717237	82.1313%	IU
+C. melo	SRR6023164	passes the trimming step	not used for transcript reconstruction	19063659/19063659	84.9398%	IU
+C. melo	SRR6023165	passes the trimming step	not used for transcript reconstruction	20830717/20830717	83.7846%	IU
+C. melo	SRR6023166	passes the trimming step	not used for transcript reconstruction	17654143/17654143	83.2418%	IU
+C. melo	SRR6023167	passes the trimming step	not used for transcript reconstruction	19589688/19589688	85.03%	IU
+C. melo	SRR6023168	passes the trimming step	not used for transcript reconstruction	21353552/21353552	84.8249%	IU
+C. melo	SRR6320585	passes the trimming step	not used for transcript reconstruction	6147868/6147868	85.1986%	IU
+C. melo	SRR6320586	passes the trimming step	not used for transcript reconstruction	7346883/7346883	88.3733%	IU
+C. melo	SRR6320587	passes the trimming step	not used for transcript reconstruction	4819757/4819757	86.2282%	IU
+C. melo	SRR6320588	passes the trimming step	not used for transcript reconstruction	5963460/5963460	84.9764%	IU
+C. melo	SRR6320589	passes the trimming step	not used for transcript reconstruction	6676889/6676889	81.319%	IU
+C. melo	SRR6320590	passes the trimming step	not used for transcript reconstruction	5782516/5782516	82.6601%	IU
+C. melo	SRR6320591	passes the trimming step	not used for transcript reconstruction	5643658/5643658	85.1134%	IU
+C. melo	SRR6320592	passes the trimming step	not used for transcript reconstruction	6399996/6399996	81.4267%	IU
+C. melo	SRR6320593	passes the trimming step	not used for transcript reconstruction	5847716/5847716	76.051%	IU
+C. melo	SRR6447592	passes the trimming step	not used for transcript reconstruction	19115355/19115355	84.6751%	IU
+C. melo	SRR6447593	passes the trimming step	not used for transcript reconstruction	18070719/18070719	84.1838%	IU
+C. melo	SRR6447594	passes the trimming step	not used for transcript reconstruction	16440609/16440609	81.3719%	IU
+C. melo	SRR6447595	passes the trimming step	not used for transcript reconstruction	17158837/17158837	75.154%	IU
+C. melo	SRR6447596	passes the trimming step	not used for transcript reconstruction	16149153/16149153	83.5956%	IU
+C. melo	SRR6447597	passes the trimming step	not used for transcript reconstruction	15514647/15514647	82.938%	IU
+C. melo	SRR6447598	passes the trimming step	not used for transcript reconstruction	18840165/18840165	85.0622%	IU
+C. melo	SRR6447599	passes the trimming step	not used for transcript reconstruction	15834776/15834776	85.3175%	IU
+C. melo	SRR6447600	passes the trimming step	not used for transcript reconstruction	16509590/16509590	79.5245%	IU
+C. melo	SRR6447601	passes the trimming step	not used for transcript reconstruction	15907267/15907267	79.1514%	IU
+C. melo	SRR6447602	passes the trimming step	not used for transcript reconstruction	18384060/18384060	80.9714%	IU
+C. melo	SRR6447603	passes the trimming step	not used for transcript reconstruction	16768003/16768003	82.6712%	IU
+C. melo	SRR6986536	passes the trimming step	used for transcript reconstruction	33355966/33355966	84.0964%	ISR
+C. melo	SRR6986537	passes the trimming step	used for transcript reconstruction	37543684/37543684	80.5462%	ISR
+C. melo	SRR6986538	passes the trimming step	used for transcript reconstruction	51083175/51083175	80.5715%	ISR
+C. melo	SRR6986539	passes the trimming step	used for transcript reconstruction	46021793/46021793	82.8851%	ISR
+C. melo	SRR6986540	passes the trimming step	used for transcript reconstruction	47782482/47782482	86.8518%	ISR
+C. melo	SRR6986541	passes the trimming step	used for transcript reconstruction	33428443/33428443	86.9005%	ISR
+C. melo	SRR6986542	passes the trimming step	used for transcript reconstruction	28749604/28749604	80.2466%	ISR
+C. melo	SRR6986543	passes the trimming step	used for transcript reconstruction	39284896/39284896	87.1446%	ISR
+C. melo	SRR6986544	passes the trimming step	used for transcript reconstruction	47457266/47457266	83.5264%	ISR
+C. melo	SRR6986545	passes the trimming step	used for transcript reconstruction	46405599/46405599	65.8033%	ISR
+C. melo	SRR6986546	passes the trimming step	used for transcript reconstruction	37866928/37866928	79.723%	ISR
+C. melo	SRR6986547	passes the trimming step	used for transcript reconstruction	38009182/38009182	75.6922%	ISR
+C. melo	SRR6986548	passes the trimming step	used for transcript reconstruction	33559152/33559152	82.3365%	ISR
+C. melo	SRR6986549	passes the trimming step	used for transcript reconstruction	2739878/2739878	85.8159%	ISR
+C. melo	SRR6986550	passes the trimming step	used for transcript reconstruction	43048903/43048903	67.3537%	ISR
+C. melo	SRR6986551	passes the trimming step	used for transcript reconstruction	21229840/21229840	79.1027%	ISR
+C. melo	SRR6986552	passes the trimming step	used for transcript reconstruction	38377052/38377052	74.7118%	ISR
+C. melo	SRR6986553	passes the trimming step	used for transcript reconstruction	37088882/37088882	77.75%	ISR
+C. melo	SRR7343306	passes the trimming step	not used for transcript reconstruction	2539952/2539952	82.6261%	IU
+C. melo	SRR7343307	passes the trimming step	not used for transcript reconstruction	3319416/3319416	83.3726%	IU
+C. melo	SRR7647228	passes the trimming step	not used for transcript reconstruction	2475110/2475110	82.9042%	IU
+C. melo	SRR7647229	passes the trimming step	not used for transcript reconstruction	5730327/5730327	53.7552%	IU
+C. melo	SRR7647231	passes the trimming step	not used for transcript reconstruction	4076982/4076982	79.5768%	IU
+C. melo	SRR7647236	passes the trimming step	not used for transcript reconstruction	2981490/2981490	73.8717%	IU
+C. melo	SRR7647237	passes the trimming step	not used for transcript reconstruction	1593340/1593340	46.107%	IU
+C. melo	SRR7647260	passes the trimming step	not used for transcript reconstruction	1753291/1753291	41.194%	IU
+C. melo	SRR7777715	passes the trimming step	not used for transcript reconstruction	19131653/19131653	67.2443%	IU
+C. melo	SRR7777716	passes the trimming step	not used for transcript reconstruction	19247068/19247068	45.6372%	IU
+C. melo	SRR7777717	passes the trimming step	not used for transcript reconstruction	18974926/18974926	74.4683%	IU
+C. melo	SRR7777718	passes the trimming step	not used for transcript reconstruction	18745745/18745745	67.6563%	IU
+C. melo	SRR7777719	passes the trimming step	not used for transcript reconstruction	18732096/18732096	67.1033%	IU
+C. melo	SRR7777720	passes the trimming step	not used for transcript reconstruction	18803245/18803245	67.5622%	IU
+C. melo	SRR7777721	passes the trimming step	not used for transcript reconstruction	18333970/18333970	73.6309%	IU
+C. melo	SRR7777722	passes the trimming step	not used for transcript reconstruction	18481535/18481535	75.0395%	IU
+C. melo	SRR7777723	passes the trimming step	not used for transcript reconstruction	19269164/19269164	68.8659%	IU
+C. melo	SRR7777724	passes the trimming step	not used for transcript reconstruction	19516147/19516147	71.7195%	IU
+C. melo	SRR7777725	passes the trimming step	not used for transcript reconstruction	18620227/18620227	62.839%	IU
+C. melo	SRR7777726	passes the trimming step	not used for transcript reconstruction	18798240/18798240	66.8601%	IU
+C. melo	SRR7777727	passes the trimming step	not used for transcript reconstruction	19275881/19275881	66.3631%	IU
+C. melo	SRR7777728	passes the trimming step	not used for transcript reconstruction	19025688/19025688	67.3899%	IU
+C. melo	SRR7777729	passes the trimming step	not used for transcript reconstruction	19248989/19248989	81.6658%	IU
+C. melo	SRR7777730	passes the trimming step	not used for transcript reconstruction	19107580/19107580	82.029%	IU
+C. melo	SRR7777731	passes the trimming step	not used for transcript reconstruction	18840105/18840105	82.0099%	IU
+C. melo	SRR7777732	passes the trimming step	not used for transcript reconstruction	19078297/19078297	82.9527%	IU
+C. melo	SRR7777733	passes the trimming step	not used for transcript reconstruction	18734380/18734380	82.8557%	IU
+C. melo	SRR7777734	passes the trimming step	not used for transcript reconstruction	18920732/18920732	82.6642%	IU
+C. melo	SRR7777735	passes the trimming step	not used for transcript reconstruction	18770300/18770300	67.8023%	IU
+C. melo	SRR7777736	passes the trimming step	not used for transcript reconstruction	18324969/18324969	55.1404%	IU
+C. melo	SRR7777737	passes the trimming step	not used for transcript reconstruction	18005966/18005966	51.3156%	IU
+C. melo	SRR7777738	passes the trimming step	not used for transcript reconstruction	18670494/18670494	54.7832%	IU
+C. melo	SRR8156031	passes the trimming step	not used for transcript reconstruction	23555471/23555471	81.3365%	IU
+C. melo	SRR8327217	passes the trimming step	used for transcript reconstruction	5928147/5928147	80.3147%	ISR
+C. melo	SRR8327218	passes the trimming step	used for transcript reconstruction	4086656/4086656	57.9839%	ISR
+C. melo	SRR8327219	passes the trimming step	used for transcript reconstruction	5642595/5642595	73.8881%	ISR
+C. melo	SRR8327220	passes the trimming step	used for transcript reconstruction	6775161/6775161	62.8285%	ISR
+C. melo	SRR8327221	passes the trimming step	used for transcript reconstruction	6958491/6958491	70.6731%	ISR
+C. melo	SRR8327222	passes the trimming step	used for transcript reconstruction	5266649/5266649	76.8549%	ISR
+C. melo	SRR8327223	passes the trimming step	used for transcript reconstruction	6455827/6455827	64.5201%	ISR
+C. melo	SRR8327224	passes the trimming step	used for transcript reconstruction	5189196/5189196	79.2799%	ISR
+C. melo	SRR8327225	passes the trimming step	used for transcript reconstruction	5517115/5517115	81.7544%	ISR
+C. melo	SRR8327226	passes the trimming step	used for transcript reconstruction	4697715/4697715	84.2271%	ISR
+C. melo	SRR8327227	passes the trimming step	used for transcript reconstruction	6159442/6159442	69.4305%	ISR
+C. melo	SRR8327228	passes the trimming step	used for transcript reconstruction	5859085/5859085	81.1768%	ISR
+C. melo	SRR8327229	passes the trimming step	used for transcript reconstruction	5224497/5224497	81.8511%	ISR
+C. melo	SRR8327230	passes the trimming step	used for transcript reconstruction	4861851/4861851	83.6531%	ISR
+C. melo	SRR8327231	passes the trimming step	used for transcript reconstruction	5642568/5642568	78.5967%	ISR
+C. melo	SRR8327232	passes the trimming step	used for transcript reconstruction	4763590/4763590	83.5115%	ISR
+C. melo	SRR8327233	passes the trimming step	used for transcript reconstruction	5631936/5631936	82.1852%	ISR
+C. melo	SRR8327234	passes the trimming step	used for transcript reconstruction	7110439/7110439	61.0058%	ISR
+C. melo	SRR8327235	passes the trimming step	used for transcript reconstruction	7000531/7000531	45.767%	ISR
+C. melo	SRR8327236	passes the trimming step	used for transcript reconstruction	5238091/5238091	65.3515%	ISR
+C. melo	SRR8327237	passes the trimming step	used for transcript reconstruction	4996864/4996864	65.8056%	ISR
+C. melo	SRR8327238	passes the trimming step	used for transcript reconstruction	6206461/6206461	62.1576%	ISR
+C. melo	SRR8327239	passes the trimming step	used for transcript reconstruction	6660434/6660434	57.7458%	ISR
+C. melo	SRR8327240	passes the trimming step	used for transcript reconstruction	5654654/5654654	70.3922%	ISR
+C. melo	SRR8327241	passes the trimming step	used for transcript reconstruction	6192000/6192000	35.5917%	ISR
+C. melo	SRR8327242	passes the trimming step	used for transcript reconstruction	5666157/5666157	80.4634%	ISR
+C. melo	SRR8327243	passes the trimming step	used for transcript reconstruction	4307623/4307623	67.5049%	ISR
+C. melo	SRR8327244	passes the trimming step	used for transcript reconstruction	4742705/4742705	79.5976%	ISR
+C. melo	SRR8327245	passes the trimming step	used for transcript reconstruction	5201104/5201104	79.3545%	ISR
+C. melo	SRR8327246	passes the trimming step	used for transcript reconstruction	3098111/3098111	78.2014%	ISR
+C. melo	SRR8327247	passes the trimming step	used for transcript reconstruction	4944417/4944417	78.9308%	ISR
+C. melo	SRR8327248	passes the trimming step	used for transcript reconstruction	5659625/5659625	83.3503%	ISR
+C. melo	SRR8327249	passes the trimming step	used for transcript reconstruction	6442408/6442408	81.6468%	ISR
+C. melo	SRR8327250	passes the trimming step	used for transcript reconstruction	5611844/5611844	81.0168%	ISR
+C. melo	SRR8327251	passes the trimming step	used for transcript reconstruction	5335732/5335732	81.761%	ISR
+C. melo	SRR8327252	passes the trimming step	used for transcript reconstruction	5221094/5221094	82.9372%	ISR
+C. melo	SRR8327253	passes the trimming step	used for transcript reconstruction	4771522/4771522	83.0876%	ISR
+C. melo	SRR8327254	passes the trimming step	used for transcript reconstruction	5267072/5267072	84.5949%	ISR
+C. melo	SRR8327255	passes the trimming step	used for transcript reconstruction	5259455/5259455	71.315%	ISR
+C. melo	SRR8327256	passes the trimming step	used for transcript reconstruction	5395303/5395303	48.9741%	ISR
+C. melo	SRR8996652	passes the trimming step	not used for transcript reconstruction	26056704/26056704	20.8082%	IU
+C. melo	SRR8996653	passes the trimming step	not used for transcript reconstruction	23845058/23845058	65.3765%	IU
+C. melo	SRR9071694	passes the trimming step	used for transcript reconstruction	39429728/39429728	58.2736%	ISR
+C. melo	SRR9071695	passes the trimming step	used for transcript reconstruction	39873752/39873752	58.6095%	ISR
+C. melo	SRR9071696	passes the trimming step	used for transcript reconstruction	43730635/43730635	54.4323%	ISR
+C. melo	SRR9071697	passes the trimming step	used for transcript reconstruction	41777219/41777219	52.3539%	ISR
+C. melo	SRR9071698	passes the trimming step	used for transcript reconstruction	44111630/44111630	46.347%	ISR
+C. melo	SRR9071699	passes the trimming step	used for transcript reconstruction	50421590/50421590	53.5573%	ISR
+C. melo	SRR9071700	passes the trimming step	used for transcript reconstruction	43482607/43482607	52.8169%	ISR
+C. melo	SRR9071701	passes the trimming step	used for transcript reconstruction	46644374/46644374	55.0044%	ISR
+C. melo	SRR9071702	passes the trimming step	used for transcript reconstruction	40788002/40788002	59.1597%	ISR
+C. melo	SRR9071703	passes the trimming step	used for transcript reconstruction	39128354/39128354	55.1651%	ISR
+C. melo	SRR9071704	passes the trimming step	used for transcript reconstruction	42522963/42522963	58.8595%	ISR
+C. melo	SRR9071705	passes the trimming step	used for transcript reconstruction	42990642/42990642	55.1554%	ISR
+C. melo	SRR9127859	passes the trimming step	not used for transcript reconstruction	18558387/18558387	80.9182%	IU
+C. melo	SRR9127860	passes the trimming step	not used for transcript reconstruction	19129271/19129271	82.6537%	IU
+C. melo	SRR9127861	passes the trimming step	not used for transcript reconstruction	20211379/20211379	82.0447%	IU
+C. melo	SRR9127862	passes the trimming step	not used for transcript reconstruction	18043008/18043008	82.0038%	IU
+C. melo	SRR9127863	passes the trimming step	not used for transcript reconstruction	21368269/21368269	81.8235%	IU
+C. melo	SRR9127864	passes the trimming step	not used for transcript reconstruction	20579948/20579948	79.9637%	IU
+C. melo	SRR9127865	passes the trimming step	not used for transcript reconstruction	20232607/20232607	80.0841%	IU
+C. melo	SRR9127866	passes the trimming step	not used for transcript reconstruction	21104652/21104652	80.8068%	IU
+C. melo	SRR9127867	passes the trimming step	not used for transcript reconstruction	17373039/17373039	82.3666%	IU
+C. melo	SRR9127868	passes the trimming step	not used for transcript reconstruction	20226087/20226087	80.5647%	IU
+C. melo	SRR9127869	passes the trimming step	not used for transcript reconstruction	18628593/18628593	77.4915%	IU
+C. melo	SRR9127870	passes the trimming step	not used for transcript reconstruction	17288771/17288771	80.3229%	IU
+C. melo	SRR9127871	passes the trimming step	not used for transcript reconstruction	20677442/20677442	81.6435%	IU
+C. melo	SRR9127872	passes the trimming step	not used for transcript reconstruction	20439784/20439784	78.0889%	IU
+C. melo	SRR9127873	passes the trimming step	not used for transcript reconstruction	17950182/17950182	76.0481%	IU
+C. melo	SRR9127874	passes the trimming step	not used for transcript reconstruction	17680463/17680463	82.1984%	IU
+C. melo	SRR9127875	passes the trimming step	not used for transcript reconstruction	21117864/21117864	80.7759%	IU
+C. melo	SRR9127876	passes the trimming step	not used for transcript reconstruction	19343584/19343584	77.7495%	IU
+C. melo	SRR9129105	passes the trimming step	used for transcript reconstruction	28672997/28672997	45.8598%	ISR
+C. melo	SRR9129106	passes the trimming step	used for transcript reconstruction	33748303/33748303	49.841%	ISR
+C. melo	SRR9129107	passes the trimming step	used for transcript reconstruction	40962937/40962937	49.886%	ISR
+C. melo	SRR9129108	passes the trimming step	used for transcript reconstruction	36744506/36744506	48.3141%	ISR
+C. melo	SRR9129109	passes the trimming step	used for transcript reconstruction	40811397/40811397	49.9535%	ISR
+C. melo	SRR9129110	passes the trimming step	used for transcript reconstruction	38271410/38271410	50.3548%	ISR
+C. melo	SRR9129111	passes the trimming step	used for transcript reconstruction	35574224/35574224	47.4517%	ISR
+C. melo	SRR9129112	passes the trimming step	used for transcript reconstruction	39073145/39073145	45.6796%	ISR
+C. melo	SRR9129113	passes the trimming step	used for transcript reconstruction	32604615/32604615	49.0223%	ISR
+C. melo	SRR9129114	passes the trimming step	used for transcript reconstruction	42338704/42338704	45.9792%	ISR
+C. melo	SRR9129115	passes the trimming step	used for transcript reconstruction	35782545/35782545	48.4962%	ISR
+C. melo	SRR9129116	passes the trimming step	used for transcript reconstruction	27311488/27311488	48.5886%	ISR
+C. melo	SRR9129117	passes the trimming step	used for transcript reconstruction	30090454/30090454	48.1867%	ISR
+C. melo	SRR9129118	passes the trimming step	used for transcript reconstruction	26125334/26125334	49.7616%	ISR
+C. melo	SRR9129119	passes the trimming step	used for transcript reconstruction	27260847/27260847	49.401%	ISR
+C. melo	SRR9129120	passes the trimming step	used for transcript reconstruction	27330273/27330273	48.7791%	ISR
+C. melo	SRR9129121	passes the trimming step	used for transcript reconstruction	28285957/28285957	46.9468%	ISR
+C. melo	SRR9129122	passes the trimming step	used for transcript reconstruction	26217390/26217390	47.4571%	ISR
+C. melo	SRR9650353	passes the trimming step	not used for transcript reconstruction	21043263/21043263	82.2934%	IU
+C. melo	SRR9650354	passes the trimming step	not used for transcript reconstruction	23945278/23945278	82.9994%	IU
+C. melo	SRR9650355	passes the trimming step	not used for transcript reconstruction	23304688/23304688	81.1936%	IU
+C. melo	SRR9650356	passes the trimming step	not used for transcript reconstruction	23175896/23175896	83.2446%	IU
+C. melo	SRR9650357	passes the trimming step	not used for transcript reconstruction	21546845/21546845	79.9852%	IU
+C. melo	SRR9650358	passes the trimming step	not used for transcript reconstruction	24666849/24666849	80.7594%	IU
+C. melo	SRR9650359	passes the trimming step	not used for transcript reconstruction	20582697/20582697	81.1276%	IU
+C. melo	SRR9650360	passes the trimming step	not used for transcript reconstruction	27965033/27965033	81.5215%	IU
+C. melo	SRR9650361	passes the trimming step	not used for transcript reconstruction	23013858/23013858	80.8676%	IU
+C. melo	SRR9651393	passes the trimming step	not used for transcript reconstruction	19282141/19282141	71.7737%	IU
+C. melo	SRR9651394	passes the trimming step	not used for transcript reconstruction	20415020/20415020	81.0445%	IU
+C. melo	SRR9651395	passes the trimming step	not used for transcript reconstruction	18941143/18941143	72.3042%	IU
+C. melo	SRR9651396	passes the trimming step	not used for transcript reconstruction	19764585/19764585	78.0934%	IU
+C. melo	SRR9651397	passes the trimming step	not used for transcript reconstruction	20144328/20144328	79.81%	IU
+C. melo	SRR9651398	passes the trimming step	not used for transcript reconstruction	19761885/19761885	79.991%	IU
+C. melo	SRR9651399	passes the trimming step	not used for transcript reconstruction	18546435/18546435	79.596%	IU
+C. melo	SRR9651400	passes the trimming step	not used for transcript reconstruction	18858032/18858032	68.0101%	IU
+C. melo	SRR9651401	passes the trimming step	not used for transcript reconstruction	18713044/18713044	67.9995%	IU

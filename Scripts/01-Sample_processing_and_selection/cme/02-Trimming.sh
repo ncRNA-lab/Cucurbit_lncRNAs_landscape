@@ -13,7 +13,7 @@
 specie="cme"
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/01-Sample_processing_and_selection"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/01-Sample_processing_and_selection/Functions.sh"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/01-Sample_processing_and_selection/Functions.sh"
 trim_adapters="/storage/ncRNA/Softwares/Trimmomatic-0.39/adapters"
 
 ####### NEW VARIABLES
@@ -92,7 +92,7 @@ wait
 
 # Create a table with the library depth filtering results. 
 cd Filter_table
-echo -e "sample\tnote\tdecision\tdepth" > $table
+echo -e "sample\tdepth\tnote" > $table
 find Temp -type f -name '*.tsv' -print0 | xargs -0 cat >> $table
 rm -r Temp
 

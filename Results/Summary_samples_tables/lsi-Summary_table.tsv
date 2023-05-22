@@ -1,0 +1,93 @@
+Specie	Sample	Filter_1	Filter_2	Depth	Mapping_rate	Strandedness
+L. siceraria	SRR10251169	passes the trimming step	not used for transcript reconstruction	18168090/18168090	63.9959%	IU
+L. siceraria	SRR10251174	passes the trimming step	not used for transcript reconstruction	11083242/11083242	80.5097%	IU
+L. siceraria	SRR10251176	passes the trimming step	not used for transcript reconstruction	22989658/22989658	71.9538%	IU
+L. siceraria	SRR10251177	passes the trimming step	not used for transcript reconstruction	22753774/22753774	77.9181%	IU
+L. siceraria	SRR10251178	passes the trimming step	not used for transcript reconstruction	17874347/17874347	77.9504%	IU
+L. siceraria	SRR10251179	passes the trimming step	not used for transcript reconstruction	17898625/17898625	74.0213%	IU
+L. siceraria	SRR10251180	passes the trimming step	not used for transcript reconstruction	16723909/16723909	57.1634%	IU
+L. siceraria	SRR10251181	passes the trimming step	not used for transcript reconstruction	17356670/17356670	76.8841%	IU
+L. siceraria	SRR11573067	passes the trimming step	used for transcript reconstruction	17887518/17887518	75.8742%	ISR
+L. siceraria	SRR11573068	passes the trimming step	used for transcript reconstruction	24140952/24140952	72.4989%	ISR
+L. siceraria	SRR1653291	passes the trimming step	not used for transcript reconstruction	14647034/14647034	62.6748%	IU
+L. siceraria	SRR5199334	passes the trimming step	not used for transcript reconstruction	15096460/15096460	76.0942%	IU
+L. siceraria	SRR5199335	passes the trimming step	not used for transcript reconstruction	17403863/17403863	75.6099%	IU
+L. siceraria	SRR5199336	passes the trimming step	not used for transcript reconstruction	15540901/15540901	76.0795%	IU
+L. siceraria	SRR5199337	passes the trimming step	not used for transcript reconstruction	8687642/8687642	73.4503%	IU
+L. siceraria	SRR5199338	passes the trimming step	not used for transcript reconstruction	18621203/18621203	76.0454%	IU
+L. siceraria	SRR5199339	passes the trimming step	not used for transcript reconstruction	22290004/22290004	69.0248%	IU
+L. siceraria	SRR5199340	passes the trimming step	not used for transcript reconstruction	27433981/27433981	68.8797%	IU
+L. siceraria	SRR5199341	passes the trimming step	not used for transcript reconstruction	26696306/26696306	69.8216%	IU
+L. siceraria	SRR5199342	passes the trimming step	not used for transcript reconstruction	24096167/24096167	75.2094%	IU
+L. siceraria	SRR5199343	passes the trimming step	not used for transcript reconstruction	29379994/29379994	75.1088%	IU
+L. siceraria	SRR5199344	passes the trimming step	not used for transcript reconstruction	19861225/19861225	76.9002%	IU
+L. siceraria	SRR5199345	passes the trimming step	not used for transcript reconstruction	14314641/14314641	74.2035%	IU
+L. siceraria	SRR5199346	passes the trimming step	not used for transcript reconstruction	17203670/17203670	73.7552%	IU
+L. siceraria	SRR5199347	passes the trimming step	not used for transcript reconstruction	24767118/24767118	75.116%	IU
+L. siceraria	SRR5199348	passes the trimming step	not used for transcript reconstruction	18511581/18511581	75.209%	IU
+L. siceraria	SRR5199349	passes the trimming step	not used for transcript reconstruction	16490419/16490419	74.589%	IU
+L. siceraria	SRR5199350	passes the trimming step	not used for transcript reconstruction	31998222/31998222	75.7859%	IU
+L. siceraria	SRR5199351	passes the trimming step	not used for transcript reconstruction	16908574/16908574	74.5943%	IU
+L. siceraria	SRR5199352	passes the trimming step	not used for transcript reconstruction	22164464/22164464	75.353%	IU
+L. siceraria	SRR5199353	passes the trimming step	not used for transcript reconstruction	14495822/14495822	74.8432%	IU
+L. siceraria	SRR5199354	passes the trimming step	not used for transcript reconstruction	29042198/29042198	76.1121%	IU
+L. siceraria	SRR5199355	passes the trimming step	not used for transcript reconstruction	18043070/18043070	73.2059%	IU
+L. siceraria	SRR5199356	passes the trimming step	not used for transcript reconstruction	29974692/29974692	71.9304%	IU
+L. siceraria	SRR5199357	passes the trimming step	not used for transcript reconstruction	36246624/36246624	71.8849%	IU
+L. siceraria	SRR5199358	passes the trimming step	not used for transcript reconstruction	25018060/25018060	73.424%	IU
+L. siceraria	SRR5590270	passes the trimming step	used for transcript reconstruction	9301506/9301506	73.2715%	ISF
+L. siceraria	SRR5590271	passes the trimming step	used for transcript reconstruction	12789681/12789681	75.8908%	ISR
+L. siceraria	SRR5590272	passes the trimming step	used for transcript reconstruction	11273034/11273034	75.8502%	ISF
+L. siceraria	SRR5590273	passes the trimming step	used for transcript reconstruction	8940909/8940909	72.9422%	ISF
+L. siceraria	SRR5590274	passes the trimming step	used for transcript reconstruction	18949175/18949175	76.6454%	ISF
+L. siceraria	SRR5930669	passes the trimming step	not used for transcript reconstruction	26470437/26470437	69.4661%	IU
+L. siceraria	SRR5930670	passes the trimming step	not used for transcript reconstruction	22324636/22324636	68.4172%	IU
+L. siceraria	SRR5930671	passes the trimming step	not used for transcript reconstruction	23876642/23876642	70.0691%	IU
+L. siceraria	SRR5930672	passes the trimming step	not used for transcript reconstruction	22822500/22822500	69.3247%	IU
+L. siceraria	SRR5930673	passes the trimming step	not used for transcript reconstruction	26790852/26790852	69.2177%	IU
+L. siceraria	SRR5930674	passes the trimming step	not used for transcript reconstruction	23826268/23826268	69.9084%	IU
+L. siceraria	SRR8842499	passes the trimming step	used for transcript reconstruction	13842043/13842043	79.8798%	ISR
+L. siceraria	SRR8842500	passes the trimming step	used for transcript reconstruction	14724800/14724800	77.9251%	ISR
+L. siceraria	SRR8905684	passes the trimming step	not used for transcript reconstruction	26445940/26445940	32.0233%	IU
+L. siceraria	SRR8905685	passes the trimming step	not used for transcript reconstruction	13182473/13182473	36.9599%	IU
+L. siceraria	SRR8905686	passes the trimming step	not used for transcript reconstruction	15831260/15831260	32.2243%	IU
+L. siceraria	SRR8905687	passes the trimming step	not used for transcript reconstruction	18964715/18964715	55.4643%	IU
+L. siceraria	SRR8905688	passes the trimming step	not used for transcript reconstruction	14077334/14077334	36.0986%	IU
+L. siceraria	SRR8905689	passes the trimming step	not used for transcript reconstruction	17830489/17830489	65.2856%	IU
+L. siceraria	SRR8905690	passes the trimming step	not used for transcript reconstruction	18178232/18178232	65.4238%	IU
+L. siceraria	SRR8905691	passes the trimming step	not used for transcript reconstruction	18069576/18069576	49.8986%	IU
+L. siceraria	SRR8905692	passes the trimming step	not used for transcript reconstruction	17356058/17356058	49.5388%	IU
+L. siceraria	SRR8905693	passes the trimming step	not used for transcript reconstruction	16616326/16616326	45.3892%	IU
+L. siceraria	SRR8905694	passes the trimming step	not used for transcript reconstruction	16584714/16584714	50.4155%	IU
+L. siceraria	SRR8905695	passes the trimming step	not used for transcript reconstruction	16933302/16933302	37.607%	IU
+L. siceraria	SRR8905696	passes the trimming step	not used for transcript reconstruction	21669306/21669306	66.2374%	IU
+L. siceraria	SRR8905697	passes the trimming step	not used for transcript reconstruction	15241840/15241840	36.9576%	IU
+L. siceraria	SRR8905698	passes the trimming step	not used for transcript reconstruction	17452658/17452658	63.0729%	IU
+L. siceraria	SRR8905699	passes the trimming step	not used for transcript reconstruction	27455369/27455369	50.0947%	IU
+L. siceraria	SRR8905700	passes the trimming step	not used for transcript reconstruction	17512777/17512777	44.741%	IU
+L. siceraria	SRR8905701	passes the trimming step	not used for transcript reconstruction	18456654/18456654	37.3416%	IU
+L. siceraria	SRR8905702	passes the trimming step	not used for transcript reconstruction	19827489/19827489	50.1123%	IU
+L. siceraria	SRR8905703	passes the trimming step	not used for transcript reconstruction	14807110/14807110	63.4524%	IU
+L. siceraria	SRR8905704	passes the trimming step	not used for transcript reconstruction	24098314/24098314	45.6968%	IU
+L. siceraria	SRR8905705	passes the trimming step	not used for transcript reconstruction	16762819/16762819	62.8519%	IU
+L. siceraria	SRR8905706	passes the trimming step	not used for transcript reconstruction	21955195/21955195	50.6997%	IU
+L. siceraria	SRR8905707	passes the trimming step	not used for transcript reconstruction	17711331/17711331	54.4245%	IU
+L. siceraria	SRR8905708	passes the trimming step	not used for transcript reconstruction	17821591/17821591	54.6661%	IU
+L. siceraria	SRR8905709	passes the trimming step	not used for transcript reconstruction	16258551/16258551	36.5799%	IU
+L. siceraria	SRR8905710	passes the trimming step	not used for transcript reconstruction	20805431/20805431	30.8948%	IU
+L. siceraria	SRR9701513	passes the trimming step	not used for transcript reconstruction	166579051/166579051	70.1%	IU
+L. siceraria	SRR9701514	passes the trimming step	not used for transcript reconstruction	200154321/200154321	69.465%	IU
+L. siceraria	SRR9701515	passes the trimming step	not used for transcript reconstruction	23930178/23930178	69.3166%	IU
+L. siceraria	SRR9701516	passes the trimming step	not used for transcript reconstruction	27103022/27103022	68.8026%	IU
+L. siceraria	SRR9701517	passes the trimming step	not used for transcript reconstruction	21976839/21976839	64.1514%	IU
+L. siceraria	SRR9701518	passes the trimming step	not used for transcript reconstruction	24538122/24538122	64.0459%	IU
+L. siceraria	SRR9701521	passes the trimming step	not used for transcript reconstruction	20500053/20500053	71.4031%	IU
+L. siceraria	SRR9701522	passes the trimming step	not used for transcript reconstruction	26566287/26566287	71.699%	IU
+L. siceraria	SRR9701523	passes the trimming step	not used for transcript reconstruction	28071426/28071426	74.3945%	IU
+L. siceraria	SRR9701524	passes the trimming step	not used for transcript reconstruction	29495086/29495086	73.8444%	IU
+L. siceraria	SRR9701525	passes the trimming step	not used for transcript reconstruction	233009123/233009123	63.1395%	IU
+L. siceraria	SRR9701526	passes the trimming step	not used for transcript reconstruction	231816464/231816464	63.8591%	IU
+L. siceraria	SRR9701527	passes the trimming step	not used for transcript reconstruction	219090666/219090666	66.2453%	IU
+L. siceraria	SRR9701528	passes the trimming step	not used for transcript reconstruction	217057014/217057014	65.1144%	IU
+L. siceraria	SRR9701529	passes the trimming step	not used for transcript reconstruction	203440734/203440734	73.3468%	IU
+L. siceraria	SRR9701530	passes the trimming step	not used for transcript reconstruction	192593458/192593458	73.1988%	IU
