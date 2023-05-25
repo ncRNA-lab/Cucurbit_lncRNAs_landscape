@@ -34,6 +34,7 @@ mkdir -p $WD2/Transcript_density
 mkdir -p $WD2/Transcript_density/r
 mkdir -p $WD2/Transcript_density/nr
 
+
 ####### PIPELINE
 
 ## NON-REDUNDANT: Visualize the lncRNAs and genes distribution.
