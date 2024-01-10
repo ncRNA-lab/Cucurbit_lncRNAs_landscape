@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmeS9.2						# Job name.
-#SBATCH --output=cme_STEP9_2.log					# Standard output and error log.
+#SBATCH --job-name=cme_comp						# Job name.
+#SBATCH --output=cme_comparison.log					# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=1							# Run on one mode.
 #SBATCH --cpus-per-task=2						# Number of tasks = cpus.
@@ -35,8 +35,6 @@ mkdir -p $WD3_spe
 
 
 ####### PIPELINE
-echo -e "\n\nREDUNDANT SEQUENCES: CREATING FIGURES\n"
-Rscript Comparison_lncRNAs_and_PCGs.R $WD1_spe $WD2_spe $WD3_spe "r"
-echo -e "\n\nNON-REDUNDANT SEQUENCES: CREATING FIGURES\n"
+echo -e "\n\nNON-REDUNDANT SEQUENCES: CREATING TABLES AND FIGURES\n"
 Rscript Comparison_lncRNAs_and_PCGs.R $WD1_spe $WD2_spe $WD3_spe "nr"
 

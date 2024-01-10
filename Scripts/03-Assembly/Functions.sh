@@ -2,7 +2,6 @@
 
 ####### FUNCTIONS
 
-
 task_Assembly(){
 	
 	LIBTYPE=$(tail -n +2 $4 | awk -v a="$1" -F'\t' '$1 == a {print $3}')

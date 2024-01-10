@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmeS9.1						# Job name.
-#SBATCH --output=cme_STEP9_1.log					# Standard output and error log.
-#SBATCH --qos=short							# Partition (queue)
-#SBATCH --ntasks=1							# Run on one mode.
-#SBATCH --cpus-per-task=2						# Number of tasks = cpus.
-#SBATCH --time=0-01:00:00						# Time limit days-hrs:min:sec.
-#SBATCH --mem-per-cpu=5gb						# Job memory request.
+#SBATCH --job-name=cme_IR							# Job name.
+#SBATCH --output=cme_Intergenic_regions.log					# Standard output and error log.
+#SBATCH --qos=short								# Partition (queue)
+#SBATCH --ntasks=1								# Run on one mode.
+#SBATCH --cpus-per-task=2							# Number of tasks = cpus.
+#SBATCH --time=0-01:00:00							# Time limit days-hrs:min:sec.
+#SBATCH --mem-per-cpu=5gb							# Job memory request.
 
 
 ####### MODULES
