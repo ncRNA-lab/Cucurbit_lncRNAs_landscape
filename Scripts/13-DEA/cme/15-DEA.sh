@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmedea			# Job name.
-#SBATCH --output=cme_dea.log			# Standard output and error log.
-#SBATCH --qos=short				# Partition (queue)
-#SBATCH --ntasks=1				# Run on one mode. Don't change unless you know what you are doing.
-#SBATCH --cpus-per-task=2			# Number of tasks = cpus. It depends on the number of process of your parallelization.
-#SBATCH --time=1-00:00:00			# Time limit days-hrs:min:sec.
-#SBATCH --mem-per-cpu=5gb			# Job memory request.
+#SBATCH --job-name=cmeS15dea				# Job name.
+#SBATCH --output=cme_STEP15_dea.log			# Standard output and error log.
+#SBATCH --qos=short					# Partition (queue)
+#SBATCH --ntasks=1					# Run on one mode. Don't change unless you know what you are doing.
+#SBATCH --cpus-per-task=2				# Number of tasks = cpus. It depends on the number of process of your parallelization.
+#SBATCH --time=1-00:00:00				# Time limit days-hrs:min:sec.
+#SBATCH --mem-per-cpu=5gb				# Job memory request.
 
 
 ####### MODULES
