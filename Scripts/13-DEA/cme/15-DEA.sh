@@ -9,9 +9,6 @@
 #SBATCH --mem-per-cpu=5gb			# Job memory request.
 
 
-# exit when any command fails
-set -e
-
 ####### MODULES
 module load R/4.2.1
 module load biotools
