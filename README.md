@@ -2,6 +2,8 @@
 
 One Paragraph of project description goes here
 
+![Image Alt text](Figure_1.png)
+
 ## Table of contents
 
 ## Getting Started
