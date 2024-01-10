@@ -1,0 +1,23 @@
+https://portlandpress.com/essaysbiochem/article/65/4/741/228443/Comparative-genomics-in-the-search-for-conserved
+https://www.mdpi.com/2075-1729/12/3/440/htm
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2026-4
+https://bioinformaticsworkbook.org/dataAnalysis/ComparativeGenomics/OrthofinderSynteny.html#gsc.tab=0
+
+Parameter i-adhore: Collinear and cloud
+https://www.nature.com/articles/ng.3149
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5530312/
+
+Parametros mas laxos con bajar el gap_size o anchor_point
+https://repository.up.ac.za/bitstream/handle/2263/44015/Proost_PLAZA_2015.pdf?sequence=1
+
+hybrid mas laxo
+https://patents.google.com/patent/US20170051295/en
+
+
+Parametros por defecto en muchos papers
+
+
+circos
+https://github.com/YaoLab-Bioinfo/shinyCircos
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8046976/
+https://github.com/vigsterkr/circos

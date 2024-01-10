@@ -1,0 +1,434 @@
+pvbermell@megamind:/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Sequence_level$ Rscript COMPARE_SOFTWARES.R 
+
+
+
+NON-REDUNDANT AND REDUNDANT COMPARISON
+
+Blastn (Families)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+Blastn (LncRNAs)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoFinder (Families)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoFinder (LncRNAs)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoMCL (Families)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoMCL (LncRNAs)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+
+PARAMETERS COMPARISON
+
+Blastn (Families)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+Blastn (LncRNAs)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoFinder (Families)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoFinder (LncRNAs)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoMCL (Families)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoMCL (LncRNAs)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+
+PIPELINES COMPARISON
+
+Families
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+LncRNAs
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+
+GENES AND LNCRNAS COMPARISON
+
+Blastn (Families)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+Blastn (LncRNAs)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoFinder (Families)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoFinder (LncRNAs)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoMCL (Families)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+OrthoMCL (LncRNAs)
+Class: ALL Table: 1
+Class: ALL Table: 2
+Class: ALL Table: 3
+Class: intergenic Table: 1
+Class: intergenic Table: 2
+Class: intergenic Table: 3
+Class: antisense Table: 1
+Class: antisense Table: 2
+Class: antisense Table: 3
+Class: intronic Table: 1
+Class: intronic Table: 2
+Class: intronic Table: 3
+Class: sense Table: 1
+Class: sense Table: 2
+Class: sense Table: 3
+
+
+ACCURACY BETWEEN PIPELINES COMPARISON
+
+LncRNAs: -max_target_seqs 1 and -max_hsps 1
+Class: ALL
+Class: intergenic
+Class: antisense
+Class: intronic
+Class: sense
+
+LncRNAs: -max_target_seqs 5 and -max_hsps 5
+Class: ALL
+Class: intergenic
+Class: antisense
+Class: intronic
+Class: sense
+
+
+
+OTHER FORMAT FIGURES
+
+Families
+Pipeline: Blastn Confidence: Low Table: 1
+Pipeline: Blastn Confidence: Low Table: 2
+Pipeline: Blastn Confidence: Low Table: 3
+Pipeline: Blastn Confidence: Medium Table: 1
+Pipeline: Blastn Confidence: Medium Table: 2
+Pipeline: Blastn Confidence: Medium Table: 3
+Pipeline: Blastn Confidence: High Table: 1
+Pipeline: Blastn Confidence: High Table: 2
+Pipeline: Blastn Confidence: High Table: 3
+Pipeline: OrthoFinder Confidence: Low Table: 1
+Pipeline: OrthoFinder Confidence: Low Table: 2
+Pipeline: OrthoFinder Confidence: Low Table: 3
+Pipeline: OrthoFinder Confidence: Medium Table: 1
+Pipeline: OrthoFinder Confidence: Medium Table: 2
+Pipeline: OrthoFinder Confidence: Medium Table: 3
+Pipeline: OrthoFinder Confidence: High Table: 1
+Pipeline: OrthoFinder Confidence: High Table: 2
+Pipeline: OrthoFinder Confidence: High Table: 3
+Pipeline: OrthoMCL Confidence: Low Table: 1
+Pipeline: OrthoMCL Confidence: Low Table: 2
+Pipeline: OrthoMCL Confidence: Low Table: 3
+Pipeline: OrthoMCL Confidence: Medium Table: 1
+Pipeline: OrthoMCL Confidence: Medium Table: 2
+Pipeline: OrthoMCL Confidence: Medium Table: 3
+Pipeline: OrthoMCL Confidence: High Table: 1
+Pipeline: OrthoMCL Confidence: High Table: 2
+Pipeline: OrthoMCL Confidence: High Table: 3
+
+LncRNAs
+Pipeline: Blastn Confidence: Low Table: 1
+Pipeline: Blastn Confidence: Low Table: 2
+Pipeline: Blastn Confidence: Low Table: 3
+Pipeline: Blastn Confidence: Medium Table: 1
+Pipeline: Blastn Confidence: Medium Table: 2
+Pipeline: Blastn Confidence: Medium Table: 3
+Pipeline: Blastn Confidence: High Table: 1
+Pipeline: Blastn Confidence: High Table: 2
+Pipeline: Blastn Confidence: High Table: 3
+Pipeline: OrthoFinder Confidence: Low Table: 1
+Pipeline: OrthoFinder Confidence: Low Table: 2
+Pipeline: OrthoFinder Confidence: Low Table: 3
+Pipeline: OrthoFinder Confidence: Medium Table: 1
+Pipeline: OrthoFinder Confidence: Medium Table: 2
+Pipeline: OrthoFinder Confidence: Medium Table: 3
+Pipeline: OrthoFinder Confidence: High Table: 1
+Pipeline: OrthoFinder Confidence: High Table: 2
+Pipeline: OrthoFinder Confidence: High Table: 3
+Pipeline: OrthoMCL Confidence: Low Table: 1
+Pipeline: OrthoMCL Confidence: Low Table: 2
+Pipeline: OrthoMCL Confidence: Low Table: 3
+Pipeline: OrthoMCL Confidence: Medium Table: 1
+Pipeline: OrthoMCL Confidence: Medium Table: 2
+Pipeline: OrthoMCL Confidence: Medium Table: 3
+Pipeline: OrthoMCL Confidence: High Table: 1
+Pipeline: OrthoMCL Confidence: High Table: 2
+Pipeline: OrthoMCL Confidence: High Table: 3
+pvbermell@megamind:/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Sequence_level$ 

@@ -1,0 +1,923 @@
+pvbermell@megamind:/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Motif_level/Positional_conserved$ Rscript 06-Motif_level_analysis_NR-STEP6-Figures_and_tables_MEME-GOMO.R 
+
+
+BUILD THE DIRECTORY
+
+
+
+GLOBAL TABLE
+
+
+Strictness: ORIGINAL
+Nonmatch: no
+-Low
+	-ALL
+		-oops
+			-6-15
+			-6-50
+	-intergenic
+		-oops
+			-6-15
+			-6-50
+	-antisense
+		-oops
+			-6-15
+			-6-50
+	-intronic
+		-oops
+			-6-15
+			-6-50
+	-sense
+		-oops
+			-6-15
+			-6-50
+
+-Medium
+	-ALL
+		-oops
+			-6-15
+			-6-50
+	-intergenic
+		-oops
+			-6-15
+			-6-50
+	-antisense
+		-oops
+			-6-15
+			-6-50
+	-intronic
+		-oops
+			-6-15
+			-6-50
+	-sense
+		-oops
+			-6-15
+			-6-50
+
+-High
+	-ALL
+		-oops
+			-6-15
+			-6-50
+	-intergenic
+		-oops
+			-6-15
+			-6-50
+	-antisense
+		-oops
+			-6-15
+			-6-50
+	-intronic
+		-oops
+			-6-15
+			-6-50
+	-sense
+		-oops
+			-6-15
+			-6-50
+
+
+NUMBER/PERCENTAGE OF SYNTENIC FAMILIES WITH MOTIFS --> TABLES
+
+
+Strictness: ORIGINAL
+Nonmatch: no
+-Low
+	-ALL
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intergenic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-antisense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intronic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-sense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+
+-Medium
+	-ALL
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intergenic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-antisense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intronic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-sense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+
+-High
+	-ALL
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intergenic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-antisense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intronic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-sense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+
+
+NUMBER/PERCENTAGE OF SYNTENIC FAMILIES WITH MOTIFS --> FIGURES
+
+-ORIGINAL
+	-no
+		-oops
+Warning messages:
+1: Using alpha for a discrete variable is not advised. 
+2: Using alpha for a discrete variable is not advised. 
+
+
+NUMBER/PERCENTAGE OF SYNTENIC FAMILIES WITH PUTATIVE FUNCTIONAL MOTIFS --> TABLES
+
+
+Strictness: ORIGINAL
+Nonmatch: no
+-Low
+	-ALL
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intergenic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-antisense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intronic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-sense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+
+-Medium
+	-ALL
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intergenic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-antisense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intronic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-sense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+
+-High
+	-ALL
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intergenic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-antisense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intronic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-sense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.1'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.2'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type'. You can override using the `.groups` argument.
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type_mod', 'Type.Conservation.3'. You can override using the `.groups` argument.
+
+
+NUMBER/PERCENTAGE OF SYNTENIC FAMILIES WITH PUTATIVE FUNCTIONAL MOTIFS --> FIGURES
+
+-ORIGINAL
+	-no
+		-oops
+Warning messages:
+1: Using alpha for a discrete variable is not advised. 
+2: Using alpha for a discrete variable is not advised. 
+
+
+GC CONTENT, LENGTH AND E-VALUE MOTIFS ANALYSIS --> TABLES
+
+
+Strictness: ORIGINAL
+Nonmatch: no
+-Low
+	-ALL
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intergenic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-antisense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intronic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-sense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+
+-Medium
+	-ALL
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intergenic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-antisense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intronic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-sense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+
+-High
+	-ALL
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intergenic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-antisense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-intronic
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+	-sense
+		-oops
+			-6-15
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+			-6-50
+`summarise()` has grouped output by 'Confidence', 'Comparison', 'Mode', 'Width', 'Type', 'Family', 'Type.Conservation.1', 'Type.Conservation.2', 'Type.Conservation.3'. You can override using the `.groups` argument.
+
+
+GC CONTENT, LENGTH AND E-VALUE MOTIFS ANALYSIS --> FIGURES
+
+-ORIGINAL
+	-no
+		-oops
+			-GC (1)
+Picking joint bandwidth of 1.66
+Picking joint bandwidth of 1.28
+Picking joint bandwidth of 2.36
+Picking joint bandwidth of 3.12
+Picking joint bandwidth of 2.78
+Picking joint bandwidth of 2.09
+Picking joint bandwidth of 3.86
+Picking joint bandwidth of 2.68
+Picking joint bandwidth of 2.13
+Picking joint bandwidth of 2.75
+Picking joint bandwidth of 1.87
+Picking joint bandwidth of 2.91
+Picking joint bandwidth of 2.72
+Picking joint bandwidth of 5.32
+Picking joint bandwidth of 3.6
+Picking joint bandwidth of 1.66
+Picking joint bandwidth of 1.28
+Picking joint bandwidth of 2.36
+Picking joint bandwidth of 3.12
+Picking joint bandwidth of 2.78
+Picking joint bandwidth of 2.09
+Picking joint bandwidth of 3.86
+Picking joint bandwidth of 2.68
+Picking joint bandwidth of 2.13
+Picking joint bandwidth of 2.75
+Picking joint bandwidth of 1.87
+Picking joint bandwidth of 2.91
+Picking joint bandwidth of 2.72
+Picking joint bandwidth of 5.32
+Picking joint bandwidth of 3.6
+			-GC (2)
+Picking joint bandwidth of 1.27
+Picking joint bandwidth of 1.01
+Picking joint bandwidth of 1.85
+Picking joint bandwidth of 2.03
+Picking joint bandwidth of 2.12
+Picking joint bandwidth of 1.64
+Picking joint bandwidth of 4.68
+Picking joint bandwidth of 1.97
+Picking joint bandwidth of 1.33
+Picking joint bandwidth of 2.12
+Picking joint bandwidth of 1.55
+Picking joint bandwidth of 2.19
+Picking joint bandwidth of 2.19
+Picking joint bandwidth of 3.62
+Picking joint bandwidth of 2.73
+Picking joint bandwidth of 1.27
+Picking joint bandwidth of 1.01
+Picking joint bandwidth of 1.85
+Picking joint bandwidth of 2.03
+Picking joint bandwidth of 2.12
+Picking joint bandwidth of 1.64
+Picking joint bandwidth of 4.68
+Picking joint bandwidth of 1.97
+Picking joint bandwidth of 1.33
+Picking joint bandwidth of 2.12
+Picking joint bandwidth of 1.55
+Picking joint bandwidth of 2.19
+Picking joint bandwidth of 2.19
+Picking joint bandwidth of 3.62
+Picking joint bandwidth of 2.73
+			-Length (1)
+			-Length (2)
+			-E_value (1)
+			-E_value (2)
+Warning messages:
+1: Using alpha for a discrete variable is not advised. 
+2: Removed 27 rows containing non-finite values (`stat_boxplot()`). 
+3: Removed 27 rows containing non-finite values (`stat_summary()`). 
+4: Removed 27 rows containing non-finite values (`stat_boxplot()`). 
+5: Removed 27 rows containing non-finite values (`stat_summary()`). 
+6: Using alpha for a discrete variable is not advised. 
+7: Removed 27 rows containing non-finite values (`stat_boxplot()`). 
+8: Removed 27 rows containing non-finite values (`stat_summary()`). 
+9: Removed 27 rows containing non-finite values (`stat_boxplot()`). 
+10: Removed 27 rows containing non-finite values (`stat_summary()`). 
+
+
+FUNCTIONAL MOTIFS --> TABLES
+
+
+Strictness: ORIGINAL
+Nonmatch: no
+-Low
+	-ALL
+		-oops
+			-6-15
+Loading required namespace: GO.db
+
+			-6-50
+	-intergenic
+		-oops
+			-6-15
+			-6-50
+	-antisense
+		-oops
+			-6-15
+			-6-50
+	-intronic
+		-oops
+			-6-15
+			-6-50
+	-sense
+		-oops
+			-6-15
+			-6-50
+
+-Medium
+	-ALL
+		-oops
+			-6-15
+			-6-50
+	-intergenic
+		-oops
+			-6-15
+			-6-50
+	-antisense
+		-oops
+			-6-15
+			-6-50
+	-intronic
+		-oops
+			-6-15
+			-6-50
+	-sense
+		-oops
+			-6-15
+			-6-50
+
+-High
+	-ALL
+		-oops
+			-6-15
+			-6-50
+	-intergenic
+		-oops
+			-6-15
+			-6-50
+	-antisense
+		-oops
+			-6-15
+			-6-50
+	-intronic
+		-oops
+			-6-15
+			-6-50
+	-sense
+		-oops
+			-6-15
+			-6-50
+pvbermell@megamind:/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Motif_level/Positional_conserved$ 
+
