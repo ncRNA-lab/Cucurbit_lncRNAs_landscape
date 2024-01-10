@@ -22,8 +22,8 @@ suppressMessages(library("tibble"))
 
 ## 1. VARIABLES.
 
-WD = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/10-Distribution/vvi/nr"
-AI = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Additional_info"
+WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Distribution/vvi/nr"
+AI = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 confidences = c("Low", "Medium", "High")
 spes = "vvi"
 spel = "V. vinifera"

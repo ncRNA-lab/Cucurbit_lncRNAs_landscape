@@ -1,21 +1,21 @@
 #!/bin/bash
 
-#SBATCH --job-name=covvvi					# Job name.
-#SBATCH --output=coverage_vvi.log				# Standard output and error log.
-#SBATCH --qos=short						# Partition (queue)
-#SBATCH --ntasks=1						# Run on one mode.
-#SBATCH --cpus-per-task=2					# Number of tasks = cpus. 
-#SBATCH --time=0-04:00:00					# Time limit days-hrs:min:sec.
-#SBATCH --mem-per-cpu=3gb					# Job memory request.
+#SBATCH --job-name=cmeS12cov						# Job name.
+#SBATCH --output=cme_STEP12_coverage.log				# Standard output and error log.
+#SBATCH --qos=short							# Partition (queue)
+#SBATCH --ntasks=1							# Run on one mode.
+#SBATCH --cpus-per-task=2						# Number of tasks = cpus. 
+#SBATCH --time=0-04:00:00						# Time limit days-hrs:min:sec.
+#SBATCH --mem-per-cpu=3gb						# Job memory request.
 
 
 ####### VARIABLES
-specie="vvi"
-WD1="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/03-Assembly"
-WD2="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/05-LncRNAs_prediction"
-WD3="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/10-Distribution"
-AI="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Additional_info"
-AS="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Scripts/10-Distribution/Additional_scripts"
+specie="cme"
+WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/03-Assembly"
+WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
+WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Distribution"
+AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/10-Distribution/Additional_scripts"
 Confidence_levels_list="High Medium Low"
 
 ####### NEW AND OTHER VARIABLES
