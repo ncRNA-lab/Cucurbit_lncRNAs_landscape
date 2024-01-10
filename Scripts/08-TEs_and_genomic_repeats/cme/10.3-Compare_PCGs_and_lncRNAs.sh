@@ -1,23 +1,23 @@
 #!/bin/bash
 
-#SBATCH --job-name=Comp					# Job name.
-#SBATCH --output=Compare.log					# Standard output and error log.
-#SBATCH --qos=short						# Partition (queue)
-#SBATCH --ntasks=6						# Run on one mode. Don't change unless you know what you are doing.
-#SBATCH --cpus-per-task=2					# Number of tasks = cpus.
-#SBATCH --time=0-05:00:00					# Time limit days-hrs:min:sec.
-#SBATCH --mem-per-cpu=2gb					# Job memory request.
+#SBATCH --job-name=cmeS10Comp						# Job name.
+#SBATCH --output=cme_STEP10_Compare.log				# Standard output and error log.
+#SBATCH --qos=short							# Partition (queue)
+#SBATCH --ntasks=6							# Run on one mode. Don't change unless you know what you are doing.
+#SBATCH --cpus-per-task=2						# Number of tasks = cpus.
+#SBATCH --time=0-05:00:00						# Time limit days-hrs:min:sec.
+#SBATCH --mem-per-cpu=2gb						# Job memory request.
 
 
 ####### MODULES
 module load R/4.1.2
 
 ####### VARIABLES
-WD="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results"
-AI="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Additional_info"
-F="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Scripts/08-TEs_and_genomic_repeats/Functions.sh"
-AS="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Scripts/08-TEs_and_genomic_repeats/Additional_scripts"
-Specie="vvi"
+WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
+AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/08-TEs_and_genomic_repeats/Functions.sh"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/08-TEs_and_genomic_repeats/Additional_scripts"
+Specie="cme"
 confidences="High Medium Low"
 flags="NR R"
 

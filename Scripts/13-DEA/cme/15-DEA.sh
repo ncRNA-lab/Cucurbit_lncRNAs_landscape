@@ -21,8 +21,8 @@ AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/16-DEA/additio
 alpha_value=0.05
 
 ####### NEW AND OTHER VARIABLES
-WD1=$WD/05-predict_lncRNAs/$specie
-WD2=$WD/06-quantification/$specie
+WD1=$WD/05-LncRNAs_prediction/$specie
+WD2=$WD/06-Quantification/$specie
 WD3=$WD/08-comparative_genomics
 WD4=$WD/09-Tissue-specificity
 WD5=$WD/16-DEA/$specie

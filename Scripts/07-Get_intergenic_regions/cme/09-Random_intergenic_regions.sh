@@ -14,9 +14,9 @@ module load biotools
 
 ####### VARIABLES
 specie="cme"
-WD1="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/05-LncRNAs_prediction"
-WD2="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/07-Get_intergenic_regions"
-AI="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Additional_info"
+WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
+WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/07-Get_intergenic_regions"
+AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 
 ####### NEW AND OTHER VARIABLES
 WD1_spe=$WD1/$specie
