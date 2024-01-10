@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=vvi_IR							# Job name.
-#SBATCH --output=vvi_Intergenic_regions.log					# Standard output and error log.
+#SBATCH --job-name=cmeS9							# Job name.
+#SBATCH --output=cme_STEP9.log						# Standard output and error log.
 #SBATCH --qos=short								# Partition (queue)
 #SBATCH --ntasks=1								# Run on one mode.
 #SBATCH --cpus-per-task=2							# Number of tasks = cpus.
@@ -13,7 +13,7 @@
 module load biotools
 
 ####### VARIABLES
-specie="vvi"
+specie="cme"
 WD1="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/05-LncRNAs_prediction"
 WD2="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/07-Get_intergenic_regions"
 AI="/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Additional_info"
