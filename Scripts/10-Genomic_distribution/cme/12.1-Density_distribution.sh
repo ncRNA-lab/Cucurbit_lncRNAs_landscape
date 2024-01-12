@@ -16,10 +16,10 @@ module load biotools
 ####### VARIABLES
 specie="vvi"
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
-WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Distribution"
+WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Genomic_distribution"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/10-Distribution/Additional_scripts"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/10-Distribution/Functions.sh"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/10-Genomic_distribution/Additional_scripts"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/10-Genomic_distribution/Functions.sh"
 
 ####### NEW AND OTHER VARIABLES
 WD1_spe=$WD1/$specie

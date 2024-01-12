@@ -22,7 +22,7 @@ suppressMessages(library("tibble"))
 
 ## 1. VARIABLES.
 
-WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Distribution/vvi/nr"
+WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Genomic_distribution/vvi/nr"
 AI = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 confidences = c("Low", "Medium", "High")
 spes = "vvi"

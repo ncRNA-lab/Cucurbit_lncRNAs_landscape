@@ -13,9 +13,9 @@
 specie="cme"
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/03-Assembly"
 WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
-WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Distribution"
+WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Genomic_distribution"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/10-Distribution/Additional_scripts"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/10-Genomic_distribution/Additional_scripts"
 Confidence_levels_list="High Medium Low"
 
 ####### NEW AND OTHER VARIABLES

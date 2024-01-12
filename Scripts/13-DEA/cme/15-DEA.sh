@@ -3,8 +3,8 @@
 #SBATCH --job-name=cmeS15dea				# Job name.
 #SBATCH --output=cme_STEP15_dea.log			# Standard output and error log.
 #SBATCH --qos=short					# Partition (queue)
-#SBATCH --ntasks=1					# Run on one mode. Don't change unless you know what you are doing.
-#SBATCH --cpus-per-task=2				# Number of tasks = cpus. It depends on the number of process of your parallelization.
+#SBATCH --ntasks=1					# Run on one mode.
+#SBATCH --cpus-per-task=2				# Number of tasks = cpus.
 #SBATCH --time=1-00:00:00				# Time limit days-hrs:min:sec.
 #SBATCH --mem-per-cpu=5gb				# Job memory request.
 
@@ -17,15 +17,15 @@ module load biotools
 specie="cme"
 WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/16-DEA/additional_scripts"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/13-DEA/additional_scripts"
 alpha_value=0.05
 
 ####### NEW AND OTHER VARIABLES
 WD1=$WD/05-LncRNAs_prediction/$specie
 WD2=$WD/06-Quantification/$specie
-WD3=$WD/08-comparative_genomics
-WD4=$WD/09-Tissue-specificity
-WD5=$WD/16-DEA/$specie
+WD3=$WD/11-Comparative_genomics
+WD4=$WD/12-Tissue-specificity
+WD5=$WD/13-DEA/$specie
 Metadata=$AI/sra-info/metadata/Search_studies/$specie/Studies
 
 ####### ADDITIONAL SCRIPTS
@@ -34,7 +34,7 @@ export PATH=$PATH:${ASPATH}
 
 ####### DIRECTORY
 mkdir -p $WD
-mkdir -p $WD/16-DEA
+mkdir -p $WD/13-DEA
 mkdir -p $WD5
 mkdir -p $WD5/01-Metadata_EA
 mkdir -p $WD5/02-EA
