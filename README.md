@@ -6,10 +6,10 @@ One Paragraph of project description goes here
 
 ## Table of contents
 
-1. Sample processing
-2. X
-3. gg
-4. ff
+  1. Sample processing
+  2. X
+  3. gg
+  4. ff
 
 ## Getting Started
 
