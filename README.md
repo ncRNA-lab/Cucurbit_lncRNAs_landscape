@@ -7,7 +7,7 @@ One Paragraph of project description goes here
 ## Table of contents
 
 - Scripts
-  1. Sample processing 
+  - Sample processing 
 - Results
 
 ## Getting Started
