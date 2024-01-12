@@ -191,22 +191,25 @@ TAB_2 = data.frame()
 
 for (i in 1:length(species)) {
   
-  spe = species[i]
+  spes = species[i]
+  spel = species_long[i]
   
-  if (spe %in% list.files(path_DEA)) {
-    path = paste0(path_DEA, "/", spe, "/05-Tables_and_Figures/ALL")
+  if (spes %in% list.files(path_DEA)) {
+    path = paste0(path_DEA, "/", spes, "/05-Tables_and_Figures/ALL")
     
     tab_1 = read.table(paste0(path, "/Percentage_DE/TAB-Violin-Percentage_DE-1.tsv"), sep = "\t", header = T, quote = "\"")
-    tab_1$Specie = spe
+    tab_1$Specie = spes
+    tab_1$Specie_long = spel
     tab_2 = read.table(paste0(path, "/Percentage_DE/TAB-Violin-Percentage_DE-2.tsv"), sep = "\t", header = T, quote = "\"")
-    tab_2$Specie = spe
+    tab_2$Specie = spes
+    tab_2$Specie_long = spel
     
     TAB_1 = rbind(TAB_1, tab_1)
     TAB_2 = rbind(TAB_2, tab_2)
   }
 }
 
-rm(list = c("spe", "i", "tab_1", "tab_2", "path"))
+rm(list = c("spes", "spel", "i", "tab_1", "tab_2", "path"))
 
 TAB_1[TAB_1 == "Abiotic stress"] = "Stress"
 TAB_1[TAB_1 == "Biotic stress"] = "Stress"
@@ -230,6 +233,20 @@ rownames(TAB_1) = NULL
 TAB_2 = TAB_2[order(TAB_2$Class, TAB_2$ID),]
 rownames(TAB_2) = NULL
 
+TAB_1_save = TAB_1[, c("Specie_long", "ID", "Class_code", "Number", "Total", "Percentage", "Class")]
+colnames(TAB_1_save) = c("Specie", "Experiment", "Type", "Number", "Total", "Percentage", "Class")
+TAB_1_save_dev = TAB_1_save[TAB_1_save$Class == "Development", c("Specie", "Experiment", "Type", "Number", "Total", "Percentage")]
+write.table(TAB_1_save_dev, paste0(path_DEA, "/ALL/Percentage_DE/Violin-Percentage-1-Dev.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+TAB_1_save_str = TAB_1_save[TAB_1_save$Class == "Stress", c("Specie", "Experiment", "Type", "Number", "Total", "Percentage")]
+write.table(TAB_1_save_str, paste0(path_DEA, "/ALL/Percentage_DE/Violin-Percentage-1-Str.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+
+TAB_2_save = TAB_2[, c("Specie_long", "ID", "Significance_level", "Number", "Total", "Percentage", "Class")]
+colnames(TAB_2_save) = c("Specie", "Experiment", "Type", "Number", "Total", "Percentage", "Class")
+TAB_2_save_dev = TAB_2_save[TAB_2_save$Class == "Development", c("Specie", "Experiment", "Type", "Number", "Total", "Percentage")]
+write.table(TAB_2_save_dev, paste0(path_DEA, "/ALL/Percentage_DE/Violin-Percentage-2-Dev.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+TAB_2_save_str = TAB_2_save[TAB_2_save$Class == "Stress", c("Specie", "Experiment", "Type", "Number", "Total", "Percentage")]
+write.table(TAB_2_save_str, paste0(path_DEA, "/ALL/Percentage_DE/Violin-Percentage-2-Str.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+
 TAB_1_collap = TAB_1 %>%
   group_by(Class_code, Class) %>%
   summarise(Mean.Percentage = round(mean(Percentage), 2))
@@ -237,8 +254,8 @@ TAB_2_collap = TAB_2 %>%
   group_by(Significance_level, Class) %>%
   summarise(Mean.Percentage = round(mean(Percentage), 2))
 
-write.table(TAB_1_collap, paste0(path_DEA, "/ALL/Percentage_DE/Violin-Percentage-1.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
-write.table(TAB_2_collap, paste0(path_DEA, "/ALL/Percentage_DE/Violin-Percentage-2.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+write.table(TAB_1_collap, paste0(path_DEA, "/ALL/Percentage_DE/Violin-Percentage-1-collap.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+write.table(TAB_2_collap, paste0(path_DEA, "/ALL/Percentage_DE/Violin-Percentage-2-collap.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
 
 combinations = as.data.frame(t(combn(c("PC genes", "lincRNAs", "NAT-lncRNAs", "int-lncRNAs", "SOT-lncRNAs"), 2)))
 rownames(combinations) = NULL
@@ -307,11 +324,14 @@ for (cl in unique(TAB_1$Class)) {
   
   temp_1 = TAB_1[TAB_1$Class == cl,]
   
-  for (spe in species) {
-    if (!(spe %in% temp_1$Specie)) {
-      df = data.frame(Specie = spe, ID = "A", Class_code = c("PC genes", "lincRNAs", "NAT-lncRNAs", "int-lncRNAs", "SOT-lncRNAs"),
+  for (i in 1:length(species)) {
+    spes = species[i]
+    spel = species_long[i]
+    
+    if (!(spes %in% temp_1$Specie)) {
+      df = data.frame(Specie = spes, ID = "A", Class_code = c("PC genes", "lincRNAs", "NAT-lncRNAs", "int-lncRNAs", "SOT-lncRNAs"),
                       Significance_level = c("PC genes", "HC-lncRNAs", "HC-lncRNAs", "HC-lncRNAs", "HC-lncRNAs"), Type = NA, Number = NA,
-                      Total = NA, Percentage = NA, Class = NA)
+                      Total = NA, Percentage = NA, Class = NA, Specie_long = spel)
       temp_1 = rbind(temp_1, df)
     }
   }
@@ -396,10 +416,13 @@ for (cl in unique(TAB_1$Class)) {
   
   temp_2 = TAB_2[TAB_2$Class == cl,]
   
-  for (spe in species) {
-    if (!(spe %in% temp_2$Specie)) {
-      df = data.frame(Specie = spe, ID = "A", Significance_level = c("PC genes", "HC-lncRNAs", "HC-lncRNAs", "HC-lncRNAs", "HC-lncRNAs"), 
-                      Type = NA, Number = NA, Total = NA, Percentage = NA, Class = NA)
+  for (i in 1:length(species)) {
+    spes = species[i]
+    spel = species_long[i]
+    
+    if (!(spes %in% temp_2$Specie)) {
+      df = data.frame(Specie = spes, ID = "A", Significance_level = c("PC genes", "HC-lncRNAs", "HC-lncRNAs", "HC-lncRNAs", "HC-lncRNAs"), 
+                      Type = NA, Number = NA, Total = NA, Percentage = NA, Class = NA, Specie_long = spel)
       temp_2 = rbind(temp_2, df)
     }
   }

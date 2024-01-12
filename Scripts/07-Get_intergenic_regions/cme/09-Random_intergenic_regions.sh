@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmeS9							# Job name.
-#SBATCH --output=cme_STEP9.log						# Standard output and error log.
+#SBATCH --job-name=cmeS9IR							# Job name.
+#SBATCH --output=cme_STEP9_intergenic_regions.log				# Standard output and error log.
 #SBATCH --qos=short								# Partition (queue)
 #SBATCH --ntasks=1								# Run on one mode.
 #SBATCH --cpus-per-task=2							# Number of tasks = cpus.
