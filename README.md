@@ -1,6 +1,6 @@
 # Cucurbit lncRNAs landscape
 
-Long non-coding RNAs constitute a fascinating class of regulatory RNAs, widely distributed in eukaryotes. In plants, they exhibit features such as tissue-specific expression, spatiotemporal regulation, and responsiveness to environmental changes, suggesting their involvement in specific biological processes. Although an increasing number of studies support the regulatory role of long non-coding RNs (lncRNAs) in model plants, our knowledge about these transcripts in relevant crops is limited. 
+Long non-coding RNAs (lncRNAs) constitute a fascinating class of regulatory RNAs, widely distributed in eukaryotes. In plants, they exhibit features such as tissue-specific expression, spatiotemporal regulation and responsiveness to environmental changes, suggesting their involvement in specific biological processes. Although an increasing number of studies support the regulatory role of lncRNAs in model plants, our knowledge about these transcripts in relevant crops is limited. 
 
 This repository includes the scripts used to identify the lncRNAs shown in the paper "Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits".
 
