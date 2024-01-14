@@ -5,7 +5,8 @@ Long non-coding RNAs (lncRNAs) constitute a fascinating class of regulatory RNAs
 This repository includes the scripts used to identify the lncRNAs shown in the paper "Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits".
 
 
-| Species                 | ID  | Genome Size (bases; Mb) | Download | Trimming and QC | Strand Specific | Download | Trimming and QC | Strand Specific | Final Data Size (Gb) |
+| Species                 | ID  | Genome Size (bases; Mb) | Download | Trimming and QC | Strand Specific | Download | Trimming and QC | Strand Specific | Final Data Size (bytes; Gb) |
+| ^^                 |  ^^  | Genome Size (bases; Mb) | Download | Trimming and QC | Strand Specific | Download | Trimming and QC | Strand Specific | Final Data Size (bytes; Gb) |
 |-------------------------|-----|------------------|---------|-----------------|----------|------------------|-----------------|----------|----------------------|
 | *Cucumis sativus*       | csa | 226.21           | 1388    | 1334            | 360      | 129              | 127             | 35       | 1167.43              |
 | *Cucumis melo*          | cme | 357.86           | 802     | 776             | 383      | 45               | 44              | 16       | 820.87               |
@@ -16,6 +17,18 @@ This repository includes the scripts used to identify the lncRNAs shown in the p
 | *Cucurbita pepo*        | cpe | 263.38           | 143     | 142             | 50       | 13               | 13              | 7        | 112.61               |
 | *Cucurbita maxima*      | cma | 279.69           | 50      | 50              | 27       | 10               | 10              | 4        | 43.36                |
 | *Momordica charantia*   | mch | 294.01           | 74      | 74              | 8        | 5                | 5               | 2        | 27.73                |
+
+
+
+-tx-
+|             |          Grouping           || 
+| First Header  | Second Header | Third Header | 
+|  ------------ | :-----------: | -----------: | 
+| Content       |          *Long Cell*        || 
+| Content       |   **Cell**    |         Cell | 
+| New section   |     More      |         Data | 
+| And more      | With an escaped '\|'       || 
+[Prototype table]
 
 
 
