@@ -33,20 +33,16 @@
 
 ## Pipeline
 
-<div align="justify">To identify and analyze potential lncRNAs, we used a custom pipeline composed of the scripts stored in this github repository. </div>
+To identify and analyze potential lncRNAs, we used a custom pipeline consisting of three parts:
 
-
-This pipeline consists of 3 parts:
-- Data preprocessing and assembly: All RNA-seq samples from Sequence Read Archive (SRA) database and from a particular species were collected. Next, we remove adapters and filter the reads by quality using the software fastp. And then, we use the pseudoaligner Salmon to deduce what type of library we have, for example, whether it is strand-specific or not, and select the strand-specific samples. Why? Because there are some lncRNA classes that require knowledge of the origin strand and strand-specific libraries allow us to know this.
-- LncRNA prediction.
-- Downstream analysis.
+- <div align="justify"> <b>Data preprocessing and assembly</b>: All RNA-seq samples from Sequence Read Archive (SRA) database and from a particular species were collected. Next, we remove adapters and filter the reads by quality using the software fastp. And then, we use the pseudoaligner Salmon to deduce what type of library we have, for example, whether it is strand-specific or not, and select the strand-specific samples. Why? Because there are some lncRNA classes that require knowledge of the origin strand and strand-specific libraries allow us to know this.<br /><br />Once the data have been preprocessed, we use the alignment program Hisat2 for mapping the clean data to the reference genome taking into account the library type information. Next, we assemble the transcriptome of each library using a genome-guided assembly approach and then we merge them into a single and final transcriptome. Both steps use the stringtie2 assembler. Finally, we compare the assembled transcripts to the protein-coding gene annotation file and classify them by their genomic location and their position relative to these protein-coding genes using the software gffcompare. As a result of this classification, a class code is assigned to each transcript and, if you look at this picture, there are many different class codes, but not all of them are of interest to us.</div><br />
+- <div align="justify"> <b>LncRNA prediction</b>: Third, we select transcripts that have any of the following five class codes: “u”, “x”, “i” and, “o” or “e”. Class code “u” refers to transcripts that come from intergenic regions of both genomic strands, class code “x” refers to transcripts that overlap with the exons of a protein-coding gene on the opposite strand, class code “i” refers to transcripts that are completely contained within the intron of a protein-coding gene on the same strand and class codes “o” or “e” refer to transcripts that overlap with the exons of a protein-coding gene on the same strand. Next, transcripts are filtered by length (longer than 200 nucleotides) and expression level (more than 0.5 Fragments Per Kilobase Million).<br /><br />Then, we assess the coding potential of each transcript using three alignment-free computational tools (CPC2, FEELnc and CPAT) and two protein databases (Swissprot and Pfam). In the following step, we classify the transcripts into three confidence-levels (High-, medium- and low-confidence) according to the results of the previous step. Those transcripts that don’t meet any of the present scenarios are not classified. After that, we annotate transcripts using different ncRNAs databases and those annotated as miRNA precursors or housekeeping ncRNAs are discarded. We also annotate transcripts using databases of known potential lncRNAs in order to provide additional information. The program used to align the transcripts to the different ncRNAs databases is blastn. In the case of miRNA precursors, the MIReNA program is also used to validate them. Finally, we discard redundant transcripts using the software CGAT and create the database in table format as well as GTF annotation file format. This database will contain all potential or putative lncRNAs and it is important to understand this concept because without an assigned function we can only talk about potential lncRNAs.<br /><br />In addition, the different classes of potential lncRNAs will be renamed from intergenic, antisense, intronic and sense to lincRNA, NAT-lncRNA, int-lncRNA and SOT-lncRNA, respectively.</div><br />
+- <div align="justify"> <b>Downstream analysis</b>: </div>
+ 
     + Molecular properties comparison (LncRNAs vs PC genes).
     + Comparative genomics (Sequence, position and motif level).
     + Tissue-specificity analysis.
-    + 
-
-
-
+    + Differential expression (development and environment).
 
 <br />
 <br />
@@ -60,9 +56,12 @@ This pipeline consists of 3 parts:
 <br />
 <br />
 
+<div align="justify">The <a href="Scripts">scripts</a> stored in this github repository. </div>
+
+<br />
+
 <div align="justify"> For more information you can read the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>. </div>
 
-LncRNAs were predicted according to three confidence levels and classified into intergenic, natural antisense, intronic, and sense overlapping. Predicted lncRNAs have lower expression levels compared to protein-coding genes but a more specific behavior when considering plant tissues, developmental stages, and the response to environmental changes, emphasizing their potential roles in regulating various aspects of plant biology. Additionally, the evolutionary analysis indicates higher positional conservation than sequence conservation, which may be linked to the presence of conserved modular motifs within syntenic lncRNAs. In short, this research provides a comprehensive map of lncRNAs in the agriculturally relevant Cucurbitaceae family, offering a valuable resource for future investigations in crop improvement.
 
 nf-core/sarek is a workflow designed to detect variants on whole genome or targeted sequencing data. Initially designed for Human, and Mouse, it can work on any species with a reference genome. Sarek can also handle tumour / normal pairs and could include additional relapses.
 
@@ -135,19 +134,11 @@ Add additional notes about how to deploy this on a live system
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
 * **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
