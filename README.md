@@ -4,7 +4,7 @@
 
 <br />
 
-<div align="justify"> In the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>, we identified and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. All the lncRNAs identified for each of the species can be found in the <a href="Results">Results</a> folder in fasta, tsv and gtf format so that they can be used by the scientific community. </div>
+<div align="justify"> In the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>, we identified and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. </div>
 
 <br />
 <br />
@@ -28,18 +28,23 @@
 <br />
 <br />
 
+<div align="justify">All the lncRNAs identified for each of the species can be found in the <a href="Results">Results</a> folder in fasta, tsv and gtf format so that they can be used by the scientific community. </div>
 
+<br />
+<br />
 
 
 ## Pipeline
 
 To identify and analyze potential lncRNAs, we used a custom pipeline consisting of three parts:
 
-- <div align="justify"> <b>Data preprocessing and assembly</b>: All RNA-seq samples from Sequence Read Archive (SRA) database and from a particular species were collected. Next, we remove adapters and filter the reads by quality using the software fastp. And then, we use the pseudoaligner Salmon to deduce what type of library we have, for example, whether it is strand-specific or not, and select the strand-specific samples. Why? Because there are some lncRNA classes that require knowledge of the origin strand and strand-specific libraries allow us to know this.<br /><br />Once the data have been preprocessed, we use the alignment program Hisat2 for mapping the clean data to the reference genome taking into account the library type information. Next, we assemble the transcriptome of each library using a genome-guided assembly approach and then we merge them into a single and final transcriptome. Both steps use the stringtie2 assembler. Finally, we compare the assembled transcripts to the protein-coding gene annotation file and classify them by their genomic location and their position relative to these protein-coding genes using the software gffcompare. As a result of this classification, a class code is assigned to each transcript and, if you look at this picture, there are many different class codes, but not all of them are of interest to us.</div><br />
-- <div align="justify"> <b>LncRNA prediction</b>: Third, we select transcripts that have any of the following five class codes: “u”, “x”, “i” and, “o” or “e”. Class code “u” refers to transcripts that come from intergenic regions of both genomic strands, class code “x” refers to transcripts that overlap with the exons of a protein-coding gene on the opposite strand, class code “i” refers to transcripts that are completely contained within the intron of a protein-coding gene on the same strand and class codes “o” or “e” refer to transcripts that overlap with the exons of a protein-coding gene on the same strand. Next, transcripts are filtered by length (longer than 200 nucleotides) and expression level (more than 0.5 Fragments Per Kilobase Million).<br /><br />Then, we assess the coding potential of each transcript using three alignment-free computational tools (CPC2, FEELnc and CPAT) and two protein databases (Swissprot and Pfam). In the following step, we classify the transcripts into three confidence-levels (High-, medium- and low-confidence) according to the results of the previous step. Those transcripts that don’t meet any of the present scenarios are not classified. After that, we annotate transcripts using different ncRNAs databases and those annotated as miRNA precursors or housekeeping ncRNAs are discarded. We also annotate transcripts using databases of known potential lncRNAs in order to provide additional information. The program used to align the transcripts to the different ncRNAs databases is blastn. In the case of miRNA precursors, the MIReNA program is also used to validate them. Finally, we discard redundant transcripts using the software CGAT and create the database in table format as well as GTF annotation file format. This database will contain all potential or putative lncRNAs and it is important to understand this concept because without an assigned function we can only talk about potential lncRNAs.<br /><br />In addition, the different classes of potential lncRNAs will be renamed from intergenic, antisense, intronic and sense to lincRNA, NAT-lncRNA, int-lncRNA and SOT-lncRNA, respectively.</div><br />
-- <div align="justify"> <b>Downstream analysis</b>: </div>
+- <div align="justify"> <b>Data preprocessing and assembly</b><br /><br />All RNA-seq samples from Sequence Read Archive (SRA) database and from a particular species are collected (SRA Toolkit). Next, we remove adapters and filter the reads by quality (Fastp). Then, we deduce whether the library is strand-specific or not, and select the strand-specific samples (Salmon).<br /><br />Once the data have been preprocessed, we map the clean data to the reference genome (Hisat2) and assemble the transcriptome using a genome-guided assembly approach (Stringtie2). Finally, we classify the assembled transcripts by their genomic position relative to the protein-coding genes (Gffcompare). As a result, a class code is assigned to each transcript.</div><br />
+
+- <div align="justify"> <b>LncRNA prediction</b><br /><br />We select transcripts that have any of the following five class codes: “u” (intergenic), “x” (antisense), “i” (intronic) and, “o” (sense) or “e” (sense). Next, transcripts are filtered by length (longer than 200 nucleotides) and expression level (more than 0.3 FPKM).<br /><br />Then, we assess the coding potential of each transcript using three alignment-free computational tools (CPC2, FEELnc and CPAT) and two protein databases (Swissprot and Pfam). In the following step, we classify the transcripts into three confidence-levels (High-, medium- and low-confidence) according to the results of the previous step. Those transcripts that don’t meet any of the present scenarios are not classified. After that, we annotate transcripts using different ncRNAs databases and those annotated as miRNA precursors or housekeeping ncRNAs are discarded. The program used to align the transcripts to the different ncRNAs databases is blastn. In the case of miRNA precursors, the MIReNA program is also used to validate them. We also annotate transcripts using databases of known potential lncRNAs in order to provide additional information.</b><br /><br />Finally, we discard redundant transcripts (CGAT) and create the database that will contain all potential lncRNAs. In addition, the different classes of potential lncRNAs will be renamed from intergenic, antisense, intronic and sense to lincRNA, NAT-lncRNA, int-lncRNA and SOT-lncRNA, respectively.</div><br />
+
+- <div align="justify"> <b>Downstream analysis</b> </div><br />Now, there are some downstream analyses that we can perform:<br /><br />
  
-    + Molecular properties comparison (LncRNAs vs PC genes).
+    + Molecular properties comparison (LncRNAs vs Protein-coding genes).
     + Comparative genomics (Sequence, position and motif level).
     + Tissue-specificity analysis.
     + Differential expression (development and environment).
@@ -69,6 +74,15 @@ nf-core/sarek is a workflow designed to detect variants on whole genome or targe
 The pipeline is built using Nextflow, a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It uses Docker/Singularity containers making installation trivial and results highly reproducible. The Nextflow DSL2 implementation of this pipeline uses one container per process which makes it much easier to maintain and update software dependencies. Where possible, these processes have been submitted to and installed from nf-core/modules in order to make them available to all nf-core pipelines, and to everyone within the Nextflow community!
 
 On release, automated continuous integration tests run the pipeline on a full-sized dataset on the AWS cloud infrastructure. This ensures that the pipeline runs on AWS, has sensible resource allocation defaults set to run on real-world datasets, and permits the persistent storage of results to benchmark between pipeline releases and other analysis sources. The results obtained from the full-sized test can be viewed on the nf-core website.
+
+## Softwares
+
+- SRA Toolkit
+- Fastp
+- Salmon
+- Hisat2
+- Stringtie2
+- Gffcompare
 
 
 ## Getting Started
