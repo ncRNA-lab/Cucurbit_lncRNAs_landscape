@@ -87,40 +87,30 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 - FEELnc v.0.2
 - CPAT v.3.0.2
 - DIAMOND v.2.0.14
-- transdecoder v.5.5.0
+- Transdecoder v.5.5.0
 - HMMER v.2.0.14
 - NCBI-BLAST v.2.13.0+
 - MIReNA v.2.0
 - CGAT v.1.0
 
+<br />
+
+## Databases
+
+- Swissprot
+- Pfam
+- RNAcentral
+- miRBase
+- PmiREN
+- CANTATAdb
+- PLncDB
+- GreeNC
+
+<br />
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
 
 End with an example of getting some data out of the system or using it for a little demo
 
@@ -128,31 +118,9 @@ End with an example of getting some data out of the system or using it for a lit
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```
 Give an example
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
@@ -160,12 +128,10 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Pascual Villalba-Bermell**
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* HPC i2sysBio
