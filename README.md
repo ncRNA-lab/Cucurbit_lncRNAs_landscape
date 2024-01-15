@@ -15,7 +15,7 @@
 
 <br />
 
-| <sub>Species</sub>                                  | <sub>Download<br />(Samples)</sub> | <sub>QC<br />(Samples)</sub> | <sub>Strand Specific<br />(Samples)</sub> | <sub>Download<br />(Projects)</sub> | <sub>QC<br />(Projects)</sub> | <sub>Strand Specific<br />(Projects)</sub> | <sub>Final Data Size <br />(bytes; Gb)</sub> |
+| <sub>Species</sub>                                  | <sub>Download<br />(Samples)</sub> | <sub>QC<br />(Samples)</sub> | <sub>Strand<br />Specific<br />(Samples)</sub> | <sub>Download<br />(Projects)</sub> | <sub>QC<br />(Projects)</sub> | <sub>Strand<br />Specific<br />(Projects)</sub> | <sub>Final Data Size <br />(bytes; Gb)</sub> |
 |-----------------------------------------------------|-------------------------------|-------------------------|------------------------------------------------|--------------------------------|--------------------------|-------------------------------------------------|---------------------------------------------|
 | <sub>*Cucumis sativus* (csa)</sub>                  | <sub>1388</sub>               | <sub>1334</sub>         | <sub>360</sub>                                 | <sub>129</sub>                 | <sub>127</sub>           | <sub>35</sub>                                   | <sub>1167.43</sub>                          |
 | <sub>*Cucumis melo* (cme)</sub>                     | <sub>802</sub>                | <sub>776</sub>          | <sub>383</sub>                                 | <sub>45</sub>                  | <sub>44</sub>            | <sub>16</sub>                                   | <sub>820.87</sub>                           |
