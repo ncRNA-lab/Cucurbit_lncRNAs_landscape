@@ -1,44 +1,33 @@
 # Cucurbit lncRNAs landscape
 
-Long non-coding RNAs (lncRNAs) constitute a fascinating class of regulatory RNAs, widely distributed in eukaryotes. In plants, they exhibit features such as tissue-specific expression, spatiotemporal regulation and responsiveness to environmental changes, suggesting their involvement in specific biological processes. Although an increasing number of studies support the regulatory role of lncRNAs in model plants, our knowledge about these transcripts in relevant crops is limited. 
+ <div align="justify"> Long non-coding RNAs (lncRNAs) constitute a fascinating class of regulatory RNAs, widely distributed in eukaryotes. In plants, they exhibit features such as tissue-specific expression, spatiotemporal regulation and responsiveness to environmental changes, suggesting their involvement in specific biological processes. Although an increasing number of studies support the regulatory role of lncRNAs in model plants, our knowledge about these transcripts in relevant crops is limited. </div>
 
-This repository includes the scripts used to identify the lncRNAs shown in the paper "Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits".
+<br />
 
+<div align="justify"> This repository includes the scripts used in the paper "Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits" to identify and analyze the lncRNAs for the nine species present in the table below. </div>
 
-| Species                 | ID  | Genome Size (bases; Mb) | Download | Trimming and QC | Strand Specific | Download | Trimming and QC | Strand Specific | Final Data Size (bytes; Gb) |
-| ^^                 |  ^^  | Genome Size (bases; Mb) | Download | Trimming and QC | Strand Specific | Download | Trimming and QC | Strand Specific | Final Data Size (bytes; Gb) |
-|-------------------------|-----|------------------|---------|-----------------|----------|------------------|-----------------|----------|----------------------|
-| *Cucumis sativus*       | csa | 226.21           | 1388    | 1334            | 360      | 129              | 127             | 35       | 1167.43              |
-| *Cucumis melo*          | cme | 357.86           | 802     | 776             | 383      | 45               | 44              | 16       | 820.87               |
-| *Citrullus lanatus*     | cla | 365.45           | 717     | 711             | 231      | 55               | 54              | 17       | 663.61               |
-| *Lagenaria siceraria*   | lsi | 313.81           | 92      | 92              | 9        | 7                | 7               | 3        | 27.07                |
-| *Cucurbita moschata*    | cmo | 273.42           | 127     | 126             | 39       | 17               | 16              | 6        | 102.73               |
-| *Cucurbita argyrosperma*| car | 231.58           | 10      | 10              | 9        | 2                | 2               | 2        | 30.36                |
-| *Cucurbita pepo*        | cpe | 263.38           | 143     | 142             | 50       | 13               | 13              | 7        | 112.61               |
-| *Cucurbita maxima*      | cma | 279.69           | 50      | 50              | 27       | 10               | 10              | 4        | 43.36                |
-| *Momordica charantia*   | mch | 294.01           | 74      | 74              | 8        | 5                | 5               | 2        | 27.73                |
+<br />
+<br />
 
+| <sub>Species</sub>                            | <sub>ID</sub>  | <sub>Genome<br />Size<br />(bases; Mb)</sub> | <sub>Download (Samples)</sub> | <sub>QC (Samples)</sub> | <sub>Strand<br />Specific<br />(Samples)</sub> | <sub>Download (Projects)</sub> | <sub>QC (Projects)</sub> | <sub>Strand<br />Specific<br />(Projects)</sub> | <sub>Final<br />Data Size (bytes; Gb)</sub> |
+|-----------------------------------------------|----------------|------------------|---------|-----------------|----------|------------------|-----------------|----------|----------------------|
+| <sub>*Cucumis sativus*</sub>                  | <sub>csa</sub> | <sub>226.21</sub>           | <sub>1388</sub>    | <sub>1334</sub>            | <sub>360</sub>      | <sub>129</sub>              | <sub>127</sub>             | <sub>35</sub>       | <sub>1167.43</sub>              |
+| <sub>*Cucumis melo*</sub>                     | <sub>cme</sub> | <sub>357.86</sub>           | <sub>802</sub>     | <sub>776</sub>             | <sub>383</sub>      | <sub>45</sub>               | <sub>44</sub>              | <sub>16</sub>       | <sub>820.87</sub>               |
+| <sub>*Citrullus lanatus*</sub>                | <sub>cla</sub> | <sub>365.45</sub>           | <sub>717</sub>     | <sub>711</sub>             | <sub>231</sub>      | <sub>55</sub>               | <sub>54</sub>              | <sub>17</sub>       | <sub>663.61</sub>               |
+| <sub>*Lagenaria siceraria*</sub>              | <sub>lsi</sub> | <sub>313.81</sub>           | <sub>92</sub>      | <sub>92</sub>              | <sub>9</sub>        | <sub>7</sub>                | <sub>7</sub>               | <sub>3        | <sub>27.07</sub>                |
+| <sub>*Cucurbita moschata*</sub>               | <sub>cmo</sub> | <sub>273.42</sub>           | <sub>127</sub>     | <sub>126</sub>             | <sub>39</sub>       | <sub>17</sub>               | <sub>16</sub>              | <sub>6        | <sub>102.73</sub>               |
+| <sub>*Cucurbita argyrosperma*</sub>           | <sub>car</sub> | <sub>231.58</sub>           | <sub>10</sub>      | <sub>10</sub>              | <sub>9</sub>        | <sub>2</sub>                | <sub>2</sub>               | <sub>2        | <sub>30.36</sub>                |
+| <sub>*Cucurbita pepo*</sub>                   | <sub>cpe</sub> | <sub>263.38</sub>           | <sub>143</sub>     | <sub>142</sub>             | <sub>50</sub>       | <sub>13</sub>               | <sub>13</sub>              | <sub>7        | <sub>112.61</sub>               |
+| <sub>*Cucurbita maxima*</sub>                 | <sub>cma</sub> | <sub>279.69</sub>           | <sub>50</sub>     | <sub>50</sub>              | <sub>27</sub>       | <sub>10</sub>               | <sub>10</sub>              | <sub>4        | <sub>43.36</sub>                |
+| <sub>*Momordica charantia*</sub>              | <sub>mch</sub> | <sub>294.01</sub>           | <sub>74</sub>      | <sub>74</sub>              | <sub>8</sub>        | <sub>5</sub>                | <sub>5</sub>               | <sub>2        | <sub>27.73</sub>                |
 
-
-
-
-
-
-
+<br />
+<br />
 
 
 
 
 
--tx-
-|             |          Grouping           || 
-| First Header  | Second Header | Third Header | 
-|  ------------ | :-----------: | -----------: | 
-| Content       |          *Long Cell*        || 
-| Content       |   **Cell**    |         Cell | 
-| New section   |     More      |         Data | 
-| And more      | With an escaped '\|'       || 
-[Prototype table]
 
 
 
