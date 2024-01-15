@@ -4,7 +4,7 @@
 
 <br />
 
-<div align="justify"> In the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>, we identified and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. All the lncRNAs identified for each of the species can be found in the [Results]() folder in fasta, tsv and gtf format so that they can be used by the scientific community. </div>
+<div align="justify"> In the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>, we identified and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. All the lncRNAs identified for each of the species can be found in the [Results](Results/LncRNAs_prediction) folder in fasta, tsv and gtf format so that they can be used by the scientific community. </div>
 
 <br />
 <br />
