@@ -4,34 +4,33 @@
 
 <br />
 
-<div align="justify"> This repository includes the scripts used in the paper "Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits" to identify and analyze the lncRNAs for the nine species present in the table below. </div>
+<div align="justify"> The scripts stored in this repository constitute a custom pipeline used to identify and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. </div>
 
 <br />
 <br />
 
-| <sub>Species</sub>                            | <sub>ID</sub>  | <sub>Genome<br />Size<br />(bases; Mb)</sub> | <sub>Download (Samples)</sub> | <sub>QC (Samples)</sub> | <sub>Strand<br />Specific<br />(Samples)</sub> | <sub>Download (Projects)</sub> | <sub>QC (Projects)</sub> | <sub>Strand<br />Specific<br />(Projects)</sub> | <sub>Final<br />Data Size (bytes; Gb)</sub> |
-|-----------------------------------------------|----------------|------------------|---------|-----------------|----------|------------------|-----------------|----------|----------------------|
-| <sub>*Cucumis sativus*</sub>                  | <sub>csa</sub> | <sub>226.21</sub>           | <sub>1388</sub>    | <sub>1334</sub>            | <sub>360</sub>      | <sub>129</sub>              | <sub>127</sub>             | <sub>35</sub>       | <sub>1167.43</sub>              |
-| <sub>*Cucumis melo*</sub>                     | <sub>cme</sub> | <sub>357.86</sub>           | <sub>802</sub>     | <sub>776</sub>             | <sub>383</sub>      | <sub>45</sub>               | <sub>44</sub>              | <sub>16</sub>       | <sub>820.87</sub>               |
-| <sub>*Citrullus lanatus*</sub>                | <sub>cla</sub> | <sub>365.45</sub>           | <sub>717</sub>     | <sub>711</sub>             | <sub>231</sub>      | <sub>55</sub>               | <sub>54</sub>              | <sub>17</sub>       | <sub>663.61</sub>               |
-| <sub>*Lagenaria siceraria*</sub>              | <sub>lsi</sub> | <sub>313.81</sub>           | <sub>92</sub>      | <sub>92</sub>              | <sub>9</sub>        | <sub>7</sub>                | <sub>7</sub>               | <sub>3        | <sub>27.07</sub>                |
-| <sub>*Cucurbita moschata*</sub>               | <sub>cmo</sub> | <sub>273.42</sub>           | <sub>127</sub>     | <sub>126</sub>             | <sub>39</sub>       | <sub>17</sub>               | <sub>16</sub>              | <sub>6        | <sub>102.73</sub>               |
-| <sub>*Cucurbita argyrosperma*</sub>           | <sub>car</sub> | <sub>231.58</sub>           | <sub>10</sub>      | <sub>10</sub>              | <sub>9</sub>        | <sub>2</sub>                | <sub>2</sub>               | <sub>2        | <sub>30.36</sub>                |
-| <sub>*Cucurbita pepo*</sub>                   | <sub>cpe</sub> | <sub>263.38</sub>           | <sub>143</sub>     | <sub>142</sub>             | <sub>50</sub>       | <sub>13</sub>               | <sub>13</sub>              | <sub>7        | <sub>112.61</sub>               |
-| <sub>*Cucurbita maxima*</sub>                 | <sub>cma</sub> | <sub>279.69</sub>           | <sub>50</sub>     | <sub>50</sub>              | <sub>27</sub>       | <sub>10</sub>               | <sub>10</sub>              | <sub>4        | <sub>43.36</sub>                |
-| <sub>*Momordica charantia*</sub>              | <sub>mch</sub> | <sub>294.01</sub>           | <sub>74</sub>      | <sub>74</sub>              | <sub>8</sub>        | <sub>5</sub>                | <sub>5</sub>               | <sub>2        | <sub>27.73</sub>                |
+<div align="center"> <sub><b>Information on the number of RNA-seq samples and projects used to predict and analyze lncRNAs in the nine selected cucurbit species.</b></sub> </div>
+<br />
+
+| <sub>Species</sub>                                  | <sub>Genome Size<br />(bases; Mb)</sub> | <sub>Download<br />(Samples)</sub> | <sub>QC<br />(Samples)</sub> | <sub>Strand Specific<br />(Samples)</sub> | <sub>Download<br />(Projects)</sub> | <sub>QC<br />(Projects)</sub> | <sub>Strand Specific<br />(Projects)</sub> | <sub>Final Data Size <br />(bytes; Gb)</sub> |
+|-----------------------------------------------------|----------------------------------------------|-------------------------------|-------------------------|------------------------------------------------|--------------------------------|--------------------------|-------------------------------------------------|---------------------------------------------|
+| <sub>*Cucumis sativus* (csa)</sub>                  | <sub>226.21</sub>                            | <sub>1388</sub>               | <sub>1334</sub>         | <sub>360</sub>                                 | <sub>129</sub>                 | <sub>127</sub>           | <sub>35</sub>                                   | <sub>1167.43</sub>                          |
+| <sub>*Cucumis melo* (cme)</sub>                     | <sub>357.86</sub>                            | <sub>802</sub>                | <sub>776</sub>          | <sub>383</sub>                                 | <sub>45</sub>                  | <sub>44</sub>            | <sub>16</sub>                                   | <sub>820.87</sub>                           |
+| <sub>*Citrullus lanatus* (cla)</sub>                | <sub>365.45</sub>                            | <sub>717</sub>                | <sub>711</sub>          | <sub>231</sub>                                 | <sub>55</sub>                  | <sub>54</sub>            | <sub>17</sub>                                   | <sub>663.61</sub>                           |
+| <sub>*Lagenaria siceraria* (lsi)</sub>              | <sub>313.81</sub>                            | <sub>92</sub>                 | <sub>92</sub>           | <sub>9</sub>                                   | <sub>7</sub>                   | <sub>7</sub>             | <sub>3</sub>                                    | <sub>27.07</sub>                            |
+| <sub>*Cucurbita moschata* (cmo)</sub>               | <sub>273.42</sub>                            | <sub>127</sub>                | <sub>126</sub>          | <sub>39</sub>                                  | <sub>17</sub>                  | <sub>16</sub>            | <sub>6</sub>                                    | <sub>102.73</sub>                           |
+| <sub>*Cucurbita argyrosperma* (car)</sub>           | <sub>231.58</sub>                            | <sub>10</sub>                 | <sub>10</sub>           | <sub>9</sub>                                   | <sub>2</sub>                   | <sub>2</sub>             | <sub>2</sub>                                    | <sub>30.36</sub>                            |
+| <sub>*Cucurbita pepo* (cpe)</sub>                   | <sub>263.38</sub>                            | <sub>143</sub>                | <sub>142</sub>          | <sub>50</sub>                                  | <sub>13</sub>                  | <sub>13</sub>            | <sub>7</sub>                                    | <sub>112.61</sub>                           |
+| <sub>*Cucurbita maxima* (cma)</sub>                 | <sub>279.69</sub>                            | <sub>50</sub>                 | <sub>50</sub>           | <sub>27</sub>                                  | <sub>10</sub>                  | <sub>10</sub>            | <sub>4</sub>                                    | <sub>43.36</sub>                            |
+| <sub>*Momordica charantia* (mch)</sub>              | <sub>294.01</sub>                            | <sub>74</sub>                 | <sub>74</sub>           | <sub>8</sub>                                   | <sub>5</sub>                   | <sub>5</sub>             | <sub>2</sub>                                    | <sub>27.73</sub>                            |
 
 <br />
 <br />
 
+<div align="justify"> This repository includes the scripts used in the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b> to identify and analyze the lncRNAs for the nine species present in the table below. </div>
 
 
-
-
-
-
-
-In this study we employ a custom pipeline on a dataset of over 1,000 RNA-seq studies across nine representative species of the family Cucurbitaceae to predict 91,209 non-redundant lncRNAs. LncRNAs were predicted according to three confidence levels and classified into intergenic, natural antisense, intronic, and sense overlapping. Predicted lncRNAs have lower expression levels compared to protein-coding genes but a more specific behavior when considering plant tissues, developmental stages, and the response to environmental changes, emphasizing their potential roles in regulating various aspects of plant biology. Additionally, the evolutionary analysis indicates higher positional conservation than sequence conservation, which may be linked to the presence of conserved modular motifs within syntenic lncRNAs. In short, this research provides a comprehensive map of lncRNAs in the agriculturally relevant Cucurbitaceae family, offering a valuable resource for future investigations in crop improvement.
+LncRNAs were predicted according to three confidence levels and classified into intergenic, natural antisense, intronic, and sense overlapping. Predicted lncRNAs have lower expression levels compared to protein-coding genes but a more specific behavior when considering plant tissues, developmental stages, and the response to environmental changes, emphasizing their potential roles in regulating various aspects of plant biology. Additionally, the evolutionary analysis indicates higher positional conservation than sequence conservation, which may be linked to the presence of conserved modular motifs within syntenic lncRNAs. In short, this research provides a comprehensive map of lncRNAs in the agriculturally relevant Cucurbitaceae family, offering a valuable resource for future investigations in crop improvement.
 
 
 
