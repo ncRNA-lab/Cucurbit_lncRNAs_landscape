@@ -1,5 +1,7 @@
 # Cucurbit lncRNAs landscape
 
+## Introduction
+
  <div align="justify"> Long non-coding RNAs (lncRNAs) constitute a fascinating class of regulatory RNAs, widely distributed in eukaryotes. In plants, they exhibit features such as tissue-specific expression, spatiotemporal regulation and responsiveness to environmental changes, suggesting their involvement in specific biological processes. Although an increasing number of studies support the regulatory role of lncRNAs in model plants, our knowledge about these transcripts in relevant crops is limited. </div>
 
 <br />
@@ -26,11 +28,9 @@
 | <sub>*Momordica charantia* (mch)</sub>              | <sub>294.01</sub>                            | <sub>74</sub>                 | <sub>74</sub>           | <sub>8</sub>                                   | <sub>5</sub>                   | <sub>5</sub>             | <sub>2</sub>                                    | <sub>27.73</sub>                            |
 
 <br />
-<br />
 
-<div align="justify">All the lncRNAs identified for each of the species can be found in the <a href="Results">Results</a> folder in fasta, tsv and gtf format so that they can be used by the scientific community. </div>
+<div align="justify">All the lncRNAs identified across the nine cucurbit species can be found in <a href="Results/LncRNAs_prediction">Results/LncRNAs_prediction</a> in several formats (fasta, tsv and gtf) so that they can be used by the scientific community. </div>
 
-<br />
 <br />
 
 
@@ -59,9 +59,12 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 ![Image Alt text](Figure_1.png)
 
 <br />
+
+<div align="justify"> This pipeline has been configured to be executed in a HPC cluster environment using the open-source workload manager Slurm and all the scripts that compose it are stored in <a href="Scripts">Scripts</a>. </div>
+
 <br />
 
-<div align="justify">The <a href="Scripts">scripts</a> stored in this github repository. </div>
+<div align="justify">Initially, this pipeline was designed for cucurbit species, but it could be adapted to other species. </div>
 
 <br />
 
@@ -69,20 +72,26 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 <br />
 
-nf-core/sarek is a workflow designed to detect variants on whole genome or targeted sequencing data. Initially designed for Human, and Mouse, it can work on any species with a reference genome. Sarek can also handle tumour / normal pairs and could include additional relapses.
-
-The pipeline is built using Nextflow, a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It uses Docker/Singularity containers making installation trivial and results highly reproducible. The Nextflow DSL2 implementation of this pipeline uses one container per process which makes it much easier to maintain and update software dependencies. Where possible, these processes have been submitted to and installed from nf-core/modules in order to make them available to all nf-core pipelines, and to everyone within the Nextflow community!
-
-On release, automated continuous integration tests run the pipeline on a full-sized dataset on the AWS cloud infrastructure. This ensures that the pipeline runs on AWS, has sensible resource allocation defaults set to run on real-world datasets, and permits the persistent storage of results to benchmark between pipeline releases and other analysis sources. The results obtained from the full-sized test can be viewed on the nf-core website.
-
 ## Softwares
 
-- SRA Toolkit
-- Fastp
-- Salmon
-- Hisat2
-- Stringtie2
-- Gffcompare
+- SRA Toolkit v.2.11.2
+- FastQC v.0.11.9
+- Multiqc v.1.11
+- Fastp v.0.23.2
+- RSEM v.1.3.3
+- Salmon v.1.6.0
+- HISAT2 v2.2.1
+- StringTie2 v2.2.0
+- GffCompare v.0.12.6
+- CPC2 v.1.0.1
+- FEELnc v.0.2
+- CPAT v.3.0.2
+- DIAMOND v.2.0.14
+- transdecoder v.5.5.0
+- HMMER v.2.0.14
+- NCBI-BLAST v.2.13.0+
+- MIReNA v.2.0
+- CGAT v.1.0
 
 
 ## Getting Started
