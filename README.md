@@ -4,12 +4,12 @@
 
 <br />
 
-<div align="justify"> The scripts stored in this repository constitute a custom pipeline used to identify and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. </div>
+<div align="justify"> In the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>, we identified and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. All the lncRNAs identified for each of the species can be found in the Results folder in fasta, tsv and gtf format so that they can be used by the scientific community. </div>
 
 <br />
 <br />
 
-<div align="center"> <sub><b>Information on the number of RNA-seq samples and projects used to predict and analyze lncRNAs in the nine selected cucurbit species.</b></sub> </div>
+<div align="center"> <sub><b>Table 1: Information on the number of RNA-seq samples and projects used to predict and analyze lncRNAs in the nine selected cucurbit species.</b></sub> </div>
 
 <br />
 
@@ -28,8 +28,36 @@
 <br />
 <br />
 
-<div align="justify"> This repository includes the scripts used in the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b> to identify and analyze the lncRNAs for the nine species present in the table below. </div>
+## Pipeline
 
+<div align="justify"> The scripts stored in this repository constitute a custom pipeline used to identify and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. </div>
+
+
+This pipeline consists of 3 parts:
+- Data preprocessing and assembly: All RNA-seq samples from Sequence Read Archive (SRA) database and from a particular species were collected. Next, we remove adapters and filter the reads by quality using the software fastp. And then, we use the pseudoaligner Salmon to deduce what type of library we have, for example, whether it is strand-specific or not, and select the strand-specific samples. Why? Because there are some lncRNA classes that require knowledge of the origin strand and strand-specific libraries allow us to know this.
+- LncRNA prediction.
+- Downstream analysis.
+    + Molecular properties comparison (LncRNAs vs PC genes).
+    + Comparative genomics (Sequence, position and motif level).
+    + Tissue-specificity analysis.
+    + 
+
+
+
+
+<br />
+<br />
+
+<div align="justify"> <sub><b>Figure 1: Graphic representation of the bioinformatic workflow used for the prediction, classification and analysis of lncRNAs. (A) Data recovering, preprocessing and transcriptome assembly. (B) Prediction and categorization of lncRNAs: intergenic (lincRNAs), natural antisense (NAT-lncRNAs), intronic (int-lncRNAs) and sense overlapping (SOT-lncRNAs) lncRNAs. (C) Downstream analysis to compare lncRNA features, conservation at three levels (sequence, genomic position and motifs) and differential expression (related to tissue, development and environment).</b></sub> </div>
+
+<br />
+
+![Image Alt text](Figure_1.png)
+
+<br />
+<br />
+
+<div align="justify"> For more information you can read the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>. </div>
 
 LncRNAs were predicted according to three confidence levels and classified into intergenic, natural antisense, intronic, and sense overlapping. Predicted lncRNAs have lower expression levels compared to protein-coding genes but a more specific behavior when considering plant tissues, developmental stages, and the response to environmental changes, emphasizing their potential roles in regulating various aspects of plant biology. Additionally, the evolutionary analysis indicates higher positional conservation than sequence conservation, which may be linked to the presence of conserved modular motifs within syntenic lncRNAs. In short, this research provides a comprehensive map of lncRNAs in the agriculturally relevant Cucurbitaceae family, offering a valuable resource for future investigations in crop improvement.
 
@@ -39,21 +67,6 @@ The pipeline is built using Nextflow, a workflow tool to run tasks across multip
 
 On release, automated continuous integration tests run the pipeline on a full-sized dataset on the AWS cloud infrastructure. This ensures that the pipeline runs on AWS, has sensible resource allocation defaults set to run on real-world datasets, and permits the persistent storage of results to benchmark between pipeline releases and other analysis sources. The results obtained from the full-sized test can be viewed on the nf-core website.
 
-<br />
-<br />
-
-<div align="justify"> <sub><b>Graphic representation of the bioinformatic workflow used for the prediction, classification and analysis of lncRNAs. (A) Data recovering, preprocessing and transcriptome assembly. (B) Prediction and categorization of lncRNAs: intergenic (lincRNAs), natural antisense (NAT-lncRNAs), intronic (int-lncRNAs) and sense overlapping (SOT-lncRNAs) lncRNAs. (C) Downstream analysis to compare lncRNA features, conservation at three levels (sequence, genomic position and motifs) and differential expression (related to tissue, development and environment).</b></sub> </div>
-
-<br />
-
-![Image Alt text](Figure_1.png)
-
-## Table of contents
-
-  1. Sample processing
-  2. X
-  3. gg
-  4. ff
 
 ## Getting Started
 
