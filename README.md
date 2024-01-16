@@ -74,24 +74,24 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 ## Softwares
 
-- SRA Toolkit v.2.11.2
-- FastQC v.0.11.9
-- Multiqc v.1.11
-- Fastp v.0.23.2
-- RSEM v.1.3.3
-- Salmon v.1.6.0
-- HISAT2 v2.2.1
-- StringTie2 v2.2.0
-- GffCompare v.0.12.6
-- CPC2 v.1.0.1
-- FEELnc v.0.2
-- CPAT v.3.0.2
-- DIAMOND v.2.0.14
-- Transdecoder v.5.5.0
-- HMMER v.2.0.14
-- NCBI-BLAST v.2.13.0+
-- MIReNA v.2.0
-- CGAT v.1.0
+- [SRA Toolkit](https://github.com/ncbi/sra-tools) v.2.11.2
+- [FastQC](https://github.com/s-andrews/FastQC) v.0.11.9
+- [Multiqc](https://github.com/MultiQC/MultiQC) v.1.11
+- [Fastp](https://github.com/OpenGene/fastp) v.0.23.2
+- [RSEM](https://github.com/deweylab/RSEM) v.1.3.3
+- [Salmon](https://github.com/COMBINE-lab/salmon) v.1.6.0
+- [HISAT2](https://github.com/DaehwanKimLab/hisat2) v2.2.1
+- [StringTie2](https://github.com/gpertea/stringtie) v2.2.0
+- [GffCompare](https://github.com/gpertea/gffcompare) v.0.12.6
+- [CPC2](https://github.com/gao-lab/CPC2_standalone) v.1.0.1
+- [FEELnc](https://github.com/tderrien/FEELnc) v.0.2
+- [CPAT](https://cpat.readthedocs.io/en/latest/) v.3.0.2
+- [DIAMOND](https://github.com/bbuchfink/diamond) v.2.0.14
+- [Transdecoder](https://github.com/TransDecoder/TransDecoder) v.5.5.0
+- [HMMER](https://github.com/EddyRivasLab/hmmer) v.2.0.14
+- [NCBI-BLAST](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/) v.2.13.0+
+- [MIReNA](https://www.lcqb.upmc.fr/mirena/index.html) v.2.0
+- [CGAT](https://cgat.readthedocs.io/en/latest/cgat.html) v.1.0
 
 <br />
 
@@ -128,9 +128,13 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Pascual Villalba-Bermell**
+* **Pascual Villalba-Bermell** - *Initial work* - [pasviber](https://github.com/pasviber)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
