@@ -97,14 +97,14 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 ## Databases
 
-- Swissprot
-- Pfam
-- RNAcentral
-- miRBase
-- PmiREN
-- CANTATAdb
-- PLncDB
-- GreeNC
+- [Swissprot](https://www.uniprot.org/help/downloads)
+- [Pfam](https://www.ebi.ac.uk/interpro/download/pfam/)
+- [RNAcentral](https://rnacentral.org/)
+- [miRBase](https://mirbase.org/)
+- [PmiREN](https://www.pmiren.com/)
+- [CANTATAdb](http://cantata.amu.edu.pl/)
+- [PLncDB](https://www.tobaccodb.org/plncdb/)
+- [GreeNC](http://greenc.sequentiabiotech.com/wiki2/Main_Page)
 
 <br />
 
