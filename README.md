@@ -92,6 +92,17 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 - [NCBI-BLAST](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/) v.2.13.0+
 - [MIReNA](https://www.lcqb.upmc.fr/mirena/index.html) v.2.0
 - [CGAT](https://cgat.readthedocs.io/en/latest/cgat.html) v.1.0
+- [Bedtools](https://bedtools.readthedocs.io/en/latest/) v.2.27.1
+- [RepeatModeler](https://www.repeatmasker.org/RepeatModeler/) v.2.0.3
+- [RepeatMasker](https://www.repeatmasker.org/RepeatMasker/) v.4.1.3-p1
+- [OrthoFinder](https://github.com/davidemms/OrthoFinder) v.2.5.4
+- [MEME](https://meme-suite.org/meme/) v.5.5.1
+- [Tspex](https://apcamargo.github.io/tspex/) (tissue-specificity calculator tool)
+
+<br />
+
+**R packages:**
+
 
 <br />
 
