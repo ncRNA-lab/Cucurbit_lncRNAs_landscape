@@ -140,5 +140,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Citation
 
-<b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>
+* <div align="justify"> Villalba-Bermell P., Marquez-Molins J. and Gomez G. Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits. BioRxiv [Preprint]. January 15, 2024. Available from: https://doi.org/10.1101/2024.01.12.575433. </div>
 
