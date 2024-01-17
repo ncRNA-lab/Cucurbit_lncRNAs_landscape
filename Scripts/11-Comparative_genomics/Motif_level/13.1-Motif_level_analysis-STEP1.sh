@@ -11,10 +11,10 @@
 
 ####### VARIABLES
 WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Motif_level/Positional_conserved/Functions_NR.sh"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Motif_level/Positional_conserved/Functions.sh"
 Species_list="car cla cma cme cmo cpe csa lsi mch"
 Classes_list="intergenic antisense intronic sense ALL"
-Confidence_levels_list="High Medium Low"
+Confidence_levels_list="High"
 
 ####### NEW AND OTHER VARIABLES
 WD1=$WD/08-comparative_genomics/Positional_level/Approach_2/nr/04-Families

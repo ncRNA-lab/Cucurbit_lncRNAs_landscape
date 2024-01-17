@@ -13,7 +13,9 @@
 module load R/4.1.2
 
 ####### VARIABLES
-WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
+WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/08-TEs_and_genomic_repeats"
+WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
+WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/07-Get_intergenic_regions"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/08-TEs_and_genomic_repeats/Functions.sh"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/08-TEs_and_genomic_repeats/Additional_scripts"
@@ -22,16 +24,16 @@ confidences="High Medium Low"
 flags="NR R"
 
 ####### NEW AND OTHER VARIABLES
-WD1_spe=$WD/08-TEs_and_genomic_repeats/$Specie
-WD2_spe=$WD/05-LncRNAs_prediction/$Specie
-WD3_spe=$WD/07-Get_intergenic_regions/$Specie
+WD1_spe=$WD1/$Specie
+WD2_spe=$WD2/$Specie
+WD3_spe=$WD3/$Specie
 
 ####### ADDITIONAL SCRIPTS
 export ASPATH=$AS
 export PATH=$PATH:${ASPATH}
 
 ####### DIRECTORY
-mkdir -p $WD/08-TEs_and_genomic_repeats
+mkdir -p $WD1
 mkdir -p $WD1_spe
 mkdir -p $WD1_spe/02-Comparison_PCGs_LncRNAs
 

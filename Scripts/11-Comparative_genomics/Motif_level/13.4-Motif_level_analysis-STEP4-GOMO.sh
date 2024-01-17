@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#SBATCH --job-name=PosNR3ML							# Job name.
-#SBATCH --output=Positional_NR_3_MEME_Low.log					# Standard output and error log.
+#SBATCH --job-name=PosNR4GH							# Job name.
+#SBATCH --output=Positional_NR_4_GOMO_High.log					# Standard output and error log.
 #SBATCH --qos=medium								# Partition (queue)
 #SBATCH --ntasks=100								# Run on one mode. 
 #SBATCH --cpus-per-task=1							# Number of tasks = cpus.
-#SBATCH --time=2-00:00:00							# Time limit days-hrs:min:sec.
+#SBATCH --time=6-00:00:00							# Time limit days-hrs:min:sec.
 #SBATCH --mem-per-cpu=2gb							# Job memory request.
 
 
@@ -14,36 +14,34 @@ module load meme/5.5.1/serial
 
 ####### VARIABLES
 WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Motif_level/Positional_conserved/Functions_NR.sh"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Motif_level/Positional_conserved/Functions.sh"
+MEME_databases="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Softwares/MEME_databases"
 Classes_list="intergenic antisense intronic sense ALL"
-Confidence_levels_list="Low"
-#strictness_list="ORIGINAL RELAXED STRICT MORE-STRICT"
-#nonmatch_list="no yes"
+Confidence_levels_list="High"
 strictness_list="ORIGINAL"
 nonmatch_list="no"
 widths="6-15 6-50"
 modes="oops"
 
 ####### NEW AND OTHER VARIABLES
-WD1=$WD/08-comparative_genomics/Positional_level/Approach_2/nr/04-Families
-WD2=$WD/08-comparative_genomics/Motif_level/nr/Positional_conserved
+WD1=$WD/08-comparative_genomics/Motif_level/nr/Positional_conserved
 
 ####### DIRECTORY
 mkdir -p $WD/08-comparative_genomics
 mkdir -p $WD/08-comparative_genomics/Motif_level
 mkdir -p $WD/08-comparative_genomics/Motif_level/nr
 mkdir -p $WD/08-comparative_genomics/Motif_level/nr/Positional_conserved
-mkdir -p $WD/08-comparative_genomics/Motif_level/nr/Positional_conserved/03-MotifFinder
-mkdir -p $WD/08-comparative_genomics/Motif_level/nr/Positional_conserved/03-MotifFinder/MEME
+mkdir -p $WD/08-comparative_genomics/Motif_level/nr/Positional_conserved/04-MotifEnrichment
+mkdir -p $WD/08-comparative_genomics/Motif_level/nr/Positional_conserved/04-MotifEnrichment/GOMO
 
 
 ####### PIPELINE
 
-### MOTIF FINDER (MEME)
-## For each nonmatch level, strictness level, confidence level and class code, find the different motif and make an enrichment analysis.
-cd $WD2/03-MotifFinder/MEME
+### MOTIF ENRICHMENT (GOMO)
+## For each nonmatch level, strictness level, confidence level and class code, determine if any motif is significantly associated with genes linked to one or more Genome Ontology (GO) terms.
+cd $WD1/04-MotifEnrichment/GOMO
 
-echo -e "\n\nMOTIF FINDER (MEME): Find motivs...\n"
+echo -e "\n\nMOTIF ENRICHMENT (GOMO): Determine if any motif is significantly associated with genes linked to one or more Genome Ontology (GO) terms...\n"
 
 for strictness in $strictness_list; do
 	mkdir -p $strictness
@@ -63,9 +61,9 @@ for strictness in $strictness_list; do
 					for width in $widths; do
 						mkdir -p $strictness/$nonmatch/$confidence/$class/$mode/$width
 						echo -e "\t\t\t\t\t"$width"..."
-				
-						DIR_A="$WD2/02-Preparation/$strictness/$nonmatch/$confidence/$class"
-						DIR_B="$WD2/03-MotifFinder/MEME/$strictness/$nonmatch/$confidence/$class/$mode/$width"
+						
+						DIR_A="$WD1/03-MotifFinder/MEME/$strictness/$nonmatch/$confidence/$class/$mode/$width"
+						DIR_B="$WD1/04-MotifEnrichment/GOMO/$strictness/$nonmatch/$confidence/$class/$mode/$width"
 						
 						cd $DIR_B
 						
@@ -83,10 +81,10 @@ for strictness in $strictness_list; do
 						fi
 						mkdir real
 						
-						# Second, execute meme by lncRNA family.
+						# Second, execute gomo by lncRNA family.
 						echo -e "\t\t\t\t\t\tREAL"
 						>$DIR_B/outputs/stdout_REAL.log
-						srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_MEME_2 $DIR_A/real $DIR_B/real $mode $width $DIR_B/outputs/stdout_REAL.log &
+						srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_GOMO_2 $DIR_A/real $DIR_B/real $MEME_databases/gomo_databases $DIR_B/outputs/stdout_REAL.log &
 						
 						# SIMULATIONS.
 						# First, clean the directory.
@@ -95,22 +93,22 @@ for strictness in $strictness_list; do
 						fi
 						mkdir simulations
 						
-						# Second, execute meme by lncRNA family in each iteration.
+						# Second, execute gomo by lncRNA family in each iteration.
 						echo -e "\t\t\t\t\t\tSIMULATIONS"
 						iterations=$(ls -1 $DIR_A/simulations/ | wc -l)
 						for i in $(seq $iterations); do
 							mkdir simulations/iter_$i
 							>$DIR_B/outputs/stdout_SIMULATION_$i.log
-							srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_MEME_2 $DIR_A/simulations/iter_$i $DIR_B/simulations/iter_$i $mode $width $DIR_B/outputs/stdout_SIMULATION_$i.log &
+							srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_GOMO_2 $DIR_A/simulations/iter_$i $DIR_B/simulations/iter_$i $MEME_databases/gomo_databases $DIR_B/outputs/stdout_SIMULATION_$i.log &
 						done
 						
-						cd $WD2/03-MotifFinder/MEME	
+						cd $WD1/04-MotifEnrichment/GOMO
 					done
-					wait
 				done
 			done
 		done
 	done
 done
 
+wait
 

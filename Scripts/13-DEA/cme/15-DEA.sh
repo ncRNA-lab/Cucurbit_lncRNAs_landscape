@@ -17,7 +17,7 @@ module load biotools
 specie="cme"
 WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/13-DEA/additional_scripts"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/13-DEA/Additional_scripts"
 alpha_value=0.05
 
 ####### NEW AND OTHER VARIABLES

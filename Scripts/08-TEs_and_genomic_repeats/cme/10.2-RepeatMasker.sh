@@ -10,16 +10,16 @@
 
 
 ####### VARIABLES
-WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
+WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/08-TEs_and_genomic_repeats"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/08-TEs_and_genomic_repeats/Functions.sh"
 Specie="cme"
 
 ####### NEW AND OTHER VARIABLES
-WD1_spe=$WD/08-TEs_and_genomic_repeats/$Specie
+WD1_spe=$WD1/$Specie
 
 ####### DIRECTORY
-mkdir -p $WD/08-TEs_and_genomic_repeats
+mkdir -p $WD1
 mkdir -p $WD1_spe
 mkdir -p $WD1_spe/01-Repeat_calling
 mkdir -p $WD1_spe/01-Repeat_calling/02-RepeatMasker

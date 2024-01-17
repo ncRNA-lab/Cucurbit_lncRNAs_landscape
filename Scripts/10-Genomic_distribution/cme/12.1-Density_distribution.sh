@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=cmeS12dist						# Job name.
-#SBATCH --output=cme_STEP12_distribution.log				# Standard output and error log.
+#SBATCH --output=cme_STEP12_dist.log					# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=2							# Run on one mode.
 #SBATCH --cpus-per-task=2						# Number of tasks = cpus. 
@@ -14,7 +14,7 @@ module load R/4.1.2
 module load biotools
 
 ####### VARIABLES
-specie="vvi"
+specie="cme"
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
 WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Genomic_distribution"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"

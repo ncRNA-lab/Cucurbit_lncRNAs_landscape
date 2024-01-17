@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=OFNRS13					# Job name.
-#SBATCH --output=OrthoFinder_NR.log				# Standard output and error log.
+#SBATCH --job-name=S13seq					# Job name.
+#SBATCH --output=STEP13_seq.log				# Standard output and error log.
 #SBATCH --qos=short						# Partition (queue)
 #SBATCH --ntasks=25						# Run on one mode. Don't change unless you know what you are doing.
 #SBATCH --cpus-per-task=4					# Number of tasks = cpus.

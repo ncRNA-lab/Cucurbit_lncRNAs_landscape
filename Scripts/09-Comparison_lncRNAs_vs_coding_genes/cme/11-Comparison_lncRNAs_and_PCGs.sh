@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmeS11comp							# Job name.
-#SBATCH --output=cme_STEP11_comparison.log					# Standard output and error log.
+#SBATCH --job-name=cmeS11							# Job name.
+#SBATCH --output=cme_STEP11.log						# Standard output and error log.
 #SBATCH --qos=short								# Partition (queue)
 #SBATCH --ntasks=1								# Run on one mode.
 #SBATCH --cpus-per-task=2							# Number of tasks = cpus.

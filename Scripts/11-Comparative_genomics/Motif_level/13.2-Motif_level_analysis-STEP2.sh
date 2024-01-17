@@ -12,11 +12,9 @@
 ####### VARIABLES
 WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/additional_scripts"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Motif_level/Positional_conserved/Functions_NR.sh"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Motif_level/Positional_conserved/Functions.sh"
 Classes_list="intergenic antisense intronic sense ALL"
-Confidence_levels_list="High Medium Low"
-#strictness_list="ORIGINAL RELAXED STRICT MORE-STRICT"
-#nonmatch_list="no yes"
+Confidence_levels_list="High"
 strictness_list="ORIGINAL"
 nonmatch_list="no"
 n_iter=50
