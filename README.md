@@ -74,6 +74,7 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 ## Software
 
+- [E-utilities](https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/)
 - [SRA Toolkit](https://github.com/ncbi/sra-tools) v.2.11.2
 - [FastQC](https://github.com/s-andrews/FastQC) v.0.11.9
 - [Multiqc](https://github.com/MultiQC/MultiQC) v.1.11
