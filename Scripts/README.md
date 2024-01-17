@@ -1,12 +1,15 @@
-# Scripts
+# Usage
 
 ## STEP 0: Select RNA-seq samples
 
-We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the script 00-Samples.sh in the folder 01-Sample_processing_and_selection/cme/
+<div align="justify"> We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the <a href="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/">E-utilities</a>. <br /><br /></div>
 
 ```
+cd 01-Sample_processing_and_selection/cme/
 sbatch 00-Samples.sh
 ```
+
+<div align="justify"> <br />As a result, we obtain a list of RNA-seq sample accessions and a metadata table with all the information by RNA-seq sample accession. </div>
 
 ## STEP 1: Download RNA-seq samples
 
@@ -66,6 +69,7 @@ sbatch 00-Samples.sh
 
 ## Software
 
+- [E-utilities](https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/)
 - [SRA Toolkit](https://github.com/ncbi/sra-tools) v.2.11.2
 - [FastQC](https://github.com/s-andrews/FastQC) v.0.11.9
 - [Multiqc](https://github.com/MultiQC/MultiQC) v.1.11
