@@ -1,10 +1,43 @@
 # Scripts
 
-## Pipeline
+## STEP 0: Select RNA-seq samples
 
-To identify and analyze potential lncRNAs, we used a custom pipeline consisting of three parts:
+We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the script 00-Samples.sh in the folder 01-Sample_processing_and_selection/cme/
 
-- <div align="justify"> <b>Data preprocessing and assembly</b><br /><br />All RNA-seq samples from Sequence Read Archive database and from a particular species are collected (SW: SRA Toolkit). Next, we remove adapters and filter the reads by quality (SW: Fastp). Then, we deduce whether the library is strand-specific or not, and select the strand-specific samples (SW: Salmon).<br /><br />Once the data have been preprocessed, we map the clean data to the reference genome (SW: Hisat2) and assemble the transcriptome using a genome-guided assembly approach (SW: Stringtie2). Finally, we classify the assembled transcripts by their genomic position relative to the protein-coding genes (SW: Gffcompare). As a result, a class code is assigned to each transcript.</div><br />
+```
+sbatch 00-Samples.sh
+```
+
+## STEP 1: Download RNA-seq samples
+
+## STEP 2: Quality control RNA-seq samples
+
+## STEP 3: Select strand-specific RNA-seq samples
+
+## STEP 4: Mapping
+
+## STEP 5: Assembly
+
+## STEP 6: Transcript annotation
+
+## STEP 7: LncRNA prediction
+
+## STEP 8: Quantification
+
+## STEP 9: Get random intergenic regions
+
+## STEP 10: Molecular properties comparison
+
+## STEP 11: Genomic distribution
+
+## STEP 12: Comparative genomics
+
+## STEP 13: Tissue-specificity analysis
+
+## STEP 14: Differential expression analysis
+
+
+<div align="justify"> <br />All RNA-seq samples from Sequence Read Archive database and from a particular species are collected (SW: SRA Toolkit). Next, we remove adapters and filter the reads by quality (SW: Fastp). Then, we deduce whether the library is strand-specific or not, and select the strand-specific samples (SW: Salmon).<br /><br />Once the data have been preprocessed, we map the clean data to the reference genome (SW: Hisat2) and assemble the transcriptome using a genome-guided assembly approach (SW: Stringtie2). Finally, we classify the assembled transcripts by their genomic position relative to the protein-coding genes (SW: Gffcompare). As a result, a class code is assigned to each transcript.</div><br />
 
 - <div align="justify"> <b>LncRNA prediction</b><br /><br />We select transcripts that have any of the following five class codes: “u” (intergenic), “x” (antisense), “i” (intronic) and, “o” (sense) or “e” (sense). Next, transcripts are filtered by length (longer than 200 nucleotides) and expression level (more than 0.3 FPKM).<br /><br />Then, we assess the coding potential of each transcript using three alignment-free computational tools (SW: CPC2, FEELnc and CPAT) and two protein databases (Swissprot and Pfam). In the following step, we classify the transcripts into three confidence-levels (High-, medium- and low-confidence) according to the results of the previous step. After that, we annotate transcripts using different ncRNAs databases and those annotated as miRNA precursors (miRBAse and PmiREN) or housekeeping ncRNAs (RNAcentral) are discarded. We also annotate transcripts using databases of known potential lncRNAs in order to provide additional information (CANTATAdb, PLncDB, GreeNC). The program used to align the transcripts to the different ncRNAs databases is blastn. In the case of miRNA precursors, the MIReNA program is also used to validate them. </b><br /><br />Finally, we discard redundant transcripts (SW: CGAT) and create the database that will contain all potential lncRNAs. In addition, the different classes of potential lncRNAs will be renamed from intergenic, antisense, intronic and sense to lincRNA, NAT-lncRNA, int-lncRNA and SOT-lncRNA, respectively.</div><br />
 
