@@ -38,16 +38,16 @@
 
 To identify and analyze potential lncRNAs, we used a custom pipeline consisting of three parts:
 
-- <div align="justify"> <b>Data preprocessing and assembly</b><br /><br />All RNA-seq samples from Sequence Read Archive (SRA) database and from a particular species are collected (SW: SRA Toolkit). Next, we remove adapters and filter the reads by quality (SW: Fastp). Then, we deduce whether the library is strand-specific or not, and select the strand-specific samples (SW: Salmon).<br /><br />Once the data have been preprocessed, we map the clean data to the reference genome (SW: Hisat2) and assemble the transcriptome using a genome-guided assembly approach (SW: Stringtie2). Finally, we classify the assembled transcripts by their genomic position relative to the protein-coding genes (SW: Gffcompare). As a result, a class code is assigned to each transcript.</div><br />
+- <div align="justify"> <b>Data preprocessing and assembly</b><br /><br />All RNA-seq samples from Sequence Read Archive database and from a particular species are collected (SW: SRA Toolkit). Next, we remove adapters and filter the reads by quality (SW: Fastp). Then, we deduce whether the library is strand-specific or not, and select the strand-specific samples (SW: Salmon).<br /><br />Once the data have been preprocessed, we map the clean data to the reference genome (SW: Hisat2) and assemble the transcriptome using a genome-guided assembly approach (SW: Stringtie2). Finally, we classify the assembled transcripts by their genomic position relative to the protein-coding genes (SW: Gffcompare). As a result, a class code is assigned to each transcript.</div><br />
 
 - <div align="justify"> <b>LncRNA prediction</b><br /><br />We select transcripts that have any of the following five class codes: “u” (intergenic), “x” (antisense), “i” (intronic) and, “o” (sense) or “e” (sense). Next, transcripts are filtered by length (longer than 200 nucleotides) and expression level (more than 0.3 FPKM).<br /><br />Then, we assess the coding potential of each transcript using three alignment-free computational tools (SW: CPC2, FEELnc and CPAT) and two protein databases (Swissprot and Pfam). In the following step, we classify the transcripts into three confidence-levels (High-, medium- and low-confidence) according to the results of the previous step. After that, we annotate transcripts using different ncRNAs databases and those annotated as miRNA precursors (miRBAse and PmiREN) or housekeeping ncRNAs (RNAcentral) are discarded. We also annotate transcripts using databases of known potential lncRNAs in order to provide additional information (CANTATAdb, PLncDB, GreeNC). The program used to align the transcripts to the different ncRNAs databases is blastn. In the case of miRNA precursors, the MIReNA program is also used to validate them. </b><br /><br />Finally, we discard redundant transcripts (SW: CGAT) and create the database that will contain all potential lncRNAs. In addition, the different classes of potential lncRNAs will be renamed from intergenic, antisense, intronic and sense to lincRNA, NAT-lncRNA, int-lncRNA and SOT-lncRNA, respectively.</div><br />
 
 - <div align="justify"> <b>Downstream analysis</b> </div><br />Now, there are some downstream analyses that we can perform:<br /><br />
  
-    + Molecular properties comparison (LncRNAs vs Protein-coding genes).
-    + Comparative genomics (Sequence, position and motif level).
-    + Tissue-specificity analysis.
-    + Differential expression (development and environment).
+    + Molecular properties comparison.<br />
+    + Comparative genomics.</b>
+    + Tissue-specificity analysis.<br />
+    + Differential expression analysis (development and environment).<br />
 
 <br />
 <br />
@@ -56,11 +56,11 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 <br />
 
-![Image Alt text](Figure_1.png)
+![Image Alt text](Pipeline.png)
 
 <br />
 
-<div align="justify"> This pipeline has been configured to be executed in a HPC cluster environment using the open-source workload manager Slurm. So, it was executed in <a href="https://garnatxadoc.uv.es/">Garnatxa HPC Cluster</a> located at Data Center of the Institute for Integrative Systems Biology (<a href="https://www.uv.es/institute-integrative-systems-biology-i2sysbio/en/institute-integrative-systems-biology-i-sysbio.html">I2SysBio</a>). All the scripts that compose the pipeline are stored in <a href="Scripts">Scripts</a>. </div>
+<div align="justify"> This pipeline has been configured to be executed in a HPC cluster environment using the open-source workload manager Slurm. So, it was executed in <a href="https://garnatxadoc.uv.es/">Garnatxa HPC Cluster</a> located at Data Center of the Institute for Integrative Systems Biology (<a href="https://www.uv.es/institute-integrative-systems-biology-i2sysbio/en/institute-integrative-systems-biology-i-sysbio.html">I2SysBio</a>). All the scripts that compose the pipeline are stored in <a href="Scripts">Scripts</a>. As the scripts for each species are the same, only the scripts for cucumis melo (cme) have been uploaded. </div>
 
 <br />
 
@@ -72,7 +72,7 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 <br />
 
-## Softwares
+## Software
 
 - [SRA Toolkit](https://github.com/ncbi/sra-tools) v.2.11.2
 - [FastQC](https://github.com/s-andrews/FastQC) v.0.11.9
@@ -103,6 +103,7 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 **R packages:**
 
+<div align="justify"> circlize, colorspace, ComplexHeatmap, data.table, DESeq2, dplyr, GenomicFeatures, ggbreak, ggExtra, ggplot2, ggpubr, ggradar, ggridges, ggtext, ggvenn, grid, htmltools, limma, palmerpenguins, pheatmap, plotly, png, pRoloc, ragg, RColorBrewer, rtracklayer, scales, stringr, tibble, tidyr, tximport and UpSetR. </div>
 
 <br />
 
@@ -139,5 +140,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Citation
 
-<b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>
+* <div align="justify"> Villalba-Bermell P., Marquez-Molins J. and Gomez G. Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits. BioRxiv [Preprint]. January 15, 2024. Available from: https://doi.org/10.1101/2024.01.12.575433. </div>
 
