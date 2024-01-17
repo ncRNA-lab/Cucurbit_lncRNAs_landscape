@@ -121,11 +121,6 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 <br />
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-<br />
 
 ## Authors
 
