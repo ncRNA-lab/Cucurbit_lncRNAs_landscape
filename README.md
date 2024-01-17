@@ -44,10 +44,10 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 - <div align="justify"> <b>Downstream analysis</b> </div><br />Now, there are some downstream analyses that we can perform:<br /><br />
  
-    + Molecular properties comparison (LncRNAs vs Protein-coding genes).
-    + Comparative genomics (Sequence, position and motif level).
-    + Tissue-specificity analysis.
-    + Differential expression (development and environment).
+    + Molecular properties comparison.<br />
+    + Comparative genomics.</b>
+    + Tissue-specificity analysis.<br />
+    + Differential expression analysis (development and environment).<br />
 
 <br />
 <br />
@@ -60,7 +60,7 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 <br />
 
-<div align="justify"> This pipeline has been configured to be executed in a HPC cluster environment using the open-source workload manager Slurm. So, it was executed in <a href="https://garnatxadoc.uv.es/">Garnatxa HPC Cluster</a> located at Data Center of the Institute for Integrative Systems Biology (<a href="https://www.uv.es/institute-integrative-systems-biology-i2sysbio/en/institute-integrative-systems-biology-i-sysbio.html">I2SysBio</a>). All the scripts that compose the pipeline are stored in <a href="Scripts">Scripts</a>. </div>
+<div align="justify"> This pipeline has been configured to be executed in a HPC cluster environment using the open-source workload manager Slurm. So, it was executed in <a href="https://garnatxadoc.uv.es/">Garnatxa HPC Cluster</a> located at Data Center of the Institute for Integrative Systems Biology (<a href="https://www.uv.es/institute-integrative-systems-biology-i2sysbio/en/institute-integrative-systems-biology-i-sysbio.html">I2SysBio</a>). All the scripts that compose the pipeline are stored in <a href="Scripts">Scripts</a>. As the scripts for each species are the same, only the scripts for cucumis melo (cme) have been uploaded. </div>
 
 <br />
 
