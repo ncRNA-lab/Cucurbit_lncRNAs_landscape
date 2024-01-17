@@ -1,38 +1,4 @@
-# Cucurbit lncRNAs landscape
-
-## Introduction
-
- <div align="justify"> Long non-coding RNAs (lncRNAs) constitute a fascinating class of regulatory RNAs, widely distributed in eukaryotes. In plants, they exhibit features such as tissue-specific expression, spatiotemporal regulation and responsiveness to environmental changes, suggesting their involvement in specific biological processes. Although an increasing number of studies support the regulatory role of lncRNAs in model plants, our knowledge about these transcripts in relevant crops is limited. </div>
-
-<br />
-
-<div align="justify"> In the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>, we identified and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. </div>
-
-<br />
-<br />
-
-<div align="center"> <sub><b>Table 1: Information on the number of RNA-seq samples and projects used to predict and analyze lncRNAs in the nine selected cucurbit species.</b></sub> </div>
-
-<br />
-
-| <sub>Species</sub>                                  | <sub>Download<br />(Samples)</sub> | <sub>QC<br />(Samples)</sub> | <sub>Strand<br />Specific<br />(Samples)</sub> | <sub>Download<br />(Projects)</sub> | <sub>QC<br />(Projects)</sub> | <sub>Strand<br />Specific<br />(Projects)</sub> | <sub>Final Data Size <br />(bytes; Gb)</sub> |
-|-----------------------------------------------------|-------------------------------|-------------------------|------------------------------------------------|--------------------------------|--------------------------|-------------------------------------------------|---------------------------------------------|
-| <sub>*Cucumis sativus* (csa)</sub>                  | <sub>1388</sub>               | <sub>1334</sub>         | <sub>360</sub>                                 | <sub>129</sub>                 | <sub>127</sub>           | <sub>35</sub>                                   | <sub>1167.43</sub>                          |
-| <sub>*Cucumis melo* (cme)</sub>                     | <sub>802</sub>                | <sub>776</sub>          | <sub>383</sub>                                 | <sub>45</sub>                  | <sub>44</sub>            | <sub>16</sub>                                   | <sub>820.87</sub>                           |
-| <sub>*Citrullus lanatus* (cla)</sub>                | <sub>717</sub>                | <sub>711</sub>          | <sub>231</sub>                                 | <sub>55</sub>                  | <sub>54</sub>            | <sub>17</sub>                                   | <sub>663.61</sub>                           |
-| <sub>*Lagenaria siceraria* (lsi)</sub>              | <sub>92</sub>                 | <sub>92</sub>           | <sub>9</sub>                                   | <sub>7</sub>                   | <sub>7</sub>             | <sub>3</sub>                                    | <sub>27.07</sub>                            |
-| <sub>*Cucurbita moschata* (cmo)</sub>               | <sub>127</sub>                | <sub>126</sub>          | <sub>39</sub>                                  | <sub>17</sub>                  | <sub>16</sub>            | <sub>6</sub>                                    | <sub>102.73</sub>                           |
-| <sub>*Cucurbita argyrosperma* (car)</sub>           | <sub>10</sub>                 | <sub>10</sub>           | <sub>9</sub>                                   | <sub>2</sub>                   | <sub>2</sub>             | <sub>2</sub>                                    | <sub>30.36</sub>                            |
-| <sub>*Cucurbita pepo* (cpe)</sub>                   | <sub>143</sub>                | <sub>142</sub>          | <sub>50</sub>                                  | <sub>13</sub>                  | <sub>13</sub>            | <sub>7</sub>                                    | <sub>112.61</sub>                           |
-| <sub>*Cucurbita maxima* (cma)</sub>                 | <sub>50</sub>                 | <sub>50</sub>           | <sub>27</sub>                                  | <sub>10</sub>                  | <sub>10</sub>            | <sub>4</sub>                                    | <sub>43.36</sub>                            |
-| <sub>*Momordica charantia* (mch)</sub>              | <sub>74</sub>                 | <sub>74</sub>           | <sub>8</sub>                                   | <sub>5</sub>                   | <sub>5</sub>             | <sub>2</sub>                                    | <sub>27.73</sub>                            |
-
-<br />
-
-<div align="justify">All the lncRNAs identified across the nine cucurbit species can be found in <a href="Results/LncRNAs_prediction">Results/LncRNAs_prediction</a> in several formats (fasta, tsv and gtf) so that they can be used by the scientific community. </div>
-
-<br />
-
+# Scripts
 
 ## Pipeline
 
@@ -52,13 +18,6 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 <br />
 <br />
 
-<div align="justify"> <sub><b>Figure 1: Graphic representation of the bioinformatic workflow used for the prediction, classification and analysis of lncRNAs. (A) Data recovering, preprocessing and transcriptome assembly. (B) Prediction and categorization of lncRNAs: intergenic (lincRNAs), natural antisense (NAT-lncRNAs), intronic (int-lncRNAs) and sense overlapping (SOT-lncRNAs) lncRNAs. (C) Downstream analysis to compare lncRNA features, conservation at three levels (sequence, genomic position and motifs) and differential expression (related to tissue, development and environment).</b></sub> </div>
-
-<br />
-
-![Image Alt text](Pipeline.png)
-
-<br />
 
 <div align="justify"> This pipeline has been configured to be executed in a HPC cluster environment using the open-source workload manager Slurm. So, it was executed in <a href="https://garnatxadoc.uv.es/">Garnatxa HPC Cluster</a> located at Data Center of the Institute for Integrative Systems Biology (<a href="https://www.uv.es/institute-integrative-systems-biology-i2sysbio/en/institute-integrative-systems-biology-i-sysbio.html">I2SysBio</a>). All the scripts that compose the pipeline are stored in <a href="Scripts">Scripts</a>. As the scripts for each species are the same, only the scripts for cucumis melo (cme) have been uploaded. </div>
 
@@ -120,25 +79,11 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 <br />
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-<br />
-
 ## Authors
 
 * **Pascual Villalba-Bermell** - *Initial work* - [pasviber](https://github.com/pasviber) (pascual.villalba@csic.es) at [ncRNA-lab](https://github.com/ncRNA-lab).
 
 <br />
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-<br />
-
-## Citation
-
-* <div align="justify"> Villalba-Bermell P., Marquez-Molins J. and Gomez G. Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits. BioRxiv [Preprint]. January 15, 2024. Available from: https://doi.org/10.1101/2024.01.12.575433. </div>
 

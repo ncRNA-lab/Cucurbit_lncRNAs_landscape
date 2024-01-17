@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=OFNRP1					# Job name.
-#SBATCH --output=OrthoFinder_NR_P1.log			# Standard output and error log.
+#SBATCH --job-name=OFNRS13					# Job name.
+#SBATCH --output=OrthoFinder_NR.log				# Standard output and error log.
 #SBATCH --qos=short						# Partition (queue)
 #SBATCH --ntasks=25						# Run on one mode. Don't change unless you know what you are doing.
 #SBATCH --cpus-per-task=4					# Number of tasks = cpus.
@@ -14,9 +14,9 @@ module load R/4.1.2
 
 ####### VARIABLES
 WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
-SP="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Softwares"
-AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/additional_scripts"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Sequence_level/OrthoFinder/Prueba_e-value_5/Functions_NR.sh"
+SP="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/11-Comparative_genomics/Softwares"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/11-Comparative_genomics/Additional_scripts"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/11-Comparative_genomics/Sequence_level/Functions.sh"
 Species_list="car cla cma cme cmo cpe csa lsi mch"
 Classes_list="intergenic antisense intronic sense ALL"
 Confidence_levels_list="High Medium Low"
@@ -24,7 +24,7 @@ evalue=1e-5
 Scripts=$(pwd)
 
 ####### NEW AND OTHER VARIABLES
-WD1=$WD/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_e-value_5
+WD1=$WD/11-Comparative_genomics/Sequence_level/nr
 if [ -d "$WD1" ]; then
 	rm -r $WD1
 fi
@@ -46,11 +46,9 @@ export PATH=$PATH:${OFPATH}/bin
 export PATH=$PATH:${OFPATH}/tools
 
 ####### DIRECTORY
-mkdir -p $WD/08-comparative_genomics
-mkdir -p $WD/08-comparative_genomics/Sequence_level
-mkdir -p $WD/08-comparative_genomics/Sequence_level/OrthoFinder
-mkdir -p $WD/08-comparative_genomics/Sequence_level/OrthoFinder/nr
-mkdir -p $WD/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_e-value_5
+mkdir -p $WD/11-Comparative_genomics
+mkdir -p $WD/11-Comparative_genomics/Sequence_level
+mkdir -p $WD/11-Comparative_genomics/Sequence_level/nr
 mkdir -p $WD1/01-LncRNAs
 mkdir -p $WD1/02-Makeblastdb
 mkdir -p $WD1/03-Blastn
