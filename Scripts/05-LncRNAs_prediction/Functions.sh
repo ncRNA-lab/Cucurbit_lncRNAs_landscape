@@ -52,7 +52,7 @@ task_LncRNAs_prediction_STEP1(){
 	## Ids: Select the potential lncRNAs trascripts by class code and remove the unstranded transcripts.
 	echo -e "\nGet Ids: Select the potential lncRNAs trascripts by class code and remove the unstranded transcripts..."
 	GFF3orGTF2TABLE.py \
-		--gtf $1/$4\_merged_compared_$5.annotated.gtf \
+		--gtf $1/$4\_merged_compared.annotated.gtf \
 		--tab $L/POTENTIAL_LNCRNAS_temp.tsv \
 		--mode 'assembly' \
 		--sep $'\t'
@@ -62,7 +62,7 @@ task_LncRNAs_prediction_STEP1(){
 	## GTF.
 	echo -e "\nGet GTF..."
 	Filter_GTF.py \
-		--gtf-initial $1/$4\_merged_compared_$5.annotated.gtf \
+		--gtf-initial $1/$4\_merged_compared.annotated.gtf \
 		--gtf-final $L/POTENTIAL_LNCRNAS.gtf \
 		--ids $L/POTENTIAL_LNCRNAS_ids.txt
 

@@ -123,8 +123,7 @@ mkdir -p $WD2_spe/STEP-FINAL
 ### 	(Additional info) and TXT (Sequence IDs).
 
 echo -e "STEP (1/7): PIPELINE...\n"
-g=50
-srun -N1 -n1 -c1 --output $WD2_spe/Outputs/stdout_STEP1.log --quiet --exclusive $F task_LncRNAs_prediction_STEP1 $WD1_spe $WD2_spe $AI $specie $g
+srun -N1 -n1 -c1 --output $WD2_spe/Outputs/stdout_STEP1.log --quiet --exclusive $F task_LncRNAs_prediction_STEP1 $WD1_spe $WD2_spe $AI $specie
 
 ### STEP2: Predict the coding potential of the potential lncRNAs using three 
 ### tools:

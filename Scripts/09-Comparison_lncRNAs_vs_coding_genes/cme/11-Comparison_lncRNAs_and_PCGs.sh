@@ -14,7 +14,7 @@ module load R/4.1.2
 
 ####### VARIABLES
 specie="cme"
-specie_l="C. melo"
+specie_long="C. melo"
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
 WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification"
 WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/07-Get_intergenic_regions"
@@ -36,5 +36,5 @@ mkdir -p $WD5_spe
 
 ####### PIPELINE
 echo -e "\n\nNON-REDUNDANT SEQUENCES: CREATING TABLES AND FIGURES\n"
-Rscript $AS/Comparison_lncRNAs_and_PCGs.R $WD1_spe $WD2_spe $WD3_spe $WD4_spe $WD5_spe "nr" "$specie_l"
+Rscript $AS/Comparison_lncRNAs_and_PCGs.R $WD1_spe $WD2_spe $WD3_spe $WD4_spe $WD5_spe "nr" "$specie_long"
 

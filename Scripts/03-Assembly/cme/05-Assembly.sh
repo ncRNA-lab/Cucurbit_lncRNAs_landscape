@@ -55,23 +55,10 @@ mkdir -p Outputs
 ## Create a TXT file with the assembly (GTF file) route for each sample.
 awk '{print "../01-Individual_assembly/"$1".gtf"}' $Acc_list > assemblies.txt
 
-## Merge the GTF files (Unify the transcriptome -g 250).
+## Merge the GTF files.
 stringtie \
 	--merge \
-	-o $specie\_merged_250.gtf \
-	-m 200 \
-	-g 250 \
-	-F 0.3 \
-	-T 0 \
-	-p $SLURM_CPUS_PER_TASK \
-	-v \
-	-G $AI/GTF_genes/$specie.gtf \
-	assemblies.txt >> ./Outputs/stdout_Merging.log 2>&1
-
-## Merge the GTF files (Unify the transcriptome -g 50).
-stringtie \
-	--merge \
-	-o $specie\_merged_50.gtf \
+	-o $specie\_merged.gtf \
 	-m 200 \
 	-g 50 \
 	-F 0.3 \

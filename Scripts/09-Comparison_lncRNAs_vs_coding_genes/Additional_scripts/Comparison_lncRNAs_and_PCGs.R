@@ -7,24 +7,6 @@
 #
 ################################################################################
 
-# ATENCION 1: Siempre que se usa logaritmo hay que tener en cuenta lo que obtenemos y los datos de partida.
-# En este script solo esta en logaritmo TPMs, el resto estan en valor normal. En el caso de TPMs, disponemos
-# de 3 opciones aqui: TPMs.mean, log2.TPMs.mean y log2.TPMs.1.mean. Las opciones buenas son TPMs.mean y 
-# log2.TPMs.1.mean. ¿Por que? Pues porque hay transcritos con abundania de 0 TPMs, >0 TPMs y NA. Los de NA
-# se corresponden con los que salmon ha eliminado al cuantificar porque son iguales a otro transcrito en el 
-# genoma aunque no esten en la misma posición del genoma. NA no da problemas porque el log(NA, 2) = NA y por
-# tanto, no se grafica. Si los TPMs son >0 tampoco hay ningun problema. Pero si los TPMs son 0 aparece un 
-# problema al convertirlo a log y es que el log(0, 2) = -Inf y se grafica. La manera de resolverlo es
-# sumandole 1 ya que de este modo log(0 + 1, 2) = 0. Por eso, las opciones buena son TPMs.mean y 
-# log2.TPMs.1.mean.
-
-# ATENCION 2: Es importante saber que los valores que se dejan de gráficar al usar scale_y_continuous, no son 
-# incluidos en el gráfico para el computo de los boxplot, es decir, de la caja del boxplot y tampoco de la media
-# en stat_summary(). La solucion es usar coord_cartesian(ylim = c(0,100)), por ejemplo. De este modo, graficas 
-# solo los valores de ese rango (0, 100), pero tenemos en cuenta todos los valores de la tabla para calcular la
-# caja del boxplot o la media. Ocurre lo mismo con scale_x_continuous por ejemplo si haces un grafico de densidad.
-
-
 rm(list = ls())
 
 ## EXECUTION IN COMMAND LINE:
@@ -43,8 +25,8 @@ suppressMessages(options(bitmapType='cairo'))
 
 ## Create a vector with the arguments.
 args = commandArgs(trailingOnly=TRUE)
-if (length(args) < 3) {
-  stop("At least 3 arguments must be supplied.", call.=FALSE)
+if (length(args) < 4) {
+  stop("At least 4 arguments must be supplied.", call.=FALSE)
 } else {
   pred = args[1]
   quant = args[2]
