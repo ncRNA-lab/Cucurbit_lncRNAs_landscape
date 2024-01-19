@@ -80,8 +80,10 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 - [Multiqc](https://github.com/MultiQC/MultiQC) v.1.11
 - [Fastp](https://github.com/OpenGene/fastp) v.0.23.2
 - [RSEM](https://github.com/deweylab/RSEM) v.1.3.3
+- [GffRead](https://github.com/gpertea/gffread) v.0.12.7
 - [Salmon](https://github.com/COMBINE-lab/salmon) v.1.6.0
 - [HISAT2](https://github.com/DaehwanKimLab/hisat2) v2.2.1
+- [Sambamba](https://github.com/biod/sambamba) v0.8.0
 - [StringTie2](https://github.com/gpertea/stringtie) v2.2.0
 - [GffCompare](https://github.com/gpertea/gffcompare) v.0.12.6
 - [CPC2](https://github.com/gao-lab/CPC2_standalone) v.1.0.1
