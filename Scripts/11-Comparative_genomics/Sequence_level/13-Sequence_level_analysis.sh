@@ -18,8 +18,8 @@ SP="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/11-Comparative
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/11-Comparative_genomics/Additional_scripts"
 F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/11-Comparative_genomics/Sequence_level/Functions.sh"
 Species_list="car cla cma cme cmo cpe csa lsi mch"
-Classes_list="intergenic antisense intronic sense ALL"
-Confidence_levels_list="High Medium Low"
+Classes_list="intergenic antisense intronic sense"
+Confidence_list="High"
 evalue=1e-5
 Scripts=$(pwd)
 
@@ -35,8 +35,6 @@ export PATH=$PATH:${ASPATH}
 
 ####### SOFTWARES PREDICTION
 ### BLAST
-#https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
-#http://nebc.nerc.ac.uk/bioinformatics/documentation/blast+/user_manual.pdf
 export NCBIBLASTPATH=$SP/ncbi-blast-2.13.0+
 export PATH=$PATH:${NCBIBLASTPATH}/bin
 ### ORTHOFINDER
@@ -65,7 +63,7 @@ cd $WD1/01-LncRNAs
 
 echo -e "\n\nSelect lncRNAs and modify lncRNA IDs by adding the specie...\n"
 
-for confidence in $Confidence_levels_list; do
+for confidence in $Confidence_list; do
 	mkdir -p $confidence
 	for class in $Classes_list; do
 		mkdir -p $confidence/$class
@@ -83,7 +81,7 @@ cd $WD1/02-Makeblastdb
 echo -e "\n\nMakeblastdb...\n"
 
 for spe in $Species_list; do
-	for confidence in $Confidence_levels_list; do
+	for confidence in $Confidence_list; do
 		mkdir -p $confidence
 		for class in $Classes_list; do
 			srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_Makeblastdb $spe $confidence $class &
@@ -123,7 +121,7 @@ for j in `seq 1 $n_comb`; do
 	comb_cod=$(cat $Combinations_codes | head -n $j | tail -n 1)
 	cod1=$(echo $comb_cod | cut -d" " -f1)
 	cod2=$(echo $comb_cod | cut -d" " -f2)
-	for confidence in $Confidence_levels_list; do
+	for confidence in $Confidence_list; do
 		mkdir -p $confidence
 		for class in $Classes_list; do
 			srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_Blastn $spe1 $spe2 $cod1 $cod2 $confidence $class $evalue $SLURM_CPUS_PER_TASK $j $n_comb $WD1 $AS &
@@ -138,7 +136,7 @@ cd $WD1/04-OrthoFinder
 
 echo -e "\n\nOrthoFinder...\n"
 
-for confidence in $Confidence_levels_list; do
+for confidence in $Confidence_list; do
 	mkdir -p $confidence
 	for class in $Classes_list; do
 		srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_OrthoFinder $confidence $class $WD1 $AS $Combinations_codes $SLURM_CPUS_PER_TASK &
@@ -152,7 +150,7 @@ cd $WD1/05-Families
 
 echo -e "\n\nGet lncRNA families from OrthoFinder...\n"
 
-for confidence in $Confidence_levels_list; do
+for confidence in $Confidence_list; do
 	mkdir -p $confidence
 	for class in $Classes_list; do
 		mkdir -p $confidence/$class
@@ -163,7 +161,7 @@ for confidence in $Confidence_levels_list; do
 	done
 done
 
-for confidence in $Confidence_levels_list; do
+for confidence in $Confidence_list; do
 	for class in $Classes_list; do
 		srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_Get_families $confidence $class $WD1 $AS &
 	done

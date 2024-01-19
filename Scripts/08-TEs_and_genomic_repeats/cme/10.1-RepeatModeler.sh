@@ -10,13 +10,13 @@
 
 
 ####### VARIABLES
+specie="cme"
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/08-TEs_and_genomic_repeats"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/08-TEs_and_genomic_repeats/Functions.sh"
-Specie="cme"
 
 ####### NEW AND OTHER VARIABLES
-WD1_spe=$WD1/$Specie
+WD1_spe=$WD1/$specie
 
 ####### DIRECTORY
 mkdir -p $WD1
@@ -30,6 +30,6 @@ mkdir -p $WD1_spe/01-Repeat_calling/01-RepeatModeler/Logs
 ### REPEAT CALLING
 ## RepeatModeler.
 echo -e "\n\nRepeat calling: RepeatModeler...\n"
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_RepeatModeler $Specie $AI $WD1_spe $(($SLURM_CPUS_PER_TASK/4))
+srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_RepeatModeler $specie $AI $WD1_spe $(($SLURM_CPUS_PER_TASK/4))
 
 

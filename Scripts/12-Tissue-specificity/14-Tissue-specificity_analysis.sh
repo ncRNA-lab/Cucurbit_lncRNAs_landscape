@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmeS14ts						# Job name.
-#SBATCH --output=cme_STEP14_tissue_specificity.log			# Standard output and error log.
+#SBATCH --job-name=S14							# Job name.
+#SBATCH --output=STEP14_tissue_specificity.log			# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=1							# Run on one mode. Don't change unless you know what you are doing.
 #SBATCH --cpus-per-task=2						# Number of tasks = cpus. It depends on the number of process of your parallelization.
@@ -14,7 +14,6 @@ module load R/4.2.1
 module load biotools
 
 ####### VARIABLES
-specie="cme"
 WD="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/16-DEA/additional_scripts"

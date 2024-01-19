@@ -9,6 +9,9 @@
 #SBATCH --mem-per-cpu=15gb					# Job memory request.
 
 
+####### MODULES
+module load anaconda
+
 ####### VARIABLES
 specie="cme"
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/01-Sample_processing_and_selection"

@@ -11,6 +11,7 @@
 
 ####### VARIABLES
 specie="cme"
+specie_long="Cucumis melo"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 
 ####### NEW VARIABLES
@@ -28,7 +29,8 @@ mkdir -p $AI"/sra-info/metadata"
 ## Download metadata info.
 echo -e "\nDownload metadata info from SRA database..."
 cd $AI"/sra-info/metadata"
-esearch -db sra -query 'Cucumis melo [Organism] AND Illumina [Platform] AND rna seq [Strategy] AND transcriptomic [Source] AND fastq' | efetch -format runinfo > $Metadata
+query=$specie_long" [Organism] AND Illumina [Platform] AND rna seq [Strategy] AND transcriptomic [Source] AND fastq"
+esearch -db sra -query "$query" | efetch -format runinfo > $Metadata
 
 ## Extract accession list.
 echo -e "\nGenerate accession list..."
