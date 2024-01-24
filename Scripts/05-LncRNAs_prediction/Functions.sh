@@ -711,9 +711,6 @@ task_LncRNAs_prediction_STEP-FINAL(){
 	mkdir -p $P7/Files/Joined/ALL
 	mkdir -p $P7/Files/Joined/ALL/r
 	mkdir -p $P7/Files/Joined/ALL/nr
-	mkdir -p $P7/Files/Joined/FILTERED
-	mkdir -p $P7/Files/Joined/FILTERED/r
-	mkdir -p $P7/Files/Joined/FILTERED/nr
 	mkdir -p $P7/Redundancy_analysis
 	mkdir -p $P7/Redundancy_analysis/AGAT
 	mkdir -p $P7/Redundancy_analysis/CGAT
@@ -726,7 +723,8 @@ task_LncRNAs_prediction_STEP-FINAL(){
 	FG=$P7/Figures
 	FL=$P7/Files
 	NRA=$P7/Redundancy_analysis
-
+	
+	
 	#########################################################################
 
 	####### CREATE THE LNCRNAS DATABASE.
@@ -761,7 +759,7 @@ task_LncRNAs_prediction_STEP-FINAL(){
 
 	## ids
 	echo -e "\nCreate new ids file..."
-	tail -n +2 $DB/Database_LncRNAs.tsv | awk '{print $1}' > POTENTIAL_LNCRNAS_ids_pred.txt
+	tail -n +2 $DB/Database_LncRNAs_R.tsv | awk '{print $1}' > POTENTIAL_LNCRNAS_ids_pred.txt
 	## fasta
 	echo -e "\nCreate new fasta file..."
 	seqtk subseq $P1/Potential_lncRNAs/POTENTIAL_LNCRNAS.fasta POTENTIAL_LNCRNAS_ids_pred.txt > POTENTIAL_LNCRNAS_pred.fasta
@@ -804,73 +802,12 @@ task_LncRNAs_prediction_STEP-FINAL(){
 	tail -n +2 POTENTIAL_LNCRNAS_pred.tsv > POTENTIAL_LNCRNAS_pred_mod.tsv
 	cat ORIGINAL_GENES.tsv POTENTIAL_LNCRNAS_pred_mod.tsv > ALL.tsv
 	rm POTENTIAL_LNCRNAS_pred_mod.tsv
-
-	######################################
-
-	#### JOINED: FILTERED (u, x (not overlap with coding transcripts) and genes from original annotation file)
-	echo -e "\n\nJOINED: FILTERED: Join genes and lncRNAs but filter lncRNAs by class code (x and u) and overlap (x)..."
-	cd $FL/Joined/FILTERED/r
-
-	echo -e "\nFilter the LncRNAs..."
-	## GTF/TSV LncRNAs
-	cp $FL/LncRNAs/r/POTENTIAL_LNCRNAS_pred.gtf ./
-	cp $FL/LncRNAs/r/POTENTIAL_LNCRNAS_pred.tsv ./
-	## Select the u and x lncRNAs.
-	tail -n +2 POTENTIAL_LNCRNAS_pred.tsv | awk '$8 == "u" || $8 == "x" {print $6}' > POTENTIAL_LNCRNAS_ids_pred_x_u.txt
-	Filter_GTF.py \
-		--gtf-initial $FL/Joined/FILTERED/r/POTENTIAL_LNCRNAS_pred.gtf \
-		--gtf-final $FL/Joined/FILTERED/r/POTENTIAL_LNCRNAS_pred_x_u.gtf \
-		--ids $FL/Joined/FILTERED/r/POTENTIAL_LNCRNAS_ids_pred_x_u.txt
-	## Convert GTF to BED.
-	cat POTENTIAL_LNCRNAS_pred_x_u.gtf | convert2bed -i gtf --attribute-key=transcript_id | awk '$8 == "transcript" {print $0}' > POTENTIAL_LNCRNAS_pred_x_u.bed
-	rm POTENTIAL_LNCRNAS_pred.tsv
-
-	## GTF/TSV Genes.
-	cp $FL/Genes/ORIGINAL_GENES.gtf ./
-	## Convert GTF to BED.
-	cat ORIGINAL_GENES.gtf | convert2bed -i gtf --attribute-key=transcript_id | awk '$8 == "transcript" {print $0}' > ORIGINAL_GENES.bed
-
-	## Intersect LncRNAs (u and x) BED file with Genes BED file.
-	bedtools intersect -a POTENTIAL_LNCRNAS_pred_x_u.bed -b ORIGINAL_GENES.bed -s -wao -nonamecheck | awk -F"\t" '$21 == 0 {print $4}' > POTENTIAL_LNCRNAS_ids_pred_x_u_filtered.txt
-	rm POTENTIAL_LNCRNAS_pred_x_u.bed ORIGINAL_GENES.bed POTENTIAL_LNCRNAS_ids_pred_x_u.txt
-
-	## ids
-	echo -e "\nCreate ids file..."
-	cp $FL/Genes/ORIGINAL_GENES_ids.txt ./
-	cat ORIGINAL_GENES_ids.txt POTENTIAL_LNCRNAS_ids_pred_x_u_filtered.txt > FILTERED_ids.txt 
-
-	## gtf: Select lncRNAs which don't overlap with coding transcripts and join genes gtf and filtered lncRNAs gtf.
-	echo -e "\nCreate gtf file..."
-	Filter_GTF.py \
-		--gtf-initial $FL/Joined/FILTERED/r/POTENTIAL_LNCRNAS_pred.gtf \
-		--gtf-final $FL/Joined/FILTERED/r/POTENTIAL_LNCRNAS_pred_x_u_filtered.gtf \
-		--ids $FL/Joined/FILTERED/r/POTENTIAL_LNCRNAS_ids_pred_x_u_filtered.txt
-	cat ORIGINAL_GENES.gtf POTENTIAL_LNCRNAS_pred_x_u_filtered.gtf > FILTERED.gtf
-	rm POTENTIAL_LNCRNAS_pred.gtf POTENTIAL_LNCRNAS_pred_x_u.gtf
-
-	## fasta
-	echo -e "\nCreate fasta file..."
-	gffread -w FILTERED_temp.fasta -W -g $2/Genome/$5.fa FILTERED.gtf
-	sed '/^>/s/ .*//' FILTERED_temp.fasta > FILTERED.fasta 
-	rm FILTERED_temp.fasta
-
-	## tsv
-	echo -e "\nCreate tsv file..."
-	cp $FL/Genes/ORIGINAL_GENES.tsv ./
-	gffread -w PL_temp.fasta -W -g $2/Genome/$5.fa POTENTIAL_LNCRNAS_pred_x_u_filtered.gtf
-	sed '/^>/s/ .*//' PL_temp.fasta > PL.fasta 
-	rm PL_temp.fasta
-	GFF3orGTF2TABLE.py \
-		--gtf $FL/Joined/FILTERED/r/POTENTIAL_LNCRNAS_pred_x_u_filtered.gtf \
-		--fasta $FL/Joined/FILTERED/r/PL.fasta \
-		--tab $FL/Joined/FILTERED/r/POTENTIAL_LNCRNAS_pred_x_u_filtered.tsv \
-		--mode 'assembly' \
-		--sep $'\t'
-	rm PL.fasta
-	tail -n +2 POTENTIAL_LNCRNAS_pred_x_u_filtered.tsv > POTENTIAL_LNCRNAS_pred_x_u_filtered_mod.tsv
-	cat ORIGINAL_GENES.tsv POTENTIAL_LNCRNAS_pred_x_u_filtered_mod.tsv > FILTERED.tsv
-	rm POTENTIAL_LNCRNAS_pred_x_u_filtered_mod.tsv
-
+	
+	
+	
+	
+	
+	
 	#########################################################################
 
 	####### DETERMINE WHICH SEQUENCES ARE REDUNDANT.
@@ -920,7 +857,12 @@ task_LncRNAs_prediction_STEP-FINAL(){
 	rm ./CGAT/POTENTIAL_LNCRNAS_sort_filt_sort_temp.fasta
 	rm ./CGAT/POTENTIAL_LNCRNAS_sort_filt_sort_temp_mod.fasta
 	conda deactivate
-
+	
+	
+	
+	
+	
+	
 	#########################################################################
 
 	####### CREATE THE NON-REDUNDANT LNCRNAS DATABASE.
@@ -960,8 +902,7 @@ task_LncRNAs_prediction_STEP-FINAL(){
 		--tab $FL/LncRNAs/nr/POTENTIAL_LNCRNAS_pred.tsv \
 		--mode 'assembly' \
 		--sep $'\t'
-		
-
+	
 	######################################
 
 	#### JOINED: ALL (ALL lncRNAs and genes from original annotation file)
@@ -986,72 +927,6 @@ task_LncRNAs_prediction_STEP-FINAL(){
 	tail -n +2 POTENTIAL_LNCRNAS_pred.tsv > POTENTIAL_LNCRNAS_pred_mod.tsv
 	cat ORIGINAL_GENES.tsv POTENTIAL_LNCRNAS_pred_mod.tsv > ALL.tsv
 	rm POTENTIAL_LNCRNAS_pred_mod.tsv
-
-	######################################
-
-	#### JOINED: FILTERED (u, x (not overlap with coding transcripts) and genes from original annotation file)
-	echo -e "\n\nJOINED: FILTERED: Join genes and lncRNAs but filter lncRNAs by class code (x and u) and overlap (x)..."
-	cd $FL/Joined/FILTERED/nr
-
-	echo -e "\nFilter the LncRNAs..."
-	## GTF/TSV LncRNAs
-	cp $FL/LncRNAs/nr/POTENTIAL_LNCRNAS_pred.gtf ./
-	cp $FL/LncRNAs/nr/POTENTIAL_LNCRNAS_pred.tsv ./
-	## Select the u and x lncRNAs.
-	tail -n +2 POTENTIAL_LNCRNAS_pred.tsv | awk '$8 == "u" || $8 == "x" {print $6}' > POTENTIAL_LNCRNAS_ids_pred_x_u.txt
-	Filter_GTF.py \
-		--gtf-initial $FL/Joined/FILTERED/nr/POTENTIAL_LNCRNAS_pred.gtf \
-		--gtf-final $FL/Joined/FILTERED/nr/POTENTIAL_LNCRNAS_pred_x_u.gtf \
-		--ids $FL/Joined/FILTERED/nr/POTENTIAL_LNCRNAS_ids_pred_x_u.txt
-	## Convert GTF to BED.
-	cat POTENTIAL_LNCRNAS_pred_x_u.gtf | convert2bed -i gtf --attribute-key=transcript_id | awk '$8 == "transcript" {print $0}' > POTENTIAL_LNCRNAS_pred_x_u.bed
-	rm POTENTIAL_LNCRNAS_pred.tsv
-
-	## GTF/TSV Genes.
-	cp $FL/Genes/ORIGINAL_GENES.gtf ./
-	## Convert GTF to BED.
-	cat ORIGINAL_GENES.gtf | convert2bed -i gtf --attribute-key=transcript_id | awk '$8 == "transcript" {print $0}' > ORIGINAL_GENES.bed
-
-	## Intersect LncRNAs (u and x) BED file with Genes BED file.
-	bedtools intersect -a POTENTIAL_LNCRNAS_pred_x_u.bed -b ORIGINAL_GENES.bed -s -wao -nonamecheck | awk -F"\t" '$21 == 0 {print $4}' > POTENTIAL_LNCRNAS_ids_pred_x_u_filtered.txt
-	rm POTENTIAL_LNCRNAS_pred_x_u.bed ORIGINAL_GENES.bed POTENTIAL_LNCRNAS_ids_pred_x_u.txt
-
-	## ids
-	echo -e "\nCreate ids file..."
-	cp $FL/Genes/ORIGINAL_GENES_ids.txt ./
-	cat ORIGINAL_GENES_ids.txt POTENTIAL_LNCRNAS_ids_pred_x_u_filtered.txt > FILTERED_ids.txt 
-
-	## gtf: Select lncRNAs which don't overlap with coding transcripts and join genes gtf and filtered lncRNAs gtf.
-	echo -e "\nCreate gtf file..."
-	Filter_GTF.py \
-		--gtf-initial $FL/Joined/FILTERED/nr/POTENTIAL_LNCRNAS_pred.gtf \
-		--gtf-final $FL/Joined/FILTERED/nr/POTENTIAL_LNCRNAS_pred_x_u_filtered.gtf \
-		--ids $FL/Joined/FILTERED/nr/POTENTIAL_LNCRNAS_ids_pred_x_u_filtered.txt
-	cat ORIGINAL_GENES.gtf POTENTIAL_LNCRNAS_pred_x_u_filtered.gtf > FILTERED.gtf
-	rm POTENTIAL_LNCRNAS_pred.gtf POTENTIAL_LNCRNAS_pred_x_u.gtf
-
-	## fasta
-	echo -e "\nCreate fasta file..."
-	gffread -w FILTERED_temp.fasta -W -g $2/Genome/$5.fa FILTERED.gtf
-	sed '/^>/s/ .*//' FILTERED_temp.fasta > FILTERED.fasta 
-	rm FILTERED_temp.fasta
-
-	## tsv
-	echo -e "\nCreate tsv file..."
-	cp $FL/Genes/ORIGINAL_GENES.tsv ./
-	gffread -w PL_temp.fasta -W -g $2/Genome/$5.fa POTENTIAL_LNCRNAS_pred_x_u_filtered.gtf
-	sed '/^>/s/ .*//' PL_temp.fasta > PL.fasta 
-	rm PL_temp.fasta
-	GFF3orGTF2TABLE.py \
-		--gtf $FL/Joined/FILTERED/nr/POTENTIAL_LNCRNAS_pred_x_u_filtered.gtf \
-		--fasta $FL/Joined/FILTERED/nr/PL.fasta \
-		--tab $FL/Joined/FILTERED/nr/POTENTIAL_LNCRNAS_pred_x_u_filtered.tsv \
-		--mode 'assembly' \
-		--sep $'\t'
-	rm PL.fasta
-	tail -n +2 POTENTIAL_LNCRNAS_pred_x_u_filtered.tsv > POTENTIAL_LNCRNAS_pred_x_u_filtered_mod.tsv
-	cat ORIGINAL_GENES.tsv POTENTIAL_LNCRNAS_pred_x_u_filtered_mod.tsv > FILTERED.tsv
-	rm POTENTIAL_LNCRNAS_pred_x_u_filtered_mod.tsv
 }
 
 "$@"

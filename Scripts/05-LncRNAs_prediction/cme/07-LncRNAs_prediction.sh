@@ -10,7 +10,7 @@
 
 
 ####### MODULES
-module load anaconda/anaconda3_2021.07
+module load anaconda
 module load R/4.1.2
 module load biotools
 
@@ -100,7 +100,6 @@ export PATH=$PATH:${AGATPATH}
 export PATH=$PATH:${AGATPATH}/bin
 
 ####### DIRECTORY
-mkdir -p $WD
 mkdir -p $WD2_spe
 mkdir -p $WD2_spe/Outputs
 mkdir -p $WD2_spe/STEP1

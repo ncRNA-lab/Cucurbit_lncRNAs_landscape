@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=cmeS10Comp						# Job name.
-#SBATCH --output=cme_STEP10_Compare.log				# Standard output and error log.
+#SBATCH --output=cme_STEP10_Comparison.log				# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=6							# Run on one mode. Don't change unless you know what you are doing.
 #SBATCH --cpus-per-task=2						# Number of tasks = cpus.
@@ -21,7 +21,7 @@ AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/08-TEs_and_genomic_repeats/Functions.sh"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/08-TEs_and_genomic_repeats/Additional_scripts"
 confidences="High Medium Low"
-flags="NR R"
+flag="nr"
 
 ####### NEW AND OTHER VARIABLES
 WD1_spe=$WD1/$specie

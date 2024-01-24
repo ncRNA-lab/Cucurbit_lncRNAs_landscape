@@ -7,8 +7,6 @@
 #
 ################################################################################
 
-# https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html
-# https://www.rna-seqblog.com/rpkm-fpkm-and-tpm-clearly-explained/
 
 rm(list = ls())
 
@@ -16,7 +14,6 @@ rm(list = ls())
 
 # BiocManager::install("tximport")
 # BiocManager::install("GenomicFeatures")
-
 suppressMessages(library(tximport))
 suppressMessages(library(GenomicFeatures))
 
@@ -46,7 +43,7 @@ if (!dir.exists(paste0(WD, "/04-Table"))){
 
 
 
-## 2. LOAD COUNTS TABLES COMING FROM SALMON USING TXIMPORT
+## 2. LOAD COUNTS TABLES COMING FROM SALMON USING TXIMPORT.
 
 txdb = makeTxDbFromGFF(gtf, format = "gtf")
 k = keys(txdb, keytype = "GENEID")
@@ -62,7 +59,7 @@ txi.salmon.no = tximport(files, type = "salmon", tx2gene = tx2gene, txIn = TRUE,
 
 
 
-## 3. CREATE THE TPM TABLE
+## 3. CREATE THE TPM TABLE.
 
 abund.no = txi.salmon.no$abundance
 count.no = txi.salmon.no$counts
@@ -74,7 +71,7 @@ write.table(abund.no.transID, paste0(WD, "/04-Table/TPMs.tsv"), col.names = T, r
 
 
 
-## 4. CREATE THE SUMMARY TPM TABLE
+## 4. CREATE THE SUMMARY TPM TABLE.
 
 sum_TPMs = data.frame(
   ID_transcript = rownames(abund.no), 

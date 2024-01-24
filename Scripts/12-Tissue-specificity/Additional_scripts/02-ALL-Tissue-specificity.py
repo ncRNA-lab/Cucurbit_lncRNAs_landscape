@@ -53,7 +53,6 @@ def main():
             os.makedirs(path_spe_out)
         
         ## Files
-        Files_median = [file for file in os.listdir(path_spe_in) if "_median.tsv" in file]
         Files_mean = [file for file in os.listdir(path_spe_in) if "_mean.tsv" in file]
         
         ## Mean

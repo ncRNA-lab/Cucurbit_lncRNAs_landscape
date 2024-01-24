@@ -20,6 +20,7 @@ WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Genomic_distributi
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/10-Genomic_distribution/Additional_scripts"
 F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/10-Genomic_distribution/Functions.sh"
+flag_list="nr"
 
 ####### NEW AND OTHER VARIABLES
 WD1_spe=$WD1/$specie
@@ -32,20 +33,19 @@ export PATH=$PATH:${ASPATH}
 ####### DIRECTORY
 mkdir -p $WD2
 mkdir -p $WD2_spe
-mkdir -p $WD2_spe/nr
-mkdir -p $WD2_spe/r
-mkdir -p $WD2_spe/LOGS
 
 
 ####### PIPELINE
+for flag in $flag_list; do
+	
+	## Directory.
+	mkdir -p $WD2_spe/$flag
+	mkdir -p $WD2_spe/$flag/Outputs
 
-## NON-REDUNDANT: Visualize the lncRNAs and genes distribution.
-echo -e "\nNON-REDUNDANT:"
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/LOGS/stdout_Dist_$specie\_NR.log --quiet --exclusive $F task_transcript_density_non_redundant $specie $WD1_spe $WD2_spe $AI $AS &
-
-## REDUNDANT: Visualize the lncRNAs and genes distribution.
-echo -e "\nREDUNDANT:"
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/LOGS/stdout_Dist_$specie\_R.log --quiet --exclusive $F task_transcript_density_redundant $specie $WD1_spe $WD2_spe $AI $AS &
+	## Visualize the lncRNAs and genes distribution.
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/$flag/Outputs/stdout_Dist_$specie.log --quiet --exclusive $F task_transcript_density $specie $WD1_spe $WD2_spe $AI $AS $flag &
+	
+done
 wait
 
 

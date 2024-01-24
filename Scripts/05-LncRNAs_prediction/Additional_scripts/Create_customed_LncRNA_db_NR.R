@@ -2,8 +2,7 @@
 #
 # CREATE THE NON-REDUNDANT LNCRNA DATABASE
 #
-# Create a lncRNA database from the information obtained in the lncRNA prediction
-# pipeline.
+# Create a Non-redundant lncRNA database by redundancy analysis.
 #
 ################################################################################
 
@@ -13,7 +12,9 @@
 
 rm(list = ls())
 
-## 0. INSTALL AND LOAD LIBRARIES
+
+
+## 0. INSTALL AND LOAD LIBRARIES.
 
 suppressMessages(library("ComplexHeatmap"))
 suppressMessages(library("limma"))
@@ -26,7 +27,8 @@ suppressMessages(library("stringr"))
 suppressMessages(library("ggvenn"))
 
 
-## 1. VARIABLES
+
+## 1. VARIABLES.
 
 ## Create a vector with the arguments.
 args = commandArgs(trailingOnly=TRUE)
@@ -38,12 +40,14 @@ if (length(args) < 1) {
 
 #WD = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/car"
 
-## 2. CREATE THE NON-REDUNDANT LNCRNAS DATABASE
 
-### Load redundant LncRNAs database
-DB = read.table(paste0(WD, "/STEP-FINAL/Database/Database_LncRNAs.tsv"), sep = "\t", header = T, quote = "\"")
 
-### Load results of redundancy analysis
+## 2. CREATE THE NON-REDUNDANT LNCRNAS DATABASE.
+
+### Load redundant LncRNAs database.
+DB = read.table(paste0(WD, "/STEP-FINAL/Database/Database_LncRNAs_R.tsv"), sep = "\t", header = T, quote = "\"")
+
+### Load results of redundancy analysis.
 AGAT = read.table(paste0(WD, "/STEP-FINAL/Redundancy_analysis/AGAT/POTENTIAL_LNCRNAS_filt_sort_ids.txt"), header = F, quote = "\"")
 AGAT = AGAT$V1
 CGAT = read.table(paste0(WD, "/STEP-FINAL/Redundancy_analysis/CGAT/POTENTIAL_LNCRNAS_sort_filt_sort_ids.txt"), header = F, quote = "\"")
@@ -62,28 +66,24 @@ DB$"CGAT" = ifelse(DB$ID_transcript %in% CGAT, "non-redundant", "redundant")
 DB = DB[, c("ID_transcript", "Chr", "Origin", "Start", "End", "Strand", "ID_Gene", "Class_code", "Exons", 
             "Length", "GC", "CPC2", "CPAT", "FEELnc", "SwissProt", "Pfam", "ORF.80", "ORF.100", "ORF.120", 
             "RNAcentral_rRNA", "RNAcentral_tRNA", "RNAcentral_snRNA","RNAcentral_snoRNA", "miRBase", 
-            "PmiREN", "CANTATAdb", "PLncDB", "GreeNC", "Ns", "CGAT", "Significance_level", "ID")]
+            "PmiREN", "CANTATAdb", "PLncDB", "GreeNC", "Ns", "CGAT", "Confidence")]
 
-
-write.table(DB, paste0(WD, "/STEP-FINAL/Database/Database_LncRNAs.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+write.table(DB, paste0(WD, "/STEP-FINAL/Database/Database_LncRNAs_R.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
 
 ### Select non-redundant lncRNAs.
 DB_nr = DB[DB$CGAT == "non-redundant",]
 write.table(DB_nr, paste0(WD, "/STEP-FINAL/Database/Database_LncRNAs_NR.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
 
 
-## 3. FIGURES
+
+## 3. FIGURES.
 
 if (!dir.exists(paste0(WD, "/STEP-FINAL/Redundancy_analysis/Figures"))){
   dir.create(paste0(WD, "/STEP-FINAL/Redundancy_analysis/Figures"))
 }
 
-### 3.1 Prediction tools
-#### 3.1.1 VennDiagram: ALL LncRNAs according to the different tools.
-# https://rdrr.io/bioc/limma/man/venn.html
-# https://www.rdocumentation.org/packages/limma/versions/3.28.14/topics/venn
-
-cat("VENNDIAGRAM: ALL LNCRNAS ACCORDING TO THE PREDICTION TOOLS...\n")
+### 3.1 VennDiagram: All lncRNAs according to each prediction software.
+cat("VENNDIAGRAM: ALL LNCRNAS ACCORDING TO EACH PREDICTION SOFTWARE...\n")
 
 x = list(
   CPC2 = unique(DB[DB$CPC2 == "NC", "ID_transcript"]),
@@ -96,7 +96,7 @@ x = list(
 A = list_to_matrix(x)
 Z = vennCounts(A, include = "both")
 
-png(filename=paste0(WD, '/STEP-FINAL/Redundancy_analysis/Figures/LncRNAs_R_and_NR_prediction_tools.png'), height = 5000, width = 5000, res=600)
+png(filename=paste0(WD, '/STEP-FINAL/Redundancy_analysis/Figures/Venn_Diagram_R_and_NR_LncRNA_Prediction.png'), height = 5000, width = 5000, res=600)
 vennDiagram(Z, 
             include="both", 
             names=NULL, 
@@ -111,11 +111,8 @@ invisible(dev.off())
 
 rm(list = c("A", "Z", "x"))
 
-#### 3.1.2 VennDiagram: LncRNAs considered as Redundant according to the different tools.
-# https://rdrr.io/bioc/limma/man/venn.html
-# https://www.rdocumentation.org/packages/limma/versions/3.28.14/topics/venn
-
-cat("VENNDIAGRAM: LNCRNAS CONSIDERED AS NON-REDUNDANT ACCORDING TO THE PREDICTION TOOLS...\n")
+### 3.2 VennDiagram: Non-Redundant lncRNAs according to each prediction software.
+cat("VENNDIAGRAM: NON-REDUNDANT LNCRNAS ACCORDING TO EACH PREDICTION SOFTWARE...\n")
 
 x = list(
   CPC2 = unique(DB_nr[DB_nr$CPC2 == "NC", "ID_transcript"]),
@@ -128,7 +125,7 @@ x = list(
 A = list_to_matrix(x)
 Z = vennCounts(A, include = "both")
 
-png(filename=paste0(WD, '/STEP-FINAL/Redundancy_analysis/Figures/LncRNAs_NR_prediction_tools.png'), height = 5000, width = 5000, res=600)
+png(filename=paste0(WD, '/STEP-FINAL/Redundancy_analysis/Figures/Venn_Diagram_NR_LncRNA_Prediction.png'), height = 5000, width = 5000, res=600)
 vennDiagram(Z, 
             include="both", 
             names=NULL, 
@@ -144,9 +141,8 @@ invisible(dev.off())
 rm(list = c("A", "Z", "x"))
 
 
-### 3.2 Redundancy analysis tools
-
-cat("VENNDIAGRAM: NON-REDUNDANT LNCRNAS ACCORDING TO THE TOOLS...\n")
+### 3.3 VennDiagram: Redundancy analysis tools.
+cat("VENNDIAGRAM: REDUNDANCY ANALYSIS TOOLS...\n")
 
 x = list(
   AGAT = AGAT,
@@ -155,7 +151,7 @@ x = list(
   CDHIT95 = CDHIT95
 )
 
-png(filename = paste0(WD, '/STEP-FINAL/Redundancy_analysis/Figures/LncRNAs_NR_redundancy_tools_4.png'), width = 3000, height = 3000, res = 500)
+png(filename = paste0(WD, '/STEP-FINAL/Redundancy_analysis/Figures/Venn_Diagram_NR_LncRNAs_Redundancy_Tools_4.png'), width = 3000, height = 3000, res = 500)
 ggvenn(
   x, 
   fill_color = c("#0073C2FF", "#EFC000FF", "#868686FF", "#CD534CFF"),
@@ -168,7 +164,7 @@ x = list(
   CGAT = CGAT
 )
 
-png(filename = paste0(WD, '/STEP-FINAL/Redundancy_analysis/Figures/LncRNAs_NR_redundancy_tools_2.png'), width = 3000, height = 3000, res = 500)
+png(filename = paste0(WD, '/STEP-FINAL/Redundancy_analysis/Figures/Venn_Diagram_NR_LncRNAs_Redundancy_Tools_2.png'), width = 3000, height = 3000, res = 500)
 ggvenn(
   x, 
   fill_color = c("#0073C2FF", "#EFC000FF"),
@@ -177,8 +173,8 @@ ggvenn(
 invisible(dev.off())
 
 
-### 3.3 Class code LncRNA Classification
-cat("CREATE THE CLASS CODE LNCRNA CLASSIFICATION FIGURE...\n")
+### 3.4 Bar plot: LncRNA classification by class code.
+cat("BAR PLOT: LNCRNA CLASSIFICATION BY CLASS CODE...\n")
 
 Tab = DB_nr[, c("ID_transcript", "Class_code")]
 Tab$"Counts" = 1
@@ -205,7 +201,7 @@ gg = ggplot(Tab_FINAL, aes(x = Class_code, y = sum.Counts, fill = Class_code)) +
   theme(legend.position = "none") + 
   geom_text(aes(label = sum.Counts), nudge_y = 100)
 
-ggsave(paste0(WD, "/STEP-FINAL/Redundancy_analysis/Figures/Class_code_lncRNAs_distribution_NR.png"), height = 7, width = 8, dpi = 600)
+ggsave(paste0(WD, "/STEP-FINAL/Redundancy_analysis/Figures/Bar_Plot_NR_LncRNA_Classification.png"), height = 7, width = 8, dpi = 600)
 
 rm(list = c("x", "Tab", "Tab_FINAL", "gg"))
 

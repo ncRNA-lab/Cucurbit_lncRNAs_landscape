@@ -23,13 +23,14 @@ mkdir -p $WD1
 mkdir -p $WD1_spe
 mkdir -p $WD1_spe/01-Repeat_calling
 mkdir -p $WD1_spe/01-Repeat_calling/02-RepeatMasker
-mkdir -p $WD1_spe/01-Repeat_calling/02-RepeatMasker/Logs
+mkdir -p $WD1_spe/01-Repeat_calling/02-RepeatMasker/Outputs
 
 ####### PIPELINE
 
 ### REPEAT CALLING
 ## RepeatMasker.
 echo -e "\n\nRepeat calling: RepeatMasker...\n"
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_RepeatMasker $specie $AI $WD1_spe $SLURM_CPUS_PER_TASK
+cd $WD1_spe/01-Repeat_calling/02-RepeatMasker
+srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD1_spe/01-Repeat_calling/02-RepeatMasker/Outputs/stdout_RepeatMasker.log --quiet --exclusive $F task_RepeatMasker $specie $AI $WD1_spe $SLURM_CPUS_PER_TASK
 
 

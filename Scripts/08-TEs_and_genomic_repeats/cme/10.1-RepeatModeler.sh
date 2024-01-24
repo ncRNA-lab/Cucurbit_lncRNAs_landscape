@@ -23,13 +23,14 @@ mkdir -p $WD1
 mkdir -p $WD1_spe
 mkdir -p $WD1_spe/01-Repeat_calling
 mkdir -p $WD1_spe/01-Repeat_calling/01-RepeatModeler
-mkdir -p $WD1_spe/01-Repeat_calling/01-RepeatModeler/Logs
+mkdir -p $WD1_spe/01-Repeat_calling/01-RepeatModeler/Outputs
 
 ####### PIPELINE
 
 ### REPEAT CALLING
 ## RepeatModeler.
 echo -e "\n\nRepeat calling: RepeatModeler...\n"
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive $F task_RepeatModeler $specie $AI $WD1_spe $(($SLURM_CPUS_PER_TASK/4))
+cd $WD1_spe/01-Repeat_calling/01-RepeatModeler
+srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD1_spe/01-Repeat_calling/01-RepeatModeler/Outputs/stdout_RepeatModeler.log --quiet --exclusive $F task_RepeatModeler $specie $AI $(($SLURM_CPUS_PER_TASK/4))
 
 

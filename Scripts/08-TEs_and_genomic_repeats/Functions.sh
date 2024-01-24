@@ -5,17 +5,13 @@
 # https://bioinformaticsworkbook.org/dataAnalysis/ComparativeGenomics/RepeatModeler_RepeatMasker.html#gsc.tab=0
 
 task_RepeatModeler(){
-	mkdir -p $3/01-Repeat_calling/01-RepeatModeler
-	cd $3/01-Repeat_calling/01-RepeatModeler
 	## Run Repeatmodeler.
 	# Make up a name for your database, choose your search engine, the number of threads, and the genome file.
-	BuildDatabase -name $1 -engine rmblast $2/Genome/$1.fa >> Logs/Database_stdout_$1.log 2>&1
-	RepeatModeler -database $1 -engine rmblast -LTRStruct -pa $4 >> Logs/RepeatModeler_stdout_$1.log 2>&1
+	BuildDatabase -name $1 -engine rmblast $2/Genome/$1.fa
+	RepeatModeler -database $1 -engine rmblast -LTRStruct -pa $3
 }
 
 task_RepeatMasker(){
-	mkdir -p $3/01-Repeat_calling/02-RepeatMasker
-	cd $3/01-Repeat_calling/02-RepeatMasker
 	## Run RepeatMasker
 	# I moved to a different directory, so I softlinked my classified file.  
 	# Make sure you use the consensi.fa.classified file, or your repeats will just be masked by repeatmasker, but unannotated.
@@ -46,17 +42,8 @@ task_Intersect(){
 			awk '$8 == "transcript" {print $0}' > POTENTIAL_LNCRNAS_pred_R.bed
 	cat $3/STEP-FINAL/Files/LncRNAs/nr/POTENTIAL_LNCRNAS_pred.gtf | \
 		convert2bed -i gtf --attribute-key=transcript_id | \
-			awk '$8 == "transcript" {print $0}' > POTENTIAL_LNCRNAS_pred_NR.bed
+			awk '$8 == "transcript" {print $0}' > POTENTIAL_LNCRNAS_pred_${VAR_1^^}.bed
 	cp $4/Random_IR.bed ./
-	## Intersect LncRNAs and Genes BED files with Repeat file. Parameters: strandness and 0.5 minimum overlap
-	bedtools intersect -a POTENTIAL_LNCRNAS_pred_R.bed -b sorted-mod-$1.fa.out.bed -s -F 0.5 -wo -nonamecheck | \
-		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$14"\t"$17"\t"$18}' > POTENTIAL_LNCRNAS_intersect_Rep_R.tsv
-	bedtools intersect -a POTENTIAL_LNCRNAS_pred_NR.bed -b sorted-mod-$1.fa.out.bed -s -F 0.5 -wo -nonamecheck | \
-		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$14"\t"$17"\t"$18}' > POTENTIAL_LNCRNAS_intersect_Rep_NR.tsv
-	bedtools intersect -a ORIGINAL_GENES.bed -b sorted-mod-$1.fa.out.bed -s -F 0.5 -wo -nonamecheck | \
-		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$14"\t"$17"\t"$18}' > ORIGINAL_GENES_intersect_Rep.tsv
-	bedtools intersect -a Random_IR.bed -b sorted-mod-$1.fa.out.bed -s -F 0.5 -wo -nonamecheck | \
-		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$10"\t"$13"\t"$14}' > Random_IR_intersect_Rep.tsv
 	## Intersect LncRNAs and Genes BED files with Repeat file. Parameters: strandness and without minimum overlap
 	bedtools intersect -a POTENTIAL_LNCRNAS_pred_R.bed -b sorted-mod-$1.fa.out.bed -s -wo -nonamecheck | \
 		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$12"\t"$13"\t"$14"\t"$17"\t"$18"\t"$19}' > POTENTIAL_LNCRNAS_intersect_Rep_R_19.tsv
@@ -76,4 +63,5 @@ task_Final_tables(){
 }
 
 "$@"
+
 

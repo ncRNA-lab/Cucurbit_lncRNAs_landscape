@@ -11,6 +11,7 @@
 
 ####### MODULES
 module load R/4.1.2
+module load anaconda
 
 ####### VARIABLES
 specie="cme"
@@ -20,7 +21,7 @@ WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/06-Quantification/Additional_scripts"
 F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/06-Quantification/Functions.sh"
-flag="nr"
+flag_list="nr"
 
 ####### NEW AND OTHER VARIABLES
 WD1_spe=$WD1/$specie
@@ -37,35 +38,49 @@ export PATH=$PATH:${ASPATH}
 mkdir -p $WD3
 mkdir -p $WD3_spe
 mkdir -p $WD3_spe/ALL
-mkdir -p $WD3_spe/ALL/$flag
-mkdir -p $WD3_spe/ALL/$flag/01-Ref
-mkdir -p $WD3_spe/ALL/$flag/02-Index
-mkdir -p $WD3_spe/ALL/$flag/03-Quant
-mkdir -p $WD3_spe/ALL/$flag/04-Table
-mkdir -p $WD3_spe/ALL/$flag/Outputs
 
 
 ####### PIPELINE
-cd $WD3_spe/ALL/$flag
+for flag in $flag_list; do
+	
+	## Variable.
+	I=$WD2_spe/STEP-FINAL/Files/Joined/ALL/$flag
+	O=$WD3_spe/ALL/$flag
+	L=$WD1_spe/04-Selected_data
+	
+	## Directory.
+	mkdir -p $O
+	mkdir -p $O/01-Ref
+	mkdir -p $O/02-Index
+	mkdir -p $O/03-Quant
+	mkdir -p $O/04-Table
+	
+	cd $O
 
-## Transcriptome reference.
-echo -e "\nSTEP 1: GET TRANSCRIPTOME REFERENCE"
-cp $WD2_spe/STEP-FINAL/Files/Joined/ALL/$flag/ALL.fasta ./01-Ref/
+	## Transcriptome reference.
+	echo -e "\nSTEP 1: GET TRANSCRIPTOME REFERENCE"
+	cp $I/ALL.fasta ./01-Ref/
 
-## Index.
-echo -e "\nSTEP 2: INDEX THE TRANSCRIPTOME REFERENCE"
-salmon index -i ./02-Index/$specie -t ./01-Ref/ALL.fasta >> $WD3_spe/ALL/$flag/Outputs/Index.log 2>&1
+	## Index.
+	echo -e "\nSTEP 2: INDEX THE TRANSCRIPTOME REFERENCE"
+	mkdir -p ./02-Index/Outputs
+	>./02-Index/Outputs/stdout_Index.log
+	salmon index -i ./02-Index/$specie -t ./01-Ref/ALL.fasta >> ./02-Index/Outputs/stdout_Index.log 2>&1
 
-## Quant.
-echo -e "\nSTEP 3: QUANTIFY EACH LIBRARY BY SALMON:"
-SRR_list=$(sed -e 's/\n/ /g' $Acc_list)
-for SRR in $SRR_list; do
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD3_spe/ALL/$flag/Outputs/Quant_$SRR.log --quiet --exclusive $F task_Salmon_All $SRR $WD1_spe $WD2_spe $WD3_spe $strand_info $SLURM_CPUS_PER_TASK $flag $specie &
+	## Quant.
+	echo -e "\nSTEP 3: QUANTIFY EACH LIBRARY BY SALMON"
+	mkdir -p ./03-Quant/Outputs
+	SRR_list=$(sed -e 's/\n/ /g' $Acc_list)
+	for SRR in $SRR_list; do
+		srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/03-Quant/Outputs/stdout_Quant_$SRR.log --quiet --exclusive $F task_Salmon_All $SRR $L $I $O $strand_info $SLURM_CPUS_PER_TASK $specie &
+	done
+	wait
+
+	## Create TPM table.
+	echo -e "\nSTEP 4: CREATE A GLOBAL TABLE"
+	mkdir -p ./04-Table/Outputs
+	Rscript $AS/Create_TPM_table.R $O $O/03-Quant $I/ALL.gtf $Acc_list >> ./04-Table/Outputs/stdout_TPMs_table.log 2>&1
+	
 done
-wait
-
-## Create TPM table.
-echo -e "\nSTEP 4: CREATE A GLOBAL TABLE"
-Rscript $AS/Create_TPM_table.R $WD3_spe/ALL/$flag $WD3_spe/ALL/$flag/03-Quant $WD2_spe/STEP-FINAL/Files/Joined/ALL/$flag/ALL.gtf $Acc_list >> $WD3_spe/ALL/$flag/Outputs/Create_TPMs_table.log 2>&1
 
 
