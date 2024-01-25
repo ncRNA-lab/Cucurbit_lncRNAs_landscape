@@ -95,6 +95,7 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 - [NCBI-BLAST](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/) v.2.13.0+
 - [MIReNA](https://www.lcqb.upmc.fr/mirena/index.html) v.2.0
 - [CGAT](https://cgat.readthedocs.io/en/latest/cgat.html) v.1.0
+- [Samtools](https://github.com/samtools/samtools) v.1.16.1
 - [Bedtools](https://bedtools.readthedocs.io/en/latest/) v.2.27.1
 - [RepeatModeler](https://www.repeatmasker.org/RepeatModeler/) v.2.0.3
 - [RepeatMasker](https://www.repeatmasker.org/RepeatMasker/) v.4.1.3-p1
