@@ -43,7 +43,7 @@ if (length(args) < 6) {
   specie = args[6]
 }
 
-# # Garnatxa
+# Garnatxa
 # path_pred = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
 # path_quant = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification"
 # path_tissue_specificity = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/12-Tissue-specificity"
@@ -55,7 +55,7 @@ if (length(args) < 6) {
 ## 2. CREATE TABLES
 
 # Transcripts info.
-gtf_file = paste0(path_pred, "/", specie, "/STEP-FINAL/Files/Joined/ALL/", flag, "/ALL.gtf")
+gtf_file = paste0(path_pred, "/STEP-FINAL/Files/Joined/ALL/", flag, "/ALL.gtf")
 txdb = makeTxDbFromGFF(gtf_file, format = "gtf")
 k = keys(txdb, keytype = "GENEID")
 df = AnnotationDbi::select(txdb, keys = k, keytype = "GENEID", columns = columns(txdb))
@@ -74,33 +74,31 @@ files = file.path(quant_dir, metadata$Sample, "quant.sf")
 names(files) = paste0(metadata$Sample)
 txi.salmon = tximport(files, type = "salmon", tx2gene = tx2gene, txIn = TRUE, txOut = TRUE, countsFromAbundance = "no")
 
+rm(list = c("gtf_file", "txdb", "k", "df", "tx2gene", "metadata_file", "files", "quant_dir"))
+
 # Extract TPMs table.
 TPMs = as.data.frame(txi.salmon$abundance)
 TPMs$"ID_transcript" = rownames(TPMs)
 TPMs = TPMs[, c("ID_transcript", metadata$Sample)]
 rownames(TPMs) = NULL
 
+rm(list = c("txi.salmon"))
+
 # Load the LncRNA database and gene info.
-if (flag == "nr") {
-  LncRNAs_info = read.table(paste0(path_pred, "/", specie, "/STEP-FINAL/Database/Database_LncRNAs_NR.tsv"), sep = "\t", header = T, quote = "\"")
-  LncRNAs_info = LncRNAs_info[, c("ID_transcript", "Class_code", "Significance_level")]
-  colnames(LncRNAs_info) = c("ID_transcript", "Class_code", "Confidence")
-} 
-if (flag == "r") {
-  LncRNAs_info = read.table(paste0(path_pred, "/", specie, "/STEP-FINAL/Database/Database_LncRNAs.tsv"), sep = "\t", header = T, quote = "\"")
-  LncRNAs_info = LncRNAs_info[, c("ID_transcript", "Class_code", "Significance_level")]
-  colnames(LncRNAs_info) = c("ID_transcript", "Class_code", "Confidence")
-}
+LncRNAs_info = read.table(paste0(path_pred, "/STEP-FINAL/Database/Database_LncRNAs_", toupper(flag), ".tsv"), sep = "\t", header = T, quote = "\"")
+LncRNAs_info = LncRNAs_info[, c("ID_transcript", "Class_code", "Confidence")]
 LncRNAs_info[LncRNAs_info == 'o'] = 'o/e'
 LncRNAs_info[LncRNAs_info == 'e'] = 'o/e'
 LncRNAs_info[LncRNAs_info == 'Low'] = 'Low-confidence lncRNA'
 LncRNAs_info[LncRNAs_info == 'Medium'] = 'Medium-confidence lncRNA'
 LncRNAs_info[LncRNAs_info == 'High'] = 'High-confidence lncRNA'
-Genes_info = read.table(paste0(path_pred, "/", specie, "/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv"), sep = "\t", header = T, quote = "\"")
+Genes_info = read.table(paste0(path_pred, "/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv"), sep = "\t", header = T, quote = "\"")
 Genes_info$"Class_code" = "pc"
 Genes_info$"Confidence" = "Protein-coding"
 Genes_info = Genes_info[, c("ID_transcript", "Class_code", "Confidence")]
 info = rbind(LncRNAs_info, Genes_info)
+
+rm(list = c("LncRNAs_info", "Genes_info"))
 
 # Create tab table.
 cat(paste0("\n\nCreating tab table\n"))
@@ -191,19 +189,10 @@ if (length(SRA.studies) > 0) {
   rm(list = c("tab_SRA_mean_long", "tab_SRA_median_long", "tab_SRA_mean_wide", "tab_SRA_median_wide"))
 }
 
-rm(list = c("gtf_file", "txdb", "k", "df", "tx2gene", "metadata_file", "files", "txi.salmon", "LncRNAs_info", 
-            "metadata", "TPMs", "tab_experiments_temp", "tab", "tab_red", "tab_red_filt", "tab_experiments", 
-            "Genes_info", "info"))
+rm(list = c("metadata", "TPMs", "tab_experiments_temp", "tab", "tab_red", "tab_red_filt", "tab_experiments", "info"))
 
 
 
-
-
-
-
-# Convert to factors.
-TAB_experiments$Specie = factor(TAB_experiments$Specie, levels = species)
-TAB_experiments$KEPT = factor(TAB_experiments$KEPT, levels = c("NO", "YES"))
 
 # Create TAB_experiments_summary table.
 cat(paste0("\n\nCreating TAB_experiments_summary table\n"))

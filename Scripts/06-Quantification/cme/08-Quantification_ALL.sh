@@ -41,10 +41,16 @@ mkdir -p $WD3_spe/ALL
 
 
 ####### PIPELINE
+
+### QUANTIFICATION
+echo -e "\nQUANTIFICATION..."
+
 for flag in $flag_list; do
+
+	echo -e "\nFLAG: "$flag
 	
 	## Variable.
-	I=$WD2_spe/STEP-FINAL/Files/Joined/ALL/$flag
+	I=$WD2_spe/STEP-FINAL/Files/ALL/$flag
 	O=$WD3_spe/ALL/$flag
 	L=$WD1_spe/04-Selected_data
 	
@@ -58,17 +64,17 @@ for flag in $flag_list; do
 	cd $O
 
 	## Transcriptome reference.
-	echo -e "\nSTEP 1: GET TRANSCRIPTOME REFERENCE"
+	echo -e "\n\t-STEP 1: GET TRANSCRIPTOME REFERENCE"
 	cp $I/ALL.fasta ./01-Ref/
 
 	## Index.
-	echo -e "\nSTEP 2: INDEX THE TRANSCRIPTOME REFERENCE"
+	echo -e "\n\t-STEP 2: INDEX THE TRANSCRIPTOME REFERENCE"
 	mkdir -p ./02-Index/Outputs
 	>./02-Index/Outputs/stdout_Index.log
 	salmon index -i ./02-Index/$specie -t ./01-Ref/ALL.fasta >> ./02-Index/Outputs/stdout_Index.log 2>&1
 
 	## Quant.
-	echo -e "\nSTEP 3: QUANTIFY EACH LIBRARY BY SALMON"
+	echo -e "\n\t-STEP 3: QUANTIFY EACH LIBRARY BY SALMON"
 	mkdir -p ./03-Quant/Outputs
 	SRR_list=$(sed -e 's/\n/ /g' $Acc_list)
 	for SRR in $SRR_list; do
@@ -77,7 +83,7 @@ for flag in $flag_list; do
 	wait
 
 	## Create TPM table.
-	echo -e "\nSTEP 4: CREATE A GLOBAL TABLE"
+	echo -e "\n\t-STEP 4: CREATE A GLOBAL TABLE"
 	mkdir -p ./04-Table/Outputs
 	Rscript $AS/Create_TPM_table.R $O $O/03-Quant $I/ALL.gtf $Acc_list >> ./04-Table/Outputs/stdout_TPMs_table.log 2>&1
 	

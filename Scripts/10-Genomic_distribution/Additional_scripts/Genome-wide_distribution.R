@@ -1,11 +1,7 @@
 ################################################################################
-# GENOME-WIDE LNCRNAS AND GENES DISTRIBUTION
+# GENOME-WIDE LNCRNAS AND PCG DISTRIBUTION
 # Create circos plots about the genome-wide lncRNAs and genes distribution
 ################################################################################
-
-#https://mran.microsoft.com/snapshot/2016-08-07/web/packages/circlize/vignettes/genomic_plot.pdf
-#https://jokergoo.github.io/circlize_book/book/initialize-genomic-plot.html
-#https://journals.plos.org/plosone/article/figure?id=10.1371/journal.pone.0027121.g001
 
 
 ## 0. INSTALL AND LOAD LIBRARIES
@@ -180,13 +176,13 @@ for (confidence in c("Low", "Medium", "High")) {
   
   ###### 4.2.1 Create bed files.
   
-  bed_u = DB[DB$Class_code == "u" & DB$Confidence_level == confidence, c("Chr", "Start", "End")]
+  bed_u = DB[DB$Class_code == "u" & DB$Confidence == confidence, c("Chr", "Start", "End")]
   bed_u = bed_u[order(bed_u$Chr, bed_u$Start),]
-  bed_x = DB[DB$Class_code == "x" & DB$Confidence_level == confidence, c("Chr", "Start", "End")]
+  bed_x = DB[DB$Class_code == "x" & DB$Confidence == confidence, c("Chr", "Start", "End")]
   bed_x = bed_x[order(bed_x$Chr, bed_x$Start),]
-  bed_i = DB[DB$Class_code == "i" & DB$Confidence_level == confidence, c("Chr", "Start", "End")]
+  bed_i = DB[DB$Class_code == "i" & DB$Confidence == confidence, c("Chr", "Start", "End")]
   bed_i = bed_i[order(bed_i$Chr, bed_i$Start),]
-  bed_o_e = DB[(DB$Class_code == "o" | DB$Class_code == "e") & DB$Confidence_level == confidence, c("Chr", "Start", "End")]
+  bed_o_e = DB[(DB$Class_code == "o" | DB$Class_code == "e") & DB$Confidence == confidence, c("Chr", "Start", "End")]
   bed_o_e = bed_o_e[order(bed_o_e$Chr, bed_o_e$Start),]
   bed_genes = Genes[, c("Chr", "Start", "End")]
   bed_genes = bed_genes[order(bed_genes$Chr, bed_genes$Start),]

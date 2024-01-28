@@ -28,6 +28,10 @@ mkdir -p $WD2_spe
 
 
 ####### PIPELINE
+
+### GET RANDOM INTERGENIC REGIONS
+echo -e "\nGET RANDOM INTERGENIC REGIONS..."
+
 cd $WD2_spe
 
 ## Convert the LncRNAs GTF file to BED file.

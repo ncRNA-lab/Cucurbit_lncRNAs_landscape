@@ -23,6 +23,7 @@ WD4="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/12-Tissue-specificity
 WD5="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/13-DEA"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/13-DEA/Additional_scripts"
+flag_list="nr"
 alpha_value=0.05
 
 ####### NEW AND OTHER VARIABLES
@@ -38,46 +39,31 @@ export PATH=$PATH:${ASPATH}
 ####### DIRECTORY
 mkdir -p $WD5
 mkdir -p $WD5_spe
-mkdir -p $WD5_spe/01-Metadata_EA
-mkdir -p $WD5_spe/02-EA
-mkdir -p $WD5_spe/03-Metadata_DEA
-mkdir -p $WD5_spe/04-DEA
-mkdir -p $WD5_spe/05-Tables_and_Figures
 
 
 ####### PIPELINE
+for flag in $flag_list; do
 
-echo -e "\n\n#############################"
-echo -e "########### STEP 1 ##########"
-echo -e "#############################\n\n"
+	echo -e "\n\nFLAG: "$flag
+	
+	mkdir -p $WD5_spe/$flag/01-Metadata_EA
+	mkdir -p $WD5_spe/$flag/02-EA
+	mkdir -p $WD5_spe/$flag/03-Metadata_DEA
+	mkdir -p $WD5_spe/$flag/04-DEA
+	mkdir -p $WD5_spe/$flag/05-Tables_and_Figures
+	mkdir -p $WD5_spe/$flag/Outputs
 
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive Rscript $AS/Filter_and_prepare_metadata.R $Metadata $WD5_spe $WD2_spe/Salmon/ALL/nr/03-Quant
+	echo -e "\n\t-STEP 1: FILTER AND PREPARE THE METADATA"
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD5_spe/$flag/Outputs/stdout_STEP1.log --quiet --exclusive Rscript $AS/Filter_and_prepare_metadata.R $Metadata $WD5_spe $WD2_spe/ALL/$flag/03-Quant
 
+	echo -e "\n\t-STEP 2 and 3: EXPLORATORY ANALYSIS"
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD5_spe/$flag/Outputs/stdout_STEP2-3.log --quiet --exclusive Rscript $AS/Exploratory_analysis.R $WD5_spe $WD1_spe/STEP-FINAL/Files/Joined/ALL/$flag $WD2_spe/ALL/$flag/03-Quant
 
-echo -e "\n\n#############################"
-echo -e "########### STEP 2 ##########"
-echo -e "#############################\n\n"
+	echo -e "\n\t-STEP 4: DEA"
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD5_spe/$flag/Outputs/stdout_STEP4.log --quiet --exclusive Rscript $AS/DEA.R $WD5_spe $WD1_spe/STEP-FINAL/Files/Joined/ALL/$flag $WD2_spe/ALL/$flag/03-Quant $alpha_value
 
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive Rscript $AS/Exploratory_analysis.R $WD5_spe $WD1_spe/STEP-FINAL/Files/Joined/ALL/nr $WD2_spe/Salmon/ALL/nr/03-Quant
+	echo -e "\n\t-STEP 5: TABLES AND FIGURES"
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD5_spe/$flag/Outputs/stdout_STEP5.log --quiet --exclusive Rscript $AS/Tables_and_figures.R $WD5_spe $WD1_spe/STEP-FINAL/Database/Database_LncRNAs_${flag^^}.tsv $WD1_spe/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv $WD3/Positional_level/Approach_2/$flag/05-Figures/TABLE_LNCRNAS_PERCENTAGE_ALL.tsv $WD4/approach_1/ALL/$flag/STEP3/mean-TAU.tsv $alpha_value $specie
 
-
-echo -e "\n\n#############################"
-echo -e "########### STEP 3 ##########"
-echo -e "#############################\n\n"
-
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive Rscript $AS/DEA.R $WD5_spe $WD1_spe/STEP-FINAL/Files/Joined/ALL/nr $WD2_spe/Salmon/ALL/nr/03-Quant $alpha_value
-
-
-echo -e "\n\n#############################"
-echo -e "########### STEP 4 ##########"
-echo -e "#############################\n\n"
-
-srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive Rscript $AS/Tables_and_figures.R $WD5_spe $WD1_spe/STEP-FINAL/Database/Database_LncRNAs_NR.tsv $WD1_spe/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv $WD3/Positional_level/Approach_2/nr/05-Figures/TABLE_LNCRNAS_PERCENTAGE_ALL.tsv $WD4/approach_1/ALL/nr/STEP3/mean-TAU.tsv $alpha_value $specie
-
-
-echo -e "\n\n#############################"
-echo -e "############ END ############"
-echo -e "#############################\n\n"
-
-
+done
 

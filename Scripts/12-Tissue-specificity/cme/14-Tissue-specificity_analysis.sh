@@ -39,16 +39,22 @@ mkdir -p $WD3_spe/ALL
 
 ####### PIPELINE
 for flag in $flag_list; do
+
+	echo -e "\n\nFLAG: "$flag
 	
 	# Directory.
 	mkdir -p $WD3_spe/ALL/$flag
 	mkdir -p $WD3_spe/ALL/$flag/STEP1
+	mkdir -p $WD3_spe/ALL/$flag/STEP2
+	mkdir -p $WD3_spe/ALL/$flag/STEP3
+	mkdir -p $WD3_spe/ALL/$flag/STEP4
+	mkdir -p $WD3_spe/ALL/$flag/Outputs
 	
 	echo -e "\n\n#############################"
 	echo -e "########### STEP 1 ##########"
 	echo -e "#############################\n\n"
 
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive Rscript $AS/01-ALL-Tissue-specificity.R $WD1_spe $WD2_spe $WD3_spe $AI $flag $specie
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD3_spe/GENES/03-Quant/Outputs/stdout_Quant_$SRR.log --quiet --exclusive Rscript $AS/01-ALL-Tissue-specificity.R $WD1_spe $WD2_spe $WD3_spe $AI $flag $specie
 
 
 	echo -e "\n\n#############################"
@@ -69,7 +75,7 @@ for flag in $flag_list; do
 	echo -e "########### STEP 4 ##########"
 	echo -e "#############################\n\n"
 
-
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive Rscript $AS/04-ALL-Tissue-specificity.R $WD3_spe $flag $specie
 
 
 	echo -e "\n\n#############################"

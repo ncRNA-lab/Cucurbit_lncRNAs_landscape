@@ -12,21 +12,31 @@ rm(list = ls())
 
 suppressMessages(library("ggplot2"))
 suppressMessages(library("ggpubr"))
-suppressMessages(library("ggradar")) 
-#devtools::install_github("ricardo-bion/ggradar", dependencies = TRUE)
 suppressMessages(library("dplyr"))
 suppressMessages(library("scales"))
 suppressMessages(library("tibble"))
 
 
 
-## 1. VARIABLES.
+## 1. VARIABLES
 
-WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Genomic_distribution/vvi/nr"
-AI = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-confidences = c("Low", "Medium", "High")
-spes = "vvi"
-spel = "V. vinifera"
+## Create a vector with the arguments.
+args = commandArgs(trailingOnly=TRUE)
+if (length(args) < 4) {
+  stop("At least 4 arguments must be supplied.", call.=FALSE)
+} else {
+  spes = args[1]
+  spel = args[2]
+  WD = args[3]
+  AI = args[4]
+  confidences = unlist(strsplit(args[5], " "))
+}
+
+# spes = "vvi"
+# spel = "V. vinifera"
+# WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Genomic_distribution/vvi/nr"
+# AI = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
+
 
 
 
@@ -36,7 +46,7 @@ spel = "V. vinifera"
 chrs = read.table(paste0(AI, "/Chromosomes/", spes, "_chrs.txt"), header = F, sep = "\t", quote = "\"")
 
 # Load the tables.
-tab = read.table(paste0(WD, "/TRANS-", spes, "_coverage.tsv"), sep = "\t", header = F, quote = "\"")
+tab = read.table(paste0(WD, "/TRANS-coverage.tsv"), sep = "\t", header = F, quote = "\"")
 tab = tab[tab$V2 == 0, c(1,3:5)]
 colnames(tab) = c("Chr", "nt_uncovered", "nt_total", "NoCov")
 rownames(tab) = NULL
@@ -76,13 +86,12 @@ write.table(TAB_TRANS, paste0(WD, "/TABLE-TRANSCRIPTOME.tsv"), sep = "\t", col.n
 TAB_GL = data.frame()
 
 for (co in confidences) {
-  cat(paste0("\nConfidence-level: ", co))
   
   # Load chromosomes file.
   chrs = read.table(paste0(AI, "/Chromosomes/", spes, "_chrs.txt"), header = F, sep = "\t", quote = "\"")
   
   # Load gene table.
-  tab_G = read.table(paste0(WD, "/GENES-", spes, "_coverage.tsv"), sep = "\t", header = F, quote = "\"")
+  tab_G = read.table(paste0(WD, "/GENES-coverage.tsv"), sep = "\t", header = F, quote = "\"")
   tab_G = tab_G[tab_G$V2 == 0, c(1,3:5)]
   colnames(tab_G) = c("Chr", "nt_uncovered", "nt_total", "NoCov")
   rownames(tab_G) = NULL
@@ -113,7 +122,7 @@ for (co in confidences) {
   
   
   # Load lncRNA table.
-  tab_L = read.table(paste0(WD, "/LNCRNAS-", co, "-", spes, "_coverage.tsv"), sep = "\t", header = F, quote = "\"")
+  tab_L = read.table(paste0(WD, "/LNCRNAS-", co, "-coverage.tsv"), sep = "\t", header = F, quote = "\"")
   tab_L = tab_L[tab_L$V2 == 0, c(1,3:5)]
   colnames(tab_L) = c("Chr", "nt_uncovered", "nt_total", "NoCov")
   rownames(tab_L) = NULL

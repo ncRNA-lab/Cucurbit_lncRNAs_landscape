@@ -83,9 +83,9 @@ for cl in class_codes:
     for r in Repeats:
         print("\t\t-" + r)
         subset_1 = TAB[(TAB["Class_code"] == cl) & (TAB["Repeat_type_2_mod"] == r)]
-        T_ids = list(set(subset_1["transcript_id"]))
+        T_ids = list(set(subset_1["ID_transcript"]))
         for T_id in T_ids:
-            subset_2 = subset_1[(subset_1["transcript_id"] == T_id)]
+            subset_2 = subset_1[(subset_1["ID_transcript"] == T_id)]
             if len(subset_2.index) == 1:
                 row = subset_2.values.tolist()[0]
                 length = int(row[6]) - int(row[5])
@@ -94,13 +94,13 @@ for cl in class_codes:
                 overlap_per_log = math.log(overlap_per + 1, 2)
                 row = row[:7] + [row[12]] + [overlap, round(overlap_per, 3), round(overlap_per_log, 3)] 
             else:
-                ti = int(list(set(subset_2["start"]))[0]) + 1 # convert 1-based.
-                tf = int(list(set(subset_2["end"]))[0])
+                ti = int(list(set(subset_2["Start"]))[0]) + 1 # convert 1-based.
+                tf = int(list(set(subset_2["End"]))[0])
                 tpositions = [x for x in range(ti, tf + 1)]
                 length_i = len(tpositions)
                 for i in range(len(subset_2.index)):
-                    ri = int(list(subset_2["start_rep"])[i]) + 1 # convert 1-based.
-                    rf = int(list(subset_2["end_rep"])[i])
+                    ri = int(list(subset_2["Start_rep"])[i]) + 1 # convert 1-based.
+                    rf = int(list(subset_2["End_rep"])[i])
                     rpositions = [x for x in range(ri, rf + 1)]
                     tpositions = list(set(tpositions).difference(rpositions))
                 length_f = len(tpositions)
@@ -111,7 +111,7 @@ for cl in class_codes:
                 row = row[:7] + [row[12]] + [overlap, round(overlap_per, 3), round(overlap_per_log, 3)] 
             List_results.append(row)
 
-column_names = ["spe", "Class_code", "chr", "strand", "transcript_id", "start", "end", "Repeat_type_2_mod", "overlap", "overlap_per", "Log.overlap_per"]
+column_names = ["Spe", "Class_code", "Chr", "Strand", "ID_transcript", "Start", "End", "Repeat_type_2_mod", "Overlap", "Overlap_per", "Log.overlap_per"]
 TAB_filtered = pd.DataFrame(List_results, columns = column_names)
 TAB_filtered.to_csv(WD + "/Final_tab-Repeat-" + flag + "-" + confidence + "-COLLAPSED_REPEAT_ALL.tsv", sep='\t', index = False, header = True)
                 
@@ -123,9 +123,9 @@ List_results = []
 for cl in class_codes:
     print("\t\t-" + cl)
     subset_1 = TAB[(TAB["Class_code"] == cl)]
-    T_ids = list(set(subset_1["transcript_id"]))
+    T_ids = list(set(subset_1["ID_transcript"]))
     for T_id in T_ids:
-        subset_2 = subset_1[(subset_1["transcript_id"] == T_id)]
+        subset_2 = subset_1[(subset_1["ID_transcript"] == T_id)]
         if len(subset_2.index) == 1:
             row = subset_2.values.tolist()[0]
             length = int(row[6]) - int(row[5])
@@ -134,13 +134,13 @@ for cl in class_codes:
             overlap_per_log = math.log(overlap_per + 1, 2)
             row = row[:7] + [overlap, round(overlap_per, 3), round(overlap_per_log, 3)]
         else:
-            ti = int(list(set(subset_2["start"]))[0]) + 1 # convert 1-based.
-            tf = int(list(set(subset_2["end"]))[0])
+            ti = int(list(set(subset_2["Start"]))[0]) + 1 # convert 1-based.
+            tf = int(list(set(subset_2["End"]))[0])
             tpositions = [x for x in range(ti, tf + 1)]
             length_i = len(tpositions)
             for i in range(len(subset_2.index)):
-                ri = int(list(subset_2["start_rep"])[i]) + 1 # convert 1-based.
-                rf = int(list(subset_2["end_rep"])[i])
+                ri = int(list(subset_2["Start_rep"])[i]) + 1 # convert 1-based.
+                rf = int(list(subset_2["End_rep"])[i])
                 rpositions = [x for x in range(ri, rf + 1)]
                 tpositions = list(set(tpositions).difference(rpositions))
             length_f = len(tpositions)
@@ -151,8 +151,7 @@ for cl in class_codes:
             row = row[:7] + [overlap, round(overlap_per, 3), round(overlap_per_log, 3)] 
         List_results.append(row)
 
-column_names = ["spe", "Class_code", "chr", "strand", "transcript_id", "start", "end", "overlap", "overlap_per", "Log.overlap_per"]
+column_names = ["Spe", "Class_code", "Chr", "Strand", "ID_transcript", "Start", "End", "Overlap", "Overlap_per", "Log.overlap_per"]
 TAB_filtered = pd.DataFrame(List_results, columns = column_names)
 TAB_filtered.to_csv(WD + "/Final_tab-Repeat-" + flag + "-" + confidence + "-COLLAPSED_REPEAT.tsv", sep='\t', index = False, header = True)
-
 

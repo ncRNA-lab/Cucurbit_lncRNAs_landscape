@@ -2,13 +2,13 @@
 #
 # CREATE THE NON-REDUNDANT LNCRNA DATABASE
 #
-# Create a Non-redundant lncRNA database by redundancy analysis.
+# Create a non-redundant lncRNA database by redundancy analysis.
 #
 ################################################################################
 
 
 ## EXECUTION IN COMMAND LINE:
-#EXAMPLE --> Create_customed_LncRNA_db_NR.R $WD2
+#EXAMPLE --> Remove_redundant_transcripts.R $WD2
 
 rm(list = ls())
 
@@ -64,7 +64,7 @@ if ("CGAT" %in% colnames(DB)) {
 
 DB$"CGAT" = ifelse(DB$ID_transcript %in% CGAT, "non-redundant", "redundant")
 DB = DB[, c("ID_transcript", "Chr", "Origin", "Start", "End", "Strand", "ID_Gene", "Class_code", "Exons", 
-            "Length", "GC", "CPC2", "CPAT", "FEELnc", "SwissProt", "Pfam", "ORF.80", "ORF.100", "ORF.120", 
+            "Length", "GC", "CPC2", "CPAT", "FEELnc", "SwissProt", "Pfam", "ORF_80", "ORF_100", "ORF_120", 
             "RNAcentral_rRNA", "RNAcentral_tRNA", "RNAcentral_snRNA","RNAcentral_snoRNA", "miRBase", 
             "PmiREN", "CANTATAdb", "PLncDB", "GreeNC", "Ns", "CGAT", "Confidence")]
 

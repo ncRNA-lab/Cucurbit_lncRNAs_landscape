@@ -242,7 +242,7 @@ def FASTAtoDICT (fasta):
             Length = len(seq)
             G = seq.count("G")
             C = seq.count("C")
-            GC = ((G+C)*100)/Length
+            GC = round(((G+C)*100)/Length, 2)
             
             Transcript[header] = [str(Length), str(GC)]
     

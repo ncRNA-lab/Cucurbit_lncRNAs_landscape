@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=cmeS8G						# Job name.
-#SBATCH --output=cme_STEP8_GENES.log					# Standard output and error log.
+#SBATCH --output=cme_STEP8_Genes.log					# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=50							# Run on one mode.
 #SBATCH --cpus-per-task=4						# Number of tasks = cpus.
@@ -36,19 +36,30 @@ export PATH=$PATH:${ASPATH}
 ####### DIRECTORY
 mkdir -p $WD3
 mkdir -p $WD3_spe
-mkdir -p $WD3_spe/GENES
-mkdir -p $WD3_spe/GENES/01-Ref
-mkdir -p $WD3_spe/GENES/02-Index
-mkdir -p $WD3_spe/GENES/03-Quant
-mkdir -p $WD3_spe/GENES/04-Table
+mkdir -p $WD3_spe/Genes
 
 
 ####### PIPELINE
-cd $WD3_spe/GENES
+
+### QUANTIFICATION
+echo -e "\nQUANTIFICATION..."
+
+## Variable.
+I=$WD2_spe/STEP-FINAL/Files/Genes
+O=$WD3_spe/Genes
+L=$WD1_spe/04-Selected_data
+
+## Directory.
+mkdir -p $O/01-Ref
+mkdir -p $O/02-Index
+mkdir -p $O/03-Quant
+mkdir -p $O/04-Table
+
+cd $O
 
 ## Transcriptome reference.
 echo -e "\nSTEP 1: GET TRANSCRIPTOME REFERENCE"
-cp $WD2_spe/STEP-FINAL/Files/Genes/ORIGINAL_GENES.fasta ./01-Ref/
+cp $I/ORIGINAL_GENES.fasta ./01-Ref/
 
 ## Index.
 echo -e "\nSTEP 2: INDEX THE TRANSCRIPTOME REFERENCE"
@@ -61,13 +72,13 @@ echo -e "\nSTEP 3: QUANTIFY EACH LIBRARY BY SALMON"
 mkdir -p ./03-Quant/Outputs
 SRR_list=$(sed -e 's/\n/ /g' $Acc_list)
 for SRR in $SRR_list; do
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD3_spe/GENES/03-Quant/Outputs/stdout_Quant_$SRR.log --quiet --exclusive $F task_Salmon_Genes $SRR $WD1_spe $WD2_spe $WD3_spe $strand_info $SLURM_CPUS_PER_TASK $specie &
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/03-Quant/Outputs/stdout_Quant_$SRR.log --quiet --exclusive $F task_Salmon_Genes $SRR $L $I $O $strand_info $SLURM_CPUS_PER_TASK $specie &
 done
 wait
 
 ## Create TPM table.
 echo -e "\nSTEP 4: CREATE A GLOBAL TABLE"
 mkdir -p ./04-Table/Outputs
-Rscript $AS/Create_TPM_table.R $WD3_spe/GENES $WD3_spe/GENES/03-Quant $WD2_spe/STEP-FINAL/Files/Genes/ORIGINAL_GENES.gtf $Acc_list >> ./04-Table/Outputs/stdout_TPMs_table.log 2>&1
+Rscript $AS/Create_TPM_table.R $O $O/03-Quant $I/ORIGINAL_GENES.gtf $Acc_list >> ./04-Table/Outputs/stdout_TPMs_table.log 2>&1
 
 

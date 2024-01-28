@@ -9,14 +9,20 @@
 #SBATCH --mem-per-cpu=3gb						# Job memory request.
 
 
+####### MODULES
+module load R/4.1.2
+module load biotools
+
 ####### VARIABLES
 specie="cme"
+specie_long="C. melo"
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/03-Assembly"
 WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
 WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Genomic_distribution"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/10-Genomic_distribution/Additional_scripts"
-Confidence_levels_list="High Medium Low"
+flag_list="nr"
+confidence_list="High Medium Low"
 
 ####### NEW AND OTHER VARIABLES
 WD1_spe=$WD1/$specie
@@ -30,109 +36,127 @@ export PATH=$PATH:${ASPATH}
 ####### DIRECTORY
 mkdir -p $WD3
 mkdir -p $WD3_spe
-mkdir -p $WD3_spe/nr
+mkdir -p $WD3_spe/Cov
 
 
 ####### PIPELINE
 
-cd $WD3_spe/nr
+### COVERAGE STATISTICS
+echo -e "\nCOVERAGE STATISTICS..."
 
-# Chromosome sizes.
-awk -F"\t" '{print $1"\t"$3}' $AI/Chromosomes/$specie\_sizes_genome.txt > $specie\_sizes_genome.txt	
+for flag in $flag_list; do
 
-### TRANSCRIPTOME
+	echo -e "\nFLAG: "$flag
+	
+	mkdir -p $WD3_spe/Cov/$flag
+	cd $WD3_spe/Cov/$flag
 
-echo -e "\n\nTRANSCRIPTOME...\n"
+	# Chromosome sizes.
+	cp $AI/Genome/$specie.fa ./ 
+	samtools faidx $specie.fa
+	cut -f1,2 $specie.fa.fai | awk '{print $1"\t"$2}' > $specie.sizes_genome.txt
+	rm $specie.fa $specie.fa.fai
 
-# Create bed sorted file.
-awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' $WD1_spe/02-Merged_assembly/$specie\_merged_50.gtf > TRANS-$specie.bed
-sort -k 1,1 TRANS-$specie.bed > TRANS-$specie\_sorted.bed
-# Calculate coverage
-bedtools genomecov -i TRANS-$specie\_sorted.bed -g $specie\_sizes_genome.txt > TRANS-$specie\_coverage.tsv	
-rm TRANS-$specie.bed TRANS-$specie\_sorted.bed
+	
+	## TRANSCRIPTOME
+	echo -e "\n\t- TRANSCRIPTOME..."
 
-
-### GENES
-
-echo -e "\n\nGENES...\n"
-
-# Create bed sorted file.
-awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' $WD2_spe/STEP-FINAL/Files/Genes/ORIGINAL_GENES.gtf > GENES-$specie.bed
-sort -k 1,1 GENES-$specie.bed > GENES-$specie\_sorted.bed
-# Calculate coverage
-bedtools genomecov -i GENES-$specie\_sorted.bed -g $specie\_sizes_genome.txt > GENES-$specie\_coverage.tsv	
-rm GENES-$specie.bed GENES-$specie\_sorted.bed
+	# Create bed sorted file.
+	awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' $WD1_spe/02-Merged_assembly/$specie\_merged.gtf > TRANS.bed
+	sort -k 1,1 TRANS.bed > TRANS-sorted.bed
+	# Calculate coverage
+	bedtools genomecov -i TRANS-sorted.bed -g $specie.sizes_genome.txt > TRANS-coverage.tsv	
+	rm TRANS.bed TRANS-sorted.bed
 
 
-### LNCRNAS
+	## GENES
+	echo -e "\n\t- GENES..."
 
-echo -e "\n\nLNCRNAS BY CONFIDENCE LEVEL...\n"
+	# Create bed sorted file.
+	awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' $WD2_spe/STEP-FINAL/Files/Genes/ORIGINAL_GENES.gtf > GENES.bed
+	sort -k 1,1 GENES.bed > GENES-sorted.bed
+	# Calculate coverage
+	bedtools genomecov -i GENES-sorted.bed -g $specie.sizes_genome.txt > GENES-coverage.tsv	
+	rm GENES.bed GENES-sorted.bed
 
-for co in $Confidence_levels_list; do
-	echo -e $co"..."
+
+	## LNCRNAS
+	echo -e "\n\t- LNCRNAS..."
+
+	# Create bed sorted file.
+	awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' $WD2_spe/STEP-FINAL/Files/LncRNAs/$flag/POTENTIAL_LNCRNAS_pred.gtf > LNCRNAS.bed
+	sort -k 1,1 LNCRNAS.bed > LNCRNAS-sorted.bed
+	# Calculate coverage
+	bedtools genomecov -i LNCRNAS-sorted.bed -g $specie.sizes_genome.txt > LNCRNAS-coverage.tsv
+	rm LNCRNAS.bed LNCRNAS-sorted.bed
+	
+	
+	## LNCRNAS BY CONFIDENCE LEVEL
+	echo -e "\n\t- LNCRNAS BY CONFIDENCE LEVEL..."
+
+	for co in $confidence_list; do
+		echo -e "\t\t- "$co"..."
+		# Generate ids lists.
+		tail -n +2 $WD2_spe/STEP-FINAL/Database/Database_LncRNAs_${flag^^}.tsv | awk -v var=$co '$31 == var {print $1}' > LNCRNAS-$co\-ids.txt
+		# Generate GTF file.
+		Filter_GTF.py \
+			--gtf-initial $WD2_spe/STEP-FINAL/Files/LncRNAs/$flag/POTENTIAL_LNCRNAS_pred.gtf \
+			--gtf-final $WD3_spe/Cov/$flag/LNCRNAS-$co.gtf \
+			--ids $WD3_spe/Cov/$flag/LNCRNAS-$co\-ids.txt
+		# Create bed sorted file.
+		awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' LNCRNAS-$co.gtf > LNCRNAS-$co.bed
+		sort -k 1,1 LNCRNAS-$co.bed > LNCRNAS-$co\-sorted.bed
+		# Calculate coverage
+		bedtools genomecov -i LNCRNAS-$co\-sorted.bed -g $specie.sizes_genome.txt > LNCRNAS-$co\-coverage.tsv
+		rm LNCRNAS-$co\-ids.txt LNCRNAS-$co.gtf LNCRNAS-$co.bed LNCRNAS-$co\-sorted.bed
+	done
+
+	
+	## LNCRNAS AND GENES
+	echo -e "\n\t- LNCRNAS AND GENES..."
+
 	# Generate ids lists.
-	tail -n +2 $WD2_spe/STEP-FINAL/Database/Database_LncRNAs_NR.tsv | awk -v var=$co '$31 == var {print $1}' > LNCRNAS-$co\-$specie\_ids.txt
+	tail -n +2 $WD2_spe/STEP-FINAL/Database/Database_LncRNAs_${flag^^}.tsv | awk '{print $1}' > LNCRNAS-ids.txt
+	cp $WD2_spe/STEP-FINAL/Files/Genes/ORIGINAL_GENES_ids.txt GENES-ids.txt
+	cat LNCRNAS-ids.txt GENES-ids.txt > BOTH-ids.txt
 	# Generate GTF file.
 	Filter_GTF.py \
-		--gtf-initial $WD2_spe/STEP-FINAL/Files/LncRNAs/nr/POTENTIAL_LNCRNAS_pred.gtf \
-		--gtf-final $WD3_spe/nr/LNCRNAS-$co\-$specie.gtf \
-		--ids $WD3_spe/nr/LNCRNAS-$co\-$specie\_ids.txt
+		--gtf-initial $WD2_spe/STEP-FINAL/Files/ALL/$flag/ALL.gtf \
+		--gtf-final $WD3_spe/Cov/$flag/BOTH.gtf \
+		--ids $WD3_spe/Cov/$flag/BOTH-ids.txt
 	# Create bed sorted file.
-	awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' LNCRNAS-$co\-$specie.gtf > LNCRNAS-$co\-$specie.bed
-	sort -k 1,1 LNCRNAS-$co\-$specie.bed > LNCRNAS-$co\-$specie\_sorted.bed
+	awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' BOTH.gtf > BOTH.bed
+	sort -k 1,1 BOTH.bed > BOTH-sorted.bed
 	# Calculate coverage
-	bedtools genomecov -i LNCRNAS-$co\-$specie\_sorted.bed -g $specie\_sizes_genome.txt > LNCRNAS-$co\-$specie\_coverage.tsv
-	rm LNCRNAS-$co\-$specie\_ids.txt LNCRNAS-$co\-$specie.gtf LNCRNAS-$co\-$specie.bed LNCRNAS-$co\-$specie\_sorted.bed
+	bedtools genomecov -i BOTH-sorted.bed -g $specie.sizes_genome.txt > BOTH-coverage.tsv
+	rm LNCRNAS-ids.txt GENES-ids.txt BOTH-ids.txt BOTH.gtf BOTH.bed BOTH-sorted.bed
+	
+	
+	## LNCRNAS AND GENES BY CONFIDENCE LEVEL
+	echo -e "\n\t- LNCRNAS AND GENES BY CONFIDENCE LEVEL..."
+
+	for co in $confidence_list; do
+		echo -e "\t\t- "$co"..."
+		# Generate ids lists.
+		tail -n +2 $WD2_spe/STEP-FINAL/Database/Database_LncRNAs_${flag^^}.tsv | awk -v var=$co '$31 == var {print $1}' > LNCRNAS-$co\-ids.txt
+		cp $WD2_spe/STEP-FINAL/Files/Genes/ORIGINAL_GENES_ids.txt GENES-ids.txt
+		cat LNCRNAS-$co\-ids.txt GENES-ids.txt > BOTH-$co\-ids.txt
+		# Generate GTF file.
+		Filter_GTF.py \
+			--gtf-initial $WD2_spe/STEP-FINAL/Files/ALL/$flag/ALL.gtf \
+			--gtf-final $WD3_spe/Cov/$flag/BOTH-$co.gtf \
+			--ids $WD3_spe/Cov/$flag/BOTH-$co\-ids.txt
+		# Create bed sorted file.
+		awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' BOTH-$co.gtf > BOTH-$co.bed
+		sort -k 1,1 BOTH-$co.bed > BOTH-$co\-sorted.bed
+		# Calculate coverage
+		bedtools genomecov -i BOTH-$co\-sorted.bed -g $specie.sizes_genome.txt > BOTH-$co\-coverage.tsv
+		rm LNCRNAS-$co\-ids.txt GENES-ids.txt BOTH-$co\-ids.txt BOTH-$co.gtf BOTH-$co.bed BOTH-$co\-sorted.bed
+	done
+	
+	## FIGURES
+	echo -e "\n\t- CREATE FINAL TABLES AND FIGURES..."
+	Rscript $AS/Coverage-Statistics.R $specie "$specie_long" $WD3_spe/Cov/$flag $AI "$confidence_list"
+
 done
-
-echo -e "\n\nLNCRNAS...\n"
-
-# Create bed sorted file.
-awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' $WD2_spe/STEP-FINAL/Files/LncRNAs/nr/POTENTIAL_LNCRNAS_pred.gtf > LNCRNAS-$specie.bed
-sort -k 1,1 LNCRNAS-$specie.bed > LNCRNAS-$specie\_sorted.bed
-# Calculate coverage
-bedtools genomecov -i LNCRNAS-$specie\_sorted.bed -g $specie\_sizes_genome.txt > LNCRNAS-$specie\_coverage.tsv
-rm LNCRNAS-$specie.bed LNCRNAS-$specie\_sorted.bed
-
-
-### LNCRNAS AND GENES
-
-echo -e "\n\nLNCRNAS AND GENES BY CONFIDENCE LEVEL...\n"
-
-for co in $Confidence_levels_list; do
-	echo -e $co"..."
-	# Generate ids lists.
-	tail -n +2 $WD2_spe/STEP-FINAL/Database/Database_LncRNAs_NR.tsv | awk -v var=$co '$31 == var {print $1}' > LNCRNAS-$co\-$specie\_ids.txt
-	cp $WD2_spe/STEP-FINAL/Files/Genes/ORIGINAL_GENES_ids.txt GENES-$specie\_ids.txt
-	cat LNCRNAS-$co\-$specie\_ids.txt GENES-$specie\_ids.txt > BOTH-$co\-$specie\_ids.txt
-	# Generate GTF file.
-	Filter_GTF.py \
-		--gtf-initial $WD2_spe/STEP-FINAL/Files/Joined/ALL/nr/ALL.gtf \
-		--gtf-final $WD3_spe/nr/BOTH-$co\-$specie.gtf \
-		--ids $WD3_spe/nr/BOTH-$co\-$specie\_ids.txt
-	# Create bed sorted file.
-	awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' BOTH-$co\-$specie.gtf > BOTH-$co\-$specie.bed
-	sort -k 1,1 BOTH-$co\-$specie.bed > BOTH-$co\-$specie\_sorted.bed
-	# Calculate coverage
-	bedtools genomecov -i BOTH-$co\-$specie\_sorted.bed -g $specie\_sizes_genome.txt > BOTH-$co\-$specie\_coverage.tsv
-	rm LNCRNAS-$co\-$specie\_ids.txt GENES-$specie\_ids.txt BOTH-$co\-$specie\_ids.txt BOTH-$co\-$specie.gtf BOTH-$co\-$specie.bed BOTH-$co\-$specie\_sorted.bed
-done
-
-echo -e "\n\nLNCRNAS AND GENES...\n"
-
-# Generate ids lists.
-tail -n +2 $WD2_spe/STEP-FINAL/Database/Database_LncRNAs_NR.tsv | awk '{print $1}' > LNCRNAS-$specie\_ids.txt
-cp $WD2_spe/STEP-FINAL/Files/Genes/ORIGINAL_GENES_ids.txt GENES-$specie\_ids.txt
-cat LNCRNAS-$specie\_ids.txt GENES-$specie\_ids.txt > BOTH-$specie\_ids.txt
-# Generate GTF file.
-Filter_GTF.py \
-	--gtf-initial $WD2_spe/STEP-FINAL/Files/Joined/ALL/nr/ALL.gtf \
-	--gtf-final $WD3_spe/nr/BOTH-$specie.gtf \
-	--ids $WD3_spe/nr/BOTH-$specie\_ids.txt
-# Create bed sorted file.
-awk -F"\t" '$3 == "transcript" {print $1"\t"$4"\t"$5}' BOTH-$specie.gtf > BOTH-$specie.bed
-sort -k 1,1 BOTH-$specie.bed > BOTH-$specie\_sorted.bed
-# Calculate coverage
-bedtools genomecov -i BOTH-$specie\_sorted.bed -g $specie\_sizes_genome.txt > BOTH-$specie\_coverage.tsv
-rm LNCRNAS-$specie\_ids.txt GENES-$specie\_ids.txt BOTH-$specie\_ids.txt BOTH-$specie.gtf BOTH-$specie.bed BOTH-$specie\_sorted.bed
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=cmeS12dist						# Job name.
-#SBATCH --output=cme_STEP12_dist.log					# Standard output and error log.
+#SBATCH --output=cme_STEP12_distribution.log				# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=2							# Run on one mode.
 #SBATCH --cpus-per-task=2						# Number of tasks = cpus. 
@@ -33,19 +33,22 @@ export PATH=$PATH:${ASPATH}
 ####### DIRECTORY
 mkdir -p $WD2
 mkdir -p $WD2_spe
+mkdir -p $WD2_spe/Dist
 
 
 ####### PIPELINE
-for flag in $flag_list; do
-	
-	## Directory.
-	mkdir -p $WD2_spe/$flag
-	mkdir -p $WD2_spe/$flag/Outputs
 
-	## Visualize the lncRNAs and genes distribution.
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/$flag/Outputs/stdout_Dist_$specie.log --quiet --exclusive $F task_transcript_density $specie $WD1_spe $WD2_spe $AI $AS $flag &
+### DENSITY DISTRIBUTION
+echo -e "\nDENSITY DISTRIBUTION..."
+
+for flag in $flag_list; do
+	echo -e "\nFLAG: "$flag
 	
+	mkdir -p $WD2_spe/Dist/$flag
+	mkdir -p $WD2_spe/Dist/$flag/Outputs
+	
+	## Visualize the lncRNAs and genes distribution.
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Dist/$flag/Outputs/stdout_Distribution.log --quiet --exclusive $F task_transcript_density $specie $WD1_spe $WD2_spe/Dist/$flag $AI $AS $flag
 done
-wait
 
 

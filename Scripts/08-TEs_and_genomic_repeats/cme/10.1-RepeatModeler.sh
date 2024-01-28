@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=cmeS10RMod						# Job name.
-#SBATCH --output=cme_STEP10_Repeat_Modeler.log			# Standard output and error log.
+#SBATCH --output=cme_STEP10_RepeatModeler.log				# Standard output and error log.
 #SBATCH --qos=medium							# Partition (queue)
 #SBATCH --ntasks=1							# Run on one mode. Don't change unless you know what you are doing.
 #SBATCH --cpus-per-task=64						# Number of tasks = cpus.
@@ -27,9 +27,9 @@ mkdir -p $WD1_spe/01-Repeat_calling/01-RepeatModeler/Outputs
 
 ####### PIPELINE
 
-### REPEAT CALLING
-## RepeatModeler.
-echo -e "\n\nRepeat calling: RepeatModeler...\n"
+### REPEAT CALLING: REPEATMODELER
+echo -e "\nREPEAT CALLING: REPEATMODELER..."
+
 cd $WD1_spe/01-Repeat_calling/01-RepeatModeler
 srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD1_spe/01-Repeat_calling/01-RepeatModeler/Outputs/stdout_RepeatModeler.log --quiet --exclusive $F task_RepeatModeler $specie $AI $(($SLURM_CPUS_PER_TASK/4))
 

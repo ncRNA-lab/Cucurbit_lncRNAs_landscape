@@ -10,8 +10,6 @@
 
 rm(list = ls())
 
-## EXECUTION IN COMMAND LINE:
-#EXAMPLE --> Create_Tables_and_Figures_C-STEP1.R spes path_res path_RepMask path_pred flag confidence
 
 ## 0. INSTALL AND LOAD LIBRARIES
 
@@ -41,14 +39,14 @@ if (length(args) < 6) {
 # path_res = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi/02-Comparison_PCGs_LncRNAs"
 # path_RepMask = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi/01-Repeat_calling/02-RepeatMasker"
 # path_pred = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/05-LncRNAs_prediction/vvi"
-# flag = "NR"
+# flag = "nr"
 # confidence = "High"
 
 # spes = "vvi"
 # path_res = "/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi/02-Comparison_PCGs_LncRNAs"
 # path_RepMask = "/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi/01-Repeat_calling/02-RepeatMasker"
 # path_pred = "/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/05-LncRNAs_prediction/vvi"
-# flag = "NR"
+# flag = "nr"
 # confidence = "High"
 
 
@@ -57,67 +55,49 @@ if (length(args) < 6) {
 ### 2.1 CREATE FINAL TABLE
 
 ### Directory.
-if (!dir.exists(path_res)){
-  dir.create(path_res)
-}
 if (!dir.exists(paste0(path_res, "/Final_tables"))){
   dir.create(paste0(path_res, "/Final_tables"))
 }
 
 ### Genes, LncRNAs and IR intersected with Repeat regions.
-res_genes = read.table(paste0(path_res, "/ORIGINAL_GENES_intersect_Rep_19.tsv"), header = F, sep = "\t", quote = "\"")
-colnames(res_genes) = c("chr", "start", "end", "transcript_id", "strand", "start_rep", "end_rep", "Repeat_id", "Repeat_type_1", "Repeat_type_2", "overlap")
-if (flag == "NR") {
-  res_lncRNAs = read.table(paste0(path_res, "/POTENTIAL_LNCRNAS_intersect_Rep_NR_19.tsv"), header = F, sep = "\t", quote = "\"")
-  colnames(res_lncRNAs) = c("chr", "start", "end", "transcript_id", "strand", "start_rep", "end_rep", "Repeat_id", "Repeat_type_1", "Repeat_type_2", "overlap")
-}
-if (flag == "R") {
-  res_lncRNAs = read.table(paste0(path_res, "/POTENTIAL_LNCRNAS_intersect_Rep_R_19.tsv"), header = F, sep = "\t", quote = "\"")
-  colnames(res_lncRNAs) = c("chr", "start", "end", "transcript_id", "strand", "start_rep", "end_rep", "Repeat_id", "Repeat_type_1", "Repeat_type_2", "overlap")
-}
-res_IR = read.table(paste0(path_res, "/Random_IR_intersect_Rep_15.tsv"), header = F, sep = "\t", quote = "\"")
-colnames(res_IR) = c("chr", "start", "end", "transcript_id", "strand", "start_rep", "end_rep", "Repeat_id", "Repeat_type_1", "Repeat_type_2", "overlap")
-res_IR$transcript_id = paste0(res_IR$chr, ":", res_IR$start, "-", res_IR$end, "(", res_IR$strand, ")")
+res_genes = read.table(paste0(path_res, "/Intersection/ORIGINAL_GENES_intersect_Rep.tsv"), header = F, sep = "\t", quote = "\"")
+colnames(res_genes) = c("Chr", "Start", "End", "ID_transcript", "Strand", "Start_rep", "End_rep", "Repeat_id", "Repeat_type_1", "Repeat_type_2", "Overlap")
+res_lncRNAs = read.table(paste0(path_res, "/Intersection/POTENTIAL_LNCRNAS_intersect_Rep_", flag, ".tsv"), header = F, sep = "\t", quote = "\"")
+colnames(res_lncRNAs) = c("Chr", "Start", "End", "ID_transcript", "Strand", "Start_rep", "End_rep", "Repeat_id", "Repeat_type_1", "Repeat_type_2", "Overlap")
+res_IR = read.table(paste0(path_res, "/Intersection/Random_IR_intersect_Rep.tsv"), header = F, sep = "\t", quote = "\"")
+colnames(res_IR) = c("Chr", "Start", "End", "ID_transcript", "Strand", "Start_rep", "End_rep", "Repeat_id", "Repeat_type_1", "Repeat_type_2", "Overlap")
+res_IR$ID_transcript = paste0(res_IR$Chr, ":", res_IR$Start, "-", res_IR$End, "(", res_IR$Strand, ")")
 RES = rbind(res_genes, res_lncRNAs, res_IR)
 
 ### Remove intersections with small RNAs.
 RES = RES[!(RES$Repeat_type_2 %in% c("rRNA", "tRNA", "snRNA", "snoRNA")),]
 
 ### All the genes, lncRNAs and IR.
-All_genes = read.table(paste0(path_res, "/ORIGINAL_GENES.bed"), header = F, sep = "\t", quote = "\"")
+All_genes = read.table(paste0(path_res, "/Intersection/ORIGINAL_GENES.bed"), header = F, sep = "\t", quote = "\"")
 All_genes = All_genes[,c(1:4,6)]
-colnames(All_genes) = c("chr", "start", "end", "transcript_id", "strand")
+colnames(All_genes) = c("Chr", "Start", "End", "ID_transcript", "Strand")
 All_genes$"Type" = "Protein Coding"
-if (flag == "NR") {
-  All_lncRNAs = read.table(paste0(path_res, "/POTENTIAL_LNCRNAS_pred_NR.bed"), header = F, sep = "\t", quote = "\"")
-  All_lncRNAs = All_lncRNAs[,c(1:4,6)]
-  colnames(All_lncRNAs) = c("chr", "start", "end", "transcript_id", "strand")
-  All_lncRNAs$"Type" = "LncRNA"
-  LncRNAs_db = read.table(paste0(path_pred, "/STEP-FINAL/Database/Database_LncRNAs_NR.tsv"), header = T, sep = "\t", quote = "\"")
-  LncRNAs_db = LncRNAs_db[LncRNAs_db$Confidence_level == confidence,]
-  All_lncRNAs = All_lncRNAs[All_lncRNAs$transcript_id %in% LncRNAs_db$ID_transcript,]
-}
-if (flag == "R") {
-  All_lncRNAs = read.table(paste0(path_res, "/POTENTIAL_LNCRNAS_pred_R.bed"), header = F, sep = "\t", quote = "\"")
-  All_lncRNAs = All_lncRNAs[,c(1:4,6)]
-  colnames(All_lncRNAs) = c("chr", "start", "end", "transcript_id", "strand")
-  All_lncRNAs$"Type" = "LncRNA"
-  LncRNAs_db = read.table(paste0(path_pred, "/STEP-FINAL/Database/Database_LncRNAs.tsv"), header = T, sep = "\t", quote = "\"")
-  LncRNAs_db = LncRNAs_db[LncRNAs_db$Confidence_level == confidence,]
-  All_lncRNAs = All_lncRNAs[All_lncRNAs$transcript_id %in% LncRNAs_db$ID_transcript,]
-}
-All_IR = read.table(paste0(path_res, "/Random_IR.bed"), header = F, sep = "\t", quote = "\"")
+
+All_lncRNAs = read.table(paste0(path_res, "/Intersection/POTENTIAL_LNCRNAS_pred_", flag, ".bed"), header = F, sep = "\t", quote = "\"")
+All_lncRNAs = All_lncRNAs[,c(1:4,6)]
+colnames(All_lncRNAs) = c("Chr", "Start", "End", "ID_transcript", "Strand")
+All_lncRNAs$"Type" = "LncRNA"
+LncRNAs_db = read.table(paste0(path_pred, "/STEP-FINAL/Database/Database_LncRNAs_", flag, ".tsv"), header = T, sep = "\t", quote = "\"")
+LncRNAs_db = LncRNAs_db[LncRNAs_db$Confidence == confidence,]
+All_lncRNAs = All_lncRNAs[All_lncRNAs$ID_transcript %in% LncRNAs_db$ID_transcript,]
+
+All_IR = read.table(paste0(path_res, "/Intersection/Random_IR.bed"), header = F, sep = "\t", quote = "\"")
 All_IR = All_IR[,c(1:4,6)]
-colnames(All_IR) = c("chr", "start", "end", "transcript_id", "strand")
-All_IR$transcript_id = paste0(All_IR$chr, ":", All_IR$start, "-", All_IR$end, "(", All_IR$strand, ")")
+colnames(All_IR) = c("Chr", "Start", "End", "ID_transcript", "Strand")
+All_IR$ID_transcript = paste0(All_IR$Chr, ":", All_IR$Start, "-", All_IR$End, "(", All_IR$Strand, ")")
 All_IR$"Type" = "Intergenic Region"
 ALL = rbind(All_genes, All_lncRNAs, All_IR)
 
 ### Join all the info ALL and RES. 
-TAB = merge(ALL, RES[,c("transcript_id", "Repeat_id", "start_rep", "end_rep", "Repeat_type_1", "Repeat_type_2", "overlap")], by = "transcript_id", all.x = T, all.y = F)
+TAB = merge(ALL, RES[,c("ID_transcript", "Repeat_id", "Start_rep", "End_rep", "Repeat_type_1", "Repeat_type_2", "Overlap")], by = "ID_transcript", all.x = T, all.y = F)
 
 ### Convert all NA values to No_overlap except the overlap (by 0). They are the genes, lncRNAs and IR which haven't overlap on some repeat region.
-TAB$overlap = ifelse(is.na(TAB$overlap), 0, TAB$overlap)
+TAB$Overlap = ifelse(is.na(TAB$Overlap), 0, TAB$Overlap)
 TAB$Repeat_type_1 = ifelse(is.na(TAB$Repeat_type_1), "No repeat", TAB$Repeat_type_1)
 TAB$Repeat_type_2 = ifelse(is.na(TAB$Repeat_type_2), "No repeat", TAB$Repeat_type_2)
 
@@ -147,12 +127,12 @@ TAB2$"Repeat_type_2_mod" = ifelse(grepl("LINE", TAB2$Repeat_type_2, fixed = T), 
 TAB2 = TAB2[TAB2$Repeat_type_2_mod == "Transposon",]
 
 ### Add class code info to the table. u (intergenic), x (antisense), i (intronic), o/e (sense), pc (protein coding) and ir (intergenic region).
-TAB1 = merge(TAB1, LncRNAs_db[,c("ID_transcript", "Class_code")], by.x = "transcript_id", by.y = "ID_transcript", all.x = T, all.y = F)
+TAB1 = merge(TAB1, LncRNAs_db[,c("ID_transcript", "Class_code")], by = "ID_transcript", all.x = T, all.y = F)
 TAB1$Class_code = ifelse(TAB1$Type == "Protein Coding", "pc", ifelse(TAB1$Type == "Intergenic Region", "ir", TAB1$Class_code))
 TAB1[TAB1 == "o"] = "o/e"
 TAB1[TAB1 == "e"] = "o/e"
 
-TAB2 = merge(TAB2, LncRNAs_db[,c("ID_transcript", "Class_code")], by.x = "transcript_id", by.y = "ID_transcript", all.x = T, all.y = F)
+TAB2 = merge(TAB2, LncRNAs_db[,c("ID_transcript", "Class_code")], by = "ID_transcript", all.x = T, all.y = F)
 TAB2$Class_code = ifelse(TAB2$Type == "Protein Coding", "pc", ifelse(TAB2$Type == "Intergenic Region", "ir", TAB2$Class_code))
 TAB2[TAB2 == "o"] = "o/e"
 TAB2[TAB2 == "e"] = "o/e"
@@ -167,14 +147,14 @@ TAB2$Repeat_type_2_mod = factor(TAB2$Repeat_type_2_mod, levels = c("Transposon")
 TAB2 = TAB2[order(TAB2$Class_code),]
 
 ### Add specie info.
-TAB1$"spe" = spes
-TAB2$"spe" = spes
+TAB1$"Spe" = spes
+TAB2$"Spe" = spes
 
 ### Order columns
-TAB1 = TAB1[,c("spe", "Class_code", "chr", "strand", "transcript_id", "start", "end", "Repeat_id", "start_rep", 
-               "end_rep",  "Repeat_type_1", "Repeat_type_2", "Repeat_type_2_mod", "overlap")]
-TAB2 = TAB2[,c("spe", "Class_code", "chr", "strand", "transcript_id", "start", "end", "Repeat_id", "start_rep", 
-               "end_rep",  "Repeat_type_1", "Repeat_type_2", "Repeat_type_2_mod", "overlap")]
+TAB1 = TAB1[,c("Spe", "Class_code", "Chr", "Strand", "ID_transcript", "Start", "End", "Repeat_id", "Start_rep", 
+               "End_rep",  "Repeat_type_1", "Repeat_type_2", "Repeat_type_2_mod", "Overlap")]
+TAB2 = TAB2[,c("Spe", "Class_code", "Chr", "Strand", "ID_transcript", "Start", "End", "Repeat_id", "Start_rep", 
+               "End_rep",  "Repeat_type_1", "Repeat_type_2", "Repeat_type_2_mod", "Overlap")]
 
 rownames(TAB1) = NULL
 rownames(TAB2) = NULL
@@ -184,3 +164,4 @@ write.table(TAB1, paste0(path_res, "/Final_tables/Final_tab-Repeat-", flag, "-",
 write.table(TAB2, paste0(path_res, "/Final_tables/Final_tab-Transposon-", flag, "-", confidence, ".tsv"), col.names = T, row.names = F, sep = "\t", quote = F)
 
 rm(list = c("LncRNAs_db"))
+

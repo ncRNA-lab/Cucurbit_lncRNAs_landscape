@@ -19,17 +19,11 @@ task_RepeatMasker(){
 	ln -s $3/01-Repeat_calling/01-RepeatModeler/$1-families.fa
 	ln -s $2/Genome/$1.fa
 	# This will produce a gff for the repeat mapping, a masked fasta file, and a table summarizing the repeats found in the genome.
-	RepeatMasker -pa $4 -gff -lib $1-families.fa $1.fa 1> Logs/RepeatMasker_stdout_$1.log 2>&1
+	RepeatMasker -pa $4 -gff -lib $1-families.fa $1.fa
 }
 
 task_Intersect(){
-	cd $2
-	if [ -d "$2/02-Comparison_PCGs_LncRNAs" ]; then
-		rm -r "02-Comparison_PCGs_LncRNAs"
-	fi
-	mkdir "02-Comparison_PCGs_LncRNAs"
-	cd "02-Comparison_PCGs_LncRNAs"
-	
+	cd $2/02-Intersection/Intersection
 	## Convert RepeatMasker to bed format file.
 	rmsk2bed < $2/01-Repeat_calling/02-RepeatMasker/$1.fa.out > sorted-$1.fa.out.bed
 	awk '{print $1"\t"$2"\t"$3"\t"$1":"$2"-"$3"\t"$5"\t"$6"\t"$4"\t"$11}' sorted-$1.fa.out.bed > sorted-mod-$1.fa.out.bed
@@ -42,24 +36,24 @@ task_Intersect(){
 			awk '$8 == "transcript" {print $0}' > POTENTIAL_LNCRNAS_pred_R.bed
 	cat $3/STEP-FINAL/Files/LncRNAs/nr/POTENTIAL_LNCRNAS_pred.gtf | \
 		convert2bed -i gtf --attribute-key=transcript_id | \
-			awk '$8 == "transcript" {print $0}' > POTENTIAL_LNCRNAS_pred_${VAR_1^^}.bed
+			awk '$8 == "transcript" {print $0}' > POTENTIAL_LNCRNAS_pred_NR.bed
 	cp $4/Random_IR.bed ./
 	## Intersect LncRNAs and Genes BED files with Repeat file. Parameters: strandness and without minimum overlap
 	bedtools intersect -a POTENTIAL_LNCRNAS_pred_R.bed -b sorted-mod-$1.fa.out.bed -s -wo -nonamecheck | \
-		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$12"\t"$13"\t"$14"\t"$17"\t"$18"\t"$19}' > POTENTIAL_LNCRNAS_intersect_Rep_R_19.tsv
+		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$12"\t"$13"\t"$14"\t"$17"\t"$18"\t"$19}' > POTENTIAL_LNCRNAS_intersect_Rep_R.tsv
 	bedtools intersect -a POTENTIAL_LNCRNAS_pred_NR.bed -b sorted-mod-$1.fa.out.bed -s -wo -nonamecheck | \
-		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$12"\t"$13"\t"$14"\t"$17"\t"$18"\t"$19}' > POTENTIAL_LNCRNAS_intersect_Rep_NR_19.tsv
+		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$12"\t"$13"\t"$14"\t"$17"\t"$18"\t"$19}' > POTENTIAL_LNCRNAS_intersect_Rep_NR.tsv
 	bedtools intersect -a ORIGINAL_GENES.bed -b sorted-mod-$1.fa.out.bed -s -wo -nonamecheck | \
-		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$12"\t"$13"\t"$14"\t"$17"\t"$18"\t"$19}' > ORIGINAL_GENES_intersect_Rep_19.tsv
+		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$12"\t"$13"\t"$14"\t"$17"\t"$18"\t"$19}' > ORIGINAL_GENES_intersect_Rep.tsv
 	bedtools intersect -a Random_IR.bed -b sorted-mod-$1.fa.out.bed -s -wo -nonamecheck | \
-		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$8"\t"$9"\t"$10"\t"$13"\t"$14"\t"$15}' > Random_IR_intersect_Rep_15.tsv
+		awk -F"\t" '{print $1"\t"$2"\t"$3"\t"$4"\t"$6"\t"$8"\t"$9"\t"$10"\t"$13"\t"$14"\t"$15}' > Random_IR_intersect_Rep.tsv
 }
 
 task_Final_tables(){
 	echo -e "\tFlag: "$6", Confidence: "$7"..."
-	Rscript $5/STEP1.R $1 $2 $3 $4 $6 $7 >> $2"/Final_tables/stdout_1-"$6"-"$7".log" 2>&1
-	STEP2-Repeat.py --path $2"/Final_tables" --flag $6 --confidence $7 >> $2"/Final_tables/stdout_2_repeat-"$6"-"$7".log" 2>&1
-	STEP2-Transposon.py --path $2"/Final_tables" --flag $6 --confidence $7 >> $2"/Final_tables/stdout_2_transposon-"$6"-"$7".log" 2>&1
+	Rscript $5/STEP1.R $1 $2 $3 $4 ${6^^} $7 >> $2"/Outputs/stdout_1-"$6"-"$7".log" 2>&1
+	STEP2-Repeat.py --path $2"/Final_tables" --flag ${6^^} --confidence $7 >> $2"/Outputs/stdout_2_repeat-"$6"-"$7".log" 2>&1
+	STEP2-Transposon.py --path $2"/Final_tables" --flag ${6^^} --confidence $7 >> $2"/Outputs/stdout_2_transposon-"$6"-"$7".log" 2>&1
 }
 
 "$@"

@@ -1,15 +1,11 @@
 ################################################################################
 #
-# CREATE THE LNCRNA DATABASE
+# CREATE THE REDUNDANT LNCRNA DATABASE
 #
-# Create a lncRNA database from the information obtained in the lncRNA prediction
+# Create a lncRNA database using the information obtained in the lncRNA prediction
 # pipeline.
 #
 ################################################################################
-
-
-## EXECUTION IN COMMAND LINE:
-#EXAMPLE --> Create_customed_LncRNA_db.R $specie $WD2 $AI $SP 
 
 rm(list = ls())
 
@@ -52,124 +48,201 @@ if (length(args) < 4) {
 
 ## 2. CREATE THE LNCRNAS DATABASE.
 
-### 2.1 STEP 1.
+### 2.1 STEP 1: Load initial lncRNA database (genomic location and some molecular features).
 cat("LOAD STEP 1 DATA...\n")
-LncRNAs = read.table(paste0(WD, "/STEP1/Potential_lncRNAs/POTENTIAL_LNCRNAS.tsv"), header = T, sep = "\t", quote = "\"")
-DB = LncRNAs
+
+DB = read.table(paste0(WD, "/STEP1/Potential_lncRNAs/POTENTIAL_LNCRNAS.tsv"), header = T, sep = "\t", quote = "\"")
 
 
-### 2.2 STEP 2.
+### 2.2 STEP 2: Add coding potential information (CPC2, FEELnc and CPAT).
 cat("LOAD STEP 2 DATA...\n")
-CPC2 = read.table(paste0(WD, "/STEP2/CPC2/noncoding_ids_CPC2.txt"), quote = "\"")
-CPC2 = CPC2$V1
-CPAT = read.table(paste0(WD, "/STEP2/CPAT/noncoding_and_no_ORF_ids_CPAT.txt"), quote = "\"")
-CPAT = CPAT$V1
-FEELnc = read.table(paste0(WD, "/STEP2/FEELnc/noncoding_and_no_ORF_ids_FEELnc.txt"), quote = "\"")
-FEELnc = FEELnc$V1
 
-DB$"CPC2" = ifelse(DB$ID_transcript %in% CPC2, "NC", "C")
-DB$"CPAT" = ifelse(DB$ID_transcript %in% CPAT, "NC", "C")
-DB$"FEELnc" = ifelse(DB$ID_transcript %in% FEELnc, "NC", "C")
+## CPC2.
+cat("\t- CPC2...\n")
+CPC2 = tryCatch({read.table(paste0(WD, "/STEP2/CPC2/noncoding_ids_CPC2.txt"), quote = "\"")}, error = function(e) {NULL})
+if (!is.null(CPC2)) {
+  DB$"CPC2" = ifelse(DB$ID_transcript %in% CPC2$V1, "NC", "C")
+  rm(list = c("CPC2"))
+}else {
+  DB$"CPC2" = "C"
+}
 
-rm(list = c("CPC2", "CPAT", "FEELnc"))
+## FEELnc.
+cat("\t- FEELnc...\n")
+FEELnc = tryCatch({read.table(paste0(WD, "/STEP2/FEELnc/noncoding_and_no_ORF_ids_FEELnc.txt"), quote = "\"")}, error = function(e) {NULL})
+if (!is.null(FEELnc)) {
+  DB$"FEELnc" = ifelse(DB$ID_transcript %in% FEELnc$V1, "NC", "C")
+  rm(list = c("FEELnc"))
+}else {
+  DB$"FEELnc" = "C"
+}
+
+## CPAT.
+cat("\t- CPAT...\n")
+CPAT = tryCatch({read.table(paste0(WD, "/STEP2/CPAT/noncoding_and_no_ORF_ids_CPAT.txt"), quote = "\"")}, error = function(e) {NULL})
+if (!is.null(CPAT)) {
+  DB$"CPAT" = ifelse(DB$ID_transcript %in% CPAT$V1, "NC", "C")
+  rm(list = c("CPAT"))
+}else {
+  DB$"CPAT" = "C"
+}
 
 
-### 2.3 STEP 3.
+### 2.3 STEP 3: Add coding potential information (SwissProt and Pfam).
 cat("LOAD STEP 3 DATA...\n")
-SwissProt = read.table(paste0(WD, "/STEP3/SwissProt/diamond_output.tsv"), header = T, sep = "\t", quote = "\"")
-Pfam = read.table(paste0(WD, "/STEP3/Pfam/Hmmer/Results_PFAM_domtblout.tsv"), header = T, sep = "\t", quote = "\"")
-Pfam_dat = read.table(paste0(SP, "/PFAM/Pfam-A.hmm.dat.tsv"), header = T, sep = "\t", quote = "\"")
 
-Pfam_add = merge(Pfam, Pfam_dat, by.x = "query_name", by.y = "ID", all.x = T, all.y = F)
-Pfam_add_mod = Pfam_add
-Pfam_add_mod$target_name = gsub(".p[0-9]+", "", Pfam_add_mod$target_name)
+## SwissProt.
+cat("\t- SwissProt...\n")
+SwissProt = tryCatch({read.table(paste0(WD, "/STEP3/SwissProt/diamond_output.tsv"), header = T, sep = "\t", quote = "\"")}, error = function(e) {NULL})
+if (!is.null(SwissProt)) {
+  DB$"SwissProt" = ifelse(DB$ID_transcript %in% SwissProt$qseqid, "C", "NC")
+  write.table(SwissProt, paste0(WD, "/STEP-FINAL/Database/Extra/SwissProt.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+  rm(list = c("SwissProt"))
+}else {
+  DB$"SwissProt" = "NC"
+}
 
-DB$"SwissProt" = ifelse(DB$ID_transcript %in% SwissProt$qseqid, "C", "NC")
-DB$"Pfam" = ifelse(DB$ID_transcript %in% Pfam_add_mod$target_name, "C", "NC")
+## Pfam.
+cat("\t- Pfam...\n")
+Pfam = tryCatch({read.table(paste0(WD, "/STEP3/Pfam/Hmmer/Results_PFAM_domtblout.tsv"), header = T, sep = "\t", quote = "\"")}, error = function(e) {NULL})
+if (!is.null(Pfam)) {
+  Pfam_dat = read.table(paste0(SP, "/PFAM/Pfam-A.hmm.dat.tsv"), header = T, sep = "\t", quote = "\"")
+  Pfam_add = merge(Pfam, Pfam_dat, by.x = "query_name", by.y = "ID", all.x = T, all.y = F)
+  write.table(Pfam_add, paste0(WD, "/STEP-FINAL/Database/Extra/Pfam.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+  #
+  Pfam_add_mod = Pfam_add
+  Pfam_add_mod$target_name = gsub(".p[0-9]+", "", Pfam_add_mod$target_name)
+  #
+  DB$"Pfam" = ifelse(DB$ID_transcript %in% Pfam_add_mod$target_name, "C", "NC")
+  rm(list = c("Pfam_dat", "Pfam_add", "Pfam_add_mod", "Pfam"))
+}else {
+  DB$"Pfam" = "NC"
+}
 
-write.table(SwissProt, paste0(WD, "/STEP-FINAL/Database/Extra/SwissProt.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
-write.table(Pfam_add, paste0(WD, "/STEP-FINAL/Database/Extra/Pfam.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
 
-rm(list = c("Pfam_dat", "SwissProt", "Pfam_add", "Pfam_add_mod", "Pfam"))
-
-
-### 2.4 STEP 4.
+### 2.4 STEP 4: Add information about potential peptides (length >80aa, >100aa and >120aa).
 cat("LOAD STEP 4 DATA...\n")
-Transdecoder_80 = read.table(paste0(WD, "/STEP4/ORF/Transdecoder_80/ids_more_than_80_aa.txt"), quote = "\"")
-Transdecoder_80 = Transdecoder_80$V1
-Transdecoder_100 = read.table(paste0(WD, "/STEP4/ORF/Transdecoder_100/ids_more_than_100_aa.txt"), quote = "\"")
-Transdecoder_100 = Transdecoder_100$V1
-Transdecoder_120 = read.table(paste0(WD, "/STEP4/ORF/Transdecoder_120/ids_more_than_120_aa.txt"), quote = "\"")
-Transdecoder_120 = Transdecoder_120$V1
 
-DB$"ORF>80" = ifelse(DB$ID_transcript %in% Transdecoder_80, "YES", "NO")
-DB$"ORF>100" = ifelse(DB$ID_transcript %in% Transdecoder_100, "YES", "NO")
-DB$"ORF>120" = ifelse(DB$ID_transcript %in% Transdecoder_120, "YES", "NO")
+## Transdecoder (> 80aa).
+cat("\t- Transdecoder 80aa...\n")
+Transdecoder_80 = tryCatch({read.table(paste0(WD, "/STEP4/ORF/Transdecoder_80/ids_more_than_80_aa.txt"), quote = "\"")}, error = function(e) {NULL})
+if (!is.null(Transdecoder_80)) {
+  DB$"ORF_80" = ifelse(DB$ID_transcript %in% Transdecoder_80$V1, "YES", "NO")
+  rm(list = c("Transdecoder_80"))
+}else {
+  DB$"ORF_80" = "NO"
+}
 
-rm(list = c("Transdecoder_80", "Transdecoder_100", "Transdecoder_120"))
+## Transdecoder (> 100aa).
+cat("\t- Transdecoder 100aa...\n")
+Transdecoder_100 = tryCatch({read.table(paste0(WD, "/STEP4/ORF/Transdecoder_100/ids_more_than_100_aa.txt"), quote = "\"")}, error = function(e) {NULL})
+if (!is.null(Transdecoder_100)) {
+  DB$"ORF_100" = ifelse(DB$ID_transcript %in% Transdecoder_100$V1, "YES", "NO")
+  rm(list = c("Transdecoder_100"))
+}else {
+  DB$"ORF_100" = "NO"
+}
+
+## Transdecoder (> 120aa).
+cat("\t- Transdecoder 120aa...\n")
+Transdecoder_120 = tryCatch({read.table(paste0(WD, "/STEP4/ORF/Transdecoder_120/ids_more_than_120_aa.txt"), quote = "\"")}, error = function(e) {NULL})
+if (!is.null(Transdecoder_120)) {
+  DB$"ORF_120" = ifelse(DB$ID_transcript %in% Transdecoder_120$V1, "YES", "NO")
+  rm(list = c("Transdecoder_120"))
+}else {
+  DB$"ORF_120" = "NO"
+}
 
 
-### 2.5 STEP 5.
+### 2.5 STEP 5: Add information about housekeeping RNAs and miRNA precursors (Databases: RNAcentral, miRBase, PmiREN).
 cat("LOAD STEP 5 DATA...\n")
-# RNAcentral
+
+## RNAcentral.
 cat("\t- RNAcentral (rRNA, tRNA, snRNA, snoRNA)...\n")
-RNAcentral_conv = read.table(paste0(AI, "/RNAcentral/ALL/cucurbitaceae_RNAcentral_conversion.tsv"), header = F, sep = "\t", quote = "\"")
-colnames(RNAcentral_conv) = c("Term_long", "Annotation")
-lst = strsplit(RNAcentral_conv$Term_long, "\\s+")
-RNAcentral_conv$"sseqid" = sapply(lst ,`[`, 1)
+RNAcentral = tryCatch({read.table(paste0(WD, "/STEP5/RNAcentral/output_blastn_no_bacterial.tsv"), header = T, sep = "\t", quote = "\"")}, error = function(e) {NULL})
+if (!is.null(RNAcentral)) {
+  RNAcentral_conv = read.table(paste0(AI, "/RNAcentral/ALL/cucurbitaceae_RNAcentral_conversion.tsv"), header = F, sep = "\t", quote = "\"")
+  colnames(RNAcentral_conv) = c("Term_long", "Annotation")
+  lst = strsplit(RNAcentral_conv$Term_long, "\\s+")
+  RNAcentral_conv$"sseqid" = sapply(lst ,`[`, 1)
+  RNAcentral = left_join(RNAcentral, RNAcentral_conv[,c("sseqid", "Annotation")], by = "sseqid")
+  write.table(RNAcentral, paste0(WD, "/STEP-FINAL/Database/Extra/RNAcentral.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+  #
+  RNAcentral_red = RNAcentral[,c("qseqid", "Annotation")]
+  colnames(RNAcentral_red) = c("ID_transcript", "RNAcentral")
+  RNAcentral_red = RNAcentral_red[!duplicated(RNAcentral_red),]
+  #
+  RNAcentral_red_rRNA = RNAcentral_red[RNAcentral_red$RNAcentral == "rRNA", "ID_transcript"]
+  RNAcentral_red_tRNA = RNAcentral_red[RNAcentral_red$RNAcentral == "tRNA", "ID_transcript"]
+  RNAcentral_red_snRNA = RNAcentral_red[RNAcentral_red$RNAcentral == "snRNA", "ID_transcript"]
+  RNAcentral_red_snoRNA = RNAcentral_red[RNAcentral_red$RNAcentral == "snoRNA", "ID_transcript"]
+  #
+  DB$"RNAcentral_rRNA" = ifelse(DB$ID_transcript %in% RNAcentral_red_rRNA, "rRNA", NA)
+  DB$"RNAcentral_tRNA" = ifelse(DB$ID_transcript %in% RNAcentral_red_tRNA, "tRNA", NA)
+  DB$"RNAcentral_snRNA" = ifelse(DB$ID_transcript %in% RNAcentral_red_snRNA, "snRNA", NA)
+  DB$"RNAcentral_snoRNA" = ifelse(DB$ID_transcript %in% RNAcentral_red_snoRNA, "snoRNA", NA)
+  rm(list = c("RNAcentral_conv", "RNAcentral", "RNAcentral_red", "lst", "RNAcentral_red_rRNA", 
+              "RNAcentral_red_tRNA", "RNAcentral_red_snRNA", "RNAcentral_red_snoRNA"))
+}else {
+  DB$"RNAcentral_rRNA" = NA
+  DB$"RNAcentral_tRNA" = NA
+  DB$"RNAcentral_snRNA" = NA
+  DB$"RNAcentral_snoRNA" = NA
+}
 
-RNAcentral = read.table(paste0(WD, "/STEP5/RNAcentral/output_blastn_no_bacterial.tsv"), header = T, sep = "\t", quote = "\"")
-#RNAcentral = RNAcentral[RNAcentral$evalue < 1e-10,]
-
-RNAcentral = left_join(RNAcentral, RNAcentral_conv[,c("sseqid", "Annotation")], by = "sseqid")
-RNAcentral_red = RNAcentral[,c("qseqid", "Annotation")]
-colnames(RNAcentral_red) = c("ID_transcript", "RNAcentral")
-RNAcentral_red = RNAcentral_red[!duplicated(RNAcentral_red),]
-RNAcentral_red_rRNA = RNAcentral_red[RNAcentral_red$RNAcentral == "rRNA", "ID_transcript"]
-RNAcentral_red_tRNA = RNAcentral_red[RNAcentral_red$RNAcentral == "tRNA", "ID_transcript"]
-RNAcentral_red_snRNA = RNAcentral_red[RNAcentral_red$RNAcentral == "snRNA", "ID_transcript"]
-RNAcentral_red_snoRNA = RNAcentral_red[RNAcentral_red$RNAcentral == "snoRNA", "ID_transcript"]
-
-write.table(RNAcentral, paste0(WD, "/STEP-FINAL/Database/Extra/RNAcentral.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
-
-# Add RNAcentral info to the database
-DB$"RNAcentral_rRNA" = ifelse(DB$ID_transcript %in% RNAcentral_red_rRNA, "rRNA", NA)
-DB$"RNAcentral_tRNA" = ifelse(DB$ID_transcript %in% RNAcentral_red_tRNA, "tRNA", NA)
-DB$"RNAcentral_snRNA" = ifelse(DB$ID_transcript %in% RNAcentral_red_snRNA, "snRNA", NA)
-DB$"RNAcentral_snoRNA" = ifelse(DB$ID_transcript %in% RNAcentral_red_snoRNA, "snoRNA", NA)
-
-# miRBase
+## miRBase.
 cat("\t- miRBase (precursor-miRNAs)...\n")
-miRBase_prec = read.table(paste0(WD, "/STEP5/miRBase/prec_ID.txt"), quote = "\"")
-miRBase_prec = miRBase_prec$V1
+miRBase_prec = tryCatch({read.table(paste0(WD, "/STEP5/miRBase/prec_ID.txt"), quote = "\"")}, error = function(e) {NULL})
+if (!is.null(miRBase_prec)) {
+  DB$"miRBase" = ifelse(DB$ID_transcript %in% miRBase_prec$V1, "precursor-miRNA", NA)
+  rm(list = c("miRBase_prec"))
+}else {
+  DB$"miRBase" = NA
+}
 
-# Add miRBase info to the database
-DB$"miRBase" = ifelse(DB$ID_transcript %in% miRBase_prec, "precursor-miRNA", NA)
-
-# PmiREN
+## PmiREN.
 cat("\t- PmiREN (precursor-miRNAs)...\n")
-PmiREN_prec = read.table(paste0(WD, "/STEP5/PmiREN/prec_ID.txt"), quote = "\"")
-PmiREN_prec = PmiREN_prec$V1
-
-# Add PmiREN info to the database
-DB$"PmiREN" = ifelse(DB$ID_transcript %in% PmiREN_prec, "precursor-miRNA", NA)
-
-rm(list = c("RNAcentral_conv", "RNAcentral", "PmiREN_prec", "miRBase_prec", "RNAcentral_red", 
-            "lst", "RNAcentral_red_rRNA", "RNAcentral_red_tRNA", "RNAcentral_red_snRNA", 
-            "RNAcentral_red_snoRNA"))
+PmiREN_prec = tryCatch({read.table(paste0(WD, "/STEP5/PmiREN/prec_ID.txt"), quote = "\"")}, error = function(e) {NULL})
+if (!is.null(PmiREN_prec)) {
+  DB$"PmiREN" = ifelse(DB$ID_transcript %in% PmiREN_prec$V1, "precursor-miRNA", NA)
+  rm(list = c("PmiREN_prec"))
+}else {
+  DB$"PmiREN" = NA
+}
 
 
-### 2.6 STEP 6.
+### 2.6 STEP 6: Add information about known potential lncRNAs (Databases: Cantatadb, Plncdb and Greenc).
 cat("LOAD STEP 6 DATA...\n")
-Cantatadb = read.table(paste0(WD, "/STEP6/CANTATAdb/output_blastn.tsv"), header = T, sep = "\t", quote = "\"")
-Plncdb = read.table(paste0(WD, "/STEP6/PLncDB/output_blastn.tsv"), header = T, sep = "\t", quote = "\"")
-Greenc = read.table(paste0(WD, "/STEP6/GreeNC/output_blastn.tsv"), header = T, sep = "\t", quote = "\"")
 
-DB$"CANTATAdb" = ifelse(DB$ID_transcript %in% Cantatadb$qseqid, "YES", "NO")
-DB$"PLncDB" = ifelse(DB$ID_transcript %in% Plncdb$qseqid, "YES", "NO")
-DB$"GreeNC" = ifelse(DB$ID_transcript %in% Greenc$qseqid, "YES", "NO")
+## Cantatadb.
+cat("\t- Cantatadb...\n")
+Cantatadb = tryCatch({read.table(paste0(WD, "/STEP6/CANTATAdb/output_blastn.tsv"), header = T, sep = "\t", quote = "\"")}, error = function(e) {NULL})
+if (!is.null(Cantatadb)) {
+  DB$"CANTATAdb" = ifelse(DB$ID_transcript %in% Cantatadb$qseqid, "YES", "NO")
+  rm(list = c("Cantatadb"))
+}else {
+  DB$"CANTATAdb" = "NO"
+}
 
-rm(list = c("Cantatadb", "Plncdb", "Greenc"))
+## Plncdb.
+cat("\t- Plncdb...\n")
+Plncdb = tryCatch({read.table(paste0(WD, "/STEP6/PLncDB/output_blastn.tsv"), header = T, sep = "\t", quote = "\"")}, error = function(e) {NULL})
+if (!is.null(Plncdb)) {
+  DB$"PLncDB" = ifelse(DB$ID_transcript %in% Plncdb$qseqid, "YES", "NO")
+  rm(list = c("Plncdb"))
+}else {
+  DB$"PLncDB" = "NO"
+}
+
+## Greenc.
+cat("\t- Greenc...\n")
+Greenc = tryCatch({read.table(paste0(WD, "/STEP6/GreeNC/output_blastn.tsv"), header = T, sep = "\t", quote = "\"")}, error = function(e) {NULL})
+if (!is.null(Greenc)) {
+  DB$"GreeNC" = ifelse(DB$ID_transcript %in% Greenc$qseqid, "YES", "NO")
+  rm(list = c("Greenc"))
+}else {
+  DB$"GreeNC" = "NO"
+}
 
 
 ### 2.7 N's.

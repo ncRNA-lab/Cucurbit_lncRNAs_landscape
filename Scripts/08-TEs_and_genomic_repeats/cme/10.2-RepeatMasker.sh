@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=cmeS10RMask					# Job name.
-#SBATCH --output=cme_STEP10_Repeat_Masker.log				# Standard output and error log.
+#SBATCH --output=cme_STEP10_RepeatMasker.log				# Standard output and error log.
 #SBATCH --qos=medium							# Partition (queue)
 #SBATCH --ntasks=1							# Run on one mode. Don't change unless you know what you are doing.
 #SBATCH --cpus-per-task=64						# Number of tasks = cpus.
@@ -27,9 +27,9 @@ mkdir -p $WD1_spe/01-Repeat_calling/02-RepeatMasker/Outputs
 
 ####### PIPELINE
 
-### REPEAT CALLING
-## RepeatMasker.
-echo -e "\n\nRepeat calling: RepeatMasker...\n"
+### REPEAT CALLING: REPEATMASKER
+echo -e "\nREPEAT CALLING: REPEATMASKER..."
+
 cd $WD1_spe/01-Repeat_calling/02-RepeatMasker
 srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD1_spe/01-Repeat_calling/02-RepeatMasker/Outputs/stdout_RepeatMasker.log --quiet --exclusive $F task_RepeatMasker $specie $AI $WD1_spe $SLURM_CPUS_PER_TASK
 

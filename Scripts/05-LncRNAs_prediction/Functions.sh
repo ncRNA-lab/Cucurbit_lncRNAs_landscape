@@ -707,10 +707,9 @@ task_LncRNAs_prediction_STEP-FINAL(){
 	mkdir -p $P7/Files/LncRNAs
 	mkdir -p $P7/Files/LncRNAs/r
 	mkdir -p $P7/Files/LncRNAs/nr
-	mkdir -p $P7/Files/Joined
-	mkdir -p $P7/Files/Joined/ALL
-	mkdir -p $P7/Files/Joined/ALL/r
-	mkdir -p $P7/Files/Joined/ALL/nr
+	mkdir -p $P7/Files/ALL
+	mkdir -p $P7/Files/ALL/r
+	mkdir -p $P7/Files/ALL/nr
 	mkdir -p $P7/Redundancy_analysis
 	mkdir -p $P7/Redundancy_analysis/AGAT
 	mkdir -p $P7/Redundancy_analysis/CGAT
@@ -780,9 +779,9 @@ task_LncRNAs_prediction_STEP-FINAL(){
 		
 	######################################
 
-	#### JOINED: ALL (ALL lncRNAs and genes from original annotation file)
-	echo -e "\n\nJOINED: ALL: Join genes and lncRNAs without any filter..."
-	cd $FL/Joined/ALL/r
+	#### ALL (ALL lncRNAs and genes from original annotation file)
+	echo -e "\n\nALL: Join genes and lncRNAs without any filter..."
+	cd $FL/ALL/r
 
 	## ids
 	echo -e "\nCreate ids file..."
@@ -868,7 +867,7 @@ task_LncRNAs_prediction_STEP-FINAL(){
 	####### CREATE THE NON-REDUNDANT LNCRNAS DATABASE.
 
 	echo -e "\nCREATE THE NON-REDUNDANT LNCRNAS DATABASE...\n"
-	Rscript $3/Create_customed_LncRNA_db_NR.R $1
+	Rscript $3/Remove_redundant_transcripts.R $1
 
 	#########################################################################
 
@@ -905,9 +904,9 @@ task_LncRNAs_prediction_STEP-FINAL(){
 	
 	######################################
 
-	#### JOINED: ALL (ALL lncRNAs and genes from original annotation file)
-	echo -e "\n\nJOINED: ALL: Join genes and lncRNAs without any filter..."
-	cd $FL/Joined/ALL/nr
+	#### ALL (ALL lncRNAs and genes from original annotation file)
+	echo -e "\n\nALL: Join genes and lncRNAs without any filter..."
+	cd $FL/ALL/nr
 
 	## ids
 	echo -e "\nCreate ids file..."

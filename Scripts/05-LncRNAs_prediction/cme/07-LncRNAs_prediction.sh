@@ -113,6 +113,9 @@ mkdir -p $WD2_spe/STEP-FINAL
 
 ####### PIPELINE: STEP 7
 
+### LNCRNA PREDICTION
+echo -e "\nLNCRNA PREDICTION..."
+
 ### STEP1: Create two folders:
 ### 	- Original_genes: Save important files about genes such as GTF 
 ### 	(Annotation), FASTA (Nucleotide sequences), TSV (Additional info) 
@@ -121,7 +124,7 @@ mkdir -p $WD2_spe/STEP-FINAL
 ### 	such as GTF (Annotation), FASTA (Nucleotide sequences), TSV 
 ### 	(Additional info) and TXT (Sequence IDs).
 
-echo -e "STEP (1/7): PIPELINE...\n"
+echo -e "\t-STEP (1/7)..."
 srun -N1 -n1 -c1 --output $WD2_spe/Outputs/stdout_STEP1.log --quiet --exclusive $F task_LncRNAs_prediction_STEP1 $WD1_spe $WD2_spe $AI $specie
 
 ### STEP2: Predict the coding potential of the potential lncRNAs using three 
@@ -130,7 +133,7 @@ srun -N1 -n1 -c1 --output $WD2_spe/Outputs/stdout_STEP1.log --quiet --exclusive 
 ### 	- FEELnc (https://github.com/tderrien/FEELnc; v.0.2)
 ### 	- CPAT (https://github.com/liguowang/cpat; v.3.0.2)
 
-echo -e "STEP (2/7): PIPELINE...\n"
+echo -e "\t-STEP (2/7)..."
 srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP2.log --quiet --exclusive $F task_LncRNAs_prediction_STEP2 $WD2_spe $SP $SLURM_CPUS_PER_TASK &
 
 ### STEP3: Predict the coding potential of the potential lncRNAs using two 
@@ -140,19 +143,19 @@ srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP2.log -
 ### 	- Pfam-A (http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/;
 ### 	31/05/2022)
 
-echo -e "STEP (3/7): PIPELINE...\n"
+echo -e "\t-STEP (3/7)..."
 srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP3.log --quiet --exclusive $F task_LncRNAs_prediction_STEP3 $WD2_spe $SP $evalue $SLURM_CPUS_PER_TASK &
 
 ### STEP4: Predict if it exits any ORF with length greater than 80, 100 or 
 ### 120 aa
 
-echo -e "STEP (4/7): PIPELINE...\n"
+echo -e "\t-STEP (4/7)..."
 srun -N1 -n1 -c1 --output $WD2_spe/Outputs/stdout_STEP4.log --quiet --exclusive $F task_LncRNAs_prediction_STEP4 $WD2_spe &
 
 ### STEP5: Annotate the potential lncRNAs using RNAcentral (rRNA, tRNA, snRNA, 
 ### snoRNA) and miRBase and PmiREN (miRNAs and miRNA-Precursors).
 
-echo -e "STEP (5/7): PIPELINE...\n"
+echo -e "\t-STEP (5/7)..."
 srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP5.log --quiet --exclusive $F task_LncRNAs_prediction_STEP5 $WD2_spe $AI $evalue $SLURM_CPUS_PER_TASK &
 
 ### STEP6: Annotate the potential lncRNAs using three lncRNAs databases:
@@ -160,13 +163,13 @@ srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP5.log -
 ### 	- PLncDB (plncdb.tobaccodb.org)
 ### 	- GreeNC (http://greenc.sequentiabiotech.com/wiki2/Main_Page)
 
-echo -e "STEP (6/7): PIPELINE...\n"
+echo -e "\t-STEP (6/7)..."
 srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP6.log --quiet --exclusive $F task_LncRNAs_prediction_STEP6 $WD2_spe $AI $evalue $SLURM_CPUS_PER_TASK &
 wait
 
 ### STEP-FINAL: Database creation: LncRNA classification and redundancy remove.
 
-echo -e "STEP-FINAL (7/7): PIPELINE...\n"
+echo -e "\t-STEP-FINAL (7/7)..."
 srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD2_spe/Outputs/stdout_STEP7.log --quiet --exclusive $F task_LncRNAs_prediction_STEP-FINAL $WD2_spe $AI $AS $SP $specie $SLURM_CPUS_PER_TASK
 
 

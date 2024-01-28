@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=cmeS8L						# Job name.
-#SBATCH --output=cme_STEP8_LNCRNAS.log				# Standard output and error log.
+#SBATCH --output=cme_STEP8_LncRNAs.log				# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=50							# Run on one mode.
 #SBATCH --cpus-per-task=4						# Number of tasks = cpus.
@@ -37,15 +37,21 @@ export PATH=$PATH:${ASPATH}
 ####### DIRECTORY
 mkdir -p $WD3
 mkdir -p $WD3_spe
-mkdir -p $WD3_spe/LNCRNAS
+mkdir -p $WD3_spe/LncRNAs
 
 
 ####### PIPELINE
+
+### QUANTIFICATION
+echo -e "\nQUANTIFICATION..."
+
 for flag in $flag_list; do
+
+	echo -e "\nFLAG: "$flag
 	
 	## Variable.
 	I=$WD2_spe/STEP-FINAL/Files/LncRNAs/$flag
-	O=$WD3_spe/LNCRNAS/$flag
+	O=$WD3_spe/LncRNAs/$flag
 	L=$WD1_spe/04-Selected_data
 	
 	## Directory.
@@ -58,17 +64,17 @@ for flag in $flag_list; do
 	cd $O
 
 	## Transcriptome reference.
-	echo -e "\nSTEP 1: GET TRANSCRIPTOME REFERENCE"
+	echo -e "\n\t-STEP 1: GET TRANSCRIPTOME REFERENCE"
 	cp $I/POTENTIAL_LNCRNAS_pred.fasta ./01-Ref/
 
 	## Index.
-	echo -e "\nSTEP 2: INDEX THE TRANSCRIPTOME REFERENCE"
+	echo -e "\n\t-STEP 2: INDEX THE TRANSCRIPTOME REFERENCE"
 	mkdir -p ./02-Index/Outputs
 	>./02-Index/Outputs/stdout_Index.log
 	salmon index -i ./02-Index/$specie -t ./01-Ref/POTENTIAL_LNCRNAS_pred.fasta >> ./02-Index/Outputs/stdout_Index.log 2>&1
 
 	## Quant.
-	echo -e "\nSTEP 3: QUANTIFY EACH LIBRARY BY SALMON"
+	echo -e "\n\t-STEP 3: QUANTIFY EACH LIBRARY BY SALMON"
 	mkdir -p ./03-Quant/Outputs
 	SRR_list=$(sed -e 's/\n/ /g' $Acc_list)
 	for SRR in $SRR_list; do
@@ -77,7 +83,7 @@ for flag in $flag_list; do
 	wait
 
 	## Create TPM table.
-	echo -e "\nSTEP 4: CREATE A GLOBAL TABLE"
+	echo -e "\n\t-STEP 4: CREATE A GLOBAL TABLE"
 	mkdir -p ./04-Table/Outputs
 	Rscript $AS/Create_TPM_table.R $O $O/03-Quant $I/POTENTIAL_LNCRNAS_pred.gtf $Acc_list >> ./04-Table/Outputs/stdout_TPMs_table.log 2>&1
 
