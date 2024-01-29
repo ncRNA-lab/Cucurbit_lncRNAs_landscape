@@ -40,7 +40,7 @@ mkdir -p $WD3_spe
 mkdir -p $WD3_spe/ALL
 
 
-####### PIPELINE
+####### PIPELINE: STEP 8
 
 ### QUANTIFICATION
 echo -e "\nQUANTIFICATION..."

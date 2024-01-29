@@ -38,6 +38,7 @@ mkdir -p $WD1_spe/03-Strand_detection/03-Pseudomapping
 mkdir -p $WD1_spe/03-Strand_detection/Filter_table
 mkdir -p $WD1_spe/04-Selected_data
 
+
 ####### PIPELINE: STEP 3
 
 ### EXTRACT THE REFERENCE TRANSCRIPTOME

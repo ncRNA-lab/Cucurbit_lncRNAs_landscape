@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-ALL: TISSUE SPECIFICITY STUDY: APPROACH 1 - STEP 2
+ALL: TISSUE SPECIFICITY STUDY: STEP 2
 
 Calculation of metrics for assessing tissue specificity of transcripts (Genes and 
 LncRNAs). We get TAU metric (General scoring metrics) and TSI metrics (Individualized 

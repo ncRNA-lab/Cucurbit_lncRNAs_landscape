@@ -36,7 +36,7 @@ mkdir -p $WD2_spe
 mkdir -p $WD2_spe/Dist
 
 
-####### PIPELINE
+####### PIPELINE: STEP 12.1
 
 ### DENSITY DISTRIBUTION
 echo -e "\nDENSITY DISTRIBUTION..."

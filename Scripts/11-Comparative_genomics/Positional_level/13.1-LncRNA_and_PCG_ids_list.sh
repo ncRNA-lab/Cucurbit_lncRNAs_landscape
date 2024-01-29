@@ -32,7 +32,10 @@ mkdir -p $WD2
 mkdir -p $WD2/Positional_level
 
 
-####### PIPELINE
+####### PIPELINE: STEP 13.1
+
+### ANALYSIS OF CONSERVATION AT POSITIONAL LEVEL
+echo -e "\nANALYSIS OF CONSERVATION AT POSITIONAL LEVEL..."
 
 for flag in $flag_list; do
 

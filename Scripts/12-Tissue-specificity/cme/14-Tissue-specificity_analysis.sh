@@ -37,7 +37,11 @@ mkdir -p $WD3_spe
 mkdir -p $WD3_spe/ALL
 
 
-####### PIPELINE
+####### PIPELINE: STEP 14
+
+### TISSUE-SPECIFICITY ANALYSIS
+echo -e "\nTISSUE-SPECIFICITY ANALYSIS..."
+
 for flag in $flag_list; do
 
 	echo -e "\n\nFLAG: "$flag

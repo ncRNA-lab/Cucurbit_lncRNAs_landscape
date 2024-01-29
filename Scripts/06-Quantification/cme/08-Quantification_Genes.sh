@@ -39,7 +39,7 @@ mkdir -p $WD3_spe
 mkdir -p $WD3_spe/Genes
 
 
-####### PIPELINE
+####### PIPELINE: STEP 8
 
 ### QUANTIFICATION
 echo -e "\nQUANTIFICATION..."

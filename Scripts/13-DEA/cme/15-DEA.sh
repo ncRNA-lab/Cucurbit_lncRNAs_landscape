@@ -37,7 +37,11 @@ mkdir -p $WD3
 mkdir -p $WD3_spe
 
 
-####### PIPELINE
+####### PIPELINE: STEP 15
+
+### DIFFERENTIAL EXPRESSION ANALYSIS
+echo -e "\nDIFFERENTIAL EXPRESSION ANALYSIS..."
+
 for flag in $flag_list; do
 
 	echo -e "\n\nFLAG: "$flag

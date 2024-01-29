@@ -27,7 +27,7 @@ mkdir -p $WD2
 mkdir -p $WD2_spe
 
 
-####### PIPELINE
+####### PIPELINE: STEP 9
 
 ### GET RANDOM INTERGENIC REGIONS
 echo -e "\nGET RANDOM INTERGENIC REGIONS..."

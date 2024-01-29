@@ -29,7 +29,10 @@ mkdir -p $WD1
 mkdir -p $WD1/Motif_level
 
 
-####### PIPELINE
+####### PIPELINE: STEP 13.4
+
+### ANALYSIS OF CONSERVATION AT MOTIF LEVEL
+echo -e "\nANALYSIS OF CONSERVATION AT MOTIF LEVEL..."
 
 for flag in $flag_list; do
 

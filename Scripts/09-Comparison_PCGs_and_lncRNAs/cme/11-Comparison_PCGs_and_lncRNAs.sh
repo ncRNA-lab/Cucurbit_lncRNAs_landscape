@@ -36,7 +36,7 @@ mkdir -p $WD5_spe
 mkdir -p $WD5_spe/Outputs
 
 
-####### PIPELINE
+####### PIPELINE: STEP 11
 
 ### COMPARISON: PCG, LNCRNA AND INTERGENIC REGIONS
 echo -e "\nCOMPARISON: PCG, LNCRNA AND INTERGENIC REGIONS..."

@@ -25,7 +25,8 @@ mkdir -p $WD1_spe/01-Repeat_calling
 mkdir -p $WD1_spe/01-Repeat_calling/02-RepeatMasker
 mkdir -p $WD1_spe/01-Repeat_calling/02-RepeatMasker/Outputs
 
-####### PIPELINE
+
+####### PIPELINE: STEP 10.2
 
 ### REPEAT CALLING: REPEATMASKER
 echo -e "\nREPEAT CALLING: REPEATMASKER..."

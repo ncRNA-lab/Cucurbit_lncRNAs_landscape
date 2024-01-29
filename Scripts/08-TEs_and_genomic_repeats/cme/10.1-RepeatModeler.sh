@@ -25,7 +25,8 @@ mkdir -p $WD1_spe/01-Repeat_calling
 mkdir -p $WD1_spe/01-Repeat_calling/01-RepeatModeler
 mkdir -p $WD1_spe/01-Repeat_calling/01-RepeatModeler/Outputs
 
-####### PIPELINE
+
+####### PIPELINE: STEP 10.1
 
 ### REPEAT CALLING: REPEATMODELER
 echo -e "\nREPEAT CALLING: REPEATMODELER..."

@@ -39,7 +39,7 @@ mkdir -p $WD3_spe
 mkdir -p $WD3_spe/Cov
 
 
-####### PIPELINE
+####### PIPELINE: STEP 12.2
 
 ### COVERAGE STATISTICS
 echo -e "\nCOVERAGE STATISTICS..."

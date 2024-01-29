@@ -44,7 +44,10 @@ mkdir -p $WD2
 mkdir -p $WD2/Sequence_level
 
 
-####### PIPELINE
+####### PIPELINE: STEP 13
+
+### ANALYSIS OF CONSERVATION AT SEQUENCE LEVEL
+echo -e "\nANALYSIS OF CONSERVATION AT SEQUENCE LEVEL..."
 
 for flag in $flag_list; do
 
