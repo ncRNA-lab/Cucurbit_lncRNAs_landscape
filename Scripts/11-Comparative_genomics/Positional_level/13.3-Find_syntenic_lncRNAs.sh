@@ -16,7 +16,7 @@ module load anaconda
 WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/11-Comparative_genomics/Additional_scripts"
 F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/11-Comparative_genomics/Positional_level/Functions.sh"
-class_list="intergenic antisense intronic sense ALL"
+class_list="intergenic antisense intronic sense"
 flag_list="nr"
 confidence_list="High Medium Low"
 
@@ -33,7 +33,7 @@ mkdir -p $WD1/Positional_level
 
 for flag in $flag_list; do
 
-	echo -e "\n\nFLAG: "$flag"\n"
+	echo -e "\n\nFLAG: "$flag
 	
 	## Variable.
 	O=$WD1/Positional_level/$flag

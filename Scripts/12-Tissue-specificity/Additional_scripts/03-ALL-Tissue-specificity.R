@@ -16,7 +16,18 @@ suppressMessages(library(ggExtra))
 suppressMessages(library(data.table))
 suppressMessages(options(bitmapType='cairo'))
 
-## 1. PATHS
+## 1. VARIABLES
+
+## Create a vector with the arguments.
+args = commandArgs(trailingOnly=TRUE)
+if (length(args) < 6) {
+  stop("At least 6 arguments must be supplied.", call.=FALSE)
+} else {
+  path_quant = args[1]
+  path_tissue_specificity = args[2]
+  flag = args[3]
+  specie = args[4]
+}
 
 # Own computer
 path_tissue_specificity = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/09-Tissue-specificity"
@@ -147,41 +158,3 @@ for (spe in species) {
 rm(list = c("files", "spe", "SRA.Study", "SRA.Studies"))
 
 write.table(TAB_mean_TAU_mod, paste0(path_tissue_specificity, "/approach_1/ALL/", flag, "/STEP3/mean-TAU.tsv"), sep = "\t", quote = F, row.names = F, col.names = T)
-
-gg = ggplot(TAB_mean_TAU_mod, aes(x = Confidence, y = TAU, fill = Confidence)) + 
-  geom_violin(color = "grey", position = position_dodge(1)) +
-  stat_summary(fun = mean, geom = "point", size = 2, color = "black") +
-  geom_boxplot(width = 0.1, color = "black", alpha = 0.2, outlier.shape = NA, position = position_dodge(1)) +
-  scale_y_continuous(limits = c(-0.001,1.001), breaks = seq(0,1,0.1), expand = c(0.01, 0.01)) + 
-  facet_grid(Class_code ~ .) +
-  theme_classic() + 
-  scale_fill_manual(values = c("#a2ded9", "#ce4fd3", "#eb92ef", "#edd0ee")) +
-  scale_x_discrete(labels=c("Protein-coding" = "Protein-coding", 
-                            "Low-confidence lncRNA" = "Low-confidence\nlncRNA", 
-                            "Medium-confidence lncRNA" = "Medium-confidence\nlncRNA",
-                            "High-confidence lncRNA" = "High-confidence\nlncRNA")) +
-  theme(panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(), 
-        panel.background = element_blank(),
-        panel.border = element_blank(),
-        legend.position="none",
-        axis.title.x = element_text(size = 20),
-        axis.title.y = element_text(size = 20),
-        axis.text.x = element_text(size = 16, angle = 45, vjust = 0.5, hjust = 0.5),
-        axis.text.y = element_text(size = 16),
-        strip.text = element_text(size = 16)) +
-  xlab("") + ylab("tau")
-
-ggsave(paste0(path_tissue_specificity, "/approach_1/ALL/", flag, "/STEP3/mean-TAU-Violin_by_class_code.png"), height = 20, width = 10, dpi = 600)
-ggsave(paste0(path_tissue_specificity, "/approach_1/ALL/", flag, "/STEP3/mean-TAU-Violin_by_class_code.pdf"), height = 20, width = 10, dpi = 600)
-
-gg = gg + 
-  geom_jitter(aes(size = Confidence, alpha = Confidence), width = 0.4, color = "#8c8f8f") +
-  scale_size_manual(values = c(0.01,0.1,0.1,0.1)) +
-  scale_alpha_manual(values = c(0.01,0.2,0.2,0.2))
-
-ggsave(paste0(path_tissue_specificity, "/approach_1/ALL/", flag, "/STEP3/mean-TAU-Violin_by_class_code-jitter.png"), height = 20, width = 10, dpi = 600)
-ggsave(paste0(path_tissue_specificity, "/approach_1/ALL/", flag, "/STEP3/mean-TAU-Violin_by_class_code-jitter.pdf"), height = 20, width = 10, dpi = 600)
-
-rm(list = c("gg", "TAB_mean_TAU_mod"))
-

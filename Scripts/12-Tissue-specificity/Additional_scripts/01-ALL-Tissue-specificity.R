@@ -43,10 +43,10 @@ if (length(args) < 6) {
   specie = args[6]
 }
 
-# Garnatxa
-# path_pred = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
-# path_quant = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification"
-# path_tissue_specificity = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/12-Tissue-specificity"
+
+# path_pred = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/cme"
+# path_quant = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/06-quantification/cme"
+# path_tissue_specificity = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/12-Tissue-specificity"
 # path_AI = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 # flag = "nr"
 # specie = "cme"
@@ -55,7 +55,7 @@ if (length(args) < 6) {
 ## 2. CREATE TABLES
 
 # Transcripts info.
-gtf_file = paste0(path_pred, "/STEP-FINAL/Files/Joined/ALL/", flag, "/ALL.gtf")
+gtf_file = paste0(path_pred, "/STEP-FINAL/Files/ALL/", flag, "/ALL.gtf")
 txdb = makeTxDbFromGFF(gtf_file, format = "gtf")
 k = keys(txdb, keytype = "GENEID")
 df = AnnotationDbi::select(txdb, keys = k, keytype = "GENEID", columns = columns(txdb))
@@ -63,13 +63,13 @@ tx2gene = df[, c("TXNAME", "GENEID")]
 tx2gene = tx2gene[!duplicated(tx2gene),]
 
 # Metadata info.
-metadata_file = paste0(path_AI, "/Metadata_modified/", specie, "-SraRunTablestandard.csv")
+metadata_file = paste0(path_AI, "/TS_metadata/", specie, "-SraRunTablestandard.csv")
 metadata = read.csv(metadata_file, header = T)
 metadata = metadata[, c("Run", "Tissue.Standard", "SRA.Study")]
 colnames(metadata) = c("Sample", "Tissue", "SRA.Study")
 
 # Create txi.salmon object.
-quant_dir = paste0(path_quant, "/", specie, "/ALL/", flag, "/03-Quant/")
+quant_dir = paste0(path_quant, "/ALL/", flag, "/03-Quant/")
 files = file.path(quant_dir, metadata$Sample, "quant.sf")
 names(files) = paste0(metadata$Sample)
 txi.salmon = tximport(files, type = "salmon", tx2gene = tx2gene, txIn = TRUE, txOut = TRUE, countsFromAbundance = "no")
@@ -153,21 +153,19 @@ if (dim(tab_red_filt)[1] > 0) {
 }
 tab_experiments = tab_experiments[,c("Specie", "SRA.Study", "Number_tissues_by_SRA.Study", "Number_samples", "KEPT")]
 
-# Join the tabs to the TABS.
-TAB = rbind(TAB, tab)
-TAB_red = rbind(TAB_red, tab_red)
-if (dim(tab_red_filt)[1] > 0) {
-  TAB_red_filt = rbind(TAB_red_filt, tab_red_filt)
-}
-TAB_experiments = rbind(TAB_experiments, tab_experiments)
+# Save tables.
+write.table(tab, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/TAB_TPMs.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+write.table(tab_red, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/TAB_TPMs_summary.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+write.table(tab_red_filt, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/TAB_TPMs_summary_filtered.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+write.table(tab_experiments, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/TAB_experiments.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
 
-# Create a new folder called as specie's name.
-if (!dir.exists(paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/", specie))){
-  dir.create(paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/", specie))
-}
-
-# Create a expression table (transcripts x tissues) by SRA Study filtered (>= 3 Tissues)
+# Create a expression table (transcripts x tissues) by SRA Study filtered (>= 3 Tissues).
 cat(paste0("\n\nCreating table by SRA.study filtered\n"))
+
+if (!dir.exists(paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/Studies"))){
+  dir.create(paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/Studies"))
+}
+
 SRA.studies = unique(tab_red_filt$SRA.Study)
 
 if (length(SRA.studies) > 0) {
@@ -182,27 +180,12 @@ if (length(SRA.studies) > 0) {
     tab_SRA_mean_wide = as.data.frame(tab_SRA_mean_wide)
     tab_SRA_median_wide = as.data.frame(tab_SRA_median_wide)
     
-    write.table(tab_SRA_mean_wide, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/", specie, "/", SRA.study, "_mean.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
-    write.table(tab_SRA_median_wide, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/", specie, "/", SRA.study, "_median.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+    write.table(tab_SRA_mean_wide, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/Studies/", SRA.study, "_mean.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
+    write.table(tab_SRA_median_wide, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/Studies/", SRA.study, "_median.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
   }
   
   rm(list = c("tab_SRA_mean_long", "tab_SRA_median_long", "tab_SRA_mean_wide", "tab_SRA_median_wide"))
 }
 
 rm(list = c("metadata", "TPMs", "tab_experiments_temp", "tab", "tab_red", "tab_red_filt", "tab_experiments", "info"))
-
-
-
-
-# Create TAB_experiments_summary table.
-cat(paste0("\n\nCreating TAB_experiments_summary table\n"))
-TAB_experiments_summary = TAB_experiments %>% group_by(Specie, KEPT, .drop = F) %>% summarise(Number_experiments = n_distinct(SRA.Study))
-TAB_experiments_summary = as.data.frame(TAB_experiments_summary)
-
-# Save tables.
-write.table(TAB, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/TAB_TPMs.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
-write.table(TAB_red, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/TAB_TPMs_summary.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
-write.table(TAB_red_filt, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/TAB_TPMs_summary_filtered.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
-write.table(TAB_experiments, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/TAB_experiments.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
-write.table(TAB_experiments_summary, paste0(path_tissue_specificity, "/ALL/", flag, "/STEP1/TAB_experiemnts_summary.tsv"), sep = "\t", col.names = T, row.names = F, quote = F)
 

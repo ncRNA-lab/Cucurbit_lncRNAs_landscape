@@ -19,8 +19,8 @@ options(stringsAsFactors = F)
 
 ## Create a vector with the arguments.
 args = commandArgs(trailingOnly=TRUE)
-if (length(args) < 4) {
-  stop("At least 4 arguments must be supplied.", call.=FALSE)
+if (length(args) < 5) {
+  stop("At least 5 arguments must be supplied.", call.=FALSE)
 } else {
   WD1 = args[1]
   WD2 = args[2]
@@ -30,8 +30,7 @@ if (length(args) < 4) {
 }
 
 # In OrthoFinder, this error doesn't appear because it always generates the Orthogroups.txt
-# table and then the script get_families_from_OrthoFinder.py doesn't fail. However, if there are 
-# few hits we can get some error with upsetR plots. So we use tryCatch to capture the error.
+# table and then the script get_families_from_OrthoFinder.py doesn't fail.
 
 
 

@@ -22,8 +22,8 @@ suppressMessages(library("tibble"))
 
 ## Create a vector with the arguments.
 args = commandArgs(trailingOnly=TRUE)
-if (length(args) < 4) {
-  stop("At least 4 arguments must be supplied.", call.=FALSE)
+if (length(args) < 5) {
+  stop("At least 5 arguments must be supplied.", call.=FALSE)
 } else {
   spes = args[1]
   spel = args[2]

@@ -11,25 +11,40 @@ rm(list = ls())
 suppressMessages(library("ggplot2"))
 suppressMessages(library("dplyr"))
 suppressMessages(library("ggridges"))
-#suppressMessages(library("pRoloc"))
+suppressMessages(library("pRoloc"))
 
 options(bitmapType='cairo')
 options(stringsAsFactors = F)
 
 ## 1. VARIABLES
 
-flag = "nr"
-WD_in_1 = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/", flag, "/Positional_conserved/05-Summary")
-WD_in_2 = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/07-comparison_lncRNAs_vs_coding_genes/ALL")
-WD_in_3 = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/", flag, "/05-Figures")
-WD_out = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/", flag, "/Positional_conserved/06-Figures_and_tables")
-classes = c("ALL", "intergenic", "antisense", "intronic", "sense")
-confidences = c("Low", "Medium", "High")
-strictnesses = c("ORIGINAL")
-nonmatches = c("no")
-widths = c("6-15", "6-50")
-modes = c("oops")
-n_sim = 50
+## Create a vector with the arguments.
+args = commandArgs(trailingOnly=TRUE)
+if (length(args) < 10) {
+  stop("At least 10 arguments must be supplied.", call.=FALSE)
+} else {
+  WD_in_1 = args[1]
+  WD_in_2 = args[2]
+  WD_out = args[3]
+  classes = unlist(strsplit(args[4], " "))
+  confidences = unlist(strsplit(args[5], " "))
+  strictnesses = unlist(strsplit(args[6], " "))
+  nonmatches = unlist(strsplit(args[7], " "))
+  widths = unlist(strsplit(args[8], " "))
+  modes = unlist(strsplit(args[9], " "))
+  n_sim = as.numeric(args[10])
+}
+
+# WD_in_1 = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/nr/Positional_conserved/05-Summary")
+# WD_in_2 = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/nr/05-Figures_and_tables")
+# WD_out = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/nr/06-Figures_and_tables")
+# classes = c("intergenic", "antisense", "intronic", "sense")
+# confidences = c("Low", "Medium", "High")
+# strictnesses = c("ORIGINAL")
+# nonmatches = c("no")
+# widths = c("6-15", "6-50")
+# modes = c("oops")
+# n_sim = 50
 
 
 
@@ -88,7 +103,7 @@ for (st in strictnesses) {
     cat(paste0("\nNonmatch: ", no))
     
     ## Positional level conservation table.
-    Poslev = read.table(paste0(WD_in_3, "/TABLE_LNCRNAS_PERCENTAGE_ALL.tsv"), sep = "\t", header = T, quote = "\"")
+    Poslev = read.table(paste0(WD_in_2, "/TABLE_LNCRNAS_PERCENTAGE_ALL.tsv"), sep = "\t", header = T, quote = "\"")
     Poslev = Poslev[Poslev$Strictness == st & Poslev$NonMatch == no,]
     
     ## Create a global table
@@ -348,7 +363,7 @@ for (st in strictnesses) {
     cat(paste0("\nNonmatch: ", no))
     
     ## Positional level conservation table.
-    Poslev = read.table(paste0(WD_in_3, "/TABLE_LNCRNAS_PERCENTAGE_ALL.tsv"), sep = "\t", header = T, quote = "\"")
+    Poslev = read.table(paste0(WD_in_2, "/TABLE_LNCRNAS_PERCENTAGE_ALL.tsv"), sep = "\t", header = T, quote = "\"")
     Poslev = Poslev[Poslev$Strictness == st & Poslev$NonMatch == no,]
     
     ## Create a global table

@@ -48,7 +48,7 @@ mkdir -p $WD2/Sequence_level
 
 for flag in $flag_list; do
 
-	echo -e "\n\nFLAG: "$flag"\n"
+	echo -e "\n\nFLAG: "$flag
 	
 	## Variable.
 	O=$WD2/Sequence_level/$flag

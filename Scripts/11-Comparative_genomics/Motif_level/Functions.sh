@@ -5,8 +5,8 @@
 task_Select(){
 	echo -e "\t\t"$1"..."
 	
-	DB=$4/05-predict_lncRNAs/$1/STEP-FINAL/Database/Database_LncRNAs_NR.tsv
-	FASTA=$4/05-predict_lncRNAs/$1/STEP-FINAL/Files/LncRNAs/nr/POTENTIAL_LNCRNAS_pred.fasta
+	DB=$4/$1/STEP-FINAL/Database/Database_LncRNAs_${5^^}.tsv
+	FASTA=$4/$1/STEP-FINAL/Files/LncRNAs/$5/POTENTIAL_LNCRNAS_pred.fasta
 	DIR=./$2/$3
 	
 	if [[ $3 = "intergenic" ]]
@@ -56,21 +56,21 @@ task_Prepare_motif_level_analysis(){
 	
 	# First, clean the directory.
 	cd $6/02-Preparation/$1/$2/$3/
-	if [ -d "$6/02-Preparation/$1/$2/$3/$4" ]; then
+	if [ -d "$4" ]; then
 		rm -r $4
 	fi
 	mkdir $4
-	mkdir $4/outputs
+	mkdir $4/Outputs
 	cd $6/02-Preparation
 	
 	# Second, prepare directory to execute motif level analysis.
-	>$1/$2/$3/$4/outputs/stdout.log
+	>$1/$2/$3/$4/Outputs/stdout.log
 	Prepare_motif_level_analysis.py \
 		--input-table $5/$3/$4/gen_$1\_$2.tsv \
 		--input-fasta $6/01-LncRNAs/$3/$4/LncRNAs.fasta \
 		--path-out $6/02-Preparation/$1/$2/$3/$4 \
 		--n-iter $7 \
-		--n-proc $8 >> $1/$2/$3/$4/outputs/stdout.log 2>&1
+		--n-proc $8 >> $1/$2/$3/$4/Outputs/stdout.log 2>&1
 }
 
 task_MEME_1(){
@@ -89,24 +89,6 @@ task_MEME_2(){
 		echo -e "$name" >> $5
 		meme $1/$fam -oc $2/$name -mod $3 -maxw $max -minw $min -evt 0.05 -dna -nostatus
 	done
-}
-
-task_lncLOOM_1(){
-	name=$(echo $1 | cut -f 1 -d '.')
-	min=$(echo $5 | cut -f 1 -d '-')
-	max=$(echo $5 | cut -f 2 -d '-')
-	LncLOOM --fasta $2/$1 --startw $max --stopw $min --iterations 100 --outdir $3 --pname $name --multiprocess $4 >> $6 2>&1
-}
-
-task_lncLOOM_2(){
-	families=$(ls $1 | grep ".fasta")
-	for fam in $families; do
-		name=$(echo $fam | cut -f 1 -d '.')
-		min=$(echo $4 | cut -f 1 -d '-')
-		max=$(echo $4 | cut -f 2 -d '-')
-		echo -e "\n\n\n$name\n\n" >> $5
-		LncLOOM --fasta $1/$fam --startw $max --stopw $min --iterations 100 --outdir $2 --pname $name --multiprocess $3 >> $5 2>&1
-	done	
 }
 
 task_GOMO_1(){

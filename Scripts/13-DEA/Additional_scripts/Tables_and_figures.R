@@ -47,23 +47,19 @@ options(bitmapType='cairo')
 
 ## Create a vector with the arguments.
 args = commandArgs(trailingOnly=TRUE)
-if (length(args) < 7) {
+if (length(args) < 5) {
   stop("At least 5 arguments must be supplied.", call.=FALSE)
 } else {
   path_DEA = args[1]
   path_db_lnc = args[2]
   path_db_PCG = args[3]
-  path_PosCon = args[4]
-  path_TS = args[5]
-  alpha_value = as.numeric(args[6])
-  spe = args[7]
+  alpha_value = as.numeric(args[4])
+  spe = args[5]
 }
 
 # path_DEA = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/16-DEA/cme"
 # path_db_lnc = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/cme/STEP-FINAL/Database/Database_LncRNAs_NR.tsv"
 # path_db_PCG = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/cme/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv"
-# path_PosCon = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/05-Figures/TABLE_LNCRNAS_PERCENTAGE_ALL.tsv"
-# path_TS = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/09-Tissue-specificity/approach_1/ALL/nr/STEP3/mean-TAU.tsv"
 # alpha_value = 0.05
 # spe = "cme"
 
@@ -84,23 +80,20 @@ if (length(args) < 7) {
 
 cat(paste0("Figures..."))
 
-if (!dir.exists(paste0(path_DEA, "/05-Tables_and_Figures"))){
-  dir.create(paste0(path_DEA, "/05-Tables_and_Figures"))
-}
 if (!dir.exists(paste0(path_DEA, "/05-Tables_and_Figures/ALL"))){
   dir.create(paste0(path_DEA, "/05-Tables_and_Figures/ALL"))
 }
 if (!dir.exists(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Database"))){
   dir.create(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Database"))
 }
+if (!dir.exists(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Binary_tables"))){
+  dir.create(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Binary_tables"))
+}
 if (!dir.exists(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Volcano"))){
   dir.create(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Volcano"))
 }
 if (!dir.exists(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Percentage_DE"))){
   dir.create(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Percentage_DE"))
-}
-if (!dir.exists(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Conservation_level"))){
-  dir.create(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Conservation_level"))
 }
 if (!dir.exists(paste0(path_DEA, "/05-Tables_and_Figures/ALL/VennDiagram"))){
   dir.create(paste0(path_DEA, "/05-Tables_and_Figures/ALL/VennDiagram"))
@@ -127,7 +120,7 @@ cat(paste0("\n\n0-GLOBAL DATABASE..."))
 
 # Load lncRNAs database.
 db_lnc = read.table(path_db_lnc, sep = "\t", header = T, quote = "\"")
-db_lnc = db_lnc[, c("ID_transcript", "Class_code", "Significance_level")]
+db_lnc = db_lnc[, c("ID_transcript", "Class_code", "Confidence")]
 
 db_lnc[db_lnc == "u"] = "lincRNAs"
 db_lnc[db_lnc == "x"] = "NAT-lncRNAs"
@@ -142,8 +135,8 @@ db_lnc[db_lnc == "Low"] = "LC-lncRNAs"
 # Load PCGs database.
 db_PCG = read.table(path_db_PCG, sep = "\t", header = T, quote = "\"")
 db_PCG$"Class_code" = "PC genes"
-db_PCG$"Significance_level" = "PC genes"
-db_PCG = db_PCG[, c("ID_transcript", "Class_code", "Significance_level")]
+db_PCG$"Confidence" = "PC genes"
+db_PCG = db_PCG[, c("ID_transcript", "Class_code", "Confidence")]
 
 # Create global database.
 db = rbind(db_lnc, db_PCG)
@@ -237,7 +230,7 @@ write.table(Binary_LFC_tab, paste0(path_DEA, "/05-Tables_and_Figures/ALL/Binary_
 # SUMMARY TABLE 1. Collapse the Experiment-Contrast columns according to the class 
 # of experiment (Development, Abiotic stress and biotic stress).
 
-Binary_tab_SUMMARY_1 = Binary_tab[, c("ID_transcript", "Class_code", "Significance_level")]
+Binary_tab_SUMMARY_1 = Binary_tab[, c("ID_transcript", "Class_code", "Confidence")]
 for (class in c("Development", "Abiotic stress", "Biotic stress")) {
   Experiments = Summary_tab[Summary_tab$Class == class, "ID"]
   n_exp = length(Experiments)
@@ -262,7 +255,7 @@ write.table(Binary_tab_SUMMARY_1, paste0(path_DEA, "/05-Tables_and_Figures/ALL/B
 # SUMMARY TABLE 2. Collapse the experiment-contrast columns according to the class 
 # of experiment (Development and Stress).
 
-Binary_tab_SUMMARY_2 = Binary_tab[, c("ID_transcript", "Class_code", "Significance_level")]
+Binary_tab_SUMMARY_2 = Binary_tab[, c("ID_transcript", "Class_code", "Confidence")]
 for (class in c("Development", "Stress")) {
   
   if (class == "Development") {
@@ -373,7 +366,7 @@ for (experiment in Experiments) {
     # Add parameters.
     tab_DEA$"Size" = ifelse(tab_DEA$padj > alpha_value, 0.8, ifelse(tab_DEA$Class_code == "PC genes", 0.8, 1.5))
     tab_DEA$"Legend.1" = ifelse(tab_DEA$padj > alpha_value, "Non-significant", tab_DEA$Class_code)
-    tab_DEA$"Legend.2" = ifelse(tab_DEA$padj > alpha_value, "Non-significant", tab_DEA$Significance_level)
+    tab_DEA$"Legend.2" = ifelse(tab_DEA$padj > alpha_value, "Non-significant", tab_DEA$Confidence)
     
     tab_DEA$Legend.1 = factor(tab_DEA$Legend.1, levels = c("Non-significant", "PC genes", "lincRNAs", "NAT-lncRNAs", "int-lncRNAs", "SOT-lncRNAs"))
     tab_DEA$Legend.2 = factor(tab_DEA$Legend.2, levels = c("Non-significant", "PC genes", "LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
@@ -652,14 +645,14 @@ for (experiment in Experiments) {
 
     # Factors
     tab_ALL$Class_code = factor(tab_ALL$Class_code, levels = c("PC genes", "lincRNAs", "NAT-lncRNAs", "int-lncRNAs", "SOT-lncRNAs"))
-    tab_ALL$Significance_level = factor(tab_ALL$Significance_level, levels = c("PC genes", "LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
+    tab_ALL$Confidence = factor(tab_ALL$Confidence, levels = c("PC genes", "LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
     tab_ALL$Type = factor(tab_ALL$Type, levels = c("Non-significant", "Significant"))
 
     # Collapse 1.
     tab_ALL_collap_1 = suppressMessages(tab_ALL %>%
-                                          group_by(Class_code, Significance_level, Type, .drop = F) %>%
+                                          group_by(Class_code, Confidence, Type, .drop = F) %>%
                                           summarise(Number = n_distinct(ID_transcript)) %>%
-                                          group_by(Class_code, Significance_level, .drop = F) %>%
+                                          group_by(Class_code, Confidence, .drop = F) %>%
                                           mutate(Total = sum(Number),
                                                  Percentage = round((Number*100)/sum(Number), 2)))
     tab_ALL_collap_1 = tab_ALL_collap_1[tab_ALL_collap_1$Total != 0,]
@@ -669,17 +662,17 @@ for (experiment in Experiments) {
     
     TAB_1 = rbind(TAB_1, tab_ALL_collap_1_S)
     
-    temp = tab_ALL_collap_1_S[tab_ALL_collap_1_S$Significance_level == "PC genes",]
+    temp = tab_ALL_collap_1_S[tab_ALL_collap_1_S$Confidence == "PC genes",]
     temp_LC = temp
-    temp_LC$Significance_level = "LC-lncRNAs"
+    temp_LC$Confidence = "LC-lncRNAs"
     temp_MC = temp
-    temp_MC$Significance_level = "MC-lncRNAs"
+    temp_MC$Confidence = "MC-lncRNAs"
     temp_HC = temp
-    temp_HC$Significance_level = "HC-lncRNAs"
+    temp_HC$Confidence = "HC-lncRNAs"
 
-    tab_ALL_collap_1_S_mod = tab_ALL_collap_1_S[tab_ALL_collap_1_S$Significance_level != "PC genes", ]
+    tab_ALL_collap_1_S_mod = tab_ALL_collap_1_S[tab_ALL_collap_1_S$Confidence != "PC genes", ]
     tab_ALL_collap_1_S_mod = rbind(tab_ALL_collap_1_S_mod, temp_LC, temp_MC, temp_HC)
-    tab_ALL_collap_1_S_mod$Significance_level = factor(tab_ALL_collap_1_S_mod$Significance_level, levels = c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
+    tab_ALL_collap_1_S_mod$Confidence = factor(tab_ALL_collap_1_S_mod$Confidence, levels = c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
     
     TAB_1_mod = rbind(TAB_1_mod, tab_ALL_collap_1_S_mod)
     
@@ -689,7 +682,7 @@ for (experiment in Experiments) {
       geom_point( size=5, alpha=0.7, shape=21, stroke=2) +
       scale_fill_manual(values = c("#7cc1cf", "#e5dd6c", "#e1ad60", "#da6d6d", "#89ab66", "#5d65b4")) +
       scale_y_continuous(limits = c(0, max(tab_ALL_collap_1_S_mod$Percentage) + max(tab_ALL_collap_1_S_mod$Percentage)*0.1), breaks = seq(0, max(tab_ALL_collap_1_S_mod$Percentage), 10), expand = c(0, 1)) +
-      facet_wrap(Significance_level~., nrow = 1) +
+      facet_wrap(Confidence~., nrow = 1) +
       xlab("") +
       ylab("Percentage") +
       geom_text(aes(label = round(Percentage, 2)), vjust = -1.3) +
@@ -709,7 +702,7 @@ for (experiment in Experiments) {
       geom_point( size=5, alpha=0.7, shape=21, stroke=2) +
       scale_fill_manual(values = c("#7cc1cf", "#e5dd6c", "#e1ad60", "#da6d6d", "#89ab66", "#5d65b4")) +
       scale_y_continuous(limits = c(0, max(tab_ALL_collap_1_S_mod$Number) + max(tab_ALL_collap_1_S_mod$Number)*0.1), breaks = seq(0, max(tab_ALL_collap_1_S_mod$Number), 500), expand = c(0, 1)) +
-      facet_wrap(Significance_level~., nrow = 1) +
+      facet_wrap(Confidence~., nrow = 1) +
       xlab("") +
       ylab("Number") +
       geom_text(aes(label = Number), vjust = -1.3) +
@@ -729,9 +722,9 @@ for (experiment in Experiments) {
     
     # Collapse 2.
     tab_ALL_collap_2 = suppressMessages(tab_ALL %>%
-                                          group_by(Significance_level, Type, .drop = F) %>%
+                                          group_by(Confidence, Type, .drop = F) %>%
                                           summarise(Number = n_distinct(ID_transcript)) %>%
-                                          group_by(Significance_level, .drop = F) %>%
+                                          group_by(Confidence, .drop = F) %>%
                                           mutate(Total = sum(Number),
                                                  Percentage = round((Number*100)/sum(Number), 2)))
     tab_ALL_collap_2 = tab_ALL_collap_2[tab_ALL_collap_2$Total != 0,]
@@ -741,17 +734,17 @@ for (experiment in Experiments) {
     
     TAB_2 = rbind(TAB_2, tab_ALL_collap_2_S)
     
-    temp = tab_ALL_collap_2_S[tab_ALL_collap_2_S$Significance_level == "PC genes",]
+    temp = tab_ALL_collap_2_S[tab_ALL_collap_2_S$Confidence == "PC genes",]
     temp_LC = temp
-    temp_LC$Significance_level = "LC-lncRNAs"
+    temp_LC$Confidence = "LC-lncRNAs"
     temp_MC = temp
-    temp_MC$Significance_level = "MC-lncRNAs"
+    temp_MC$Confidence = "MC-lncRNAs"
     temp_HC = temp
-    temp_HC$Significance_level = "HC-lncRNAs"
+    temp_HC$Confidence = "HC-lncRNAs"
     
-    tab_ALL_collap_2_S_mod = tab_ALL_collap_2_S[tab_ALL_collap_2_S$Significance_level != "PC genes", ]
+    tab_ALL_collap_2_S_mod = tab_ALL_collap_2_S[tab_ALL_collap_2_S$Confidence != "PC genes", ]
     tab_ALL_collap_2_S_mod = rbind(tab_ALL_collap_2_S_mod, temp_LC, temp_MC, temp_HC)
-    tab_ALL_collap_2_S_mod$Significance_level = factor(tab_ALL_collap_2_S_mod$Significance_level, levels = c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
+    tab_ALL_collap_2_S_mod$Confidence = factor(tab_ALL_collap_2_S_mod$Confidence, levels = c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
     
     TAB_2_mod = rbind(TAB_2_mod, tab_ALL_collap_2_S_mod)
     
@@ -777,14 +770,14 @@ write.table(TAB_2, paste0(path_DEA, "/05-Tables_and_Figures/ALL/Percentage_DE/TA
 write.table(TAB_2_mod, paste0(path_DEA, "/05-Tables_and_Figures/ALL/Percentage_DE/TAB-Violin-Percentage_DE_mod-2.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
 
 TAB_1_mod$Class_code = factor(TAB_1_mod$Class_code, levels = c("PC genes", "lincRNAs", "NAT-lncRNAs", "int-lncRNAs", "SOT-lncRNAs"))
-TAB_1_mod$Significance_level = factor(TAB_1_mod$Significance_level, levels = c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
+TAB_1_mod$Confidence = factor(TAB_1_mod$Confidence, levels = c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
 TAB_1_mod$Class = factor(TAB_1_mod$Class, levels = c("Development", "Abiotic stress", "Biotic stress"))
 
 gg = ggplot(TAB_1_mod, aes(x = Class_code, y = Percentage, fill = Class_code)) +
   geom_violin() +
   geom_jitter(size = 0.5) +
   scale_fill_manual(values = c("#7cc1cf", "#e5dd6c", "#e1ad60", "#da6d6d", "#89ab66")) +
-  facet_grid(Significance_level~Class) +
+  facet_grid(Confidence~Class) +
   xlab("") +
   ylab("Percentage") +
   theme_bw() +
@@ -809,176 +802,14 @@ rm(list = c("TAB_1", "TAB_1_mod", "TAB_2", "TAB_2_mod", "gg", "Summary_tab"))
 
 
 
-############################################
-## 4. CONSERVATION LEVEL
-############################################
-
-# Teninedo en cuenta los lncRNAs DE como total, calculamos el porcentaje de lncRNAs
-# DE que estan conservados posicionalmente.
-
-cat(paste0("\n\n4-CONSERVATION LEVEL..."))
-
-# Load binary table summary.
-Binary_tab_SUMMARY_1_filt = read.table(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Binary_tables/Binary_tab-SUMMARY_1_filt.tsv"), sep = "\t", header = T, quote = "\"")
-Binary_tab_SUMMARY_1_filt = Binary_tab_SUMMARY_1_filt[Binary_tab_SUMMARY_1_filt$Class_code != "PC genes",]
-
-# Load positional conservation table.
-tab_pos = read.table(path_PosCon, sep = "\t", header = T, quote = "\"")
-tab_pos = tab_pos[tab_pos$Specie == spe & tab_pos$Class != "ALL" & tab_pos$Strictness == "ORIGINAL" & tab_pos$NonMatch == "no", c("Member", "Type", "Conserved_level", "Number_species_by_family")]
-tab_pos$ID_transcript = sapply(strsplit(tab_pos$Member, "-"), `[`, 1)
-tab_pos = tab_pos[, c("ID_transcript", "Type", "Conserved_level", "Number_species_by_family")]
-tab_pos[tab_pos == "Low-conserved"] = "2 or 3 species"
-tab_pos[tab_pos == "Medium-conserved"] = "4-6 species"
-tab_pos[tab_pos == "High-conserved"] = "7-9 species"
-rownames(tab_pos) = NULL
-
-# Join tables.
-tab_joined = merge(Binary_tab_SUMMARY_1_filt, tab_pos, by = "ID_transcript", all.x = T, all.y = F)
-tab_joined = tab_joined[, c("ID_transcript", "Class_code", "Significance_level", "Type", "Conserved_level", "Number_species_by_family", "Development", "Abiotic.stress", "Biotic.stress")]
-tab_joined_long = melt(setDT(tab_joined), id.vars = c("ID_transcript", "Class_code", "Significance_level", "Type", "Conserved_level", "Number_species_by_family"), variable.name = "Class")
-tab_joined_long = tab_joined_long[tab_joined_long$value != 0,]
-
-# Factors.
-tab_joined_long$Class_code = factor(tab_joined_long$Class_code, levels = c("lincRNAs", "NAT-lncRNAs", "int-lncRNAs", "SOT-lncRNAs"))
-tab_joined_long$Significance_level = factor(tab_joined_long$Significance_level, levels = c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
-tab_joined_long$Class = factor(tab_joined_long$Class, levels = c("Development", "Abiotic.stress", "Biotic.stress"))
-tab_joined_long$Type = factor(tab_joined_long$Type, levels = c("Non-conserved", "Conserved"))
-tab_joined_long$Conserved_level = factor(tab_joined_long$Conserved_level, levels = c("Non-conserved", "2 or 3 species", "4-6 species", "7-9 species"))
-tab_joined_long$Number_species_by_family = factor(tab_joined_long$Number_species_by_family, levels = 0:9)
-
-write.table(tab_joined_long, paste0(path_DEA, "/05-Tables_and_Figures/ALL/Conservation_level/TAB-ConsLev.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
-
-rm(list = c("Binary_tab_SUMMARY_1_filt", "tab_pos", "tab_joined"))
-
-# Collapse 1 by type (Conserved, Non-conserved).
-tab_joined_collap_1 = suppressMessages(tab_joined_long %>%
-                                         group_by(Class_code, Significance_level, Class, Type, .drop = F) %>%
-                                         summarise(Number = n_distinct(ID_transcript)) %>%
-                                         group_by(Class_code, Significance_level, Class, .drop = F) %>%
-                                         mutate(Total = sum(Number),
-                                                Percentage = round((Number*100)/sum(Number),1)))
-
-tab_joined_collap_1$Class_code = factor(tab_joined_collap_1$Class_code, levels = c("lincRNAs", "NAT-lncRNAs", "int-lncRNAs", "SOT-lncRNAs"))
-tab_joined_collap_1$Significance_level = factor(tab_joined_collap_1$Significance_level, levels = c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
-tab_joined_collap_1$Class = factor(tab_joined_collap_1$Class, levels = c("Development", "Abiotic.stress", "Biotic.stress"))
-tab_joined_collap_1$Type = factor(tab_joined_collap_1$Type, levels = c("Non-conserved", "Conserved"))
-
-write.table(tab_joined_collap_1, paste0(path_DEA, "/05-Tables_and_Figures/ALL/Conservation_level/TAB-ConsLev-collap-1.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
-
-# Lollipop 1
-gg1 = ggplot(tab_joined_collap_1, aes(x = Class_code, y = Percentage, fill = Type, group = Type)) +
-  geom_point(aes(x = Class_code, y = Percentage, fill = Type, group = Type), size=5, alpha=0.7, shape=21, stroke=2, position = position_dodge(width = 0.9)) +
-  geom_linerange(aes(xmin = Class_code, xmax = Class_code, ymin = 0, ymax = Percentage), position = position_dodge(width = 0.9)) +
-  scale_fill_manual(values = c("#ED5959", "#2D8BE4")) +
-  scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, 20), expand = c(0.1, 1)) +
-  facet_grid(Significance_level~Class) +
-  xlab("") +
-  ylab("Percentage") +
-  geom_text(aes(label = Percentage), hjust = -0.5, angle = 90, position = position_dodge(width = 0.9)) +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) +
-  theme(legend.position = "top") +
-  theme(axis.text.x = element_text(vjust = 0.5, hjust=0.5, size = 14, angle = 50),
-        axis.text.y = element_text(size = 16),
-        axis.title.y = element_text(size = 18),
-        strip.text = element_text(size = 17, face = "bold"))
-
-ggsave(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Conservation_level/Lollipop_conservation_1.png"), height = 12, width = 12, dpi = 800)
-#ggsave(paste0(path_fig, "/05-Tables_and_Figures/ALL/Conservation_level/Lollipop_conservation_1.pdf"), height = 12, width = 12, dpi = 800)
-
-rm(list = c("tab_joined_collap_1", "gg1"))
-
-# Collapse 2 by Conserved_level (Non-conserved, 2 or 3 species, 4-6 species, 7-9 species).
-tab_joined_collap_2 = suppressMessages(tab_joined_long %>%
-                                         group_by(Class_code, Significance_level, Class, Conserved_level, .drop = F) %>%
-                                         summarise(Number = n_distinct(ID_transcript)) %>%
-                                         group_by(Class_code, Significance_level, Class, .drop = F) %>%
-                                         mutate(Total = sum(Number),
-                                                Percentage = round((Number*100)/sum(Number),1)))
-
-tab_joined_collap_2$Class_code = factor(tab_joined_collap_2$Class_code, levels = c("lincRNAs", "NAT-lncRNAs", "int-lncRNAs", "SOT-lncRNAs"))
-tab_joined_collap_2$Significance_level = factor(tab_joined_collap_2$Significance_level, levels = c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
-tab_joined_collap_2$Class = factor(tab_joined_collap_2$Class, levels = c("Development", "Abiotic.stress", "Biotic.stress"))
-tab_joined_collap_2$Conserved_level = factor(tab_joined_collap_2$Conserved_level, levels = c("Non-conserved", "2 or 3 species", "4-6 species", "7-9 species"))
-
-write.table(tab_joined_collap_2, paste0(path_DEA, "/05-Tables_and_Figures/ALL/Conservation_level/TAB-ConsLev-collap-2.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
-
-# Lollipop 2
-gg2 = ggplot(tab_joined_collap_2, aes(x = Class_code, y = Percentage, fill = Conserved_level, group = Conserved_level)) +
-  geom_point(aes(x = Class_code, y = Percentage, fill = Conserved_level, group = Conserved_level), size=5, alpha=0.7, shape=21, stroke=2, position = position_dodge(width = 0.9)) +
-  geom_linerange(aes(xmin = Class_code, xmax = Class_code, ymin = 0, ymax = Percentage), position = position_dodge(width = 0.9)) +
-  scale_fill_manual(values = c("#ED5959", "#9CC9F4", "#2D8BE4", "#0457A6")) +
-  scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, 20), expand = c(0.1, 1)) +
-  facet_grid(Significance_level~Class) +
-  xlab("") +
-  ylab("Percentage") +
-  geom_text(aes(label = Percentage), hjust = -0.5, angle = 90, position = position_dodge(width = 0.9)) +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) +
-  theme(legend.position = "top") +
-  theme(axis.text.x = element_text(vjust = 0.5, hjust=0.5, size = 14, angle = 50),
-        axis.text.y = element_text(size = 16),
-        axis.title.y = element_text(size = 18),
-        strip.text = element_text(size = 17, face = "bold"))
-
-ggsave(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Conservation_level/Lollipop_conservation_2.png"), height = 12, width = 12, dpi = 800)
-#ggsave(paste0(path_fig, "/05-Tables_and_Figures/ALL/Conservation_level/Lollipop_conservation_2.pdf"), height = 12, width = 12, dpi = 800)
-
-rm(list = c("tab_joined_collap_2", "gg2"))
-
-
-# Collapse 3 by Conserved_level (Non-conserved, 2 or 3 species, 4-6 species, 7-9 species) without taking into account 
-# the class_codes info.
-tab_joined_collap_3 = suppressMessages(tab_joined_long %>%
-                                         group_by(Significance_level, Class, Conserved_level, .drop = F) %>%
-                                         summarise(Number = n_distinct(ID_transcript)) %>%
-                                         group_by(Significance_level, Class, .drop = F) %>%
-                                         mutate(Total = sum(Number),
-                                                Percentage = round((Number*100)/sum(Number),1)))
-
-tab_joined_collap_3$Significance_level = factor(tab_joined_collap_3$Significance_level, levels = c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs"))
-tab_joined_collap_3$Class = factor(tab_joined_collap_3$Class, levels = c("Development", "Abiotic.stress", "Biotic.stress"))
-tab_joined_collap_3$Conserved_level = factor(tab_joined_collap_3$Conserved_level, levels = c("Non-conserved", "2 or 3 species", "4-6 species", "7-9 species"))
-
-write.table(tab_joined_collap_3, paste0(path_DEA, "/05-Tables_and_Figures/ALL/Conservation_level/TAB-ConsLev-collap-3.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
-
-# Lollipop
-gg3 = ggplot(tab_joined_collap_3, aes(x = Conserved_level, y = Percentage, fill = Conserved_level)) +
-  geom_point(aes(x = Conserved_level, y = Percentage, fill = Conserved_level), size=5, alpha=0.7, shape=21, stroke=2, position = position_dodge(width = 0.9)) +
-  geom_linerange(aes(xmin = Conserved_level, xmax = Conserved_level, ymin = 0, ymax = Percentage), position = position_dodge(width = 0.9)) +
-  scale_fill_manual(values = c("#ED5959", "#9CC9F4", "#2D8BE4", "#0457A6")) +
-  scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, 20), expand = c(0.1, 1)) +
-  facet_grid(Significance_level~Class) +
-  xlab("") +
-  ylab("Percentage") +
-  geom_text(aes(label = Percentage), hjust = -0.5, angle = 90, position = position_dodge(width = 0.9)) +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) +
-  theme(legend.position = "top") +
-  theme(axis.text.x = element_text(vjust = 0.5, hjust=0.5, size = 14, angle = 50),
-        axis.text.y = element_text(size = 16),
-        axis.title.y = element_text(size = 18),
-        strip.text = element_text(size = 17, face = "bold"))
-
-ggsave(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Conservation_level/Lollipop_conservation_3.png"), height = 10, width = 10, dpi = 800)
-#ggsave(paste0(path_fig, "/05-Tables_and_Figures/ALL/Conservation_level/Lollipop_conservation_3.pdf"), height = 10, width = 10, dpi = 800)
-
-rm(list = c("tab_joined_collap_3", "gg3", "tab_joined_long"))
-
-
-
-
-
-
-
 
 ############################################
-## 6. VENNDIAGRAM
+## 4. VENNDIAGRAM
 ############################################
 
 # Utilizando como total tanto transcritos DE como non-DE generamos un venn diagram.
 
-cat(paste0("\n\n6. VENNDIAGRAM..."))
+cat(paste0("\n\n4. VENNDIAGRAM..."))
 
 # Load binary table summary.
 Binary_tab_SUMMARY_2_filt = read.table(paste0(path_DEA, "/05-Tables_and_Figures/ALL/Binary_tables/Binary_tab-SUMMARY_2_filt.tsv"), sep = "\t", header = T, quote = "\"")
@@ -989,23 +820,12 @@ tab_TS = tab_TS[tab_TS$Spe == spe,]
 rownames(tab_TS) = NULL
 IDs_TS = unique(tab_TS[tab_TS$TAU >= 0.8, "ID_transcript"])
 
-# Load positional conservation table.
-tab_pos = read.table(path_PosCon, sep = "\t", header = T, quote = "\"")
-tab_pos = tab_pos[tab_pos$Specie == spe & tab_pos$Class != "ALL" & tab_pos$Strictness == "ORIGINAL" & tab_pos$NonMatch == "no", c("Member", "Type", "Conserved_level", "Number_species_by_family")]
-tab_pos$ID_transcript = sapply(strsplit(tab_pos$Member, "-"), `[`, 1)
-tab_pos = tab_pos[, c("ID_transcript", "Type", "Conserved_level", "Number_species_by_family")]
-tab_pos[tab_pos == "Low-conserved"] = "2 or 3 species"
-tab_pos[tab_pos == "Medium-conserved"] = "4-6 species"
-tab_pos[tab_pos == "High-conserved"] = "7-9 species"
-rownames(tab_pos) = NULL
-
 # Join tables.
-tab_joined = merge(Binary_tab_SUMMARY_2_filt[,c("ID_transcript", "Class_code", "Significance_level", "Norm.Development", "Norm.Stress")], db, by = c("ID_transcript", "Class_code", "Significance_level"), all = T)
+tab_joined = merge(Binary_tab_SUMMARY_2_filt[,c("ID_transcript", "Class_code", "Confidence", "Norm.Development", "Norm.Stress")], db, by = c("ID_transcript", "Class_code", "Confidence"), all = T)
 tab_joined[is.na(tab_joined)] = 0
 tab_joined$Tissue.Specificity = ifelse(tab_joined$ID_transcript %in% IDs_TS, 1, 0)
-tab_joined_long = melt(setDT(tab_joined), id.vars = c("ID_transcript", "Class_code", "Significance_level"), variable.name = "Item")
+tab_joined_long = melt(setDT(tab_joined), id.vars = c("ID_transcript", "Class_code", "Confidence"), variable.name = "Item")
 tab_joined_long = as.data.frame(tab_joined_long)
-tab_joined_long = merge(tab_joined_long, tab_pos, by = "ID_transcript", all = T)
 
 write.table(tab_joined_long, paste0(path_DEA, "/05-Tables_and_Figures/ALL/VennDiagram/TAB-Venn.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
 
@@ -1013,42 +833,17 @@ tab_joined_long = tab_joined_long[tab_joined_long$value != 0,]
 
 write.table(tab_joined_long, paste0(path_DEA, "/05-Tables_and_Figures/ALL/VennDiagram/TAB-Venn_filt.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
 
-rm(list = c("Binary_tab_SUMMARY_2_filt", "tab_TS", "IDs_TS", "tab_pos", "tab_joined"))
+rm(list = c("Binary_tab_SUMMARY_2_filt", "tab_TS", "IDs_TS", "tab_joined"))
 
 for (sl in c("PC genes", "LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs")) {
   x = list(
-    Development = unique(tab_joined_long[tab_joined_long$Significance_level == sl & tab_joined_long$Item == "Norm.Development", "ID_transcript"]),
-    Stress = unique(tab_joined_long[tab_joined_long$Significance_level == sl & tab_joined_long$Item == "Norm.Stress", "ID_transcript"]),
-    `Tissue specificity` = unique(tab_joined_long[tab_joined_long$Significance_level == sl & tab_joined_long$Item == "Tissue.Specificity", "ID_transcript"])
+    Development = unique(tab_joined_long[tab_joined_long$Confidence == sl & tab_joined_long$Item == "Norm.Development", "ID_transcript"]),
+    Stress = unique(tab_joined_long[tab_joined_long$Confidence == sl & tab_joined_long$Item == "Norm.Stress", "ID_transcript"]),
+    `Tissue specificity` = unique(tab_joined_long[tab_joined_long$Confidence == sl & tab_joined_long$Item == "Tissue.Specificity", "ID_transcript"])
   )
   ggvenn(x, fill_color = c("#0073C2FF", "#EFC000FF", "#868686FF"), stroke_size = 0.5, set_name_size = 5, text_size = 4.2)
   ggsave(paste0(path_DEA, "/05-Tables_and_Figures/ALL/VennDiagram/Venn-", gsub(" ", "-", sl), ".png"), height = 6, width = 6, dpi = 800, bg = "white")
 }
 
-for (sl in c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs")) {
-  for (co in c("Non-conserved", "2 or 3 species", "4-6 species", "7-9 species")) {
-    x = list(
-      Development = unique(tab_joined_long[tab_joined_long$Significance_level == sl & tab_joined_long$Item == "Norm.Development" & tab_joined_long$Conserved_level == co, "ID_transcript"]),
-      Stress = unique(tab_joined_long[tab_joined_long$Significance_level == sl & tab_joined_long$Item == "Norm.Stress" & tab_joined_long$Conserved_level == co, "ID_transcript"]),
-      Tissue.Specificity = unique(tab_joined_long[tab_joined_long$Significance_level == sl & tab_joined_long$Item == "Tissue.Specificity" & tab_joined_long$Conserved_level == co, "ID_transcript"])
-    )
-    ggvenn(x, fill_color = c("#0073C2FF", "#EFC000FF", "#868686FF"),stroke_size = 0.5, set_name_size = 4)
-    ggsave(paste0(path_DEA, "/05-Tables_and_Figures/ALL/VennDiagram/Venn-", gsub(" ", "-", sl), "-", gsub(" ", "-", co), ".png"), height = 6, width = 6, dpi = 800, bg = "white")
-  }
-}
-
-for (sl in c("LC-lncRNAs", "MC-lncRNAs", "HC-lncRNAs")) {
-  for (co in c("Non-conserved", "Conserved")) {
-    x = list(
-      Development = unique(tab_joined_long[tab_joined_long$Significance_level == sl & tab_joined_long$Item == "Norm.Development" & tab_joined_long$Type == co, "ID_transcript"]),
-      Stress = unique(tab_joined_long[tab_joined_long$Significance_level == sl & tab_joined_long$Item == "Norm.Stress" & tab_joined_long$Type == co, "ID_transcript"]),
-      Tissue.Specificity = unique(tab_joined_long[tab_joined_long$Significance_level == sl & tab_joined_long$Item == "Tissue.Specificity" & tab_joined_long$Type == co, "ID_transcript"])
-    )
-    ggvenn(x, fill_color = c("#0073C2FF", "#EFC000FF", "#868686FF"),stroke_size = 0.5, set_name_size = 4)
-    ggsave(paste0(path_DEA, "/05-Tables_and_Figures/ALL/VennDiagram/Venn-", gsub(" ", "-", sl), "-", gsub(" ", "-", co), ".png"), height = 6, width = 6, dpi = 800, bg = "white")
-  }
-}
-
-rm(list = c("sl", "co", "x", "db", "tab_joined_long"))
-
+rm(list = c("sl", "x", "db", "tab_joined_long"))
 

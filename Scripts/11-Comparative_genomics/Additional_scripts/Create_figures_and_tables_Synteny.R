@@ -18,18 +18,18 @@ options(stringsAsFactors = F)
 
 ## 1. VARIABLES
 
-flag = "nr"
-WD1 = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/", flag, "/04-Families")
-WD2 = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/", flag, "/05-Figures")
-WD3 = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/06-quantification"
-species = c("csa", "cme", "cla", "lsi", "cmo", "car", "cpe", "cma", "mch")
-classes = c("ALL", "intergenic", "antisense", "intronic", "sense")
-confidences = c("Low", "Medium", "High")
-strictness = c("ORIGINAL", "RELAXED", "STRICT", "MORE-STRICT")
-nonmatch = c("no", "yes")
-
-if (!dir.exists(WD2)){
-  dir.create(WD2)
+## Create a vector with the arguments.
+args = commandArgs(trailingOnly=TRUE)
+if (length(args) < 5) {
+  stop("At least 5 arguments must be supplied.", call.=FALSE)
+} else {
+  WD1 = args[1]
+  WD2 = args[2]
+  species = unlist(strsplit(args[3], " "))
+  classes = unlist(strsplit(args[4], " "))
+  confidences = unlist(strsplit(args[5], " "))
+  strictness = unlist(strsplit(args[6], " "))
+  nonmatch = unlist(strsplit(args[7], " "))
 }
 
 
@@ -76,32 +76,32 @@ for (confidence in confidences) {
           
           TAB_ALL_FAM = rbind(TAB_ALL_FAM, fam)
           
-          fam_red_1 = fam %>% 
+          fam_red_1 = suppressMessages(fam %>% 
             group_by(Confidence, Class, Strictness, NonMatch, Specie, Number_species_by_family, .drop=FALSE) %>%
             summarise(
               Counts = n_distinct(Family)) %>%
             mutate(Total = sum(Counts),
-                   perc = round(Counts/sum(Counts) * 100, 2))
+                   perc = round(Counts/sum(Counts) * 100, 2)))
           fam_red_1 = as.data.frame(fam_red_1)
           colnames(fam_red_1) = c("Confidence", "Class", "Strictness", "NonMatch", "Specie", "Number_species_by_family", "Counts_Families", "Total_Families", "Percentage_Families")
           TAB_1_FAM = rbind(TAB_1_FAM, fam_red_1)
           
-          fam_red_2 = fam %>% 
+          fam_red_2 = suppressMessages(fam %>% 
             group_by(Confidence, Class, Strictness, NonMatch, Specie, Conserved_level, .drop=FALSE) %>%
             summarise(
               Counts = n_distinct(Family)) %>%
             mutate(Total = sum(Counts),
-                   perc = round(Counts/sum(Counts) * 100, 2))
+                   perc = round(Counts/sum(Counts) * 100, 2)))
           fam_red_2 = as.data.frame(fam_red_2)
           colnames(fam_red_2) = c("Confidence", "Class", "Strictness", "NonMatch", "Specie", "Conserved_level", "Counts_Families", "Total_Families", "Percentage_Families")
           TAB_2_FAM = rbind(TAB_2_FAM, fam_red_2)
           
-          fam_red_3 = fam %>% 
+          fam_red_3 = suppressMessages(fam %>% 
             group_by(Confidence, Class, Strictness, NonMatch, Specie, Type, .drop=FALSE) %>%
             summarise(
               Counts = n_distinct(Family)) %>%
             mutate(Total = sum(Counts),
-                   perc = round(Counts/sum(Counts) * 100, 2))
+                   perc = round(Counts/sum(Counts) * 100, 2)))
           fam_red_3 = as.data.frame(fam_red_3)
           colnames(fam_red_3) = c("Confidence", "Class", "Strictness", "NonMatch", "Specie", "Type", "Counts_Families", "Total_Families", "Percentage_Families")
           TAB_3_FAM = rbind(TAB_3_FAM, fam_red_3)
@@ -224,32 +224,32 @@ for (confidence in confidences) {
           
           TAB_ALL_LNCRNAS = rbind(TAB_ALL_LNCRNAS, gen)
           
-          gen_red_1 = gen %>% 
+          gen_red_1 = suppressMessages(gen %>% 
             group_by(Confidence, Class, Strictness, NonMatch, Specie, Number_species_by_family, .drop=FALSE) %>%
             summarise(
               Counts = n_distinct(Member)) %>%
             mutate(Total = sum(Counts),
-                   perc = round(Counts/sum(Counts) * 100, 2))
+                   perc = round(Counts/sum(Counts) * 100, 2)))
           gen_red_1 = as.data.frame(gen_red_1)
           colnames(gen_red_1) = c("Confidence", "Class", "Strictness", "NonMatch", "Specie", "Number_species_by_family", "Counts_LncRNAs", "Total_LncRNAs", "Percentage_LncRNAs")
           TAB_1_LNCRNAS = rbind(TAB_1_LNCRNAS, gen_red_1)
           
-          gen_red_2 = gen %>% 
+          gen_red_2 = suppressMessages(gen %>% 
             group_by(Confidence, Class, Strictness, NonMatch, Specie, Conserved_level, .drop=FALSE) %>%
             summarise(
               Counts = n_distinct(Member)) %>%
             mutate(Total = sum(Counts),
-                   perc = round(Counts/sum(Counts) * 100, 2))
+                   perc = round(Counts/sum(Counts) * 100, 2)))
           gen_red_2 = as.data.frame(gen_red_2)
           colnames(gen_red_2) = c("Confidence", "Class", "Strictness", "NonMatch", "Specie", "Conserved_level", "Counts_LncRNAs", "Total_LncRNAs", "Percentage_LncRNAs")
           TAB_2_LNCRNAS = rbind(TAB_2_LNCRNAS, gen_red_2)
           
-          gen_red_3 = gen %>% 
+          gen_red_3 = suppressMessages(gen %>% 
             group_by(Confidence, Class, Strictness, NonMatch, Specie, Type, .drop=FALSE) %>%
             summarise(
               Counts = n_distinct(Member)) %>%
             mutate(Total = sum(Counts),
-                   perc = round(Counts/sum(Counts) * 100, 2))
+                   perc = round(Counts/sum(Counts) * 100, 2)))
           gen_red_3 = as.data.frame(gen_red_3)
           colnames(gen_red_3) = c("Confidence", "Class", "Strictness", "NonMatch", "Specie", "Type", "Counts_LncRNAs", "Total_LncRNAs", "Percentage_LncRNAs")
           TAB_3_LNCRNAS = rbind(TAB_3_LNCRNAS, gen_red_3)

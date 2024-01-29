@@ -228,9 +228,9 @@ TAB_2$Significance_level = factor(TAB_2$Significance_level, levels = c("PC genes
 TAB_2$Class = factor(TAB_2$Class, levels = c("Development", "Stress"))
 TAB_2$Specie = factor(TAB_2$Specie, levels = species)
 
-TAB_1 = TAB_1[order(TAB_1$Class, TAB_1$ID),]
+TAB_1 = TAB_1[order(TAB_1$Specie, TAB_1$ID, TAB_1$Class),]
 rownames(TAB_1) = NULL
-TAB_2 = TAB_2[order(TAB_2$Class, TAB_2$ID),]
+TAB_2 = TAB_2[order(TAB_2$Specie, TAB_2$ID, TAB_2$Class),]
 rownames(TAB_2) = NULL
 
 TAB_1_save = TAB_1[, c("Specie_long", "ID", "Class_code", "Number", "Total", "Percentage", "Class")]
@@ -271,7 +271,7 @@ for (class in c("Development", "Stress")) {
     L1 = length(subset1)
     L2 = length(subset2)
     if (L1 > 0 & L2 > 0) {
-      test = wilcox.test(subset1, subset2, paired = FALSE)
+      test = wilcox.test(subset1, subset2, paired = TRUE)
       Significance = ifelse(test$p.value < 0.01, "Significant", "Non-Significant")
       row = data.frame(Class = class, CL1 = cl1, CL2 = cl2, N1 = L1, N2 = L2, Statistic = test$statistic, P.value = test$p.value, Significance = Significance, Method = test$method)
     }
@@ -302,7 +302,7 @@ for (class in c("Development", "Stress")) {
     L1 = length(subset1)
     L2 = length(subset2)
     if (L1 > 0 & L2 > 0) {
-      test = wilcox.test(subset1, subset2, paired = FALSE)
+      test = wilcox.test(subset1, subset2, paired = TRUE)
       Significance = ifelse(test$p.value < 0.01, "Significant", "Non-Significant")
       row = data.frame(Class = class, CL1 = cl1, CL2 = cl2, N1 = L1, N2 = L2, Statistic = test$statistic, P.value = test$p.value, Significance = Significance, Method = test$method)
     }

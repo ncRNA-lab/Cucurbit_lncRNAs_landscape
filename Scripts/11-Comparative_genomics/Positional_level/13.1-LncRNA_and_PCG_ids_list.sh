@@ -18,7 +18,7 @@ WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction
 WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/11-Comparative_genomics/Additional_scripts"
 F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/11-Comparative_genomics/Positional_level/Functions.sh"
-specie_list="cma cme"
+specie_list="car cla cma cme cmo cpe csa lsi mch"
 class_list="intergenic antisense intronic sense"
 flag_list="nr"
 confidence_list="High Medium Low"
@@ -36,7 +36,7 @@ mkdir -p $WD2/Positional_level
 
 for flag in $flag_list; do
 
-	echo -e "\n\nFLAG: "$flag"\n"
+	echo -e "\n\nFLAG: "$flag
 	
 	## Variable.
 	O=$WD2/Positional_level/$flag

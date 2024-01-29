@@ -17,7 +17,7 @@ WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomi
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/11-Comparative_genomics/Additional_scripts"
 SP="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/08-comparative_genomics/Softwares"
-specie_list="cma cme"
+specie_list="car cla cma cme cmo cpe csa lsi mch"
 flag_list="nr"
 
 ####### ADDITIONAL SCRIPTS
@@ -40,7 +40,7 @@ mkdir -p $WD1/Positional_level
 
 for flag in $flag_list; do
 
-	echo -e "\n\nFLAG: "$flag"\n"
+	echo -e "\n\nFLAG: "$flag
 	
 	## Variable.
 	O=$WD1/Positional_level/$flag
@@ -53,10 +53,10 @@ for flag in $flag_list; do
 	mkdir -p $O/02-Orthologs/Tables_orthologs_1_to_1
 
 	### IDENTIFY ORTHOLOGS
-	echo -e "\n\nIDENTIFY ORTHOLOGS...\n"
+	echo -e "\n\nIdentify orthologs:\n"
 
 	## ORTHOFINDER
-	echo -e "\n\nOrthologs: OrthoFinder...\n"
+	echo -e "Execute OrthoFinder...\n"
 
 	cd $O/02-Orthologs/Inference
 	if [ -d "Orthofinder" ]; then
@@ -75,9 +75,9 @@ for flag in $flag_list; do
 
 	rm -r Proteomes_temp
 
-	echo -e "\nOrthologs: Select 1:1 orthologs...\n"
+	echo -e "Select 1:1 orthologs...\n"
 
-	Extract_1_to_1_orthologs_across_all-Approach_2-OrthoFinder.py \
+	Extract_1_to_1_orthologs_across_all-OrthoFinder.py \
 		--path-orthofinder $O/02-Orthologs/Inference/Orthofinder \
 		--output $O/02-Orthologs/Tables_orthologs_1_to_1/Orthotable_1_to_1_orthofinder.tsv
 done

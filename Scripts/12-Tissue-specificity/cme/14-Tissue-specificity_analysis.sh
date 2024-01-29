@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#SBATCH --job-name=S14							# Job name.
-#SBATCH --output=STEP14_tissue_specificity.log			# Standard output and error log.
+#SBATCH --job-name=cmeS14						# Job name.
+#SBATCH --output=cme_STEP14.log					# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
-#SBATCH --ntasks=1							# Run on one mode. Don't change unless you know what you are doing.
-#SBATCH --cpus-per-task=2						# Number of tasks = cpus. It depends on the number of process of your parallelization.
+#SBATCH --ntasks=1							# Run on one mode.
+#SBATCH --cpus-per-task=2						# Number of tasks = cpus.
 #SBATCH --time=1-00:00:00						# Time limit days-hrs:min:sec.
 #SBATCH --mem-per-cpu=5gb						# Job memory request.
 
@@ -19,7 +19,7 @@ WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction
 WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification"
 WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/12-Tissue-specificity"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/12-Tissue-specificity/additional_scripts"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/12-Tissue-specificity/Additional_scripts"
 flag_list="nr"
 
 ####### NEW AND OTHER VARIABLES
@@ -42,47 +42,27 @@ for flag in $flag_list; do
 
 	echo -e "\n\nFLAG: "$flag
 	
-	# Directory.
-	mkdir -p $WD3_spe/ALL/$flag
-	mkdir -p $WD3_spe/ALL/$flag/STEP1
-	mkdir -p $WD3_spe/ALL/$flag/STEP2
-	mkdir -p $WD3_spe/ALL/$flag/STEP3
-	mkdir -p $WD3_spe/ALL/$flag/STEP4
-	mkdir -p $WD3_spe/ALL/$flag/Outputs
+	O=$WD3_spe/ALL/$flag
 	
-	echo -e "\n\n#############################"
-	echo -e "########### STEP 1 ##########"
-	echo -e "#############################\n\n"
+	mkdir -p $O
+	mkdir -p $O/STEP1
+	mkdir -p $O/STEP2
+	mkdir -p $O/STEP3
+	mkdir -p $O/STEP4
+	mkdir -p $O/Outputs
+	
+	echo -e "\n\t-STEP 1"
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP1.log --quiet --exclusive Rscript $AS/01-ALL-Tissue-specificity.R $WD1_spe $WD2_spe $WD3_spe $AI $flag $specie
 
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $WD3_spe/GENES/03-Quant/Outputs/stdout_Quant_$SRR.log --quiet --exclusive Rscript $AS/01-ALL-Tissue-specificity.R $WD1_spe $WD2_spe $WD3_spe $AI $flag $specie
+	echo -e "\n\t-STEP 2"
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP2.log --quiet --exclusive 02-ALL-Tissue-specificity.py --path $WD3_spe --flag $flag --specie $specie
 
+	echo -e "\n\t-STEP 3"
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP3.log --quiet --exclusive Rscript $AS/03-ALL-Tissue-specificity.R $WD2_spe $WD3_spe $flag $specie
 
-	echo -e "\n\n#############################"
-	echo -e "########### STEP 2 ##########"
-	echo -e "#############################\n\n"
-
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive Rscript $AS/02-ALL-Tissue-specificity.R $WD3_spe $flag $specie
-
-
-	echo -e "\n\n#############################"
-	echo -e "########### STEP 3 ##########"
-	echo -e "#############################\n\n"
-
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive Rscript $AS/03-ALL-Tissue-specificity.R $WD3_spe $flag $specie
-
-
-	echo -e "\n\n#############################"
-	echo -e "########### STEP 4 ##########"
-	echo -e "#############################\n\n"
-
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive Rscript $AS/04-ALL-Tissue-specificity.R $WD3_spe $flag $specie
-
-
-	echo -e "\n\n#############################"
-	echo -e "############ END ############"
-	echo -e "#############################\n\n"
+	echo -e "\n\t-STEP 4"
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP4.log --quiet --exclusive Rscript $AS/04-ALL-Tissue-specificity.R $WD2_spe $WD3_spe $flag $specie
 
 done
-
 
 
