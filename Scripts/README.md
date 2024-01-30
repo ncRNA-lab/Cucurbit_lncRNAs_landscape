@@ -1,6 +1,6 @@
-# Usage
+## Usage
 
-## STEP 0: Select RNA-seq samples
+### STEP 0: Select RNA-seq samples
 
 <div align="justify"> We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the <a href="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/">E-utilities</a>. <br /><br /></div>
 
@@ -11,31 +11,31 @@ sbatch 00-Samples.sh
 
 <div align="justify"> <br />As a result, we obtain a list of RNA-seq sample accessions and a metadata table with all the information by RNA-seq sample accession. </div>
 
-## STEP 1: Download RNA-seq samples
+### STEP 1: Download RNA-seq samples
 
-## STEP 2: Quality control RNA-seq samples
+### STEP 2: Quality control RNA-seq samples
 
-## STEP 3: Select strand-specific RNA-seq samples
+### STEP 3: Select strand-specific RNA-seq samples
 
-## STEP 4: Mapping
+### STEP 4: Mapping
 
-## STEP 5: Assembly
+### STEP 5: Assembly
 
-## STEP 6: Transcript annotation
+### STEP 6: Transcript annotation
 
-## STEP 7: LncRNA prediction
+### STEP 7: LncRNA prediction
 
-## STEP 8: Quantification
+### STEP 8: Quantification
 
-## STEP 9: Get random intergenic regions
+### STEP 9: Get random intergenic regions
 
-## STEP 10: Molecular properties comparison
+### STEP 10: Molecular properties comparison
 
-## STEP 11: Genomic distribution
+### STEP 11: Genomic distribution
 
-## STEP 12: Comparative genomics
+### STEP 12: Comparative genomics
 
-## STEP 13: Tissue-specificity analysis
+### STEP 13: Tissue-specificity analysis
 
 ## STEP 14: Differential expression analysis
 
