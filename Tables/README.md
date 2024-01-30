@@ -1,5 +1,7 @@
 # Tables
+
 <br />
+
 ## Samples filtering
 
 <div align="justify">For each of the nine cucurbitaceae analyzed, a table has been created showing the number of reads after trimming and the type of library for each of the downloaded samples. In addition, information is also provided on which samples have passed both steps.</div><br />
