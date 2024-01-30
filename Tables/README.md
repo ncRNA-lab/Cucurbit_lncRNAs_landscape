@@ -27,12 +27,12 @@
 
 <br />
 
-<div align="center"> <sub><b>Table: Detailed information about all RNA-Seq samples used in this study is available in Supplementary Data 1. in the nine selected cucurbit species.</b></sub> </div>
+<div align="justify"> <sub><b>Table: Detailed information about genome version in the nine selected cucurbit species.</b></sub> </div>
 
 <br />
 
 | <sub>Species</sub>                        | <sub>Genome Version</sub>    | <sub>Database</sub>           |
-|-------------------------------------------|-------------------|--------------------|
+|-------------------------------------------|------------------------------|-------------------------------|
 | <sub>*Cucumis sativus* (csa)</sub>        | <sub>Chinese Long v.3</sub>  | <sub>Cucurbit Genomics</sub>  |
 | <sub>*Cucumis melo* (cme)</sub>           | <sub>DHL92 v.4</sub>         | <sub>Melonomics</sub>         |
 | <sub>*Citrullus lanatus* (cla)</sub>      | <sub>97103 v.2</sub>         | <sub>Cucurbit Genomics</sub>  |
@@ -45,7 +45,7 @@
 
 <br />
 
-## Final_summary
+## Final summary
 
 <div align="justify">For each of the nine cucurbits analyzed, a table has been created showing all the information obtained in the paper for each of the predicted non-redundant lncRNAs.</div><br />
 
