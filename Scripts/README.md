@@ -13,11 +13,47 @@ sbatch 00-Samples.sh
 
 ### STEP 1: Download RNA-seq samples
 
+<div align="justify"> We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the <a href="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/">E-utilities</a>. <br /><br /></div>
+
+```
+cd 01-Sample_processing_and_selection/cme/
+sbatch 00-Samples.sh
+```
+
+<div align="justify"> <br />As a result, we obtain a list of RNA-seq sample accessions and a metadata table with all the information by RNA-seq sample accession. </div>
+
 ### STEP 2: Quality control RNA-seq samples
+
+<div align="justify"> We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the <a href="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/">E-utilities</a>. <br /><br /></div>
+
+```
+cd 01-Sample_processing_and_selection/cme/
+sbatch 00-Samples.sh
+```
+
+<div align="justify"> <br />As a result, we obtain a list of RNA-seq sample accessions and a metadata table with all the information by RNA-seq sample accession. </div>
 
 ### STEP 3: Select strand-specific RNA-seq samples
 
+<div align="justify"> We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the <a href="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/">E-utilities</a>. <br /><br /></div>
+
+```
+cd 01-Sample_processing_and_selection/cme/
+sbatch 00-Samples.sh
+```
+
+<div align="justify"> <br />As a result, we obtain a list of RNA-seq sample accessions and a metadata table with all the information by RNA-seq sample accession. </div>
+
 ### STEP 4: Mapping
+
+<div align="justify"> We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the <a href="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/">E-utilities</a>. <br /><br /></div>
+
+```
+cd 01-Sample_processing_and_selection/cme/
+sbatch 00-Samples.sh
+```
+
+<div align="justify"> <br />As a result, we obtain a list of RNA-seq sample accessions and a metadata table with all the information by RNA-seq sample accession. </div>
 
 ### STEP 5: Assembly
 
