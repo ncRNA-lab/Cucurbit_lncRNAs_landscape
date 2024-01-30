@@ -29,7 +29,7 @@
 
 <br />
 
-<div align="justify">All the lncRNAs identified across the nine cucurbit species can be found in <a href="Tables/LncRNAs_prediction">Tables/LncRNAs_prediction</a> in several formats (fasta, tsv and gtf) so that they can be used by the scientific community. </div>
+<div align="justify">All the lncRNAs identified across the nine cucurbit species can be found in <a href="Tables/LncRNAs">Tables/LncRNAs</a> in several formats (fasta, tsv and gtf) so that they can be used by the scientific community. </div>
 
 <br />
 
