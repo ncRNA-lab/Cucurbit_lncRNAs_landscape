@@ -1,12 +1,12 @@
-# Tables
+## Tables
 
 <br />
 
-## Samples filtering
+### Samples filtering
 
 <div align="justify">For each of the nine cucurbitaceae analyzed, a table has been created showing the number of reads after trimming and the type of library for each of the downloaded samples. In addition, information is also provided on which samples have passed both steps.</div><br />
 
-## LncRNAs
+### LncRNAs
 
 <div align="justify">For each of the nine cucurbitaceae analyzed, four folders have been created:</div><br />
 
@@ -17,7 +17,7 @@
 
 <br />
 
-## PCGs
+### PCGs
 
  <div align="justify">For each of the nine cucurbitaceae analyzed, three folders have been created:</div><br />
   
@@ -45,7 +45,7 @@
 
 <br />
 
-## Final summary
+### Final summary
 
 <div align="justify">For each of the nine cucurbits analyzed, a table has been created showing all the information obtained in the paper for each of the predicted non-redundant lncRNAs.</div><br />
 
