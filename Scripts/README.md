@@ -98,7 +98,9 @@ sbatch 06-Transcript_annotation.sh
 
 ### STEP 7: LncRNA prediction
 
-<div align="justify"> Bam files generated in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
+<div align="justify"> Positionally annotated assemblies (GTF file by species) were used to predict potential lncRNAs using 
+ 
+ <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
 
 ```
 cd 05-LncRNAs_prediction/cme/
