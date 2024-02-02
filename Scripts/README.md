@@ -6,6 +6,7 @@
 
 ```
 cd 01-Sample_processing_and_selection/cme/
+
 sbatch 00-Samples.sh
 ```
 
@@ -16,20 +17,23 @@ sbatch 00-Samples.sh
 
 ### STEP 1: Download RNA-seq samples
 
-<div align="justify"> All raw RNA-seq samples were downloaded from Sequence Read Archive database (SRA) using <a href="https://github.com/ncbi/sra-tools">SRA Toolkit</a>. <br /><br /></div>
+<div align="justify"> All raw RNA-seq samples are downloaded from Sequence Read Archive database (SRA) using <a href="https://github.com/ncbi/sra-tools">SRA Toolkit</a>. <br /><br /></div>
 
 ```
 cd 01-Sample_processing_and_selection/cme/
+
 sbatch 01-Download.sh
 ```
-
+- [FastQC](https://github.com/s-andrews/FastQC) v.0.11.9
+- [Multiqc](https://github.com/MultiQC/MultiQC) v.1.11
 
 ### STEP 2: Quality control RNA-seq samples
 
-<div align="justify"> All raw RNA-seq samples were trimmed using <a href="https://github.com/OpenGene/fastp">Fastp</a>. <br /><br /></div>
+<div align="justify"> All raw RNA-seq samples are trimmed using <a href="https://github.com/OpenGene/fastp">Fastp</a>. <br /><br /></div>
 
 ```
 cd 01-Sample_processing_and_selection/cme/
+
 sbatch 02-Trimming.sh
 ```
 
@@ -42,10 +46,11 @@ sbatch 02-Trimming.sh
 
 ### STEP 3: Select strand-specific RNA-seq samples
 
-<div align="justify"> We deduced whether the library is strand-specific or not, and select the strand-specific samples using <a href="https://github.com/COMBINE-lab/salmon">Salmon</a>. <br /><br /></div>
+<div align="justify"> We deduce whether the library is strand-specific or not, and select the strand-specific samples using <a href="https://github.com/COMBINE-lab/salmon">Salmon</a>. <br /><br /></div>
 
 ```
 cd 01-Sample_processing_and_selection/cme/
+
 sbatch 03-Select_strand-specific_libraries.sh
 ```
 
@@ -56,12 +61,15 @@ sbatch 03-Select_strand-specific_libraries.sh
 
 ### STEP 4: Mapping
 
-<div align="justify"> We mapped the clean data to the reference genome. To this end, we use <a href="https://github.com/DaehwanKimLab/hisat2">HISAT2</a>. <br /><br /></div>
+<div align="justify"> We map the clean data to the reference genome. To this end, we use <a href="https://github.com/DaehwanKimLab/hisat2">HISAT2</a>. <br /><br /></div>
 
 ```
 cd 02-Mapping/cme/
+
 sbatch 04-Mapping.sh
 ```
+
+[RSEM](https://github.com/deweylab/RSEM) v.1.3.3
 
 <div align="justify"> The use of a different number of threads in the HISAT2 program may affect the mapping percentage. However, this variation is very small and has a negligible effect on the final assembly. As this is a pipeline under development, a change of the mapping tool is considered in the future if this problem is not solved. </div>
 
@@ -74,6 +82,7 @@ sbatch 04-Mapping.sh
 
 ```
 cd 03-Assembly/cme/
+
 sbatch 05-Assembly.sh
 ```
 
@@ -88,6 +97,7 @@ sbatch 05-Assembly.sh
 
 ```
 cd 04-Transcript_annotation/cme/
+
 sbatch 06-Transcript_annotation.sh
 ```
 
@@ -98,10 +108,11 @@ sbatch 06-Transcript_annotation.sh
 
 ### STEP 7: LncRNA prediction
 
-<div align="justify"> Assembled and positionally annotated transcripts (GTF file by species) were used to predict potential lncRNAs using several programs and databases (more details in the paper). <br /><br /></div>
+<div align="justify"> Assembled and positionally annotated transcripts (GTF file by species) are used to predict potential lncRNAs using several programs and databases (more details in the paper). <br /><br /></div>
 
 ```
 cd 05-LncRNAs_prediction/cme/
+
 sbatch 07-LncRNAs_prediction.sh
 ```
 
@@ -112,25 +123,30 @@ sbatch 07-LncRNAs_prediction.sh
 
 ### STEP 8: Quantification
 
-<div align="justify"> Bam files generated in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
+<div align="justify"> We quantify the potential lncRNAs, PCGs and both (lncRNAs and PCGs) using <a href="https://github.com/COMBINE-lab/salmon">Salmon</a>. <br /><br /></div>
 
 ```
 cd 06-Quantification/cme/
-sbatch 08-Quantification_ALL.sh
+
 sbatch 08-Quantification_LncRNAs.sh
 sbatch 08-Quantification_Genes.sh
+sbatch 08-Quantification_ALL.sh
 ```
 
+<div align="justify"> <br />As a result, a TPM table is generated. </div>
+
+<br />
 
 ### STEP 9: Get random intergenic regions
 
-<div align="justify"> Bam files generated in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
+<div align="justify"> We generate a third category of sequences corresponding to random intergenic genome regions of 500 nucleotides that don’t match any of the other two categories (Potential lncRNAs and PCGs). <br /><br /></div>
 
 ```
 cd 07-Get_intergenic_regions/cme/
+
 sbatch 09-Random_intergenic_regions.sh
 ```
-
+[Bedtools](https://bedtools.readthedocs.io/en/latest/)
 
 ### STEP 10: Search for TEs and genomic repeats
 
@@ -138,18 +154,23 @@ sbatch 09-Random_intergenic_regions.sh
 
 ```
 cd 08-TEs_and_genomic_repeats/cme/
+
 sbatch 10.1-RepeatModeler.sh
 sbatch 10.2-RepeatMasker.sh
 sbatch 10.3-Intersection_with_PCGs_LncRNAs_and_IR.sh
 ```
 
+ [RepeatModeler](https://www.repeatmasker.org/RepeatModeler/) v.2.0.3
+- [RepeatMasker](https://www.repeatmasker.org/RepeatMasker/) v.4.1.3-p1
+
 
 ### STEP 11: Molecular properties comparison
 
-<div align="justify"> Molecular properties comparison. Bam files generated in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
+<div align="justify"> A common downstream analysis is to compare basic features that differentiate lncRNAs from protein-coding genes such as GC content, number of exons, length, expression level and repeat content. <br /><br /></div>
 
 ```
 cd 09-Comparison_PCGs_and_lncRNAs/cme/
+
 sbatch 11-Comparison_PCGs_and_lncRNAs.sh
 ```
 
@@ -170,9 +191,11 @@ sbatch 06-Transcript_annotation.sh
 
 ```
 cd 11-Comparative_genomics/Sequence_level/
+
 sbatch 13-Sequence_level_analysis.sh
 
 cd 11-Comparative_genomics/Positional_level/
+
 sbatch 13.1-LncRNA_and_PCG_ids_list.sh
 sbatch 13.2-Orthologs_identification.sh
 sbatch 13.3-Find_syntenic_lncRNAs.sh
@@ -180,6 +203,7 @@ sbatch 13.4-Classify_lncRNAs_into_families.sh
 sbatch 13.5-Create_figures_and_tables.sh
 
 cd 11-Comparative_genomics/Motif_level/
+
 sbatch 13.1-Select_lncRNAs.sh
 sbatch 13.2-Prepare_positional_conserved_family_files.sh
 sbatch 13.3-Motif_finder-MEME.sh
@@ -188,6 +212,9 @@ sbatch 13.5-Create_summary_tables.sh
 sbatch 13.6-Create_figures_and_tables.sh
 ```
 
+[OrthoFinder](https://github.com/davidemms/OrthoFinder)
+
+[MEME](https://meme-suite.org/meme/)
 
 ### STEP 14: Tissue-specificity analysis
 
@@ -195,9 +222,10 @@ sbatch 13.6-Create_figures_and_tables.sh
 
 ```
 cd 12-Tissue-specificity/cme/
+
 sbatch 14-Tissue-specificity_analysis.sh
 ```
-
+[Tspex](https://apcamargo.github.io/tspex/) 
 
 ### STEP 15: Differential expression analysis
 
@@ -205,34 +233,10 @@ sbatch 14-Tissue-specificity_analysis.sh
 
 ```
 cd 13-DEA/cme/
+
 sbatch 15-DEA.sh
 ```
 
-
-- [FastQC](https://github.com/s-andrews/FastQC) v.0.11.9
-- [Multiqc](https://github.com/MultiQC/MultiQC) v.1.11
-
-- [RSEM](https://github.com/deweylab/RSEM) v.1.3.3
-
-
-- [Bedtools](https://bedtools.readthedocs.io/en/latest/) v.2.27.1
-- [RepeatModeler](https://www.repeatmasker.org/RepeatModeler/) v.2.0.3
-- [RepeatMasker](https://www.repeatmasker.org/RepeatMasker/) v.4.1.3-p1
-- [OrthoFinder](https://github.com/davidemms/OrthoFinder) v.2.5.4
-- [MEME](https://meme-suite.org/meme/) v.5.5.1
-- [Tspex](https://apcamargo.github.io/tspex/) (tissue-specificity calculator tool)
-
-
-- [Swissprot](https://www.uniprot.org/help/downloads)
-- [Pfam](https://www.ebi.ac.uk/interpro/download/pfam/)
-- [RNAcentral](https://rnacentral.org/)
-- [miRBase](https://mirbase.org/)
-- [PmiREN](https://www.pmiren.com/)
-- [CANTATAdb](http://cantata.amu.edu.pl/)
-- [PLncDB](https://www.tobaccodb.org/plncdb/)
-- [GreeNC](http://greenc.sequentiabiotech.com/wiki2/Main_Page)
-
-<br />
 
 ## Authors
 
