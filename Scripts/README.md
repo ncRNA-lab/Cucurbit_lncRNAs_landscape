@@ -98,14 +98,16 @@ sbatch 06-Transcript_annotation.sh
 
 ### STEP 7: LncRNA prediction
 
-<div align="justify"> Positionally annotated assemblies (GTF file by species) were used to predict potential lncRNAs using 
- 
- <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
+<div align="justify"> Assembled and positionally annotated transcripts (GTF file by species) were used to predict potential lncRNAs using several programs and databases (more details in the paper). <br /><br /></div>
 
 ```
 cd 05-LncRNAs_prediction/cme/
 sbatch 07-LncRNAs_prediction.sh
 ```
+
+<div align="justify"> <br />As a result, we obtain a potential lncRNAs database by species in FASTA, GTF and TSV format. </div>
+
+<br />
 
 
 ### STEP 8: Quantification
@@ -144,7 +146,7 @@ sbatch 10.3-Intersection_with_PCGs_LncRNAs_and_IR.sh
 
 ### STEP 11: Molecular properties comparison
 
-<div align="justify"> Bam files generated in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
+<div align="justify"> Molecular properties comparison. Bam files generated in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
 
 ```
 cd 09-Comparison_PCGs_and_lncRNAs/cme/
@@ -197,7 +199,7 @@ sbatch 14-Tissue-specificity_analysis.sh
 ```
 
 
-## STEP 15: Differential expression analysis
+### STEP 15: Differential expression analysis
 
 <div align="justify"> Bam files generated in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
 
@@ -207,51 +209,12 @@ sbatch 15-DEA.sh
 ```
 
 
-<div align="justify"> <br />Finally, we classify the assembled transcripts by their genomic position relative to the protein-coding genes (SW: Gffcompare). As a result, a class code is assigned to each transcript.</div><br />
-
-- <div align="justify"> <b>LncRNA prediction</b><br /><br />We select transcripts that have any of the following five class codes: “u” (intergenic), “x” (antisense), “i” (intronic) and, “o” (sense) or “e” (sense). Next, transcripts are filtered by length (longer than 200 nucleotides) and expression level (more than 0.3 FPKM).<br /><br />Then, we assess the coding potential of each transcript using three alignment-free computational tools (SW: CPC2, FEELnc and CPAT) and two protein databases (Swissprot and Pfam). In the following step, we classify the transcripts into three confidence-levels (High-, medium- and low-confidence) according to the results of the previous step. After that, we annotate transcripts using different ncRNAs databases and those annotated as miRNA precursors (miRBAse and PmiREN) or housekeeping ncRNAs (RNAcentral) are discarded. We also annotate transcripts using databases of known potential lncRNAs in order to provide additional information (CANTATAdb, PLncDB, GreeNC). The program used to align the transcripts to the different ncRNAs databases is blastn. In the case of miRNA precursors, the MIReNA program is also used to validate them. </b><br /><br />Finally, we discard redundant transcripts (SW: CGAT) and create the database that will contain all potential lncRNAs. In addition, the different classes of potential lncRNAs will be renamed from intergenic, antisense, intronic and sense to lincRNA, NAT-lncRNA, int-lncRNA and SOT-lncRNA, respectively.</div><br />
-
-- <div align="justify"> <b>Downstream analysis</b> </div><br />Now, there are some downstream analyses that we can perform:<br /><br />
- 
-    + Molecular properties comparison.<br />
-    + Comparative genomics.</b>
-    + Tissue-specificity analysis.<br />
-    + Differential expression analysis (development and environment).<br />
-
-<br />
-<br />
-
-
-<div align="justify"> This pipeline has been configured to be executed in a HPC cluster environment using the open-source workload manager Slurm. So, it was executed in <a href="https://garnatxadoc.uv.es/">Garnatxa HPC Cluster</a> located at Data Center of the Institute for Integrative Systems Biology (<a href="https://www.uv.es/institute-integrative-systems-biology-i2sysbio/en/institute-integrative-systems-biology-i-sysbio.html">I2SysBio</a>). All the scripts that compose the pipeline are stored in <a href="Scripts">Scripts</a>. As the scripts for each species are the same, only the scripts for cucumis melo (cme) have been uploaded. </div>
-
-<br />
-
-<div align="justify">Initially, this pipeline was designed for cucurbit species, but it could be adapted to other species. </div>
-
-<br />
-
-<div align="justify"> For more information you can read the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>. </div>
-
-<br />
-
-## Software
-
-
 - [FastQC](https://github.com/s-andrews/FastQC) v.0.11.9
 - [Multiqc](https://github.com/MultiQC/MultiQC) v.1.11
 
 - [RSEM](https://github.com/deweylab/RSEM) v.1.3.3
 
-- [GffCompare](https://github.com/gpertea/gffcompare) v.0.12.6
-- [CPC2](https://github.com/gao-lab/CPC2_standalone) v.1.0.1
-- [FEELnc](https://github.com/tderrien/FEELnc) v.0.2
-- [CPAT](https://cpat.readthedocs.io/en/latest/) v.3.0.2
-- [DIAMOND](https://github.com/bbuchfink/diamond) v.2.0.14
-- [Transdecoder](https://github.com/TransDecoder/TransDecoder) v.5.5.0
-- [HMMER](https://github.com/EddyRivasLab/hmmer) v.2.0.14
-- [NCBI-BLAST](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/) v.2.13.0+
-- [MIReNA](https://www.lcqb.upmc.fr/mirena/index.html) v.2.0
-- [CGAT](https://cgat.readthedocs.io/en/latest/cgat.html) v.1.0
+
 - [Bedtools](https://bedtools.readthedocs.io/en/latest/) v.2.27.1
 - [RepeatModeler](https://www.repeatmasker.org/RepeatModeler/) v.2.0.3
 - [RepeatMasker](https://www.repeatmasker.org/RepeatMasker/) v.4.1.3-p1
@@ -259,15 +222,6 @@ sbatch 15-DEA.sh
 - [MEME](https://meme-suite.org/meme/) v.5.5.1
 - [Tspex](https://apcamargo.github.io/tspex/) (tissue-specificity calculator tool)
 
-<br />
-
-**R packages:**
-
-<div align="justify"> circlize, colorspace, ComplexHeatmap, data.table, DESeq2, dplyr, GenomicFeatures, ggbreak, ggExtra, ggplot2, ggpubr, ggradar, ggridges, ggtext, ggvenn, grid, htmltools, limma, palmerpenguins, pheatmap, plotly, png, pRoloc, ragg, RColorBrewer, rtracklayer, scales, stringr, tibble, tidyr, tximport and UpSetR. </div>
-
-<br />
-
-## Databases
 
 - [Swissprot](https://www.uniprot.org/help/downloads)
 - [Pfam](https://www.ebi.ac.uk/interpro/download/pfam/)
@@ -285,6 +239,4 @@ sbatch 15-DEA.sh
 * **Pascual Villalba-Bermell** - *Initial work* - [pasviber](https://github.com/pasviber) (pascual.villalba@csic.es) at [ncRNA-lab](https://github.com/ncRNA-lab).
 
 <br />
-
-
 
