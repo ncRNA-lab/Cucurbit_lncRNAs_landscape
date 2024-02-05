@@ -1,5 +1,7 @@
 ## Usage
 
+<br />
+
 ### STEP 0: Select RNA-seq samples
 
 <div align="justify"> We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the <a href="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/">E-utilities</a>. <br /><br /></div>
@@ -24,8 +26,9 @@ cd 01-Sample_processing_and_selection/cme/
 
 sbatch 01-Download.sh
 ```
-- [FastQC](https://github.com/s-andrews/FastQC) v.0.11.9
-- [Multiqc](https://github.com/MultiQC/MultiQC) v.1.11
+
+<div align="justify"> <a href="https://github.com/s-andrews/FastQC">FastQC</a> and <a href="https://github.com/MultiQC/MultiQC">Multiqc</a> are used to provide some quality control checks on raw sequence data.</div>
+
 
 ### STEP 2: Quality control RNA-seq samples
 
@@ -37,7 +40,9 @@ cd 01-Sample_processing_and_selection/cme/
 sbatch 02-Trimming.sh
 ```
 
-<div align="justify"> To eliminate possible adapters, the fasta files of the <a href="https://github.com/usadellab/Trimmomatic/tree/main/adapters">Trimmomatic</a> program were used, but other fasta files can be used. It is even possible to gather all adapters in the same file and use a single fasta file. </div>
+<div align="justify"> To eliminate possible adapters, fasta files containing adapters from the <a href="https://github.com/usadellab/Trimmomatic/tree/main/adapters">Trimmomatic</a> program are used, but other fasta files can be used. It is even possible to gather all adapters in the same file and use a single fasta file. </div>
+
+<div align="justify"> <br /><a href="https://github.com/s-andrews/FastQC">FastQC</a> and <a href="https://github.com/MultiQC/MultiQC">Multiqc</a> are used to provide some quality control checks on clean sequence data.</div>
 
 <div align="justify"> <br />As a summary, a table is generated with the number of reads for each sample. </div>
 
@@ -46,7 +51,7 @@ sbatch 02-Trimming.sh
 
 ### STEP 3: Select strand-specific RNA-seq samples
 
-<div align="justify"> We deduce whether the library is strand-specific or not, and select the strand-specific samples using <a href="https://github.com/COMBINE-lab/salmon">Salmon</a>. <br /><br /></div>
+<div align="justify"> We deduce whether the RNA-seq samples are strand-specific or not, and select the strand-specific samples using <a href="https://github.com/COMBINE-lab/salmon">Salmon</a>. <br /><br /></div>
 
 ```
 cd 01-Sample_processing_and_selection/cme/
