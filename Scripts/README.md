@@ -58,6 +58,7 @@ cd 01-Sample_processing_and_selection/cme/
 
 sbatch 03-Select_strand-specific_libraries.sh
 ```
+[RSEM](https://github.com/deweylab/RSEM) v.1.3.3
 
 <div align="justify"> As a summary, a table is generated with the library type information for each sample. </div>
 
@@ -73,8 +74,6 @@ cd 02-Mapping/cme/
 
 sbatch 04-Mapping.sh
 ```
-
-[RSEM](https://github.com/deweylab/RSEM) v.1.3.3
 
 <div align="justify"> The use of a different number of threads in the HISAT2 program may affect the mapping percentage. However, this variation is very small and has a negligible effect on the final assembly. As this is a pipeline under development, a change of the mapping tool is considered in the future if this problem is not solved. </div>
 
