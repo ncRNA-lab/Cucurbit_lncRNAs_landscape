@@ -29,7 +29,7 @@ sbatch 01-Download.sh
 
 ### STEP 2: Quality control RNA-seq samples
 
-<div align="justify"> All raw RNA-seq samples are trimmed using <a href="https://github.com/OpenGene/fastp">Fastp</a>. <br /><br /></div>
+<div align="justify">To get clean RNA-seq samples, we remove adapters and filter raw RNA-seq samples by quality using <a href="https://github.com/OpenGene/fastp">Fastp</a>. <br /><br /></div>
 
 ```
 cd 01-Sample_processing_and_selection/cme/
