@@ -237,7 +237,7 @@ sbatch 13.6-Create_figures_and_tables.sh
 
 ### STEP 14: Tissue-specificity analysis
 
-<div align="justify"> Tissue-specificity analysis is performed by <a href="https://apcamargo.github.io/tspex/">Tspex</a>. For more details read the paper. <br /><br /></div>
+<div align="justify"> Tissue-specificity analysis is performed by <a href="https://apcamargo.github.io/tspex/">Tspex</a> Python package. For more details read the paper. <br /><br /></div>
 
 ```
 cd 12-Tissue-specificity/cme/
@@ -249,7 +249,7 @@ sbatch 14-Tissue-specificity_analysis.sh
 
 ### STEP 15: Differential expression analysis
 
-<div align="justify"> Differential expression analysis is performed using some R packages such as DESeq2 and Tximport. For more details read the paper. <br /><br /></div>
+<div align="justify"> Differential expression analysis is performed using DESeq2 and Tximport R packages. For more details read the paper. <br /><br /></div>
 
 ```
 cd 13-DEA/cme/
