@@ -188,20 +188,29 @@ sbatch 11-Comparison_PCGs_and_lncRNAs.sh
 ```
 cd 10-Genomic_distribution/cme/
 
-sbatch 06-Transcript_annotation.sh
+sbatch 12.1-Density_distribution.sh
+sbatch 12.2-Coverage_statistics.sh
 ```
 <br />
 
 
 ### STEP 13: Comparative genomics
 
-<div align="justify"> Bam files generated in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
+<div align="justify"> Evolutionary relationships between species are analyzed at sequence level, positional level (synteny) and motif level. For more details read the paper. <br /><br /></div>
+
+**Sequence level**
 
 ```
 cd 11-Comparative_genomics/Sequence_level/
 
 sbatch 13-Sequence_level_analysis.sh
+```
 
+**Positional level**
+
+<div align="justify"> The approach used to analyze the conservation at positional level is developed and validated in <a href="https://www.tandfonline.com/doi/full/10.1080/15476286.2019.1572438">Pegueroles et al. (2019)</a>. <br /><br /></div>
+
+```
 cd 11-Comparative_genomics/Positional_level/
 
 sbatch 13.1-LncRNA_and_PCG_ids_list.sh
@@ -209,7 +218,11 @@ sbatch 13.2-Orthologs_identification.sh
 sbatch 13.3-Find_syntenic_lncRNAs.sh
 sbatch 13.4-Classify_lncRNAs_into_families.sh
 sbatch 13.5-Create_figures_and_tables.sh
+```
 
+**Motif level**
+
+```
 cd 11-Comparative_genomics/Motif_level/
 
 sbatch 13.1-Select_lncRNAs.sh
@@ -219,31 +232,31 @@ sbatch 13.4-Motif_enrichment-GOMO.sh
 sbatch 13.5-Create_summary_tables.sh
 sbatch 13.6-Create_figures_and_tables.sh
 ```
+<br />
 
-[OrthoFinder](https://github.com/davidemms/OrthoFinder)
-
-[MEME](https://meme-suite.org/meme/)
 
 ### STEP 14: Tissue-specificity analysis
 
-<div align="justify"> Bam files generated in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
+<div align="justify"> Tissue-specificity analysis is performed by <a href="https://apcamargo.github.io/tspex/">Tspex</a>. For more details read the paper. <br /><br /></div>
 
 ```
 cd 12-Tissue-specificity/cme/
 
 sbatch 14-Tissue-specificity_analysis.sh
 ```
-[Tspex](https://apcamargo.github.io/tspex/) 
+<br />
+
 
 ### STEP 15: Differential expression analysis
 
-<div align="justify"> Bam files generated in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
+<div align="justify"> Differential expression analysis is performed using some R packages such as DESeq2 and Tximport. For more details read the paper. <br /><br /></div>
 
 ```
 cd 13-DEA/cme/
 
 sbatch 15-DEA.sh
 ```
+<br />
 
 
 ## Authors
