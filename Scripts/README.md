@@ -263,5 +263,7 @@ sbatch 15-DEA.sh
 
 * **Pascual Villalba-Bermell** - *Initial work* - [pasviber](https://github.com/pasviber) (pascual.villalba@csic.es) at [ncRNA-lab](https://github.com/ncRNA-lab).
 
-<br />
+## Citation
+
+* <div align="justify"> Villalba-Bermell P., Marquez-Molins J. and Gomez G. Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits. BioRxiv [Preprint]. January 15, 2024. Available from: https://doi.org/10.1101/2024.01.12.575433. </div>
 
