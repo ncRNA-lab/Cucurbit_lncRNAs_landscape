@@ -152,6 +152,7 @@ cd 07-Get_intergenic_regions/cme/
 
 sbatch 09-Random_intergenic_regions.sh
 ```
+<br />
 
 
 ### STEP 10: Search for TEs and genomic repeats
@@ -165,6 +166,7 @@ sbatch 10.1-RepeatModeler.sh
 sbatch 10.2-RepeatMasker.sh
 sbatch 10.3-Intersection_with_PCGs_LncRNAs_and_IR.sh
 ```
+<br />
 
 
 ### STEP 11: Molecular properties comparison
@@ -176,6 +178,7 @@ cd 09-Comparison_PCGs_and_lncRNAs/cme/
 
 sbatch 11-Comparison_PCGs_and_lncRNAs.sh
 ```
+<br />
 
 
 ### STEP 12: Genomic distribution
@@ -187,6 +190,7 @@ cd 10-Genomic_distribution/cme/
 
 sbatch 06-Transcript_annotation.sh
 ```
+<br />
 
 
 ### STEP 13: Comparative genomics
