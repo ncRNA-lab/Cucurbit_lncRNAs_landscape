@@ -1,126 +1,269 @@
-# Usage
+## Usage
 
-## STEP 0: Select RNA-seq samples
+<br />
+
+### STEP 0: Select RNA-seq samples
 
 <div align="justify"> We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the <a href="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/">E-utilities</a>. <br /><br /></div>
 
 ```
 cd 01-Sample_processing_and_selection/cme/
+
 sbatch 00-Samples.sh
 ```
 
-<div align="justify"> <br />As a result, we obtain a list of RNA-seq sample accessions and a metadata table with all the information by RNA-seq sample accession. </div>
-
-## STEP 1: Download RNA-seq samples
-
-## STEP 2: Quality control RNA-seq samples
-
-## STEP 3: Select strand-specific RNA-seq samples
-
-## STEP 4: Mapping
-
-## STEP 5: Assembly
-
-## STEP 6: Transcript annotation
-
-## STEP 7: LncRNA prediction
-
-## STEP 8: Quantification
-
-## STEP 9: Get random intergenic regions
-
-## STEP 10: Molecular properties comparison
-
-## STEP 11: Genomic distribution
-
-## STEP 12: Comparative genomics
-
-## STEP 13: Tissue-specificity analysis
-
-## STEP 14: Differential expression analysis
-
-
-<div align="justify"> <br />All RNA-seq samples from Sequence Read Archive database and from a particular species are collected (SW: SRA Toolkit). Next, we remove adapters and filter the reads by quality (SW: Fastp). Then, we deduce whether the library is strand-specific or not, and select the strand-specific samples (SW: Salmon).<br /><br />Once the data have been preprocessed, we map the clean data to the reference genome (SW: Hisat2) and assemble the transcriptome using a genome-guided assembly approach (SW: Stringtie2). Finally, we classify the assembled transcripts by their genomic position relative to the protein-coding genes (SW: Gffcompare). As a result, a class code is assigned to each transcript.</div><br />
-
-- <div align="justify"> <b>LncRNA prediction</b><br /><br />We select transcripts that have any of the following five class codes: “u” (intergenic), “x” (antisense), “i” (intronic) and, “o” (sense) or “e” (sense). Next, transcripts are filtered by length (longer than 200 nucleotides) and expression level (more than 0.3 FPKM).<br /><br />Then, we assess the coding potential of each transcript using three alignment-free computational tools (SW: CPC2, FEELnc and CPAT) and two protein databases (Swissprot and Pfam). In the following step, we classify the transcripts into three confidence-levels (High-, medium- and low-confidence) according to the results of the previous step. After that, we annotate transcripts using different ncRNAs databases and those annotated as miRNA precursors (miRBAse and PmiREN) or housekeeping ncRNAs (RNAcentral) are discarded. We also annotate transcripts using databases of known potential lncRNAs in order to provide additional information (CANTATAdb, PLncDB, GreeNC). The program used to align the transcripts to the different ncRNAs databases is blastn. In the case of miRNA precursors, the MIReNA program is also used to validate them. </b><br /><br />Finally, we discard redundant transcripts (SW: CGAT) and create the database that will contain all potential lncRNAs. In addition, the different classes of potential lncRNAs will be renamed from intergenic, antisense, intronic and sense to lincRNA, NAT-lncRNA, int-lncRNA and SOT-lncRNA, respectively.</div><br />
-
-- <div align="justify"> <b>Downstream analysis</b> </div><br />Now, there are some downstream analyses that we can perform:<br /><br />
- 
-    + Molecular properties comparison.<br />
-    + Comparative genomics.</b>
-    + Tissue-specificity analysis.<br />
-    + Differential expression analysis (development and environment).<br />
-
-<br />
-<br />
-
-
-<div align="justify"> This pipeline has been configured to be executed in a HPC cluster environment using the open-source workload manager Slurm. So, it was executed in <a href="https://garnatxadoc.uv.es/">Garnatxa HPC Cluster</a> located at Data Center of the Institute for Integrative Systems Biology (<a href="https://www.uv.es/institute-integrative-systems-biology-i2sysbio/en/institute-integrative-systems-biology-i-sysbio.html">I2SysBio</a>). All the scripts that compose the pipeline are stored in <a href="Scripts">Scripts</a>. As the scripts for each species are the same, only the scripts for cucumis melo (cme) have been uploaded. </div>
+<div align="justify"> As a result, we obtain a list of RNA-seq sample accessions and a metadata table with all the information by RNA-seq sample accession.</div>
 
 <br />
 
-<div align="justify">Initially, this pipeline was designed for cucurbit species, but it could be adapted to other species. </div>
+
+### STEP 1: Download RNA-seq samples
+
+<div align="justify"> All raw RNA-seq samples are downloaded from Sequence Read Archive database (SRA) using <a href="https://github.com/ncbi/sra-tools">SRA Toolkit</a>. <br /><br /></div>
+
+```
+cd 01-Sample_processing_and_selection/cme/
+
+sbatch 01-Download.sh
+```
+
+<div align="justify"> <a href="https://github.com/s-andrews/FastQC">FastQC</a> and <a href="https://github.com/MultiQC/MultiQC">Multiqc</a> are used to provide some quality control checks on raw sequence data.</div>
 
 <br />
 
-<div align="justify"> For more information you can read the paper <b>"Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits"</b>. </div>
+
+### STEP 2: Quality control RNA-seq samples
+
+<div align="justify">To get clean RNA-seq samples, we remove adapters and filter raw RNA-seq samples by quality using <a href="https://github.com/OpenGene/fastp">Fastp</a>. <br /><br /></div>
+
+```
+cd 01-Sample_processing_and_selection/cme/
+
+sbatch 02-Trimming.sh
+```
+
+<div align="justify"> To eliminate possible adapters, fasta files containing adapters from the <a href="https://github.com/usadellab/Trimmomatic/tree/main/adapters">Trimmomatic</a> program are used, but other fasta files can be used. It is even possible to gather all adapters in the same file and use a single fasta file. </div>
+
+<div align="justify"> <br /><a href="https://github.com/s-andrews/FastQC">FastQC</a> and <a href="https://github.com/MultiQC/MultiQC">Multiqc</a> are used to provide some quality control checks on clean sequence data.</div>
+
+<div align="justify"> <br />As a summary, a table is generated with the number of reads for each sample. </div>
 
 <br />
 
-## Software
 
-- [E-utilities](https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/)
-- [SRA Toolkit](https://github.com/ncbi/sra-tools) v.2.11.2
-- [FastQC](https://github.com/s-andrews/FastQC) v.0.11.9
-- [Multiqc](https://github.com/MultiQC/MultiQC) v.1.11
-- [Fastp](https://github.com/OpenGene/fastp) v.0.23.2
-- [RSEM](https://github.com/deweylab/RSEM) v.1.3.3
-- [Salmon](https://github.com/COMBINE-lab/salmon) v.1.6.0
-- [HISAT2](https://github.com/DaehwanKimLab/hisat2) v2.2.1
-- [StringTie2](https://github.com/gpertea/stringtie) v2.2.0
-- [GffCompare](https://github.com/gpertea/gffcompare) v.0.12.6
-- [CPC2](https://github.com/gao-lab/CPC2_standalone) v.1.0.1
-- [FEELnc](https://github.com/tderrien/FEELnc) v.0.2
-- [CPAT](https://cpat.readthedocs.io/en/latest/) v.3.0.2
-- [DIAMOND](https://github.com/bbuchfink/diamond) v.2.0.14
-- [Transdecoder](https://github.com/TransDecoder/TransDecoder) v.5.5.0
-- [HMMER](https://github.com/EddyRivasLab/hmmer) v.2.0.14
-- [NCBI-BLAST](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/) v.2.13.0+
-- [MIReNA](https://www.lcqb.upmc.fr/mirena/index.html) v.2.0
-- [CGAT](https://cgat.readthedocs.io/en/latest/cgat.html) v.1.0
-- [Bedtools](https://bedtools.readthedocs.io/en/latest/) v.2.27.1
-- [RepeatModeler](https://www.repeatmasker.org/RepeatModeler/) v.2.0.3
-- [RepeatMasker](https://www.repeatmasker.org/RepeatMasker/) v.4.1.3-p1
-- [OrthoFinder](https://github.com/davidemms/OrthoFinder) v.2.5.4
-- [MEME](https://meme-suite.org/meme/) v.5.5.1
-- [Tspex](https://apcamargo.github.io/tspex/) (tissue-specificity calculator tool)
+### STEP 3: Select strand-specific RNA-seq samples
+
+<div align="justify"> We deduce whether the RNA-seq samples are strand-specific or not, and select the strand-specific samples using <a href="https://github.com/COMBINE-lab/salmon">Salmon</a>. As Salmon requires the transcriptome file (FASTA) to pseudomap reads, we use <a href="https://github.com/deweylab/RSEM">RSEM</a> to extract this information from the annotation file (GTF) and the genome file (FASTA). <br /><br /></div>
+
+```
+cd 01-Sample_processing_and_selection/cme/
+
+sbatch 03-Select_strand-specific_libraries.sh
+```
+
+<div align="justify"> As a summary, a table is generated with the library type information for each sample. </div>
 
 <br />
 
-**R packages:**
 
-<div align="justify"> circlize, colorspace, ComplexHeatmap, data.table, DESeq2, dplyr, GenomicFeatures, ggbreak, ggExtra, ggplot2, ggpubr, ggradar, ggridges, ggtext, ggvenn, grid, htmltools, limma, palmerpenguins, pheatmap, plotly, png, pRoloc, ragg, RColorBrewer, rtracklayer, scales, stringr, tibble, tidyr, tximport and UpSetR. </div>
+### STEP 4: Mapping
+
+<div align="justify"> We map the clean data to the reference genome. To this end, we use <a href="https://github.com/DaehwanKimLab/hisat2">HISAT2</a>. In addition, we also use <a href="https://github.com/biod/sambamba">Sambamba</a> to convert the sam file to bam file and sort it. <br /><br /></div>
+
+```
+cd 02-Mapping/cme/
+
+sbatch 04-Mapping.sh
+```
+
+<div align="justify"> The use of a different number of threads in the HISAT2 program may affect the mapping percentage. However, this variation is very small and has an insignificant effect on the final assembly. As this is a pipeline under development, a change of the mapping tool is considered in the future if this problem is not solved. </div>
+
+<br />
+
+
+### STEP 5: Assembly
+
+<div align="justify"> Bam files generated and sorted in the previous step are assembled using <a href="https://github.com/gpertea/stringtie">StringTie2</a>. <br /><br /></div>
+
+```
+cd 03-Assembly/cme/
+
+sbatch 05-Assembly.sh
+```
+
+<div align="justify"> <br />As a result, an assembly file (GTF) is generated by specie. </div>
 
 <br />
 
-## Databases
 
-- [Swissprot](https://www.uniprot.org/help/downloads)
-- [Pfam](https://www.ebi.ac.uk/interpro/download/pfam/)
-- [RNAcentral](https://rnacentral.org/)
-- [miRBase](https://mirbase.org/)
-- [PmiREN](https://www.pmiren.com/)
-- [CANTATAdb](http://cantata.amu.edu.pl/)
-- [PLncDB](https://www.tobaccodb.org/plncdb/)
-- [GreeNC](http://greenc.sequentiabiotech.com/wiki2/Main_Page)
+### STEP 6: Transcript annotation
+
+<div align="justify"> Assembled transcripts are classified by their genomic position relative to the protein-coding genes (PCGs) using <a href="https://github.com/gpertea/gffcompare">GffCompare</a>. <br /><br /></div>
+
+```
+cd 04-Transcript_annotation/cme/
+
+sbatch 06-Transcript_annotation.sh
+```
+
+<div align="justify"> As a result, a class code is assigned to each transcript. </div>
 
 <br />
+
+
+### STEP 7: LncRNA prediction
+
+<div align="justify"> Assembled and positionally annotated transcripts (GTF) are used to predict potential lncRNAs using several programs and databases (more details in the paper). <br /><br /></div>
+
+```
+cd 05-LncRNAs_prediction/cme/
+
+sbatch 07-LncRNAs_prediction.sh
+```
+
+<div align="justify"> As a result, we obtain a potential lncRNA database by species in FASTA, GTF and TSV format. </div>
+
+<br />
+
+
+### STEP 8: Quantification
+
+<div align="justify"> We quantify the potential lncRNAs, PCGs and both (lncRNAs and PCGs) using <a href="https://github.com/COMBINE-lab/salmon">Salmon</a>. As Salmon requires the transcriptome file (FASTA) to quantify the transcripts, we use <a href="https://github.com/deweylab/RSEM">RSEM</a> to extract this information from the annotation file (GTF) and the genome file (FASTA). Three different transcriptomic references are used: lncRNAs only, PCGs only and both joined. <br /><br /></div>
+
+```
+cd 06-Quantification/cme/
+
+sbatch 08-Quantification_LncRNAs.sh
+sbatch 08-Quantification_Genes.sh
+sbatch 08-Quantification_ALL.sh
+```
+
+<div align="justify"> As a result, a TPM table is generated. </div>
+
+<br />
+
+
+### STEP 9: Get random intergenic regions
+
+<div align="justify"> We generate a third category of sequences corresponding to random intergenic genome regions of 500 nucleotides that don’t match any of the other two categories (Potential lncRNAs and PCGs) using <a href="https://bedtools.readthedocs.io/en/latest/">Bedtools</a>. <br /><br /></div>
+
+```
+cd 07-Get_intergenic_regions/cme/
+
+sbatch 09-Random_intergenic_regions.sh
+```
+<br />
+
+
+### STEP 10: Search for TEs and genomic repeats
+
+<div align="justify"> We use the <a href="https://www.repeatmasker.org/RepeatModeler/">RepeatModeler</a> and <a href="https://www.repeatmasker.org/RepeatMasker/">RepeatMasker</a> programs to obtain the repeat content data that can be found in potential lncRNAs, PCGs and random intergenic regions. <br /><br /></div>
+
+```
+cd 08-TEs_and_genomic_repeats/cme/
+
+sbatch 10.1-RepeatModeler.sh
+sbatch 10.2-RepeatMasker.sh
+sbatch 10.3-Intersection_with_PCGs_LncRNAs_and_IR.sh
+```
+<br />
+
+
+### STEP 11: Molecular properties comparison
+
+<div align="justify"> A common downstream analysis is to compare basic features that differentiate lncRNAs from PCGs such as GC content, number of exons, length, expression level and repeat content. Therefore, we generate a table and some figures with all this information. <br /><br /></div>
+
+```
+cd 09-Comparison_PCGs_and_lncRNAs/cme/
+
+sbatch 11-Comparison_PCGs_and_lncRNAs.sh
+```
+<br />
+
+
+### STEP 12: Genomic distribution
+
+<div align="justify"> The genomic distribution of potential lncRNAs and PCGs is analyzed using <a href="https://bedtools.readthedocs.io/en/latest/">Bedtools</a> and the circlize R package. <br /><br /></div>
+
+```
+cd 10-Genomic_distribution/cme/
+
+sbatch 12.1-Density_distribution.sh
+sbatch 12.2-Coverage_statistics.sh
+```
+<br />
+
+
+### STEP 13: Comparative genomics
+
+<div align="justify"> Evolutionary relationships between species are analyzed at sequence level, positional level (synteny) and motif level. For more details read the paper. <br /><br /></div>
+
+**Sequence level**
+
+```
+cd 11-Comparative_genomics/Sequence_level/
+
+sbatch 13-Sequence_level_analysis.sh
+```
+
+**Positional level**
+
+<div align="justify"> The approach used to analyze the conservation at positional level is developed and validated in <a href="https://www.tandfonline.com/doi/full/10.1080/15476286.2019.1572438">Pegueroles et al. (2019)</a>. <br /><br /></div>
+
+```
+cd 11-Comparative_genomics/Positional_level/
+
+sbatch 13.1-LncRNA_and_PCG_ids_list.sh
+sbatch 13.2-Orthologs_identification.sh
+sbatch 13.3-Find_syntenic_lncRNAs.sh
+sbatch 13.4-Classify_lncRNAs_into_families.sh
+sbatch 13.5-Create_figures_and_tables.sh
+```
+
+**Motif level**
+
+```
+cd 11-Comparative_genomics/Motif_level/
+
+sbatch 13.1-Select_lncRNAs.sh
+sbatch 13.2-Prepare_positional_conserved_family_files.sh
+sbatch 13.3-Motif_finder-MEME.sh
+sbatch 13.4-Motif_enrichment-GOMO.sh
+sbatch 13.5-Create_summary_tables.sh
+sbatch 13.6-Create_figures_and_tables.sh
+```
+<br />
+
+
+### STEP 14: Tissue-specificity analysis
+
+<div align="justify"> Tissue-specificity analysis is performed by <a href="https://apcamargo.github.io/tspex/">Tspex</a> Python package. For more details read the paper. <br /><br /></div>
+
+```
+cd 12-Tissue-specificity/cme/
+
+sbatch 14-Tissue-specificity_analysis.sh
+```
+<br />
+
+
+### STEP 15: Differential expression analysis
+
+<div align="justify"> Differential expression analysis is performed using DESeq2 and Tximport R packages. For more details read the paper. <br /><br /></div>
+
+```
+cd 13-DEA/cme/
+
+sbatch 15-DEA.sh
+```
+<br />
+
 
 ## Authors
 
 * **Pascual Villalba-Bermell** - *Initial work* - [pasviber](https://github.com/pasviber) (pascual.villalba@csic.es) at [ncRNA-lab](https://github.com/ncRNA-lab).
 
-<br />
+## Citation
 
-
+* <div align="justify"> Villalba-Bermell P., Marquez-Molins J. and Gomez G. Identification, characterization and transcriptional analysis of long non-coding RNAs in Cucurbits. BioRxiv [Preprint]. January 15, 2024. Available from: https://doi.org/10.1101/2024.01.12.575433. </div>
 
