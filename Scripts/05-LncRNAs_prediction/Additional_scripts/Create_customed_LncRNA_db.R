@@ -5,6 +5,8 @@
 # Create a lncRNA database using the information obtained in the lncRNA prediction
 # pipeline.
 #
+# @author: pasviber - Pascual Villalba Bermell
+#
 ################################################################################
 
 rm(list = ls())
@@ -40,9 +42,9 @@ if (length(args) < 4) {
 }
 
 # specie = "cme"
-# WD = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/cme"
-# AI = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Additional_info"
-# SP = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Scripts/Pascual/05-predict_lncRNAs/Softwares_prediction"
+# WD = "storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme"
+# AI = "storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
+# SP = "storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/05-LncRNAs_prediction/Softwares_prediction"
 
 
 

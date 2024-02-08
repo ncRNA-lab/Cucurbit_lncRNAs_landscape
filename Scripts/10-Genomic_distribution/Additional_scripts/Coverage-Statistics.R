@@ -2,6 +2,10 @@
 #
 # FIGURES AND TABLES: COVERAGE GENOME
 #
+# Create the figures and tables.
+#
+# @author: pasviber - Pascual Villalba Bermell
+#
 ################################################################################
 
 rm(list = ls())
@@ -10,11 +14,11 @@ rm(list = ls())
 
 ## 0. INSTALL AND LOAD LIBRARIES
 
-suppressMessages(library("ggplot2"))
-suppressMessages(library("ggpubr"))
-suppressMessages(library("dplyr"))
-suppressMessages(library("scales"))
-suppressMessages(library("tibble"))
+suppressMessages(library(ggplot2))
+suppressMessages(library(ggpubr))
+suppressMessages(library(dplyr))
+suppressMessages(library(scales))
+suppressMessages(library(tibble))
 
 
 
@@ -32,11 +36,11 @@ if (length(args) < 5) {
   confidences = unlist(strsplit(args[5], " "))
 }
 
-# spes = "vvi"
-# spel = "V. vinifera"
-# WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Genomic_distribution/vvi/nr"
+# spes = "cme"
+# spel = "C. melo"
+# WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/10-Genomic_distribution/cme/Cov/nr"
 # AI = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-
+# confidences = c("High", "Medium, "Low")
 
 
 

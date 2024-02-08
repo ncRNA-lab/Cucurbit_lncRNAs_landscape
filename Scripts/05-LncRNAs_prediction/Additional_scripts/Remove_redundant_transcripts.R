@@ -2,13 +2,12 @@
 #
 # CREATE THE NON-REDUNDANT LNCRNA DATABASE
 #
-# Create a non-redundant lncRNA database by redundancy analysis.
+# Create a non-redundant lncRNA database using the results from the redundancy 
+# analysis.
+#
+# @author: pasviber - Pascual Villalba Bermell
 #
 ################################################################################
-
-
-## EXECUTION IN COMMAND LINE:
-#EXAMPLE --> Remove_redundant_transcripts.R $WD2
 
 rm(list = ls())
 
@@ -38,7 +37,7 @@ if (length(args) < 1) {
   WD = args[1]
 }
 
-#WD = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/car"
+# WD = "storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme"
 
 
 
@@ -204,5 +203,4 @@ gg = ggplot(Tab_FINAL, aes(x = Class_code, y = sum.Counts, fill = Class_code)) +
 ggsave(paste0(WD, "/STEP-FINAL/Redundancy_analysis/Figures/Bar_Plot_NR_LncRNA_Classification.png"), height = 7, width = 8, dpi = 600)
 
 rm(list = c("x", "Tab", "Tab_FINAL", "gg"))
-
 

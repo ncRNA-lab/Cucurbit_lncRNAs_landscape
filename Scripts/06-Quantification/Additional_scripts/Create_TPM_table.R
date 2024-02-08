@@ -1,14 +1,17 @@
 ################################################################################
 #
-# CREATE TPM TABLE TO TRANSCRIPT-LEVEL
+# CREATE TPM TABLE (TRANSCRIPT-LEVEL)
 #
 # Load the quantification files coming from salmon and create a TPM table to
 # transcript-level.
 #
+# @author: pasviber - Pascual Villalba Bermell
+#
 ################################################################################
 
-
 rm(list = ls())
+
+
 
 ## 0. INSTALL AND LOAD LIBRARIES
 
@@ -32,10 +35,10 @@ if (length(args) < 4) {
   samples_file = args[4]
 }
 
-# WD = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae//Results/06-quantification/car/Salmon/ALL"
-# quants = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/06-quantification/car/Salmon/ALL/03-Quant"
-# gtf = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae//Results/05-predict_lncRNAs/car/STEP-FINAL/Files/Joined/ALL/ALL.gtf"
-# samples_file = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Additional_info/sra-info/accession_list/GARNATXA/accession_list/car-SRR_Acc_List-Filter_2.txt"
+# WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification/cme/ALL/nr"
+# quants = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification/cme/ALL/nr/03-Quant"
+# gtf = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP-FINAL/Files/ALL/nr/ALL.gtf"
+# samples_file = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info/sra-info/accession_list/cme-SRR_Acc_List-Filter_2.txt"
 
 if (!dir.exists(paste0(WD, "/04-Table"))){
   dir.create(paste0(WD, "/04-Table"))

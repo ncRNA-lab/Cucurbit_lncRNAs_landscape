@@ -1,10 +1,14 @@
 ################################################################################
 #
-# Percentage of nucleotides by transcript coming from some kind of transposon or 
-# repetitive element that can be found in the genome of each specie. We take always 
-# into account the class code of each transcript.
+# STEP 1: CREATE INITIAL TABLES
 #
-# STEP 1
+# This script creates two tables which show the number of bases in each category 
+# (LncRNAs, PCGs and IR) that overlap with any type of repetitive element (Table 1) 
+# or only transposons (Table 2). There will be sequences that will not overlap 
+# with anything and others that may overlap with several different repetitive 
+# elements.
+#
+# @author: pasviber - Pascual Villalba Bermell
 #
 ################################################################################
 
@@ -35,17 +39,10 @@ if (length(args) < 6) {
   confidence = args[6]
 }
 
-# spes = "vvi"
-# path_res = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi/02-Comparison_PCGs_LncRNAs"
-# path_RepMask = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi/01-Repeat_calling/02-RepeatMasker"
-# path_pred = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/05-LncRNAs_prediction/vvi"
-# flag = "nr"
-# confidence = "High"
-
-# spes = "vvi"
-# path_res = "/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi/02-Comparison_PCGs_LncRNAs"
-# path_RepMask = "/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi/01-Repeat_calling/02-RepeatMasker"
-# path_pred = "/storage/ncRNA/Projects/lncRNAs/Vitis_Tom/Results/05-LncRNAs_prediction/vvi"
+# spes = "cme"
+# path_res = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/08-TEs_and_genomic_repeats/cme/02-Intersection"
+# path_RepMask = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/08-TEs_and_genomic_repeats/cme/01-Repeat_calling/02-RepeatMasker"
+# path_pred = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme"
 # flag = "nr"
 # confidence = "High"
 
@@ -150,7 +147,7 @@ TAB2 = TAB2[order(TAB2$Class_code),]
 TAB1$"Spe" = spes
 TAB2$"Spe" = spes
 
-### Order columns
+### Order columns.
 TAB1 = TAB1[,c("Spe", "Class_code", "Chr", "Strand", "ID_transcript", "Start", "End", "Repeat_id", "Start_rep", 
                "End_rep",  "Repeat_type_1", "Repeat_type_2", "Repeat_type_2_mod", "Overlap")]
 TAB2 = TAB2[,c("Spe", "Class_code", "Chr", "Strand", "ID_transcript", "Start", "End", "Repeat_id", "Start_rep", 

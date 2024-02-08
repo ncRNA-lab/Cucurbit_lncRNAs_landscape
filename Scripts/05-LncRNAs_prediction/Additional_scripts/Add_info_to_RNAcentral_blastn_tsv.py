@@ -6,7 +6,7 @@
 
 The sseqid column contained in the TSV file indicates the id of the RNAcentral's 
 nucleotide sequence, but this is only an ID. Then, this script adds info to know 
-whats is this ID using the headers of the RNAcentral database fasta file which 
+what is this ID using the headers of the RNAcentral database fasta file which 
 can be downloaded from https://rnacentral.org/. If the fasta file has not more 
 info than the ID, this script will be useless.
 
@@ -17,7 +17,7 @@ Created on Fri Jun 08 13:30:00 2022
 Last Modified:
     - Fri Jun 08 13:30:00 2022 --> Initial code.
 
-@author: pvbermell - Pascual Villalba Bermell
+@author: pasviber - Pascual Villalba Bermell
 
 """
 
@@ -132,11 +132,12 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Add_info_to_RNAcentral_blastn_tsv.py 
-    #--tsv-initial /mnt/doctorado/.../....tsv
-    #--fasta_db /mnt/doctorado/.../....fasta
-    #--tsv-final /mnt/doctorado/.../....tsv 
+    # tsv1 =  "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP5/RNAcentral/output_blastn_temp.tsv"
+    # fasta = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info/RNAcentral/ALL/cucurbitaceae_RNAcentral.fasta"
+    # tsv2 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP5/RNAcentral/output_blastn.tsv"
     
+    
+    ### PIPELINE
     ## Get the information 1.
     records = TSVtoLIST (tsv1)
     

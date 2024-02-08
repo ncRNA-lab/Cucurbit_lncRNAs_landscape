@@ -5,7 +5,7 @@
 - ADD INFO TO TSV FILE COMING FROM SWISSPROT BLASTX (DIAMOND).
 
 The sseqid column contained in the TSV file indicates the id of the swissprot's 
-protein, but this is only an ID. Then, this script adds info to know whats is 
+protein, but this is only an ID. Then, this script adds info to know what is 
 this ID using the headers of the swissprot database fasta file which can be 
 downloaded from https://www.uniprot.org/uniprot/?query=reviewed:yes. If the fasta 
 file has not more info than the ID, this script will be useless.
@@ -17,7 +17,7 @@ Created on Fri Jun 08 10:45:00 2022
 Last Modified:
     - Fri Jun 08 10:45:00 2022 --> Initial code.
 
-@author: pvbermell - Pascual Villalba Bermell
+@author: pasviber - Pascual Villalba Bermell
 
 """
 
@@ -132,11 +132,12 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Add_info_to_Swissprot_blastx_tsv.py 
-    #--tsv-initial /mnt/doctorado/.../....tsv
-    #--fasta-db /mnt/doctorado/.../....fasta
-    #--tsv-final /mnt/doctorado/.../....tsv 
+    # tsv1 =  "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP3/SwissProt/diamond_output_temp.tsv"
+    # fasta = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info/Swissprot/uniprot_sprot.fasta"
+    # tsv2 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP3/SwissProt/diamond_output.tsv"
     
+    
+    ### PIPELINE
     ## Get the information 1.
     records = TSVtoLIST (tsv1)
     

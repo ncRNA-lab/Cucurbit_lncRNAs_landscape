@@ -20,7 +20,7 @@ Last Modified:
     - Sun May 29 13:05:00 2022 --> Add arguments command line.
     - Sat Jun 11 17:25:00 2022 --> Merge the two scripts.
 
-@author: pvbermell - Pascual Villalba Bermell
+@author: pasviber - Pascual Villalba Bermell
 
 """
 
@@ -372,24 +372,15 @@ def main():
         parser.print_help()
         sys.exit()
     
+    # gtf = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP1/Original_genes/ORIGINAL_GENES.gtf"
+    # gff3 = None
+    # fasta = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP1/Original_genes/ORIGINAL_GENES.fasta"
+    # tab = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP1/Original_genes/ORIGINAL_GENES.tsv"
+    # mode = "original"
+    # sep = "\t"
     
-    # python3 ./GFF3orGTF2TABLE.py 
-    #--gtf /mnt/doctorado/.../....gtf
-    #--gff3 /mnt/doctorado/.../....gff3
-    #--fasta /mnt/doctorado/.../....fasta
-    #--tab /mnt/doctorado/.../....tsv
-    #--mode 'original'
-    #--sep $'\t'
     
-    """
-    gtf = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/mch/STEP1/Original_genes_OLD/ORIGINAL_GENES.gtf"
-    gff3 = None
-    fasta = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/mch/STEP1/Original_genes_OLD/ORIGINAL_GENES.fasta"
-    tab = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/mch/STEP1/Original_genes_OLD/ORIGINAL_GENES.tsv"
-    mode = "original"
-    sep = "\t"
-    """
-    
+    ### PIPELINE
     ## Get the information from annotation file.
     if gtf != None:
         if gtf.endswith("gtf"):

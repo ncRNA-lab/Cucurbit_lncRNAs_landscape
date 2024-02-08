@@ -1,7 +1,15 @@
 ################################################################################
-# GENOME-WIDE LNCRNAS AND PCG DISTRIBUTION
-# Create circos plots about the genome-wide lncRNAs and genes distribution
+#
+# GENOME-WIDE LNCRNA AND PCG DISTRIBUTION
+#
+# Create circos plots about the genome-wide lncRNA and PCG distribution.
+#
+# @author: pasviber - Pascual Villalba Bermell
+#
 ################################################################################
+
+rm(list = ls())
+
 
 
 ## 0. INSTALL AND LOAD LIBRARIES
@@ -31,11 +39,11 @@ if (length(args) < 5) {
   AI = args[5]
 }
 
-# spe = "vvi"
-# lncRNAs_tab="/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/05-LncRNAs_prediction/vvi/STEP-FINAL/Database/Database_LncRNAs_NR.tsv"
-# genes_tab="/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/05-LncRNAs_prediction/vvi/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv"
-# WD = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/10-Distribution/vvi/nr"
-# AI = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Additional_info"
+# spe = "cme"
+# lncRNAs_tab = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP-FINAL/Database/Database_LncRNAs_NR.tsv"
+# genes_tab = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv"
+# WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/10-Genomic_distribution/cme/Dist/nr"
+# AI = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 
 
 

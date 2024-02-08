@@ -15,7 +15,7 @@ Last Modified:
     - Fri Mar 25 17:45:00 2022 --> Initial code.
     - Sun May 29 13:50:00 2022 --> Add arguments command line.
 
-@author: pvbermell - Pascual Villalba Bermell
+@author: pasviber - Pascual Villalba Bermell
 
 """
 
@@ -125,11 +125,12 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Filter_GTF.py 
-    #--gtf-initial /mnt/doctorado/.../....gtf
-    #--gtf-final /mnt/doctorado/.../....gtf
-    #--id /mnt/doctorado/.../....txt 
+    # gtf_i = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/04-Transcript_annotation/cme/cme_merged_compared.annotated.gtf"
+    # gtf_f = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP1/Potential_lncRNAs/POTENTIAL_LNCRNAS.gtf"
+    # IDs = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP1/Potential_lncRNAs/POTENTIAL_LNCRNAS_ids.txt" 
     
+    
+    ### PIPELINE
     ## Get the information.
     Dict_gtf = GTFtoDICT (gtf_i)
     

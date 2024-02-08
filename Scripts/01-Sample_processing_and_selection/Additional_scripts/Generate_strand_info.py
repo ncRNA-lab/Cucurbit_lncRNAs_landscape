@@ -14,7 +14,7 @@ Last Modified:
     - Thu Feb 10 10:00:00 2022 --> Initial code.
     - Thu Mar 09 12:15:00 2023 --> Add argparse code.
 
-@author: pvbermell - Pascual Villalba Bermell
+@author: pasviber - Pascual Villalba Bermell
 
 """
 
@@ -64,9 +64,8 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Generate_strand_info.py
-	#--path $WD1
-	#--acc-list $Acc_list
+	# path = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/01-Sample_processing_and_selection/cme"
+	# acc_list = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info/sra-info/accession_list/cme-SRR_Acc_List-Filter_1.txt"
     
         
     ### PIPELINE

@@ -17,7 +17,7 @@ Last Modified:
     - Fri Jun 30 12:30:00 2022 --> Initial code.
     - Sun Jul 03 17:30:00 2022 --> Length of precursor.
 
-@author: pvbermell - Pascual Villalba Bermell
+@author: pasviber - Pascual Villalba Bermell
 
 """
 
@@ -215,14 +215,15 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Create_fasta_for_MIReNA.py 
-    #--blastn-mat /mnt/doctorado/.../....tsv
-    #--blastn-prec /mnt/doctorado/.../....tsv
-    #--remove-IDs /mnt/doctorado/.../....txt
-    #--fasta-initial /mnt/doctorado/.../....fasta
-    #--fasta-MIReNA /mnt/doctorado/.../....fasta
-    #--length 300
+    # tsv_mat = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP5/PmiREN/output_blastn_mat.tsv"
+    # tsv_prec = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP5/PmiREN/output_blastn_prec.tsv"
+    # remove_IDs = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP5/PmiREN/prec_ID-100-200.txt"
+    # fasta_initial = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP1/Potential_lncRNAs/POTENTIAL_LNCRNAS.fasta"
+    # fasta_MIReNA = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP5/PmiREN/MIReNA-300.fasta"
+    # length_prec = 300
     
+    
+    ### PIPELINE
     ## Get the blastn information.
     blastn_info_mat = TSVtoLIST (tsv_mat)
     blastn_info_prec = TSVtoLIST (tsv_prec)

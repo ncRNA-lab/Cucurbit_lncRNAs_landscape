@@ -1,16 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-################################################################################
-#
-# Percentage of nucleotides by transcript coming from some kind of transposon or 
-# repetitive element that can be found in the genome of each specie. We take always 
-# into account the class code of each transcript.
-#
-# STEP 2
-#
-################################################################################
+"""
+- STEP 2: CREATE FINAL TABLES (TRANSPOSON)
 
+This script creates one table showing the percentage of bases covered by only
+transposons in each category (LncRNAs, PCGs and IR) encompassing all of types pf
+transposons as a single group (Table 1). Sequences with an overlap percentage of 
+0 do not appear.
+
+---------
+
+Created on Sun Dec 25 20:00:00 2022
+
+Last Modified:
+    - Sun Dec 25 20:00:00 2022 --> Initial code.
+
+@author: pasviber - Pascual Villalba Bermell
+
+"""
 
 ## MODULES
 
@@ -62,13 +70,12 @@ except:
     parser.print_help()
     sys.exit()
 
+# WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/08-TEs_and_genomic_repeats/cme/02-Intersection/Final_tables"
+# confidence = "High"
+# flag = "NR"
 
-#WD = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi/02-Comparison_PCGs_LncRNAs/Final_tables"
-#confidence = "High"
-#flag = "NR"
 
 ## PIPELINE
-
 file = WD + "/Final_tab-Transposon-" + flag + "-" + confidence + ".tsv"
 TAB = pd.read_csv(file, sep='\t', header=0)
 class_codes = list(set(TAB["Class_code"]))

@@ -5,6 +5,8 @@
 # Create plots comparing PCGs and lncRNAs: GC content, Length, Exon number and 
 # TPM.
 #
+# @author: pasviber - Pascual Villalba Bermell
+#
 ################################################################################
 
 rm(list = ls())
@@ -41,13 +43,13 @@ if (length(args) < 7) {
   spel = args[7]
 }
 
-# pred_path = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/05-LncRNAs_prediction/vvi"
-# quant_path = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/06-Quantification/vvi"
-# IR_path = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/07-Get_intergenic_regions/vvi"
-# repeat_path = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi"
-# comp_path = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/09-Comparison_lncRNAs_vs_PCGs/vvi"
+# pred_path = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme"
+# quant_path = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification/cme"
+# IR_path = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/07-Get_intergenic_regions/cme"
+# repeat_path = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/08-TEs_and_genomic_repeats/cme"
+# comp_path = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/09-Comparison_lncRNAs_vs_PCGs/cme"
 # flag = "nr"
-# spel = "V. vinifera"
+# spel = "C. melo"
 
 
 Genes_tab = paste0(pred_path, "/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv")

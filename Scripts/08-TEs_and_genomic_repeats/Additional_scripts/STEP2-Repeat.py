@@ -1,16 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-################################################################################
-#
-# Percentage of nucleotides by transcript coming from some kind of transposon or 
-# repetitive element that can be found in the genome of each specie. We take always 
-# into account the class code of each transcript.
-#
-# STEP 2
-#
-################################################################################
+"""
+- STEP 2: CREATE FINAL TABLES (REPEAT)
 
+
+This script creates two tables showing the percentage of bases covered by 
+repetitive elements (transposons and other repeat elements) in each category 
+(LncRNAs, PCGs and IR), distinguishing between the different types of repetitive 
+elements (Table 1) or encompassing all of them as a single group (Table 2). In 
+the case of Table 2, sequences with an overlap percentage of 0 do not appear.
+
+---------
+
+Created on Sun Dec 25 16:30:00 2022
+
+Last Modified:
+    - Sun Dec 25 16:30:00 2022 --> Initial code.
+
+@author: pasviber - Pascual Villalba Bermell
+
+"""
 
 ## MODULES
 
@@ -62,13 +72,12 @@ except:
     parser.print_help()
     sys.exit()
 
+# WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/08-TEs_and_genomic_repeats/cme/02-Intersection/Final_tables"
+# confidence = "High"
+# flag = "NR"
 
-#WD = "/mnt/doctorado/3-lncRNAs/Vitis_Tom/Results/08-TEs_and_genomic_repeats/vvi/02-Comparison_PCGs_LncRNAs/Final_tables"
-#confidence = "High"
-#flag = "NR"
 
 ## PIPELINE
-
 file = WD + "/Final_tab-Repeat-" + flag + "-" + confidence + ".tsv"
 TAB = pd.read_csv(file, sep='\t', header=0)
 class_codes = list(set(TAB["Class_code"]))
