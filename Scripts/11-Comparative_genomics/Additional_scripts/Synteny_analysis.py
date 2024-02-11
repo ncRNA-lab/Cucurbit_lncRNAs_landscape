@@ -4,6 +4,9 @@
 """
 - LOOKING FOR SYNTENIC LNCRNAS
 
+This script is used to obtain lncRNAs that are positionally conserved. It is an 
+adaptation of the code used in Pegueroles et al. (2019).
+
 ---------
 
 Created on Fri Jan 27 12:00:00 2023
@@ -15,7 +18,8 @@ Last Modified:
 
 """
 
-######## MODULES
+
+# MODULES
 
 import sys
 import argparse
@@ -23,7 +27,7 @@ import pandas as pd
 import itertools
 
 
-######## FUNCTIONS
+# FUNCTIONS
 
 def RecodeList (spe, translist, orthodict, nonMatch):
     
@@ -104,7 +108,7 @@ def DictOfClusters (myidx, mylist, genesNearby):
     return mydict
     
 
-######## MAIN PROGRAM
+# MAIN PROGRAM
 def main():
     """
     Main program.
@@ -187,27 +191,15 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Synteny_analysis-Approach_2.py
-	# --path-lists /mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/01-LncRNAs_and_Genes/High/intergenic
-	# --orthotable /mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/02-Orthologs/Tables_orthologs_1_to_1/Orthotable_1_to_1_orthofinder.tsv
-	# --output /mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/03-Synteny_analysis/High/intergenic/output_synteny_table.tsv
-	# --genesNearby 3
-	# --minOverlap 3
-	# --minSideOverlap 1
-	# --nonMatch no
+    # path_lists = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/01-LncRNAs_and_Genes/High/intergenic"
+    # path_orthotable = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/02-Orthologs/Tables_orthologs_1_to_1/Orthotable_1_to_1_orthofinder.tsv"
+    # path_output = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/03-Synteny_analysis/High/intergenic/output_synteny_table_ORIGINAL_no.tsv"
+    # genesNearby = 3
+    # minOverlap = 3
+    # minSideOverlap = 1
+    # nonMatch = 'no'
     
-    """
-    path_lists = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/01-LncRNAs_and_Genes/High/intergenic"
-    path_orthotable = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/02-Orthologs/Tables_orthologs_1_to_1/Orthotable_1_to_1_orthofinder.tsv"
-    path_output = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/03-Synteny_analysis/High/intergenic/output_synteny_table.tsv"
-    genesNearby = 3
-    minOverlap = 3
-    minSideOverlap = 1
-    nonMatch = 'no'
-    """
-    
-    ##### SYNTENY ANALYSIS
-    
+    ### PIPELINE
     ## Species.
     print("\nSTEP 1: Capture the species of the folder.")
     orthotable = pd.read_csv(path_orthotable, sep = '\t', header = 0)
@@ -259,9 +251,11 @@ def main():
     output.close()
     
     
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.
     """
     main()
+

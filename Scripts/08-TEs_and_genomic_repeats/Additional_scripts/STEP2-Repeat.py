@@ -22,14 +22,16 @@ Last Modified:
 
 """
 
-## MODULES
+
+# MODULES
 
 import sys
 import argparse
 import pandas as pd
 import math
 
-## VARIABLES
+
+# VARIABLES
 
 parser = argparse.ArgumentParser(
         prog='CollapseTableRepeat V1',
@@ -77,7 +79,8 @@ except:
 # flag = "NR"
 
 
-## PIPELINE
+# PIPELINE
+
 file = WD + "/Final_tab-Repeat-" + flag + "-" + confidence + ".tsv"
 TAB = pd.read_csv(file, sep='\t', header=0)
 class_codes = list(set(TAB["Class_code"]))

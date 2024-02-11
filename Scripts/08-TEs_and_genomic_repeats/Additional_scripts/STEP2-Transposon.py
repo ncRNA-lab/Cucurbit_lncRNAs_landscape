@@ -20,14 +20,16 @@ Last Modified:
 
 """
 
-## MODULES
+
+# MODULES
 
 import sys
 import argparse
 import pandas as pd
 import math
 
-## VARIABLES
+
+# VARIABLES
 
 parser = argparse.ArgumentParser(
         prog='CollapseTableTransposon V1',
@@ -75,7 +77,8 @@ except:
 # flag = "NR"
 
 
-## PIPELINE
+# PIPELINE
+
 file = WD + "/Final_tab-Transposon-" + flag + "-" + confidence + ".tsv"
 TAB = pd.read_csv(file, sep='\t', header=0)
 class_codes = list(set(TAB["Class_code"]))
@@ -118,5 +121,4 @@ for cl in class_codes:
 column_names = ["Spe", "Class_code", "Chr", "Strand", "ID_transcript", "Start", "End", "Overlap", "Overlap_per", "Log.overlap_per"]
 TAB_filtered = pd.DataFrame(List_results, columns = column_names)
 TAB_filtered.to_csv(WD + "/Final_tab-Transposon-" + flag + "-" + confidence + "-COLLAPSED_TRANSPOSON.tsv", sep='\t', index = False, header = True)
-
 

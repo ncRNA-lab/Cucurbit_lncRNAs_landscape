@@ -3,6 +3,8 @@
 # ALL: TISSUE SPECIFICITY STUDY: STEP 4
 #
 # Draw heatmaps using lncRNAs with TAU > 0.8.
+#
+# @author: pasviber - Pascual Villalba Bermell
 # 
 ################################################################################
 
@@ -23,27 +25,17 @@ suppressMessages(options(bitmapType='cairo'))
 
 ## Create a vector with the arguments.
 args = commandArgs(trailingOnly=TRUE)
-if (length(args) < 4) {
-  stop("At least 4 arguments must be supplied.", call.=FALSE)
+if (length(args) < 3) {
+  stop("At least 3 arguments must be supplied.", call.=FALSE)
 } else {
-  path_quant = args[1]
-  path_tissue_specificity = args[2]
-  flag = args[3]
-  specie = args[4]
+  path_tissue_specificity = args[1]
+  flag = args[2]
+  specie = args[3]
 }
 
-# # Own computer
-# path_tissue_specificity = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/09-Tissue-specificity"
-# path_quant = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/06-quantification"
+# path_tissue_specificity = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/12-Tissue-specificity/cme"
 # flag = "nr"
-# specie = "cme"
-
-# # Garnatxa
-# path_tissue_specificity = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/09-Tissue-specificity"
-# path_quant = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-quantification"
-# flag = "nr"
-# species = c("car", "cla", "cma", "cme", "cmo", "cpe", "csa", "lsi", "mch")
-
+# species = "cme"
 
 ## 2. MEAN TAU - TABLES AND FIGURES
 

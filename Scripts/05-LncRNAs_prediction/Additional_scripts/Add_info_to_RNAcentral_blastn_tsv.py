@@ -21,6 +21,7 @@ Last Modified:
 
 """
 
+
 # MODULES
 
 import sys
@@ -82,6 +83,7 @@ def Write_table (tsv, records, info):
     
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -136,7 +138,6 @@ def main():
     # fasta = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info/RNAcentral/ALL/cucurbitaceae_RNAcentral.fasta"
     # tsv2 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP5/RNAcentral/output_blastn.tsv"
     
-    
     ### PIPELINE
     ## Get the information 1.
     records = TSVtoLIST (tsv1)
@@ -148,9 +149,11 @@ def main():
     Write_table (tsv2, records, info)
     
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.
     """
     main()
+

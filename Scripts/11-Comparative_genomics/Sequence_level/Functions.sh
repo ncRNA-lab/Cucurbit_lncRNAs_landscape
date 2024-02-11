@@ -87,9 +87,9 @@ task_Blastn(){
 		-outfmt 6 \
 		-evalue $7 >> $5/$6/Outputs/$3\_to\_$4\_stdout.log 2>&1
 	# Now, it's necessary to choose the best hit. First, we will choose the best hsp 
-	# found for each qseqid-sseqid alignment taking into account the e-value, pidet 
+	# found for each qseqid-sseqid alignment taking into account the e-value, pident 
 	# and length of the alignment. Then, we will choose the best hit found for each 
-	# qseqid taking into account also the e-value, pidet and length of  the alignment. 
+	# qseqid taking into account also the e-value, pident and length of the alignment. 
 	# As OrthoFinder also requires the results of the blastn of a species against 
 	# itself but we do not want any paralogues, in those cases in which the blastn 
 	# execution is done against the same species, those hits in the blastn table that 

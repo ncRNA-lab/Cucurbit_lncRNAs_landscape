@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """
-- CLASSIFY LNCRNAS INTO FAMILIES (MODIFIED).
+- CLASSIFY LNCRNAS INTO FAMILIES.
 
-This script will classify all the lncRNAs into families.
+This script will classify all the lncRNAs into families. It is an adaptation of 
+the code used in Pegueroles et al. (2019).
 
 ---------
 
@@ -17,6 +18,7 @@ Last Modified:
 @author: pvbermell - Pascual Villalba Bermell
 
 """
+
 
 # MODULES
 
@@ -219,6 +221,7 @@ def GenesBinaryTable (dictFam, species, genfile):
     
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -281,27 +284,13 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Classify_into_families.py 
-    #--pred-lncRNAs /mnt/doctorado/.../....tsv
-    #--reciprocal-hits /mnt/doctorado/.../....tsv
-    #--fam /mnt/doctorado/.../....tsv
-    #--gen /mnt/doctorado/.../....tsv
-    
-    """
-    predicted_lncRNAs_by_specie = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Blastn/nr/05-Families/High/intergenic/ids_by_specie.tsv"
-    reciprocal_hits = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Blastn/nr/04-Reciprocal_hits/High/intergenic/Reciprocal_hits.tsv"
-    fam = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Blastn/nr/05-Families/High/intergenic/fam.tsv"
-    gen = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Blastn/nr/05-Families/High/intergenic/gen.tsv"
-    num_process = 10
-    """   
-    """
-    predicted_lncRNAs_by_specie = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Synteny/nr/05-Families/PAIRWISE_SPECIES/High/intergenic/ids_by_specie.tsv"
-    reciprocal_hits = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Synteny/nr/04-LncRNAs_inside_syntenic_blocks/PAIRWISE_SPECIES/CloudHits-intergenic-High.tsv"
-    fam = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Synteny/nr/05-Families/PAIRWISE_SPECIES/High/intergenic/fam.tsv"
-    gen = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Synteny/nr/05-Families/PAIRWISE_SPECIES/High/intergenic/gen.tsv"
-    num_process = 10
-    """
-    
+    # predicted_lncRNAs_by_specie = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/04-Families/High/intergenic/ids_by_specie.tsv"
+    # reciprocal_hits = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/03-Synteny_analysis/High/intergenic/output_synteny_table_ORIGINAL_no.tsv"
+    # fam = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/04-Families/High/intergenic/fam_ORIGINAL_no.tsv"
+    # gen = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/04-Families/High/intergenic/gen_ORIGINAL_no.tsv"
+    # num_process = 10
+      
+    ### PIPELINE
     start = timeit.default_timer()
     
     ## List of species.

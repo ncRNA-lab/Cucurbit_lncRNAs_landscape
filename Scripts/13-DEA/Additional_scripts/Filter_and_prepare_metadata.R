@@ -1,4 +1,17 @@
-
+################################################################################
+#
+# FILTER AND PREPARE THE METADATA
+#
+# This script is used to filter and prepare the metadata. All tables are examined 
+# and if there are different tissues, ages, techniques, cultivars or genotypes, 
+# they are subdivided. In addition, these tables are prepared to be able to carry 
+# out all pairwise comparisons (stress vs. control and late development stage vs. 
+# early development stage). Comparisons in which a condition had less than 2 
+# replicates were discarded
+#
+# @author: pasviber - Pascual Villalba Bermell
+# 
+################################################################################
 
 
 ################################################################################
@@ -50,9 +63,9 @@ if (length(args) < 3) {
   path_quant = args[3]
 }
 
-# path_meta = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Additional_info/sra-info/metadata/Search_studies/csa/Studies"
-# path_DEA = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/16-DEA/csa"
-# path_quant = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/06-quantification/csa/Salmon/ALL/nr/03-Quant"
+# path_meta = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info/sra-info/metadata/Search_studies/cme/Studies"
+# path_DEA = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/13-DEA/cme"
+# path_quant = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification/cme/ALL/nr/03-Quant"
 
 
 
@@ -65,12 +78,10 @@ if (length(args) < 3) {
 
 ################################################################################
 ################################################################################
-####################### METADATA: EXPLORATORY ANALYSIS #########################
+####################### FILTER AND PREPARE THE METADATA ########################
 ################################################################################
 ################################################################################
 
-
-cat(paste0("METADATA: EXPLORATORY ANALYSIS..."))
 
 if (!dir.exists(paste0(path_DEA, "/01-Metadata_EA"))){
   dir.create(paste0(path_DEA, "/01-Metadata_EA"))

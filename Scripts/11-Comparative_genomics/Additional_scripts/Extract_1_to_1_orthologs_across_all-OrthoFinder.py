@@ -15,6 +15,7 @@ Last Modified:
 
 """
 
+
 # MODULES
 
 import sys
@@ -24,6 +25,7 @@ import os
 
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -63,17 +65,10 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Extract_1_to_1_orthologs_across_all-Approach_2-Orthofinder.py 
-    #--path-orthofinder /storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/02-Orthologs/Inference/Orthofinder
-    #--output /storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/02-Orthologs/Tables_orthologs_1_to_1/Orthotable_1_to_1_orthofinder.tsv
-    
-    """
-    path_OF = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/02-Orthologs/Inference/Orthofinder"
-    output = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/02-Orthologs/Tables_orthologs_1_to_1/Orthotable_1_to_1_orthofinder.tsv"
-    """
-    
-    ##### ORTHOFINDER
-    
+    # path_OF = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/02-Orthologs/Inference/Orthofinder"
+    # output = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/02-Orthologs/Tables_orthologs_1_to_1/Orthotable_1_to_1_orthofinder.tsv"
+
+    ### PIPELINE
     ## Paths.
     path_OF_genecounts = path_OF + "/All/" + os.listdir(path_OF + "/All")[0] +  "/Orthogroups/Orthogroups.GeneCount.tsv"
     path_OF_genes_assigned = path_OF + "/All/" + os.listdir(path_OF + "/All")[0] + "/Orthogroups/Orthogroups.tsv"
@@ -112,7 +107,8 @@ def main():
     orthotable.close()
     
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.

@@ -1,6 +1,11 @@
 ################################################################################
 #
-# TABLES AND FIGURES
+# MOTIF LEVEL: CREATE FIGURES AND TABLES (ADDITIONAL)
+#
+# This script is used to create some summary tables and figures of motif 
+# conservation at both the lncRNA and family level.
+#
+# @author: pasviber - Pascual Villalba Bermell
 #
 ################################################################################
 
@@ -35,9 +40,9 @@ if (length(args) < 10) {
   n_sim = as.numeric(args[10])
 }
 
-# WD_in_1 = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/nr/Positional_conserved/05-Summary")
-# WD_in_2 = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/nr/05-Figures_and_tables")
-# WD_out = paste0("/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/nr/06-Figures_and_tables")
+# WD_in_1 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Motif_level/nr/05-Summary"
+# WD_in_2 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/05-Figures_and_tables"
+# WD_out = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Motif_level/nr/06-Figures_and_tables"
 # classes = c("intergenic", "antisense", "intronic", "sense")
 # confidences = c("Low", "Medium", "High")
 # strictnesses = c("ORIGINAL")

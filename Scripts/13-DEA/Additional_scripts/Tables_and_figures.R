@@ -1,4 +1,12 @@
-
+################################################################################
+#
+# CREATE TABLES AND FIGURES
+#
+# Create different tables and figures.
+#
+# @author: pasviber - Pascual Villalba Bermell
+# 
+################################################################################
 
 
 ################################################################################
@@ -57,9 +65,9 @@ if (length(args) < 5) {
   spe = args[5]
 }
 
-# path_DEA = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/16-DEA/cme"
-# path_db_lnc = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/cme/STEP-FINAL/Database/Database_LncRNAs_NR.tsv"
-# path_db_PCG = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/cme/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv"
+# path_DEA = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/13-DEA/cme"
+# path_db_lnc = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP-FINAL/Database/Database_LncRNAs_NR.tsv"
+# path_db_PCG = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP-FINAL/Files/Genes/ORIGINAL_GENES.tsv"
 # alpha_value = 0.05
 # spe = "cme"
 
@@ -78,7 +86,6 @@ if (length(args) < 5) {
 ################################################################################
 ################################################################################
 
-cat(paste0("Figures..."))
 
 if (!dir.exists(paste0(path_DEA, "/05-Tables_and_Figures/ALL"))){
   dir.create(paste0(path_DEA, "/05-Tables_and_Figures/ALL"))

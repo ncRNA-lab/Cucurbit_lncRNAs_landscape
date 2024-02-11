@@ -11,11 +11,10 @@
 #   or more than 3 tissues.
 # - tab_experiments (TAB_experiments.tsv): SRA.Studies classified as YES (pass the 
 #   tissues filter) or NO (doesn't pass the tissues filter).
-# - tab_experiments_summary (TAB_experiments_summary.tsv): SRA.Studies classified 
-#   as YES (pass the tissues filter) or NO (doesn't pass the tissues filter) by 
-#   specie.
 # - Create an expression table (ID_transcript + Confidence + Class_code ~ Tissue)
 #   by SRA.study filtered (pass the tissues filter).
+#
+# @author: pasviber - Pascual Villalba Bermell
 # 
 ################################################################################
 
@@ -43,14 +42,12 @@ if (length(args) < 6) {
   specie = args[6]
 }
 
-
-# path_pred = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/cme"
-# path_quant = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/06-quantification/cme"
-# path_tissue_specificity = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/12-Tissue-specificity"
+# path_pred = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme"
+# path_quant = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification/cme"
+# path_tissue_specificity = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/12-Tissue-specificity/cme"
 # path_AI = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
 # flag = "nr"
 # specie = "cme"
-
 
 ## 2. CREATE TABLES
 

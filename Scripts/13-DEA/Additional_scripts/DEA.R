@@ -1,4 +1,14 @@
-
+################################################################################
+#
+# DIFFERENTIAL EXPRESSION ANALYSIS (DEA)
+#
+# Considering each of the metadata tables previously as an experiment, this script 
+# is used to perform a differential expression analysis of each experiment. These 
+# can contain different contrasts.
+#
+# @author: pasviber - Pascual Villalba Bermell
+# 
+################################################################################
 
 
 ################################################################################
@@ -51,9 +61,9 @@ if (length(args) < 4) {
   alpha_value = as.numeric(args[4])
 }
 
-# path_DEA = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/16-DEA/cla"
-# path_annot = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/cla/STEP-FINAL/Files/Joined/ALL/nr"
-# path_quant = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/06-quantification/cla/Salmon/ALL/nr/03-Quant"
+# path_DEA = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/13-DEA/cme"
+# path_annot = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP-FINAL/Files/ALL/nr"
+# path_quant = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-qQuantification/cme/ALL/nr/03-Quant"
 # alpha_value = 0.05
 
 
@@ -70,8 +80,6 @@ if (length(args) < 4) {
 ################################################################################
 ################################################################################
 
-
-cat(paste0("DEA..."))
 
 if (!dir.exists(paste0(path_DEA, "/04-DEA"))){
   dir.create(paste0(path_DEA, "/04-DEA"))

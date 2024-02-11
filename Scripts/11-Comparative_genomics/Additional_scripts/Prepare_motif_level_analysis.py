@@ -19,6 +19,7 @@ Last Modified:
 
 """
 
+
 # MODULES
 
 import sys
@@ -112,6 +113,7 @@ def CreateFastaFilesSIMULATIONS (iterations, Families_dic, LncRNAs_and_sequences
 
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -179,21 +181,13 @@ def main():
         print("ERROR: n_proc cannot be greater than n_iter.")
         sys.exit()
     
-    # python3 ./Prepare_motif_level_analysis.py 
-    #--input-table /mnt/doctorado/.../....tsv
-    #--input-fasta /mnt/doctorado/.../....fasta
-    #--path-out /mnt/doctorado/.../...
-    #--n-iter 100
-    #--n-proc 50
+    # table_in = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/04-Families/High/intergenic/gen_ORIGINAL_no.tsv"
+    # fasta_in = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/01-LncRNAs/High/intergenic/LncRNAs.fasta"
+    # path_out = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Motif_level/02-Preparation/ORIGINAL/no/High/intergenic"  
+    # n_iter = 100
+    # processes = 50
     
-    """
-    table_in = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/04-Families/High/intergenic/gen_ORIGINAL_no.tsv"
-    fasta_in = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Positional_level/Approach_2/nr/01-LncRNAs/High/intergenic/LncRNAs.fasta"
-    path_out = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/Positional_conserved/02-Preparation/ORIGINAL/no/High/intergenic"  
-    n_iter = 100
-    processes = 50
-    """
-    
+    ### PIPELINE
     ## Create a dictionary with the family IDs as key and a list with the LncRNAs 
     ## (family members) as value.
     Families_dic = FamiliesDict (table_in)
@@ -230,7 +224,8 @@ def main():
     print('\nDONE.') 
 
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.

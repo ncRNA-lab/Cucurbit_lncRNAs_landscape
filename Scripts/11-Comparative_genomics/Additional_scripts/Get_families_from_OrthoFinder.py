@@ -4,7 +4,8 @@
 """
 - GET LNCRNA FAMILIES FROM ORTHOFINDER.
 
-This script write all lncRNA families coming from OrthoFinder in the correct format.
+This script writes all lncRNA families coming from OrthoFinder in the correct 
+format.
 
 ---------
 
@@ -16,6 +17,7 @@ Last Modified:
 @author: pvbermell - Pascual Villalba Bermell
 
 """
+
 
 # MODULES
 
@@ -82,6 +84,7 @@ def GenesBinaryTable (dictFam, species, genfile):
     
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -135,23 +138,12 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Get_families_from_OrthoMCL.py 
-    #--pred-lncRNAs /mnt/doctorado/.../....tsv
-    #--orthofinder /mnt/doctorado/.../....txt
-    #--fam /mnt/doctorado/.../....tsv
-    #--gen /mnt/doctorado/.../....tsv
+    # predicted_lncRNAs_by_specie = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Sequence_level/nr/05-Families/High/intergenic/ids_by_specie.tsv"
+    # orthofinder = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Sequence_level/nr/04-OrthoFinder/High/intergenic/Clustering/Results_Dec07/Orthogroups/Orthogroups.txt"
+    # fam = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Sequence_level/nr/05-Families/High/intergenic/fam.tsv"
+    # gen = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Sequence_level/nr/05-Families/High/intergenic/gen.tsv"
     
-    """
-    predicted_lncRNAs_by_specie = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_genes/05-Families/High/intergenic/ids_by_specie.tsv"
-    orthofinder = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_genes/04-OrthoFinder/High/intergenic/Clustering/Results_Dec07/Orthogroups/Orthogroups.txt"
-    fam = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_genes/05-Families/High/intergenic/fam.tsv"
-    gen = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_genes/05-Families/High/intergenic/gen.tsv"
-    
-    predicted_lncRNAs_by_specie = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_genes/05-Families/ids_by_specie.tsv"
-    orthofinder = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_genes/04-OrthoFinder/Clustering/Results_Jan17/Orthogroups/Orthogroups.txt"
-    fam = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_genes/05-Families/fam.tsv"
-    gen = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_genes/05-Families/gen.tsv"
-    """
+    ### PIPELINE
     ## List of species.
     file_open = open(predicted_lncRNAs_by_specie, 'r')
     species = [line.strip().split("\t")[0] for line in file_open]
@@ -172,7 +164,8 @@ def main():
     GenesBinaryTable (Families_dict_all, species, gen)
     
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.

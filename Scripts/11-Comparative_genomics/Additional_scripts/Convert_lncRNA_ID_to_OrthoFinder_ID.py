@@ -4,9 +4,8 @@
 """
 - CONVERT LNCRNA IDS TO ORTHOFINDER IDS.
 
-This script converts lncRNA IDs to the OrthoFinder IDs, I mean in the correct
-format to execute OrthoFinder again.
-
+This script converts the lncRNAs IDs to OrthoFinder IDs, i.e. in the correct 
+format to run OrthoFinder again.
 ---------
 
 Created on Tue Dec 06 23:00:00 2022
@@ -18,6 +17,7 @@ Last Modified:
 
 """
 
+
 # MODULES
 
 import sys
@@ -25,6 +25,7 @@ import argparse
     
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -63,16 +64,11 @@ def main():
         print("ERROR: You have inserted a wrong parameter or you are missing a parameter.")
         parser.print_help()
         sys.exit()
+
+    # WD = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Sequence_level/nr/04-OrthoFinder/High/intergenic/Results/Results_Dec06/WorkingDirectory"
+    # comb = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Sequence_level/nr/03-Blastn/Codes_combination.txt"
     
-    # python3 ./Convert_lncRNA_ID_to_OrthoFinder_ID.py 
-    #--path /mnt/doctorado/...
-    #--comb /mnt/doctorado/.../....txt
-    
-    """
-    WD = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Blastn/nr/OrthoFinder/04-OrthoFinder/High/intergenic/Results/Results_Dec06/WorkingDirectory"
-    comb = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Blastn/nr/OrthoFinder/03-Blastn/Codes_combination.txt"
-    """
-    
+    ### PIPELINE
     ## Create the dictionary of lncRNA IDs.
     SeqIDs_file_open = open(WD + "/SequenceIDs.txt", 'r')
     IDs_dic = {}
@@ -108,7 +104,8 @@ def main():
         file_out_open.close()
     
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.

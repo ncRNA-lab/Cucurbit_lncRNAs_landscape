@@ -1,16 +1,19 @@
 ################################################################################
 #
-# FIGURES AND TABLES: COVERAGE GENOME
+# CHOOSE THE BEST X HITS FROM BLASTN TABLES
 #
-# Create the figures and tables.
+# First, we will choose the best hsp found for each qseqid-sseqid alignment taking 
+# into account the e-value, pident and length of the alignment. Then, we will choose 
+# the best hit found for each qseqid taking into account also the e-value, pident 
+# and length of the alignment. As OrthoFinder also requires the results of the 
+# blastn of a species against itself but we do not want any paralogues, in those 
+# cases in which the blastn execution is done against the same species, those hits 
+# in the blastn table that are between different lncRNAs will be removed to avoid 
+# the presence of any paralog in the results.
 #
 # @author: pasviber - Pascual Villalba Bermell
 #
 ################################################################################
-################################################################################
-# CHOOSE THE BEST X HITS FROM THE BLASTN TABLES
-################################################################################
-
 
 ## 0. INSTALL AND LOAD LIBRARIES
 
@@ -32,9 +35,9 @@ if (length(args) < 5) {
 
 # spe1 = "0"
 # spe2 = "1"
-# tab_in="/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_max_5//03-Blastn/High/ALL/Blast0_1_temp1.txt"
-# tab_out="/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Sequence_level/OrthoFinder/nr/Prueba_max_5//03-Blastn/High/ALL/Blast0_1_temp2.txt"
-# n = 5
+# tab_in="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Sequence_level/nr/03-Blastn/High/intergenic/Blast0_1_temp1.txt"
+# tab_out="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Sequence_level/nr/03-Blastn/High/intergenic/Blast0_1_temp2.txt"
+# n = 1
 
 ## 2. PIPELINE
 

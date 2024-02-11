@@ -21,6 +21,7 @@ Last Modified:
 
 """
 
+
 # MODULES
 
 import sys
@@ -141,6 +142,7 @@ def Write_fasta (Dic_fasta, path):
     
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -222,7 +224,6 @@ def main():
     # fasta_MIReNA = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP5/PmiREN/MIReNA-300.fasta"
     # length_prec = 300
     
-    
     ### PIPELINE
     ## Get the blastn information.
     blastn_info_mat = TSVtoLIST (tsv_mat)
@@ -245,9 +246,11 @@ def main():
     Write_fasta (New_dic_fasta, fasta_MIReNA)
     
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.
     """
     main()
+

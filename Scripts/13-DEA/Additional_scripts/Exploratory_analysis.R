@@ -1,4 +1,13 @@
-
+################################################################################
+#
+# EXPLORATORY ANALYSIS
+#
+# Considering each of the metadata tables previously as an experiment, this script 
+# is used to perform an exploratory analysis of the samples present in each experiment.
+#
+# @author: pasviber - Pascual Villalba Bermell
+# 
+################################################################################
 
 
 ################################################################################
@@ -50,9 +59,9 @@ if (length(args) < 3) {
   path_quant = args[3]
 }
 
-# path_DEA = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/16-DEA/csa"
-# path_annot = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/csa/STEP-FINAL/Files/Joined/ALL/nr"
-# path_quant = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/06-quantification/csa/Salmon/ALL/nr/03-Quant"
+# path_DEA = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/13-DEA/cme"
+# path_annot = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP-FINAL/Files/ALL/nr"
+# path_quant = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification/cme/ALL/nr/03-Quant"
 
 
 
@@ -69,8 +78,6 @@ if (length(args) < 3) {
 ################################################################################
 ################################################################################
 
-
-cat(paste0("EXPLORATORY ANALYSIS..."))
 
 if (!dir.exists(paste0(path_DEA, "/02-EA"))){
   dir.create(paste0(path_DEA, "/02-EA"))

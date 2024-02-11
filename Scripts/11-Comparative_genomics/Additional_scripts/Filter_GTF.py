@@ -19,6 +19,7 @@ Last Modified:
 
 """
 
+
 ## MODULES
 
 import sys
@@ -125,11 +126,11 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Filter_GTF.py 
-    #--gtf-initial /mnt/doctorado/.../....gtf
-    #--gtf-final /mnt/doctorado/.../....gtf
-    #--id /mnt/doctorado/.../....txt 
+    # gtf_i = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/01-LncRNAs_and_Genes/High/intergenic/cme_lncRNAs_temp.gtf"
+    # gtf_f = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/01-LncRNAs_and_Genes/High/intergenic/cme_lncRNAs.gtf"
+    # IDs = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/01-LncRNAs_and_Genes/High/intergenic/cme_lncRNAs_ids.txt" 
     
+    ### PIPELINE
     ## Get the information.
     Dict_gtf = GTFtoDICT (gtf_i)
     
@@ -137,9 +138,11 @@ def main():
     FilterDictGTF(Dict_gtf, IDs, gtf_f)
     
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.
     """
     main()
+

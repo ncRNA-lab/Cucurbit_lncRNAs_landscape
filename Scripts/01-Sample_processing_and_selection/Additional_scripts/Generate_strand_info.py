@@ -18,12 +18,15 @@ Last Modified:
 
 """
 
+
 # MODULES
 
 import sys
 import argparse
 
+
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -67,7 +70,6 @@ def main():
 	# path = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/01-Sample_processing_and_selection/cme"
 	# acc_list = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info/sra-info/accession_list/cme-SRR_Acc_List-Filter_1.txt"
     
-        
     ### PIPELINE
     samples = open(acc_list, "r+")
     output = open(path + "/03-Strand_detection/Filter_table/strand_info.tsv", "w")
@@ -102,7 +104,8 @@ def main():
                 output.write(sample + "\t" + mapping_rate + "\t" + strand + "\tused for transcript reconstruction\n")
 
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.

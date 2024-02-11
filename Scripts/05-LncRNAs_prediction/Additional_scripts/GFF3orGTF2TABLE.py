@@ -24,6 +24,7 @@ Last Modified:
 
 """
 
+
 # MODULES
 
 import sys
@@ -290,6 +291,7 @@ def Write_table (tab, dict_, sep, flag):
     
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -379,7 +381,6 @@ def main():
     # mode = "original"
     # sep = "\t"
     
-    
     ### PIPELINE
     ## Get the information from annotation file.
     if gtf != None:
@@ -415,9 +416,11 @@ def main():
         Write_table (tab, dict_annot, sep, flag)
     
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.
     """
     main()
+

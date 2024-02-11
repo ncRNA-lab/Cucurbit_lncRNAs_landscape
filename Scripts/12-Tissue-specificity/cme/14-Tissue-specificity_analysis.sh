@@ -59,13 +59,13 @@ for flag in $flag_list; do
 	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP1.log --quiet --exclusive Rscript $AS/01-ALL-Tissue-specificity.R $WD1_spe $WD2_spe $WD3_spe $AI $flag $specie
 
 	echo -e "\n\t-STEP 2"
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP2.log --quiet --exclusive 02-ALL-Tissue-specificity.py --path $WD3_spe --flag $flag --specie $specie
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP2.log --quiet --exclusive 02-ALL-Tissue-specificity.py --path $WD3_spe --flag $flag
 
 	echo -e "\n\t-STEP 3"
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP3.log --quiet --exclusive Rscript $AS/03-ALL-Tissue-specificity.R $WD2_spe $WD3_spe $flag $specie
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP3.log --quiet --exclusive Rscript $AS/03-ALL-Tissue-specificity.R $WD3_spe $flag $specie
 
 	echo -e "\n\t-STEP 4"
-	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP4.log --quiet --exclusive Rscript $AS/04-ALL-Tissue-specificity.R $WD2_spe $WD3_spe $flag $specie
+	srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --output $O/Outputs/stdout_TS_STEP4.log --quiet --exclusive Rscript $AS/04-ALL-Tissue-specificity.R $WD3_spe $flag $specie
 
 done
 

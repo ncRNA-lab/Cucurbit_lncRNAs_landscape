@@ -17,6 +17,7 @@ Last Modified:
 
 """
 
+
 # MODULES
 
 import sys
@@ -96,6 +97,7 @@ def CallIterations (iterations, path_meme, path_fastas, simulation_dict):
 
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -150,25 +152,18 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Generate_summary_oops_MEME_results.py
-	#--path-meme $DIR_B
-	#--path-fastas $DIR_A
-	#--path-out $DIR_C
-	#--n-proc $SLURM_CPUS_PER_TASK
+    # path_meme = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Motif_level/nr/03-MotifFinder/MEME/ORIGINAL/no/Low/intergenic/oops/6-15"
+    # path_fastas = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Motif_level/nr/02-Preparation/Low/intergenic"
+    # path_out = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Motif_level/nr/05-Summary/MEME/ORIGINAL/no/Low/intergenic/oops/6-15"  
+    # n_proc = 25
     
-    """
-    path_meme = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/nr/Positional_conserved/03-MotifFinder/MEME/ORIGINAL/no/Low/intergenic/oops/6-15"
-    path_fasta = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/nr/Positional_conserved/02-Preparation/Low/intergenic"
-    path_out = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/nr/Positional_conserved/05-Summary/MEME/ORIGINAL/no/Low/intergenic/oops/6-15"  
-    n_proc = 25
-    """
-    
-    ### MEME INFO: REAL
+    ### PIPELINE
+    ## MEME INFO: REAL
     families_list = os.listdir(path_meme + "/real")
     families_list_sorted = ["Fam" + str(idx) + "_real" for idx in sorted([int(fam.split("_")[0].replace("Fam", "")) for fam in families_list])]
     Summary_REAL_tab = GenerateSummaryDict (families_list_sorted, path_meme + "/real", path_fastas + "/real", "REAL")
     
-    ### MEME INFO: SIMULATIONS
+    ## MEME INFO: SIMULATIONS
     iterations = os.listdir(path_meme + "/simulations")
     n_iter = len(iterations)
     dist = n_iter//n_proc
@@ -200,7 +195,8 @@ def main():
     Summary_tab.to_csv(path_out + "/MEME-SUMMARY.tsv", sep = '\t', index = False, header = True)
 
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.

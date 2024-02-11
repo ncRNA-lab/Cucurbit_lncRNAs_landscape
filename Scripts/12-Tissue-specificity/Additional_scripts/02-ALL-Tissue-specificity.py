@@ -19,14 +19,18 @@ Last Modified:
 
 """
 
+
 # MODULES
+
 import os
 import tspex
 import pandas as pd
 import sys
 import argparse
 
+
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -53,13 +57,6 @@ def main():
         help="nr or r."
         )
     parser.add_argument(
-        "-S", 
-        "--specie", 
-        type=str, 
-        nargs=1,
-        help="Specie."
-        )
-    parser.add_argument(
         '--version', 
         action='version', 
         version='%(prog)s 1.0'
@@ -70,27 +67,19 @@ def main():
     try:
         path = args.path[0]
         flag = args.flag[0]
-        specie = args.specie[0]
          
     except:
         print("ERROR: You have inserted a wrong parameter or you are missing a parameter.")
         parser.print_help()
         sys.exit()
-        
-    ## Own computer.
-    #species = ["car", "cla", "cma", "cme", "cmo", "cpe", "csa", "lsi", "mch"]
-    #flag = "nr"
-    #path = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/09-Tissue-specificity/approach_1/ALL"
     
-    ### Garnatxa.
-    #species = ["car", "cla", "cma", "cme", "cmo", "cpe", "csa", "lsi", "mch"]
-    #flag = "nr"
-    #path = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/09-Tissue-specificity/approach_1/ALL"
+    # path = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/12-Tissue-specificity/cme"
+    # flag = "nr"
     
-        
+    ### PIPELINE
     ## Paths and directories
-    path_spe_in = path + "/" + flag + "/STEP1/Studies"
-    path_spe_out = path + "/" + flag + "/STEP2/Studies"
+    path_spe_in = path + "/ALL/" + flag + "/STEP1/Studies"
+    path_spe_out = path + "/ALL/" + flag + "/STEP2/Studies"
     if not os.path.exists(path_spe_out):
         os.makedirs(path_spe_out)
     
@@ -164,9 +153,12 @@ def main():
     else:
         print("\t\t\tThere is no SRA.study")
 
-# CALL THE MAIN PROGRAM.
+
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.
     """
     main()
+

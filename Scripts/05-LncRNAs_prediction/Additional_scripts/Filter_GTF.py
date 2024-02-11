@@ -19,6 +19,7 @@ Last Modified:
 
 """
 
+
 ## MODULES
 
 import sys
@@ -75,6 +76,7 @@ def FilterDictGTF (Dict_gtf, IDs, gtf_final_path):
     
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -129,7 +131,6 @@ def main():
     # gtf_f = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP1/Potential_lncRNAs/POTENTIAL_LNCRNAS.gtf"
     # IDs = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP1/Potential_lncRNAs/POTENTIAL_LNCRNAS_ids.txt" 
     
-    
     ### PIPELINE
     ## Get the information.
     Dict_gtf = GTFtoDICT (gtf_i)
@@ -138,9 +139,11 @@ def main():
     FilterDictGTF(Dict_gtf, IDs, gtf_f)
     
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.
     """
     main()
+

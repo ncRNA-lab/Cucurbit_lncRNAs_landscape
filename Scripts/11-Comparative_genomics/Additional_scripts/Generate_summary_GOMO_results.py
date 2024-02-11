@@ -17,6 +17,7 @@ Last Modified:
 
 """
 
+
 # MODULES
 
 import sys
@@ -55,6 +56,7 @@ def CallIterations (iterations, path_gomo, simulation_dict):
 
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -102,24 +104,17 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Generate_summary_GOMO_results.py
-	#--path-gomo $DIR_A
-	#--path-out $DIR_B
-    #--n-proc $SLURM_CPUS_PER_TASK
-	
+    # path_gomo = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Motif_level/nr/04-MotifEnrichment/GOMO/ORIGINAL/no/Low/intergenic/oops/6-15"
+    # path_out = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Motif_level/nr/05-Summary/GOMO/ORIGINAL/no/Low/intergenic/oops/6-15"
+    # n_proc = 25
     
-    """
-    path_gomo = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/nr/Positional_conserved/04-MotifEnrichment/GOMO/ORIGINAL/no/Low/intergenic/oops/6-15"
-    path_out = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/08-comparative_genomics/Motif_level/nr/Positional_conserved/05-Summary/GOMO/ORIGINAL/no/Low/intergenic/oops/6-15"
-    n_proc = 25
-    """
-    
-    ### GOMO INFO: REAL
+    ### PIPELINE
+    ## GOMO INFO: REAL
     families_list = os.listdir(path_gomo + "/real")
     families_list_sorted = ["Fam" + str(idx) + "_real" for idx in sorted([int(fam.split("_")[0].replace("Fam", "")) for fam in families_list])]
     Summary_REAL_tab = GenerateSummaryTable (families_list_sorted, path_gomo + "/real", "REAL")
     
-    ### GOMO INFO: SIMULATIONS
+    ## GOMO INFO: SIMULATIONS
     iterations = os.listdir(path_gomo + "/simulations")
     n_iter = len(iterations)
     dist = n_iter//n_proc
@@ -151,7 +146,8 @@ def main():
     Summary_tab.to_csv(path_out + "/GOMO-SUMMARY.tsv", sep = '\t', index = False, header = True)
 
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.

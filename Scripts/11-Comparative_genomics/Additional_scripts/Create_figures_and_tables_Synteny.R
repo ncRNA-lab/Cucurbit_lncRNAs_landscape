@@ -1,6 +1,18 @@
 ################################################################################
 #
-# FIGURES
+# POSITIONAL LEVEL: CREATE FIGURES AND TABLES
+#
+# This script is used to create some summary tables and figures of positional 
+# conservation at both the lncRNA and family level. The lncRNA families are 
+# categorized into low-medium- and high-conserved families based on the number 
+# of species present in the lncRNA family. The lncRNAs are also categorized into 
+# low- medium- and high-conserved lncRNAs depending on the number of species 
+# present in the family where they are conserved. The script is built to categorize 
+# the families and lncRNAs using the results of conservation analysis done with 
+# nine species so it should be slightly modified for a lower or higher number of 
+# species.
+#
+# @author: pasviber - Pascual Villalba Bermell
 #
 ################################################################################
 
@@ -32,17 +44,16 @@ if (length(args) < 5) {
   nonmatch = unlist(strsplit(args[7], " "))
 }
 
+# WD1 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/04-Families"
+# WD2 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/11-Comparative_genomics/Positional_level/nr/05-Figures_and_tables"
+# species = c("car", "cla", "cma", "cme", "cmo", "cpe", "csa", "lsi", "mch")
+# classes = c("intergenic", "antisense", "intronic", "sense")
+# confidences = c("High", "Medium", "Low")
+# strictness = c("ORIGINAL")
+# nonmatch = c("no")
 
 ################################################################################
 ## 2. FAMILIES: CONSERVATION PERCENTAGE TABLE
-
-# Aqui mostramos tanto una tabla como dos figuras globales con el porcentaje de familias 
-# conservadas (Number of species by family > 1) y no conservadas (Number of species by 
-# family = 1).
-
-# Se representan dos figuras teniendo en cuenta:
-#     -Fig 1: confidence level, class, specie y Number_species_by_family.
-#     -Fig 2: confidence level, class, specie y type.
 
 cat("\nFamilies: Building the conservation percentage table...\n")
 
@@ -183,15 +194,6 @@ for (s in strictness) {
 
 ################################################################################
 ## 3. LNCRNAS: CONSERVATION PERCENTAGE TABLE
-
-# Aqui mostramos tanto una tabla como dos figuras globales con el porcentaje de lncRNAs 
-# conservados (Number of species by family > 1, de la familia donde se encuentra el
-# lncRNA) y no conservados (Number of species by family = 1, de la familia donde se 
-# encuentra el lncRNA).
-
-# Se representan dos figuras teniendo en cuenta:
-#     -Fig 1: confidence level, class, specie y Number_species_by_family.
-#     -Fig 2: confidence level, class, specie y type.
 
 cat("\nLncRNAs: Building the conservation percentage table...\n")
 
