@@ -31,7 +31,7 @@
 
 | <sub>Species</sub>                        | <sub>Genome/Annotation Version</sub>    | <sub>Database</sub>           |
 |-------------------------------------------|-----------------------------------------|-------------------------------|
-| <sub>*Cucumis sativus* (csa)</sub>        | <sub>Chinese Long v.3</sub>             | <sub>Cucurbit Genomics</sub>  |
+| <sub>*Cucumis sativus* (csa)</sub>        | <sub>Chinese Long v.3</sub>             | <sub>Cucurbit Genomics  http://cucurbitgenomics.org/v2/download  </sub>  |
 | <sub>*Cucumis melo* (cme)</sub>           | <sub>DHL92 v.4</sub>                    | <sub>Cucurbit Genomics</sub>  |
 | <sub>*Citrullus lanatus* (cla)</sub>      | <sub>97103 v.2</sub>                    | <sub>Cucurbit Genomics</sub>  |
 | <sub>*Lagenaria siceraria* (lsi)</sub>    | <sub>USVL1VR-Ls v.1</sub>               | <sub>Cucurbit Genomics</sub>  |
