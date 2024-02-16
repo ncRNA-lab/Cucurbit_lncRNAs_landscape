@@ -36,7 +36,7 @@
 | <sub>*Citrullus lanatus* (cla)</sub>      | <sub>97103 v.2</sub>                    | <sub>Cucurbit Genomics</sub>  |
 | <sub>*Lagenaria siceraria* (lsi)</sub>    | <sub>USVL1VR-Ls v.1</sub>               | <sub>Cucurbit Genomics</sub>  |
 | <sub>*Cucurbita moschata* (cmo)</sub>     | <sub>Rifu v.1</sub>                     | <sub>Cucurbit Genomics</sub>  |
-| <sub>*Cucurbita argyrosperma* (car)</sub> | <sub>v.2</sub>                          | <sub>Cucurbit Genomics</sub>  |
+| <sub>*Cucurbita argyrosperma* (car)</sub> | <sub>SMH-JMG-627 v.2</sub>              | <sub>Cucurbit Genomics</sub>  |
 | <sub>*Cucurbita pepo* (cpe)</sub>         | <sub>MU-CU-16 v.4.1</sub>               | <sub>Cucurbit Genomics</sub>  |
 | <sub>*Cucurbita maxima* (cma)</sub>       | <sub>Rimu v1.1</sub>                    | <sub>Cucurbit Genomics</sub>  |
 | <sub>*Momordica charantia* (mch)</sub>    | <sub>Dali-11 v.1</sub>                  | <sub>Cucurbit Genomics</sub>  |
