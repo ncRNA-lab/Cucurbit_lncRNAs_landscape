@@ -259,11 +259,24 @@ sbatch 15-DEA.sh
 <br />
 
 
+### STEP 16: Expression correlation analysis
+
+<div align="justify"> Expression correlation analysis is performed using DESeq2 and Tximport R packages. For more details read the paper. <br /><br /></div>
+
+```
+cd 13-DEA/cme/
+
+sbatch 15-DEA.sh
+```
+<br />
+
+
 ## Authors
 
 * **Pascual Villalba-Bermell** - *Initial work* - [pasviber](https://github.com/pasviber) (pascual.villalba@csic.es) at [ncRNA-lab](https://github.com/ncRNA-lab).
 
 <br />
+
 
 ## Citation
 
