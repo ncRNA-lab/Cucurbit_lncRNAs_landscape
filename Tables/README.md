@@ -25,21 +25,21 @@
 
 <br />
 
-<div align="justify"> <sub><b>Table: Detailed information about genome version in the nine selected cucurbit species.</b></sub> </div>
+<div align="justify"> <sub><b>Table: Detailed information about genome or annotation version in the nine selected cucurbit species.</b></sub> </div>
 
 <br />
 
-| <sub>Species</sub>                        | <sub>Genome Version</sub>    | <sub>Database</sub>           |
-|-------------------------------------------|------------------------------|-------------------------------|
-| <sub>*Cucumis sativus* (csa)</sub>        | <sub>Chinese Long v.3</sub>  | <sub>Cucurbit Genomics</sub>  |
-| <sub>*Cucumis melo* (cme)</sub>           | <sub>DHL92 v.4</sub>         | <sub>Melonomics</sub>         |
-| <sub>*Citrullus lanatus* (cla)</sub>      | <sub>97103 v.2</sub>         | <sub>Cucurbit Genomics</sub>  |
-| <sub>*Lagenaria siceraria* (lsi)</sub>    | <sub>USVL1VR-Ls v.1</sub>    | <sub>Cucurbit Genomics</sub>  |
-| <sub>*Cucurbita moschata* (cmo)</sub>     | <sub>Rifu v.1</sub>          | <sub>Cucurbit Genomics</sub>  |
-| <sub>*Cucurbita argyrosperma* (car)</sub> | <sub>v.2</sub>               | <sub>Cucurbit Genomics</sub>  |
-| <sub>*Cucurbita pepo* (cpe)</sub>         | <sub>MU-CU-16 v.4.1</sub>    | <sub>Cucurbit Genomics</sub>  |
-| <sub>*Cucurbita maxima* (cma)</sub>       | <sub>Rimu v1.1</sub>         | <sub>Cucurbit Genomics</sub>  |
-| <sub>*Momordica charantia* (mch)</sub>    | <sub>Dali-11 v.1</sub>       | <sub>Cucurbit Genomics</sub>  |
+| <sub>Species</sub>                        | <sub>Genome/Annotation Version</sub>    | <sub>Database</sub>           |
+|-------------------------------------------|-----------------------------------------|-------------------------------|
+| <sub>*Cucumis sativus* (csa)</sub>        | <sub>Chinese Long v.3</sub>             | <sub><a href="http://cucurbitgenomics.org/v2/download">Cucurbit Genomics</a></sub>  |
+| <sub>*Cucumis melo* (cme)</sub>           | <sub>DHL92 v.4</sub>                    | <sub><a href="http://cucurbitgenomics.org/v2/download">Cucurbit Genomics</a></sub>  |
+| <sub>*Citrullus lanatus* (cla)</sub>      | <sub>97103 v.2</sub>                    | <sub><a href="http://cucurbitgenomics.org/v2/download">Cucurbit Genomics</a></sub>  |
+| <sub>*Lagenaria siceraria* (lsi)</sub>    | <sub>USVL1VR-Ls v.1</sub>               | <sub><a href="http://cucurbitgenomics.org/v2/download">Cucurbit Genomics</a></sub>  |
+| <sub>*Cucurbita moschata* (cmo)</sub>     | <sub>Rifu v.1</sub>                     | <sub><a href="http://cucurbitgenomics.org/v2/download">Cucurbit Genomics</a></sub>  |
+| <sub>*Cucurbita argyrosperma* (car)</sub> | <sub>SMH-JMG-627 v.2</sub>              | <sub><a href="http://cucurbitgenomics.org/v2/download">Cucurbit Genomics</a></sub>  |
+| <sub>*Cucurbita pepo* (cpe)</sub>         | <sub>MU-CU-16 v.4.1</sub>               | <sub><a href="http://cucurbitgenomics.org/v2/download">Cucurbit Genomics</a></sub>  |
+| <sub>*Cucurbita maxima* (cma)</sub>       | <sub>Rimu v1.1</sub>                    | <sub><a href="http://cucurbitgenomics.org/v2/download">Cucurbit Genomics</a></sub>  |
+| <sub>*Momordica charantia* (mch)</sub>    | <sub>Dali-11 v.1</sub>                  | <sub><a href="http://cucurbitgenomics.org/v2/download">Cucurbit Genomics</a></sub>  |
 
 <br />
 
