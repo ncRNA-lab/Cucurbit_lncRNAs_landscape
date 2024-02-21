@@ -164,20 +164,20 @@ for (experiment in Experiments) {
   
   cat(paste0("\n\t\tNumber of transcripts pre-filtering: ", nrow(dds)))
   
-  KEEP = c()
+  KEEP_name = c()
   for (name in unique(metadata$Name.2)) {
     cols = metadata[metadata$Name.2 == name, "Sample"]
     dt = counts(dds)[, cols]
     keep = rowSums(dt > 0) >= 2
     keep_name = rownames(dt)[keep]
-    KEEP = unique(c(KEEP, keep))
+    KEEP_name = unique(c(KEEP_name, keep_name))
   }
   
-  dds = dds[KEEP,]
+  dds = dds[rownames(dds) %in% KEEP_name,]
   
   cat(paste0("\n\t\tNumber of transcripts post-filtering: ", nrow(dds)))
   
-  rm(list = c("cols", "dt", "keep", "keep_name", "KEEP", "name"))
+  rm(list = c("cols", "dt", "keep", "keep_name", "KEEP_name", "name"))
   
   ############################################
   ## 4. DEA
