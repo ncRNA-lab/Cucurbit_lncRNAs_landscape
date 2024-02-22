@@ -263,10 +263,30 @@ sbatch 15-DEA.sh
 
 <div align="justify"> Expression correlation analysis is performed using DESeq2 and Tximport R packages. For more details read the paper. <br /><br /></div>
 
-```
-cd 13-DEA/cme/
+**NAT-lncRNAs**
 
-sbatch 15-DEA.sh
+```
+cd 14-Expression_correlation/cme/
+
+sbatch 16.1-Antisense-Get_pairs.sh
+sbatch 16.2-Antisense-Create_cis_interaction_table.sh
+sbatch 16.3-Antisense-Create_cis_correlation_table.sh
+sbatch 16.4-Antisense-Join_cis_correlation_tables.sh
+sbatch 16.5-Antisense-Create_cis_correlation_table_random.sh
+sbatch 16.6-Antisense-Join_cis_correlation_tables_random.sh
+```
+
+**lincRNAs**
+
+```
+cd 14-Expression_correlation/cme/
+
+sbatch 16.1-Intergenic-Get_pairs.sh
+sbatch 16.2-Intergenic-Create_cis_interaction_table.sh
+sbatch 16.3-Intergenic-Create_cis_correlation_table.sh
+sbatch 16.4-Intergenic-Join_cis_correlation_tables.sh
+sbatch 16.5-Intergenic-Create_cis_correlation_table_random.sh
+sbatch 16.6-Intergenic-Join_cis_correlation_tables_random.sh
 ```
 <br />
 
