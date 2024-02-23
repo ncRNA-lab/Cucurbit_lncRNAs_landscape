@@ -2,6 +2,10 @@
 
 <br />
 
+The pipeline execution process using the Cucumis melo species is shown below.
+
+<br />
+
 ### STEP 0: Select RNA-seq samples
 
 <div align="justify"> We select all RNA-seq samples from Sequence Read Archive database (SRA) and from a particular species. To this end, we use the <a href="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/">E-utilities</a>. <br /><br /></div>
@@ -46,7 +50,7 @@ sbatch 02-Trimming.sh
 
 <div align="justify"> <br /><a href="https://github.com/s-andrews/FastQC">FastQC</a> and <a href="https://github.com/MultiQC/MultiQC">Multiqc</a> are used to provide some quality control checks on clean sequence data.</div>
 
-<div align="justify"> <br />As a summary, a table is generated with the number of reads for each sample. </div>
+<div align="justify"> <br />As a summary, a table is generated with the library size for each sample. </div>
 
 <br />
 
@@ -61,7 +65,7 @@ cd 01-Sample_processing_and_selection/cme/
 sbatch 03-Select_strand-specific_libraries.sh
 ```
 
-<div align="justify"> As a summary, a table is generated with the library type information for each sample. </div>
+<div align="justify"> As a summary, a table is generated with the library type for each sample. </div>
 
 <br />
 
@@ -128,7 +132,7 @@ sbatch 07-LncRNAs_prediction.sh
 
 ### STEP 8: Quantification
 
-<div align="justify"> We quantify the potential lncRNAs, PCGs and both (lncRNAs and PCGs) using <a href="https://github.com/COMBINE-lab/salmon">Salmon</a>. As Salmon requires the transcriptome file (FASTA) to quantify the transcripts, we use <a href="https://github.com/deweylab/RSEM">RSEM</a> to extract this information from the annotation file (GTF) and the genome file (FASTA). Three different transcriptomic references are used: lncRNAs only, PCGs only and both joined. <br /><br /></div>
+<div align="justify"> We quantify the potential lncRNAs, PCGs and both categories (potential lncRNAs and PCGs) using <a href="https://github.com/COMBINE-lab/salmon">Salmon</a>. As Salmon requires the transcriptome file (FASTA) to quantify the transcripts, we use <a href="https://github.com/deweylab/RSEM">RSEM</a> to extract this information from the annotation file (GTF) and the genome file (FASTA). Three different transcriptomic references are used: potential lncRNAs only, PCGs only and both categories together. <br /><br /></div>
 
 ```
 cd 06-Quantification/cme/
@@ -138,14 +142,14 @@ sbatch 08-Quantification_Genes.sh
 sbatch 08-Quantification_ALL.sh
 ```
 
-<div align="justify"> As a result, a TPM table is generated. </div>
+<div align="justify"> As a result, three TPM tables (potential lncRNAs only, PCGs only and both categories together) encompassing all samples are generated. </div>
 
 <br />
 
 
 ### STEP 9: Get random intergenic regions
 
-<div align="justify"> We generate a third category of sequences corresponding to random intergenic genome regions of 500 nucleotides that don’t match any of the other two categories (Potential lncRNAs and PCGs) using <a href="https://bedtools.readthedocs.io/en/latest/">Bedtools</a>. <br /><br /></div>
+<div align="justify"> We generate a third category of sequences corresponding to random intergenic genome regions of 500 nucleotides that don’t match any of the other two categories (potential lncRNAs and PCGs) using <a href="https://bedtools.readthedocs.io/en/latest/">Bedtools</a>. <br /><br /></div>
 
 ```
 cd 07-Get_intergenic_regions/cme/
@@ -170,8 +174,7 @@ sbatch 10.2-RepeatMasker.sh
 sbatch 10.3-Intersection_with_PCGs_LncRNAs_and_IR.sh
 ```
 
-<div align="justify"> As a result, we obtain two tables in TSV format showing the percentage of bases covered by repetitive elements (transposons and other repeat elements) in each category 
-(LncRNAs, PCGs and IR), distinguishing between the different types of repetitive elements (Table 1) or encompassing all of them as a single group (Table 2). </div>
+<div align="justify"> As a result, we obtain two tables in TSV format showing the percentage of bases covered by repetitive elements (transposons and other repeat elements) in each category (potential lncRNAs, PCGs and random intergenic regions), distinguishing between the different types of repetitive elements (table 1) or encompassing all of them as a single group (table 2). </div>
 
 <br />
 
@@ -185,9 +188,6 @@ cd 09-Comparison_PCGs_and_lncRNAs/cme/
 
 sbatch 11-Comparison_PCGs_and_lncRNAs.sh
 ```
-
-<div align="justify"> As a summary, several tables in TSV format with all the molecular properties by transcript are generated. </div>
-
 <br />
 
 
