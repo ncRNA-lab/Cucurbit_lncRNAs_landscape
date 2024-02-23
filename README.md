@@ -48,6 +48,7 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
     + Comparative genomics.</b>
     + Tissue-specificity analysis.<br />
     + Differential expression analysis (development and environment).<br />
+    + Expression correlation analysis.<br />
 
 <br />
 <br />
