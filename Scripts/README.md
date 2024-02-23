@@ -181,7 +181,7 @@ sbatch 10.3-Intersection_with_PCGs_LncRNAs_and_IR.sh
 
 ### STEP 11: Molecular properties comparison
 
-<div align="justify"> A common downstream analysis is to compare basic features that differentiate lncRNAs from PCGs such as GC content, number of exons, length, expression level and repeat content. Therefore, we generate a table and some figures with all this information. <br /><br /></div>
+<div align="justify"> A common downstream analysis is to compare basic features that differentiate lncRNAs from PCGs such as GC content, number of exons, length, expression level and repeat content. <br /><br /></div>
 
 ```
 cd 09-Comparison_PCGs_and_lncRNAs/cme/
@@ -193,7 +193,7 @@ sbatch 11-Comparison_PCGs_and_lncRNAs.sh
 
 ### STEP 12: Genomic distribution
 
-<div align="justify"> The genomic distribution of potential lncRNAs and PCGs is analyzed using <a href="https://bedtools.readthedocs.io/en/latest/">Bedtools</a> and the circlize R package. <br /><br /></div>
+<div align="justify"> The genomic distribution of potential lncRNAs and PCGs is analyzed using <a href="https://bedtools.readthedocs.io/en/latest/">Bedtools</a> and the circlize R package.<br /><br /></div>
 
 ```
 cd 10-Genomic_distribution/cme/
@@ -271,7 +271,7 @@ sbatch 15-DEA.sh
 
 ### STEP 16: Expression correlation analysis
 
-<div align="justify"> Expression correlation analysis is performed using DESeq2 and Tximport R packages. For more details read the paper. <br /><br /></div>
+<div align="justify"> Expression correlation analysis is performed using <a href="https://bedtools.readthedocs.io/en/latest/">Bedtools</a> to get the pairs and, DESeq2 and Tximport R packages to get the correlations. For more details read the paper. <br /><br /></div>
 
 **NAT-lncRNAs**
 
