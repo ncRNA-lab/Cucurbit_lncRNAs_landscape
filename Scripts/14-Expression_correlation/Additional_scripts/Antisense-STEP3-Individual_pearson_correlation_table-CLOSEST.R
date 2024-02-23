@@ -1,3 +1,19 @@
+################################################################################
+#
+# STEP3: CREATE CIS CORRELATION TABLE (CLOSEST)
+#
+# For each subexperiment, we loaded the samples (obtained with Salmon), filtered 
+# the expression using median absolute deviation (Palos et al., 2022 in The Plant 
+# cell) and applied variance stabilizing transformation. Then, we generated a 
+# Pearson correlation matrix with all PCGs and NAT-lncRNAs present in the 
+# cis-interactions table. Finally, from this table we generate the cis-correlation 
+# table for each subexperiment. The table only shows lncRNA-PCG interactions and, 
+# as we said, for NAT-lncRNAs we only search for the closest gene.
+#
+# @author: pasviber - Pascual Villalba Bermell
+# 
+################################################################################
+
 
 ######### MODULES
 
@@ -24,10 +40,16 @@ if (length(args) < 7) {
   flag = args[7]
 }
 
+# experiment = "SRP139690_1_1"
+# WD_corr_S2 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/antisense/nr/STEP2"
+# WD_corr_S3 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/antisense/nr/STEP3"
+# WD_pred = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme"
+# WD_quant = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification/cme"
+# WD_DEA = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/13-DEA/cme"
+# flag = "nr"
+
 
 ######### PIPELINE
-
-## STEP 3: Create table with pearson correlation.
 
 ## Load TAB_CIS.
 TAB_CIS = read.table(paste0(WD_corr_S2, "/TAB_CIS.tsv"), sep = "\t", header = T, quote = "\"")
@@ -40,13 +62,13 @@ subset$Experiment = experiment
 if (dim(subset)[1] != 0) {
   
   ## Load counts tables coming from salmon using tximport.
-  txdb = suppressMessages(makeTxDbFromGFF(paste0(WD_pred, "/STEP-FINAL/Files/Joined/ALL/", flag, "/ALL.gtf"), format = "gtf"))
+  txdb = suppressMessages(makeTxDbFromGFF(paste0(WD_pred, "/STEP-FINAL/Files/ALL/", flag, "/ALL.gtf"), format = "gtf"))
   k = keys(txdb, keytype = "GENEID")
   df = suppressMessages(AnnotationDbi::select(txdb, keys = k, keytype = "GENEID", columns = columns(txdb)))
   tx2gene = df[, c("TXNAME", "GENEID")]
   tx2gene = tx2gene[!duplicated(tx2gene),]
   
-  files = file.path(paste0(WD_quant, "/Salmon/ALL/", flag, "/03-Quant/"), metadata$Sample, "quant.sf")
+  files = file.path(paste0(WD_quant, "/ALL/", flag, "/03-Quant/"), metadata$Sample, "quant.sf")
   names(files) = paste0(metadata$Sample)
   txi.salmon = suppressMessages(tximport(files, type = "salmon", tx2gene = tx2gene, txIn = TRUE, txOut = TRUE, countsFromAbundance = "no"))
   
@@ -87,7 +109,7 @@ if (dim(subset)[1] != 0) {
   ## size or other normalization factors.
   assay(dds, 'counts.norm.VST') = suppressMessages(as.data.frame(assay(varianceStabilizingTransformation(dds, blind = FALSE))))
   
-  ## Correlation method
+  ## Correlation method.
   vst = as.data.frame(assay(dds, 'counts.norm.VST'))
   vst_filt = vst[rownames(vst) %in% unique(c(subset$ID_transcript.1, subset$ID_transcript.2)),]
   tab_cor = suppressWarnings(cor(t(vst_filt), method = "pearson"))
@@ -97,7 +119,7 @@ if (dim(subset)[1] != 0) {
   rm(list = c("metadata", "dds", "vst", "vst_filt"))
   
   ## Obtain Correlation index data.
-  subset = merge(subset, tab_cor, by = c("ID_transcript.1", "ID_transcript.2"), all.x = F, all.y = F)
+  subset = merge(subset, tab_cor, by = c("ID_transcript.1", "ID_transcript.2"), all = F)
   
   rm(list = c("tab_cor"))
   

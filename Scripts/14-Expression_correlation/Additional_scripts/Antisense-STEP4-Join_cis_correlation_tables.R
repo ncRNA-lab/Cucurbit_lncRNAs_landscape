@@ -1,3 +1,14 @@
+################################################################################
+#
+# STEP4: JOIN CIS CORRELATION TABLES (CLOSEST)
+#
+# For NAT-lncRNAs, join the cis-correlation tables generated for each subexperiment 
+# in step 3.
+#
+# @author: pasviber - Pascual Villalba Bermell
+# 
+################################################################################
+
 
 ######### MODULES
 
@@ -14,10 +25,11 @@ if (length(args) < 2) {
   WD_corr_S4 = args[2]
 }
 
+# WD_corr_S3 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/antisense/nr/STEP3"
+# WD_corr_S4 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/antisense/nr/STEP4"
+
 
 ######### PIPELINE
-
-## STEP 4: Create final table.
 
 files = list.files(path = WD_corr_S3, pattern = "-PEARSON.tsv")
 TAB = data.frame()

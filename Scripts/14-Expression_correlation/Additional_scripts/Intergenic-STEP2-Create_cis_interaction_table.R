@@ -1,3 +1,19 @@
+################################################################################
+#
+# STEP2: CREATE CIS INTERACTION TABLE (CLOSEST AND RANGE)
+#
+# Modify the table previously generated in step 1 to create the final table with 
+# the cis-interactions of all lincRNAs. In this case, the table shows lncRNA-PCG 
+# and PCG-PCG interactions. In addition, two strategies are shown: (1) closest 
+# gene and (2) distance ranges.
+#
+# NOTE: It may occur that two PCGs have mutually closest gene to each other. Then 
+# the repeated pairs are eliminated leaving unique pairs.
+#
+# @author: pasviber - Pascual Villalba Bermell
+# 
+################################################################################
+
 
 ######### MODULES
 
@@ -19,17 +35,20 @@ if (length(args) < 6) {
   flag = args[6]
 }
 
+# WD_corr_S1 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/intergenic/nr/STEP1"
+# WD_corr_S2 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/intergenic/nr/STEP2"
+# WD_pred = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme"
+# distances = c(500, 1000, 2000, 5000, 10000, 20000, 50000, 100000)
+# spel = "C. melo"
+# flag = "nr"
 
 
 ######### PIPELINE
 
 ################################################################################
 
-## STEP 2: Create table with cis-targets.
-
 ## Load lncRNAs database.
-#DB_LncRNAs = read.table(paste0(WD_pred, "/STEP-FINAL/Database/Database_LncRNAs_", toupper(flag), ".tsv"), sep = "\t", header = T, quote = "\"")
-DB_LncRNAs = read.table(paste0(WD_pred, "/STEP-FINAL/Database/Database_LncRNAs.tsv"), sep = "\t", header = T, quote = "\"")
+DB_LncRNAs = read.table(paste0(WD_pred, "/STEP-FINAL/Database/Database_LncRNAs_", toupper(flag), ".tsv"), sep = "\t", header = T, quote = "\"")
 DB_LncRNAs = DB_LncRNAs[, c("ID_transcript", "Start", "End")]
 
 ## Load Genes database.

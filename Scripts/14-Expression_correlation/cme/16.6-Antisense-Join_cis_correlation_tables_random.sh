@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmeUcorr6						# Job name.
-#SBATCH --output=cme_intergenic_corr_6.log				# Standard output and error log.
+#SBATCH --job-name=cmeS16X6						# Job name.
+#SBATCH --output=cme_STEP16_X6.log					# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=1							# Run on one mode.
 #SBATCH --cpus-per-task=2						# Number of tasks = cpus.
-#SBATCH --time=0-01:00:00						# Time limit days-hrs:min:sec.
+#SBATCH --time=0-00:30:00						# Time limit days-hrs:min:sec.
 #SBATCH --mem-per-cpu=5gb						# Job memory request.
 
 
@@ -14,9 +14,9 @@ module load R/4.2.1
 
 ####### VARIABLES
 specie="cme"
-WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/17-Correlation_DEFINITIVE"
-AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/17-Correlation_DEFINITIVE/Additional_scripts"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/17-Correlation_DEFINITIVE/Functions.sh"
+WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/14-Expression_correlation/Additional_scripts"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/14-Expression_correlation/Functions.sh"
 flag_list="nr"
 
 ####### ADDITIONAL SCRIPTS
@@ -29,7 +29,7 @@ WD1_spe=$WD1/$specie
 ####### DIRECTORY
 mkdir -p $WD1
 mkdir -p $WD1_spe
-mkdir -p $WD1_spe/intergenic
+mkdir -p $WD1_spe/antisense
 
 
 ####### PIPELINE
@@ -46,9 +46,9 @@ for flag in $flag_list; do
 	echo -e "\nFLAG: "$flag
 	
 	## Variable.
-	O=$WD1_spe/intergenic/$flag
-	O5=$WD1_spe/intergenic/$flag/STEP5
-	O6=$WD1_spe/intergenic/$flag/STEP6
+	O=$WD1_spe/antisense/$flag
+	O5=$WD1_spe/antisense/$flag/STEP5
+	O6=$WD1_spe/antisense/$flag/STEP6
 	
 	## Directory.
 	mkdir -p $O
@@ -57,7 +57,7 @@ for flag in $flag_list; do
 
 	cd $O6
 
-	Rscript $AS/Intergenic-STEP6-Create_Final_Table-RANDOM.R $O5 $O6
+	Rscript $AS/Antisense-STEP6-Join_cis_correlation_tables-RANDOM.R $O5 $O6
 
 done
 

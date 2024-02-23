@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmeUcorr3						# Job name.
-#SBATCH --output=cme_intergenic_corr_3.log				# Standard output and error log.
+#SBATCH --job-name=cmeS16U3						# Job name.
+#SBATCH --output=cme_STEP16_U3.log					# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=3							# Run on one mode.
 #SBATCH --cpus-per-task=2						# Number of tasks = cpus.
@@ -14,12 +14,12 @@ module load R/4.2.1
 
 ####### VARIABLES
 specie="cme"
-WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs"
-WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-quantification"
-WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/16-DEA"
-WD4="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/17-Correlation_DEFINITIVE"
-AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/17-Correlation_DEFINITIVE/Additional_scripts"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/17-Correlation_DEFINITIVE/Functions.sh"
+WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
+WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification"
+WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/13-DEA"
+WD4="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/14-Expression_correlation/Additional_scripts"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/14-Expression_correlation/Functions.sh"
 dist_list="500 1000 2000 5000 10000 20000 50000 100000"
 flag_list="nr"
 
@@ -71,7 +71,7 @@ for flag in $flag_list; do
 		experiment_list=$(find "$WD3_spe/03-Metadata_DEA/" -type f -exec basename {} \; | sed 's/.tsv//g' | sort)
 		for exp in $experiment_list; do
 			echo -e "\t-Processing experiment: $exp"
-			srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive --output $O3/Outputs/Closest-$exp.log $F task_STEP3_CLOSEST $exp $O2 $O3 $WD1_spe $WD2_spe $WD3_spe $flag $AS &
+			srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive --output $O3/Outputs/Closest-$exp.log $F task_STEP3_CLOSEST-INTERGENIC $exp $O2 $O3 $WD1_spe $WD2_spe $WD3_spe $flag $AS &
 		done
 		wait
 	else
@@ -86,7 +86,7 @@ for flag in $flag_list; do
 			echo -e "\t-Processing experiment: $exp"
 			for dist in $dist_list; do
 				echo -e "\t\t-Processing distance: $dist"
-				srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive --output $O3/Outputs/Range-$exp\-$dist.log $F task_STEP3_RANGE $exp $dist $O2 $O3 $WD1_spe $WD2_spe $WD3_spe $flag $AS &
+				srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive --output $O3/Outputs/Range-$exp\-$dist.log $F task_STEP3_RANGE-INTERGENIC $exp $dist $O2 $O3 $WD1_spe $WD2_spe $WD3_spe $flag $AS &
 			done
 		done
 		wait

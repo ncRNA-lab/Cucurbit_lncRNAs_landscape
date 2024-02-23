@@ -1,3 +1,19 @@
+################################################################################
+#
+# STEP3: CREATE CIS CORRELATION TABLE (RANGE)
+#
+# For each subexperiment, we loaded the samples (obtained with Salmon), filtered 
+# the expression using median absolute deviation (Palos et al., 2022 in The Plant 
+# cell) and applied variance stabilizing transformation. Then, we generated a 
+# Pearson correlation matrix with all PCGs and lincRNAs present in the cis-interactions 
+# table. Finally, from this table we generate the cis-correlation table for each 
+# subexperiment. The table shows lncRNA-PCG and PCG-PCG interactions. In this case, 
+# we use the strategy "distance ranges".
+#
+# @author: pasviber - Pascual Villalba Bermell
+# 
+################################################################################
+
 
 ######### MODULES
 
@@ -12,50 +28,54 @@ suppressMessages(library(DESeq2))
 
 ## Create a vector with the arguments.
 args = commandArgs(trailingOnly=TRUE)
-if (length(args) < 7) {
-  stop("At least 7 arguments must be supplied.", call.=FALSE)
+if (length(args) < 8) {
+  stop("At least 8 arguments must be supplied.", call.=FALSE)
 } else {
   experiment = args[1]
-  WD_corr_S2 = args[2]
-  WD_corr_S3 = args[3]
-  WD_pred = args[4]
-  WD_quant = args[5]
-  WD_DEA = args[6]
-  flag = args[7]
+  dist = args[2]
+  WD_corr_S2 = args[3]
+  WD_corr_S3 = args[4]
+  WD_pred = args[5]
+  WD_quant = args[6]
+  WD_DEA = args[7]
+  flag = args[8]
 }
 
-# experiment = "SRP192188_1_1"
-# WD_corr_S2 = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/17-Correlation/cla/intergenic/STEP2"
-# WD_corr_S3 = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/17-Correlation/cla/intergenic/STEP3"
-# WD_pred = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs/cla"
-# WD_quant = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/06-quantification/cla"
-# WD_DEA = "/mnt/doctorado/3-lncRNAs/Cucurbitaceae/Results/16-DEA/cla"
+# experiment = "SRP139690_1_1"
+# dist = "1000"
+# WD_corr_S2 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/intergenic/nr/STEP2"
+# WD_corr_S3 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/intergenic/nr/STEP3"
+# WD_pred = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme"
+# WD_quant = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification/cme"
+# WD_DEA = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/13-DEA/cme"
 # flag = "nr"
+
 
 ######### PIPELINE
 
-## STEP 3 (Closest): Create table with pearson correlation.
+cat(paste0("-Range...\n"))
 
-cat(paste0("-Closest...\n"))
-
-## Load TAB_CIS_closest.
-TAB_CIS_closest = read.table(paste0(WD_corr_S2, "/TAB_CIS_closest.tsv"), sep = "\t", header = T, quote = "\"")
+## Load TAB_CIS_range.
+TAB_CIS_range = read.table(paste0(WD_corr_S2, "/TAB_CIS_range.tsv"), sep = "\t", header = T, quote = "\"")
+dist = as.integer(format(dist, scientific = F))
+TAB_CIS_range$Range = as.integer(format(TAB_CIS_range$Range, scientific = F))
+TAB_CIS_range = TAB_CIS_range[TAB_CIS_range$Range == dist,]
 ## Load summary table with all the information about the experiments and contrasts.
 metadata = read.table(paste0(WD_DEA, "/03-Metadata_DEA/", experiment, ".tsv"), sep = "\t", header = T, quote = "\"")
 ## Create subset table.
-subset = TAB_CIS_closest
+subset = TAB_CIS_range
 subset$Experiment = experiment
 
 if (dim(subset)[1] != 0) {
   
   ## Load counts tables coming from salmon using tximport.
-  txdb = suppressMessages(makeTxDbFromGFF(paste0(WD_pred, "/STEP-FINAL/Files/Joined/ALL/", flag, "/ALL.gtf"), format = "gtf"))
+  txdb = suppressMessages(makeTxDbFromGFF(paste0(WD_pred, "/STEP-FINAL/Files/ALL/", flag, "/ALL.gtf"), format = "gtf"))
   k = keys(txdb, keytype = "GENEID")
   df = suppressMessages(AnnotationDbi::select(txdb, keys = k, keytype = "GENEID", columns = columns(txdb)))
   tx2gene = df[, c("TXNAME", "GENEID")]
   tx2gene = tx2gene[!duplicated(tx2gene),]
   
-  files = file.path(paste0(WD_quant, "/Salmon/ALL/", flag, "/03-Quant/"), metadata$Sample, "quant.sf")
+  files = file.path(paste0(WD_quant, "/ALL/", flag, "/03-Quant/"), metadata$Sample, "quant.sf")
   names(files) = paste0(metadata$Sample)
   txi.salmon = suppressMessages(tximport(files, type = "salmon", tx2gene = tx2gene, txIn = TRUE, txOut = TRUE, countsFromAbundance = "no"))
   
@@ -106,21 +126,23 @@ if (dim(subset)[1] != 0) {
   rm(list = c("metadata", "dds", "vst", "vst_filt"))
   
   ## Obtain Correlation index data.
-  subset = merge(subset, tab_cor, by = c("ID_transcript.1", "ID_transcript.2"), all.x = F, all.y = F)
+  subset = merge(subset, tab_cor, by = c("ID_transcript.1", "ID_transcript.2"), all = F)
   
   rm(list = c("tab_cor"))
   
   ## Generate the final table.
-  TAB_CIS_closest_corr =  subset[, c("Specie", "Chr", "ID_transcript.1", "Start.1", "End.1", "Strand.1", "ID_transcript.2", 
-                                     "Start.2", "End.2", "Strand.2", "Distance", "Type", "Experiment", "Cor.Deseq.Vst")]
-  rownames(TAB_CIS_closest_corr) = NULL
+  TAB_CIS_range_corr =  subset[, c("Specie", "Chr", "ID_transcript.1", "Start.1", "End.1", "Strand.1", "ID_transcript.2", 
+                                   "Start.2", "End.2", "Strand.2", "Overlap_range.Perc.2", "Overlap_range", "Range", 
+                                   "Start_range", "End_range", "Type", "Experiment", "Cor.Deseq.Vst")]
+  rownames(TAB_CIS_range_corr) = NULL
+  TAB_CIS_range_corr$Range = as.integer(format(TAB_CIS_range_corr$Range, scientific = F))
   
   ## Save.
-  write.table(TAB_CIS_closest_corr, paste0(WD_corr_S3, "/TAB_CIS-", experiment, "-PEARSON_closest.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+  write.table(TAB_CIS_range_corr, paste0(WD_corr_S3, "/TAB_CIS-", experiment, "-PEARSON_range-", dist, ".tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
   
 }else {
-    cat(paste0("\tThere is no pairs\n"))
+  cat(paste0("\tThere is no pairs\n"))
 }
 
-rm(list = c("TAB_CIS_closest", "experiment", "subset"))
+rm(list = c("TAB_CIS_range", "experiment", "subset"))
 

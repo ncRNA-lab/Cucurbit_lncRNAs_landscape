@@ -1,3 +1,18 @@
+################################################################################
+#
+# STEP6: JOIN CIS CORRELATION TABLES (CLOSEST-RANDOM)
+#
+# For NAT-lncRNAs, join the cis-correlation tables generated for each subexperiment 
+# in step 5.
+#
+# NOTE: As they are random pairs, it may be the case that there are repeated pairs. 
+# For example, gene1-gene2 and gene2-gene1. Therefore, we eliminate them. Repeated 
+# pairs such as gen1-gen2 and gen1-gen2 are eliminated in step 5.
+#
+# @author: pasviber - Pascual Villalba Bermell
+# 
+################################################################################
+
 
 ######### MODULES
 
@@ -14,10 +29,11 @@ if (length(args) < 2) {
   WD_corr_S6 = args[2]
 }
 
+# WD_corr_S5 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/antisense/nr/STEP5"
+# WD_corr_S6 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/antisense/nr/STEP6"
+
 
 ######### PIPELINE
-
-## STEP 6: Create final table.
 
 files = list.files(path = WD_corr_S5, pattern = "-random.tsv")
 TAB = data.frame()

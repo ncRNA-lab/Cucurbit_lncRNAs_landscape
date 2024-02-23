@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmeAcorr5						# Job name.
-#SBATCH --output=cme_antisense_corr_5.log				# Standard output and error log.
+#SBATCH --job-name=cmeS16U5						# Job name.
+#SBATCH --output=cme_STEP16_U5.log					# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=5							# Run on one mode.
 #SBATCH --cpus-per-task=2						# Number of tasks = cpus.
-#SBATCH --time=0-03:00:00						# Time limit days-hrs:min:sec.
-#SBATCH --mem-per-cpu=20gb						# Job memory request.
+#SBATCH --time=1-00:00:00						# Time limit days-hrs:min:sec.
+#SBATCH --mem-per-cpu=50gb						# Job memory request.
 
 
 ####### MODULES
@@ -15,12 +15,12 @@ module load R/4.2.1
 ####### VARIABLES
 specie="cme"
 specie_long="C. melo"
-WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs"
-WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-quantification"
-WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/16-DEA"
-WD4="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/17-Correlation_DEFINITIVE"
-AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/17-Correlation_DEFINITIVE/Additional_scripts"
-F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/17-Correlation_DEFINITIVE/Functions.sh"
+WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
+WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification"
+WD3="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/13-DEA"
+WD4="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/14-Expression_correlation/Additional_scripts"
+F="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/14-Expression_correlation/Functions.sh"
 flag_list="nr"
 
 ####### ADDITIONAL SCRIPTS
@@ -36,7 +36,7 @@ WD4_spe=$WD4/$specie
 ####### DIRECTORY
 mkdir -p $WD4
 mkdir -p $WD4_spe
-mkdir -p $WD4_spe/antisense
+mkdir -p $WD4_spe/intergenic
 
 
 ####### PIPELINE
@@ -53,8 +53,8 @@ for flag in $flag_list; do
 	echo -e "\nFLAG: "$flag
 	
 	## Variable.
-	O=$WD4_spe/antisense/$flag
-	O5=$WD4_spe/antisense/$flag/STEP5
+	O=$WD4_spe/intergenic/$flag
+	O5=$WD4_spe/intergenic/$flag/STEP5
 	
 	## Directory.
 	mkdir -p $O
@@ -63,11 +63,13 @@ for flag in $flag_list; do
 	
 	cd $O5
 
+	echo -e "-Closest..."
+
 	if [ -d "$WD3_spe/03-Metadata_DEA/" ] && [ "$(ls -A "$WD3_spe/03-Metadata_DEA/")" ]; then
 		experiment_list=$(find "$WD3_spe/03-Metadata_DEA/" -type f -exec basename {} \; | sed 's/.tsv//g' | sort)
 		for exp in $experiment_list; do
 			echo -e "\t-Processing experiment: $exp"
-			srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive --output $O5/Outputs/$exp.log $F task_STEP5-ANTISENSE "$specie_long" $exp $O5 $WD1_spe $WD2_spe $WD3_spe 1000 $flag $AS &
+			srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive --output $O5/Outputs/Closest-$exp.log $F task_STEP5_CLOSEST-INTERGENIC "$specie_long" $exp $O5 $WD1_spe $WD2_spe $WD3_spe 1000 $flag $AS &
 		done
 		wait
 	else

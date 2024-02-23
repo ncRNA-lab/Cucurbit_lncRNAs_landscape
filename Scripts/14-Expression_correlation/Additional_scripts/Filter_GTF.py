@@ -15,9 +15,10 @@ Last Modified:
     - Fri Mar 25 17:45:00 2022 --> Initial code.
     - Sun May 29 13:50:00 2022 --> Add arguments command line.
 
-@author: pvbermell - Pascual Villalba Bermell
+@author: pasviber - Pascual Villalba Bermell
 
 """
+
 
 ## MODULES
 
@@ -75,6 +76,7 @@ def FilterDictGTF (Dict_gtf, IDs, gtf_final_path):
     
 
 # MAIN PROGRAM
+
 def main():
     """
     Main program.
@@ -125,11 +127,11 @@ def main():
         parser.print_help()
         sys.exit()
     
-    # python3 ./Filter_GTF.py 
-    #--gtf-initial /mnt/doctorado/.../....gtf
-    #--gtf-final /mnt/doctorado/.../....gtf
-    #--id /mnt/doctorado/.../....txt 
+    # gtf_i = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme/STEP-FINAL/Files/LncRNAs/nr/POTENTIAL_LNCRNAS_pred.gtf"
+    # gtf_f = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/intergenic/nr/STEP1/LncRNAs.gtf"
+    # IDs = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/intergenic/nr/STEP1/LncRNAs_ids.txt" 
     
+    ### PIPELINE
     ## Get the information.
     Dict_gtf = GTFtoDICT (gtf_i)
     
@@ -137,9 +139,11 @@ def main():
     FilterDictGTF(Dict_gtf, IDs, gtf_f)
     
 
-# CALL THE MAIN PROGRAM.
+# CALL THE MAIN PROGRAM
+
 if __name__ == '__main__':
     """
     Call the main program.
     """
     main()
+

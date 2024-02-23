@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=cmeUcor1						# Job name.
-#SBATCH --output=cme_intergenic_corr_1.log				# Standard output and error log.
+#SBATCH --job-name=cmeS16U1						# Job name.
+#SBATCH --output=cme_STEP16_U1.log					# Standard output and error log.
 #SBATCH --qos=short							# Partition (queue)
 #SBATCH --ntasks=1							# Run on one mode.
 #SBATCH --cpus-per-task=2						# Number of tasks = cpus.
@@ -14,10 +14,10 @@ module load biotools
 
 ####### VARIABLES
 specie="cme"
-WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-predict_lncRNAs"
-WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/17-Correlation_DEFINITIVE"
+WD1="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction"
+WD2="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation"
 AI="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Additional_info"
-AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/Pascual/17-Correlation_DEFINITIVE/Additional_scripts"
+AS="/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Scripts/14-Expression_correlation/Additional_scripts"
 dist_list="500 1000 2000 5000 10000 20000 50000 100000"
 flag_list="nr"
 

@@ -1,3 +1,15 @@
+################################################################################
+#
+# STEP2: CREATE CIS INTERACTION TABLE (CLOSEST)
+#
+# Modify the table previously generated in step 1 to create the final table with 
+# the cis-interactions of all NAT-lncRNAs. The table only shows lncRNA-PCG 
+# interactions. We only search for the closest gene.
+#
+# @author: pasviber - Pascual Villalba Bermell
+# 
+################################################################################
+
 
 ######### MODULES
 
@@ -18,13 +30,16 @@ if (length(args) < 5) {
   flag = args[5]
 }
 
+# WD_corr_S1 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/antisense/nr/STEP1"
+# WD_corr_S2 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/antisense/nr/STEP2"
+# WD_pred = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme"
+# spel = "C. melo"
+# flag = "nr"
 
 
 ######### PIPELINE
 
-## STEP 2: Create table with cis-targets.
-
-# Load bedtools results: LncRNAs-Genes and Genes-Genes.
+# Load bedtools results: LncRNAs-Genes.
 tab_cis = read.table(paste0(WD_corr_S1, "/LncRNA_Gene_cis_interactions.tsv"), sep = "\t", header = F, quote = "\"")
 colnames(tab_cis) = c("Chr", "ID_transcript.1", "Start.1", "End.1", "Strand.1", "ID_transcript.2", "Start.2", "End.2", "Strand.2", "Overlap")
 tab_cis$Type = "LncRNAs_Genes"
