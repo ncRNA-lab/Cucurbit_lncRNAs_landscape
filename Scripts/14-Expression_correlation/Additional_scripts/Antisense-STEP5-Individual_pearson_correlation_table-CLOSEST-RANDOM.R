@@ -54,6 +54,8 @@ if (length(args) < 8) {
 
 ######### PIPELINE
 
+cat(paste0("-Closest...\n"))
+
 ## Load summary table with all the information about the experiments and contrasts.
 metadata = read.table(paste0(WD_DEA, "/03-Metadata_DEA/", experiment, ".tsv"), sep = "\t", header = T, quote = "\"")
   
@@ -134,5 +136,5 @@ rownames(TAB_CIS_closest_corr) = NULL
 rm(list = c("tab_cor_random"))
 
 ## Save.
-write.table(TAB_CIS_corr_1, paste0(WD_corr_S5, "/TAB_CIS-", experiment, "-PEARSON-random.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+write.table(TAB_CIS_closest_corr, paste0(WD_corr_S5, "/TAB_CIS-", experiment, "-PEARSON_closest-random.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
 

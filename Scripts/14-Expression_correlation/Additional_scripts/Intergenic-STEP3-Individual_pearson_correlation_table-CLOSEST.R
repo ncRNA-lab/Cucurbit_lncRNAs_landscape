@@ -134,7 +134,7 @@ if (dim(subset)[1] != 0) {
   write.table(TAB_CIS_closest_corr, paste0(WD_corr_S3, "/TAB_CIS-", experiment, "-PEARSON_closest.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
   
 }else {
-    cat(paste0("\tThere is no pairs\n"))
+  cat(paste0("\tThere is no pairs\n"))
 }
 
 rm(list = c("TAB_CIS_closest", "experiment", "subset"))

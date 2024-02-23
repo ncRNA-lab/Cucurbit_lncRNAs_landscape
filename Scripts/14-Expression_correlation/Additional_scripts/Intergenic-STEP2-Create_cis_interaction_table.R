@@ -82,9 +82,9 @@ tab_closest = as.data.frame(tab_closest)
 tab_closest$Start.1 = tab_closest$Start.1 + 1
 tab_closest$Start.2 = tab_closest$Start.2 + 1
 tab_closest$"Specie" = spel
-tab_closest = tab_closest[, c("Specie", "Chr", "ID_transcript.1", "Start.1", "End.1", "Strand.1", "ID_transcript.2", "Start.2", "End.2", "Strand.2", "Distance", "Type")]
 
-TAB_CIS_closest = tab_closest
+# Sort columns.
+TAB_CIS_closest = tab_closest[, c("Specie", "Chr", "ID_transcript.1", "Start.1", "End.1", "Strand.1", "ID_transcript.2", "Start.2", "End.2", "Strand.2", "Distance", "Type")]
 
 rm(list = c("tab_closest", "tab_closest_LG", "tab_closest_GG"))
 
@@ -130,6 +130,7 @@ for (dist in distances) {
   tab_range$Specie = spel
   tab_range$Overlap_range.Perc.2 = round((tab_range$Overlap_range * 100)/((tab_range$End.2 - tab_range$Start.2) + 1), 2)
   
+  # Sort columns.
   tab_range = tab_range[, c("Specie", "Chr", "ID_transcript.1", "Start", "End", "Strand.1", "ID_transcript.2", "Start.2", "End.2", 
                             "Strand.2", "Overlap_range.Perc.2", "Overlap_range", "Range", "Start_range", "End_range", "Type")]
   colnames(tab_range) = c("Specie", "Chr", "ID_transcript.1", "Start.1", "End.1", "Strand.1", "ID_transcript.2", "Start.2", "End.2", 

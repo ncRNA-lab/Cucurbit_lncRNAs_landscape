@@ -32,16 +32,18 @@ if (length(args) < 2) {
 
 ######### PIPELINE
 
-files = list.files(path = WD_corr_S3, pattern = "-PEARSON.tsv")
+cat(paste0("-Closest...\n"))
+
+files = list.files(path = WD_corr_S3, pattern = "_closest.tsv")
 TAB = data.frame()
 for (file in files) {
   ID = unlist(strsplit(file, "-"))[2]
-  cat(paste0(ID, "...\n"))
+  cat(paste0("\t-", ID, "...\n"))
   tab = read.table(paste0(WD_corr_S3, "/", file), header = T, sep = "\t", quote = "\"")
   TAB = rbind(TAB, tab)
 }
 
-write.table(TAB, paste0(WD_corr_S4, "/TAB_CIS-PEARSON.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+write.table(TAB, paste0(WD_corr_S4, "/TAB_CIS-PEARSON_closest.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
 
 rm(list = c("files", "file", "ID", "tab", "TAB"))
 

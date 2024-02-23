@@ -51,12 +51,14 @@ if (length(args) < 7) {
 
 ######### PIPELINE
 
-## Load TAB_CIS.
-TAB_CIS = read.table(paste0(WD_corr_S2, "/TAB_CIS.tsv"), sep = "\t", header = T, quote = "\"")
+cat(paste0("-Closest...\n"))
+
+## Load TAB_CIS_closest.
+TAB_CIS_closest = read.table(paste0(WD_corr_S2, "/TAB_CIS_closest.tsv"), sep = "\t", header = T, quote = "\"")
 ## Load summary table with all the information about the experiments and contrasts.
 metadata = read.table(paste0(WD_DEA, "/03-Metadata_DEA/", experiment, ".tsv"), sep = "\t", header = T, quote = "\"")
 ## Create subset table.
-subset = TAB_CIS
+subset = TAB_CIS_closest
 subset$Experiment = experiment
 
 if (dim(subset)[1] != 0) {
@@ -124,17 +126,17 @@ if (dim(subset)[1] != 0) {
   rm(list = c("tab_cor"))
   
   ## Generate the final table.
-  TAB_CIS_corr =  subset[, c("Specie", "Chr", "ID_transcript.1", "Start.1", "End.1", "Strand.1", "ID_transcript.2", 
-                             "Start.2", "End.2", "Strand.2", "Overlap.Perc", "Overlap", "Type", "Experiment", 
-                             "Cor.Deseq.Vst")]
-  rownames(TAB_CIS_corr) = NULL
+  TAB_CIS_closest_corr =  subset[, c("Specie", "Chr", "ID_transcript.1", "Start.1", "End.1", "Strand.1", "ID_transcript.2", 
+                                     "Start.2", "End.2", "Strand.2", "Overlap.Perc", "Overlap", "Type", "Experiment", 
+                                     "Cor.Deseq.Vst")]
+  rownames(TAB_CIS_closest_corr) = NULL
   
   ## Save.
-  write.table(TAB_CIS_corr, paste0(WD_corr_S3, "/TAB_CIS-", experiment, "-PEARSON.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+  write.table(TAB_CIS_closest_corr, paste0(WD_corr_S3, "/TAB_CIS-", experiment, "-PEARSON_closest.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
   
 }else {
   cat(paste0("\tThere is no pairs\n"))
 }
 
-rm(list = c("TAB_CIS", "experiment", "subset"))
+rm(list = c("TAB_CIS_closest", "experiment", "subset"))
 

@@ -36,7 +36,9 @@ if (length(args) < 2) {
 
 ######### PIPELINE
 
-files = list.files(path = WD_corr_S5, pattern = "-random.tsv")
+cat(paste0("-Closest...\n"))
+
+files = list.files(path = WD_corr_S5, pattern = "_closest-random.tsv")
 TAB = data.frame()
 for (file in files) {
   ID = unlist(strsplit(file, "-"))[2]
@@ -52,7 +54,7 @@ for (file in files) {
   TAB = rbind(TAB, tab)
 }
 
-write.table(TAB, paste0(WD_corr_S6, "/TAB_CIS-PEARSON-random.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+write.table(TAB, paste0(WD_corr_S6, "/TAB_CIS-PEARSON_closest-random.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
 
 rm(list = c("files", "file", "ID", "tab", "TAB"))
 
