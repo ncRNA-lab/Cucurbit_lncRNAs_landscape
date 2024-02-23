@@ -57,7 +57,7 @@ DB_Genes = DB_Genes[, c("ID_transcript", "Start", "End")]
 
 ################################################################################
 
-## CLOSEST: Build tab_closest table.
+## CLOSEST: Build TAB_CIS_closest table.
 cat(paste0("-Closest...\n"))
 
 # Load bedtools results: LncRNAs-Genes and Genes-Genes.
@@ -92,7 +92,7 @@ write.table(TAB_CIS_closest, paste0(WD_corr_S2, "/TAB_CIS_closest.tsv"), sep = "
 
 ################################################################################
 
-## RANGE: Build tab_range table.
+## RANGE: Build TAB_CIS_range table.
 cat(paste0("-Range...\n"))
 
 TAB_CIS_range = data.frame()
