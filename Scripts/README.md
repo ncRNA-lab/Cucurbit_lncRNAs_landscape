@@ -210,6 +210,8 @@ sbatch 12.2-Coverage_statistics.sh
 
 **Sequence level**
 
+<div align="justify"> To analyze the conservation at sequence level, <a href="https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/">BLASTn</a> and <a href="https://github.com/davidemms/OrthoFinder">OrthoFinder</a> are used. <br /><br /></div>
+
 ```
 cd 11-Comparative_genomics/Sequence_level/
 
@@ -218,7 +220,7 @@ sbatch 13-Sequence_level_analysis.sh
 
 **Positional level**
 
-<div align="justify"> The approach used to analyze the conservation at positional level is developed and validated in <a href="https://www.tandfonline.com/doi/full/10.1080/15476286.2019.1572438">Pegueroles et al. (2019)</a>. <br /><br /></div>
+<div align="justify"> The approach used to analyze the conservation at positional level is developed and validated in <a href="https://www.tandfonline.com/doi/full/10.1080/15476286.2019.1572438">Pegueroles et al. (2019)</a>. Here is an adaptation of this strategy. <br /><br /></div>
 
 ```
 cd 11-Comparative_genomics/Positional_level/
@@ -231,6 +233,8 @@ sbatch 13.5-Create_figures_and_tables.sh
 ```
 
 **Motif level**
+
+<div align="justify"> To analyze the conservation at motif level, <a href="https://meme-suite.org/meme/">MEME</a> is used. <br /><br /></div>
 
 ```
 cd 11-Comparative_genomics/Motif_level/
