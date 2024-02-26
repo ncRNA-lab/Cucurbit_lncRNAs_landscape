@@ -169,7 +169,7 @@ for (experiment in Experiments) {
   for (name in unique(metadata$Name.2)) {
     cols = metadata[metadata$Name.2 == name, "Sample"]
     dt = counts(dds)[, cols]
-    keep = rowSums(dt > 0) >= 2
+    keep = rowSums(dt >= 5) >= 2
     keep_name = rownames(dt)[keep]
     KEEP_name = unique(c(KEEP_name, keep_name))
   }
