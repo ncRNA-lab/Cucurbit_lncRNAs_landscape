@@ -44,16 +44,16 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 - <div align="justify"> <b>Downstream analysis</b> </div><br />Now, there are some downstream analyses that we can perform:<br /><br />
  
-    + Molecular properties comparison.<br />
-    + Comparative genomics.</b>
+    + Molecular properties comparison (GC content, exon number, length, expression level and repeat content).<br />
+    + Comparative genomics (Sequence, positional and motif level).</b>
     + Tissue-specificity analysis.<br />
     + Differential expression analysis (development and environment).<br />
-    + Expression correlation analysis.<br />
+    + Expression correlation analysis (influence on nearby gene expression).<br />
 
 <br />
 <br />
 
-<div align="justify"> <sub><b>Figure 1: Graphic representation of the bioinformatic workflow used for the prediction, classification and analysis of lncRNAs. (A) Data recovering, preprocessing and transcriptome assembly. (B) Prediction and categorization of lncRNAs: intergenic (lincRNAs), natural antisense (NAT-lncRNAs), intronic (int-lncRNAs) and sense overlapping (SOT-lncRNAs) lncRNAs. (C) Downstream analysis to compare lncRNA features, conservation at three levels (sequence, genomic position and motifs) and differential expression (related to tissue, development and environment).</b></sub> </div>
+<div align="justify"> <sub><b>Figure 1: Graphic representation of the bioinformatic workflow used for the prediction, classification and analysis of lncRNAs. (A) Data recovering, preprocessing and transcriptome assembly. (B) Prediction and categorization of lncRNAs: intergenic (lincRNAs), natural antisense (NAT-lncRNAs), intronic (int-lncRNAs) and sense overlapping (SOT-lncRNAs) lncRNAs. (C) Downstream analysis to compare lncRNA features, conservation at three levels (sequence, genomic position and motifs) and, differential expression (related to tissue, development and environment) and expression correlation (influence on nearby gene expression).</b></sub> </div>
 
 <br />
 
