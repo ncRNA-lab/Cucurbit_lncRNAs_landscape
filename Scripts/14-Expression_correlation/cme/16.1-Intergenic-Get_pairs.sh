@@ -106,7 +106,7 @@ for flag in $flag_list; do
 	echo -e "\t-Closest..."
 
 	## Closest.
-	bedtools closest -a Genes.bed -b Genes.bed -D a -t all -k 2 -nonamecheck | awk -F"\t" '$14 != "." && $4 != $14 {print $1"\t"$4"\t"$2"\t"$3"\t"$6"\t"$14"\t"$12"\t"$13"\t"$16"\t"$21}' > Gene_Gene_closest.tsv
+	bedtools closest -a Genes.bed -b Genes.bed -io -D a -t all -k 1 -nonamecheck | awk -F"\t" '$14 != "." {print $1"\t"$4"\t"$2"\t"$3"\t"$6"\t"$14"\t"$12"\t"$13"\t"$16"\t"$21}' > Gene_Gene_closest.tsv
 
 	echo -e "\t-Range..."
 
