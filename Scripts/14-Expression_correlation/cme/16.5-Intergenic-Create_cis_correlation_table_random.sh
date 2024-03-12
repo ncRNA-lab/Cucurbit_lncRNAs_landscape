@@ -54,10 +54,12 @@ for flag in $flag_list; do
 	
 	## Variable.
 	O=$WD4_spe/intergenic/$flag
+	O2=$WD4_spe/intergenic/$flag/STEP2
 	O5=$WD4_spe/intergenic/$flag/STEP5
 	
 	## Directory.
 	mkdir -p $O
+	mkdir -p $O2
 	mkdir -p $O5
 	mkdir -p $O5/Outputs
 	
@@ -69,7 +71,7 @@ for flag in $flag_list; do
 		experiment_list=$(find "$WD3_spe/03-Metadata_DEA/" -type f -exec basename {} \; | sed 's/.tsv//g' | sort)
 		for exp in $experiment_list; do
 			echo -e "\t-Processing experiment: $exp"
-			srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive --output $O5/Outputs/Closest-$exp.log $F task_STEP5_CLOSEST-INTERGENIC "$specie_long" $exp $O5 $WD1_spe $WD2_spe $WD3_spe 1000 $flag $AS &
+			srun -N1 -n1 -c$SLURM_CPUS_PER_TASK --quiet --exclusive --output $O5/Outputs/Closest-$exp.log $F task_STEP5_CLOSEST-INTERGENIC "$specie_long" $exp $O2 $O5 $WD1_spe $WD2_spe $WD3_spe 1500 $flag $AS &
 		done
 		wait
 	else

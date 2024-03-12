@@ -28,26 +28,28 @@ suppressMessages(library(DESeq2))
 
 ## Create a vector with the arguments.
 args = commandArgs(trailingOnly=TRUE)
-if (length(args) < 8) {
-  stop("At least 8 arguments must be supplied.", call.=FALSE)
+if (length(args) < 9) {
+  stop("At least 9 arguments must be supplied.", call.=FALSE)
 } else {
   spel = args[1]
   experiment = args[2]
-  WD_corr_S5 = args[3]
-  WD_pred = args[4]
-  WD_quant = args[5]
-  WD_DEA = args[6]
-  n_random_pairs = as.numeric(args[7])
-  flag = args[8]
+  WD_corr_S2 = args[3]
+  WD_corr_S5 = args[4]
+  WD_pred = args[5]
+  WD_quant = args[6]
+  WD_DEA = args[7]
+  n_random_pairs = as.numeric(args[8])
+  flag = args[9]
 }
 
 # spel = "C. melo"
 # experiment = "SRP139690_1_1"
+# WD_corr_S2 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/intergenic/nr/STEP2"
 # WD_corr_S5 = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/14-Expression_correlation/cme/intergenic/nr/STEP5"
 # WD_pred = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/05-LncRNAs_prediction/cme"
 # WD_quant = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/06-Quantification/cme"
 # WD_DEA = "/storage/ncRNA/Projects/lncRNAs/Cucurbitaceae/Results/13-DEA/cme"
-# n_random_pairs = 1000
+# n_random_pairs = 1500
 # flag = "nr"
 
 
@@ -55,8 +57,12 @@ if (length(args) < 8) {
 
 cat(paste0("-Closest...\n"))
 
+## Load TAB_CIS_closest.
+TAB_CIS_closest = read.table(paste0(WD_corr_S2, "/TAB_CIS_closest.tsv"), sep = "\t", header = T, quote = "\"")
 ## Load summary table with all the information about the experiments and contrasts.
 metadata = read.table(paste0(WD_DEA, "/03-Metadata_DEA/", experiment, ".tsv"), sep = "\t", header = T, quote = "\"")
+## Create subset table.
+subset = TAB_CIS_closest
   
 ## Load counts tables coming from salmon using tximport.
 txdb = suppressMessages(makeTxDbFromGFF(paste0(WD_pred, "/STEP-FINAL/Files/ALL/", flag, "/ALL.gtf"), format = "gtf"))
@@ -109,20 +115,21 @@ assay(dds, 'counts.norm.VST') = suppressMessages(as.data.frame(assay(varianceSta
 ## Select random pairs.
 set.seed(42)
 vst = as.data.frame(assay(dds, 'counts.norm.VST'))
-random_pairs = data.frame(ID_transcript.1 = row.names(slice_sample(vst, n = n_random_pairs, replace = FALSE)),
-                          ID_transcript.2 = row.names(slice_sample(vst, n = n_random_pairs, replace = FALSE)))
+vst_filt_1 = vst[rownames(vst) %in% unique(c(subset$ID_transcript.1, subset$ID_transcript.2)),]
+random_pairs = data.frame(ID_transcript.1 = row.names(slice_sample(vst_filt_1, n = n_random_pairs, replace = FALSE)),
+                          ID_transcript.2 = row.names(slice_sample(vst_filt_1, n = n_random_pairs, replace = FALSE)))
 random_pairs_filt = random_pairs[!duplicated(random_pairs),]
 
-rm(list = c("dds", "random_pairs"))
+rm(list = c("dds", "vst_filt_1", "random_pairs"))
 
 ## Correlation method.
-vst_filt = vst[rownames(vst) %in% unique(c(random_pairs_filt$ID_transcript.1, random_pairs_filt$ID_transcript.2)),]
-tab_cor = suppressWarnings(cor(t(vst_filt), method = "pearson"))
+vst_filt_2 = vst[rownames(vst) %in% unique(c(random_pairs_filt$ID_transcript.1, random_pairs_filt$ID_transcript.2)),]
+tab_cor = suppressWarnings(cor(t(vst_filt_2), method = "pearson"))
 tab_cor = melt(tab_cor)
 colnames(tab_cor) = c("ID_transcript.1", "ID_transcript.2", "Cor.Deseq.Vst")
 tab_cor_random = merge(random_pairs_filt, tab_cor, by = c("ID_transcript.1", "ID_transcript.2"), all = F)
 
-rm(list = c("metadata", "vst", "vst_filt", "tab_cor", "random_pairs_filt"))
+rm(list = c("metadata", "vst", "vst_filt_2", "tab_cor", "random_pairs_filt"))
 
 ## Generate the final tables.
 TAB_CIS_closest_corr =  tab_cor_random
@@ -136,4 +143,6 @@ rm(list = c("tab_cor_random"))
 
 ## Save.
 write.table(TAB_CIS_closest_corr, paste0(WD_corr_S5, "/TAB_CIS-", experiment, "-PEARSON_closest-random.tsv"), sep = "\t", row.names = F, col.names = T, quote = F)
+
+rm(list = c("TAB_CIS_closest", "subset"))
 

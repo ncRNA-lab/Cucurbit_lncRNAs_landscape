@@ -144,5 +144,5 @@ if (dim(subset)[1] != 0) {
   cat(paste0("\tThere is no pairs\n"))
 }
 
-rm(list = c("TAB_CIS_range", "experiment", "subset"))
+rm(list = c("TAB_CIS_range", "subset"))
 

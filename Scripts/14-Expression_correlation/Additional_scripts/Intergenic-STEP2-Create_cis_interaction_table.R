@@ -7,9 +7,6 @@
 # and PCG-PCG interactions. In addition, two strategies are shown: (1) closest 
 # gene and (2) distance ranges.
 #
-# NOTE: It may occur that two PCGs have mutually closest gene to each other. Then 
-# the repeated pairs are eliminated leaving unique pairs.
-#
 # @author: pasviber - Pascual Villalba Bermell
 # 
 ################################################################################
@@ -69,15 +66,6 @@ colnames(tab_closest_GG) = c("Chr", "ID_transcript.1", "Start.1", "End.1", "Stra
 tab_closest_GG$Type = "Genes_Genes"
 tab_closest = rbind(tab_closest_LG, tab_closest_GG)
 
-# Sometimes if gene 2 is the closest to gene 1, gene 1 is also the closest to gene 2.
-# So, it's necessary remove redundant pairs.
-tab_closest = tab_closest %>%
-  group_by(grp = paste(pmax(ID_transcript.1, ID_transcript.2), pmin(ID_transcript.1, ID_transcript.2), sep = "_")) %>%
-  slice(1) %>%
-  ungroup() %>%
-  select(-grp)
-tab_closest = as.data.frame(tab_closest)
-
 # Fill table.
 tab_closest$Start.1 = tab_closest$Start.1 + 1
 tab_closest$Start.2 = tab_closest$Start.2 + 1
@@ -113,15 +101,6 @@ for (dist in distances) {
   tab_range_GG = merge(tab_range_GG, DB_Genes, by.x = "ID_transcript.1", by.y = "ID_transcript", all = F)
   tab_range_GG$Type = "Genes_Genes"
   tab_range = rbind(tab_range_LG, tab_range_GG)
-  
-  # Sometimes if gene 2 is the closest to gene 1, gene 1 is also the closest to gene 2.
-  # So, it's necessary remove redundant pairs.
-  tab_range = tab_range %>%
-    group_by(grp = paste(pmax(ID_transcript.1, ID_transcript.2), pmin(ID_transcript.1, ID_transcript.2), sep = "_")) %>%
-    slice(1) %>%
-    ungroup() %>%
-    select(-grp)
-  tab_range = as.data.frame(tab_range)
   
   # Fill table.
   tab_range$Start_range = tab_range$Start_range + 1
