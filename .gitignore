@@ -1,0 +1,5 @@
+**/*.log
+**/.RData
+**/.Rhistory
+**/.DS_Store
+
