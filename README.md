@@ -53,7 +53,7 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 <br />
 <br />
 
-<div align="justify"> <sub><b>Figure 1: Graphic representation of the bioinformatic workflow used for the prediction, classification and analysis of lncRNAs. (A) Data recovering, preprocessing and transcriptome assembly. (B) Prediction and categorization of lncRNAs: intergenic (lincRNAs), natural antisense (NAT-lncRNAs), intronic (int-lncRNAs) and sense overlapping (SOT-lncRNAs) lncRNAs. (C) Downstream analysis to compare lncRNA features, conservation at three levels (sequence, genomic position and motifs) and, differential expression (related to tissue, development and environment) and expression correlation (influence on nearby gene expression).</b></sub> </div>
+<div align="justify"> <sub><b>Figure 1: Graphic representation of the bioinformatic workflow used for the prediction, classification and analysis of lncRNAs. (A) Data recovering, pre-processing and transcriptome assembly. (B) Prediction and categorization of lncRNAs: intergenic (lincRNAs), natural antisense (NAT-lncRNAs), intronic (int-lncRNAs) and sense-overlapping (SOT-lncRNAs) lncRNAs. (C) Downstream analysis to compare lncRNA features, conservation at three levels (sequence, genomic position and motifs) and, differential expression (related to tissue, development and environment) and expression correlation (influence on nearby gene expression).</b></sub> </div>
 
 <br />
 
@@ -61,7 +61,7 @@ To identify and analyze potential lncRNAs, we used a custom pipeline consisting 
 
 <br />
 
-<div align="justify"> This pipeline has been configured to be executed in a HPC cluster environment using the open-source workload manager Slurm. So, it was executed in <a href="https://garnatxadoc.uv.es/">Garnatxa HPC Cluster</a> located at Data Center of the Institute for Integrative Systems Biology (<a href="https://www.uv.es/institute-integrative-systems-biology-i2sysbio/en/institute-integrative-systems-biology-i-sysbio.html">I2SysBio</a>). All the scripts that compose the pipeline are stored in <a href="Scripts">Scripts</a>. As the scripts for each species are the same, only the scripts for cucumis melo (cme) have been uploaded. </div>
+<div align="justify"> This pipeline has been configured to be executed in a HPC cluster environment using the open-source workload manager Slurm. So, it was executed in <a href="https://garnatxadoc.uv.es/">Garnatxa HPC Cluster</a> located at Data Center of the Institute for Integrative Systems Biology (<a href="https://www.uv.es/institute-integrative-systems-biology-i2sysbio/en/institute-integrative-systems-biology-i-sysbio.html">I2SysBio</a>). All the scripts that compose the pipeline are stored in <a href="Scripts">Scripts</a>. As the scripts for each species are the same, only the scripts for *Cucumis melo* (cme) have been uploaded. </div>
 
 <br />
 
