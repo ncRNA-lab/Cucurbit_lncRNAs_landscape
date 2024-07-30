@@ -43,6 +43,16 @@
 
 <br />
 
+### Both
+
+<div align="justify">For each of the nine cucurbitaceae analyzed, three folders have been created:</div><br />
+
+ - <div align="justify"><b>Fasta:</b> FASTA file with the non-redundant lncRNAs predicted in this study and the PCGs.</div>
+ - <div align="justify"><b>Gtf:</b> GTF annotation file with the non-redundant lncRNAs predicted in this study and the PCGs.</div>
+ - <div align="justify"><b>Table:</b> TSV file with the non-redundant lncRNAs predicted in this study and the PCGs. </div>
+
+<br />
+
 ### Final summary
 
 <div align="justify">For each of the nine cucurbits analyzed, a table has been created showing all the information obtained in the paper for each of the predicted non-redundant lncRNAs.</div><br />
