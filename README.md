@@ -6,7 +6,7 @@
 
 <br />
 
-<div align="justify"> In the paper <b>["A multispecies study reveals the diversity and potential regulatory role of long non-coding RNAs in Cucurbits"](https://onlinelibrary.wiley.com/doi/10.1111/tpj.17013)</b>, we identified and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. </div>
+<div align="justify"> In the paper ["A multispecies study reveals the diversity and potential regulatory role of long non-coding RNAs in Cucurbits"](https://onlinelibrary.wiley.com/doi/10.1111/tpj.17013), we identified and analyze potential lncRNAs in nine representative species of the family <em>Cucurbitaceae</em> comprising a dataset of more than 1,000 RNA-seq studies. </div>
 
 <br />
 <br />
