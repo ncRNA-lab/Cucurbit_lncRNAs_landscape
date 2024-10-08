@@ -314,5 +314,5 @@ sbatch 16.6-Intergenic-Join_cis_correlation_tables_random.sh
 
 ## Citation
 
-* <div align="justify"> Villalba-Bermell P., Marquez-Molins J., Gomez G. A multispecies study reveals the diversity and potential regulatory role of long noncoding RNAs in cucurbits. Plant J. 2024 Sep 10. doi: [10.1111/tpj.17013](https://onlinelibrary.wiley.com/doi/10.1111/tpj.17013). </div>
+* <div align="justify"> Villalba-Bermell P., Marquez-Molins J., Gomez G. A multispecies study reveals the diversity and potential regulatory role of long noncoding RNAs in cucurbits. Plant J. 2024 Sep 10. doi: <a href="https://onlinelibrary.wiley.com/doi/10.1111/tpj.17013">10.1111/tpj.17013</a>. </div>
 
