@@ -140,5 +140,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Citation
 
-* <div align="justify"> Villalba-Bermell P., Marquez-Molins J., Gomez G. A multispecies study reveals the diversity and potential regulatory role of long noncoding RNAs in cucurbits. Plant J. 2024 Sep 10. doi: (<a href="[https://www.uv.es/institute-integrative-systems-biology-i2sysbio/en/institute-integrative-systems-biology-i-sysbio.html](https://onlinelibrary.wiley.com/doi/10.1111/tpj.17013)">10.1111/tpj.17013</a>). </div>
+* <div align="justify"> Villalba-Bermell P., Marquez-Molins J., Gomez G. A multispecies study reveals the diversity and potential regulatory role of long noncoding RNAs in cucurbits. Plant J. 2024 Sep 10. doi: <a href="https://onlinelibrary.wiley.com/doi/10.1111/tpj.17013">10.1111/tpj.17013</a>. </div>
 
